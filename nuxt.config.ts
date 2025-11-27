@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     enabled: process.env.NODE_ENV !== 'production',
   },
   i18n: {
-    baseUrl: 'https://supermnasamui.com',
+    baseUrl: 'https://supermansamui.com',
     defaultLocale: 'en',
     detectBrowserLanguage: false,
     locales: [
