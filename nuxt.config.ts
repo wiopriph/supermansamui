@@ -50,7 +50,7 @@ export default defineNuxtConfig({
     cacheMaxAgeSeconds: 86400,
   },
 
-  ssr: false,
+  ssr: true,
 
   // supabase: {
   //   redirect: false,
