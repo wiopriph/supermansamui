@@ -16,10 +16,9 @@ export default defineNuxtConfig({
     strategy: 'prefix_except_default',
   },
   modules: [
-    '@nuxt/image',
     '@nuxtjs/i18n',
     '@nuxt/ui',
-    '@nuxtjs/supabase',
+    // '@nuxtjs/supabase',
     '@nuxtjs/sitemap',
   ],
 
@@ -53,10 +52,10 @@ export default defineNuxtConfig({
 
   ssr: false,
 
-  supabase: {
-    redirect: false,
-    serviceKey: process.env.SUPABASE_SERVICE_KEY,
-  },
+  // supabase: {
+  //   redirect: false,
+  //   serviceKey: process.env.SUPABASE_SERVICE_KEY,
+  // },
 
   ui: {
     colorMode: false,
