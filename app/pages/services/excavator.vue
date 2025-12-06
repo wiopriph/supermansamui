@@ -173,7 +173,7 @@ useHead(() => {
   const title = t('excavator.seo.title');
   const description = t('excavator.seo.description');
   const keywords = t('excavator.seo.keywords');
-  const image = `${url.protocol}//${url.host}/images/equipment/excavators/cat-305cr.webp`;
+  const image = 'https://supermansamui.com/images/equipment/excavators/cat-305cr.webp';
 
   return {
     title,

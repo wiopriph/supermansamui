@@ -21,7 +21,6 @@ const metaOg = computed(() => [
   { name: 'apple-mobile-web-app-title', content: 'Superman Samui' },
 ]);
 
-const siteUrl = computed(() => `${url.protocol}//${url.host}`);
 
 const phoneE164 = computed(() => {
   const digits = CONTACT_PHONE.replace(/\D/g, '');
@@ -45,17 +44,17 @@ const jsonLdBase = computed(() => ({
   '@graph': [
     {
       '@type': 'WebSite',
-      '@id': `${siteUrl.value}#website`,
-      url: siteUrl.value,
+      '@id': 'https://supermansamui.com#website',
+      url: 'https://supermansamui.com',
       name: 'Superman Samui',
       inLanguage: locale.value,
     },
     {
       '@type': 'LocalBusiness',
-      '@id': `${siteUrl.value}#business`,
+      '@id': 'https://supermansamui.com#business',
       name: 'Superman Samui',
-      url: siteUrl.value,
-      image: `${siteUrl.value}/logo.webp`,
+      url: 'https://supermansamui.com',
+      image: 'https://supermansamui.com/logo.webp',
       telephone: phoneE164.value,
       priceRange: '฿฿',
       address: {

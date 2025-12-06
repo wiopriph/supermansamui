@@ -11,7 +11,6 @@ const services = [
   { key: 'cranes', image: '/images/services/cranes.webp' },
 ];
 
-const siteUrl = computed(() => `${url.protocol}//${url.host}`);
 
 const offerList = computed(() =>
   services.map((s) => ({
@@ -27,11 +26,11 @@ const jsonLd = computed(() => ({
   '@graph': [
     {
       '@type': 'Service',
-      '@id': `${siteUrl.value}#service-heavy-equipment`,
+      '@id': 'https://supermansamui.com#service-heavy-equipment',
       name: t('services.schemaTitle'),
       description: t('services.schemaDescription'),
       provider: {
-        '@id': `${siteUrl.value}#business`,
+        '@id': 'https://supermansamui.com#business',
       },
       areaServed: {
         '@type': 'AdministrativeArea',

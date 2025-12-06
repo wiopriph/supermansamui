@@ -1,11 +1,10 @@
 <script setup lang="ts">
 const { t } = useI18n();
-const url = useRequestURL();
 
 useHead(() => {
   const title = t('seo.title');
   const description = t('seo.desc');
-  const image = `${url.protocol}//${url.host}/logo.webp`;
+  const image = 'https://supermansamui.com/logo.webp';
 
   return {
     title,
