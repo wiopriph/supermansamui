@@ -4,6 +4,10 @@ const switchLocalePath = useSwitchLocalePath();
 const localeRoute = useLocaleRoute();
 
 const items = computed(() => [
+  {
+    label: t('footer.excavator'),
+    to: localeRoute({ name: 'services-excavator' }),
+  },
   // {
   //   label: t('footer.services'),
   //   to: localeRoute({ name: 'services' }),
@@ -21,6 +25,7 @@ const year = new Date().getFullYear();
 {
   "en": {
     "footer": {
+      "excavator": "Excavator Rental",
       "services": "Services",
       "contacts": "Contacts",
       "rights": "All rights reserved."
@@ -28,6 +33,7 @@ const year = new Date().getFullYear();
   },
   "ru": {
     "footer": {
+      "excavator": "Аренда экскаватора",
       "services": "Услуги",
       "contacts": "Контакты",
       "rights": "Все права защищены."
@@ -35,6 +41,7 @@ const year = new Date().getFullYear();
   },
   "th": {
     "footer": {
+      "excavator": "บริการเช่ารถขุด",
       "services": "บริการ",
       "contacts": "ติดต่อ",
       "rights": "สงวนลิขสิทธิ์ทั้งหมด"

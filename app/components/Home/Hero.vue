@@ -5,14 +5,13 @@ import { CONTACT_PHONE } from '~/constants/contacts';
 const { t } = useI18n();
 // const localePath = useLocalePath();
 
-const phoneLink = computed(() => `tel:${CONTACT_PHONE}`);
 
 const links = computed(() => [
   {
     label: t('hero.primary'),
     icon: 'i-lucide-phone',
     color: 'primary',
-    to: phoneLink,
+    to: `tel:${CONTACT_PHONE}`,
   },
   // {
   //   label: t('hero.secondary'),

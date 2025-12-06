@@ -17,6 +17,8 @@ const url = useRequestURL();
 const metaOg = computed(() => [
   { key: 'og:type', property: 'og:type', content: 'website' },
   { key: 'og:site_name', property: 'og:site_name', content: 'Superman Samui' },
+
+  { name: 'apple-mobile-web-app-title', content: 'Superman Samui' },
 ]);
 
 const siteUrl = computed(() => `${url.protocol}//${url.host}`);

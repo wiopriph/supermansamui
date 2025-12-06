@@ -1,9 +1,15 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   css: ['~/assets/css/main.css'],
+
   devtools: {
     enabled: process.env.NODE_ENV !== 'production',
   },
+
+  features: {
+    inlineStyles: true,
+  },
+
   i18n: {
     baseUrl: 'https://supermansamui.com',
     defaultLocale: 'en',
@@ -15,6 +21,7 @@ export default defineNuxtConfig({
     ],
     strategy: 'prefix_except_default',
   },
+
   modules: [
     '@nuxtjs/i18n',
     '@nuxt/ui',

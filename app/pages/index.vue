@@ -31,7 +31,7 @@ useSeoMeta({
 </i18n>
 
 <template>
-  <UContainer class="space-y-14 py-10">
+  <UPage>
     <HomeHero />
 
     <HomeServices />
@@ -40,6 +40,6 @@ useSeoMeta({
 
     <HomeBenefits />
 
-    <HomeContacts />
-  </UContainer>
+    <CoreContacts />
+  </UPage>
 </template>

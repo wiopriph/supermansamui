@@ -13,6 +13,10 @@ const { t } = useI18n();
 const localeRoute = useLocaleRoute();
 
 const items = computed<NavigationMenuItem[]>(() => [
+  {
+    label: t('header.excavator'),
+    to: localeRoute({ name: 'services-excavator' }),
+  },
   // {
   //   label: t('header.services'),
   //   to: localeRoute({ name: 'services' }),
@@ -53,25 +57,28 @@ const phoneLink = computed(() => `tel:${CONTACT_PHONE}`);
 
 <i18n lang="json">
 {
-  "ru": {
-    "header": {
-      "contactUs": "Свяжитесь с нами",
-      "services": "Услуги",
-      "contacts": "Контакты",
-      "title": "Superman Samui"
-    }
-  },
   "en": {
     "header": {
       "contactUs": "Contact us",
+      "excavator": "Excavator Rental",
       "services": "Services",
       "contacts": "Contacts",
+      "title": "Superman Samui"
+    }
+  },
+  "ru": {
+    "header": {
+      "contactUs": "Свяжитесь с нами",
+      "excavator": "Аренда экскаватора",
+      "services": "Услуги",
+      "contacts": "Контакты",
       "title": "Superman Samui"
     }
   },
   "th": {
     "header": {
       "contactUs": "ติดต่อเรา",
+      "excavator": "บริการเช่ารถขุด",
       "services": "บริการ",
       "contacts": "ติดต่อ",
       "title": "Superman Samui"
@@ -81,18 +88,15 @@ const phoneLink = computed(() => `tel:${CONTACT_PHONE}`);
 </i18n>
 
 <template>
-  <UHeader
-    :title="t('header.title')"
-    :to="localeRoute({ name: 'index' }).fullPath"
-  >
-    <template #title>
+  <UHeader>
+    <template #left>
       <NuxtLink
         :to="localeRoute({ name: 'index' })"
         class="flex items-center gap-2"
         aria-label="Superman Samui"
       >
         <img
-          src="/logo-mini.png"
+          src="/man.png"
           alt="Superman Samui"
           class="h-10 w-auto sm:hidden"
         >
