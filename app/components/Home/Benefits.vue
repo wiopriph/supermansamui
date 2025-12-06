@@ -15,96 +15,96 @@ const benefits = [
 {
   "ru": {
     "benefits": {
-      "badge": "Преимущества Superman Samui",
-      "lead": "Подстраиваемся под вашу задачу, берём на себя спецтехнику, логистику и организацию, чтобы вы занимались только своим проектом.",
+      "badge": "Почему выбирают Superman Samui",
+      "lead": "Берём на себя технику, доставку, расчёты и организацию работ - вы просто ставите задачу и получаете результат.",
       "items": {
         "consult": {
-          "title": "Бесплатный выезд и консультация",
-          "text": "Приезжаем на участок, оцениваем объём работ, помогаем подобрать технику и даём ориентировочную смету - бесплатно."
+          "title": "Бесплатный выезд и оценка",
+          "text": "Осматриваем участок, определяем объём работ и подбираем технику. Даём понятную смету без скрытых расходов."
         },
         "delivery": {
-          "title": "Подача к оговоренному времени",
-          "text": "Привозим технику на объект строго к согласованному часу."
+          "title": "Чёткая подача техники",
+          "text": "Привозим экскаваторы и грузовики точно в назначенное время - без задержек и переносов."
         },
         "operators": {
-          "title": "Опытные машинисты и водители",
-          "text": "Команда со стажем работы на спецтехнике и объектами на Самуи."
+          "title": "Профессиональные операторы",
+          "text": "Опытные местные машинисты и водители, которые знают рельеф Самуи и работают аккуратно даже в стеснённых условиях."
         },
         "fuel": {
-          "title": "Топливо и сервис - наша забота",
-          "text": "Заправка и обслуживание включены, вы платите только за аренду и часы работы."
+          "title": "Топливо уже включено",
+          "text": "Мы сами заправляем и обслуживаем технику. Вы платите только за фактические часы работы."
         },
         "condition": {
-          "title": "Исправная техника",
-          "text": "Регулярное обслуживание и осмотр перед выездом на каждый объект."
+          "title": "Надёжная и обслуженная техника",
+          "text": "Проводим регулярное ТО и проверяем машины перед каждым выездом, чтобы работа проходила без простоев."
         },
         "payment": {
-          "title": "Удобная оплата",
-          "text": "Наличные, переводы на тайский счёт и другие варианты по договорённости."
+          "title": "Удобные способы оплаты",
+          "text": "Принимаем наличные, переводы на тайский счёт и другие варианты - подберём удобный формат под вас."
         }
       }
     }
   },
   "en": {
     "benefits": {
-      "badge": "Superman Samui advantages",
-      "lead": "We handle equipment, logistics and scheduling so you can focus on the project, not on the machines.",
+      "badge": "Why clients choose Superman Samui",
+      "lead": "We handle equipment, logistics and scheduling - you set the task, and we deliver a clean, reliable result.",
       "items": {
         "consult": {
-          "title": "Free site visit & consultation",
-          "text": "We come to your site, estimate the job, recommend the right machines and give an approximate quote for free."
+          "title": "Free site visit & estimate",
+          "text": "We inspect the site, assess the job and recommend the right equipment. Clear pricing with no hidden fees."
         },
         "delivery": {
           "title": "On-time equipment delivery",
-          "text": "We bring the machines to your site exactly at the agreed time."
+          "text": "Excavators and trucks arrive exactly at the scheduled time - no delays or last-minute changes."
         },
         "operators": {
-          "title": "Skilled operators & drivers",
-          "text": "Experienced team used to working with heavy equipment and Samui sites."
+          "title": "Skilled and reliable operators",
+          "text": "Experienced local operators who know Samui’s terrain and work safely even in tight or complex locations."
         },
         "fuel": {
-          "title": "Fuel & service included",
-          "text": "We handle refuelling and maintenance - you pay only for rental and working hours."
+          "title": "Fuel included",
+          "text": "We take care of refuelling and maintenance. You pay only for rental hours - nothing extra on top."
         },
         "condition": {
           "title": "Well-maintained machines",
-          "text": "Regular service and checks before every job."
+          "text": "Regular servicing and pre-job inspections help prevent breakdowns and downtime on your project."
         },
         "payment": {
           "title": "Flexible payment options",
-          "text": "Cash, bank transfers to Thai accounts and other options on request."
+          "text": "Cash, transfers to Thai bank accounts and other methods - we adapt to what works best for you."
         }
       }
     }
   },
   "th": {
     "benefits": {
-      "badge": "ข้อดีของ Superman Samui",
-      "lead": "เราช่วยดูแลเรื่องเครื่องจักร การขนส่ง และการจัดตารางงาน ให้คุณโฟกัสแค่งานก่อสร้างของตัวเอง",
+      "badge": "ทำไมลูกค้าเลือก Superman Samui",
+      "lead": "เราดูแลเรื่องเครื่องจักร การขนส่ง และการจัดตารางงานให้ครบ คุณเพียงบอกงานที่ต้องการ แล้วรอผลลัพธ์ที่เรียบร้อย.",
       "items": {
         "consult": {
-          "title": "สำรวจหน้างานและให้คำปรึกษาฟรี",
-          "text": "ไปดูหน้างาน ประเมินปริมาณงาน แนะนำเครื่องจักรที่เหมาะสม และบอกราคาประเมินคร่าว ๆ โดยไม่คิดค่าใช้จ่าย"
+          "title": "สำรวจหน้างานและประเมินราคาฟรี",
+          "text": "ลงพื้นที่จริง ประเมินปริมาณงาน แนะนำเครื่องจักรที่เหมาะสม และแจ้งราคาคร่าว ๆ อย่างชัดเจน ไม่มีค่าใช้จ่ายแอบแฝง."
         },
         "delivery": {
           "title": "ส่งเครื่องจักรตรงเวลา",
-          "text": "นำเครื่องจักรไปถึงไซต์งานตามเวลาที่ตกลงไว้"
+          "text": "นำรถขุดหรือรถบรรทุกไปถึงไซต์งานตามเวลานัดเป๊ะ ไม่เลื่อน ไม่ดีเลย์."
         },
         "operators": {
-          "title": "ทีมคนขับมืออาชีพ",
-          "text": "มีประสบการณ์ทำงานกับเครื่องจักรหนักและไซต์งานบนเกาะสมุย"
+          "title": "ทีมงานมืออาชีพ",
+          "text": "คนขับและช่างควบคุมเครื่องจักรที่มีประสบการณ์ รู้พื้นที่บนเกาะสมุย และทำงานได้ดีแม้ในพื้นที่แคบหรืองานซับซ้อน."
         },
         "fuel": {
-          "title": "ค่าน้ำมันและเซอร์วิส เราดูแลให้",
-          "text": "เติมน้ำมันและบำรุงรักษารวมอยู่แล้ว คุณจ่ายเฉพาะค่าเช่าและชั่วโมงทำงาน"
+          "title": "รวมค่าน้ำมันแล้ว",
+          "text": "เราดูแลเรื่องเติมน้ำมันและการบำรุงรักษาให้ทั้งหมด ลูกค้าจ่ายเฉพาะค่าเช่าและชั่วโมงทำงานจริง."
         },
         "condition": {
-          "title": "เครื่องจักรสภาพพร้อมใช้งาน",
-          "text": "ตรวจเช็คและบำรุงรักษาเป็นประจำก่อนออกงานทุกครั้ง"
+          "title": "เครื่องจักรพร้อมใช้งานเสมอ",
+          "text": "บำรุงรักษาเป็นประจำ และตรวจเช็คสภาพก่อนออกงานทุกครั้ง เพื่อให้งานเดินได้ลื่นไหลไม่สะดุด."
         },
         "payment": {
           "title": "ชำระเงินได้หลายรูปแบบ",
-          "text": "รับเงินสด โอนเข้าบัญชีไทย และตัวเลือกอื่น ๆ ตามตกลง"
+          "text": "รองรับเงินสด โอนเข้าบัญชีไทย และตัวเลือกอื่น ๆ ตามที่ลูกค้าสะดวก."
         }
       }
     }

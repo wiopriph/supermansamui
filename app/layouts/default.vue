@@ -55,7 +55,7 @@ const jsonLdBase = computed(() => ({
       '@id': `${siteUrl.value}#business`,
       name: 'Superman Samui',
       url: siteUrl.value,
-      image: `${siteUrl.value}/logo.png`,
+      image: `${siteUrl.value}/logo.webp`,
       telephone: phoneE164.value,
       priceRange: '฿฿',
       address: {

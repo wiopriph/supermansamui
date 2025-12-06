@@ -76,20 +76,20 @@ const sections = [
       "excavators": {
         "title": "Экскаваторы",
         "pc30": {
-          "label": "Мини-экскаватор PC30",
+          "label": "Мини-экскаватор",
           "price": "от {price} бат/час"
         },
         "cat305cr": {
-          "label": "Экскаватор CAT305CR",
+          "label": "Экскаватор",
           "price": "от {price} бат/час"
         },
         "pc128": {
-          "label": "Большой экскаватор PC128",
+          "label": "Большой экскаватор",
           "price": "от {price} бат/час"
         }
       },
       "trucks": {
-        "title": "Грузовики / самосвалы",
+        "title": "Грузовики",
         "small4": {
           "label": "4-колёсный самосвал",
           "price": "от {price} бат/рейс"
@@ -99,14 +99,14 @@ const sections = [
           "price": "от {price} бат/рейс"
         },
         "big10": {
-          "label": "10-колёсный самосвал",
+          "label": "10-колёсный грузовик с краном",
           "price": "от {price} бат/рейс"
         }
       },
       "crane": {
-        "title": "Услуги крана",
+        "title": "Крановые работы",
         "hourly": {
-          "label": "Кран (погрузка, подъём, монтаж)",
+          "label": "Кран (подъём, погрузка, монтаж)",
           "price": "от {price} бат/час (в зависимости от задачи)"
         }
       },
@@ -119,26 +119,27 @@ const sections = [
       }
     }
   },
+
   "en": {
     "pricing": {
       "title": "Pricing",
       "excavators": {
         "title": "Excavators",
         "pc30": {
-          "label": "Mini excavator PC30",
+          "label": "Mini excavator",
           "price": "from {price} THB/hour"
         },
         "cat305cr": {
-          "label": "Excavator CAT305CR",
+          "label": "Medium excavator",
           "price": "from {price} THB/hour"
         },
         "pc128": {
-          "label": "Large excavator PC128",
+          "label": "Large excavator",
           "price": "from {price} THB/hour"
         }
       },
       "trucks": {
-        "title": "Trucks / dump trucks",
+        "title": "Trucks",
         "small4": {
           "label": "4-wheel dump truck",
           "price": "from {price} THB/trip"
@@ -148,15 +149,15 @@ const sections = [
           "price": "from {price} THB/trip"
         },
         "big10": {
-          "label": "10-wheel dump truck",
+          "label": "10-wheel truck with crane",
           "price": "from {price} THB/trip"
         }
       },
       "crane": {
         "title": "Crane service",
         "hourly": {
-          "label": "Crane (lifting, loading, assembly)",
-          "price": "from {price} THB/hour (depends on the job)"
+          "label": "Crane (lifting, loading, installation)",
+          "price": "from {price} THB/hour (depending on the job)"
         }
       },
       "delivery": {
@@ -168,26 +169,27 @@ const sections = [
       }
     }
   },
+
   "th": {
     "pricing": {
       "title": "ราคา",
       "excavators": {
         "title": "รถขุด",
         "pc30": {
-          "label": "รถขุดเล็ก PC30",
+          "label": "รถขุดเล็ก",
           "price": "เริ่มต้น {price} บาท/ชั่วโมง"
         },
         "cat305cr": {
-          "label": "รถขุด CAT305CR",
+          "label": "รถขุดขนาดกลาง",
           "price": "เริ่มต้น {price} บาท/ชั่วโมง"
         },
         "pc128": {
-          "label": "รถขุดใหญ่ PC128",
+          "label": "รถขุดขนาดใหญ่",
           "price": "เริ่มต้น {price} บาท/ชั่วโมง"
         }
       },
       "trucks": {
-        "title": "รถบรรทุก / รถดั๊มพ์",
+        "title": "รถบรรทุก",
         "small4": {
           "label": "รถดั๊มพ์ 4 ล้อ",
           "price": "เริ่มต้น {price} บาท/เที่ยว"
@@ -197,14 +199,14 @@ const sections = [
           "price": "เริ่มต้น {price} บาท/เที่ยว"
         },
         "big10": {
-          "label": "รถดั๊มพ์ 10 ล้อ",
+          "label": "รถบรรทุก 10 ล้อ พร้อมเครน",
           "price": "เริ่มต้น {price} บาท/เที่ยว"
         }
       },
       "crane": {
         "title": "บริการเครน",
         "hourly": {
-          "label": "เครน (ยกของ ติดตั้ง ประกอบ)",
+          "label": "เครน (ยก โหลด ติดตั้ง)",
           "price": "เริ่มต้น {price} บาท/ชั่วโมง (ขึ้นอยู่กับลักษณะงาน)"
         }
       },

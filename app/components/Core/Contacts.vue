@@ -54,21 +54,21 @@ const socials = computed(() => [
   "ru": {
     "contacts": {
       "title": "Связаться с нами",
-      "subtitle": "Мы всегда на связи - звоните или пишите в удобный мессенджер.",
+      "subtitle": "Пишите или звоните - оперативно отвечаем, подскажем по технике, рассчитаем стоимость и поможем с выбором.",
       "call": "Позвонить"
     }
   },
   "en": {
     "contacts": {
-      "title": "Contact us",
-      "subtitle": "We're always available - call or message us anytime.",
+      "title": "Get in touch",
+      "subtitle": "Call or message us - quick replies, equipment guidance and free job estimates.",
       "call": "Call now"
     }
   },
   "th": {
     "contacts": {
       "title": "ติดต่อเรา",
-      "subtitle": "ติดต่อได้ทุกเวลา โทรหรือแชทได้เลย",
+      "subtitle": "สอบถามได้ตลอดเวลา ตอบไว แนะนำเครื่องจักรและประเมินงานให้ฟรี",
       "call": "โทรเลย"
     }
   }

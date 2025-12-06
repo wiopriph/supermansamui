@@ -62,98 +62,114 @@ useHead(() => ({
   "ru": {
     "services": {
       "schemaTitle": "Аренда спецтехники и услуги на Самуи",
-      "schemaDescription": "Земляные работы, услуги экскаваторов, самосвалов, кранов, вывоз грунта и доставка материалов на острове Самуи.",
-      "title": "Основные виды работ",
-      "subtitle": "Что мы делаем на объекте и как помогаем клиентам.",
+      "schemaDescription": "Экскаваторы, самосвалы, грузовики, краны, переезды, доставка материалов и вывоз мусора на острове Самуи.",
+      "title": "Наши услуги",
+      "subtitle": "Выполняем работы любой сложности: от копки и подъёма тяжёлых грузов до перевозок, доставки и вывоза мусора. Работаем по всей территории Самуи, надёжно и в оговорённые сроки.",
+
       "earthworks": {
         "title": "Земляные работы",
-        "text": "Котлованы, траншеи, планировка и подготовка участка под дом, дорогу или парковку. Работаем с любым рельефом Самуи, учитываем грунт, уклоны и дренаж, чтобы участок был готов к строительству."
+        "text": "Копка котлованов и траншей, формирование рельефа, подготовка площадок под строительство, бассейны и другие проекты."
       },
+
       "excavators": {
-        "title": "Работа экскаваторов",
-        "text": "Мини и крупные экскаваторы для аккуратной работы рядом с домами и коммуникациями. Выполняем копку, расчистку склонов, подготовку площадок под фундамент, бассейн или парковку."
+        "title": "Услуги экскаватора",
+        "text": "Экскаваторы разных размеров для аккуратной и точной работы рядом с домами, дорогами и коммуникациями. Копка, расчистка и подготовка территорий."
       },
+
       "moving": {
         "title": "Переезды и грузоперевозки",
-        "text": "Перевозим мебель, технику, стройматериалы и оборудование по всему Самуи. Помогаем с погрузкой и закреплением, чтобы всё приехало быстро и без повреждений."
+        "text": "Перевозим мебель, имущество, технику, стройматериалы и оборудование. Осторожная погрузка, безопасная транспортировка и доставка в нужное время."
       },
+
       "soilRemoval": {
         "title": "Вывоз грунта и мусора",
-        "text": "Самосвалы для вывоза грунта, строительного мусора, камня, бетона и тяжёлых отходов. Очищаем участок после стройки или земляных работ."
+        "text": "Самосвалы для вывоза грунта, строительного мусора, бетона, камней и тяжёлых отходов. Быстро очищаем территорию после работ."
       },
+
       "materials": {
-        "title": "Доставка щебня и материалов",
-        "text": "Привоз щебня, песка, камня и инертных материалов для подсыпки, дренажа и оснований. Помогаем рассчитать объём и доставляем напрямую на участок."
+        "title": "Доставка материалов",
+        "text": "Привоз песка, щебня, камня, инертных и строительных материалов. Доставляем точно к месту разгрузки."
       },
+
       "cranes": {
         "title": "Крановые работы",
-        "text": "Подъём и перемещение тяжёлых конструкций, септиков, контейнеров и оборудования. Работаем в стеснённых условиях, обеспечиваем точность и безопасность."
+        "text": "Подъём и перемещение тяжёлых конструкций, оборудования, контейнеров и грузов. Работы в ограниченных условиях с высокой точностью."
       }
     }
   },
-
   "en": {
     "services": {
-      "schemaTitle": "Heavy equipment and site services on Koh Samui",
-      "schemaDescription": "Earthworks, excavator hire, dump trucks, crane services, soil removal and material delivery on Koh Samui.",
-      "title": "Main types of work",
-      "subtitle": "What we do on site and how we help our clients.",
+      "schemaTitle": "Heavy equipment & transport services on Koh Samui",
+      "schemaDescription": "Excavators, dump trucks, transport, cranes, moving services, material delivery and waste removal on Koh Samui.",
+      "title": "Our services",
+      "subtitle": "We handle a wide range of tasks: digging, lifting, transport, delivery and debris removal. Reliable work across the entire island with on-time arrival.",
+
       "earthworks": {
         "title": "Earthworks",
-        "text": "Foundations, trenches, leveling and full site preparation for houses, roads and parking. We work with any terrain on Koh Samui and plan proper slopes and drainage."
+        "text": "Excavation of foundations and trenches, terrain shaping and site preparation for construction, pools and other projects."
       },
+
       "excavators": {
-        "title": "Excavator works",
-        "text": "Mini and large excavators for precise digging near houses and utilities. Slope shaping, site clearance and preparation for foundations, pools or parking areas."
+        "title": "Excavator services",
+        "text": "Mini and large excavators for precise work near buildings, roads and utilities. Digging, clearing and preparing various types of sites."
       },
+
       "moving": {
         "title": "Moving & cargo transport",
-        "text": "Transport of furniture, appliances, materials and equipment across Koh Samui. We assist with loading and securing to ensure safe and timely delivery."
+        "text": "Safe transport of furniture, belongings, materials and heavy equipment. Careful loading and reliable delivery anywhere on Koh Samui."
       },
+
       "soilRemoval": {
         "title": "Soil & debris removal",
-        "text": "Dump trucks for removing soil, construction waste, broken concrete, rocks and heavy debris. Fast and clean site preparation for the next stage."
+        "text": "Dump trucks for removing soil, construction waste, concrete, rocks and heavy debris. Fast cleanup after construction or excavation."
       },
+
       "materials": {
-        "title": "Gravel & material delivery",
-        "text": "Delivery of gravel, sand, rock and aggregates for backfilling, drainage and base layers. We help estimate volume and deliver directly to your site."
+        "title": "Material delivery",
+        "text": "Delivery of sand, gravel, stone and construction materials. Unloading exactly where you need it."
       },
+
       "cranes": {
         "title": "Crane services",
-        "text": "Lifting and positioning heavy structures, tanks, containers and equipment. Ideal for tight spaces requiring precision and safety."
+        "text": "Lifting and positioning heavy structures, tanks, containers and equipment. Accurate operation in tight or complex spaces."
       }
     }
   },
-
   "th": {
     "services": {
-      "schemaTitle": "บริการเครื่องจักรหนักและงานไซต์บนเกาะสมุย",
-      "schemaDescription": "งานดิน รถขุด รถดั๊มพ์ เครน ขนย้ายดิน เศษวัสดุ และส่งวัสดุก่อสร้างบนเกาะสมุย.",
-      "title": "งานหลักที่เรารับทำ",
-      "subtitle": "งานที่เราดูแลให้ลูกค้าหน้างานบนเกาะสมุย.",
+      "schemaTitle": "บริการเครื่องจักรหนักและขนส่งบนเกาะสมุย",
+      "schemaDescription": "รถขุด รถดั๊มพ์ รถบรรทุก เครน บริการขนย้ายบ้าน ส่งวัสดุ และขนเศษวัสดุบนเกาะสมุย.",
+      "title": "บริการของเรา",
+      "subtitle": "รับงานหลากหลาย ตั้งแต่งานขุด ยกของหนัก ขนส่ง ส่งวัสดุ ไปจนถึงเคลียร์พื้นที่ ทำงานทั่วเกาะสมุย ตรงเวลา และเชื่อถือได้.",
+
       "earthworks": {
         "title": "งานดิน",
-        "text": "ขุดรากฐาน ทำร่อง ปรับระดับพื้นที่และเตรียมไซต์งานสำหรับบ้าน ถนน หรือที่จอดรถ พร้อมคำนึงถึงความลาดเอียงและการระบายน้ำ."
+        "text": "ขุดฟุตติ้ง ทำร่อง ขุดบ่อ ปรับระดับพื้นที่ และเตรียมไซต์สำหรับงานก่อสร้างหรือโครงการต่าง ๆ."
       },
+
       "excavators": {
-        "title": "งานรถขุด",
-        "text": "รถขุดเล็กและใหญ่สำหรับงานละเอียด ใกล้บ้าน กำแพง และแนวท่อ พร้อมเตรียมพื้นที่สำหรับฐานราก สระว่ายน้ำ หรือที่จอดรถ."
+        "title": "บริการรถขุด",
+        "text": "รถขุดหลายขนาดสำหรับงานที่ต้องการความละเอียด ใกล้บ้าน ถนน หรือท่อสาธารณูปโภค พร้อมงานเคลียร์พื้นที่."
       },
+
       "moving": {
         "title": "ขนย้ายบ้าน & ขนส่งสินค้า",
-        "text": "ขนย้ายเฟอร์นิเจอร์ เครื่องใช้ไฟฟ้า วัสดุก่อสร้าง และอุปกรณ์ต่าง ๆ พร้อมช่วยยกและจัดวางให้ปลอดภัย ส่งตรงเวลา."
+        "text": "ขนย้ายเฟอร์นิเจอร์ ของใช้ วัสดุก่อสร้าง และอุปกรณ์ต่าง ๆ พร้อมบริการยกและจัดวาง ส่งตรงเวลาและปลอดภัย."
       },
+
       "soilRemoval": {
         "title": "ขนย้ายดินและเศษวัสดุ",
-        "text": "รถดั๊มพ์สำหรับขนดิน เศษวัสดุก่อสร้าง ปูนแตก และของหนัก เคลียร์พื้นที่ให้พร้อมสำหรับงานถัดไป."
+        "text": "รถดั๊มพ์สำหรับขนดิน เศษวัสดุก่อสร้าง ปูนแตก หิน และของหนัก เคลียร์พื้นที่หลังทำงาน."
       },
+
       "materials": {
-        "title": "ส่งหิน ทราย และวัสดุ",
-        "text": "บริการส่งหิน ทราย หินคลุก และวัสดุก่อสร้างสำหรับถม ปรับระดับ และทำฐานงาน พร้อมช่วยประเมินปริมาณ."
+        "title": "ส่งวัสดุก่อสร้าง",
+        "text": "บริการส่งทราย หิน หินคลุก และวัสดุก่อสร้างต่าง ๆ พร้อมเทลงจุดที่ลูกค้าต้องการ."
       },
+
       "cranes": {
         "title": "งานเครน",
-        "text": "ยก เคลื่อนย้าย และติดตั้งโครงสร้าง ถังบำบัด คอนเทนเนอร์ และอุปกรณ์หนัก แม่นยำและปลอดภัยในพื้นที่แคบ."
+        "text": "ยกและเคลื่อนย้ายโครงสร้าง ถังบำบัด คอนเทนเนอร์ และเครื่องจักรหนัก ทำงานแม่นยำในพื้นที่แคบ."
       }
     }
   }

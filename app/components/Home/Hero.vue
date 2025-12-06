@@ -26,24 +26,24 @@ const links = computed(() => [
 {
   "ru": {
     "hero": {
-      "h1": "Аренда спецтехники на Самуи",
-      "lead": "Предоставляем экскаваторы разных размеров, самосвалы, грузовики и технику с краном для копки котлованов, расчистки участков, вывоза грунта, доставки материалов и любых земляных работ на острове Самуи. Работаем быстро, аккуратно и по честным ценам.",
+      "h1": "Аренда спецтехники и экскаваторов на Самуи",
+      "lead": "Экскаваторы для копки фундаментов, траншей и подготовки участка. Самосвалы и грузовики для вывоза грунта, доставки материалов, перевозки грузов и переездов на Самуи. Быстрый выезд, опытные операторы и честные цены.",
       "primary": "Позвонить",
       "secondary": "Смотреть услуги"
     }
   },
   "en": {
     "hero": {
-      "h1": "Heavy equipment rental on Koh Samui",
-      "lead": "Mini and large excavators, dump trucks, crane trucks and loaders for excavation, land clearing, soil removal, material delivery and all types of earthworks on Koh Samui. Fast work, fair pricing and experienced local operators.",
+      "h1": "Excavator & Heavy Equipment Rental on Koh Samui",
+      "lead": "Excavators for foundation digging, trenching and land preparation. Dump trucks and transport vehicles for soil removal, material delivery, cargo transport and moving services across Koh Samui. Fast response, skilled operators and fair pricing.",
       "primary": "Call now",
       "secondary": "View services"
     }
   },
   "th": {
     "hero": {
-      "h1": "บริการเช่าเครื่องจักรหนักบนเกาะสมุย",
-      "lead": "ให้บริการรถขุดหลายขนาด รถดั๊มพ์ รถบรรทุก และรถเครน สำหรับงานขุดดิน เคลียร์พื้นที่ ขนย้ายดิน ส่งวัสดุ และงานดินทุกประเภทบนเกาะสมุย ทำงานรวดเร็ว ราคาเป็นกันเอง พร้อมคนขับมีประสบการณ์",
+      "h1": "บริการเช่าเครื่องจักรหนักและรถขุดบนเกาะสมุย",
+      "lead": "รถขุดสำหรับงานพื้นฐาน ขุดฟุตติ้ง วางท่อ และเตรียมพื้นที่ พร้อมรถดั๊มพ์และรถบรรทุกสำหรับขนดิน ส่งวัสดุ ขนย้ายสิ่งของ และบริการย้ายบ้านบนเกาะสมุย ทำงานเร็ว ราคาเป็นกันเอง พร้อมคนขับมืออาชีพ",
       "primary": "โทรเลย",
       "secondary": "ดูบริการทั้งหมด"
     }

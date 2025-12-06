@@ -58,7 +58,7 @@ const year = new Date().getFullYear();
         class="flex items-center gap-2"
       >
         <img
-          src="/logo.png"
+          src="/logo.webp"
           alt="Superman Samui"
           class="h-10 w-auto"
         >

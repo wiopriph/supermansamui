@@ -96,13 +96,13 @@ const phoneLink = computed(() => `tel:${CONTACT_PHONE}`);
         aria-label="Superman Samui"
       >
         <img
-          src="/man.png"
+          src="/man.webp"
           alt="Superman Samui"
           class="h-10 w-auto sm:hidden"
         >
 
         <img
-          src="/logo.png"
+          src="/logo.webp"
           alt="Superman Samui"
           class="h-10 w-auto hidden sm:block"
         >
