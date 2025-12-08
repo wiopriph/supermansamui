@@ -3,8 +3,6 @@ import { CONTACT_PHONE } from '~/constants/contacts';
 
 
 const { t } = useI18n();
-const url = useRequestURL();
-
 
 const heroTitle = computed(() => t('excavator.hero.title'));
 const heroDescription = computed(() => t('excavator.hero.description'));
