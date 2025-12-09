@@ -217,7 +217,6 @@ const jsonLd = computed(() => ({
         name: t('excavator.tasks.title'),
         itemListElement: tasksItems.value.map((item, index) => ({
           '@type': 'Offer',
-          position: index + 1,
           name: item.title,
           description: item.description,
           itemOffered: {
@@ -239,7 +238,7 @@ useHead(() => {
   const title = t('excavator.seo.title');
   const description = t('excavator.seo.description');
   const keywords = t('excavator.seo.keywords');
-  const image = 'https://supermansamui.com/images/equipment/excavators/cat-305cr.webp';
+  const image = 'https://supermansamui.com/uten.webp';
 
   return {
     title,
