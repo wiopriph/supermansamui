@@ -1,9 +1,4 @@
 <script setup lang="ts">
-type SpecItem = {
-  label: string
-  value: string | number
-};
-
 type PriceItem = {
   label: string
   value: string | number
@@ -12,8 +7,8 @@ type PriceItem = {
 type EquipmentItem = {
   title: string
   subtitle?: string
+  description?: string
   image?: string
-  specs: SpecItem[]
   prices: PriceItem[]
   buttonText?: string
 };
@@ -46,8 +41,8 @@ const props = defineProps<{
         :key="index"
         :title="item.title"
         :subtitle="item.subtitle"
+        :description="item.description"
         :image="item.image"
-        :specs="item.specs"
         :prices="item.prices"
         :buttonText="item.buttonText"
       />

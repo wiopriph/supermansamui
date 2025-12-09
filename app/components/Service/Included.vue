@@ -13,7 +13,7 @@ const props = defineProps<{
 
 <template>
   <section class="py-10 space-y-6 border-b border-gray-50">
-    <h2 class="text-xl md:text-2xl font-semibold text-center">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-center">
       {{ props.title }}
     </h2>
 
