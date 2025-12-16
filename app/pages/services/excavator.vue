@@ -215,7 +215,7 @@ const jsonLd = computed(() => ({
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: t('excavator.tasks.title'),
-        itemListElement: tasksItems.value.map((item, index) => ({
+        itemListElement: tasksItems.value.map((item) => ({
           '@type': 'Offer',
           name: item.title,
           description: item.description,

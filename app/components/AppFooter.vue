@@ -8,14 +8,10 @@ const items = computed(() => [
     label: t('footer.excavator'),
     to: localeRoute({ name: 'services-excavator' }),
   },
-  // {
-  //   label: t('footer.services'),
-  //   to: localeRoute({ name: 'services' }),
-  // },
-  // {
-  //   label: t('footer.contacts'),
-  //   to: localeRoute({ name: 'contacts' }),
-  // },
+  {
+    label: t('footer.truck'),
+    to: localeRoute({ name: 'services-truck' }),
+  },
 ]);
 
 const year = new Date().getFullYear();
@@ -23,27 +19,24 @@ const year = new Date().getFullYear();
 
 <i18n lang="json">
 {
-  "en": {
-    "footer": {
-      "excavator": "Excavator Rental",
-      "services": "Services",
-      "contacts": "Contacts",
-      "rights": "All rights reserved."
-    }
-  },
   "ru": {
     "footer": {
       "excavator": "Аренда экскаватора",
-      "services": "Услуги",
-      "contacts": "Контакты",
+      "truck": "Аренда грузовиков",
       "rights": "Все права защищены."
+    }
+  },
+  "en": {
+    "footer": {
+      "excavator": "Excavator Rental",
+      "truck": "Truck Rental",
+      "rights": "All rights reserved."
     }
   },
   "th": {
     "footer": {
       "excavator": "บริการเช่ารถขุด",
-      "services": "บริการ",
-      "contacts": "ติดต่อ",
+      "truck": "บริการเช่ารถบรรทุก",
       "rights": "สงวนลิขสิทธิ์ทั้งหมด"
     }
   }

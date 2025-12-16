@@ -3,8 +3,6 @@ import { CONTACT_PHONE } from '~/constants/contacts';
 
 
 const { t } = useI18n();
-// const localePath = useLocalePath();
-
 
 const links = computed(() => [
   {
@@ -17,7 +15,8 @@ const links = computed(() => [
   //   label: t('hero.secondary'),
   //   icon: 'i-lucide-list-tree',
   //   variant: 'soft',
-  //   to: localePath('/services'),
+  //   to: `https://wa.me/${CONTACT_PHONE}`,
+  //   target: '_blank',
   // },
 ]);
 </script>
@@ -26,26 +25,26 @@ const links = computed(() => [
 {
   "ru": {
     "hero": {
-      "h1": "Аренда спецтехники и экскаваторов на Самуи",
+      "h1": "Аренда экскаваторов и грузовиков на Самуи",
       "lead": "Экскаваторы для копки фундаментов, траншей и подготовки участка. Самосвалы и грузовики для вывоза грунта, доставки материалов, перевозки грузов и переездов на Самуи. Быстрый выезд, опытные операторы и честные цены.",
       "primary": "Позвонить",
-      "secondary": "Смотреть услуги"
+      "secondary": "Написать в WhatsApp"
     }
   },
   "en": {
     "hero": {
-      "h1": "Excavator & Heavy Equipment Rental on Koh Samui",
+      "h1": "Excavator & Truck Rental on Koh Samui",
       "lead": "Excavators for foundation digging, trenching and land preparation. Dump trucks and transport vehicles for soil removal, material delivery, cargo transport and moving services across Koh Samui. Fast response, skilled operators and fair pricing.",
       "primary": "Call now",
-      "secondary": "View services"
+      "secondary": "Message on WhatsApp"
     }
   },
   "th": {
     "hero": {
-      "h1": "บริการเช่าเครื่องจักรหนักและรถขุดบนเกาะสมุย",
+      "h1": "บริการเช่ารถขุดและรถบรรทุกบนเกาะสมุย",
       "lead": "รถขุดสำหรับงานพื้นฐาน ขุดฟุตติ้ง วางท่อ และเตรียมพื้นที่ พร้อมรถดั๊มพ์และรถบรรทุกสำหรับขนดิน ส่งวัสดุ ขนย้ายสิ่งของ และบริการย้ายบ้านบนเกาะสมุย ทำงานเร็ว ราคาเป็นกันเอง พร้อมคนขับมืออาชีพ",
       "primary": "โทรเลย",
-      "secondary": "ดูบริการทั้งหมด"
+      "secondary": "แชทผ่าน WhatsApp"
     }
   }
 }

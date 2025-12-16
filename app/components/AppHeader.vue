@@ -17,14 +17,10 @@ const items = computed<NavigationMenuItem[]>(() => [
     label: t('header.excavator'),
     to: localeRoute({ name: 'services-excavator' }),
   },
-  // {
-  //   label: t('header.services'),
-  //   to: localeRoute({ name: 'services' }),
-  // },
-  // {
-  //   label: t('header.contacts'),
-  //   to: localeRoute({ name: 'contacts' }),
-  // },
+  {
+    label: t('header.truck'),
+    to: localeRoute({ name: 'services-truck' }),
+  },
 ]);
 
 const socials = computed(() =>
@@ -57,21 +53,19 @@ const phoneLink = computed(() => `tel:${CONTACT_PHONE}`);
 
 <i18n lang="json">
 {
-  "en": {
-    "header": {
-      "contactUs": "Contact us",
-      "excavator": "Excavator Rental",
-      "services": "Services",
-      "contacts": "Contacts",
-      "title": "Superman Samui"
-    }
-  },
   "ru": {
     "header": {
       "contactUs": "Свяжитесь с нами",
       "excavator": "Аренда экскаватора",
-      "services": "Услуги",
-      "contacts": "Контакты",
+      "truck": "Аренда грузовиков",
+      "title": "Superman Samui"
+    }
+  },
+  "en": {
+    "header": {
+      "contactUs": "Contact us",
+      "excavator": "Excavator Rental",
+      "truck": "Truck Rental",
       "title": "Superman Samui"
     }
   },
@@ -79,8 +73,7 @@ const phoneLink = computed(() => `tel:${CONTACT_PHONE}`);
     "header": {
       "contactUs": "ติดต่อเรา",
       "excavator": "บริการเช่ารถขุด",
-      "services": "บริการ",
-      "contacts": "ติดต่อ",
+      "truck": "บริการเช่ารถบรรทุก",
       "title": "Superman Samui"
     }
   }

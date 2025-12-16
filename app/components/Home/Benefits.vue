@@ -15,96 +15,96 @@ const benefits = [
 {
   "ru": {
     "benefits": {
-      "badge": "Почему выбирают Superman Samui",
-      "lead": "Берём на себя технику, доставку, расчёты и организацию работ - вы просто ставите задачу и получаете результат.",
+      "badge": "Почему с нами удобно работать",
+      "lead": "Мы берём на себя технику, людей и организацию работ. Вы просто говорите, что нужно сделать, — мы подбираем решение.",
       "items": {
         "consult": {
-          "title": "Бесплатный выезд и оценка",
-          "text": "Осматриваем участок, определяем объём работ и подбираем технику. Даём понятную смету без скрытых расходов."
+          "title": "Поможем выбрать технику",
+          "text": "Расскажете задачу — подскажем, какой экскаватор или грузовик подойдёт и во сколько это обойдётся."
         },
         "delivery": {
-          "title": "Чёткая подача техники",
-          "text": "Привозим экскаваторы и грузовики точно в назначенное время - без задержек и переносов."
+          "title": "Приезжаем в договорённое время",
+          "text": "Сразу договариваемся о дне и времени. Приезжаем, когда обещали, без сюрпризов и переносов в последний момент."
         },
         "operators": {
-          "title": "Профессиональные операторы",
-          "text": "Опытные местные машинисты и водители, которые знают рельеф Самуи и работают аккуратно даже в стеснённых условиях."
+          "title": "Местные опытные операторы",
+          "text": "Люди, которые знают рельеф Самуи и работают аккуратно рядом с домами, заборами и на узких подъездах."
         },
         "fuel": {
-          "title": "Топливо уже включено",
-          "text": "Мы сами заправляем и обслуживаем технику. Вы платите только за фактические часы работы."
+          "title": "Топливо и обслуживание на нас",
+          "text": "Вы платите за работу. Заправка, расходники и базовое обслуживание техники уже включены в стоимость."
         },
         "condition": {
-          "title": "Надёжная и обслуженная техника",
-          "text": "Проводим регулярное ТО и проверяем машины перед каждым выездом, чтобы работа проходила без простоев."
+          "title": "Техника в рабочем состоянии",
+          "text": "Следим за машиной и проверяем её перед выездом, чтобы не было простоев и нервов на объекте."
         },
         "payment": {
-          "title": "Удобные способы оплаты",
-          "text": "Принимаем наличные, переводы на тайский счёт и другие варианты - подберём удобный формат под вас."
+          "title": "Удобные варианты оплаты",
+          "text": "Можно оплатить наличными или переводом на тайский счёт. Подберём вариант, который будет удобен вам."
         }
       }
     }
   },
   "en": {
     "benefits": {
-      "badge": "Why clients choose Superman Samui",
-      "lead": "We handle equipment, logistics and scheduling - you set the task, and we deliver a clean, reliable result.",
+      "badge": "Why it’s easy to work with us",
+      "lead": "We take care of equipment, operators and scheduling. You simply tell us what needs to be done — we handle the rest.",
       "items": {
         "consult": {
-          "title": "Free site visit & estimate",
-          "text": "We inspect the site, assess the job and recommend the right equipment. Clear pricing with no hidden fees."
+          "title": "We help you choose the right machine",
+          "text": "Tell us about your project and we’ll recommend the right excavator or truck and give an approximate budget."
         },
         "delivery": {
-          "title": "On-time equipment delivery",
-          "text": "Excavators and trucks arrive exactly at the scheduled time - no delays or last-minute changes."
+          "title": "We arrive when we promise",
+          "text": "We agree on a clear day and time in advance and stick to it — no last-minute delays or sudden changes."
         },
         "operators": {
-          "title": "Skilled and reliable operators",
-          "text": "Experienced local operators who know Samui’s terrain and work safely even in tight or complex locations."
+          "title": "Local, experienced operators",
+          "text": "Operators who know Samui, work safely near houses and walls, and can handle tight or tricky access roads."
         },
         "fuel": {
-          "title": "Fuel included",
-          "text": "We take care of refuelling and maintenance. You pay only for rental hours - nothing extra on top."
+          "title": "Fuel and maintenance included",
+          "text": "You pay for the job, not for refuelling. Fuel and basic maintenance of the machines are already included."
         },
         "condition": {
-          "title": "Well-maintained machines",
-          "text": "Regular servicing and pre-job inspections help prevent breakdowns and downtime on your project."
+          "title": "Equipment ready to work",
+          "text": "We service and check the machines before sending them out to minimise breakdowns and downtime on your site."
         },
         "payment": {
-          "title": "Flexible payment options",
-          "text": "Cash, transfers to Thai bank accounts and other methods - we adapt to what works best for you."
+          "title": "Easy payment options",
+          "text": "Cash or bank transfer to a Thai account — we’ll use whichever option is more convenient for you."
         }
       }
     }
   },
   "th": {
     "benefits": {
-      "badge": "ทำไมลูกค้าเลือก Superman Samui",
-      "lead": "เราดูแลเรื่องเครื่องจักร การขนส่ง และการจัดตารางงานให้ครบ คุณเพียงบอกงานที่ต้องการ แล้วรอผลลัพธ์ที่เรียบร้อย.",
+      "badge": "ทำไมทำงานกับเราถึงสะดวก",
+      "lead": "เราดูแลทั้งเครื่องจักร คนขับ และการจัดตารางงานให้ครบ คุณเพียงบอกว่างานต้องการอะไร เราช่วยจัดการให้.",
       "items": {
         "consult": {
-          "title": "สำรวจหน้างานและประเมินราคาฟรี",
-          "text": "ลงพื้นที่จริง ประเมินปริมาณงาน แนะนำเครื่องจักรที่เหมาะสม และแจ้งราคาคร่าว ๆ อย่างชัดเจน ไม่มีค่าใช้จ่ายแอบแฝง."
+          "title": "ช่วยแนะนำเครื่องจักรที่เหมาะสม",
+          "text": "เล่าให้งานที่ต้องทำ เราจะแนะนำว่าควรใช้รถขุดหรือรถบรรทุกแบบไหน และประเมินค่าใช้จ่ายคร่าว ๆ ให้."
         },
         "delivery": {
-          "title": "ส่งเครื่องจักรตรงเวลา",
-          "text": "นำรถขุดหรือรถบรรทุกไปถึงไซต์งานตามเวลานัดเป๊ะ ไม่เลื่อน ไม่ดีเลย์."
+          "title": "ไปถึงหน้างานตามเวลานัด",
+          "text": "ตกลงวันและเวลาชัดเจนล่วงหน้า แล้วไปตามนัด ไม่เลื่อน ไม่ดีเลย์แบบไม่มีเหตุผล."
         },
         "operators": {
-          "title": "ทีมงานมืออาชีพ",
-          "text": "คนขับและช่างควบคุมเครื่องจักรที่มีประสบการณ์ รู้พื้นที่บนเกาะสมุย และทำงานได้ดีแม้ในพื้นที่แคบหรืองานซับซ้อน."
+          "title": "ทีมงานท้องถิ่นมีประสบการณ์",
+          "text": "คนขับที่รู้พื้นที่บนเกาะสมุยดี ทำงานได้ปลอดภัย ใกล้บ้าน รั้ว หรือทางเข้าที่แคบ."
         },
         "fuel": {
-          "title": "รวมค่าน้ำมันแล้ว",
-          "text": "เราดูแลเรื่องเติมน้ำมันและการบำรุงรักษาให้ทั้งหมด ลูกค้าจ่ายเฉพาะค่าเช่าและชั่วโมงทำงานจริง."
+          "title": "รวมค่าน้ำมันและดูแลเครื่องแล้ว",
+          "text": "ลูกค้าจ่ายเฉพาะค่างาน ส่วนค่าน้ำมันและการดูแลเครื่องพื้นฐาน เราดูแลให้ทั้งหมด."
         },
         "condition": {
-          "title": "เครื่องจักรพร้อมใช้งานเสมอ",
-          "text": "บำรุงรักษาเป็นประจำ และตรวจเช็คสภาพก่อนออกงานทุกครั้ง เพื่อให้งานเดินได้ลื่นไหลไม่สะดุด."
+          "title": "เครื่องพร้อมใช้งานเสมอ",
+          "text": "มีการบำรุงรักษาและตรวจเช็คก่อนออกงานทุกครั้ง เพื่อลดโอกาสที่เครื่องจะเสียระหว่างทำงาน."
         },
         "payment": {
-          "title": "ชำระเงินได้หลายรูปแบบ",
-          "text": "รองรับเงินสด โอนเข้าบัญชีไทย และตัวเลือกอื่น ๆ ตามที่ลูกค้าสะดวก."
+          "title": "จ่ายเงินได้หลายแบบ",
+          "text": "จะจ่ายเป็นเงินสด หรือโอนเข้าบัญชีไทยก็ได้ เลือกวิธีที่สะดวกสำหรับคุณ."
         }
       }
     }
@@ -124,31 +124,15 @@ const benefits = [
       </p>
     </div>
 
-    <div class="grid gap-4 md:gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <UCard
-        v-for="item in benefits"
-        :key="item.key"
-        class="h-full"
-      >
-        <div class="flex flex-col gap-3 h-full">
-          <div class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary">
-            <UIcon
-              :name="item.icon"
-              class="h-5 w-5"
-            />
-          </div>
-
-          <div class="space-y-1">
-            <p class="font-semibold text-sm sm:text-base">
-              {{ t(`benefits.items.${item.key}.title`) }}
-            </p>
-
-            <p class="text-xs sm:text-sm text-gray-600">
-              {{ t(`benefits.items.${item.key}.text`) }}
-            </p>
-          </div>
-        </div>
-      </UCard>
-    </div>
+    <UPageGrid class="pt-2">
+      <UPageFeature
+        v-for="(item, index) in benefits"
+        :key="index"
+        :icon="item.icon || 'i-heroicons-check-circle'"
+        :title="t(`benefits.items.${item.key}.title`)"
+        :description="t(`benefits.items.${item.key}.text`)"
+        :ui="{ title: 'text-gray-600' }"
+      />
+    </UPageGrid>
   </section>
 </template>
