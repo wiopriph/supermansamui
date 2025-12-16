@@ -264,7 +264,7 @@ useHead(() => {
   const title = t('trucks.seo.title');
   const description = t('trucks.seo.description');
   const keywords = t('trucks.seo.keywords');
-  const image = 'https://supermansamui.com/uten-truck.webp';
+  const image = 'https://supermansamui.com/truck.webp';
 
   return {
     title,
