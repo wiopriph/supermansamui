@@ -19,7 +19,8 @@ const props = defineProps<{
     >
       <img
         :src="imageSrc"
-        alt=""
+        :alt="title"
+        fetchpriority="high"
         class="
           absolute inset-0 w-full h-full
           object-cover
