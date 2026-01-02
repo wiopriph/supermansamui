@@ -2,7 +2,6 @@
 import type { NavigationMenuItem } from '@nuxt/ui';
 import {
   CONTACT_PHONE,
-  SOCIALS_FACEBOOK,
   SOCIALS_LINE,
   SOCIALS_WHATSAPP,
   SOCIALS_MESSENGER,
@@ -26,19 +25,14 @@ const items = computed<NavigationMenuItem[]>(() => [
 const socials = computed(() =>
   [
     {
-      label: 'Facebook',
-      icon: 'i-simple-icons-facebook',
-      href: SOCIALS_FACEBOOK,
+      label: 'WhatsApp',
+      icon: 'i-simple-icons-whatsapp',
+      href: SOCIALS_WHATSAPP,
     },
     {
       label: 'LINE',
       icon: 'i-simple-icons-line',
       href: SOCIALS_LINE,
-    },
-    {
-      label: 'WhatsApp',
-      icon: 'i-simple-icons-whatsapp',
-      href: SOCIALS_WHATSAPP,
     },
     {
       label: 'Messenger',
@@ -155,19 +149,19 @@ const phoneLink = computed(() => `tel:${CONTACT_PHONE}`);
             {{ t('header.contactUs') }}
           </p>
 
-          <ULink
-            :to="phoneLink"
-            class="flex items-center gap-3 text-sm"
-          >
-            <UIcon
-              name="i-lucide-phone"
-              class="size-5"
-            />
-
-            <span class="font-medium">{{ CONTACT_PHONE }}</span>
-          </ULink>
-
           <div class="flex flex-col gap-3">
+            <ULink
+              :to="phoneLink"
+              class="flex items-center gap-3 text-sm"
+            >
+              <UIcon
+                name="i-lucide-phone"
+                class="size-5"
+              />
+
+              <span class="font-medium">{{ CONTACT_PHONE }}</span>
+            </ULink>
+
             <ULink
               v-for="social in socials"
               :key="social.label"

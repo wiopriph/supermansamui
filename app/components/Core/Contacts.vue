@@ -16,14 +16,14 @@ const phoneLink = `tel:${CONTACT_PHONE}`;
 
 const socials = computed(() => [
   {
+    icon: 'i-simple-icons-whatsapp',
+    label: 'WhatsApp',
+    link: SOCIALS_WHATSAPP,
+  },
+  {
     icon: 'i-simple-icons-line',
     label: 'LINE',
     link: SOCIALS_LINE,
-  },
-  {
-    icon: 'i-simple-icons-facebook',
-    label: 'Facebook',
-    link: SOCIALS_FACEBOOK,
   },
   {
     icon: 'i-simple-icons-messenger',
@@ -31,9 +31,9 @@ const socials = computed(() => [
     link: SOCIALS_MESSENGER,
   },
   {
-    icon: 'i-simple-icons-whatsapp',
-    label: 'WhatsApp',
-    link: SOCIALS_WHATSAPP,
+    icon: 'i-simple-icons-facebook',
+    label: 'Facebook',
+    link: SOCIALS_FACEBOOK,
   },
   {
     icon: 'i-simple-icons-telegram',
