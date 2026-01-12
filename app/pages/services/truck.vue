@@ -52,11 +52,11 @@ const equipmentItems = computed(() => ([
     prices: [
       {
         label: t('trucks.equipment.prices.trip'),
-        value: 'от 800 THB',
+        value: '800 THB',
       },
       {
         label: t('trucks.equipment.prices.day'),
-        value: 'от 3 500 THB',
+        value: '3 500 THB',
       },
     ],
   },
@@ -68,11 +68,11 @@ const equipmentItems = computed(() => ([
     prices: [
       {
         label: t('trucks.equipment.prices.trip'),
-        value: 'от 700 THB',
+        value: '700 THB',
       },
       {
         label: t('trucks.equipment.prices.day'),
-        value: 'от 3 000 THB',
+        value: '3 000 THB',
       },
     ],
   },
@@ -84,11 +84,11 @@ const equipmentItems = computed(() => ([
     prices: [
       {
         label: t('trucks.equipment.prices.trip'),
-        value: 'от 1 800 THB',
+        value: '1 800 THB',
       },
       {
         label: t('trucks.equipment.prices.day'),
-        value: 'от 6 500 THB',
+        value: '6 500 THB',
       },
     ],
   },
@@ -100,11 +100,11 @@ const equipmentItems = computed(() => ([
     prices: [
       {
         label: t('trucks.equipment.prices.trip'),
-        value: 'от 1 500 THB',
+        value: '1 500 THB',
       },
       {
         label: t('trucks.equipment.prices.day'),
-        value: 'от 5 500 THB',
+        value: '5 500 THB',
       },
     ],
   },
@@ -116,11 +116,11 @@ const equipmentItems = computed(() => ([
     prices: [
       {
         label: t('trucks.equipment.prices.trip'),
-        value: 'от 2 500 THB',
+        value: '2 500 THB',
       },
       {
         label: t('trucks.equipment.prices.day'),
-        value: 'от 8 000 THB',
+        value: '8 000 THB',
       },
     ],
   },
