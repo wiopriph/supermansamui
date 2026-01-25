@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { CONTACT_PHONE } from '~/constants/contacts';
-
-
 const { t } = useI18n();
 
 const heroTitle = computed(() => t('excavator.hero.title'));
@@ -278,8 +275,7 @@ useHead(() => {
       },
       "hero": {
         "title": "Аренда экскаватора на Самуи",
-        "description": "Копаем, вывозим и готовим участок под дом, септик, бассейн, дорогу или дренаж.",
-        "primary": "Позвонить"
+        "description": "Копаем, вывозим и готовим участок под дом, септик, бассейн, дорогу или дренаж."
       },
       "intro": "Мы помогаем решать любые земляные задачи на Самуи: выкопать котлован или септик, сделать траншеи под воду и электричество, расчистить и выровнять участок, вывезти лишний грунт или завезти новый. Работаем со своими экскаваторами и грузовиками, с местными операторами, которые знают рельеф острова и особенности грунта. Вы присылаете фото и задачу - мы подбираем технику, называем честный бюджет и в оговорённый день выполняем работу.",
       "tasks": {
@@ -412,8 +408,7 @@ useHead(() => {
       },
       "hero": {
         "title": "Excavator rental on Koh Samui",
-        "description": "We dig, clear and prepare your land for a house, septic tank, pool, road or drainage. Clear fixed pricing per job instead of endless hourly billing.",
-        "primary": "Call and discuss your job"
+        "description": "We dig, clear and prepare your land for a house, septic tank, pool, road or drainage. Clear fixed pricing per job instead of endless hourly billing."
       },
       "intro": "We handle all types of earthworks on Koh Samui: pits for houses and septic tanks, trenches for utilities, site clearing, levelling, soil removal and delivery. We work with our own excavators and trucks, and local operators who know Samui’s terrain and soil. You send us photos and a short description - we choose the right machine, give you a fair budget and get the job done on the agreed day without price surprises.",
       "tasks": {
@@ -546,8 +541,7 @@ useHead(() => {
       },
       "hero": {
         "title": "เช่ารถขุดบนเกาะสมุย พร้อมทีมงานมืออาชีพ",
-        "description": "รับงานขุด เคลียร์พื้นที่ และขนดินสำหรับบ้าน ถนน ระบบท่อ และงานก่อสร้าง",
-        "primary": "โทรคุยรายละเอียดงาน"
+        "description": "รับงานขุด เคลียร์พื้นที่ และขนดินสำหรับบ้าน ถนน ระบบท่อ และงานก่อสร้าง"
       },
       "intro": "เรารับงานดินทุกประเภทบนเกาะสมุย: ขุดบ่อฟุตติ้ง ขุดบ่อบำบัด ขุดร่องวางท่อ เคลียร์พื้นที่ ปรับระดับ ขนดินออก–เอาดินเข้า เตรียมพื้นที่ก่อนก่อสร้างหรือจัดสวน ใช้รถขุดและรถบรรทุกของเราเอง พร้อมคนขับท้องถิ่นที่รู้สภาพพื้นที่และลักษณะดินบนสมุย แค่ส่งรูปและอธิบายงานคร่าว ๆ เราช่วยเลือกขนาดรถ คุยงบให้ชัด และเข้าไปทำงานตามวันที่นัด โดยไม่บานปลายงบกลางทาง",
       "tasks": {
@@ -679,8 +673,6 @@ useHead(() => {
     <ServiceHero
       :title="heroTitle"
       :description="heroDescription"
-      :phone="CONTACT_PHONE"
-      :buttonLabel="t('excavator.hero.primary')"
       imageSrc="/uten.webp"
     />
 
@@ -710,6 +702,8 @@ useHead(() => {
       :title="includedTitle"
       :items="includedItems"
     />
+
+    <CoreContactsMini />
 
     <CoreFAQ
       :title="faqTitle"

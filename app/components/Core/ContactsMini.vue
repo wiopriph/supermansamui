@@ -1,0 +1,75 @@
+<script setup lang="ts">
+import {
+  CONTACT_PHONE,
+  SOCIALS_FACEBOOK,
+  SOCIALS_MESSENGER,
+  SOCIALS_WHATSAPP,
+  SOCIALS_LINE,
+  SOCIALS_TELEGRAM,
+  SOCIALS_TIKTOK,
+} from '~/constants/contacts';
+
+
+const socials = computed(() => [
+  {
+    icon: 'i-lucide-phone',
+    label: CONTACT_PHONE,
+    link: `tel:${CONTACT_PHONE}`,
+  },
+  {
+    icon: 'i-simple-icons-whatsapp',
+    label: 'WhatsApp',
+    link: SOCIALS_WHATSAPP,
+  },
+  {
+    icon: 'i-simple-icons-line',
+    label: 'LINE',
+    link: SOCIALS_LINE,
+  },
+  {
+    icon: 'i-simple-icons-messenger',
+    label: 'Messenger',
+    link: SOCIALS_MESSENGER,
+  },
+  {
+    icon: 'i-simple-icons-facebook',
+    label: 'Facebook',
+    link: SOCIALS_FACEBOOK,
+  },
+  {
+    icon: 'i-simple-icons-telegram',
+    label: 'Telegram',
+    link: SOCIALS_TELEGRAM,
+  },
+  {
+    icon: 'i-simple-icons-tiktok',
+    label: 'TikTok',
+    link: SOCIALS_TIKTOK,
+  },
+].filter((item) => item.link),
+);
+</script>
+
+<template>
+  <section class="py-4 space-y-3">
+    <UContainer class="text-center space-y-8">
+      <div class="flex flex-wrap justify-center gap-3 pt-2">
+        <UButton
+          v-for="(social, index) in socials"
+          :key="index"
+          :to="social.link"
+          :icon="social.icon"
+          target="_blank"
+          variant="soft"
+          size="lg"
+          class="px-5"
+        >
+          <span
+            class="hidden md:block"
+            v-text="social.label"
+          />
+        </UButton>
+      </div>
+    </UContainer>
+  </section>
+</template>

@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { CONTACT_PHONE } from '~/constants/contacts';
-
-
 const { t } = useI18n();
 
 const heroTitle = computed(() => t('trucks.hero.title'));
@@ -61,18 +58,50 @@ const equipmentItems = computed(() => ([
     ],
   },
   {
-    title: 'DEVA Hercules',
-    image: '/images/equipment/trucks/deva_hercules.webp',
-    subtitle: t('trucks.equipment.items.deva.type'),
-    description: t('trucks.equipment.items.deva.description'),
+    title: 'Hino 300',
+    image: '/images/equipment/trucks/hino_300.webp',
+    subtitle: t('trucks.equipment.items.hino300.type'),
+    description: t('trucks.equipment.items.hino300.description'),
     prices: [
       {
         label: t('trucks.equipment.prices.trip'),
-        value: '700 THB',
+        value: '1 500 THB',
       },
       {
         label: t('trucks.equipment.prices.day'),
-        value: '3 000 THB',
+        value: '5 500 THB',
+      },
+    ],
+  },
+  {
+    title: 'Hino Super FM18',
+    image: '/images/equipment/trucks/hino_super_fm18.webp',
+    subtitle: t('trucks.equipment.items.fm18.type'),
+    description: t('trucks.equipment.items.fm18.description'),
+    prices: [
+      {
+        label: t('trucks.equipment.prices.trip'),
+        value: '2 500 THB',
+      },
+      {
+        label: t('trucks.equipment.prices.day'),
+        value: '9 000 THB',
+      },
+    ],
+  },
+  {
+    title: 'Nissan CWA12M',
+    image: '/images/equipment/trucks/nissan_cwa12m.webp',
+    subtitle: t('trucks.equipment.items.nissan.type'),
+    description: t('trucks.equipment.items.nissan.description'),
+    prices: [
+      {
+        label: t('trucks.equipment.prices.trip'),
+        value: '2 500 THB',
+      },
+      {
+        label: t('trucks.equipment.prices.day'),
+        value: '8 000 THB',
       },
     ],
   },
@@ -93,34 +122,18 @@ const equipmentItems = computed(() => ([
     ],
   },
   {
-    title: 'Hino 300',
-    image: '/images/equipment/trucks/hino_300.webp',
-    subtitle: t('trucks.equipment.items.hino300.type'),
-    description: t('trucks.equipment.items.hino300.description'),
+    title: 'DEVA Hercules',
+    image: '/images/equipment/trucks/deva_hercules.webp',
+    subtitle: t('trucks.equipment.items.deva.type'),
+    description: t('trucks.equipment.items.deva.description'),
     prices: [
       {
         label: t('trucks.equipment.prices.trip'),
-        value: '1 500 THB',
+        value: '700 THB',
       },
       {
         label: t('trucks.equipment.prices.day'),
-        value: '5 500 THB',
-      },
-    ],
-  },
-  {
-    title: 'Nissan CWA12M',
-    image: '/images/equipment/trucks/nissan_cwa12m.webp',
-    subtitle: t('trucks.equipment.items.nissan.type'),
-    description: t('trucks.equipment.items.nissan.description'),
-    prices: [
-      {
-        label: t('trucks.equipment.prices.trip'),
-        value: '2 500 THB',
-      },
-      {
-        label: t('trucks.equipment.prices.day'),
-        value: '8 000 THB',
+        value: '3 000 THB',
       },
     ],
   },
@@ -304,8 +317,7 @@ useHead(() => {
       },
       "hero": {
         "title": "Грузовики и самосвалы на Самуи",
-        "description": "Вывоз грунта и мусора, доставка песка и щебня, перевозка техники.",
-        "primary": "Позвонить и получить расчет"
+        "description": "Вывоз грунта и мусора, доставка песка и щебня, перевозка техники."
       },
       "intro": "Нужно вывезти грунт, привезти материалы или перевезти технику на Самуи? Сделаем быстро и без сюрпризов. Вы отправляете локацию и фото подъезда - мы подбираем грузовик, оцениваем объем и количество рейсов и даем понятную цену до выезда.",
       "tasks": {
@@ -362,6 +374,10 @@ useHead(() => {
           "nissan": {
             "type": "Трал с краном",
             "description": "Перевозка экскаваторов и крупногабарита. Кран - для погрузки и установки тяжелых предметов."
+          },
+          "fm18": {
+            "type": "10-колёсный самосвал",
+            "description": "Большие объемы и тяжелые материалы: грунт, камни, строительный мусор. Лучший вариант для стройки и масштабных земляных работ."
           }
         }
       },
@@ -445,8 +461,7 @@ useHead(() => {
       },
       "hero": {
         "title": "Truck & dump truck rental on Koh Samui",
-        "description": "Soil and waste removal, material delivery, equipment transport. We select the right truck and quote the price in advance.",
-        "primary": "Call for a quote"
+        "description": "Soil and waste removal, material delivery, equipment transport. We select the right truck and quote the price in advance."
       },
       "intro": "Need to remove soil, deliver materials or move equipment on Koh Samui? We handle it fast and clearly. Send your location and access photos - we choose the right truck, estimate volume and trips, and give you a fixed price before the job.",
       "tasks": {
@@ -503,6 +518,10 @@ useHead(() => {
           "nissan": {
             "type": "Flatbed / lowbed with crane",
             "description": "Transport of excavators and oversized loads with crane loading support."
+          },
+          "fm18": {
+            "type": "10-wheel dump truck",
+            "description": "For large volumes and heavy loads: soil, rocks and construction debris. Best choice for big construction jobs."
           }
         }
       },
@@ -586,8 +605,7 @@ useHead(() => {
       },
       "hero": {
         "title": "เช่ารถบรรทุกและรถดั๊มบนเกาะสมุย",
-        "description": "ขนดิน ขยะก่อสร้าง ส่งวัสดุ และขนย้ายเครื่องจักร ประเมินงานและราคาให้ล่วงหน้า",
-        "primary": "โทรขอราคา"
+        "description": "ขนดิน ขยะก่อสร้าง ส่งวัสดุ และขนย้ายเครื่องจักร ประเมินงานและราคาให้ล่วงหน้า"
       },
       "intro": "ต้องการขนดิน ส่งวัสดุ หรือย้ายเครื่องจักรบนเกาะสมุย? เราจัดการให้จบง่ายและชัดเจน ส่งโลเคชันและรูปทางเข้า เราจะเลือกประเภทรถ ประเมินจำนวนเที่ยว และแจ้งราคาก่อนเริ่มงาน",
       "tasks": {
@@ -644,6 +662,10 @@ useHead(() => {
           "nissan": {
             "type": "รถพื้นเรียบ/เทรลเลอร์พร้อมเครน",
             "description": "ขนย้ายรถขุดและของขนาดใหญ่"
+          },
+          "fm18": {
+            "type": "รถดั๊ม 10 ล้อ",
+            "description": "เหมาะสำหรับงานปริมาณมากและของหนัก เช่น ดิน หิน และเศษวัสดุก่อสร้าง ทำงานได้ไวด้วยจำนวนเที่ยวที่น้อยลง"
           }
         }
       },
@@ -726,8 +748,6 @@ useHead(() => {
     <ServiceHero
       :title="heroTitle"
       :description="heroDescription"
-      :phone="CONTACT_PHONE"
-      :buttonLabel="t('trucks.hero.primary')"
       imageSrc="/truck.webp"
     />
 
@@ -757,6 +777,8 @@ useHead(() => {
       :title="includedTitle"
       :items="includedItems"
     />
+
+    <CoreContactsMini />
 
     <CoreFAQ
       :title="faqTitle"

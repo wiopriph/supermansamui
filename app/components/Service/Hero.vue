@@ -1,11 +1,38 @@
 <script setup lang="ts">
+import {
+  CONTACT_PHONE,
+  SOCIALS_WHATSAPP,
+  SOCIALS_LINE,
+  SOCIALS_MESSENGER,
+
+} from '~/constants/contacts';
+
+
 const props = defineProps<{
   title: string
   description: string
-  phone: string
-  buttonLabel: string
   imageSrc: string
 }>();
+
+const socials = computed(() => [
+  {
+    icon: 'i-lucide-phone',
+    label: CONTACT_PHONE,
+    link: `tel:${CONTACT_PHONE}`,
+  },
+  {
+    icon: 'i-simple-icons-whatsapp',
+    link: SOCIALS_WHATSAPP,
+  },
+  {
+    icon: 'i-simple-icons-line',
+    link: SOCIALS_LINE,
+  },
+  {
+    icon: 'i-simple-icons-facebook',
+    link: SOCIALS_MESSENGER,
+  },
+].filter((item) => item.link));
 </script>
 
 <template>
@@ -50,14 +77,24 @@ const props = defineProps<{
             {{ description }}
           </p>
 
-          <UButton
-            color="primary"
-            size="lg"
-            icon="i-lucide-phone"
-            :to="`tel:${phone}`"
-          >
-            {{ buttonLabel }}
-          </UButton>
+          <div class="flex flex-nowrap sm:flex-wrap justify-center md:justify-end gap-3">
+            <UButton
+              v-for="(social, index) in socials"
+              :key="index"
+              :to="social.link"
+              target="_blank"
+              :icon="social.icon"
+              color="primary"
+              variant="solid"
+              size="lg"
+            >
+              <span
+                v-if="social.label"
+                class="hidden sm:block"
+                v-text="social.label"
+              />
+            </UButton>
+          </div>
         </div>
       </div>
     </div>

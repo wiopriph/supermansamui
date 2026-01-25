@@ -111,7 +111,7 @@ const phoneLink = computed(() => `tel:${CONTACT_PHONE}`);
             class="size-4"
           />
 
-          <span class="text-sm font-semibold tracking-wide">
+          <span class="text-sm font-semibold tracking-wide hidden sm:block">
             {{ CONTACT_PHONE }}
           </span>
         </UButton>
