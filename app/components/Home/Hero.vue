@@ -1,31 +1,43 @@
 <script setup lang="ts">
-import { CONTACT_PHONE } from '~/constants/contacts';
+import {
+  CONTACT_PHONE,
+  SOCIALS_MESSENGER,
+  SOCIALS_WHATSAPP,
+  SOCIALS_LINE,
+} from '~/constants/contacts';
 
-
-const { t } = useI18n();
 
 const links = computed(() => [
   {
-    label: t('hero.primary'),
     icon: 'i-lucide-phone',
-    color: 'primary',
-    to: `tel:${CONTACT_PHONE}`,
+    label: t('hero.primary'),
+    link: `tel:${CONTACT_PHONE}`,
   },
-  // {
-  //   label: t('hero.secondary'),
-  //   icon: 'i-lucide-list-tree',
-  //   variant: 'soft',
-  //   to: `https://wa.me/${CONTACT_PHONE}`,
-  //   target: '_blank',
-  // },
-]);
+  {
+    icon: 'i-simple-icons-line',
+    label: 'LINE',
+    link: SOCIALS_LINE,
+  },
+  {
+    icon: 'i-simple-icons-whatsapp',
+    label: 'WhatsApp',
+    link: SOCIALS_WHATSAPP,
+  },
+  {
+    icon: 'i-simple-icons-facebook',
+    label: 'Facebook',
+    link: SOCIALS_MESSENGER,
+  },
+].filter((item) => item.link),
+);
+const { t } = useI18n();
 </script>
 
 <i18n lang="json">
 {
   "ru": {
     "hero": {
-      "h1": "Аренда экскаваторов и грузовиков на Самуи",
+      "h1": "Аренда экскаваторов и грузовиков на Самуи",
       "lead": "Экскаваторы для копки фундаментов, траншей и подготовки участка. Самосвалы и грузовики для вывоза грунта, доставки материалов, перевозки грузов и переездов на Самуи. Быстрый выезд, опытные операторы и честные цены.",
       "primary": "Позвонить",
       "secondary": "Написать в WhatsApp"
@@ -33,7 +45,7 @@ const links = computed(() => [
   },
   "en": {
     "hero": {
-      "h1": "Excavator & Truck Rental on Koh Samui",
+      "h1": "Excavator & Truck Rental on Koh Samui",
       "lead": "Excavators for foundation digging, trenching and land preparation. Dump trucks and transport vehicles for soil removal, material delivery, cargo transport and moving services across Koh Samui. Fast response, skilled operators and fair pricing.",
       "primary": "Call now",
       "secondary": "Message on WhatsApp"

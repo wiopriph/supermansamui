@@ -81,11 +81,11 @@ const equipmentItems = computed(() => ([
     prices: [
       {
         label: t('trucks.equipment.prices.trip'),
-        value: '2 500 THB',
+        value: '3 000 THB',
       },
       {
         label: t('trucks.equipment.prices.day'),
-        value: '9 000 THB',
+        value: '10 000 THB',
       },
     ],
   },
