@@ -16,8 +16,7 @@ const props = defineProps<{
   buttonText?: string
 }>();
 
-const formatValue = (value: string | number) =>
-  typeof value === 'number' ? value.toLocaleString('en-US') : value;
+const formatValue = (value: string | number) => typeof value === 'number' ? value.toLocaleString('en-US') : value;
 
 const { t } = useI18n();
 </script>
@@ -44,38 +43,53 @@ const { t } = useI18n();
     :date="subtitle"
     :title="title"
     :image="image"
-    :ui="{ authors:'pt-1 gap-x-3 gap-y-1.5' }"
+    :ui="{
+      authors:'pt-3 gap-x-3 gap-y-1.5',
+      description: 'h-full'
+    }"
     orientation="vertical"
     variant="outline"
   >
     <template #description>
-      <div class="flex-1 flex flex-col gap-4 pt-3">
+      <div class="flex flex-col h-full pt-3">
         <p
           v-if="description"
-          class="text-sm text-gray-700 leading-snug"
+          class="
+            text-sm
+            text-gray-600
+            leading-snug
+            mb-3
+            line-clamp-4
+          "
           v-text="description"
         />
 
         <div
           v-if="prices.length"
-          class="mt-auto pt-2"
+          class="
+            mt-auto
+            rounded-xl
+            border
+            border-gray-200
+            bg-gray-50
+            p-4
+          "
         >
-          <p
-            class="text-sm font-semibold mb-2"
-            v-text="t('price')"
-          />
+          <p class="text-xs uppercase tracking-wide text-gray-800 mb-3">
+            {{ t('price') }}
+          </p>
 
-          <div class="space-y-1 text-sm mb-4">
+          <div class="space-y-2">
             <div
               v-for="(price, index) in prices"
               :key="index"
-              class="flex justify-between gap-3"
+              class="flex justify-between items-baseline gap-4"
             >
-              <span class="text-gray-500">
+              <span class="text-sm text-gray-600">
                 {{ price.label }}
               </span>
 
-              <span class="font-semibold">
+              <span class="text-lg font-bold text-gray-800 whitespace-nowrap">
                 {{ formatValue(price.value) }}
               </span>
             </div>

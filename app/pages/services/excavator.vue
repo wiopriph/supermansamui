@@ -310,7 +310,7 @@ useHead(() => {
         "note": "Если не уверены, какой экскаватор подойдёт - просто отправьте фото участка, и мы подскажем.",
         "prices": {
           "hour": "За час",
-          "day": "За смену (8 ч.)"
+          "day": "За смену"
         },
         "items": {
           "pc30": {
@@ -443,7 +443,7 @@ useHead(() => {
         "note": "Not sure which machine you need? Send us a photo of your site and we’ll advise you.",
         "prices": {
           "hour": "Per hour",
-          "day": "Per day (8 hours)"
+          "day": "Per day"
         },
         "items": {
           "pc30": {
@@ -576,7 +576,7 @@ useHead(() => {
         "note": "หากยังไม่แน่ใจว่าต้องใช้รถขนาดไหน ส่งรูปพื้นที่มาให้เราช่วยแนะนำได้เลย",
         "prices": {
           "hour": "ประมาณต่อชั่วโมง",
-          "day": "ประมาณต่อวัน (8 ชม.)"
+          "day": "ประมาณต่อวัน"
         },
         "items": {
           "pc30": {
