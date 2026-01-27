@@ -65,7 +65,7 @@ const { t } = useI18n();
         />
 
         <div
-          v-if="prices.length"
+          v-if="prices && prices.length"
           class="
             mt-auto
             rounded-xl

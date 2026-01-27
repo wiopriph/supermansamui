@@ -9,7 +9,7 @@ type EquipmentItem = {
   subtitle?: string
   description?: string
   image?: string
-  prices: PriceItem[]
+  prices?: PriceItem[]
   buttonText?: string
 };
 

@@ -5,6 +5,10 @@ const localeRoute = useLocaleRoute();
 
 const items = computed(() => [
   {
+    label: t('footer.earthworks'),
+    to: localeRoute({ name: 'services-earthworks' }),
+  },
+  {
     label: t('footer.excavator'),
     to: localeRoute({ name: 'services-excavator' }),
   },
@@ -21,6 +25,7 @@ const year = new Date().getFullYear();
 {
   "ru": {
     "footer": {
+      "earthworks": "Земляные работы",
       "excavator": "Аренда экскаватора",
       "truck": "Аренда грузовиков",
       "rights": "Все права защищены."
@@ -28,6 +33,7 @@ const year = new Date().getFullYear();
   },
   "en": {
     "footer": {
+      "earthworks": "Earthworks",
       "excavator": "Excavator Rental",
       "truck": "Truck Rental",
       "rights": "All rights reserved."
@@ -35,6 +41,7 @@ const year = new Date().getFullYear();
   },
   "th": {
     "footer": {
+      "earthworks": "งานดิน / ปรับพื้นที่",
       "excavator": "บริการเช่ารถขุด",
       "truck": "บริการเช่ารถบรรทุก",
       "rights": "สงวนลิขสิทธิ์ทั้งหมด"
@@ -60,8 +67,12 @@ const year = new Date().getFullYear();
 
     <UNavigationMenu
       :items="items"
+      :ui="{
+        list: 'flex flex-wrap md:flex-nowrap items-center justify-center gap-x-4 gap-y-2',
+        item: 'shrink min-w-0',
+        link: 'whitespace-normal md:whitespace-nowrap break-words'
+      }"
       variant="link"
-      class="justify-center"
     />
 
     <template #right>

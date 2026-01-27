@@ -13,6 +13,10 @@ const localeRoute = useLocaleRoute();
 
 const items = computed<NavigationMenuItem[]>(() => [
   {
+    label: t('header.earthworks'),
+    to: localeRoute({ name: 'services-earthworks' }),
+  },
+  {
     label: t('header.excavator'),
     to: localeRoute({ name: 'services-excavator' }),
   },
@@ -50,6 +54,7 @@ const phoneLink = computed(() => `tel:${CONTACT_PHONE}`);
   "ru": {
     "header": {
       "contactUs": "Свяжитесь с нами",
+      "earthworks": "Земляные работы",
       "excavator": "Аренда экскаватора",
       "truck": "Аренда грузовиков",
       "title": "Superman Samui"
@@ -58,6 +63,7 @@ const phoneLink = computed(() => `tel:${CONTACT_PHONE}`);
   "en": {
     "header": {
       "contactUs": "Contact us",
+      "earthworks": "Earthworks",
       "excavator": "Excavator Rental",
       "truck": "Truck Rental",
       "title": "Superman Samui"
@@ -66,6 +72,7 @@ const phoneLink = computed(() => `tel:${CONTACT_PHONE}`);
   "th": {
     "header": {
       "contactUs": "ติดต่อเรา",
+      "earthworks": "งานดิน / ปรับพื้นที่",
       "excavator": "บริการเช่ารถขุด",
       "truck": "บริการเช่ารถบรรทุก",
       "title": "Superman Samui"
