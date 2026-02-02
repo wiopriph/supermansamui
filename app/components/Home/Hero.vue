@@ -11,24 +11,24 @@ const links = computed(() => [
   {
     icon: 'i-lucide-phone',
     label: t('hero.primary'),
-    link: `tel:${CONTACT_PHONE}`,
+    to: `tel:${CONTACT_PHONE}`,
   },
   {
     icon: 'i-simple-icons-line',
     label: 'LINE',
-    link: SOCIALS_LINE,
+    to: SOCIALS_LINE,
   },
   {
     icon: 'i-simple-icons-whatsapp',
     label: 'WhatsApp',
-    link: SOCIALS_WHATSAPP,
+    to: SOCIALS_WHATSAPP,
   },
   {
     icon: 'i-simple-icons-facebook',
     label: 'Facebook',
-    link: SOCIALS_MESSENGER,
+    to: SOCIALS_MESSENGER,
   },
-].filter((item) => item.link),
+].filter((item) => item.to),
 );
 const { t } = useI18n();
 </script>
