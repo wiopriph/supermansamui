@@ -4,35 +4,90 @@ import {
   SOCIALS_WHATSAPP,
   SOCIALS_LINE,
   SOCIALS_MESSENGER,
-
 } from '~/constants/contacts';
+import type { SocialKey } from '~/composables/useAnalyticsEvent';
 
 
 const props = defineProps<{
-  title: string
-  description: string
-  imageSrc: string
+  title: string;
+  description: string;
+  imageSrc: string;
+  page: string;
 }>();
 
-const socials = computed(() => [
+
+type Item =
+  | {
+    type: 'phone';
+    icon: string;
+    label: string;
+    link: string;
+  }
+  | {
+    type: 'social';
+    key: SocialKey;
+    icon: string;
+    link: string;
+  };
+
+const items = computed(() => [
   {
+    type: 'phone',
     icon: 'i-lucide-phone',
     label: CONTACT_PHONE,
     link: `tel:${CONTACT_PHONE}`,
   },
   {
+    type: 'social',
+    key: 'whatsapp',
     icon: 'i-simple-icons-whatsapp',
     link: SOCIALS_WHATSAPP,
   },
   {
+    type: 'social',
+    key: 'line',
     icon: 'i-simple-icons-line',
     link: SOCIALS_LINE,
   },
   {
-    icon: 'i-simple-icons-facebook',
+    type: 'social',
+    key: 'messenger',
+    icon: 'i-simple-icons-messenger',
     link: SOCIALS_MESSENGER,
   },
 ].filter((item) => item.link));
+
+
+const LOCATION = 'hero';
+const { locale } = useI18n();
+const { trackPhoneClick, trackSocialClick } = useAnalyticsEvent();
+
+const onPhoneClick = () => {
+  trackPhoneClick({
+    page: props.page,
+    locale: locale.value,
+    location: LOCATION,
+    phone: CONTACT_PHONE,
+  });
+};
+
+const onSocialClick = (item: Extract<Item, { type: 'social' }>) => {
+  trackSocialClick({
+    page: props.page,
+    locale: locale.value,
+    location: LOCATION,
+    social: item.key,
+    url: item.link,
+  });
+};
+
+const onClick = (item: Item) => {
+  if (item.type === 'phone') {
+    onPhoneClick();
+  } else {
+    onSocialClick(item);
+  }
+};
 </script>
 
 <template>
@@ -79,19 +134,21 @@ const socials = computed(() => [
 
           <div class="flex flex-nowrap sm:flex-wrap justify-center md:justify-end gap-3">
             <UButton
-              v-for="(social, index) in socials"
+              v-for="(item, index) in items"
               :key="index"
-              :to="social.link"
-              target="_blank"
-              :icon="social.icon"
+              :to="item.link"
+              :icon="item.icon"
+              :target="item.type === 'social' ? '_blank' : undefined"
+              :rel="item.type === 'social' ? 'noopener' : undefined"
               color="primary"
               variant="solid"
               size="lg"
+              @click="onClick(item as Item)"
             >
               <span
-                v-if="social.label"
+                v-if="'label' in item"
                 class="hidden sm:block"
-                v-text="social.label"
+                v-text="item.label"
               />
             </UButton>
           </div>

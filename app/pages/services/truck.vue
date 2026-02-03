@@ -749,6 +749,7 @@ useHead(() => {
       :title="heroTitle"
       :description="heroDescription"
       imageSrc="/truck.webp"
+      page="services/truck"
     />
 
     <ServiceIntro :text="t('trucks.intro')" />
@@ -762,6 +763,7 @@ useHead(() => {
       :title="equipmentTitle"
       :note="equipmentNote"
       :items="equipmentItems"
+      page="services/truck"
     />
 
     <UAlert
@@ -778,7 +780,10 @@ useHead(() => {
       :items="includedItems"
     />
 
-    <CoreContactsMini />
+    <CoreContactsMini
+      page="services/truck"
+      location="content"
+    />
 
     <CoreFAQ
       :title="faqTitle"
@@ -790,6 +795,9 @@ useHead(() => {
       :items="examples"
     />
 
-    <CoreContacts />
+    <CoreContacts
+      page="services/truck"
+      location="bottom"
+    />
   </UPage>
 </template>

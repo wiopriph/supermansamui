@@ -674,6 +674,7 @@ useHead(() => {
       :title="heroTitle"
       :description="heroDescription"
       imageSrc="/uten.webp"
+      page="services/excavator"
     />
 
     <ServiceIntro :text="t('excavator.intro')" />
@@ -687,6 +688,7 @@ useHead(() => {
       :title="equipmentTitle"
       :note="equipmentNote"
       :items="equipmentItems"
+      page="services/excavator"
     />
 
     <UAlert
@@ -703,7 +705,10 @@ useHead(() => {
       :items="includedItems"
     />
 
-    <CoreContactsMini />
+    <CoreContactsMini
+      page="services/excavator"
+      location="content"
+    />
 
     <CoreFAQ
       :title="faqTitle"
@@ -715,6 +720,9 @@ useHead(() => {
       :items="examples"
     />
 
-    <CoreContacts />
+    <CoreContacts
+      page="services/excavator"
+      location="bottom"
+    />
   </UPage>
 </template>

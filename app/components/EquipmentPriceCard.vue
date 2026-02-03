@@ -12,13 +12,15 @@ const props = defineProps<{
   subtitle?: string
   image?: string
   description?: string
-  prices: PriceItem[]
+  prices?: PriceItem[]
   buttonText?: string
 }>();
 
 const formatValue = (value: string | number) => typeof value === 'number' ? value.toLocaleString('en-US') : value;
 
 const { t } = useI18n();
+
+const emit = defineEmits(['click']);
 </script>
 
 <i18n lang="json">
@@ -104,6 +106,7 @@ const { t } = useI18n();
         block
         color="primary"
         size="lg"
+        @click="emit('click')"
       >
         {{ buttonText || t('order') }}
       </UButton>

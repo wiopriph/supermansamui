@@ -14,10 +14,15 @@ type EquipmentItem = {
 };
 
 const props = defineProps<{
+  page: string
   title: string
   note?: string
   items: EquipmentItem[]
 }>();
+
+
+const { locale } = useI18n();
+const { trackOrderClick } = useAnalyticsEvent();
 </script>
 
 <template>
@@ -39,12 +44,18 @@ const props = defineProps<{
       <EquipmentPriceCard
         v-for="(item, index) in props.items"
         :key="index"
+        :page="props.page"
         :title="item.title"
         :subtitle="item.subtitle"
         :description="item.description"
         :image="item.image"
         :prices="item.prices"
         :buttonText="item.buttonText"
+        @click="trackOrderClick({
+          page: props.page,
+          locale: locale,
+          name: item.title
+        })"
       />
     </UBlogPosts>
   </section>

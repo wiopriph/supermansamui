@@ -64,6 +64,9 @@ useHead(() => {
 
     <HomeBenefits />
 
-    <CoreContacts />
+    <CoreContacts
+      page="/"
+      location="content"
+    />
   </UPage>
 </template>

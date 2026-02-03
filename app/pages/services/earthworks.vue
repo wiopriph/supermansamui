@@ -363,7 +363,7 @@ useHead(() => {
         "keywords": "earthworks koh samui, land grading koh samui, land leveling samui, site preparation koh samui, backfilling koh samui, soil delivery samui, soil removal koh samui, construction waste removal samui, land clearing koh samui, drainage samui, road base samui"
       },
       "hero": {
-        "title": "Earthworks on Koh Samui",
+        "title": "Earthworks on Koh Samui",
         "description": "Clearing, grading, leveling and backfilling. Excavator + dump trucks + materials with one team and a clear quote upfront."
       },
       "intro": "Need to prepare land for construction or landscaping? We handle full-scope earthworks on Koh Samui: clearing, cutting and filling, soil removal and delivery, grading levels and slopes for drainage, and preparing bases for foundations, roads and parking areas. Send your location and photos - we estimate the scope, select the right equipment and provide a clear quote before we start.",
@@ -512,6 +512,7 @@ useHead(() => {
       :title="heroTitle"
       :description="heroDescription"
       imageSrc="/land.webp"
+      page="services/earthworks"
     />
 
     <ServiceIntro :text="t('earthworks.intro')" />
@@ -525,12 +526,14 @@ useHead(() => {
       :title="equipmentTitle"
       :note="equipmentNote"
       :items="equipmentItems"
+      page="services/earthworks"
     />
 
     <ServiceEquipment
       :title="trucksTitle"
       :note="trucksNote"
       :items="trucksItems"
+      page="services/earthworks"
     />
 
     <UAlert
@@ -547,7 +550,10 @@ useHead(() => {
       :items="includedItems"
     />
 
-    <CoreContactsMini />
+    <CoreContactsMini
+      page="services/earthworks"
+      location="content"
+    />
 
     <CoreFAQ
       :title="faqTitle"
@@ -559,6 +565,9 @@ useHead(() => {
       :items="examples"
     />
 
-    <CoreContacts />
+    <CoreContacts
+      page="services/earthworks"
+      location="bottom"
+    />
   </UPage>
 </template>

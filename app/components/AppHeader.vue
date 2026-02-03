@@ -6,10 +6,15 @@ import {
   SOCIALS_WHATSAPP,
   SOCIALS_MESSENGER,
 } from '~/constants/contacts';
+import type { SocialKey } from '~/composables/useAnalyticsEvent';
 
 
-const { t } = useI18n();
+const { t, locale, locales } = useI18n();
 const localeRoute = useLocaleRoute();
+const switchLocalePath = useSwitchLocalePath();
+const route = useRoute();
+
+const { trackPhoneClick, trackSocialClick } = useAnalyticsEvent();
 
 const items = computed<NavigationMenuItem[]>(() => [
   {
@@ -26,19 +31,29 @@ const items = computed<NavigationMenuItem[]>(() => [
   },
 ]);
 
+type SocialItem = {
+  key: SocialKey;
+  label: string;
+  icon: string;
+  href: string;
+};
+
 const socials = computed(() =>
   [
     {
+      key: 'whatsapp',
       label: 'WhatsApp',
       icon: 'i-simple-icons-whatsapp',
       href: SOCIALS_WHATSAPP,
     },
     {
+      key: 'line',
       label: 'LINE',
       icon: 'i-simple-icons-line',
       href: SOCIALS_LINE,
     },
     {
+      key: 'messenger',
       label: 'Messenger',
       icon: 'i-simple-icons-messenger',
       href: SOCIALS_MESSENGER,
@@ -47,6 +62,26 @@ const socials = computed(() =>
 );
 
 const phoneLink = computed(() => `tel:${CONTACT_PHONE}`);
+const page = computed(() => route.path.replace(/^\/(ru|en|th)(?=\/|$)/, '') || '/');
+
+const onPhoneClick = (location: string) => {
+  trackPhoneClick({
+    page: page.value,
+    locale: locale.value,
+    location,
+    phone: CONTACT_PHONE,
+  });
+};
+
+const onSocialClick = (social: SocialItem, location: string) => {
+  trackSocialClick({
+    page: page.value,
+    locale: locale.value,
+    location,
+    social: social.key,
+    url: social.href,
+  });
+};
 </script>
 
 <i18n lang="json">
@@ -112,6 +147,7 @@ const phoneLink = computed(() => `tel:${CONTACT_PHONE}`);
           size="sm"
           variant="soft"
           class="flex items-center gap-2"
+          @click="onPhoneClick('header')"
         >
           <UIcon
             name="i-lucide-phone"
@@ -123,22 +159,16 @@ const phoneLink = computed(() => `tel:${CONTACT_PHONE}`);
           </span>
         </UButton>
 
-        <div class="flex items-center gap-3">
-          <ULink
-            v-for="social in socials"
-            :key="social.label"
-            :to="social.href"
-            :aria-label="social.label"
-            external
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex"
+        <div class="flex items-center gap-2">
+          <UButton
+            v-for="lang in locales"
+            :key="lang.code"
+            :to="switchLocalePath(lang.code)"
+            size="xs"
+            :variant="locale === lang.code ? 'solid' : 'outline'"
           >
-            <UIcon
-              :name="social.icon"
-              class="size-5"
-            />
-          </ULink>
+            <span>{{ lang.flag }}</span>
+          </UButton>
         </div>
       </div>
     </template>
@@ -160,6 +190,7 @@ const phoneLink = computed(() => `tel:${CONTACT_PHONE}`);
             <ULink
               :to="phoneLink"
               class="flex items-center gap-3 text-sm"
+              @click="onPhoneClick('header_mobile')"
             >
               <UIcon
                 name="i-lucide-phone"
@@ -176,6 +207,7 @@ const phoneLink = computed(() => `tel:${CONTACT_PHONE}`);
               target="_blank"
               rel="noopener noreferrer"
               class="flex items-center gap-3 text-sm"
+              @click="onSocialClick(social as SocialItem, 'header_mobile')"
             >
               <UIcon
                 :name="social.icon"
@@ -184,6 +216,20 @@ const phoneLink = computed(() => `tel:${CONTACT_PHONE}`);
 
               <span>{{ social.label }}</span>
             </ULink>
+          </div>
+
+          <div class="flex flex-wrap gap-2 pt-4">
+            <UButton
+              v-for="lang in locales"
+              :key="lang.code"
+              :to="switchLocalePath(lang.code)"
+              size="xs"
+              :variant="locale === lang.code ? 'solid' : 'outline'"
+            >
+              <span>{{ lang.flag }}</span>
+
+              <span>{{ lang.name }}</span>
+            </UButton>
           </div>
         </div>
       </div>
