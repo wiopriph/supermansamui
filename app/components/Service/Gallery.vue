@@ -128,7 +128,7 @@ const showNext = () => {
             class="w-full aspect-[4/3] object-cover"
           >
 
-          <div
+          <span
             class="absolute inset-0 bg-black/0 transition group-hover:bg-black/5"
             :class="index === selectedIndex ? 'bg-black/10' : ''"
           />
