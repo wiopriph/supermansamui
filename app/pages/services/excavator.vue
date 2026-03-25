@@ -154,44 +154,31 @@ const faqItems = computed(() => ([
   },
 ]));
 
-const examples = computed(() => [
-  {
-    alt: t('excavator.examples.1'),
-    src: '/images/examples/excavators/1.webp',
-  },
-  {
-    alt: t('excavator.examples.2'),
-    src: '/images/examples/excavators/2.webp',
-  },
-  {
-    alt: t('excavator.examples.3'),
-    src: '/images/examples/excavators/3.webp',
-  },
-  {
-    alt: t('excavator.examples.4'),
-    src: '/images/examples/excavators/4.webp',
-  },
-  {
-    alt: t('excavator.examples.5'),
-    src: '/images/examples/excavators/5.webp',
-  },
-  {
-    alt: t('excavator.examples.6'),
-    src: '/images/examples/excavators/6.webp',
-  },
-  {
-    alt: t('excavator.examples.7'),
-    src: '/images/examples/excavators/7.webp',
-  },
-  {
-    alt: t('excavator.examples.8'),
-    src: '/images/examples/excavators/8.webp',
-  },
-  {
-    alt: t('excavator.examples.9'),
-    src: '/images/examples/excavators/9.webp',
-  },
-]);
+const photos = computed(() => {
+  const order = [
+    'earthworks',
+    'construction-foundation',
+    'leveling-construction-site',
+    'root-removal',
+    'bush-removal',
+    'sewerage-installation',
+    'delivery-of-an-excavator',
+    'drainage-installation',
+    'garbage-collection',
+    'loading-excavator-onto-truck',
+    'refueling-excavator',
+    'road-construction',
+    'scavengery',
+    'night-work',
+    'transporting-excavator',
+  ];
+
+  return order.map((key) => ({
+    title: t(`excavator.photos.${key}.title`),
+    alt: t(`excavator.photos.${key}.alt`),
+    src: `/images/services/excavators/photos/${key}.webp`,
+  }));
+});
 
 
 const jsonLd = computed(() => ({
@@ -235,7 +222,7 @@ useHead(() => {
   const title = t('excavator.seo.title');
   const description = t('excavator.seo.description');
   const keywords = t('excavator.seo.keywords');
-  const image = 'https://supermansamui.com/uten.webp';
+  const image = 'https://supermansamui.com/images/services/excavators/hero.webp';
 
   return {
     title,
@@ -385,17 +372,68 @@ useHead(() => {
           "answer": "В нашем автопарке есть 4-, 6- и 10-колёсные грузовики для вывоза мусора, доставки грунта, песка и щебня. Также выполняем расчистку, планировку, выравнивание и полную подготовку участка под строительство."
         }
       },
-      "examples": {
+      "photos": {
         "title": "Галерея",
-        "1": "Строительство подъездной дороги на Самуи",
-        "2": "Заправка мини-экскаватора перед работой",
-        "3": "Перевозка большого экскаватора на трале",
-        "4": "Расчистка участка и вывоз мусора",
-        "5": "Загрузка грунта в десятиколёсный самосвал",
-        "6": "Ночная смена на строительном объекте",
-        "7": "Обслуживание и подготовка экскаватора к рейсу",
-        "8": "Загрузка строительных отходов в самосвал",
-        "9": "Очистка и подготовка земли под строительство"
+        "bush-removal": {
+          "title": "Очистка участка от кустарника и подготовка земли",
+          "alt": "Очистка участка от кустарника и растительности, подготовка земли под строительство"
+        },
+        "construction-foundation": {
+          "title": "Подготовка основания и земляные работы под фундамент",
+          "alt": "Земляные работы и подготовка основания под фундамент здания"
+        },
+        "delivery-of-an-excavator": {
+          "title": "Доставка экскаватора на строительный объект заказчика",
+          "alt": "Доставка экскаватора на объект и транспортировка строительной техники"
+        },
+        "drainage-installation": {
+          "title": "Устройство дренажной системы и водоотведения на участке",
+          "alt": "Монтаж дренажной системы и организация водоотведения на участке"
+        },
+        "earthworks": {
+          "title": "Земляные работы экскаватором на строительном участке",
+          "alt": "Земляные работы экскаватором, копка и перемещение грунта"
+        },
+        "garbage-collection": {
+          "title": "Сбор и вывоз строительного мусора с участка",
+          "alt": "Сбор и вывоз строительного мусора и отходов с территории"
+        },
+        "leveling-construction-site": {
+          "title": "Выравнивание и планировка строительного участка под застройку",
+          "alt": "Планировка и выравнивание участка перед строительными работами"
+        },
+        "loading-excavator-onto-truck": {
+          "title": "Погрузка грунта экскаватором в самосвал на объекте",
+          "alt": "Погрузка грунта экскаватором в самосвал для вывоза"
+        },
+        "night-work": {
+          "title": "Ночные строительные и земляные работы на объекте",
+          "alt": "Выполнение строительных и земляных работ в ночное время"
+        },
+        "refueling-excavator": {
+          "title": "Заправка экскаватора и подготовка техники к работе",
+          "alt": "Заправка экскаватора топливом и подготовка техники к работе"
+        },
+        "road-construction": {
+          "title": "Строительство и отсыпка подъездной дороги к участку",
+          "alt": "Строительство подъездной дороги и отсыпка грунта для проезда"
+        },
+        "root-removal": {
+          "title": "Удаление корней деревьев и расчистка строительного участка",
+          "alt": "Удаление корней деревьев и очистка участка под строительство"
+        },
+        "scavengery": {
+          "title": "Комплексная расчистка участка и вывоз строительного мусора",
+          "alt": "Полная расчистка участка и вывоз мусора после работ"
+        },
+        "sewerage-installation": {
+          "title": "Прокладка канализации и подготовка траншей под коммуникации",
+          "alt": "Прокладка канализации и рытьё траншей под инженерные сети"
+        },
+        "transporting-excavator": {
+          "title": "Перевозка экскаватора на трале между строительными объектами",
+          "alt": "Перевозка экскаватора на трале и доставка техники на объект"
+        }
       }
     }
   },
@@ -518,17 +556,68 @@ useHead(() => {
           "answer": "We also offer 4-, 6- and 10-wheel trucks for soil delivery, sand, gravel and construction waste removal. We handle land clearing, leveling, grading and full site preparation."
         }
       },
-      "examples": {
+      "photos": {
         "title": "Gallery",
-        "1": "Road construction on Koh Samui",
-        "2": "Refueling the mini excavator",
-        "3": "Transporting a large excavator on a trailer",
-        "4": "Clearing a construction site",
-        "5": "Loading soil into a 10-wheel truck",
-        "6": "Night shift excavator work",
-        "7": "Excavator maintenance before work",
-        "8": "Loading construction debris into a dump truck",
-        "9": "Site clearing and preparation for building"
+        "bush-removal": {
+          "title": "Site clearing and bush removal for land preparation",
+          "alt": "Clearing bushes and vegetation, preparing land for construction"
+        },
+        "construction-foundation": {
+          "title": "Foundation preparation and excavation works on site",
+          "alt": "Excavation and ground preparation for building foundation"
+        },
+        "delivery-of-an-excavator": {
+          "title": "Excavator delivery to construction site location",
+          "alt": "Transport and delivery of excavator to job site"
+        },
+        "drainage-installation": {
+          "title": "Drainage system installation and water management works",
+          "alt": "Installing drainage system and managing water flow on site"
+        },
+        "earthworks": {
+          "title": "Excavation and earthworks on construction site",
+          "alt": "Excavation works, digging and moving soil with excavator"
+        },
+        "garbage-collection": {
+          "title": "Construction waste collection and debris removal",
+          "alt": "Collecting and removing construction waste from site"
+        },
+        "leveling-construction-site": {
+          "title": "Site leveling and grading for construction preparation",
+          "alt": "Leveling and grading land before construction works"
+        },
+        "loading-excavator-onto-truck": {
+          "title": "Loading soil into dump truck using excavator",
+          "alt": "Excavator loading soil into dump truck for transport"
+        },
+        "night-work": {
+          "title": "Night construction and excavation works on site",
+          "alt": "Performing construction and excavation works at night"
+        },
+        "refueling-excavator": {
+          "title": "Refueling excavator and preparing equipment for work",
+          "alt": "Refueling construction equipment before starting work"
+        },
+        "road-construction": {
+          "title": "Access road construction and soil filling works",
+          "alt": "Building access road and preparing surface for transport"
+        },
+        "root-removal": {
+          "title": "Tree root removal and land clearing works",
+          "alt": "Removing tree roots and clearing land for construction"
+        },
+        "scavengery": {
+          "title": "Full site clearing and construction debris removal",
+          "alt": "Complete site clearing and waste removal services"
+        },
+        "sewerage-installation": {
+          "title": "Sewer system installation and trenching works",
+          "alt": "Installing sewer lines and digging trenches for utilities"
+        },
+        "transporting-excavator": {
+          "title": "Transporting excavator on lowbed trailer between sites",
+          "alt": "Heavy equipment transport using trailer to job site"
+        }
       }
     }
   },
@@ -651,17 +740,68 @@ useHead(() => {
           "answer": "มีบริการรถบรรทุก 4, 6 และ 10 ล้อ สำหรับขนดิน ส่งดิน ทราย หิน และขนเศษวัสดุก่อสร้าง รวมถึงเคลียร์พื้นที่ ปรับระดับ และเตรียมไซต์งานก่อนก่อสร้าง"
         }
       },
-      "examples": {
+      "photos": {
         "title": "แกลเลอรี",
-        "1": "งานทำถนนบนเกาะสมุย",
-        "2": "เติมน้ำมันให้รถขุดเล็ก",
-        "3": "ขนส่งรถขุดขนาดใหญ่บนเทรลเลอร์",
-        "4": "เคลียร์พื้นที่ก่อสร้าง",
-        "5": "โหลดดินขึ้นรถสิบล้อ",
-        "6": "งานกะกลางคืน",
-        "7": "บำรุงรักษารถขุด",
-        "8": "ขนเศษวัสดุก่อสร้างขึ้นรถดั๊ม",
-        "9": "เคลียร์พื้นที่เตรียมสร้างบ้าน"
+        "bush-removal": {
+          "title": "เคลียร์พื้นที่ ตัดพุ่มไม้ และเตรียมที่ดินก่อนก่อสร้าง",
+          "alt": "กำจัดพุ่มไม้และวัชพืช พร้อมเตรียมพื้นที่สำหรับงานก่อสร้าง"
+        },
+        "construction-foundation": {
+          "title": "เตรียมฐานรากและงานขุดดินสำหรับงานก่อสร้าง",
+          "alt": "งานขุดดินและเตรียมพื้นที่สำหรับฐานรากอาคาร"
+        },
+        "delivery-of-an-excavator": {
+          "title": "ขนส่งรถขุดไปยังหน้างานก่อสร้าง",
+          "alt": "บริการขนส่งและส่งมอบรถขุดไปยังไซต์งาน"
+        },
+        "drainage-installation": {
+          "title": "ติดตั้งระบบระบายน้ำและจัดการน้ำในพื้นที่",
+          "alt": "ติดตั้งระบบระบายน้ำและควบคุมการไหลของน้ำ"
+        },
+        "earthworks": {
+          "title": "งานขุดดินและปรับพื้นที่ด้วยรถขุด",
+          "alt": "งานขุด เคลื่อนย้ายดิน และปรับพื้นที่ด้วยรถขุด"
+        },
+        "garbage-collection": {
+          "title": "เก็บและขนย้ายเศษวัสดุก่อสร้างออกจากพื้นที่",
+          "alt": "เก็บและขนย้ายขยะและเศษวัสดุก่อสร้าง"
+        },
+        "leveling-construction-site": {
+          "title": "ปรับระดับพื้นที่และเตรียมไซต์สำหรับการก่อสร้าง",
+          "alt": "ปรับระดับดินและเตรียมพื้นที่ก่อนเริ่มงานก่อสร้าง"
+        },
+        "loading-excavator-onto-truck": {
+          "title": "ตักดินขึ้นรถบรรทุกด้วยรถขุด",
+          "alt": "ใช้รถขุดตักดินขึ้นรถบรรทุกเพื่อขนย้าย"
+        },
+        "night-work": {
+          "title": "งานก่อสร้างและขุดดินในช่วงเวลากลางคืน",
+          "alt": "ดำเนินงานก่อสร้างและขุดดินในเวลากลางคืน"
+        },
+        "refueling-excavator": {
+          "title": "เติมน้ำมันรถขุดและเตรียมเครื่องจักรก่อนทำงาน",
+          "alt": "เติมน้ำมันและเตรียมอุปกรณ์ก่อนเริ่มงาน"
+        },
+        "road-construction": {
+          "title": "ก่อสร้างถนนทางเข้าและถมดินปรับพื้น",
+          "alt": "สร้างถนนทางเข้าและเตรียมพื้นผิวสำหรับการใช้งาน"
+        },
+        "root-removal": {
+          "title": "ขุดและกำจัดรากไม้ พร้อมเคลียร์พื้นที่",
+          "alt": "กำจัดรากไม้และเคลียร์พื้นที่เพื่อเตรียมก่อสร้าง"
+        },
+        "scavengery": {
+          "title": "เคลียร์พื้นที่ทั้งหมดและขนย้ายขยะออกจากไซต์",
+          "alt": "บริการเคลียร์พื้นที่และขนย้ายเศษวัสดุ"
+        },
+        "sewerage-installation": {
+          "title": "ติดตั้งระบบท่อระบายน้ำและขุดร่องสำหรับสาธารณูปโภค",
+          "alt": "วางท่อระบายน้ำและขุดร่องสำหรับระบบสาธารณูปโภค"
+        },
+        "transporting-excavator": {
+          "title": "ขนย้ายรถขุดด้วยรถเทรลเลอร์ระหว่างไซต์งาน",
+          "alt": "ขนส่งเครื่องจักรหนักไปยังหน้างานด้วยรถเทรลเลอร์"
+        }
       }
     }
   }
@@ -673,7 +813,7 @@ useHead(() => {
     <ServiceHero
       :title="heroTitle"
       :description="heroDescription"
-      imageSrc="/uten.webp"
+      imageSrc="/images/services/excavators/hero.webp"
       page="services/excavator"
     />
 
@@ -710,14 +850,14 @@ useHead(() => {
       location="content"
     />
 
+    <ServiceGallery
+      :title="t('excavator.photos.title')"
+      :items="photos"
+    />
+
     <CoreFAQ
       :title="faqTitle"
       :items="faqItems"
-    />
-
-    <ServiceGallery
-      :title="t('excavator.examples.title')"
-      :items="examples"
     />
 
     <CoreContacts

@@ -131,16 +131,28 @@ const faqItems = computed(() => [
   { question: t('earthworks.faq.q6.question'), answer: t('earthworks.faq.q6.answer') },
 ]);
 
-const examples = computed(() => ([
-  { alt: t('earthworks.examples.1'), src: '/images/examples/earthworks/1.webp' },
-  { alt: t('earthworks.examples.2'), src: '/images/examples/earthworks/2.webp' },
-  { alt: t('earthworks.examples.3'), src: '/images/examples/earthworks/3.webp' },
-  { alt: t('earthworks.examples.4'), src: '/images/examples/earthworks/4.webp' },
-  { alt: t('earthworks.examples.5'), src: '/images/examples/earthworks/5.webp' },
-  { alt: t('earthworks.examples.6'), src: '/images/examples/earthworks/6.webp' },
-  { alt: t('earthworks.examples.7'), src: '/images/examples/earthworks/7.webp' },
-  { alt: t('earthworks.examples.8'), src: '/images/examples/earthworks/8.webp' },
-]));
+const photos = computed(() => {
+  const order = [
+    'digging-the-foundation',
+    'leveling-construction-site',
+    'bulldozer-work',
+    'root-removal',
+    'house-demolition',
+    'digging-holes-for-the-foundation',
+    'mini-excavation-work',
+    'preparing-the-access-road',
+    'removal-of-construction-waste',
+    'site-preparation-for-construction',
+    'house-construction',
+    'tree-removal',
+  ];
+
+  return order.map((key) => ({
+    title: t(`earthworks.photos.${key}.title`),
+    alt: t(`earthworks.photos.${key}.alt`),
+    src: `/images/services/earthworks/photos/${key}.webp`,
+  }));
+});
 
 const jsonLd = computed(() => ({
   '@context': 'https://schema.org',
@@ -181,6 +193,7 @@ useHead(() => {
   const title = t('earthworks.seo.title');
   const description = t('earthworks.seo.description');
   const keywords = t('earthworks.seo.keywords');
+  const image = 'https://supermansamui.com/images/services/earthworks/hero.webp';
 
   return {
     title,
@@ -190,12 +203,12 @@ useHead(() => {
 
       { property: 'og:title', content: title },
       { property: 'og:description', content: description },
-      { property: 'og:image', content: 'https://supermansamui.com/land.webp' },
+      { property: 'og:image', content: image },
 
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: title },
       { name: 'twitter:description', content: description },
-      { name: 'twitter:image', content: 'https://supermansamui.com/land.webp' },
+      { name: 'twitter:image', content: image },
     ],
     script: [
       {
@@ -342,16 +355,56 @@ useHead(() => {
           "answer": "Да. Организуем доставку материалов и распределение по участку самосвалами и экскаватором."
         }
       },
-      "examples": {
+      "photos": {
         "title": "Галерея",
-        "1": "Земляные работы: копка котлована и фундамента для дома на Самуи",
-        "2": "Планировка и выравнивание участка перед строительством виллы (подготовка площадки)",
-        "3": "Погрузка и вывоз строительного мусора самосвалом с участка",
-        "4": "Подготовка основания под подъездную дорогу: щебень, подсыпка и выравнивание",
-        "5": "Отсыпка участка и поднятие уровня грунтом: подсыпка, распределение и планировка",
-        "6": "Расчистка участка: уборка мусора, камней и подготовка территории под строительство",
-        "7": "Загрузка и вывоз грунта самосвалом после земляных работ и планировки",
-        "8": "Устройство подъездной дороги на участок: основание, уклоны и водоотвод"
+        "bulldozer-work": {
+          "title": "Бульдозерные работы на участке",
+          "alt": "Выполнение бульдозерных работ, перемещение грунта и планировка территории"
+        },
+        "digging-holes-for-the-foundation": {
+          "title": "Копка ям под фундамент",
+          "alt": "Копка ям под фундамент с точными размерами для строительства"
+        },
+        "digging-the-foundation": {
+          "title": "Разработка котлована под фундамент",
+          "alt": "Копка котлована и подготовка основания под фундамент здания"
+        },
+        "house-construction": {
+          "title": "Подготовка участка под строительство дома",
+          "alt": "Комплексные земляные работы для строительства частного дома"
+        },
+        "house-demolition": {
+          "title": "Демонтаж и снос старого дома",
+          "alt": "Снос здания и расчистка территории под новое строительство"
+        },
+        "leveling-construction-site": {
+          "title": "Выравнивание строительного участка",
+          "alt": "Планировка и выравнивание участка перед началом строительства"
+        },
+        "mini-excavation-work": {
+          "title": "Работы мини-экскаватором на стройке",
+          "alt": "Земляные работы мини-экскаватором в ограниченных условиях"
+        },
+        "preparing-the-access-road": {
+          "title": "Подготовка подъездной дороги",
+          "alt": "Отсыпка и выравнивание подъездной дороги"
+        },
+        "removal-of-construction-waste": {
+          "title": "Вывоз строительного мусора с участка",
+          "alt": "Сбор и вывоз строительных отходов после работ или демонтажа"
+        },
+        "root-removal": {
+          "title": "Удаление корней и расчистка участка",
+          "alt": "Удаление корней деревьев и подготовка участка под строительство"
+        },
+        "site-preparation-for-construction": {
+          "title": "Подготовка участка под строительство",
+          "alt": "Комплексная подготовка участка: расчистка, планировка и земляные работы"
+        },
+        "tree-removal": {
+          "title": "Удаление деревьев",
+          "alt": "Спил и удаление деревьев перед началом строительных работ"
+        }
       }
     }
   },
@@ -369,29 +422,65 @@ useHead(() => {
       "intro": "Need to prepare land for construction or landscaping? We handle full-scope earthworks on Koh Samui: clearing, cutting and filling, soil removal and delivery, grading levels and slopes for drainage, and preparing bases for foundations, roads and parking areas. Send your location and photos - we estimate the scope, select the right equipment and provide a clear quote before we start.",
       "tasks": {
         "title": "What we do",
-        "t1": { "title": "Land clearing", "description": "We remove vegetation, debris, rocks and prepare the site for the next stage." },
-        "t2": { "title": "Grading & leveling", "description": "We create flat pads and shape levels, terraces and slopes." },
-        "t3": { "title": "Backfilling & raising ground", "description": "We deliver soil/sand/gravel and spread it to raise levels and strengthen the base." },
-        "t4": { "title": "Site base preparation", "description": "Ground preparation for foundations, slabs, driveways and equipment pads." },
-        "t5": { "title": "Drainage shaping", "description": "We form slopes, ditches and trenches so water flows away correctly." },
-        "t6": { "title": "Soil & waste removal", "description": "We load and remove excess soil, clay, rocks and construction waste." }
+        "t1": {
+          "title": "Land clearing",
+          "description": "We remove vegetation, debris, rocks and prepare the site for the next stage."
+        },
+        "t2": {
+          "title": "Grading & leveling",
+          "description": "We create flat pads and shape levels, terraces and slopes."
+        },
+        "t3": {
+          "title": "Backfilling & raising ground",
+          "description": "We deliver soil/sand/gravel and spread it to raise levels and strengthen the base."
+        },
+        "t4": {
+          "title": "Site base preparation",
+          "description": "Ground preparation for foundations, slabs, driveways and equipment pads."
+        },
+        "t5": {
+          "title": "Drainage shaping",
+          "description": "We form slopes, ditches and trenches so water flows away correctly."
+        },
+        "t6": {
+          "title": "Soil & waste removal",
+          "description": "We load and remove excess soil, clay, rocks and construction waste."
+        }
       },
       "equipment": {
         "title": "Excavators for earthworks",
         "note": "Not sure what you need? Send photos and a location pin - we’ll advise and estimate.",
         "items": {
-          "pc30": { "type": "Mini excavator 3 t", "description": "For tight access, residential trenches and light grading." },
-          "cat305": { "type": "Excavator 5.5 t", "description": "Most versatile for grading, loading, site prep and general earthworks." },
-          "pc128": { "type": "Excavator 12.8 t", "description": "For large volumes: heavy grading, road works and major cuts/fills." }
+          "pc30": {
+            "type": "Mini excavator 3 t",
+            "description": "For tight access, residential trenches and light grading."
+          },
+          "cat305": {
+            "type": "Excavator 5.5 t",
+            "description": "Most versatile for grading, loading, site prep and general earthworks."
+          },
+          "pc128": {
+            "type": "Excavator 12.8 t",
+            "description": "For large volumes: heavy grading, road works and major cuts/fills."
+          }
         }
       },
       "trucks": {
         "title": "Dump trucks for soil delivery & removal",
         "note": "We use our own dump trucks - faster scheduling and clearer logistics. Send a location pin and access photos and we’ll recommend the right truck.",
         "items": {
-          "hino300": { "type": "6-wheel dump truck", "description": "Main workhorse for earthworks: soil/clay/rock removal and sand/gravel delivery. Perfect combo with an excavor." },
-          "fm18": { "type": "10-wheel dump truck", "description": "Best for large volumes: fewer trips and faster completion. Ideal for grading, backfilling and big soil removal." },
-          "elf": { "type": "Compact dump truck / 4×2", "description": "For tight access and smaller volumes where larger trucks can’t reach." }
+          "hino300": {
+            "type": "6-wheel dump truck",
+            "description": "Main workhorse for earthworks: soil/clay/rock removal and sand/gravel delivery. Perfect combo with an excavor."
+          },
+          "fm18": {
+            "type": "10-wheel dump truck",
+            "description": "Best for large volumes: fewer trips and faster completion. Ideal for grading, backfilling and big soil removal."
+          },
+          "elf": {
+            "type": "Compact dump truck / 4×2",
+            "description": "For tight access and smaller volumes where larger trucks can’t reach."
+          }
         }
       },
       "pricing": {
@@ -400,32 +489,108 @@ useHead(() => {
       },
       "included": {
         "title": "How we work",
-        "operator": { "title": "Local crew", "description": "Experienced operators who know Samui terrain and access realities." },
-        "estimate": { "title": "Scope & workflow planning", "description": "We help estimate volumes, levels, slopes and timeline." },
-        "fixed": { "title": "Clear quote before start", "description": "Per day / by scope / turnkey package - we confirm the total cost before starting." },
-        "logistics": { "title": "Smart logistics", "description": "We synchronize excavator and trucks to avoid downtime." },
-        "report": { "title": "Photo/video updates", "description": "Progress updates if you’re not on site." },
-        "safety": { "title": "Safe & careful work", "description": "We work carefully around buildings, fences and utilities." }
+        "operator": {
+          "title": "Local crew",
+          "description": "Experienced operators who know Samui terrain and access realities."
+        },
+        "estimate": {
+          "title": "Scope & workflow planning",
+          "description": "We help estimate volumes, levels, slopes and timeline."
+        },
+        "fixed": {
+          "title": "Clear quote before start",
+          "description": "Per day / by scope / turnkey package - we confirm the total cost before starting."
+        },
+        "logistics": {
+          "title": "Smart logistics",
+          "description": "We synchronize excavator and trucks to avoid downtime."
+        },
+        "report": {
+          "title": "Photo/video updates",
+          "description": "Progress updates if you’re not on site."
+        },
+        "safety": {
+          "title": "Safe & careful work",
+          "description": "We work carefully around buildings, fences and utilities."
+        }
       },
       "faq": {
         "title": "Earthworks FAQ",
-        "q1": { "question": "Do you do turnkey earthworks?", "answer": "Yes - clearing, grading, backfilling, materials delivery and soil/waste removal." },
-        "q2": { "question": "How do you price the job?", "answer": "By scope/volume, per day, or as a fixed turnkey package. We confirm the total cost before start." },
-        "q3": { "question": "What do you need to quote fast?", "answer": "Location pin + 3–5 photos of access and the site + a short description and deadline." },
-        "q4": { "question": "Can you work on hills and narrow roads?", "answer": "Yes. We choose equipment based on real access conditions." },
-        "q5": { "question": "Can you shape drainage slopes?", "answer": "Yes. We plan levels and slopes so water drains properly away from structures." },
-        "q6": { "question": "Can you deliver soil/sand/gravel?", "answer": "Yes. We deliver and spread materials with dump trucks and excavator." }
+        "q1": {
+          "question": "Do you do turnkey earthworks?",
+          "answer": "Yes - clearing, grading, backfilling, materials delivery and soil/waste removal."
+        },
+        "q2": {
+          "question": "How do you price the job?",
+          "answer": "By scope/volume, per day, or as a fixed turnkey package. We confirm the total cost before start."
+        },
+        "q3": {
+          "question": "What do you need to quote fast?",
+          "answer": "Location pin + 3–5 photos of access and the site + a short description and deadline."
+        },
+        "q4": {
+          "question": "Can you work on hills and narrow roads?",
+          "answer": "Yes. We choose equipment based on real access conditions."
+        },
+        "q5": {
+          "question": "Can you shape drainage slopes?",
+          "answer": "Yes. We plan levels and slopes so water drains properly away from structures."
+        },
+        "q6": {
+          "question": "Can you deliver soil/sand/gravel?",
+          "answer": "Yes. We deliver and spread materials with dump trucks and excavator."
+        }
       },
-      "examples": {
+      "photos": {
         "title": "Gallery",
-        "1": "Earthworks: digging a foundation pit for a house on Koh Samui",
-        "2": "Land grading and leveling before villa construction (site preparation)",
-        "3": "Loading and removing construction waste with a dump truck",
-        "4": "Access road base preparation: gravel backfill, compaction and leveling",
-        "5": "Backfilling and raising ground level with soil: spreading and grading",
-        "6": "Site clearing: debris and rock removal, preparing land for construction",
-        "7": "Loading and hauling soil with a dump truck after excavation and grading",
-        "8": "Building an access road to the site: base layers, slopes and drainage"
+        "bulldozer-work": {
+          "title": "Bulldozer work on site",
+          "alt": "Bulldozer operations including soil movement and land leveling"
+        },
+        "digging-holes-for-the-foundation": {
+          "title": "Digging holes for foundation",
+          "alt": "Digging foundation holes with precise dimensions for construction"
+        },
+        "digging-the-foundation": {
+          "title": "Excavation of foundation pit",
+          "alt": "Digging foundation pit and preparing the base for building"
+        },
+        "house-construction": {
+          "title": "Site preparation for house construction",
+          "alt": "Complete earthworks for private house construction"
+        },
+        "house-demolition": {
+          "title": "Demolition of an old house",
+          "alt": "Building demolition and site clearing for new construction"
+        },
+        "leveling-construction-site": {
+          "title": "Construction site leveling",
+          "alt": "Land grading and leveling before starting construction"
+        },
+        "mini-excavation-work": {
+          "title": "Mini excavator work on construction site",
+          "alt": "Excavation works with mini excavator in limited space conditions"
+        },
+        "preparing-the-access-road": {
+          "title": "Preparing access road",
+          "alt": "Building and leveling access road for vehicles"
+        },
+        "removal-of-construction-waste": {
+          "title": "Construction waste removal from site",
+          "alt": "Collection and removal of construction debris after work or demolition"
+        },
+        "root-removal": {
+          "title": "Root removal and site clearing",
+          "alt": "Removing tree roots and preparing land for construction"
+        },
+        "site-preparation-for-construction": {
+          "title": "Site preparation for construction",
+          "alt": "Full site preparation including clearing, grading and earthworks"
+        },
+        "tree-removal": {
+          "title": "Tree removal",
+          "alt": "Cutting and removing trees before construction works"
+        }
       }
     }
   },
@@ -443,29 +608,65 @@ useHead(() => {
       "intro": "ถ้าต้องการเตรียมพื้นที่ก่อนสร้างบ้านหรือจัดสวน เรารับเหมางานดินบนเกาะสมุยครบวงจร: เคลียร์พื้นที่ ขนดินออก–เอาดินเข้า ปรับระดับ ทำความลาดเอียงสำหรับระบายน้ำ และเตรียมฐานราก/ทางเข้า/ลานจอดรถ ส่งโลเคชันและรูปพื้นที่มาให้เรา แล้วเราช่วยประเมินปริมาณงาน เลือกรถให้เหมาะ และแจ้งราคาชัดเจนก่อนเริ่มงาน",
       "tasks": {
         "title": "งานที่เราทำได้",
-        "t1": { "title": "เคลียร์พื้นที่", "description": "เก็บเศษวัสดุ กำจัดพืชรก หิน และเตรียมหน้าดินก่อนทำงาน" },
-        "t2": { "title": "ปรับระดับและเกลี่ยพื้นที่", "description": "ทำพื้นให้เรียบ จัดระดับ ทำขั้น/เทอเรซ และความลาดเอียงตามต้องการ" },
-        "t3": { "title": "ถมดิน / ยกระดับพื้นที่", "description": "นำดิน ทราย หินเข้า และเกลี่ยกระจายเพื่อยกระดับและเสริมฐาน" },
-        "t4": { "title": "เตรียมฐานสำหรับก่อสร้าง", "description": "เตรียมพื้นสำหรับฐานราก ทางเข้ารถ ลานจอด และพื้นที่วางเครื่องจักร" },
-        "t5": { "title": "ทำแนวระบายน้ำ", "description": "จัดความลาด ทำร่อง/คู/แนวทางน้ำ ลดปัญหาน้ำขังและดินไหล" },
-        "t6": { "title": "ขนดินและขยะก่อสร้าง", "description": "โหลดดินส่วนเกิน เศษหิน และขยะก่อสร้างขึ้นรถดั๊มและขนออก" }
+        "t1": {
+          "title": "เคลียร์พื้นที่",
+          "description": "เก็บเศษวัสดุ กำจัดพืชรก หิน และเตรียมหน้าดินก่อนทำงาน"
+        },
+        "t2": {
+          "title": "ปรับระดับและเกลี่ยพื้นที่",
+          "description": "ทำพื้นให้เรียบ จัดระดับ ทำขั้น/เทอเรซ และความลาดเอียงตามต้องการ"
+        },
+        "t3": {
+          "title": "ถมดิน / ยกระดับพื้นที่",
+          "description": "นำดิน ทราย หินเข้า และเกลี่ยกระจายเพื่อยกระดับและเสริมฐาน"
+        },
+        "t4": {
+          "title": "เตรียมฐานสำหรับก่อสร้าง",
+          "description": "เตรียมพื้นสำหรับฐานราก ทางเข้ารถ ลานจอด และพื้นที่วางเครื่องจักร"
+        },
+        "t5": {
+          "title": "ทำแนวระบายน้ำ",
+          "description": "จัดความลาด ทำร่อง/คู/แนวทางน้ำ ลดปัญหาน้ำขังและดินไหล"
+        },
+        "t6": {
+          "title": "ขนดินและขยะก่อสร้าง",
+          "description": "โหลดดินส่วนเกิน เศษหิน และขยะก่อสร้างขึ้นรถดั๊มและขนออก"
+        }
       },
       "equipment": {
         "title": "รถขุดสำหรับงานดิน",
         "note": "ไม่แน่ใจว่าต้องใช้รถขนาดไหน? ส่งรูปและโลเคชันมา เราช่วยแนะนำและประเมินได้",
         "items": {
-          "pc30": { "type": "รถขุดเล็ก 3 ตัน", "description": "เหมาะกับพื้นที่แคบ งานรอบบ้าน และงานเกลี่ย/ขุดเล็ก ๆ" },
-          "cat305": { "type": "รถขุดกลาง 5.5 ตัน", "description": "อเนกประสงค์ เหมาะกับงานดินส่วนใหญ่: ปรับระดับ โหลดดิน เตรียมพื้นที่" },
-          "pc128": { "type": "รถขุดใหญ่ 12.8 ตัน", "description": "สำหรับงานปริมาณมาก งานถนน และการปรับพื้นที่ขนาดใหญ่" }
+          "pc30": {
+            "type": "รถขุดเล็ก 3 ตัน",
+            "description": "เหมาะกับพื้นที่แคบ งานรอบบ้าน และงานเกลี่ย/ขุดเล็ก ๆ"
+          },
+          "cat305": {
+            "type": "รถขุดกลาง 5.5 ตัน",
+            "description": "อเนกประสงค์ เหมาะกับงานดินส่วนใหญ่: ปรับระดับ โหลดดิน เตรียมพื้นที่"
+          },
+          "pc128": {
+            "type": "รถขุดใหญ่ 12.8 ตัน",
+            "description": "สำหรับงานปริมาณมาก งานถนน และการปรับพื้นที่ขนาดใหญ่"
+          }
         }
       },
       "trucks": {
         "title": "รถดั๊มสำหรับขนดินเข้า–ออก",
         "note": "เราใช้รถดั๊มของเราเอง ทำงานไว คิวชัด ส่งโลเคชันและรูปทางเข้า เราช่วยแนะนำขนาดรถให้",
         "items": {
-          "hino300": { "type": "รถดั๊ม 6 ล้อ", "description": "ตัวหลักสำหรับงานดิน: ขนดิน/หิน/ดินเหนียวออก และส่งทราย/หินเข้า ทำงานคู่กับรถขุดได้ดี" },
-          "fm18": { "type": "รถดั๊ม 10 ล้อ", "description": "เหมาะกับงานปริมาณมาก เที่ยวน้อยลง จบงานไว เหมาะกับถมดิน ปรับพื้นที่ และขนดินออกจำนวนมาก" },
-          "elf": { "type": "รถดั๊มเล็ก / 4×2", "description": "เหมาะกับทางแคบและงานปริมาณไม่มาก รถใหญ่เข้าไม่ถึงก็ยังทำได้" }
+          "hino300": {
+            "type": "รถดั๊ม 6 ล้อ",
+            "description": "ตัวหลักสำหรับงานดิน: ขนดิน/หิน/ดินเหนียวออก และส่งทราย/หินเข้า ทำงานคู่กับรถขุดได้ดี"
+          },
+          "fm18": {
+            "type": "รถดั๊ม 10 ล้อ",
+            "description": "เหมาะกับงานปริมาณมาก เที่ยวน้อยลง จบงานไว เหมาะกับถมดิน ปรับพื้นที่ และขนดินออกจำนวนมาก"
+          },
+          "elf": {
+            "type": "รถดั๊มเล็ก / 4×2",
+            "description": "เหมาะกับทางแคบและงานปริมาณไม่มาก รถใหญ่เข้าไม่ถึงก็ยังทำได้"
+          }
         }
       },
       "pricing": {
@@ -474,32 +675,108 @@ useHead(() => {
       },
       "included": {
         "title": "สิ่งที่คุณจะได้",
-        "operator": { "title": "ทีมงานท้องถิ่น", "description": "รู้พื้นที่ ทางเขา และสภาพดินบนสมุย" },
-        "estimate": { "title": "ประเมินงานและวางแผน", "description": "ช่วยคำนวณดินเข้า–ออก ระดับ และจำนวนวันทำงาน" },
-        "fixed": { "title": "ยืนยันราคารวมก่อนเริ่ม", "description": "คิดรายวัน/ตามปริมาณ/เหมาจบ และยืนยันราคารวมก่อนเริ่มงาน" },
-        "logistics": { "title": "จัดคิวรถให้ทำงานต่อเนื่อง", "description": "ซิงก์รถขุดกับรถดั๊ม ลดเวลารอ" },
-        "report": { "title": "อัปเดตรูป/วิดีโอ", "description": "ถ้าคุณไม่ได้อยู่หน้างาน เราส่งความคืบหน้าให้ได้" },
-        "safety": { "title": "ทำงานปลอดภัยและระมัดระวัง", "description": "ทำงานใกล้บ้าน รั้ว และสาธารณูปโภคอย่างระวัง" }
+        "operator": {
+          "title": "ทีมงานท้องถิ่น",
+          "description": "รู้พื้นที่ ทางเขา และสภาพดินบนสมุย"
+        },
+        "estimate": {
+          "title": "ประเมินงานและวางแผน",
+          "description": "ช่วยคำนวณดินเข้า–ออก ระดับ และจำนวนวันทำงาน"
+        },
+        "fixed": {
+          "title": "ยืนยันราคารวมก่อนเริ่ม",
+          "description": "คิดรายวัน/ตามปริมาณ/เหมาจบ และยืนยันราคารวมก่อนเริ่มงาน"
+        },
+        "logistics": {
+          "title": "จัดคิวรถให้ทำงานต่อเนื่อง",
+          "description": "ซิงก์รถขุดกับรถดั๊ม ลดเวลารอ"
+        },
+        "report": {
+          "title": "อัปเดตรูป/วิดีโอ",
+          "description": "ถ้าคุณไม่ได้อยู่หน้างาน เราส่งความคืบหน้าให้ได้"
+        },
+        "safety": {
+          "title": "ทำงานปลอดภัยและระมัดระวัง",
+          "description": "ทำงานใกล้บ้าน รั้ว และสาธารณูปโภคอย่างระวัง"
+        }
       },
       "faq": {
         "title": "คำถามที่พบบ่อย",
-        "q1": { "question": "รับเหมางานดินแบบครบวงจรไหม?", "answer": "รับครับ ตั้งแต่เคลียร์พื้นที่ ปรับระดับ ถมดิน ส่งวัสดุ จนถึงขนดิน/ขยะออก" },
-        "q2": { "question": "คิดราคาแบบไหน?", "answer": "ตามลักษณะงาน: รายวัน/ตามปริมาณ/เหมาจบ และยืนยันราคารวมก่อนเริ่ม" },
-        "q3": { "question": "ขอราคาเร็ว ๆ ต้องส่งอะไร?", "answer": "โลเคชัน + รูปทางเข้าและพื้นที่ 3–5 รูป + อธิบายงานคร่าว ๆ และกำหนดเวลา" },
-        "q4": { "question": "ทำงานทางเขาและทางแคบได้ไหม?", "answer": "ได้ครับ เราเลือกใช้รถให้เหมาะกับสภาพทางจริง" },
-        "q5": { "question": "ช่วยทำสโลประบายน้ำได้ไหม?", "answer": "ได้ครับ เราช่วยจัดระดับและความลาดเพื่อให้น้ำไหลออกถูกทาง" },
-        "q6": { "question": "มีบริการส่งดิน/ทราย/หินไหม?", "answer": "มีครับ ส่งวัสดุและเกลี่ยกระจายให้ครบด้วยรถดั๊มและรถขุด" }
+        "q1": {
+          "question": "รับเหมางานดินแบบครบวงจรไหม?",
+          "answer": "รับครับ ตั้งแต่เคลียร์พื้นที่ ปรับระดับ ถมดิน ส่งวัสดุ จนถึงขนดิน/ขยะออก"
+        },
+        "q2": {
+          "question": "คิดราคาแบบไหน?",
+          "answer": "ตามลักษณะงาน: รายวัน/ตามปริมาณ/เหมาจบ และยืนยันราคารวมก่อนเริ่ม"
+        },
+        "q3": {
+          "question": "ขอราคาเร็ว ๆ ต้องส่งอะไร?",
+          "answer": "โลเคชัน + รูปทางเข้าและพื้นที่ 3–5 รูป + อธิบายงานคร่าว ๆ และกำหนดเวลา"
+        },
+        "q4": {
+          "question": "ทำงานทางเขาและทางแคบได้ไหม?",
+          "answer": "ได้ครับ เราเลือกใช้รถให้เหมาะกับสภาพทางจริง"
+        },
+        "q5": {
+          "question": "ช่วยทำสโลประบายน้ำได้ไหม?",
+          "answer": "ได้ครับ เราช่วยจัดระดับและความลาดเพื่อให้น้ำไหลออกถูกทาง"
+        },
+        "q6": {
+          "question": "มีบริการส่งดิน/ทราย/หินไหม?",
+          "answer": "มีครับ ส่งวัสดุและเกลี่ยกระจายให้ครบด้วยรถดั๊มและรถขุด"
+        }
       },
-      "examples": {
+      "photos": {
         "title": "แกลเลอรี",
-        "1": "งานดิน: ขุดหลุมฐานราก/ฟุตติ้งสำหรับบ้านบนเกาะสมุย",
-        "2": "ปรับระดับและเกลี่ยพื้นที่ก่อนสร้างวิลล่า (เตรียมพื้นที่ก่อสร้าง)",
-        "3": "โหลดและขนเศษวัสดุก่อสร้างออกด้วยรถดั๊มจากหน้างาน",
-        "4": "เตรียมฐานทางเข้า/ถนนเข้าไซต์: ถมรองพื้นหินคลุกและปรับระดับ",
-        "5": "ถมดินยกระดับพื้นที่: เกลี่ยกระจายและปรับระดับหน้างาน",
-        "6": "เคลียร์พื้นที่: เก็บขยะ ก้อนหิน และเตรียมพื้นที่ก่อนก่อสร้าง",
-        "7": "โหลดและขนดินออกด้วยรถดั๊มหลังงานขุดและปรับพื้นที่",
-        "8": "ทำถนนทางเข้าไปยังพื้นที่: ชั้นฐาน ความลาดเอียง และงานระบายน้ำ"
+        "bulldozer-work": {
+          "title": "งานบูลโดเซอร์ในพื้นที่",
+          "alt": "งานบูลโดเซอร์ เคลื่อนย้ายดินและปรับระดับพื้นที่"
+        },
+        "digging-holes-for-the-foundation": {
+          "title": "ขุดหลุมสำหรับฐานราก",
+          "alt": "ขุดหลุมฐานรากตามขนาดที่แม่นยำสำหรับการก่อสร้าง"
+        },
+        "digging-the-foundation": {
+          "title": "ขุดหลุมฐานรากอาคาร",
+          "alt": "ขุดหลุมและเตรียมฐานสำหรับการก่อสร้างอาคาร"
+        },
+        "house-construction": {
+          "title": "เตรียมพื้นที่สำหรับการสร้างบ้าน",
+          "alt": "งานดินครบวงจรสำหรับการก่อสร้างบ้านพักอาศัย"
+        },
+        "house-demolition": {
+          "title": "รื้อถอนบ้านเก่า",
+          "alt": "รื้อถอนอาคารและเคลียร์พื้นที่เพื่อการก่อสร้างใหม่"
+        },
+        "leveling-construction-site": {
+          "title": "ปรับระดับพื้นที่ก่อสร้าง",
+          "alt": "ปรับระดับและเกลี่ยดินก่อนเริ่มงานก่อสร้าง"
+        },
+        "mini-excavation-work": {
+          "title": "งานขุดด้วยรถขุดขนาดเล็ก",
+          "alt": "งานขุดด้วยรถขุดขนาดเล็กในพื้นที่จำกัด"
+        },
+        "preparing-the-access-road": {
+          "title": "เตรียมถนนทางเข้า",
+          "alt": "สร้างและปรับระดับถนนทางเข้าสำหรับรถ"
+        },
+        "removal-of-construction-waste": {
+          "title": "ขนย้ายเศษวัสดุก่อสร้างออกจากพื้นที่",
+          "alt": "เก็บและขนย้ายเศษวัสดุหลังการก่อสร้างหรือรื้อถอน"
+        },
+        "root-removal": {
+          "title": "กำจัดรากไม้และเคลียร์พื้นที่",
+          "alt": "ขุดและกำจัดรากไม้เพื่อเตรียมพื้นที่ก่อสร้าง"
+        },
+        "site-preparation-for-construction": {
+          "title": "เตรียมพื้นที่สำหรับการก่อสร้าง",
+          "alt": "เตรียมพื้นที่ครบวงจร ทั้งเคลียร์ ปรับระดับ และงานดิน"
+        },
+        "tree-removal": {
+          "title": "ตัดและกำจัดต้นไม้",
+          "alt": "ตัดและนำต้นไม้ออกจากพื้นที่ก่อนเริ่มงานก่อสร้าง"
+        }
       }
     }
   }
@@ -511,7 +788,7 @@ useHead(() => {
     <ServiceHero
       :title="heroTitle"
       :description="heroDescription"
-      imageSrc="/land.webp"
+      imageSrc="/images/services/earthworks/hero.webp"
       page="services/earthworks"
     />
 
@@ -555,14 +832,14 @@ useHead(() => {
       location="content"
     />
 
+    <ServiceGallery
+      :title="t('earthworks.photos.title')"
+      :items="photos"
+    />
+
     <CoreFAQ
       :title="faqTitle"
       :items="faqItems"
-    />
-
-    <ServiceGallery
-      :title="t('earthworks.examples.title')"
-      :items="examples"
     />
 
     <CoreContacts
