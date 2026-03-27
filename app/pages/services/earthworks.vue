@@ -221,54 +221,54 @@ useHead(() => {
         "keywords": "земляные работы самуи, выравнивание участка самуи, экскавация самуи, дренаж самуи, отсыпка участка самуи, подготовка участка под строительство самуи, расчистка участка самуи, доставка грунта самуи, самосвал самуи, экскаватор самуи"
       },
       "hero": {
-        "title": "Земляные работы, выравнивание и подготовка участка на Самуи",
-        "description": "Расчистка участка, экскавация, выравнивание, дренаж, отсыпка, вывоз грунта и подготовка площадки под строительство на Самуи."
+        "title": "Земляные работы и подготовка участка на Самуи",
+        "description": "Расчищаем участки, выравниваем землю, делаем дренаж, отсыпку и подготавливаем площадки под строительство на Самуи."
       },
-      "intro": "Нужно подготовить участок под дом, виллу, подъездную дорогу, дренаж или благоустройство? Мы выполняем земляные работы на Самуи под ключ: расчистка территории, экскавация, планировка, выравнивание, отсыпка, вывоз грунта, устройство уклонов и дренажа, подготовка площадки под строительство. Работаем своей техникой — экскаваторами и самосвалами, поэтому быстрее выходим на объект, проще решаем логистику и даём один понятный результат от осмотра участка до финальной планировки.",
+      "intro": "Если вам нужно подготовить участок под дом, виллу, дорогу, дренаж или благоустройство, мы можем взять всю работу на себя. Делаем земляные работы на Самуи под ключ: расчищаем территорию, выравниваем участок, завозим и вывозим грунт, формируем уклоны, прокапываем дренаж и подготавливаем площадку под строительство. Работаем своей техникой — экскаваторами и самосвалами, поэтому быстрее выходим на объект, проще решаем логистику и ведём весь процесс одной командой.",
       "tasks": {
-        "title": "Какие земляные работы мы выполняем на Самуи",
+        "title": "Что мы делаем",
         "t1": {
           "title": "Расчистка участка",
-          "description": "Убираем кусты, деревья, корни, мусор, старые конструкции и подготавливаем участок к следующим этапам работ."
+          "description": "Убираем кусты, деревья, корни, мусор и старые конструкции, чтобы подготовить участок к следующим работам."
         },
         "t2": {
-          "title": "Планировка и выравнивание участка",
-          "description": "Делаем ровную площадку, формируем уровни, уклоны и террасы под дом, сад, парковку, дорогу или строительную площадку."
+          "title": "Планировка и выравнивание",
+          "description": "Делаем участок ровным, задаём уровни, уклоны и террасы под дом, сад, парковку, дорогу или стройплощадку."
         },
         "t3": {
-          "title": "Отсыпка и поднятие уровня участка",
-          "description": "Завозим грунт, песок и другие материалы, поднимаем низкие зоны, укрепляем основание и выравниваем перепады."
+          "title": "Отсыпка и поднятие уровня",
+          "description": "Завозим грунт, песок и другие материалы, поднимаем низкие места и выравниваем перепады по высоте."
         },
         "t4": {
-          "title": "Подготовка основания под строительство",
-          "description": "Готовим площадку под фундамент, плиту, driveway, подъездные пути, подпорные зоны и технику."
+          "title": "Подготовка под строительство",
+          "description": "Готовим площадку под фундамент, плиту, подъезд, подпорные зоны и дальнейшие строительные работы."
         },
         "t5": {
-          "title": "Дренаж и водоотвод",
-          "description": "Формируем правильные уклоны, канавы и траншеи, чтобы вода уходила с участка и не размывала грунт."
+          "title": "Дренаж и отвод воды",
+          "description": "Делаем канавы, траншеи и уклоны так, чтобы вода уходила с участка и не размывала грунт."
         },
         "t6": {
-          "title": "Вывоз грунта и строительного мусора",
-          "description": "Загружаем и вывозим лишнюю землю, глину, камни, корни и строительные отходы самосвалами."
+          "title": "Вывоз грунта и мусора",
+          "description": "Вывозим лишнюю землю, глину, камни, корни и строительный мусор самосвалами."
         }
       },
       "pricing": {
-        "title": "Быстрый расчёт по реальным условиям участка",
-        "text": "Стоимость земляных работ на Самуи зависит от рельефа, типа грунта, доступа для техники, объёма вывоза или завоза, необходимости дренажа и логистики по острову. Поэтому мы считаем не “примерно”, а по вашей задаче и фиксируем стоимость до начала работ. Чтобы быстро получить расчёт, отправьте точку на карте, 3–5 фото участка и подъезда, а также короткое описание задачи."
+        "title": "Быстрый расчёт по вашему участку",
+        "text": "Стоимость зависит от рельефа, типа грунта, доступа для техники, объёма завоза или вывоза, необходимости дренажа и общей логистики по острову. Поэтому мы не называем цену наугад, а считаем по вашей конкретной задаче. Чтобы быстро получить расчёт, отправьте точку на карте, 3–5 фото участка и подъезда, а также короткое описание того, что нужно сделать."
       },
       "beforeAfter": {
-        "title": "Примеры земляных работ до и после на Самуи",
+        "title": "Примеры наших работ до и после на Самуи",
         "items": {
           "lipanoi": {
             "title": "Снос дома и выравнивание участка в Липаное, Самуи",
-            "description": "Снос дома, расчистка участка и выравнивание в Липаное, Самуи. Мы снесли старый дом, убрали деревья и пальмы, вывезли мусор, завезли грунт и подняли участок примерно на 40 см, чтобы подготовить ровную площадку под строительство.",
+            "description": "На этом участке мы снесли старый дом, убрали деревья и пальмы, вывезли мусор, завезли грунт и подняли уровень участка примерно на 40 см. В итоге получилась ровная площадка, готовая под строительство.",
             "meta": {
               "service": "Земляные работы и выравнивание",
               "area": "~400 м²",
               "duration": "5 дней",
               "equipment": "Экскаватор + самосвал",
               "soil": "20 рейсов (≈100 м³)",
-              "level": "+40 см поднятие"
+              "level": "+40 см"
             },
             "pairs": {
               "p1": {
@@ -279,7 +279,7 @@ useHead(() => {
           },
           "maenam": {
             "title": "Дренаж, экскавация и выравнивание участка в Маенаме, Самуи",
-            "description": "Устройство дренажа, экскавация и выравнивание болотистого участка в Маенаме, Самуи. Мы превратили мокрую территорию в сухой и стабильный участок под строительство: открыли дренаж, расчистили русло, уложили трубу под дорогой, убрали растительность и выполнили отсыпку грунтом.",
+            "description": "Здесь был болотистый участок с лишней водой и сложным рельефом. Мы открыли дренаж, расчистили русло, уложили трубу под дорогой, убрали растительность и сделали отсыпку. В итоге участок стал сухим, ровным и пригодным для дальнейшего строительства.",
             "meta": {
               "service": "Дренаж и земляные работы",
               "area": "2 рай (≈3200 м²)",
@@ -302,45 +302,45 @@ useHead(() => {
         }
       },
       "included": {
-        "title": "Почему клиенты выбирают нас",
+        "title": "Почему с нами удобно работать",
         "fixed": {
-          "title": "Понятная смета до старта",
-          "description": "Считаем по смене, по объёму или под ключ и согласовываем стоимость до начала работ."
+          "title": "Понятная стоимость до начала работ",
+          "description": "Считаем по смене, по объёму или под ключ и заранее согласовываем цену."
         },
         "report": {
           "title": "Фото и видео по ходу работ",
-          "description": "Если вас нет на участке, присылаем обновления по ключевым этапам проекта."
+          "description": "Если вас нет на объекте, можем присылать обновления по основным этапам."
         },
         "safety": {
-          "title": "Аккуратная работа на объекте",
-          "description": "Работаем рядом с домами, заборами, коммуникациями и ограниченными подъездами без лишнего хаоса."
+          "title": "Аккуратная работа на участке",
+          "description": "Работаем рядом с домами, заборами, коммуникациями и в местах с ограниченным подъездом без лишнего беспорядка."
         }
       },
       "faq": {
-        "title": "Частые вопросы про земляные работы на Самуи",
+        "title": "Частые вопросы",
         "q1": {
           "question": "Вы делаете земляные работы под ключ?",
-          "answer": "Да. Можем взять весь цикл: расчистка, выравнивание, дренаж, отсыпка, доставка материалов, вывоз грунта и строительного мусора."
+          "answer": "Да, можем взять весь цикл: расчистку, выравнивание, дренаж, отсыпку, доставку материалов и вывоз грунта или мусора."
         },
         "q2": {
-          "question": "Как считается стоимость работ?",
-          "answer": "По задаче: по сменам, по объёму работ и материалов или как фиксированный пакет под ключ. До старта даём понятный расчёт."
+          "question": "Как вы считаете стоимость?",
+          "answer": "Всё зависит от задачи: считаем по сменам, по объёму работ и материалов или как фиксированный проект под ключ. До старта даём понятный расчёт."
         },
         "q3": {
           "question": "Что нужно, чтобы быстро получить смету?",
-          "answer": "Точка на карте, 3–5 фото участка и подъезда, плюс короткое описание задачи и желаемые сроки."
+          "answer": "Отправьте точку на карте, 3–5 фото участка и подъезда, а также короткое описание задачи и желаемые сроки."
         },
         "q4": {
           "question": "Работаете ли вы на сложных участках, склонах и узких дорогах?",
           "answer": "Да. Подбираем технику и план работ под реальные условия участка и подъезда."
         },
         "q5": {
-          "question": "Можно ли сделать правильные уклоны и дренаж под воду?",
-          "answer": "Да. Мы планируем уровни, уклоны и канавы так, чтобы вода уходила от дома и не размывала участок."
+          "question": "Можно ли сделать правильные уклоны и дренаж?",
+          "answer": "Да. Мы планируем уровни, уклоны и канавы так, чтобы вода уходила с участка и не создавала проблем у дома."
         },
         "q6": {
           "question": "Вы можете привезти грунт, песок и щебень?",
-          "answer": "Да. Организуем доставку материалов и распределение по участку самосвалами и экскаватором."
+          "answer": "Да, организуем доставку материалов и распределение по участку самосвалами и экскаватором."
         }
       },
       "photos": {
@@ -404,12 +404,12 @@ useHead(() => {
         "keywords": "earthworks koh samui, land leveling koh samui, excavation koh samui, drainage koh samui, backfilling koh samui, site preparation koh samui, land clearing koh samui, soil delivery samui, dump truck samui, excavator samui"
       },
       "hero": {
-        "title": "Earthworks, land leveling & site preparation on Koh Samui",
-        "description": "Land clearing, excavation, grading, drainage, backfilling, soil removal and site preparation for construction on Koh Samui."
+        "title": "Earthworks and site preparation on Koh Samui",
+        "description": "We clear land, level plots, install drainage, deliver fill soil and prepare sites for construction on Koh Samui."
       },
-      "intro": "Need to prepare land for a house, villa, access road, drainage or landscaping? We provide practical, turnkey earthworks on Koh Samui: land clearing, excavation, grading, land leveling, backfilling, soil removal, drainage shaping and site preparation. We work with our own excavators and dump trucks, so scheduling is faster, logistics are simpler, and you get one responsible team from first inspection to final grading.",
+      "intro": "If you need to prepare land for a house, villa, access road, drainage or landscaping, we can take care of the whole job. We handle practical earthworks on Koh Samui from start to finish: land clearing, excavation, grading, land leveling, backfilling, soil removal, drainage shaping and site preparation. We work with our own excavators and dump trucks, so scheduling is faster, logistics are simpler, and the whole process stays in one team.",
       "tasks": {
-        "title": "Earthworks services we provide on Koh Samui",
+        "title": "What we do",
         "t1": {
           "title": "Land clearing",
           "description": "We remove vegetation, trees, roots, debris and old structures to prepare the site for the next stage."
@@ -420,11 +420,11 @@ useHead(() => {
         },
         "t3": {
           "title": "Backfilling & raising ground level",
-          "description": "We deliver and spread soil, sand and other materials to raise low areas, strengthen the base and level the land."
+          "description": "We deliver and spread soil, sand and other materials to raise low areas and level the land properly."
         },
         "t4": {
           "title": "Site preparation for construction",
-          "description": "Ground preparation for foundations, slabs, driveways, retaining areas and construction access."
+          "description": "We prepare the ground for foundations, slabs, driveways, retaining areas and further construction work."
         },
         "t5": {
           "title": "Drainage & water runoff",
@@ -436,22 +436,22 @@ useHead(() => {
         }
       },
       "pricing": {
-        "title": "Fast quote based on real site conditions",
-        "text": "Earthworks pricing on Koh Samui depends on terrain, soil condition, access for machinery, drainage needs, the amount of material to remove or deliver, and island logistics. We assess your actual job and confirm the cost before work starts. To get a fast quote, send a location pin, 3–5 photos of the land and access road, and a short task description."
+        "title": "Fast quote for your site",
+        "text": "The cost depends on the terrain, soil condition, access for machinery, the amount of material to remove or deliver, drainage needs and overall logistics on the island. That is why we do not guess the price — we estimate your actual job. To get a fast quote, send a location pin, 3–5 photos of the land and access road, and a short description of what needs to be done."
       },
       "beforeAfter": {
-        "title": "Before & after earthworks projects on Koh Samui",
+        "title": "Before & after examples of our work on Koh Samui",
         "items": {
           "lipanoi": {
             "title": "House demolition & land leveling in Lipanoi, Koh Samui",
-            "description": "House demolition, land clearing and land leveling in Lipanoi, Koh Samui. We demolished the old house, removed trees and palms, cleared debris, delivered fill soil and raised the plot by about 40 cm to create a clean, level area ready for construction.",
+            "description": "On this site we demolished the old house, removed trees and palms, cleared the debris, brought in fill soil and raised the land by about 40 cm. The result was a clean, level plot ready for construction.",
             "meta": {
               "service": "Earthworks & land leveling",
               "area": "~400 m²",
               "duration": "5 days",
               "equipment": "Excavator + dump truck",
               "soil": "20 loads (≈100 m³)",
-              "level": "+40 cm raised"
+              "level": "+40 cm"
             },
             "pairs": {
               "p1": {
@@ -462,7 +462,7 @@ useHead(() => {
           },
           "maenam": {
             "title": "Drainage, excavation & land leveling in Maenam, Koh Samui",
-            "description": "Drainage installation, excavation and land leveling in Maenam, Koh Samui. We turned swampy land into dry, stable ground ready for construction by opening drainage, clearing the water line, installing a pipe under the road and backfilling the site with soil.",
+            "description": "This site was swampy, uneven and full of excess water. We opened the drainage, cleared the water line, installed a pipe under the road, removed the vegetation and backfilled the area. In the end, the land became dry, level and suitable for future construction.",
             "meta": {
               "service": "Drainage & earthworks",
               "area": "2 rai (≈3200 m²)",
@@ -485,45 +485,45 @@ useHead(() => {
         }
       },
       "included": {
-        "title": "Why clients choose us",
+        "title": "Why clients find it easy to work with us",
         "fixed": {
-          "title": "Clear quote before start",
-          "description": "We price by day, by scope or as a turnkey package and confirm the cost before work begins."
+          "title": "Clear cost before we start",
+          "description": "We price by day, by scope or as a turnkey job and agree on the cost in advance."
         },
         "report": {
           "title": "Photo & video updates",
-          "description": "If you are not on site, we can send progress updates during the project."
+          "description": "If you are not on site, we can send updates at the key stages of the work."
         },
         "safety": {
           "title": "Careful work on site",
-          "description": "We work carefully around houses, fences, utilities and tight access areas."
+          "description": "We work carefully around houses, fences, utilities and tight-access areas without unnecessary mess."
         }
       },
       "faq": {
-        "title": "Earthworks FAQ",
+        "title": "Frequently asked questions",
         "q1": {
           "question": "Do you provide turnkey earthworks?",
           "answer": "Yes. We can handle the full cycle: clearing, leveling, drainage, backfilling, material delivery and soil or waste removal."
         },
         "q2": {
-          "question": "How do you price the work?",
-          "answer": "By scope, by volume, per day or as a fixed turnkey package. We confirm the cost before the project starts."
+          "question": "How do you calculate the price?",
+          "answer": "It depends on the job. We can price by day, by work volume and materials, or as a fixed turnkey project. We give a clear estimate before the start."
         },
         "q3": {
           "question": "What do you need to give a fast quote?",
-          "answer": "A location pin, 3–5 photos of the site and access road, plus a short description of the task and target timing."
+          "answer": "Send a location pin, 3–5 photos of the site and access road, plus a short description of the task and your timeline."
         },
         "q4": {
-          "question": "Can you work on slopes and narrow roads?",
-          "answer": "Yes. We choose the right equipment and work plan based on the real access conditions."
+          "question": "Can you work on difficult plots, slopes and narrow roads?",
+          "answer": "Yes. We choose the right equipment and work plan based on the real access and site conditions."
         },
         "q5": {
-          "question": "Can you shape proper drainage slopes?",
-          "answer": "Yes. We plan levels, trenches and slopes so water drains away correctly from the site and structures."
+          "question": "Can you make proper drainage slopes?",
+          "answer": "Yes. We plan levels, trenches and slopes so water drains away correctly and does not cause problems near the house or on the plot."
         },
         "q6": {
           "question": "Can you deliver soil, sand and gravel?",
-          "answer": "Yes. We arrange delivery and spreading of materials with our dump trucks and excavator."
+          "answer": "Yes. We can arrange delivery and spreading of materials with our dump trucks and excavator."
         }
       },
       "photos": {
@@ -587,54 +587,54 @@ useHead(() => {
         "keywords": "งานดิน สมุย, ปรับระดับที่ดิน สมุย, ขุดดิน สมุย, ระบบระบายน้ำ สมุย, ถมดิน สมุย, เตรียมพื้นที่ก่อสร้าง สมุย, เคลียร์ที่ดิน สมุย, ส่งดิน สมุย, รถดั๊มพ์ สมุย, รถขุด สมุย"
       },
       "hero": {
-        "title": "งานดิน ปรับระดับที่ดิน และเตรียมพื้นที่บนเกาะสมุย",
-        "description": "เคลียร์ที่ดิน ขุดดิน ปรับระดับ ทำระบบระบายน้ำ ถมดิน ขนดินออก และเตรียมพื้นที่สำหรับการก่อสร้างบนเกาะสมุย"
+        "title": "งานดินและเตรียมพื้นที่บนเกาะสมุย",
+        "description": "เราเคลียร์ที่ดิน ปรับระดับ ทำระบบระบายน้ำ ถมดิน และเตรียมพื้นที่สำหรับการก่อสร้างบนเกาะสมุย"
       },
-      "intro": "หากคุณต้องการเตรียมที่ดินสำหรับสร้างบ้าน วิลล่า ถนนทางเข้า ระบบระบายน้ำ หรือจัดภูมิทัศน์ เรารับงานดินแบบครบวงจรบนเกาะสมุย: เคลียร์พื้นที่ ขุดดิน ปรับระดับ ถมดิน ขนดินออก จัดทำสโลปและระบบระบายน้ำ และเตรียมพื้นที่ก่อสร้าง เราใช้รถขุดและรถดั๊มพ์ของเราเอง ทำให้วางแผนงานได้เร็วขึ้น โลจิสติกส์ง่ายขึ้น และลูกค้าได้ทีมเดียวที่รับผิดชอบงานตั้งแต่ดูหน้างานจนถึงปรับพื้นที่เสร็จ",
+      "intro": "หากคุณต้องการเตรียมที่ดินสำหรับสร้างบ้าน วิลล่า ถนนทางเข้า ระบบระบายน้ำ หรือจัดภูมิทัศน์ เราสามารถดูแลงานทั้งหมดให้ได้ เรารับงานดินบนเกาะสมุยแบบครบวงจร ตั้งแต่เคลียร์พื้นที่ ขุดดิน ปรับระดับ ถมดิน ขนดินออก ทำสโลปและระบบระบายน้ำ ไปจนถึงเตรียมพื้นที่ก่อสร้าง เราใช้รถขุดและรถดั๊มพ์ของเราเอง จึงจัดคิวงานได้เร็วขึ้น โลจิสติกส์ง่ายขึ้น และควบคุมงานได้ในทีมเดียวตั้งแต่ต้นจนจบ",
       "tasks": {
-        "title": "บริการงานดินที่เราทำบนเกาะสมุย",
+        "title": "งานที่เราทำ",
         "t1": {
           "title": "เคลียร์พื้นที่",
           "description": "กำจัดพืชรก ต้นไม้ รากไม้ เศษวัสดุ และโครงสร้างเก่า เพื่อเตรียมพื้นที่สำหรับขั้นตอนถัดไป"
         },
         "t2": {
           "title": "ปรับระดับและเกลี่ยพื้นที่",
-          "description": "ปรับพื้นที่ให้เรียบ จัดระดับ ทำเทอเรซ และความลาดเอียงสำหรับบ้าน สวน ที่จอดรถ และทางเข้า"
+          "description": "ปรับพื้นที่ให้เรียบ จัดระดับ ทำเทอเรซ และกำหนดความลาดเอียงสำหรับบ้าน สวน ที่จอดรถ และทางเข้า"
         },
         "t3": {
           "title": "ถมดินและยกระดับพื้นที่",
-          "description": "นำดิน ทราย และวัสดุอื่นเข้าพื้นที่เพื่อยกระดับ เสริมฐาน และปรับพื้นที่ให้เรียบ"
+          "description": "นำดิน ทราย และวัสดุอื่นเข้าพื้นที่เพื่อยกระดับจุดที่ต่ำและปรับพื้นที่ให้เรียบเหมาะกับการใช้งาน"
         },
         "t4": {
           "title": "เตรียมพื้นที่สำหรับก่อสร้าง",
-          "description": "เตรียมพื้นสำหรับฐานราก แผ่นพื้น ทางรถเข้า กำแพงกันดิน และพื้นที่ก่อสร้าง"
+          "description": "เตรียมพื้นสำหรับฐานราก แผ่นพื้น ทางรถเข้า กำแพงกันดิน และงานก่อสร้างต่อไป"
         },
         "t5": {
           "title": "ระบบระบายน้ำและทางน้ำ",
           "description": "ทำสโลป ร่องน้ำ และแนวระบายน้ำ เพื่อให้น้ำไหลออกได้ถูกต้องและไม่ทำลายพื้นที่"
         },
         "t6": {
-          "title": "ขนดินและเศษวัสดุก่อสร้างออก",
-          "description": "โหลดและขนดินส่วนเกิน ดินเหนียว หิน รากไม้ และเศษวัสดุก่อสร้างออกด้วยรถดั๊มพ์"
+          "title": "ขนดินและเศษวัสดุออก",
+          "description": "ขนดินส่วนเกิน ดินเหนียว หิน รากไม้ และเศษวัสดุก่อสร้างออกด้วยรถดั๊มพ์"
         }
       },
       "pricing": {
-        "title": "ประเมินราคาเร็วจากสภาพพื้นที่จริง",
-        "text": "ราคางานดินบนเกาะสมุยขึ้นอยู่กับความลาดชัน สภาพดิน ทางเข้าออกสำหรับเครื่องจักร ความจำเป็นของระบบระบายน้ำ ปริมาณดินที่ต้องขนออกหรือถมเพิ่ม และโลจิสติกส์บนเกาะ เราประเมินตามงานจริงและยืนยันราคาก่อนเริ่มงาน หากต้องการขอราคาเร็ว ส่งโลเคชัน รูปพื้นที่และทางเข้า 3–5 รูป พร้อมรายละเอียดงานสั้น ๆ"
+        "title": "ประเมินราคาเร็วสำหรับพื้นที่ของคุณ",
+        "text": "ราคาขึ้นอยู่กับลักษณะพื้นที่ สภาพดิน ทางเข้าออกสำหรับเครื่องจักร ปริมาณดินที่ต้องขนออกหรือถมเพิ่ม ความจำเป็นของระบบระบายน้ำ และโลจิสติกส์บนเกาะ เราจึงไม่เดาราคา แต่ประเมินจากงานจริงของคุณ หากต้องการขอราคาเร็ว ส่งโลเคชัน รูปพื้นที่และทางเข้า 3–5 รูป พร้อมรายละเอียดงานสั้น ๆ ได้เลย"
       },
       "beforeAfter": {
-        "title": "ตัวอย่างงานดินก่อนและหลังบนเกาะสมุย",
+        "title": "ตัวอย่างงานก่อนและหลังของเราบนเกาะสมุย",
         "items": {
           "lipanoi": {
             "title": "รื้อถอนบ้านและปรับระดับที่ดินที่ลิปะน้อย เกาะสมุย",
-            "description": "งานรื้อถอนบ้าน เคลียร์พื้นที่ และปรับระดับที่ดินที่ลิปะน้อย เกาะสมุย เรารื้อบ้านเก่า ตัดต้นไม้และต้นปาล์ม ขนเศษวัสดุออก ถมดิน และยกระดับพื้นที่ประมาณ 40 ซม. เพื่อให้ได้พื้นที่เรียบและพร้อมสำหรับการก่อสร้าง",
+            "description": "หน้างานนี้เราได้รื้อบ้านเก่า ตัดต้นไม้และต้นปาล์ม ขนเศษวัสดุออก ถมดิน และยกระดับพื้นที่ประมาณ 40 ซม. ผลลัพธ์คือได้พื้นที่เรียบ สะอาด และพร้อมสำหรับการก่อสร้าง",
             "meta": {
               "service": "งานดินและปรับระดับพื้นที่",
               "area": "~400 ตร.ม.",
               "duration": "5 วัน",
               "equipment": "รถขุด + รถดั๊มพ์",
               "soil": "20 เที่ยว (≈100 ลบ.ม.)",
-              "level": "ยกระดับ +40 ซม."
+              "level": "+40 ซม."
             },
             "pairs": {
               "p1": {
@@ -645,7 +645,7 @@ useHead(() => {
           },
           "maenam": {
             "title": "งานระบายน้ำ ขุดดิน และปรับระดับที่ดินที่แม่น้ำ เกาะสมุย",
-            "description": "งานติดตั้งระบบระบายน้ำ ขุดดิน และปรับระดับพื้นที่ชุ่มน้ำที่แม่น้ำ เกาะสมุย เราเปลี่ยนพื้นที่เปียกให้เป็นพื้นที่แห้งและมั่นคงพร้อมสำหรับการก่อสร้าง โดยเปิดทางระบายน้ำ เคลียร์แนวทางน้ำ วางท่อใต้ถนน และถมดินในพื้นที่",
+            "description": "พื้นที่นี้เดิมเป็นที่ลุ่มแฉะ มีน้ำขังและระดับพื้นที่ไม่สม่ำเสมอ เราเปิดทางระบายน้ำ เคลียร์แนวทางน้ำ วางท่อใต้ถนน กำจัดพืชรก และถมดิน สุดท้ายพื้นที่กลายเป็นที่ดินแห้ง เรียบ และพร้อมสำหรับการก่อสร้างต่อไป",
             "meta": {
               "service": "ระบบระบายน้ำและงานดิน",
               "area": "2 ไร่ (≈3200 ตร.ม.)",
@@ -668,41 +668,41 @@ useHead(() => {
         }
       },
       "included": {
-        "title": "ทำไมลูกค้าถึงเลือกเรา",
+        "title": "ทำงานกับเราได้ง่ายเพราะอะไร",
         "fixed": {
-          "title": "ประเมินราคาชัดเจนก่อนเริ่ม",
-          "description": "คิดราคาแบบรายวัน ตามขอบเขตงาน หรือเหมาจบ พร้อมยืนยันราคาก่อนเริ่มงาน"
+          "title": "รู้ราคาก่อนเริ่มงาน",
+          "description": "เราคิดราคาตามวัน ตามขอบเขตงาน หรือแบบเหมาจบ และตกลงราคาให้ชัดเจนก่อนเริ่ม"
         },
         "report": {
-          "title": "อัปเดตรูปและวิดีโอ",
-          "description": "ถ้าคุณไม่ได้อยู่หน้างาน เราส่งความคืบหน้าระหว่างโครงการให้ได้"
+          "title": "มีรูปและวิดีโออัปเดต",
+          "description": "ถ้าคุณไม่ได้อยู่หน้างาน เราส่งอัปเดตในช่วงสำคัญของงานให้ได้"
         },
         "safety": {
           "title": "ทำงานอย่างระมัดระวัง",
-          "description": "ทำงานใกล้บ้าน รั้ว สาธารณูปโภค และทางเข้าที่แคบอย่างรอบคอบ"
+          "description": "เราทำงานใกล้บ้าน รั้ว สาธารณูปโภค และพื้นที่ทางเข้าแคบอย่างรอบคอบและเป็นระเบียบ"
         }
       },
       "faq": {
-        "title": "คำถามที่พบบ่อยเกี่ยวกับงานดิน",
+        "title": "คำถามที่พบบ่อย",
         "q1": {
-          "question": "รับเหมางานดินแบบครบวงจรไหม?",
-          "answer": "รับครับ เราทำได้ทั้งเคลียร์พื้นที่ ปรับระดับ ทำระบบระบายน้ำ ถมดิน ส่งวัสดุ และขนดินหรือขยะออก"
+          "question": "รับงานดินแบบครบวงจรไหม?",
+          "answer": "รับครับ เราสามารถดูแลงานทั้งหมดได้ ตั้งแต่เคลียร์พื้นที่ ปรับระดับ ทำระบบระบายน้ำ ถมดิน ส่งวัสดุ และขนดินหรือเศษวัสดุออก"
         },
         "q2": {
-          "question": "คิดราคางานอย่างไร?",
-          "answer": "คิดตามขอบเขตงาน ปริมาณงาน รายวัน หรือแบบเหมาจบ และยืนยันราคาก่อนเริ่มงาน"
+          "question": "คิดราคายังไง?",
+          "answer": "ขึ้นอยู่กับลักษณะงาน เราอาจคิดตามวัน ตามปริมาณงานและวัสดุ หรือเหมาจบเป็นโปรเจกต์ พร้อมแจ้งประเมินให้ชัดเจนก่อนเริ่ม"
         },
         "q3": {
-          "question": "ถ้าต้องการขอราคาเร็ว ต้องส่งอะไร?",
+          "question": "ต้องส่งอะไรเพื่อขอราคาเร็ว?",
           "answer": "ส่งโลเคชัน รูปพื้นที่และทางเข้า 3–5 รูป พร้อมอธิบายงานคร่าว ๆ และเวลาที่ต้องการ"
         },
         "q4": {
-          "question": "ทำงานบนพื้นที่ลาดชันหรือถนนแคบได้ไหม?",
-          "answer": "ได้ครับ เราเลือกเครื่องจักรและแผนงานให้เหมาะกับสภาพทางเข้าและพื้นที่จริง"
+          "question": "ทำงานบนพื้นที่ยาก พื้นที่ลาดชัน หรือถนนแคบได้ไหม?",
+          "answer": "ได้ครับ เราเลือกเครื่องจักรและวางแผนงานให้เหมาะกับสภาพหน้างานและทางเข้าจริง"
         },
         "q5": {
           "question": "ช่วยทำสโลปและระบบระบายน้ำได้ไหม?",
-          "answer": "ได้ครับ เราช่วยวางระดับ ร่องน้ำ และความลาดเอียงเพื่อให้น้ำไหลออกได้ถูกต้อง"
+          "answer": "ได้ครับ เราช่วยวางระดับ ร่องน้ำ และความลาดเอียงเพื่อให้น้ำไหลออกได้ถูกต้องและไม่สร้างปัญหาใกล้บ้านหรือในพื้นที่"
         },
         "q6": {
           "question": "มีบริการส่งดิน ทราย และหินไหม?",
