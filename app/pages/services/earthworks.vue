@@ -195,6 +195,8 @@ useHead(() => {
       { property: 'og:title', content: title },
       { property: 'og:description', content: description },
       { property: 'og:image', content: image },
+      { property: 'og:image:width', content: '960' },
+      { property: 'og:image:height', content: '492' },
 
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: title },
