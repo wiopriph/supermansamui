@@ -173,13 +173,13 @@ const faqItems = computed(() => ([
 
 const photos = computed(() => {
   const order = [
+    'soil-delivery',
     'our-vintage-big-truck',
     'transportation-of-generator',
     'loading-of-soil',
     'delivery-of-charcoal',
     'loading-tuktuk-with-crane',
     'scooter-transportation',
-    'soil-delivery',
     'transportation-of-excavator',
     'transportation-of-household-appliances',
     'transportation-of-special-equipment',
