@@ -60,9 +60,9 @@ useHead(() => {
 
     <HomeServices />
 
-    <HomePricing />
-
     <HomeBenefits />
+
+    <HomePricing />
 
     <CoreContacts
       page="/"

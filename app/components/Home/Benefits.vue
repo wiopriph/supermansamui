@@ -2,12 +2,9 @@
 const { t } = useI18n();
 
 const benefits = [
-  { key: 'consult', icon: 'i-lucide-phone-call' },
+  { key: 'fixed', icon: 'i-lucide-badge-dollar-sign' },
   { key: 'delivery', icon: 'i-lucide-calendar-clock' },
   { key: 'operators', icon: 'i-lucide-hard-hat' },
-  { key: 'fuel', icon: 'i-lucide-fuel' },
-  { key: 'condition', icon: 'i-lucide-wrench' },
-  { key: 'payment', icon: 'i-lucide-credit-card' },
 ];
 </script>
 
@@ -16,95 +13,61 @@ const benefits = [
   "ru": {
     "benefits": {
       "badge": "Почему с нами удобно работать",
-      "lead": "Мы берём на себя технику, людей и организацию работ. Вы просто говорите, что нужно сделать, — мы подбираем решение.",
+      "lead": "Берём на себя технику, людей и организацию. Вы просто описываете задачу - мы делаем.",
       "items": {
-        "consult": {
-          "title": "Поможем выбрать технику",
-          "text": "Расскажете задачу — подскажем, какой экскаватор или грузовик подойдёт и во сколько это обойдётся."
+        "fixed": {
+          "title": "Фиксируем цену заранее",
+          "text": "Сразу считаем объем и даём понятную цену до начала работ. Без неожиданных доплат в процессе."
         },
         "delivery": {
-          "title": "Приезжаем в договорённое время",
-          "text": "Сразу договариваемся о дне и времени. Приезжаем, когда обещали, без сюрпризов и переносов в последний момент."
+          "title": "Приезжаем вовремя",
+          "text": "Фиксируем дату и время заранее и приезжаем как договорились - без переносов и ожиданий."
         },
         "operators": {
-          "title": "Местные опытные операторы",
-          "text": "Люди, которые знают рельеф Самуи и работают аккуратно рядом с домами, заборами и на узких подъездах."
-        },
-        "fuel": {
-          "title": "Топливо и обслуживание на нас",
-          "text": "Вы платите за работу. Заправка, расходники и базовое обслуживание техники уже включены в стоимость."
-        },
-        "condition": {
-          "title": "Техника в рабочем состоянии",
-          "text": "Следим за машиной и проверяем её перед выездом, чтобы не было простоев и нервов на объекте."
-        },
-        "payment": {
-          "title": "Удобные варианты оплаты",
-          "text": "Можно оплатить наличными или переводом на тайский счёт. Подберём вариант, который будет удобен вам."
+          "title": "Опытные местные операторы",
+          "text": "Знают дороги Самуи и аккуратно работают даже на сложных участках и узких подъездах."
         }
       }
     }
   },
+
   "en": {
     "benefits": {
       "badge": "Why it’s easy to work with us",
-      "lead": "We take care of equipment, operators and scheduling. You simply tell us what needs to be done — we handle the rest.",
+      "lead": "We handle equipment, operators and scheduling. You describe the job - we take care of the rest.",
       "items": {
-        "consult": {
-          "title": "We help you choose the right machine",
-          "text": "Tell us about your project and we’ll recommend the right excavator or truck and give an approximate budget."
+        "fixed": {
+          "title": "Clear price before we start",
+          "text": "We calculate the job in advance and give a fixed price. No unexpected costs during the work."
         },
         "delivery": {
-          "title": "We arrive when we promise",
-          "text": "We agree on a clear day and time in advance and stick to it — no last-minute delays or sudden changes."
+          "title": "We arrive on time",
+          "text": "We agree on the schedule заранее and show up as promised - no delays."
         },
         "operators": {
-          "title": "Local, experienced operators",
-          "text": "Operators who know Samui, work safely near houses and walls, and can handle tight or tricky access roads."
-        },
-        "fuel": {
-          "title": "Fuel and maintenance included",
-          "text": "You pay for the job, not for refuelling. Fuel and basic maintenance of the machines are already included."
-        },
-        "condition": {
-          "title": "Equipment ready to work",
-          "text": "We service and check the machines before sending them out to minimise breakdowns and downtime on your site."
-        },
-        "payment": {
-          "title": "Easy payment options",
-          "text": "Cash or bank transfer to a Thai account — we’ll use whichever option is more convenient for you."
+          "title": "Experienced local operators",
+          "text": "They know Samui roads and work safely even in tight or difficult locations."
         }
       }
     }
   },
+
   "th": {
     "benefits": {
-      "badge": "ทำไมทำงานกับเราถึงสะดวก",
-      "lead": "เราดูแลทั้งเครื่องจักร คนขับ และการจัดตารางงานให้ครบ คุณเพียงบอกว่างานต้องการอะไร เราช่วยจัดการให้.",
+      "badge": "ทำไมลูกค้าถึงเลือกเรา",
+      "lead": "เราดูแลทั้งเครื่องจักร คนขับ และการจัดงานให้ครบ คุณแค่บอกงาน - เราจัดการให้ทั้งหมด",
       "items": {
-        "consult": {
-          "title": "ช่วยแนะนำเครื่องจักรที่เหมาะสม",
-          "text": "เล่าให้งานที่ต้องทำ เราจะแนะนำว่าควรใช้รถขุดหรือรถบรรทุกแบบไหน และประเมินค่าใช้จ่ายคร่าว ๆ ให้."
+        "fixed": {
+          "title": "แจ้งราคาชัดเจนก่อนเริ่มงาน",
+          "text": "เราคำนวณงานและแจ้งราคาก่อนเริ่ม ไม่มีค่าใช้จ่ายเพิ่มระหว่างงาน"
         },
         "delivery": {
-          "title": "ไปถึงหน้างานตามเวลานัด",
-          "text": "ตกลงวันและเวลาชัดเจนล่วงหน้า แล้วไปตามนัด ไม่เลื่อน ไม่ดีเลย์แบบไม่มีเหตุผล."
+          "title": "มาตรงเวลา",
+          "text": "นัดเวลาแล้วไปตามนัด ไม่มีดีเลย์หรือเลื่อนงาน"
         },
         "operators": {
-          "title": "ทีมงานท้องถิ่นมีประสบการณ์",
-          "text": "คนขับที่รู้พื้นที่บนเกาะสมุยดี ทำงานได้ปลอดภัย ใกล้บ้าน รั้ว หรือทางเข้าที่แคบ."
-        },
-        "fuel": {
-          "title": "รวมค่าน้ำมันและดูแลเครื่องแล้ว",
-          "text": "ลูกค้าจ่ายเฉพาะค่างาน ส่วนค่าน้ำมันและการดูแลเครื่องพื้นฐาน เราดูแลให้ทั้งหมด."
-        },
-        "condition": {
-          "title": "เครื่องพร้อมใช้งานเสมอ",
-          "text": "มีการบำรุงรักษาและตรวจเช็คก่อนออกงานทุกครั้ง เพื่อลดโอกาสที่เครื่องจะเสียระหว่างทำงาน."
-        },
-        "payment": {
-          "title": "จ่ายเงินได้หลายแบบ",
-          "text": "จะจ่ายเป็นเงินสด หรือโอนเข้าบัญชีไทยก็ได้ เลือกวิธีที่สะดวกสำหรับคุณ."
+          "title": "คนขับท้องถิ่นมีประสบการณ์",
+          "text": "รู้เส้นทางในสมุยและทำงานได้ดีแม้ในพื้นที่แคบหรือซับซ้อน"
         }
       }
     }

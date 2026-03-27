@@ -71,24 +71,24 @@ const onClick = (item: typeof links.value[number]) => {
 {
   "ru": {
     "hero": {
-      "h1": "Аренда экскаваторов и грузовиков на Самуи",
-      "lead": "Экскаваторы для копки фундаментов, траншей и подготовки участка. Самосвалы и грузовики для вывоза грунта, доставки материалов, перевозки грузов и переездов на Самуи. Быстрый выезд, опытные операторы и честные цены.",
+      "h1": "Экскаваторы, самосвалы и грузовики на Самуи",
+      "lead": "Земляные работы, аренда экскаватора, вывоз грунта, доставка песка и щебня, перевозка техники и грузов на Самуи. Своя техника, местные операторы и понятная цена до начала работ.",
       "primary": "Позвонить",
       "secondary": "Написать в WhatsApp"
     }
   },
   "en": {
     "hero": {
-      "h1": "Excavator & Truck Rental on Koh Samui",
-      "lead": "Excavators for foundation digging, trenching and land preparation. Dump trucks and transport vehicles for soil removal, material delivery, cargo transport and moving services across Koh Samui. Fast response, skilled operators and fair pricing.",
+      "h1": "Excavators, dump trucks and trucks on Koh Samui",
+      "lead": "Earthworks, excavator rental, soil removal, sand and gravel delivery, and equipment transport on Koh Samui. Our own machines, local operators and clear pricing before the job starts.",
       "primary": "Call now",
       "secondary": "Message on WhatsApp"
     }
   },
   "th": {
     "hero": {
-      "h1": "บริการเช่ารถขุดและรถบรรทุกบนเกาะสมุย",
-      "lead": "รถขุดสำหรับงานพื้นฐาน ขุดฟุตติ้ง วางท่อ และเตรียมพื้นที่ พร้อมรถดั๊มพ์และรถบรรทุกสำหรับขนดิน ส่งวัสดุ ขนย้ายสิ่งของ และบริการย้ายบ้านบนเกาะสมุย ทำงานเร็ว ราคาเป็นกันเอง พร้อมคนขับมืออาชีพ",
+      "h1": "รถขุด รถดั๊ม และรถบรรทุกบนเกาะสมุย",
+      "lead": "งานดิน บริการเช่ารถขุด ขนดิน ส่งทรายและหิน และขนย้ายเครื่องจักรบนเกาะสมุย มีเครื่องจักรของเราเอง คนขับท้องถิ่น และแจ้งราคาชัดเจนก่อนเริ่มงาน",
       "primary": "โทรเลย",
       "secondary": "แชทผ่าน WhatsApp"
     }
