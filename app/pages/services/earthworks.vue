@@ -224,7 +224,7 @@ useHead(() => {
         "title": "Земляные работы и подготовка участка на Самуи",
         "description": "Расчищаем участки, выравниваем землю, делаем дренаж, отсыпку и подготавливаем площадки под строительство на Самуи."
       },
-      "intro": "Если вам нужно подготовить участок под дом, виллу, дорогу, дренаж или благоустройство, мы можем взять всю работу на себя. Делаем земляные работы на Самуи под ключ: расчищаем территорию, выравниваем участок, завозим и вывозим грунт, формируем уклоны, прокапываем дренаж и подготавливаем площадку под строительство. Работаем своей техникой — экскаваторами и самосвалами, поэтому быстрее выходим на объект, проще решаем логистику и ведём весь процесс одной командой.",
+      "intro": "Если вам нужно подготовить участок под дом, виллу, дорогу, дренаж или благоустройство, мы можем взять всю работу на себя. Делаем земляные работы на Самуи под ключ: расчищаем территорию, выравниваем участок, завозим и вывозим грунт, формируем уклоны, прокапываем дренаж и подготавливаем площадку под строительство. Работаем своей техникой - экскаваторами и самосвалами, поэтому быстрее выходим на объект, проще решаем логистику и ведём весь процесс одной командой.",
       "tasks": {
         "title": "Что мы делаем",
         "t1": {
@@ -437,7 +437,7 @@ useHead(() => {
       },
       "pricing": {
         "title": "Fast quote for your site",
-        "text": "The cost depends on the terrain, soil condition, access for machinery, the amount of material to remove or deliver, drainage needs and overall logistics on the island. That is why we do not guess the price — we estimate your actual job. To get a fast quote, send a location pin, 3–5 photos of the land and access road, and a short description of what needs to be done."
+        "text": "The cost depends on the terrain, soil condition, access for machinery, the amount of material to remove or deliver, drainage needs and overall logistics on the island. That is why we do not guess the price - we estimate your actual job. To get a fast quote, send a location pin, 3–5 photos of the land and access road, and a short description of what needs to be done."
       },
       "beforeAfter": {
         "title": "Before & after examples of our work on Koh Samui",

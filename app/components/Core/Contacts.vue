@@ -115,7 +115,7 @@ const onSocialClick = (social: SocialItem) => {
   <section class="py-10 space-y-6">
     <UContainer class="text-center space-y-8">
       <div class="space-y-3">
-        <h2 class="text-2xl font-semibold">
+        <h2 class="text-2xl sm:text-3xl font-semibold text-center">
           {{ t('contacts.title') }}
         </h2>
 
