@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { PRICING } from '~/constants/pricing';
+
+
 const { t } = useI18n();
 
 const heroTitle = computed(() => t('trucks.hero.title'));
@@ -25,6 +28,8 @@ const tasksItems = computed(() => [
 
 const equipmentTitle = computed(() => t('trucks.equipment.title'));
 const equipmentNote = computed(() => t('trucks.equipment.note'));
+const formatPrice = (value: number) => t('trucks.equipment.prices.thb', { price: value });
+
 const equipmentItems = computed(() => ([
   {
     title: 'Isuzu ELF',
@@ -34,11 +39,11 @@ const equipmentItems = computed(() => ([
     prices: [
       {
         label: t('trucks.equipment.prices.trip'),
-        value: '800 THB',
+        value: formatPrice(PRICING.trucks.elf.trip),
       },
       {
         label: t('trucks.equipment.prices.day'),
-        value: '3 500 THB',
+        value: formatPrice(PRICING.trucks.elf.shift),
       },
     ],
   },
@@ -50,11 +55,11 @@ const equipmentItems = computed(() => ([
     prices: [
       {
         label: t('trucks.equipment.prices.trip'),
-        value: '1 500 THB',
+        value: formatPrice(PRICING.trucks.hino300.trip),
       },
       {
         label: t('trucks.equipment.prices.day'),
-        value: '5 500 THB',
+        value: formatPrice(PRICING.trucks.hino300.shift),
       },
     ],
   },
@@ -66,11 +71,11 @@ const equipmentItems = computed(() => ([
     prices: [
       {
         label: t('trucks.equipment.prices.trip'),
-        value: '3 000 THB',
+        value: formatPrice(PRICING.trucks.fm18.trip),
       },
       {
         label: t('trucks.equipment.prices.day'),
-        value: '10 000 THB',
+        value: formatPrice(PRICING.trucks.fm18.shift),
       },
     ],
   },
@@ -82,11 +87,11 @@ const equipmentItems = computed(() => ([
     prices: [
       {
         label: t('trucks.equipment.prices.trip'),
-        value: '2 500 THB',
+        value: formatPrice(PRICING.trucks.nissan.trip),
       },
       {
         label: t('trucks.equipment.prices.day'),
-        value: '8 000 THB',
+        value: formatPrice(PRICING.trucks.nissan.shift),
       },
     ],
   },
@@ -98,11 +103,11 @@ const equipmentItems = computed(() => ([
     prices: [
       {
         label: t('trucks.equipment.prices.trip'),
-        value: '1 800 THB',
+        value: formatPrice(PRICING.trucks.ranger.trip),
       },
       {
         label: t('trucks.equipment.prices.day'),
-        value: '6 500 THB',
+        value: formatPrice(PRICING.trucks.ranger.shift),
       },
     ],
   },
@@ -114,11 +119,11 @@ const equipmentItems = computed(() => ([
     prices: [
       {
         label: t('trucks.equipment.prices.trip'),
-        value: '700 THB',
+        value: formatPrice(PRICING.trucks.deva.trip),
       },
       {
         label: t('trucks.equipment.prices.day'),
-        value: '3 000 THB',
+        value: formatPrice(PRICING.trucks.deva.shift),
       },
     ],
   },
@@ -295,6 +300,7 @@ useHead(() => {
         "title": "Техника в наличии",
         "note": "Не знаете, что выбрать? Пришлите точку на карте и фото подъезда - подскажем оптимальный вариант и не дадим переплатить.",
         "prices": {
+          "thb": "{price} бат",
           "trip": "За рейс",
           "day": "За смену"
         },
@@ -447,6 +453,7 @@ useHead(() => {
         "title": "Available trucks",
         "note": "Not sure what you need? Send your location and access photos - we’ll recommend the best option and help you avoid overpaying.",
         "prices": {
+          "thb": "{price} THB",
           "trip": "Per trip",
           "day": "Per day"
         },
@@ -599,6 +606,7 @@ useHead(() => {
         "title": "รถที่มีให้บริการ",
         "note": "ไม่แน่ใจว่าใช้รถแบบไหน? ส่งโลเคชันและรูปทางเข้า เราช่วยแนะนำให้และช่วยประหยัดค่าใช้จ่าย",
         "prices": {
+          "thb": "{price} บาท",
           "trip": "ต่อเที่ยว",
           "day": "ต่อวัน"
         },

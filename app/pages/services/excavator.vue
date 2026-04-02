@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { PRICING } from '~/constants/pricing';
+
+
 const { t } = useI18n();
 
 const heroTitle = computed(() => t('excavator.hero.title'));
@@ -40,6 +43,9 @@ const tasksItems = computed(() => [
 
 const equipmentTitle = computed(() => t('excavator.equipment.title'));
 const equipmentNote = computed(() => t('excavator.equipment.note'));
+
+const formatPrice = (value: number) => t('excavator.equipment.prices.thb', { price: value });
+
 const equipmentItems = computed(() => ([
   {
     title: 'Komatsu PC30-7',
@@ -49,11 +55,11 @@ const equipmentItems = computed(() => ([
     prices: [
       {
         label: t('excavator.equipment.prices.hour'),
-        value: '800 THB',
+        value: formatPrice(PRICING.excavators.pc30.hour),
       },
       {
         label: t('excavator.equipment.prices.day'),
-        value: '6 000 THB',
+        value: formatPrice(PRICING.excavators.pc30.shift),
       },
     ],
   },
@@ -65,11 +71,11 @@ const equipmentItems = computed(() => ([
     prices: [
       {
         label: t('excavator.equipment.prices.hour'),
-        value: '1 000 THB',
+        value: formatPrice(PRICING.excavators.cat305cr.hour),
       },
       {
         label: t('excavator.equipment.prices.day'),
-        value: '7 500 THB',
+        value: formatPrice(PRICING.excavators.cat305cr.shift),
       },
     ],
   },
@@ -81,11 +87,11 @@ const equipmentItems = computed(() => ([
     prices: [
       {
         label: t('excavator.equipment.prices.hour'),
-        value: '2 000 THB',
+        value: formatPrice(PRICING.excavators.pc128.hour),
       },
       {
         label: t('excavator.equipment.prices.day'),
-        value: '15 000 THB',
+        value: formatPrice(PRICING.excavators.pc128.shift),
       },
     ],
   },
@@ -281,6 +287,7 @@ useHead(() => {
         "title": "Какая техника у нас есть",
         "note": "Не знаете, какой экскаватор подойдёт? Просто отправьте фото - подскажем.",
         "prices": {
+          "thb": "{price} бат",
           "hour": "За час",
           "day": "За смену"
         },
@@ -457,6 +464,7 @@ useHead(() => {
         "title": "Our excavators",
         "note": "Not sure which one you need? Send a photo - we’ll recommend the right machine.",
         "prices": {
+          "thb": "{price} THB",
           "hour": "Per hour",
           "day": "Per day"
         },
@@ -637,6 +645,7 @@ useHead(() => {
         "title": "เครื่องจักรของเรา",
         "note": "ไม่แน่ใจว่าใช้ขนาดไหน? ส่งรูปมา เราช่วยเลือกให้",
         "prices": {
+          "thb": "{price} บาท",
           "hour": "ต่อชั่วโมง",
           "day": "ต่อวัน"
         },
