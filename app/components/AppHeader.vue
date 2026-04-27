@@ -12,6 +12,8 @@ import type { SocialKey } from '~/composables/useAnalyticsEvent';
 const { t, locale, locales } = useI18n();
 const localeRoute = useLocaleRoute();
 const switchLocalePath = useSwitchLocalePath();
+const availableLocales = computed(() => locales.value.filter(i => i.code !== locale.value));
+
 const route = useRoute();
 
 const { trackPhoneClick, trackSocialClick } = useAnalyticsEvent();
@@ -160,15 +162,19 @@ const onSocialClick = (social: SocialItem, location: string) => {
         </UButton>
 
         <div class="flex items-center gap-2">
-          <UButton
-            v-for="lang in locales"
+          <a
+            v-for="lang in availableLocales"
             :key="lang.code"
-            :to="switchLocalePath(lang.code)"
-            size="xs"
-            :variant="locale === lang.code ? 'solid' : 'outline'"
+            :href="switchLocalePath(lang.code)"
           >
-            <span>{{ lang.flag }}</span>
-          </UButton>
+            <UButton
+              as="span"
+              variant="outline"
+              size="md"
+            >
+              {{ lang.flag }}
+            </UButton>
+          </a>
         </div>
       </div>
     </template>
@@ -219,17 +225,20 @@ const onSocialClick = (social: SocialItem, location: string) => {
           </div>
 
           <div class="flex flex-wrap gap-2 pt-4">
-            <UButton
-              v-for="lang in locales"
+            <a
+              v-for="lang in availableLocales"
               :key="lang.code"
-              :to="switchLocalePath(lang.code)"
-              size="xs"
-              :variant="locale === lang.code ? 'solid' : 'outline'"
+              :href="switchLocalePath(lang.code)"
             >
-              <span>{{ lang.flag }}</span>
-
-              <span>{{ lang.name }}</span>
-            </UButton>
+              <UButton
+                as="span"
+                variant="outline"
+                size="xs"
+              >
+                {{ lang.name }}
+                {{ lang.flag }}
+              </UButton>
+            </a>
           </div>
         </div>
       </div>

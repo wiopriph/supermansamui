@@ -2,6 +2,7 @@
 const { t, locale, locales } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
 const localeRoute = useLocaleRoute();
+const availableLocales = computed(() => locales.value.filter(i => i.code !== locale.value));
 
 const items = computed(() => [
   {
@@ -77,17 +78,20 @@ const year = new Date().getFullYear();
 
     <template #right>
       <div class="flex items-center gap-2">
-        <UButton
-          v-for="lang in locales"
+        <a
+          v-for="lang in availableLocales"
           :key="lang.code"
-          :to="switchLocalePath(lang.code)"
-          size="xs"
-          :variant="locale === lang.code ? 'solid' : 'outline'"
+          :href="switchLocalePath(lang.code)"
         >
-          <span>{{ lang.flag }}</span>
-
-          <span>{{ lang.name }}</span>
-        </UButton>
+          <UButton
+            as="span"
+            variant="outline"
+            size="xs"
+          >
+            {{ lang.name }}
+            {{ lang.flag }}
+          </UButton>
+        </a>
       </div>
     </template>
 
