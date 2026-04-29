@@ -170,7 +170,7 @@ const onSocialClick = (social: SocialItem, location: string) => {
             <UButton
               as="span"
               variant="outline"
-              size="md"
+              size="sm"
             >
               {{ lang.flag }}
             </UButton>

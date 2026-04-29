@@ -4,9 +4,17 @@ export const PRICING = {
       hour: 1000,
       shift: 7500,
     },
+    b32: {
+      hour: 1000,
+      shift: 7500,
+    },
     cat305cr: {
       hour: 1200,
       shift: 8500,
+    },
+    vio70: {
+      hour: 1700,
+      shift: 12000,
     },
     pc128: {
       hour: 2200,

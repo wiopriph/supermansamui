@@ -7,20 +7,19 @@ const { t } = useI18n();
 const heroTitle = computed(() => t('excavator.hero.title'));
 const heroDescription = computed(() => t('excavator.hero.description'));
 
-const tasksTitle = computed(() => t('excavator.tasks.title'));
 const tasksItems = computed(() => [
   {
-    icon: 'i-lucide-axe',
+    icon: 'i-lucide-pickaxe',
     title: t('excavator.tasks.t1.title'),
     description: t('excavator.tasks.t1.description'),
   },
   {
-    icon: 'i-lucide-rows',
+    icon: 'i-lucide-rows-3',
     title: t('excavator.tasks.t2.title'),
     description: t('excavator.tasks.t2.description'),
   },
   {
-    icon: 'i-lucide-tree-pine',
+    icon: 'i-lucide-hammer',
     title: t('excavator.tasks.t3.title'),
     description: t('excavator.tasks.t3.description'),
   },
@@ -30,37 +29,38 @@ const tasksItems = computed(() => [
     description: t('excavator.tasks.t4.description'),
   },
   {
-    icon: 'i-lucide-house',
+    icon: 'i-lucide-route',
     title: t('excavator.tasks.t5.title'),
     description: t('excavator.tasks.t5.description'),
   },
   {
-    icon: 'i-lucide-mountain',
+    icon: 'i-lucide-hard-hat',
     title: t('excavator.tasks.t6.title'),
     description: t('excavator.tasks.t6.description'),
   },
 ]);
 
-const equipmentTitle = computed(() => t('excavator.equipment.title'));
-const equipmentNote = computed(() => t('excavator.equipment.note'));
-
 const formatPrice = (value: number) => t('excavator.equipment.prices.thb', { price: value });
 
-const equipmentItems = computed(() => ([
+const equipmentItems = computed(() => [
   {
     title: 'Komatsu PC30-7',
     image: '/images/equipment/excavators/komatsu-pc30-7.webp',
     subtitle: t('excavator.equipment.items.pc30.type'),
     description: t('excavator.equipment.items.pc30.description'),
     prices: [
-      {
-        label: t('excavator.equipment.prices.hour'),
-        value: formatPrice(PRICING.excavators.pc30.hour),
-      },
-      {
-        label: t('excavator.equipment.prices.day'),
-        value: formatPrice(PRICING.excavators.pc30.shift),
-      },
+      { label: t('excavator.equipment.prices.hour'), value: formatPrice(PRICING.excavators.pc30.hour) },
+      { label: t('excavator.equipment.prices.day'), value: formatPrice(PRICING.excavators.pc30.shift) },
+    ],
+  },
+  {
+    title: 'Yanmar B32',
+    image: '/images/equipment/excavators/yanmar-b32.webp',
+    subtitle: t('excavator.equipment.items.b32.type'),
+    description: t('excavator.equipment.items.b32.description'),
+    prices: [
+      { label: t('excavator.equipment.prices.hour'), value: formatPrice(PRICING.excavators.b32.hour) },
+      { label: t('excavator.equipment.prices.day'), value: formatPrice(PRICING.excavators.b32.shift) },
     ],
   },
   {
@@ -69,14 +69,18 @@ const equipmentItems = computed(() => ([
     subtitle: t('excavator.equipment.items.cat305.type'),
     description: t('excavator.equipment.items.cat305.description'),
     prices: [
-      {
-        label: t('excavator.equipment.prices.hour'),
-        value: formatPrice(PRICING.excavators.cat305cr.hour),
-      },
-      {
-        label: t('excavator.equipment.prices.day'),
-        value: formatPrice(PRICING.excavators.cat305cr.shift),
-      },
+      { label: t('excavator.equipment.prices.hour'), value: formatPrice(PRICING.excavators.cat305cr.hour) },
+      { label: t('excavator.equipment.prices.day'), value: formatPrice(PRICING.excavators.cat305cr.shift) },
+    ],
+  },
+  {
+    title: 'Yanmar ViO70',
+    image: '/images/equipment/excavators/yanmar-vio70.webp',
+    subtitle: t('excavator.equipment.items.vio70.type'),
+    description: t('excavator.equipment.items.vio70.description'),
+    prices: [
+      { label: t('excavator.equipment.prices.hour'), value: formatPrice(PRICING.excavators.vio70.hour) },
+      { label: t('excavator.equipment.prices.day'), value: formatPrice(PRICING.excavators.vio70.shift) },
     ],
   },
   {
@@ -85,21 +89,13 @@ const equipmentItems = computed(() => ([
     subtitle: t('excavator.equipment.items.pc128.type'),
     description: t('excavator.equipment.items.pc128.description'),
     prices: [
-      {
-        label: t('excavator.equipment.prices.hour'),
-        value: formatPrice(PRICING.excavators.pc128.hour),
-      },
-      {
-        label: t('excavator.equipment.prices.day'),
-        value: formatPrice(PRICING.excavators.pc128.shift),
-      },
+      { label: t('excavator.equipment.prices.hour'), value: formatPrice(PRICING.excavators.pc128.hour) },
+      { label: t('excavator.equipment.prices.day'), value: formatPrice(PRICING.excavators.pc128.shift) },
     ],
   },
-]));
+]);
 
-
-const includedTitle = computed(() => t('excavator.included.title'));
-const includedItems = computed(() => ([
+const includedItems = computed(() => [
   {
     icon: 'i-heroicons-clock',
     title: t('excavator.included.flexible.title'),
@@ -107,61 +103,54 @@ const includedItems = computed(() => ([
   },
   {
     icon: 'i-heroicons-map',
-    title: t('excavator.included.planning.title'),
-    description: t('excavator.included.planning.description'),
+    title: t('excavator.included.machine.title'),
+    description: t('excavator.included.machine.description'),
   },
   {
     icon: 'i-heroicons-camera',
     title: t('excavator.included.report.title'),
     description: t('excavator.included.report.description'),
   },
-]));
+]);
 
-const faqTitle = computed(() => t('excavator.faq.title'));
-const faqItems = computed(() => ([
+
+const localeRoute = useLocaleRoute();
+
+const relatedServices = computed(() => [
   {
-    question: t('excavator.faq.q1.question'),
-    answer: t('excavator.faq.q1.answer'),
+    icon: 'i-lucide-land-plot',
+    title: t('excavator.related.earthworks.title'),
+    description: t('excavator.related.earthworks.description'),
+    to: localeRoute({ name: 'services-earthworks' }),
   },
   {
-    question: t('excavator.faq.q2.question'),
-    answer: t('excavator.faq.q2.answer'),
+    icon: 'i-lucide-truck',
+    title: t('excavator.related.truck.title'),
+    description: t('excavator.related.truck.description'),
+    to: localeRoute({ name: 'services-truck' }),
   },
-  {
-    question: t('excavator.faq.q3.question'),
-    answer: t('excavator.faq.q3.answer'),
-  },
-  {
-    question: t('excavator.faq.q4.question'),
-    answer: t('excavator.faq.q4.answer'),
-  },
-  {
-    question: t('excavator.faq.q5.question'),
-    answer: t('excavator.faq.q5.answer'),
-  },
-  {
-    question: t('excavator.faq.q6.question'),
-    answer: t('excavator.faq.q6.answer'),
-  },
-]));
+]);
+
+const faqItems = computed(() => [
+  { question: t('excavator.faq.q1.question'), answer: t('excavator.faq.q1.answer') },
+  { question: t('excavator.faq.q2.question'), answer: t('excavator.faq.q2.answer') },
+  { question: t('excavator.faq.q3.question'), answer: t('excavator.faq.q3.answer') },
+  { question: t('excavator.faq.q4.question'), answer: t('excavator.faq.q4.answer') },
+  { question: t('excavator.faq.q5.question'), answer: t('excavator.faq.q5.answer') },
+  { question: t('excavator.faq.q6.question'), answer: t('excavator.faq.q6.answer') },
+  { question: t('excavator.faq.q7.question'), answer: t('excavator.faq.q7.answer') },
+]);
 
 const photos = computed(() => {
   const order = [
-    'earthworks',
     'construction-foundation',
-    'leveling-construction-site',
-    'root-removal',
-    'bush-removal',
     'sewerage-installation',
-    'delivery-of-an-excavator',
-    'drainage-installation',
-    'garbage-collection',
+    'excavator-digging',
     'loading-excavator-onto-truck',
-    'refueling-excavator',
-    'road-construction',
-    'scavengery',
-    'night-work',
+    'delivery-of-an-excavator',
     'transporting-excavator',
+    'refueling-excavator',
+    'night-work',
   ];
 
   return order.map((key) => ({
@@ -170,6 +159,15 @@ const photos = computed(() => {
     src: `/images/services/excavators/photos/${key}.webp`,
   }));
 });
+
+const serviceTypes = computed(() => [
+  t('excavator.schema.serviceTypes.rental'),
+  t('excavator.schema.serviceTypes.operator'),
+  t('excavator.schema.serviceTypes.foundation'),
+  t('excavator.schema.serviceTypes.trenching'),
+  t('excavator.schema.serviceTypes.demolition'),
+  t('excavator.schema.serviceTypes.loading'),
+]);
 
 
 const jsonLd = computed(() => ({
@@ -185,8 +183,9 @@ const jsonLd = computed(() => ({
       },
       areaServed: {
         '@type': 'AdministrativeArea',
-        name: 'Ko Samui, Surat Thani, Thailand',
+        name: 'Koh Samui, Surat Thani, Thailand',
       },
+      serviceType: serviceTypes.value,
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: t('excavator.tasks.title'),
@@ -198,10 +197,7 @@ const jsonLd = computed(() => ({
             '@type': 'Service',
             name: item.title,
             description: item.description,
-            areaServed: {
-              '@type': 'AdministrativeArea',
-              name: 'Ko Samui, Surat Thani, Thailand',
-            },
+            areaServed: 'Koh Samui',
           },
         })),
       },
@@ -220,6 +216,7 @@ useHead(() => {
     meta: [
       { name: 'description', content: description },
       { name: 'keywords', content: keywords },
+      { name: 'robots', content: 'index, follow, max-image-preview:large' },
 
       { property: 'og:title', content: title },
       { property: 'og:description', content: description },
@@ -246,46 +243,56 @@ useHead(() => {
 {
   "ru": {
     "excavator": {
+      "schema": {
+        "serviceTypes": {
+          "rental": "Аренда экскаватора",
+          "operator": "Экскаватор с оператором",
+          "foundation": "Копка под фундамент",
+          "trenching": "Копка траншей",
+          "demolition": "Демонтаж экскаватором",
+          "loading": "Погрузка грунта"
+        }
+      },
       "seo": {
-        "title": "Аренда экскаватора на Самуи | Земляные работы, вывоз грунта и подготовка участка",
-        "description": "Аренда экскаватора на Самуи с оператором. Копаем котлованы и траншеи, расчищаем и выравниваем участки, вывозим грунт и готовим площадки под строительство. Быстрый выезд, понятные цены без сюрпризов.",
-        "keywords": "аренда экскаватора самуи, услуги экскаватора самуи, земляные работы самуи, мини экскаватор самуи, подготовка участка самуи, вывоз грунта самуи"
+        "title": "Аренда экскаватора на Самуи | Экскаватор с оператором",
+        "description": "Аренда экскаватора на Самуи с оператором: копка под фундамент, траншеи, демонтаж, гидромолот, погрузка грунта и работа на стройке. Малые, средние и большие экскаваторы.",
+        "keywords": "аренда экскаватора самуи, экскаватор самуи, экскаватор с оператором самуи, мини экскаватор самуи, копка фундамента самуи, копка траншей самуи, гидромолот самуи, демонтаж экскаватором самуи"
       },
       "hero": {
         "title": "Аренда экскаватора на Самуи",
-        "description": "Копаем, вывозим и подготавливаем участок под строительство. Приезжаем вовремя, работаем аккуратно и без неожиданных доплат."
+        "description": "Экскаваторы с оператором для копки, траншей, демонтажа, гидромолота, погрузки грунта и строительных задач."
       },
-      "intro": "Нужно выкопать котлован, сделать траншею, расчистить участок или вывезти грунт? Мы закрываем такие задачи под ключ. Работаем своей техникой и своей командой - без посредников и без хаоса на объекте. Вы присылаете фото и короткое описание задачи, мы быстро считаем стоимость, подбираем технику и приезжаем в назначенный день. Без затягивания сроков и без «внезапных» доплат в процессе.",
+      "intro": "Нужен экскаватор на объект? Мы подберём подходящую машину под задачу, подъезд и объём работ. Работаем с котлованами, траншеями, демонтажом, погрузкой грунта, гидромолотом, узкими участками и ежедневными задачами на стройке. Отправьте точку на карте, фото участка и короткое описание - мы быстро скажем, какая техника нужна, сколько это может занять и какой формат выгоднее: почасово, сменой или под задачу.",
       "tasks": {
-        "title": "Чем можем помочь",
+        "title": "Для каких задач нужен экскаватор",
         "t1": {
-          "title": "Котлованы",
-          "description": "Копаем под дом, фундамент, бассейн или любые другие задачи."
+          "title": "Копка под фундамент",
+          "description": "Копаем котлованы, ямы под опоры, бассейны, технические зоны и другие строительные задачи."
         },
         "t2": {
           "title": "Траншеи",
-          "description": "Под воду, электричество, канализацию и дренаж."
+          "description": "Делаем траншеи под воду, электричество, канализацию, трубы, кабели и дренажные линии."
         },
         "t3": {
-          "title": "Расчистка участка",
-          "description": "Убираем кусты, корни, мусор и подготавливаем землю."
+          "title": "Демонтаж и гидромолот",
+          "description": "Помогаем ломать бетон, старые конструкции, плиты и твёрдые участки, когда нужна техника с гидромолотом."
         },
         "t4": {
-          "title": "Вывоз грунта",
-          "description": "Загружаем и вывозим лишний грунт и строительный мусор."
+          "title": "Погрузка грунта",
+          "description": "Загружаем землю, камни, корни, мусор и строительные отходы в самосвалы."
         },
         "t5": {
-          "title": "Подготовка под строительство",
-          "description": "Выравниваем участок и делаем основу под фундамент."
+          "title": "Работа в узких местах",
+          "description": "Используем компактные экскаваторы там, где большая техника не проходит или не может развернуться."
         },
         "t6": {
-          "title": "Отсыпка",
-          "description": "Привозим грунт, песок и распределяем по участку."
+          "title": "Поддержка стройки",
+          "description": "Экскаватор для текущих задач на объекте: копка, перемещение материала, погрузка и помощь строителям."
         }
       },
       "equipment": {
-        "title": "Какая техника у нас есть",
-        "note": "Не знаете, какой экскаватор подойдёт? Просто отправьте фото - подскажем.",
+        "title": "Наши экскаваторы",
+        "note": "Не знаете, какой экскаватор нужен? Отправьте фото участка и задачу - подскажем.",
         "prices": {
           "thb": "{price} бат",
           "hour": "За час",
@@ -294,175 +301,176 @@ useHead(() => {
         "items": {
           "pc30": {
             "type": "Малый экскаватор",
-            "description": "Для узких участков, траншей и работы рядом с домом. Заходит туда, куда крупная техника не сможет."
+            "description": "Komatsu PC30 - компактный экскаватор для узких участков, траншей и работы рядом с домами, заборами или коммуникациями."
+          },
+          "b32": {
+            "type": "Малый экскаватор",
+            "description": "Yanmar B32 подходит для траншей, дворов, работы возле стен, заборов и участков с ограниченным подъездом."
           },
           "cat305": {
             "type": "Средний экскаватор",
-            "description": "Оптимальный вариант для большинства задач: расчистка, котлованы, выравнивание."
+            "description": "Caterpillar 305CR - универсальная машина для копки, траншей, погрузки грунта, небольшого демонтажа и стройки."
+          },
+          "vio70": {
+            "type": "Средне-большой экскаватор",
+            "description": "Yanmar ViO70 подходит для глубокой копки, тяжёлого грунта, крупных траншей, погрузки и работы с гидромолотом."
           },
           "pc128": {
             "type": "Большой экскаватор",
-            "description": "Для больших объёмов работ, подготовки участков и сложных проектов."
+            "description": "Komatsu PC128US - мощный экскаватор для больших объёмов, тяжёлой копки и крупных строительных объектов."
           }
         }
       },
+      "related": {
+        "title": "Может понадобиться дополнительно",
+        "earthworks": {
+          "title": "Земляные работы под ключ",
+          "description": "Если нужно не просто заказать экскаватор, а подготовить участок полностью: расчистка, уровни, дренаж, отсыпка и вывоз."
+        },
+        "truck": {
+          "title": "Самосвалы и вывоз грунта",
+          "description": "Если после копки нужно вывезти землю, мусор, камни или привезти грунт, песок и другие материалы."
+        }
+      },
       "packages": {
-        "title": "Нужен самосвал или грунт?",
-        "text": "Можем сразу привезти материалы или вывезти лишний грунт. Закрываем задачу полностью: экскаватор + самосвал + логистика."
+        "title": "Нужен самосвал вместе с экскаватором?",
+        "text": "Если после копки нужно вывезти грунт, мусор или привезти материалы, мы можем сразу добавить самосвал. Экскаватор и грузовик работают одной командой - быстрее, проще и без лишней координации."
       },
       "included": {
-        "title": "Почему с нами проще",
+        "title": "Почему с нами удобно",
         "flexible": {
-          "title": "Гибкий формат работы",
-          "description": "Можно по часам, сменами или под ключ - как удобнее под вашу задачу."
+          "title": "Почасово, сменой или под задачу",
+          "description": "Подбираем формат под реальную работу, чтобы вы не переплачивали за лишнее время."
         },
-        "planning": {
-          "title": "Помогаем с решением",
-          "description": "Подскажем, как лучше сделать, чтобы не переплачивать и не переделывать."
+        "machine": {
+          "title": "Подбираем правильную технику",
+          "description": "Не отправляем большой экскаватор туда, где нужен маленький, и не ставим слабую машину на тяжёлую задачу."
         },
         "report": {
-          "title": "Контроль без вашего присутствия",
-          "description": "Можем присылать фото и видео, если вас нет на объекте."
+          "title": "Понятная коммуникация",
+          "description": "Согласовываем объём заранее, объясняем ограничения и можем присылать фото или видео по ходу работ."
         }
       },
       "faq": {
         "title": "Частые вопросы",
         "q1": {
           "question": "Оператор входит в стоимость?",
-          "answer": "Да, вся техника работает только с нашим оператором."
+          "answer": "Да. Экскаваторы работают только с нашим оператором."
         },
         "q2": {
-          "question": "Есть ли скрытые расходы?",
-          "answer": "Нет. Цена согласовывается заранее и не меняется в процессе."
+          "question": "Какой экскаватор мне нужен?",
+          "answer": "Зависит от задачи, подъезда, глубины копки, грунта и свободного места на участке. Отправьте фото и описание - подскажем."
         },
         "q3": {
-          "question": "Как проходит работа?",
-          "answer": "Вы отправляете фото и задачу. Мы считаем стоимость, согласуем и приезжаем в назначенный день."
+          "question": "Можно заказать экскаватор на несколько часов?",
+          "answer": "Да, можно. Минимальные условия зависят от техники, локации и доставки."
         },
         "q4": {
-          "question": "Как считается цена?",
-          "answer": "По часам, смене или за весь объём - выбираем оптимальный вариант под задачу."
+          "question": "Сколько стоит доставка техники?",
+          "answer": "Обычно доставка бесплатна от 3 часов работы. Если задача короткая, доставка считается отдельно."
         },
         "q5": {
-          "question": "Сколько стоит доставка?",
-          "answer": "Бесплатно от 3 часов. Иначе - 1000 бат."
+          "question": "Вы можете вывезти грунт после копки?",
+          "answer": "Да. Можем добавить самосвал и организовать вывоз грунта, камней, корней или строительного мусора."
         },
         "q6": {
-          "question": "Есть ли грузовики?",
-          "answer": "Да, есть самосвалы для вывоза грунта и доставки материалов."
+          "question": "У вас есть экскаватор с гидромолотом?",
+          "answer": "Да. Для демонтажа бетона и твёрдых оснований можем использовать Yanmar ViO70 с гидромолотом."
+        },
+        "q7": {
+          "question": "Что нужно для расчёта?",
+          "answer": "Точка на карте, 3–5 фото участка и подъезда, короткое описание задачи и желаемые сроки."
         }
       },
       "photos": {
-        "title": "Примеры наших работ",
-        "bush-removal": {
-          "title": "Очистка участка от кустарника и подготовка земли",
-          "alt": "Очистка участка от кустарника и растительности, подготовка земли под строительство"
-        },
+        "title": "Примеры работ экскаватором",
         "construction-foundation": {
-          "title": "Подготовка основания и земляные работы под фундамент",
-          "alt": "Земляные работы и подготовка основания под фундамент здания"
-        },
-        "delivery-of-an-excavator": {
-          "title": "Доставка экскаватора на строительный объект заказчика",
-          "alt": "Доставка экскаватора на объект и транспортировка строительной техники"
-        },
-        "drainage-installation": {
-          "title": "Устройство дренажной системы и водоотведения на участке",
-          "alt": "Монтаж дренажной системы и организация водоотведения на участке"
-        },
-        "earthworks": {
-          "title": "Земляные работы экскаватором на строительном участке",
-          "alt": "Земляные работы экскаватором, копка и перемещение грунта"
-        },
-        "garbage-collection": {
-          "title": "Сбор и вывоз строительного мусора с участка",
-          "alt": "Сбор и вывоз строительного мусора и отходов с территории"
-        },
-        "leveling-construction-site": {
-          "title": "Выравнивание и планировка строительного участка под застройку",
-          "alt": "Планировка и выравнивание участка перед строительными работами"
-        },
-        "loading-excavator-onto-truck": {
-          "title": "Погрузка грунта экскаватором в самосвал на объекте",
-          "alt": "Погрузка грунта экскаватором в самосвал для вывоза"
-        },
-        "night-work": {
-          "title": "Ночные строительные и земляные работы на объекте",
-          "alt": "Выполнение строительных и земляных работ в ночное время"
-        },
-        "refueling-excavator": {
-          "title": "Заправка экскаватора и подготовка техники к работе",
-          "alt": "Заправка экскаватора топливом и подготовка техники к работе"
-        },
-        "road-construction": {
-          "title": "Строительство и отсыпка подъездной дороги к участку",
-          "alt": "Строительство подъездной дороги и отсыпка грунта для проезда"
-        },
-        "root-removal": {
-          "title": "Удаление корней деревьев и расчистка строительного участка",
-          "alt": "Удаление корней деревьев и очистка участка под строительство"
-        },
-        "scavengery": {
-          "title": "Комплексная расчистка участка и вывоз строительного мусора",
-          "alt": "Полная расчистка участка и вывоз мусора после работ"
+          "title": "Копка под фундамент",
+          "alt": "Экскаватор копает участок под фундамент на Самуи"
         },
         "sewerage-installation": {
-          "title": "Прокладка канализации и подготовка траншей под коммуникации",
-          "alt": "Прокладка канализации и рытьё траншей под инженерные сети"
+          "title": "Траншеи под коммуникации",
+          "alt": "Копка траншеи экскаватором под трубы и коммуникации на Самуи"
+        },
+        "earthworks": {
+          "title": "Работа экскаватора на объекте",
+          "alt": "Экскаватор выполняет копку и перемещение грунта на строительном объекте"
+        },
+        "loading-excavator-onto-truck": {
+          "title": "Погрузка грунта",
+          "alt": "Экскаватор загружает грунт в самосвал для вывоза"
+        },
+        "delivery-of-an-excavator": {
+          "title": "Доставка экскаватора",
+          "alt": "Доставка экскаватора на строительный объект на Самуи"
         },
         "transporting-excavator": {
-          "title": "Перевозка экскаватора на трале между строительными объектами",
-          "alt": "Перевозка экскаватора на трале и доставка техники на объект"
+          "title": "Перевозка техники",
+          "alt": "Перевозка экскаватора на трале между объектами"
+        },
+        "refueling-excavator": {
+          "title": "Подготовка техники",
+          "alt": "Заправка и подготовка экскаватора перед работой"
+        },
+        "night-work": {
+          "title": "Работа в вечернее время",
+          "alt": "Экскаватор работает на объекте в вечернее время"
         }
       }
     }
   },
   "en": {
     "excavator": {
-      "seo": {
-        "title": "Excavator rental on Koh Samui | Digging, land clearing & site preparation",
-        "description": "Excavator rental on Koh Samui with operator. We dig pits and trenches, clear land, remove soil and prepare sites for construction. Fast response, clear pricing, no hidden costs.",
-        "keywords": "excavator rental koh samui, excavator service samui, land clearing samui, digging samui, mini excavator samui, soil removal samui, site preparation samui"
-      },
-
-      "hero": {
-        "title": "Excavator rental on Koh Samui",
-        "description": "We dig, clear and prepare your land. We show up on time, work clean and don’t change the price halfway."
-      },
-
-      "intro": "Need to dig a pit, trench, clear land or remove soil? We handle the whole job. We work with our own machines and our own team - no middlemen, no confusion on site. You send photos and a short description, we estimate quickly, choose the right machine and show up on the agreed day. No delays, no chaos, no surprise costs during the work.",
-
-      "tasks": {
-        "title": "What we do",
-        "t1": {
-          "title": "Pits and foundations",
-          "description": "Digging for houses, pools, foundations or any construction needs."
-        },
-        "t2": {
-          "title": "Trenches",
-          "description": "For water, electricity, drainage and utility lines."
-        },
-        "t3": {
-          "title": "Land clearing",
-          "description": "Removing vegetation, roots, debris and preparing the land."
-        },
-        "t4": {
-          "title": "Soil removal",
-          "description": "Loading and removing excess soil and construction waste."
-        },
-        "t5": {
-          "title": "Site preparation",
-          "description": "Leveling and preparing the ground for construction."
-        },
-        "t6": {
-          "title": "Backfilling",
-          "description": "Delivering and spreading soil, sand and other materials."
+      "schema": {
+        "serviceTypes": {
+          "rental": "Excavator rental",
+          "operator": "Excavator with operator",
+          "foundation": "Foundation digging",
+          "trenching": "Trenching",
+          "demolition": "Excavator demolition",
+          "loading": "Soil loading"
         }
       },
-
+      "seo": {
+        "title": "Excavator Rental on Koh Samui | Excavator with Operator",
+        "description": "Excavator rental on Koh Samui with operator: foundation digging, trenching, demolition, hydraulic breaker work, soil loading and construction site support. Small, medium and large excavators.",
+        "keywords": "excavator rental koh samui, excavator koh samui, excavator with operator samui, mini excavator samui, foundation digging samui, trench digging samui, hydraulic breaker samui, excavator demolition samui"
+      },
+      "hero": {
+        "title": "Excavator rental on Koh Samui",
+        "description": "Excavators with operator for digging, trenching, demolition, hydraulic breaker work, soil loading and construction site tasks."
+      },
+      "intro": "Need an excavator on your site? We help choose the right machine for the task, access and work volume. We handle foundation digging, trenching, demolition, soil loading, hydraulic breaker work, tight-access jobs and daily construction site tasks. Send us a map pin, site photos and a short task description - we will recommend the right excavator, estimate the work and suggest the best format: hourly, daily or task-based.",
+      "tasks": {
+        "title": "What excavators are used for",
+        "t1": {
+          "title": "Foundation digging",
+          "description": "Digging for foundations, pools, technical areas, posts and other construction needs."
+        },
+        "t2": {
+          "title": "Trenching",
+          "description": "Trenches for water, electricity, sewer lines, pipes, cables and drainage lines."
+        },
+        "t3": {
+          "title": "Demolition & hydraulic breaker",
+          "description": "Breaking concrete, old structures, slabs and hard surfaces when a hydraulic breaker is needed."
+        },
+        "t4": {
+          "title": "Soil loading",
+          "description": "Loading soil, rocks, roots, debris and construction waste into dump trucks."
+        },
+        "t5": {
+          "title": "Tight access work",
+          "description": "Using compact excavators where large machines cannot enter or turn around."
+        },
+        "t6": {
+          "title": "Construction site support",
+          "description": "Excavator work for daily site tasks: digging, moving material, loading and helping the construction team."
+        }
+      },
       "equipment": {
         "title": "Our excavators",
-        "note": "Not sure which one you need? Send a photo - we’ll recommend the right machine.",
+        "note": "Not sure which excavator you need? Send site photos and task details - we will recommend the right size.",
         "prices": {
           "thb": "{price} THB",
           "hour": "Per hour",
@@ -471,179 +479,176 @@ useHead(() => {
         "items": {
           "pc30": {
             "type": "Small excavator",
-            "description": "Best for tight spaces, trenches and work close to buildings."
+            "description": "Komatsu PC30 is a compact excavator for tight spaces, trenches and work near houses, fences or utilities."
+          },
+          "b32": {
+            "type": "Small excavator",
+            "description": "Yanmar B32 is good for trenches, yard work, digging near walls or fences, and sites with limited access."
           },
           "cat305": {
             "type": "Medium excavator",
-            "description": "The most common choice for clearing, digging and leveling."
+            "description": "Caterpillar 305CR is a versatile machine for digging, trenching, soil loading, small demolition and site work."
+          },
+          "vio70": {
+            "type": "Medium-large excavator",
+            "description": "Yanmar ViO70 is suitable for deeper digging, heavy soil, larger trenches, loading and hydraulic breaker work."
           },
           "pc128": {
             "type": "Large excavator",
-            "description": "For bigger jobs, large volumes and heavy earthworks."
+            "description": "Komatsu PC128US is a powerful excavator for large volumes, heavy digging and bigger construction sites."
           }
         }
       },
-
-      "packages": {
-        "title": "Need dump trucks or materials?",
-        "text": "We can deliver soil, sand or remove waste at the same time. One team handles everything - excavator, trucks and logistics."
-      },
-
-      "included": {
-        "title": "Why it’s easier to work with us",
-        "flexible": {
-          "title": "Flexible pricing",
-          "description": "Hourly, daily or full job - we choose what makes sense for your task."
+      "related": {
+        "title": "You may also need",
+        "earthworks": {
+          "title": "Full earthworks services",
+          "description": "If you need more than an excavator: land clearing, levels, drainage, backfilling and soil removal."
         },
-        "planning": {
-          "title": "We help you decide",
-          "description": "We suggest the right approach so you don’t waste time or money."
-        },
-        "report": {
-          "title": "Remote updates",
-          "description": "We can send photos and videos if you are not on site."
+        "truck": {
+          "title": "Dump trucks and soil removal",
+          "description": "If digging also requires soil removal, debris removal, rock hauling or material delivery."
         }
       },
-
+      "packages": {
+        "title": "Need a dump truck with the excavator?",
+        "text": "If the job requires soil removal, debris removal or material delivery, we can add a dump truck right away. Excavator and truck work as one team - faster, easier and with less coordination."
+      },
+      "included": {
+        "title": "Why clients work with us",
+        "flexible": {
+          "title": "Hourly, daily or task-based",
+          "description": "We choose the work format based on the real task so you do not overpay for unnecessary time."
+        },
+        "machine": {
+          "title": "Right machine for the job",
+          "description": "We do not send a large excavator where a small one is needed, or a weak machine for heavy work."
+        },
+        "report": {
+          "title": "Clear communication",
+          "description": "We confirm the scope in advance, explain limitations and can send photo or video updates during the work."
+        }
+      },
       "faq": {
         "title": "Frequently asked questions",
         "q1": {
           "question": "Is the operator included?",
-          "answer": "Yes. All machines come with our operator."
+          "answer": "Yes. All excavators come with our operator."
         },
         "q2": {
-          "question": "Any hidden costs?",
-          "answer": "No. We agree on the price before starting and don’t change it during the job."
+          "question": "Which excavator size do I need?",
+          "answer": "It depends on the task, access, digging depth, soil condition and available space. Send photos and details - we will advise."
         },
         "q3": {
-          "question": "How does it work?",
-          "answer": "You send photos and task details. We estimate, confirm and come on the agreed day."
+          "question": "Can I book an excavator for a few hours?",
+          "answer": "Yes. Hourly work is possible. Minimum conditions depend on the machine, location and delivery."
         },
         "q4": {
-          "question": "How is pricing calculated?",
-          "answer": "By hour, by day or as a full job - depending on what works best."
+          "question": "How much is machine delivery?",
+          "answer": "Delivery is usually free from 3 hours of work. For short jobs, delivery is calculated separately."
         },
         "q5": {
-          "question": "Delivery cost?",
-          "answer": "Free from 3 hours. Otherwise 1000 THB."
+          "question": "Can you remove soil after digging?",
+          "answer": "Yes. We can add a dump truck and arrange soil, rocks, roots or construction waste removal."
         },
         "q6": {
-          "question": "Do you have trucks?",
-          "answer": "Yes, we have dump trucks for soil removal and material delivery."
+          "question": "Do you have an excavator with hydraulic breaker?",
+          "answer": "Yes. For concrete demolition and hard surfaces, we can use the Yanmar ViO70 with a hydraulic breaker."
+        },
+        "q7": {
+          "question": "What do you need for a quote?",
+          "answer": "A location pin, 3–5 photos of the site and access road, a short task description and your preferred timing."
         }
       },
-
       "photos": {
-        "title": "Our work examples",
-        "bush-removal": {
-          "title": "Site clearing and bush removal for land preparation",
-          "alt": "Clearing bushes and vegetation, preparing land for construction"
-        },
+        "title": "Excavator work examples",
         "construction-foundation": {
-          "title": "Foundation preparation and excavation works on site",
-          "alt": "Excavation and ground preparation for building foundation"
-        },
-        "delivery-of-an-excavator": {
-          "title": "Excavator delivery to construction site location",
-          "alt": "Transport and delivery of excavator to job site"
-        },
-        "drainage-installation": {
-          "title": "Drainage system installation and water management works",
-          "alt": "Installing drainage system and managing water flow on site"
-        },
-        "earthworks": {
-          "title": "Excavation and earthworks on construction site",
-          "alt": "Excavation works, digging and moving soil with excavator"
-        },
-        "garbage-collection": {
-          "title": "Construction waste collection and debris removal",
-          "alt": "Collecting and removing construction waste from site"
-        },
-        "leveling-construction-site": {
-          "title": "Site leveling and grading for construction preparation",
-          "alt": "Leveling and grading land before construction works"
-        },
-        "loading-excavator-onto-truck": {
-          "title": "Loading soil into dump truck using excavator",
-          "alt": "Excavator loading soil into dump truck for transport"
-        },
-        "night-work": {
-          "title": "Night construction and excavation works on site",
-          "alt": "Performing construction and excavation works at night"
-        },
-        "refueling-excavator": {
-          "title": "Refueling excavator and preparing equipment for work",
-          "alt": "Refueling construction equipment before starting work"
-        },
-        "road-construction": {
-          "title": "Access road construction and soil filling works",
-          "alt": "Building access road and preparing surface for transport"
-        },
-        "root-removal": {
-          "title": "Tree root removal and land clearing works",
-          "alt": "Removing tree roots and clearing land for construction"
-        },
-        "scavengery": {
-          "title": "Full site clearing and construction debris removal",
-          "alt": "Complete site clearing and waste removal services"
+          "title": "Foundation digging",
+          "alt": "Excavator digging for foundation work on Koh Samui"
         },
         "sewerage-installation": {
-          "title": "Sewer system installation and trenching works",
-          "alt": "Installing sewer lines and digging trenches for utilities"
+          "title": "Utility trenching",
+          "alt": "Excavator digging trench for pipes and utilities on Koh Samui"
+        },
+        "earthworks": {
+          "title": "Excavator working on site",
+          "alt": "Excavator digging and moving soil on a construction site"
+        },
+        "loading-excavator-onto-truck": {
+          "title": "Soil loading",
+          "alt": "Excavator loading soil into dump truck for removal"
+        },
+        "delivery-of-an-excavator": {
+          "title": "Excavator delivery",
+          "alt": "Excavator delivery to construction site on Koh Samui"
         },
         "transporting-excavator": {
-          "title": "Transporting excavator on lowbed trailer between sites",
-          "alt": "Heavy equipment transport using trailer to job site"
+          "title": "Machine transport",
+          "alt": "Transporting excavator on lowbed trailer between job sites"
+        },
+        "refueling-excavator": {
+          "title": "Machine preparation",
+          "alt": "Refueling and preparing excavator before work"
+        },
+        "night-work": {
+          "title": "Evening work",
+          "alt": "Excavator working on site in the evening"
         }
       }
     }
   },
   "th": {
     "excavator": {
-      "seo": {
-        "title": "เช่ารถขุด เกาะสมุย | ขุดดิน เคลียร์พื้นที่ และเตรียมไซต์ก่อสร้าง",
-        "description": "บริการเช่ารถขุดพร้อมคนขับบนเกาะสมุย ขุดหลุม ทำร่องน้ำ เคลียร์ที่ดิน ขนดินออก และเตรียมพื้นที่ก่อสร้าง รวดเร็ว ราคาเคลียร์ ไม่มีค่าใช้จ่ายแอบแฝง",
-        "keywords": "เช่ารถขุด สมุย, รถขุด สมุย, ขุดดิน สมุย, เคลียร์ที่ดิน สมุย, เตรียมพื้นที่ก่อสร้าง สมุย, ขนดิน สมุย"
+      "schema": {
+        "serviceTypes": {
+          "rental": "เช่ารถขุด",
+          "operator": "รถขุดพร้อมคนขับ",
+          "foundation": "ขุดฐานราก",
+          "trenching": "ขุดร่อง",
+          "demolition": "งานทุบรื้อด้วยรถขุด",
+          "loading": "ตักดินขึ้นรถ"
+        }
       },
-
+      "seo": {
+        "title": "บริการรถขุดพร้อมคนขับ เกาะสมุย | ขุดดิน ขุดร่อง ทุบรื้อ",
+        "description": "บริการรถขุดพร้อมคนขับบนเกาะสมุย ขุดฐานราก ขุดร่อง ทุบรื้อ ใช้หัวเจาะ ตักดินขึ้นรถ และช่วยงานก่อสร้าง มีรถขุดหลายขนาด",
+        "keywords": "เช่ารถขุด สมุย, รถขุด สมุย, รถขุดพร้อมคนขับ สมุย, ขุดดิน สมุย, ขุดฐานราก สมุย, ขุดร่อง สมุย, หัวเจาะ รถขุด สมุย, ทุบคอนกรีต สมุย"
+      },
       "hero": {
         "title": "เช่ารถขุดบนเกาะสมุย",
-        "description": "ขุด เคลียร์ และเตรียมพื้นที่ ตรงเวลา ทำงานเรียบร้อย ไม่มีบวกเพิ่มกลางงาน"
+        "description": "รถขุดพร้อมคนขับ สำหรับขุดดิน ขุดร่อง ทุบรื้อ ใช้หัวเจาะ ตักดินขึ้นรถ และช่วยงานก่อสร้าง"
       },
-
-      "intro": "ต้องการขุดหลุม ทำร่องน้ำ เคลียร์พื้นที่ หรือขนดินออก? เราดูแลให้ครบทุกขั้นตอน ใช้ทีมงานและเครื่องจักรของเราเอง ไม่มีตัวกลาง ไม่มีความวุ่นวายในหน้างาน คุณส่งรูปและรายละเอียดมา เราประเมินให้เร็ว เลือกเครื่องจักรที่เหมาะสม และเข้าทำงานตามเวลาที่ตกลงไว้ ไม่มีดีเลย์ และไม่มีค่าใช้จ่ายเพิ่มระหว่างงาน",
-
+      "intro": "ถ้าคุณต้องการรถขุดสำหรับงานที่ดินหรือหน้างานก่อสร้าง เราช่วยเลือกขนาดรถให้เหมาะกับงานได้ เรารับงานขุดฐานราก ขุดร่อง ทุบรื้อ ตักดินขึ้นรถ งานพื้นที่แคบ งานใช้หัวเจาะ และงานทั่วไปในไซต์ก่อสร้าง ส่งโลเคชัน รูปหน้างาน รูปทางเข้า และรายละเอียดงานสั้น ๆ มาให้เรา เราจะช่วยประเมินว่าควรใช้รถขุดขนาดไหน ใช้เวลากี่ชั่วโมงหรือกี่วัน และควรคิดราคาแบบรายชั่วโมง รายวัน หรือเหมางาน",
       "tasks": {
-        "title": "งานที่เราทำ",
+        "title": "รถขุดของเราใช้ทำงานอะไรได้บ้าง",
         "t1": {
-          "title": "ขุดหลุม",
-          "description": "สำหรับบ้าน ฐานราก สระว่ายน้ำ และงานก่อสร้าง"
+          "title": "ขุดฐานราก",
+          "description": "ขุดสำหรับฐานรากบ้าน สระว่ายน้ำ เสา พื้นที่เทคนิค และงานก่อสร้างอื่น ๆ"
         },
         "t2": {
           "title": "ขุดร่อง",
-          "description": "สำหรับน้ำ ไฟฟ้า ระบบระบายน้ำ"
+          "description": "ขุดร่องสำหรับท่อน้ำ ไฟฟ้า ท่อน้ำเสีย สายเคเบิล และร่องระบายน้ำ"
         },
         "t3": {
-          "title": "เคลียร์พื้นที่",
-          "description": "กำจัดต้นไม้ รากไม้ และสิ่งกีดขวาง"
+          "title": "ทุบรื้อและหัวเจาะ",
+          "description": "ช่วยทุบคอนกรีต พื้นเก่า โครงสร้างเก่า และพื้นที่แข็งที่ต้องใช้หัวเจาะ"
         },
         "t4": {
-          "title": "ขนดินออก",
-          "description": "ขนดินส่วนเกินและเศษวัสดุก่อสร้าง"
+          "title": "ตักดินขึ้นรถ",
+          "description": "ตักดิน หิน รากไม้ เศษวัสดุ และขยะก่อสร้างขึ้นรถดั๊มพ์"
         },
         "t5": {
-          "title": "เตรียมพื้นที่",
-          "description": "ปรับระดับและเตรียมพื้นที่สำหรับก่อสร้าง"
+          "title": "งานพื้นที่แคบ",
+          "description": "ใช้รถขุดขนาดเล็กในพื้นที่ที่รถใหญ่เข้าไม่ได้ หรือไม่มีที่ให้กลับตัว"
         },
         "t6": {
-          "title": "ถมดิน",
-          "description": "นำดินและวัสดุมาเกลี่ยให้พร้อมใช้งาน"
+          "title": "ช่วยงานก่อสร้าง",
+          "description": "ใช้รถขุดช่วยงานประจำในไซต์ เช่น ขุด ย้ายวัสดุ ตักดิน และช่วยทีมช่าง"
         }
       },
-
       "equipment": {
-        "title": "เครื่องจักรของเรา",
-        "note": "ไม่แน่ใจว่าใช้ขนาดไหน? ส่งรูปมา เราช่วยเลือกให้",
+        "title": "รถขุดของเรา",
+        "note": "ไม่แน่ใจว่าต้องใช้รถขุดขนาดไหน? ส่งรูปหน้างานมา เราช่วยแนะนำให้ได้",
         "prices": {
           "thb": "{price} บาท",
           "hour": "ต่อชั่วโมง",
@@ -651,130 +656,121 @@ useHead(() => {
         },
         "items": {
           "pc30": {
-            "type": "ขนาดเล็ก",
-            "description": "เหมาะกับพื้นที่แคบและงานใกล้อาคาร"
+            "type": "รถขุดขนาดเล็ก",
+            "description": "Komatsu PC30 เหมาะกับพื้นที่แคบ ขุดร่อง และงานใกล้บ้าน รั้ว หรือท่อ"
+          },
+          "b32": {
+            "type": "รถขุดขนาดเล็ก",
+            "description": "Yanmar B32 เหมาะกับงานขุดร่อง งานในสวน งานใกล้กำแพง รั้ว และพื้นที่ทางเข้าแคบ"
           },
           "cat305": {
-            "type": "ขนาดกลาง",
-            "description": "เหมาะกับงานส่วนใหญ่ เช่น เคลียร์และปรับพื้นที่"
+            "type": "รถขุดขนาดกลาง",
+            "description": "Caterpillar 305CR ใช้ได้กับงานทั่วไป เช่น ขุดดิน ขุดร่อง ตักดิน ทุบรื้อเล็ก และงานก่อสร้าง"
+          },
+          "vio70": {
+            "type": "รถขุดขนาดกลาง-ใหญ่",
+            "description": "Yanmar ViO70 เหมาะกับขุดลึก ดินแข็ง ร่องใหญ่ ตักดิน และใช้งานหัวเจาะ"
           },
           "pc128": {
-            "type": "ขนาดใหญ่",
-            "description": "สำหรับงานขนาดใหญ่และปริมาณมาก"
+            "type": "รถขุดขนาดใหญ่",
+            "description": "Komatsu PC128US เหมาะกับงานปริมาณมาก งานขุดหนัก และไซต์ก่อสร้างขนาดใหญ่"
           }
         }
       },
-
-      "packages": {
-        "title": "ต้องการรถดั๊มพ์หรือวัสดุไหม?",
-        "text": "เราสามารถจัดการให้ครบ ทั้งรถขุด รถดั๊มพ์ และวัสดุในงานเดียว"
-      },
-
-      "included": {
-        "title": "ทำไมลูกค้าถึงเลือกเรา",
-        "flexible": {
-          "title": "ราคายืดหยุ่น",
-          "description": "คิดราคาตามชั่วโมง รายวัน หรือเหมางาน"
+      "related": {
+        "title": "บริการที่อาจต้องใช้เพิ่ม",
+        "earthworks": {
+          "title": "งานดินแบบครบวงจร",
+          "description": "ถ้าต้องการมากกว่ารถขุด เช่น เคลียร์พื้นที่ ปรับระดับ ทำระบายน้ำ ถมดิน และขนดินออก"
         },
-        "planning": {
-          "title": "ช่วยวางแผน",
-          "description": "แนะนำวิธีที่เหมาะสมเพื่อลดต้นทุนและเวลา"
-        },
-        "report": {
-          "title": "มีอัปเดตงาน",
-          "description": "ส่งรูปและวิดีโอให้ดูระหว่างงานได้"
+        "truck": {
+          "title": "รถดั๊มพ์และขนดินออก",
+          "description": "ถ้างานขุดต้องขนดิน หิน เศษวัสดุ หรือส่งวัสดุเข้าหน้างาน"
         }
       },
-
+      "packages": {
+        "title": "ต้องการรถดั๊มพ์พร้อมรถขุดไหม?",
+        "text": "ถ้าขุดแล้วต้องขนดิน เศษวัสดุ หรือส่งวัสดุเข้าหน้างาน เราจัดรถดั๊มพ์ให้พร้อมได้ รถขุดและรถดั๊มพ์ทำงานเป็นทีมเดียวกัน ทำให้งานเร็วขึ้นและประสานงานง่ายขึ้น"
+      },
+      "included": {
+        "title": "ทำไมลูกค้าเลือกเรา",
+        "flexible": {
+          "title": "คิดราคาได้หลายแบบ",
+          "description": "เลือกได้ทั้งรายชั่วโมง รายวัน หรือเหมางาน ตามลักษณะงานจริง"
+        },
+        "machine": {
+          "title": "เลือกขนาดรถให้เหมาะกับงาน",
+          "description": "ไม่ใช้รถใหญ่เกินจำเป็น และไม่ใช้รถเล็กกับงานที่หนักเกินไป"
+        },
+        "report": {
+          "title": "คุยงานชัดเจน",
+          "description": "ตกลงงานก่อนเริ่ม อธิบายข้อจำกัด และส่งรูปหรือวิดีโอระหว่างงานได้"
+        }
+      },
       "faq": {
         "title": "คำถามที่พบบ่อย",
         "q1": {
-          "question": "มีคนขับรวมไหม?",
-          "answer": "มี รถทุกคันมาพร้อมคนขับ"
+          "question": "รวมคนขับไหม?",
+          "answer": "รวมครับ รถขุดทุกคันมาพร้อมคนขับของเรา"
         },
         "q2": {
-          "question": "มีค่าใช้จ่ายแอบแฝงไหม?",
-          "answer": "ไม่มี ราคาตกลงก่อนเริ่มงาน"
+          "question": "ต้องใช้รถขุดขนาดไหน?",
+          "answer": "ขึ้นอยู่กับงาน ทางเข้า ความลึก ดิน และพื้นที่หน้างาน ส่งรูปกับรายละเอียดมา เราช่วยแนะนำได้"
         },
         "q3": {
-          "question": "เริ่มงานยังไง?",
-          "answer": "ส่งรูปและรายละเอียด เราประเมินและเข้าทำงานตามนัด"
+          "question": "เช่าแค่ไม่กี่ชั่วโมงได้ไหม?",
+          "answer": "ได้ครับ งานรายชั่วโมงทำได้ เงื่อนไขขั้นต่ำขึ้นอยู่กับขนาดรถ พื้นที่ และค่าขนส่ง"
         },
         "q4": {
-          "question": "คิดราคายังไง?",
-          "answer": "ตามชั่วโมง รายวัน หรือเหมางาน"
+          "question": "ค่าขนส่งรถเท่าไหร่?",
+          "answer": "โดยทั่วไปฟรีเมื่อใช้งานตั้งแต่ 3 ชั่วโมงขึ้นไป ถ้างานสั้น ค่าขนส่งคิดแยก"
         },
         "q5": {
-          "question": "ค่าขนส่งเท่าไหร่?",
-          "answer": "ฟรีถ้าใช้เกิน 3 ชั่วโมง ไม่งั้น 1000 บาท"
+          "question": "ขนดินออกหลังขุดได้ไหม?",
+          "answer": "ได้ครับ เราจัดรถดั๊มพ์เพื่อขนดิน หิน รากไม้ หรือเศษวัสดุก่อสร้างออกได้"
         },
         "q6": {
-          "question": "มีรถบรรทุกไหม?",
-          "answer": "มี สำหรับขนดินและวัสดุ"
+          "question": "มีรถขุดพร้อมหัวเจาะไหม?",
+          "answer": "มีครับ สำหรับทุบคอนกรีตหรือพื้นที่แข็ง สามารถใช้ Yanmar ViO70 พร้อมหัวเจาะได้"
+        },
+        "q7": {
+          "question": "ต้องส่งอะไรเพื่อประเมินราคา?",
+          "answer": "ส่งโลเคชัน รูปหน้างานและทางเข้า 3–5 รูป รายละเอียดงานสั้น ๆ และช่วงเวลาที่ต้องการ"
         }
       },
-
       "photos": {
-        "title": "ผลงานของเรา",
-        "bush-removal": {
-          "title": "เคลียร์พื้นที่ ตัดพุ่มไม้ และเตรียมที่ดินก่อนก่อสร้าง",
-          "alt": "กำจัดพุ่มไม้และวัชพืช พร้อมเตรียมพื้นที่สำหรับงานก่อสร้าง"
-        },
+        "title": "ตัวอย่างงานรถขุด",
         "construction-foundation": {
-          "title": "เตรียมฐานรากและงานขุดดินสำหรับงานก่อสร้าง",
-          "alt": "งานขุดดินและเตรียมพื้นที่สำหรับฐานรากอาคาร"
-        },
-        "delivery-of-an-excavator": {
-          "title": "ขนส่งรถขุดไปยังหน้างานก่อสร้าง",
-          "alt": "บริการขนส่งและส่งมอบรถขุดไปยังไซต์งาน"
-        },
-        "drainage-installation": {
-          "title": "ติดตั้งระบบระบายน้ำและจัดการน้ำในพื้นที่",
-          "alt": "ติดตั้งระบบระบายน้ำและควบคุมการไหลของน้ำ"
-        },
-        "earthworks": {
-          "title": "งานขุดดินและปรับพื้นที่ด้วยรถขุด",
-          "alt": "งานขุด เคลื่อนย้ายดิน และปรับพื้นที่ด้วยรถขุด"
-        },
-        "garbage-collection": {
-          "title": "เก็บและขนย้ายเศษวัสดุก่อสร้างออกจากพื้นที่",
-          "alt": "เก็บและขนย้ายขยะและเศษวัสดุก่อสร้าง"
-        },
-        "leveling-construction-site": {
-          "title": "ปรับระดับพื้นที่และเตรียมไซต์สำหรับการก่อสร้าง",
-          "alt": "ปรับระดับดินและเตรียมพื้นที่ก่อนเริ่มงานก่อสร้าง"
-        },
-        "loading-excavator-onto-truck": {
-          "title": "ตักดินขึ้นรถบรรทุกด้วยรถขุด",
-          "alt": "ใช้รถขุดตักดินขึ้นรถบรรทุกเพื่อขนย้าย"
-        },
-        "night-work": {
-          "title": "งานก่อสร้างและขุดดินในช่วงเวลากลางคืน",
-          "alt": "ดำเนินงานก่อสร้างและขุดดินในเวลากลางคืน"
-        },
-        "refueling-excavator": {
-          "title": "เติมน้ำมันรถขุดและเตรียมเครื่องจักรก่อนทำงาน",
-          "alt": "เติมน้ำมันและเตรียมอุปกรณ์ก่อนเริ่มงาน"
-        },
-        "road-construction": {
-          "title": "ก่อสร้างถนนทางเข้าและถมดินปรับพื้น",
-          "alt": "สร้างถนนทางเข้าและเตรียมพื้นผิวสำหรับการใช้งาน"
-        },
-        "root-removal": {
-          "title": "ขุดและกำจัดรากไม้ พร้อมเคลียร์พื้นที่",
-          "alt": "กำจัดรากไม้และเคลียร์พื้นที่เพื่อเตรียมก่อสร้าง"
-        },
-        "scavengery": {
-          "title": "เคลียร์พื้นที่ทั้งหมดและขนย้ายขยะออกจากไซต์",
-          "alt": "บริการเคลียร์พื้นที่และขนย้ายเศษวัสดุ"
+          "title": "ขุดฐานราก",
+          "alt": "รถขุดกำลังขุดพื้นที่สำหรับงานฐานรากบนเกาะสมุย"
         },
         "sewerage-installation": {
-          "title": "ติดตั้งระบบท่อระบายน้ำและขุดร่องสำหรับสาธารณูปโภค",
-          "alt": "วางท่อระบายน้ำและขุดร่องสำหรับระบบสาธารณูปโภค"
+          "title": "ขุดร่องสำหรับท่อ",
+          "alt": "รถขุดกำลังขุดร่องสำหรับท่อและระบบสาธารณูปโภคบนเกาะสมุย"
+        },
+        "earthworks": {
+          "title": "รถขุดทำงานในไซต์",
+          "alt": "รถขุดกำลังขุดและเคลื่อนย้ายดินในไซต์ก่อสร้าง"
+        },
+        "loading-excavator-onto-truck": {
+          "title": "ตักดินขึ้นรถ",
+          "alt": "รถขุดตักดินขึ้นรถดั๊มพ์เพื่อขนออก"
+        },
+        "delivery-of-an-excavator": {
+          "title": "ส่งรถขุดเข้าหน้างาน",
+          "alt": "ขนส่งรถขุดไปยังไซต์งานบนเกาะสมุย"
         },
         "transporting-excavator": {
-          "title": "ขนย้ายรถขุดด้วยรถเทรลเลอร์ระหว่างไซต์งาน",
-          "alt": "ขนส่งเครื่องจักรหนักไปยังหน้างานด้วยรถเทรลเลอร์"
+          "title": "ขนย้ายเครื่องจักร",
+          "alt": "ขนย้ายรถขุดด้วยรถเทรลเลอร์ระหว่างหน้างาน"
+        },
+        "refueling-excavator": {
+          "title": "เตรียมเครื่องจักร",
+          "alt": "เติมน้ำมันและเตรียมรถขุดก่อนเริ่มงาน"
+        },
+        "night-work": {
+          "title": "งานช่วงเย็น",
+          "alt": "รถขุดทำงานในไซต์ช่วงเย็น"
         }
       }
     }
@@ -794,13 +790,13 @@ useHead(() => {
     <ServiceIntro :text="t('excavator.intro')" />
 
     <ServiceIncluded
-      :title="tasksTitle"
+      :title="t('excavator.tasks.title')"
       :items="tasksItems"
     />
 
     <ServiceEquipment
-      :title="equipmentTitle"
-      :note="equipmentNote"
+      :title="t('excavator.equipment.title')"
+      :note="t('excavator.equipment.note')"
       :items="equipmentItems"
       page="services/excavator"
     />
@@ -808,14 +804,18 @@ useHead(() => {
     <UAlert
       :title="t('excavator.packages.title')"
       :description=" t('excavator.packages.text')"
-      class="mt-6"
       variant="soft"
       color="primary"
       icon="i-lucide-truck"
     />
 
+    <ServiceRelated
+      :title="t('excavator.related.title')"
+      :items="relatedServices"
+    />
+
     <ServiceIncluded
-      :title="includedTitle"
+      :title="t('excavator.included.title')"
       :items="includedItems"
     />
 
@@ -829,9 +829,8 @@ useHead(() => {
       :items="photos"
     />
 
-
     <CoreFAQ
-      :title="faqTitle"
+      :title="t('excavator.faq.title')"
       :items="faqItems"
     />
 
