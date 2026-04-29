@@ -7,44 +7,50 @@ const { t } = useI18n();
 const heroTitle = computed(() => t('trucks.hero.title'));
 const heroDescription = computed(() => t('trucks.hero.description'));
 
-const tasksTitle = computed(() => t('trucks.tasks.title'));
 const tasksItems = computed(() => [
   {
-    icon: 'i-lucide-truck',
+    icon: 'i-lucide-mountain',
     title: t('trucks.tasks.t1.title'),
     description: t('trucks.tasks.t1.description'),
   },
   {
-    icon: 'i-lucide-boxes',
+    icon: 'i-lucide-trash-2',
     title: t('trucks.tasks.t2.title'),
     description: t('trucks.tasks.t2.description'),
   },
   {
-    icon: 'i-lucide-tractor',
+    icon: 'i-lucide-package-plus',
     title: t('trucks.tasks.t3.title'),
     description: t('trucks.tasks.t3.description'),
   },
+  {
+    icon: 'i-lucide-truck',
+    title: t('trucks.tasks.t4.title'),
+    description: t('trucks.tasks.t4.description'),
+  },
+  {
+    icon: 'i-lucide-shovel',
+    title: t('trucks.tasks.t5.title'),
+    description: t('trucks.tasks.t5.description'),
+  },
+  {
+    icon: 'i-lucide-container',
+    title: t('trucks.tasks.t6.title'),
+    description: t('trucks.tasks.t6.description'),
+  },
 ]);
 
-const equipmentTitle = computed(() => t('trucks.equipment.title'));
-const equipmentNote = computed(() => t('trucks.equipment.note'));
 const formatPrice = (value: number) => t('trucks.equipment.prices.thb', { price: value });
 
-const equipmentItems = computed(() => ([
+const equipmentItems = computed(() => [
   {
     title: 'Isuzu ELF',
     image: '/images/equipment/trucks/isuzu_elf.webp',
     subtitle: t('trucks.equipment.items.elf.type'),
     description: t('trucks.equipment.items.elf.description'),
     prices: [
-      {
-        label: t('trucks.equipment.prices.trip'),
-        value: formatPrice(PRICING.trucks.elf.trip),
-      },
-      {
-        label: t('trucks.equipment.prices.day'),
-        value: formatPrice(PRICING.trucks.elf.shift),
-      },
+      { label: t('trucks.equipment.prices.trip'), value: formatPrice(PRICING.trucks.elf.trip) },
+      { label: t('trucks.equipment.prices.day'), value: formatPrice(PRICING.trucks.elf.shift) },
     ],
   },
   {
@@ -53,14 +59,8 @@ const equipmentItems = computed(() => ([
     subtitle: t('trucks.equipment.items.hino300.type'),
     description: t('trucks.equipment.items.hino300.description'),
     prices: [
-      {
-        label: t('trucks.equipment.prices.trip'),
-        value: formatPrice(PRICING.trucks.hino300.trip),
-      },
-      {
-        label: t('trucks.equipment.prices.day'),
-        value: formatPrice(PRICING.trucks.hino300.shift),
-      },
+      { label: t('trucks.equipment.prices.trip'), value: formatPrice(PRICING.trucks.hino300.trip) },
+      { label: t('trucks.equipment.prices.day'), value: formatPrice(PRICING.trucks.hino300.shift) },
     ],
   },
   {
@@ -69,14 +69,8 @@ const equipmentItems = computed(() => ([
     subtitle: t('trucks.equipment.items.fm18.type'),
     description: t('trucks.equipment.items.fm18.description'),
     prices: [
-      {
-        label: t('trucks.equipment.prices.trip'),
-        value: formatPrice(PRICING.trucks.fm18.trip),
-      },
-      {
-        label: t('trucks.equipment.prices.day'),
-        value: formatPrice(PRICING.trucks.fm18.shift),
-      },
+      { label: t('trucks.equipment.prices.trip'), value: formatPrice(PRICING.trucks.fm18.trip) },
+      { label: t('trucks.equipment.prices.day'), value: formatPrice(PRICING.trucks.fm18.shift) },
     ],
   },
   {
@@ -85,14 +79,8 @@ const equipmentItems = computed(() => ([
     subtitle: t('trucks.equipment.items.nissan.type'),
     description: t('trucks.equipment.items.nissan.description'),
     prices: [
-      {
-        label: t('trucks.equipment.prices.trip'),
-        value: formatPrice(PRICING.trucks.nissan.trip),
-      },
-      {
-        label: t('trucks.equipment.prices.day'),
-        value: formatPrice(PRICING.trucks.nissan.shift),
-      },
+      { label: t('trucks.equipment.prices.trip'), value: formatPrice(PRICING.trucks.nissan.trip) },
+      { label: t('trucks.equipment.prices.day'), value: formatPrice(PRICING.trucks.nissan.shift) },
     ],
   },
   {
@@ -101,14 +89,8 @@ const equipmentItems = computed(() => ([
     subtitle: t('trucks.equipment.items.ranger.type'),
     description: t('trucks.equipment.items.ranger.description'),
     prices: [
-      {
-        label: t('trucks.equipment.prices.trip'),
-        value: formatPrice(PRICING.trucks.ranger.trip),
-      },
-      {
-        label: t('trucks.equipment.prices.day'),
-        value: formatPrice(PRICING.trucks.ranger.shift),
-      },
+      { label: t('trucks.equipment.prices.trip'), value: formatPrice(PRICING.trucks.ranger.trip) },
+      { label: t('trucks.equipment.prices.day'), value: formatPrice(PRICING.trucks.ranger.shift) },
     ],
   },
   {
@@ -117,20 +99,30 @@ const equipmentItems = computed(() => ([
     subtitle: t('trucks.equipment.items.deva.type'),
     description: t('trucks.equipment.items.deva.description'),
     prices: [
-      {
-        label: t('trucks.equipment.prices.trip'),
-        value: formatPrice(PRICING.trucks.deva.trip),
-      },
-      {
-        label: t('trucks.equipment.prices.day'),
-        value: formatPrice(PRICING.trucks.deva.shift),
-      },
+      { label: t('trucks.equipment.prices.trip'), value: formatPrice(PRICING.trucks.deva.trip) },
+      { label: t('trucks.equipment.prices.day'), value: formatPrice(PRICING.trucks.deva.shift) },
     ],
   },
-]));
+]);
 
-const includedTitle = computed(() => t('trucks.included.title'));
-const includedItems = computed(() => ([
+const localeRoute = useLocaleRoute();
+
+const relatedServices = computed(() => [
+  {
+    icon: 'i-lucide-shovel',
+    title: t('trucks.related.excavator.title'),
+    description: t('trucks.related.excavator.description'),
+    to: localeRoute({ name: 'services-excavator' }),
+  },
+  {
+    icon: 'i-lucide-land-plot',
+    title: t('trucks.related.earthworks.title'),
+    description: t('trucks.related.earthworks.description'),
+    to: localeRoute({ name: 'services-earthworks' }),
+  },
+]);
+
+const includedItems = computed(() => [
   {
     icon: 'i-heroicons-user',
     title: t('trucks.included.driver.title'),
@@ -146,47 +138,24 @@ const includedItems = computed(() => ([
     title: t('trucks.included.flexible.title'),
     description: t('trucks.included.flexible.description'),
   },
-]));
+]);
 
-const faqTitle = computed(() => t('trucks.faq.title'));
-const faqItems = computed(() => ([
-  {
-    question: t('trucks.faq.q1.question'),
-    answer: t('trucks.faq.q1.answer'),
-  },
-  {
-    question: t('trucks.faq.q2.question'),
-    answer: t('trucks.faq.q2.answer'),
-  },
-  {
-    question: t('trucks.faq.q3.question'),
-    answer: t('trucks.faq.q3.answer'),
-  },
-  {
-    question: t('trucks.faq.q4.question'),
-    answer: t('trucks.faq.q4.answer'),
-  },
-  {
-    question: t('trucks.faq.q5.question'),
-    answer: t('trucks.faq.q5.answer'),
-  },
-  {
-    question: t('trucks.faq.q6.question'),
-    answer: t('trucks.faq.q6.answer'),
-  },
-]));
+const faqItems = computed(() => [
+  { question: t('trucks.faq.q1.question'), answer: t('trucks.faq.q1.answer') },
+  { question: t('trucks.faq.q2.question'), answer: t('trucks.faq.q2.answer') },
+  { question: t('trucks.faq.q3.question'), answer: t('trucks.faq.q3.answer') },
+  { question: t('trucks.faq.q4.question'), answer: t('trucks.faq.q4.answer') },
+  { question: t('trucks.faq.q5.question'), answer: t('trucks.faq.q5.answer') },
+  { question: t('trucks.faq.q6.question'), answer: t('trucks.faq.q6.answer') },
+  { question: t('trucks.faq.q7.question'), answer: t('trucks.faq.q7.answer') },
+]);
 
 const photos = computed(() => {
   const order = [
     'soil-delivery',
-    'our-vintage-big-truck',
-    'transportation-of-generator',
     'loading-of-soil',
-    'delivery-of-charcoal',
-    'loading-tuktuk-with-crane',
-    'scooter-transportation',
+    'our-vintage-big-truck',
     'transportation-of-excavator',
-    'transportation-of-household-appliances',
     'transportation-of-special-equipment',
   ];
 
@@ -197,21 +166,31 @@ const photos = computed(() => {
   }));
 });
 
+const serviceTypes = computed(() => [
+  t('trucks.schema.serviceTypes.dumpTruck'),
+  t('trucks.schema.serviceTypes.soilRemoval'),
+  t('trucks.schema.serviceTypes.wasteRemoval'),
+  t('trucks.schema.serviceTypes.materialDelivery'),
+  t('trucks.schema.serviceTypes.soilDelivery'),
+  t('trucks.schema.serviceTypes.equipmentTransport'),
+]);
+
 const jsonLd = computed(() => ({
   '@context': 'https://schema.org',
   '@graph': [
     {
       '@type': 'Service',
       '@id': 'https://supermansamui.com/services/trucks#service',
-      name: t('trucks.seo.title'),
+      name: t('trucks.schema.name'),
       description: t('trucks.seo.description'),
       provider: {
         '@id': 'https://supermansamui.com#business',
       },
       areaServed: {
         '@type': 'AdministrativeArea',
-        name: 'Ko Samui, Surat Thani, Thailand',
+        name: 'Koh Samui, Surat Thani, Thailand',
       },
+      serviceType: serviceTypes.value,
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: t('trucks.tasks.title'),
@@ -225,7 +204,7 @@ const jsonLd = computed(() => ({
             description: item.description,
             areaServed: {
               '@type': 'AdministrativeArea',
-              name: 'Ko Samui, Surat Thani, Thailand',
+              name: 'Koh Samui, Surat Thani, Thailand',
             },
           },
         })),
@@ -271,34 +250,57 @@ useHead(() => {
 {
   "ru": {
     "trucks": {
+      "schema": {
+        "name": "Самосвалы и грузовики на Самуи",
+        "serviceTypes": {
+          "dumpTruck": "Аренда самосвала",
+          "soilRemoval": "Вывоз грунта",
+          "wasteRemoval": "Вывоз строительного мусора",
+          "materialDelivery": "Доставка строительных материалов",
+          "soilDelivery": "Доставка грунта",
+          "equipmentTransport": "Перевозка техники"
+        }
+      },
       "seo": {
-        "title": "Аренда грузовиков и самосвалов на Самуи | Вывоз грунта, доставка материалов, перевозка техники",
-        "description": "Грузовики и самосвалы на Самуи: вывоз грунта и строительного мусора, доставка песка/щебня/земли, перевозка экскаваторов и оборудования. Свой парк, местные водители, расчет по рейсу или за смену. Быстрый выезд и понятная цена.",
-        "keywords": "аренда самосвала самуи, аренда грузовика самуи, вывоз грунта самуи, вывоз строительного мусора самуи, доставка песка самуи, доставка щебня самуи, доставка материалов самуи, перевозка экскаватора самуи, перевозка техники самуи, грузовик с краном самуи"
+        "title": "Самосвалы и грузовики на Самуи | Вывоз грунта и доставка материалов",
+        "description": "Самосвалы и грузовики на Самуи: вывоз грунта, камней и строительного мусора, доставка песка, щебня, земли и перевозка техники. Расчёт за рейс, смену или объём.",
+        "keywords": "самосвал самуи, грузовик самуи, вывоз грунта самуи, вывоз строительного мусора самуи, доставка песка самуи, доставка щебня самуи, доставка грунта самуи, перевозка техники самуи, dump truck koh samui"
       },
       "hero": {
-        "title": "Грузовики и самосвалы на Самуи для стройки и доставки",
-        "description": "Вывозим грунт и мусор, привозим материалы и перевозим технику. Приезжаем вовремя и заранее говорим точную цену."
+        "title": "Самосвалы и грузовики на Самуи",
+        "description": "Вывоз грунта и строительного мусора, доставка песка, щебня, земли и перевозка техники по Самуи."
       },
-      "intro": "Нужно вывезти грунт, привезти материалы или перевезти технику на Самуи? Сделаем быстро и без сюрпризов. Вы отправляете локацию и фото подъезда - мы подбираем грузовик, оцениваем объем и количество рейсов и даем понятную цену до выезда.",
+      "intro": "Нужен самосвал или грузовик на Самуи? Мы вывозим грунт после копки, убираем строительный мусор, доставляем песок, щебень, землю и перевозим технику между объектами. Вы отправляете локацию, фото подъезда и короткое описание задачи - мы подбираем подходящий грузовик, считаем примерный объём, количество рейсов и стоимость до начала работ.",
       "tasks": {
-        "title": "Что мы делаем",
+        "title": "Для каких задач нужны грузовики",
         "t1": {
-          "title": "Вывоз грунта и мусора",
-          "description": "Вывозим землю после работ, глину, камни и строительный мусор с участка."
+          "title": "Вывоз грунта",
+          "description": "Вывозим землю, глину, камни и лишний материал после копки, выравнивания или расчистки участка."
         },
         "t2": {
-          "title": "Доставка материалов",
-          "description": "Привозим песок, щебень, грунт и другие материалы прямо на объект."
+          "title": "Вывоз строительного мусора",
+          "description": "Забираем бетон, корни, остатки демонтажа, строительные отходы и смешанный мусор с объекта."
         },
         "t3": {
+          "title": "Доставка песка и щебня",
+          "description": "Привозим сыпучие материалы для стройки, дорог, отсыпки, дренажа и подготовки участка."
+        },
+        "t4": {
+          "title": "Доставка грунта",
+          "description": "Доставляем землю и материалы для поднятия уровня участка, засыпки ям и подготовки площадки."
+        },
+        "t5": {
+          "title": "Работа с экскаватором",
+          "description": "Самосвалы работают вместе с экскаватором: техника грузит, грузовики вывозят или привозят материал."
+        },
+        "t6": {
           "title": "Перевозка техники",
-          "description": "Перевозим экскаваторы и оборудование, при необходимости используем кран."
+          "description": "Перевозим экскаваторы, оборудование и тяжёлые грузы между строительными объектами."
         }
       },
       "equipment": {
-        "title": "Техника в наличии",
-        "note": "Не знаете, что выбрать? Пришлите точку на карте и фото подъезда - подскажем оптимальный вариант и не дадим переплатить.",
+        "title": "Наши грузовики",
+        "note": "Не знаете, какой грузовик нужен? Отправьте точку на карте, фото подъезда и задачу - подскажем.",
         "prices": {
           "thb": "{price} бат",
           "trip": "За рейс",
@@ -306,152 +308,170 @@ useHead(() => {
         },
         "items": {
           "elf": {
-            "type": "Легкий самосвал 4×2",
-            "description": "Для узких подъездов и небольших объемов. Подходит для вывоза грунта, доставки песка и щебня, а также для переездов - перевозка мебели, техники и вещей."
-          },
-          "deva": {
-            "type": "Грузовик для бригады и инструмента",
-            "description": "Перевозка рабочих, инструмента и легких материалов. Удобно для коротких задач и выездных работ."
-          },
-          "ranger": {
-            "type": "Грузовик с краном-манипулятором",
-            "description": "Для тяжелых материалов и оборудования. Кран позволяет загружать и устанавливать без погрузчика."
+            "type": "Малый самосвал 4×2",
+            "description": "Для узких подъездов, небольших объёмов, доставки песка, щебня, грунта и вывоза материала с маленьких участков."
           },
           "hino300": {
-            "type": "6-колесный самосвал",
-            "description": "Основная машина для стройки: грунт, глина, камни и мусор. Оптимален для работы с экскаватором."
-          },
-          "nissan": {
-            "type": "Трал с краном",
-            "description": "Перевозка экскаваторов и крупной техники. Кран - для погрузки и установки тяжелых объектов."
+            "type": "6-колёсный самосвал",
+            "description": "Основная машина для стройки: вывоз грунта, камней, мусора и работа в паре с экскаватором."
           },
           "fm18": {
             "type": "10-колёсный самосвал",
-            "description": "Для больших объемов и тяжелых материалов. Делает работу быстрее за счёт меньшего количества рейсов."
+            "description": "Для больших объёмов грунта, песка, щебня и тяжёлых материалов. Меньше рейсов - быстрее работа."
+          },
+          "nissan": {
+            "type": "Трал с краном",
+            "description": "Для перевозки экскаваторов, спецтехники, оборудования и тяжёлых грузов между объектами."
+          },
+          "ranger": {
+            "type": "Грузовик с краном",
+            "description": "Для тяжёлых материалов, оборудования и задач, где нужна погрузка или установка краном."
+          },
+          "deva": {
+            "type": "Грузовик для бригады и инструмента",
+            "description": "Для перевозки рабочих, инструмента, лёгких материалов и коротких выездных задач."
           }
         }
       },
       "packages": {
-        "title": "Нужен экскаватор вместе с грузовиками?",
-        "text": "Соберём технику под задачу: экскаватор, самосвалы и логистика. Один подрядчик - один понятный расчёт."
+        "title": "Нужен экскаватор вместе с самосвалами?",
+        "text": "Для вывоза грунта, камней или мусора часто нужен экскаватор для погрузки. Мы можем организовать экскаватор и самосвалы одной командой, чтобы работа шла быстрее и без лишней координации."
+      },
+      "related": {
+        "title": "Может понадобиться дополнительно",
+        "excavator": {
+          "title": "Экскаватор с оператором",
+          "description": "Если нужно выкопать, погрузить грунт, разобрать бетон или подготовить материал к вывозу."
+        },
+        "earthworks": {
+          "title": "Земляные работы под ключ",
+          "description": "Если нужна комплексная подготовка участка: расчистка, дренаж, отсыпка, уровни и вывоз."
+        }
       },
       "included": {
-        "title": "Почему с нами удобно работать",
+        "title": "Почему с нами удобно",
         "driver": {
-          "title": "Местные водители с опытом",
-          "description": "Хорошо знают дороги Самуи, уклоны и сложные подъезды. Заезжают туда, где другие разворачиваются."
+          "title": "Местные водители",
+          "description": "Знают дороги Самуи, подъёмы, узкие участки, сложные подъезды и реальные ограничения на острове."
         },
         "routing": {
-          "title": "Помогаем рассчитать объем",
-          "description": "Подскажем, какая техника подойдёт и сколько рейсов реально потребуется."
+          "title": "Помогаем посчитать объём",
+          "description": "Подскажем, какой грузовик нужен и сколько рейсов может потребоваться под вашу задачу."
         },
         "flexible": {
-          "title": "Гибкая оплата",
-          "description": "Можно за рейс, за смену или за весь объем - подберём удобный вариант."
+          "title": "Гибкий формат оплаты",
+          "description": "Можно считать за рейс, за смену или за весь объём - зависит от задачи и расстояния."
         }
       },
       "faq": {
         "title": "Частые вопросы",
         "q1": {
           "question": "Как рассчитывается стоимость?",
-          "answer": "Обычно считаем за рейс с фиксированной ценой. Для больших объёмов - за смену или под ключ."
+          "answer": "Обычно за рейс. Для больших объёмов можем считать за смену или за весь проект."
         },
         "q2": {
-          "question": "Нужно ли присутствовать на объекте?",
-          "answer": "Желательно на первом рейсе, чтобы показать подъезд и задачу. Дальше можем работать самостоятельно."
+          "question": "Что нужно для расчёта?",
+          "answer": "Точка на карте, фото подъезда, описание материала, примерный объём и место выгрузки или вывоза."
         },
         "q3": {
-          "question": "Работаете на сложных участках и узких дорогах?",
-          "answer": "Да. Сначала оцениваем подъезд и подбираем подходящую технику под реальные условия."
+          "question": "Можно ли заказать самосвал вместе с экскаватором?",
+          "answer": "Да. Часто это лучший вариант: экскаватор грузит, самосвалы сразу вывозят грунт или мусор."
         },
         "q4": {
+          "question": "Вы доставляете песок, щебень и грунт?",
+          "answer": "Да. Можем привезти песок, щебень, землю и другие сыпучие материалы на объект."
+        },
+        "q5": {
+          "question": "Работаете на узких дорогах и сложных подъездах?",
+          "answer": "Да. Сначала оцениваем подъезд и подбираем грузовик под реальные условия."
+        },
+        "q6": {
           "question": "Можно заказать срочно?",
           "answer": "Да, если техника свободна. Лучше написать заранее, чтобы зафиксировать время."
         },
-        "q5": {
-          "question": "Что нужно для расчёта?",
-          "answer": "Локация на карте, фото подъезда и короткое описание задачи и объёма."
-        },
-        "q6": {
-          "question": "С кем вы работаете?",
-          "answer": "С частными клиентами, подрядчиками и застройщиками."
+        "q7": {
+          "question": "Вы перевозите экскаваторы и технику?",
+          "answer": "Да. Для этого используем трал, грузовики и кран при необходимости."
         }
       },
       "photos": {
-        "title": "Галерея",
-        "delivery-of-charcoal": {
-          "title": "Доставка древесного угля",
-          "alt": "Доставка древесного угля грузовиком на склад"
+        "title": "Примеры работ грузовиков",
+        "soil-delivery": {
+          "title": "Доставка грунта",
+          "alt": "Самосвал доставляет грунт и сыпучие материалы на строительный участок на Самуи"
         },
         "loading-of-soil": {
-          "title": "Погрузка грунта в грузовик",
-          "alt": "Погрузка грунта и сыпучих материалов в грузовик для вывоза"
-        },
-        "loading-tuktuk-with-crane": {
-          "title": "Погрузка тук-тука краном на грузовик",
-          "alt": "Погрузка тук-тука с помощью крана на грузовик для безопасной перевозки"
+          "title": "Погрузка грунта",
+          "alt": "Экскаватор загружает грунт в самосвал для вывоза с участка"
         },
         "our-vintage-big-truck": {
-          "title": "Наш большой грузовик для перевозки грузов",
-          "alt": "Большой грузовик для перевозки строительных материалов, техники и различных грузов"
-        },
-        "scooter-transportation": {
-          "title": "Перевозка скутера на грузовике",
-          "alt": "Перевозка скутера грузовиком по острову с аккуратной погрузкой и доставкой"
-        },
-        "soil-delivery": {
-          "title": "Доставка грунта и сыпучих материалов",
-          "alt": "Доставка грунта, земли и других сыпучих материалов грузовиком на строительный участок"
+          "title": "Большой грузовик для стройки",
+          "alt": "Большой грузовик для перевозки строительных материалов и тяжёлых грузов на Самуи"
         },
         "transportation-of-excavator": {
-          "title": "Перевозка экскаватора на трале",
-          "alt": "Перевозка экскаватора на трале между строительными объектами"
-        },
-        "transportation-of-generator": {
-          "title": "Перевозка генератора на стройплощадку",
-          "alt": "Транспортировка генератора грузовиком на временную рабочую площадку"
-        },
-        "transportation-of-household-appliances": {
-          "title": "Перевозка бытовой техники и крупногабаритных вещей",
-          "alt": "Перевозка холодильников, стиральных машин и другой бытовой техники грузовиком"
+          "title": "Перевозка экскаватора",
+          "alt": "Перевозка экскаватора на трале между строительными объектами на Самуи"
         },
         "transportation-of-special-equipment": {
           "title": "Перевозка спецтехники",
-          "alt": "Транспортировка спецтехники, строительного оборудования и тяжёлых грузов на объект"
+          "alt": "Перевозка строительной техники и тяжёлого оборудования грузовиком на Самуи"
         }
       }
     }
   },
   "en": {
     "trucks": {
+      "schema": {
+        "name": "Dump truck and truck services on Koh Samui",
+        "serviceTypes": {
+          "dumpTruck": "Dump truck rental",
+          "soilRemoval": "Soil removal",
+          "wasteRemoval": "Construction waste removal",
+          "materialDelivery": "Construction material delivery",
+          "soilDelivery": "Soil delivery",
+          "equipmentTransport": "Equipment transport"
+        }
+      },
       "seo": {
-        "title": "Truck & Dump Truck Rental on Koh Samui | Soil Removal, Material Delivery, Equipment Transport",
-        "description": "Truck and dump truck rental on Koh Samui. Soil and construction waste removal, sand and gravel delivery, excavator and equipment transport. Own fleet, local drivers, clear pricing per trip or per day.",
-        "keywords": "dump truck rental koh samui, truck rental samui, soil removal samui, construction waste removal samui, sand delivery samui, gravel delivery samui, material delivery samui, excavator transport samui, equipment transport samui, crane truck samui"
+        "title": "Dump Truck Service on Koh Samui | Soil Removal & Material Delivery",
+        "description": "Dump truck and truck services on Koh Samui: soil removal, construction waste removal, sand, gravel and soil delivery, equipment transport. Per trip, per day or full job pricing.",
+        "keywords": "dump truck koh samui, dump truck rental koh samui, truck service samui, soil removal koh samui, construction waste removal samui, sand delivery samui, gravel delivery samui, soil delivery samui, equipment transport samui"
       },
       "hero": {
-        "title": "Truck & dump truck services on Koh Samui",
-        "description": "Soil and waste removal, material delivery and equipment transport. On time arrival and clear pricing before the job."
+        "title": "Dump truck and truck services on Koh Samui",
+        "description": "Soil removal, construction waste removal, sand, gravel and soil delivery, and equipment transport across Koh Samui."
       },
-      "intro": "Need to remove soil, deliver materials or move equipment on Koh Samui? We handle it fast and clearly. Send your location and access photos - we choose the right truck, estimate volume and trips, and give you a fixed price before the job.",
+      "intro": "Need a dump truck or construction truck on Koh Samui? We remove soil after excavation, haul construction waste, deliver sand, gravel and fill soil, and transport equipment between job sites. Send us the location, access photos and a short task description - we will choose the right truck, estimate the volume, number of trips and price before the job starts.",
       "tasks": {
-        "title": "What we do",
+        "title": "What trucks are used for",
         "t1": {
-          "title": "Soil & waste removal",
-          "description": "We remove excess soil, clay, rocks and construction waste from your site quickly and cleanly."
+          "title": "Soil removal",
+          "description": "Removing soil, clay, rocks and excess material after excavation, leveling or land clearing."
         },
         "t2": {
-          "title": "Material delivery",
-          "description": "We deliver sand, gravel, soil and other building materials directly to your site."
+          "title": "Construction waste removal",
+          "description": "Removing concrete, roots, demolition debris, construction waste and mixed site waste."
         },
         "t3": {
+          "title": "Sand & gravel delivery",
+          "description": "Delivering bulk materials for construction, roads, backfilling, drainage and site preparation."
+        },
+        "t4": {
+          "title": "Soil delivery",
+          "description": "Delivering fill soil and materials for raising land level, filling holes and preparing work areas."
+        },
+        "t5": {
+          "title": "Excavator support",
+          "description": "Dump trucks work with excavators: the excavator loads, trucks remove or deliver material."
+        },
+        "t6": {
           "title": "Equipment transport",
-          "description": "We transport excavators and heavy equipment safely, with crane support when needed."
+          "description": "Transporting excavators, machinery, equipment and heavy loads between construction sites."
         }
       },
       "equipment": {
-        "title": "Available trucks",
-        "note": "Not sure what you need? Send your location and access photos - we’ll recommend the best option and help you avoid overpaying.",
+        "title": "Our trucks",
+        "note": "Not sure which truck you need? Send a map pin, access photos and task details - we will recommend the right option.",
         "prices": {
           "thb": "{price} THB",
           "trip": "Per trip",
@@ -459,152 +479,170 @@ useHead(() => {
         },
         "items": {
           "elf": {
-            "type": "Light dump truck 4×2",
-            "description": "Best for tight access and small jobs. Suitable for soil removal, sand/gravel delivery, and also for moving - furniture, appliances and personal items."
-          },
-          "deva": {
-            "type": "Crew & utility truck",
-            "description": "Transport for workers, tools and light materials. Good for small jobs and short-distance tasks."
-          },
-          "ranger": {
-            "type": "Crane truck",
-            "description": "For heavy materials and equipment. The crane allows loading and placement without a forklift."
+            "type": "Small dump truck 4×2",
+            "description": "For tight access, smaller volumes, sand, gravel and soil delivery, and removing material from small sites."
           },
           "hino300": {
             "type": "6-wheel dump truck",
-            "description": "Main workhorse for construction: soil, rocks and debris. Works best with excavators."
-          },
-          "nissan": {
-            "type": "Lowbed with crane",
-            "description": "For transporting excavators and large equipment with crane loading support."
+            "description": "Main construction truck for soil removal, rocks, debris and work together with excavators."
           },
           "fm18": {
             "type": "10-wheel dump truck",
-            "description": "For large volumes and heavy loads. Fewer trips, faster results."
+            "description": "For large volumes of soil, sand, gravel and heavy materials. Fewer trips and faster work."
+          },
+          "nissan": {
+            "type": "Lowbed with crane",
+            "description": "For transporting excavators, heavy equipment, machinery and large loads between job sites."
+          },
+          "ranger": {
+            "type": "Crane truck",
+            "description": "For heavy materials, equipment and jobs where crane loading or placement is needed."
+          },
+          "deva": {
+            "type": "Crew and utility truck",
+            "description": "For transporting workers, tools, light materials and short on-site tasks."
           }
         }
       },
       "packages": {
-        "title": "Need a full package with an excavator?",
-        "text": "We can provide excavator + dump trucks + soil removal or delivery. One task - one clear quote."
+        "title": "Need an excavator with dump trucks?",
+        "text": "For soil, rock or waste removal, an excavator is often needed for loading. We can organize excavator and dump trucks as one team so the work is faster and easier to coordinate."
+      },
+      "related": {
+        "title": "You may also need",
+        "excavator": {
+          "title": "Excavator with operator",
+          "description": "If you need digging, loading soil, concrete breaking or preparing material for removal."
+        },
+        "earthworks": {
+          "title": "Full earthworks services",
+          "description": "If you need complete land preparation: clearing, drainage, backfilling, levels and removal."
+        }
       },
       "included": {
-        "title": "Why it’s easy to work with us",
+        "title": "Why clients work with us",
         "driver": {
-          "title": "Experienced local drivers",
-          "description": "They know Samui roads, slopes and tight access points. They can get where others can’t."
+          "title": "Local drivers",
+          "description": "They know Samui roads, slopes, narrow access, difficult entrances and real island limitations."
         },
         "routing": {
-          "title": "We help calculate the job",
-          "description": "We advise the right truck and estimate the number of trips for your task."
+          "title": "We help estimate volume",
+          "description": "We recommend the right truck and estimate how many trips may be needed for your task."
         },
         "flexible": {
           "title": "Flexible pricing",
-          "description": "Per trip, per day or full job - we choose what works best for you."
+          "description": "Per trip, per day or full volume - depending on the task, distance and material."
         }
       },
       "faq": {
         "title": "Frequently asked questions",
         "q1": {
           "question": "How is the price calculated?",
-          "answer": "Usually per trip with a fixed price. For larger jobs - daily rate or full project."
+          "answer": "Usually per trip. For larger volumes, we can calculate by day or for the full project."
         },
         "q2": {
-          "question": "Do I need to be on site?",
-          "answer": "Recommended for the first trip to show access and details. After that we can work independently."
+          "question": "What do you need for a quote?",
+          "answer": "A map pin, access photos, material type, estimated volume and loading or delivery location."
         },
         "q3": {
-          "question": "Can you work on difficult or narrow access?",
-          "answer": "Yes. We check access first and choose the right truck for the conditions."
+          "question": "Can I book a dump truck with an excavator?",
+          "answer": "Yes. This is often the best setup: the excavator loads and dump trucks remove soil or waste."
         },
         "q4": {
-          "question": "Can I book urgently?",
-          "answer": "Yes, if trucks are available. Better to contact us in advance."
+          "question": "Do you deliver sand, gravel and soil?",
+          "answer": "Yes. We can deliver sand, gravel, fill soil and other bulk materials to your site."
         },
         "q5": {
-          "question": "What do you need for a quote?",
-          "answer": "Location pin, access photos and a short description of the job and volume."
+          "question": "Can you work on narrow roads and difficult access?",
+          "answer": "Yes. We check access first and choose a truck that fits the real site conditions."
         },
         "q6": {
-          "question": "Who do you work with?",
-          "answer": "Homeowners, contractors and developers."
+          "question": "Can I book urgently?",
+          "answer": "Yes, if trucks are available. It is better to contact us in advance to secure the time."
+        },
+        "q7": {
+          "question": "Do you transport excavators and equipment?",
+          "answer": "Yes. We use lowbed trucks, transport trucks and crane support when needed."
         }
       },
       "photos": {
-        "title": "Gallery",
-        "delivery-of-charcoal": {
-          "title": "Charcoal delivery",
-          "alt": "Truck delivery of charcoal to warehouse"
+        "title": "Truck work examples",
+        "soil-delivery": {
+          "title": "Soil delivery",
+          "alt": "Dump truck delivering soil and bulk materials to a construction site on Koh Samui"
         },
         "loading-of-soil": {
-          "title": "Loading soil into truck",
-          "alt": "Loading soil and bulk materials into a truck for removal"
-        },
-        "loading-tuktuk-with-crane": {
-          "title": "Loading a tuk tuk onto a truck with crane",
-          "alt": "Using a crane to load a tuk tuk onto a truck for safe transport"
+          "title": "Soil loading",
+          "alt": "Excavator loading soil into a dump truck for removal from site"
         },
         "our-vintage-big-truck": {
-          "title": "Our large truck for cargo transportation",
-          "alt": "Large truck for transporting construction materials, equipment, and various cargo"
-        },
-        "scooter-transportation": {
-          "title": "Scooter transportation by truck",
-          "alt": "Transporting a scooter by truck with careful loading and delivery"
-        },
-        "soil-delivery": {
-          "title": "Soil and bulk material delivery",
-          "alt": "Truck delivery of soil, dirt, and other bulk materials to construction site"
+          "title": "Large construction truck",
+          "alt": "Large truck for transporting construction materials and heavy loads on Koh Samui"
         },
         "transportation-of-excavator": {
-          "title": "Excavator transportation by trailer",
-          "alt": "Transporting an excavator by trailer between construction sites"
-        },
-        "transportation-of-generator": {
-          "title": "Generator transportation to construction site",
-          "alt": "Transporting a generator by truck to a temporary work site"
-        },
-        "transportation-of-household-appliances": {
-          "title": "Transportation of household appliances and large items",
-          "alt": "Truck transportation of refrigerators, washing machines, and other appliances"
+          "title": "Excavator transport",
+          "alt": "Transporting an excavator by lowbed trailer between construction sites on Koh Samui"
         },
         "transportation-of-special-equipment": {
-          "title": "Transportation of special equipment",
-          "alt": "Transporting special equipment, construction machinery, and heavy cargo to site"
+          "title": "Equipment transport",
+          "alt": "Transporting construction machinery and heavy equipment by truck on Koh Samui"
         }
       }
     }
   },
   "th": {
     "trucks": {
+      "schema": {
+        "name": "บริการรถดั๊มพ์และรถบรรทุกบนเกาะสมุย",
+        "serviceTypes": {
+          "dumpTruck": "บริการรถดั๊มพ์",
+          "soilRemoval": "ขนดินออก",
+          "wasteRemoval": "ขนเศษวัสดุก่อสร้างออก",
+          "materialDelivery": "ส่งวัสดุก่อสร้าง",
+          "soilDelivery": "ส่งดินถม",
+          "equipmentTransport": "ขนย้ายเครื่องจักร"
+        }
+      },
       "seo": {
-        "title": "เช่ารถบรรทุกและรถดั๊มบนเกาะสมุย | ขนดิน ส่งวัสดุ ขนเครื่องจักร",
-        "description": "บริการเช่ารถบรรทุกและรถดั๊มบนเกาะสมุย รับขนดินและเศษวัสดุก่อสร้าง ส่งทราย หิน และขนย้ายรถขุดหรือเครื่องจักร มีรถของเราเอง คนขับท้องถิ่น ราคาชัดเจนต่อเที่ยวหรือต่อวัน",
-        "keywords": "เช่ารถดั๊ม สมุย, เช่ารถบรรทุก สมุย, ขนดิน สมุย, เก็บขยะก่อสร้าง สมุย, ส่งทราย สมุย, ส่งหิน สมุย, ขนวัสดุก่อสร้าง สมุย, ขนย้ายรถขุด สมุย, รถบรรทุกเครน สมุย"
+        "title": "บริการรถดั๊มพ์บนเกาะสมุย | ขนดินออก ส่งทราย หิน และวัสดุ",
+        "description": "บริการรถดั๊มพ์และรถบรรทุกบนเกาะสมุย ขนดินออก ขนเศษวัสดุก่อสร้าง ส่งทราย หิน ดินถม และขนย้ายเครื่องจักร คิดราคาต่อเที่ยว ต่อวัน หรือเหมางาน",
+        "keywords": "รถดั๊มพ์ สมุย, รถบรรทุก สมุย, ขนดิน สมุย, ขนดินออก สมุย, ขนขยะก่อสร้าง สมุย, ส่งทราย สมุย, ส่งหิน สมุย, ส่งดินถม สมุย, ขนย้ายเครื่องจักร สมุย"
       },
       "hero": {
-        "title": "บริการรถบรรทุกและรถดั๊มบนเกาะสมุย",
-        "description": "ขนดิน ขยะก่อสร้าง ส่งวัสดุ และขนย้ายเครื่องจักร ตรงเวลา และแจ้งราคาชัดเจนก่อนเริ่มงาน"
+        "title": "บริการรถดั๊มพ์และรถบรรทุกบนเกาะสมุย",
+        "description": "ขนดินออก ขนเศษวัสดุก่อสร้าง ส่งทราย หิน ดินถม และขนย้ายเครื่องจักรทั่วเกาะสมุย"
       },
-      "intro": "ต้องการขนดิน ส่งวัสดุ หรือย้ายเครื่องจักรบนเกาะสมุย? เราจัดการให้จบง่ายและชัดเจน ส่งโลเคชันและรูปทางเข้า เราจะเลือกประเภทรถ ประเมินจำนวนเที่ยว และแจ้งราคาก่อนเริ่มงาน",
+      "intro": "ต้องการรถดั๊มพ์หรือรถบรรทุกสำหรับงานก่อสร้างบนเกาะสมุย? เรารับขนดินหลังงานขุด ขนเศษวัสดุก่อสร้าง ส่งทราย หิน ดินถม และขนย้ายเครื่องจักรระหว่างหน้างาน ส่งโลเคชัน รูปทางเข้า และรายละเอียดงานสั้น ๆ มาให้เรา เราจะช่วยเลือกประเภทรถ ประเมินปริมาณ จำนวนเที่ยว และแจ้งราคาก่อนเริ่มงาน",
       "tasks": {
-        "title": "บริการของเรา",
+        "title": "รถบรรทุกใช้ทำงานอะไรได้บ้าง",
         "t1": {
-          "title": "ขนดินและขยะออกจากพื้นที่",
-          "description": "ขนดินส่วนเกิน ดินเหนียว หิน และเศษวัสดุก่อสร้างออกจากพื้นที่อย่างรวดเร็วและเรียบร้อย"
+          "title": "ขนดินออก",
+          "description": "ขนดิน ดินเหนียว หิน และวัสดุส่วนเกินหลังงานขุด ปรับพื้นที่ หรือเคลียร์ที่ดิน"
         },
         "t2": {
-          "title": "ส่งวัสดุก่อสร้าง",
-          "description": "จัดส่งทราย หิน ดิน และวัสดุก่อสร้างอื่น ๆ ถึงหน้างานโดยตรง"
+          "title": "ขนเศษวัสดุก่อสร้างออก",
+          "description": "ขนคอนกรีต รากไม้ เศษรื้อถอน ขยะก่อสร้าง และเศษวัสดุผสมออกจากพื้นที่"
         },
         "t3": {
+          "title": "ส่งทรายและหิน",
+          "description": "ส่งวัสดุเทกองสำหรับงานก่อสร้าง ถนน ถมพื้นที่ ระบบระบายน้ำ และเตรียมหน้างาน"
+        },
+        "t4": {
+          "title": "ส่งดินถม",
+          "description": "ส่งดินและวัสดุสำหรับยกระดับพื้นที่ ถมหลุม และเตรียมพื้นที่ทำงาน"
+        },
+        "t5": {
+          "title": "ทำงานร่วมกับรถขุด",
+          "description": "รถดั๊มพ์ทำงานคู่กับรถขุด รถขุดตักวัสดุ และรถดั๊มพ์ขนออกหรือส่งเข้า"
+        },
+        "t6": {
           "title": "ขนย้ายเครื่องจักร",
-          "description": "ขนย้ายรถขุดและเครื่องจักรหนักอย่างปลอดภัย พร้อมเครนช่วยยกเมื่อจำเป็น"
+          "description": "ขนย้ายรถขุด เครื่องจักร อุปกรณ์ และของหนักระหว่างไซต์งานก่อสร้าง"
         }
       },
       "equipment": {
-        "title": "รถที่มีให้บริการ",
-        "note": "ไม่แน่ใจว่าใช้รถแบบไหน? ส่งโลเคชันและรูปทางเข้า เราช่วยแนะนำให้และช่วยประหยัดค่าใช้จ่าย",
+        "title": "รถของเรา",
+        "note": "ไม่แน่ใจว่าควรใช้รถแบบไหน? ส่งโลเคชัน รูปทางเข้า และรายละเอียดงานมา เราช่วยแนะนำได้",
         "prices": {
           "thb": "{price} บาท",
           "trip": "ต่อเที่ยว",
@@ -612,118 +650,113 @@ useHead(() => {
         },
         "items": {
           "elf": {
-            "type": "รถดั๊มเล็ก 4×2",
-            "description": "เหมาะกับทางแคบและงานปริมาณน้อย ใช้ขนดิน ส่งทราย/หิน และยังเหมาะสำหรับย้ายบ้าน เช่น ขนเฟอร์นิเจอร์และของใช้"
-          },
-          "deva": {
-            "type": "รถขนคนและของเบา",
-            "description": "ใช้ขนแรงงาน เครื่องมือ และวัสดุเบา เหมาะกับงานเล็กและระยะใกล้"
-          },
-          "ranger": {
-            "type": "รถบรรทุกพร้อมเครน",
-            "description": "สำหรับยกและขนของหนัก โดยไม่ต้องใช้รถยกเพิ่มเติม"
+            "type": "รถดั๊มพ์เล็ก 4×2",
+            "description": "เหมาะกับทางเข้าแคบ งานปริมาณไม่มาก ส่งทราย หิน ดิน และขนวัสดุออกจากพื้นที่เล็ก"
           },
           "hino300": {
-            "type": "รถดั๊ม 6 ล้อ",
-            "description": "รถหลักสำหรับงานก่อสร้าง ขนดิน หิน และเศษวัสดุ ทำงานร่วมกับรถขุดได้ดี"
+            "type": "รถดั๊มพ์ 6 ล้อ",
+            "description": "รถหลักสำหรับงานก่อสร้าง ใช้ขนดิน หิน เศษวัสดุ และทำงานคู่กับรถขุด"
+          },
+          "fm18": {
+            "type": "รถดั๊มพ์ 10 ล้อ",
+            "description": "สำหรับงานปริมาณมาก ขนดิน ทราย หิน และวัสดุหนัก ลดจำนวนเที่ยวและทำงานได้เร็วขึ้น"
           },
           "nissan": {
             "type": "รถเทรลเลอร์พร้อมเครน",
-            "description": "ใช้ขนรถขุดและเครื่องจักรขนาดใหญ่ พร้อมเครนช่วยยก"
+            "description": "สำหรับขนย้ายรถขุด เครื่องจักร อุปกรณ์หนัก และของขนาดใหญ่ระหว่างหน้างาน"
           },
-          "fm18": {
-            "type": "รถดั๊ม 10 ล้อ",
-            "description": "สำหรับงานปริมาณมาก ขนของหนักได้เร็วขึ้นด้วยจำนวนเที่ยวที่น้อยลง"
+          "ranger": {
+            "type": "รถบรรทุกพร้อมเครน",
+            "description": "สำหรับวัสดุหนัก อุปกรณ์ และงานที่ต้องใช้เครนช่วยยกหรือวางของ"
+          },
+          "deva": {
+            "type": "รถสำหรับทีมงานและเครื่องมือ",
+            "description": "สำหรับขนคนงาน เครื่องมือ วัสดุเบา และงานระยะสั้นในหน้างาน"
           }
         }
       },
       "packages": {
-        "title": "ต้องการแพ็กเกจพร้อมรถขุดไหม?",
-        "text": "เราจัดให้ครบทั้งรถขุด รถดั๊ม และงานขนดิน แจ้งงานครั้งเดียว ได้ราคาก้อนเดียว"
+        "title": "ต้องการรถขุดพร้อมรถดั๊มพ์ไหม?",
+        "text": "งานขนดิน หิน หรือเศษวัสดุมักต้องใช้รถขุดช่วยตัก เราสามารถจัดรถขุดและรถดั๊มพ์ให้ทำงานเป็นทีมเดียวกัน เพื่อให้งานเร็วขึ้นและประสานงานง่ายขึ้น"
+      },
+      "related": {
+        "title": "บริการที่อาจต้องใช้เพิ่ม",
+        "excavator": {
+          "title": "รถขุดพร้อมคนขับ",
+          "description": "สำหรับงานขุด ตักดิน ทุบคอนกรีต หรือเตรียมวัสดุก่อนขนออก"
+        },
+        "earthworks": {
+          "title": "งานดินแบบครบวงจร",
+          "description": "สำหรับงานเตรียมพื้นที่แบบครบชุด เช่น เคลียร์พื้นที่ ระบายน้ำ ถมดิน ปรับระดับ และขนดินออก"
+        }
       },
       "included": {
-        "title": "ทำไมลูกค้าถึงเลือกเรา",
+        "title": "ทำไมลูกค้าเลือกเรา",
         "driver": {
-          "title": "คนขับท้องถิ่นมีประสบการณ์",
-          "description": "รู้จักเส้นทาง ทางชัน และทางแคบในสมุย เข้าได้ในจุดที่หลายคนเข้าไม่ได้"
+          "title": "คนขับท้องถิ่น",
+          "description": "รู้จักถนน ทางชัน ทางแคบ ทางเข้าไซต์ และข้อจำกัดจริงของเกาะสมุย"
         },
         "routing": {
-          "title": "ช่วยคำนวณงานให้",
-          "description": "แนะนำประเภทรถและจำนวนเที่ยวที่เหมาะกับงานของคุณ"
+          "title": "ช่วยประเมินปริมาณงาน",
+          "description": "แนะนำประเภทรถและประเมินจำนวนเที่ยวที่เหมาะกับงานของคุณ"
         },
         "flexible": {
-          "title": "รูปแบบราคายืดหยุ่น",
-          "description": "คิดราคาต่อเที่ยว ต่อวัน หรือเหมางานตามความเหมาะสม"
+          "title": "คิดราคาได้หลายแบบ",
+          "description": "คิดราคาต่อเที่ยว ต่อวัน หรือเหมางาน ขึ้นอยู่กับงาน ระยะทาง และวัสดุ"
         }
       },
       "faq": {
         "title": "คำถามที่พบบ่อย",
         "q1": {
           "question": "คิดราคายังไง?",
-          "answer": "ส่วนใหญ่คิดเป็นต่อเที่ยว ราคาชัดเจน งานใหญ่สามารถคิดเป็นรายวันหรือเหมางานได้"
+          "answer": "ส่วนใหญ่คิดเป็นต่อเที่ยว งานปริมาณมากสามารถคิดเป็นรายวันหรือเหมาทั้งงานได้"
         },
         "q2": {
-          "question": "ต้องอยู่หน้างานไหม?",
-          "answer": "แนะนำให้มีในเที่ยวแรก หลังจากนั้นเราทำงานต่อได้เอง"
+          "question": "ต้องส่งอะไรเพื่อขอราคา?",
+          "answer": "ส่งโลเคชัน รูปทางเข้า ประเภทวัสดุ ปริมาณโดยประมาณ และจุดรับหรือจุดส่ง"
         },
         "q3": {
-          "question": "ทำงานในพื้นที่ยากหรือทางแคบได้ไหม?",
-          "answer": "ได้ เราดูทางเข้าและเลือกใช้รถให้เหมาะกับหน้างาน"
+          "question": "สั่งรถดั๊มพ์พร้อมรถขุดได้ไหม?",
+          "answer": "ได้ครับ หลายงานเหมาะกับการใช้รถขุดตัก และรถดั๊มพ์ขนดินหรือเศษวัสดุออก"
         },
         "q4": {
-          "question": "สั่งงานด่วนได้ไหม?",
-          "answer": "ได้ ถ้ามีรถว่าง แนะนำให้ติดต่อก่อนล่วงหน้า"
+          "question": "ส่งทราย หิน และดินถมได้ไหม?",
+          "answer": "ได้ครับ เราสามารถส่งทราย หิน ดินถม และวัสดุเทกองอื่น ๆ ไปยังหน้างาน"
         },
         "q5": {
-          "question": "ต้องส่งอะไรเพื่อขอราคา?",
-          "answer": "โลเคชัน รูปทางเข้า และรายละเอียดงานคร่าว ๆ"
+          "question": "ทำงานบนทางแคบหรือทางเข้ายากได้ไหม?",
+          "answer": "ได้ครับ เราจะดูทางเข้าก่อน แล้วเลือกขนาดรถให้เหมาะกับสภาพหน้างานจริง"
         },
         "q6": {
-          "question": "รับงานลูกค้ากลุ่มไหน?",
-          "answer": "ทั้งเจ้าของบ้าน ผู้รับเหมา และโครงการ"
+          "question": "สั่งงานด่วนได้ไหม?",
+          "answer": "ได้ถ้ามีรถว่าง แนะนำให้ติดต่อก่อนเพื่อจองเวลา"
+        },
+        "q7": {
+          "question": "ขนย้ายรถขุดและเครื่องจักรได้ไหม?",
+          "answer": "ได้ครับ เรามีรถสำหรับขนย้ายเครื่องจักร และใช้เครนช่วยเมื่อต้องยกของหนัก"
         }
       },
       "photos": {
-        "title": "แกลเลอรี",
-        "delivery-of-charcoal": {
-          "title": "บริการขนส่งถ่าน",
-          "alt": "ขนส่งถ่านด้วยรถบรรทุกไปยังคลังสินค้า"
+        "title": "ตัวอย่างงานรถบรรทุก",
+        "soil-delivery": {
+          "title": "ส่งดินถม",
+          "alt": "รถดั๊มพ์ส่งดินและวัสดุเทกองไปยังไซต์ก่อสร้างบนเกาะสมุย"
         },
         "loading-of-soil": {
-          "title": "ตักดินขึ้นรถบรรทุก",
-          "alt": "ตักดินและวัสดุเทกองขึ้นรถบรรทุกเพื่อขนย้าย"
-        },
-        "loading-tuktuk-with-crane": {
-          "title": "ยกรถตุ๊กตุ๊กขึ้นรถบรรทุกด้วยเครน",
-          "alt": "ใช้เครนยกรถตุ๊กตุ๊กขึ้นรถบรรทุกเพื่อการขนส่งอย่างปลอดภัย"
+          "title": "ตักดินขึ้นรถ",
+          "alt": "รถขุดตักดินขึ้นรถดั๊มพ์เพื่อขนออกจากหน้างาน"
         },
         "our-vintage-big-truck": {
-          "title": "รถบรรทุกขนาดใหญ่ของเราสำหรับขนส่ง",
-          "alt": "รถบรรทุกขนาดใหญ่สำหรับขนส่งวัสดุก่อสร้าง เครื่องจักร และสินค้าต่าง ๆ"
-        },
-        "scooter-transportation": {
-          "title": "บริการขนส่งสกู๊ตเตอร์ด้วยรถบรรทุก",
-          "alt": "ขนส่งสกู๊ตเตอร์ด้วยรถบรรทุก พร้อมการยกและส่งมอบอย่างระมัดระวัง"
-        },
-        "soil-delivery": {
-          "title": "บริการส่งดินและวัสดุเทกอง",
-          "alt": "ขนส่งดิน ดินถม และวัสดุเทกองอื่น ๆ ไปยังหน้างานก่อสร้าง"
+          "title": "รถบรรทุกขนาดใหญ่สำหรับงานก่อสร้าง",
+          "alt": "รถบรรทุกขนาดใหญ่สำหรับขนวัสดุก่อสร้างและของหนักบนเกาะสมุย"
         },
         "transportation-of-excavator": {
-          "title": "ขนย้ายรถขุดด้วยเทรลเลอร์",
-          "alt": "ขนส่งรถขุดด้วยเทรลเลอร์ระหว่างหน้างานก่อสร้าง"
-        },
-        "transportation-of-generator": {
-          "title": "ขนส่งเครื่องปั่นไฟไปยังหน้างาน",
-          "alt": "ขนย้ายเครื่องปั่นไฟด้วยรถบรรทุกไปยังไซต์งานชั่วคราว"
-        },
-        "transportation-of-household-appliances": {
-          "title": "ขนส่งเครื่องใช้ไฟฟ้าและของชิ้นใหญ่",
-          "alt": "ขนส่งตู้เย็น เครื่องซักผ้า และเครื่องใช้ไฟฟ้าอื่น ๆ ด้วยรถบรรทุก"
+          "title": "ขนย้ายรถขุด",
+          "alt": "ขนย้ายรถขุดด้วยรถเทรลเลอร์ระหว่างไซต์งานบนเกาะสมุย"
         },
         "transportation-of-special-equipment": {
-          "title": "ขนส่งเครื่องจักรและอุปกรณ์พิเศษ",
-          "alt": "ขนย้ายเครื่องจักร อุปกรณ์ก่อสร้าง และของหนักไปยังหน้างาน"
+          "title": "ขนย้ายเครื่องจักร",
+          "alt": "ขนย้ายเครื่องจักรก่อสร้างและอุปกรณ์หนักด้วยรถบรรทุกบนเกาะสมุย"
         }
       }
     }
@@ -743,13 +776,13 @@ useHead(() => {
     <ServiceIntro :text="t('trucks.intro')" />
 
     <ServiceIncluded
-      :title="tasksTitle"
+      :title="t('trucks.tasks.title')"
       :items="tasksItems"
     />
 
     <ServiceEquipment
-      :title="equipmentTitle"
-      :note="equipmentNote"
+      :title="t('trucks.equipment.title')"
+      :note="t('trucks.equipment.note')"
       :items="equipmentItems"
       page="services/truck"
     />
@@ -760,11 +793,16 @@ useHead(() => {
       class="mt-6"
       variant="soft"
       color="primary"
-      icon="i-lucide-hard-hat"
+      icon="i-lucide-shovel"
+    />
+
+    <ServiceRelated
+      :title="t('trucks.related.title')"
+      :items="relatedServices"
     />
 
     <ServiceIncluded
-      :title="includedTitle"
+      :title="t('trucks.included.title')"
       :items="includedItems"
     />
 
@@ -779,7 +817,7 @@ useHead(() => {
     />
 
     <CoreFAQ
-      :title="faqTitle"
+      :title="t('trucks.faq.title')"
       :items="faqItems"
     />
 

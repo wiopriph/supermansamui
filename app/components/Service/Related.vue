@@ -6,7 +6,7 @@ type RelatedService = {
   to: string;
 };
 
-defineProps<{
+const props = defineProps<{
   title: string;
   items: RelatedService[];
 }>();
@@ -14,13 +14,13 @@ defineProps<{
 
 <template>
   <section class="py-10 space-y-6 border-b border-gray-50">
-    <h2 class="mb-4 text-2xl font-bold">
-      {{ title }}
+    <h2 class="text-2xl sm:text-3xl font-semibold text-center">
+      {{ props.title }}
     </h2>
 
     <div class="grid gap-4 md:grid-cols-2">
       <UCard
-        v-for="item in items"
+        v-for="item in props.items"
         :key="item.to"
       >
         <div class="flex gap-4">
