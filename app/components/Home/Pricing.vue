@@ -23,7 +23,7 @@ const excavators = [
     labelKey: 'pricing.excavators.pc128',
     prices: [
       { key: 'hour', value: PRICING.excavators.pc128.hour },
-      { key: 'shift', value: PRICING.excavators.pc128.hour },
+      { key: 'shift', value: PRICING.excavators.pc128.shift },
     ],
   },
 ];
