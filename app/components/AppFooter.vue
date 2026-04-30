@@ -108,7 +108,7 @@ const onSocialClick = (social: SocialItem, location: string) => {
 {
   "ru": {
     "footer": {
-      "tagline": "Земляные работы, экскаваторы и грузовики на Самуи.",
+      "tagline": "Земляные работы, экскаваторы и грузовики на Самуи.",
       "description": "Расчистка участков, подготовка земли, вывоз грунта и работа строительной техники.",
       "services": "Услуги",
       "contacts": "Контакты",
@@ -123,8 +123,8 @@ const onSocialClick = (social: SocialItem, location: string) => {
   },
   "en": {
     "footer": {
-      "tagline": "Earthworks, excavators and dump trucks on Koh Samui.",
-      "description": "Land clearing, site preparation, soil removal and construction machinery services.",
+      "tagline": "Earthworks, excavators and dump trucks on Koh Samui.",
+      "description": "Land clearing, site preparation, soil removal and construction machinery services.",
       "services": "Services",
       "contacts": "Contacts",
       "languages": "Language",
