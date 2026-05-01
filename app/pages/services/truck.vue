@@ -267,7 +267,7 @@ useHead(() => {
         "keywords": "самосвал самуи, грузовик самуи, вывоз грунта самуи, вывоз строительного мусора самуи, доставка песка самуи, доставка щебня самуи, доставка грунта самуи, перевозка техники самуи, dump truck koh samui"
       },
       "hero": {
-        "title": "Самосвалы и грузовики на Самуи",
+        "title": "Самосвалы и грузовики на Самуи",
         "description": "Вывоз грунта и строительного мусора, доставка песка, щебня, земли и перевозка техники по Самуи."
       },
       "intro": "Нужен самосвал или грузовик на Самуи? Мы вывозим грунт после копки, убираем строительный мусор, доставляем песок, щебень, землю и перевозим технику между объектами. Вы отправляете локацию, фото подъезда и короткое описание задачи - мы подбираем подходящий грузовик, считаем примерный объём, количество рейсов и стоимость до начала работ.",
@@ -340,11 +340,11 @@ useHead(() => {
       "related": {
         "title": "Может понадобиться дополнительно",
         "excavator": {
-          "title": "Экскаватор с оператором",
+          "title": "Экскаватор с оператором",
           "description": "Если нужно выкопать, погрузить грунт, разобрать бетон или подготовить материал к вывозу."
         },
         "earthworks": {
-          "title": "Земляные работы под ключ",
+          "title": "Земляные работы под ключ",
           "description": "Если нужна комплексная подготовка участка: расчистка, дренаж, отсыпка, уровни и вывоз."
         }
       },
@@ -438,8 +438,8 @@ useHead(() => {
         "keywords": "dump truck koh samui, dump truck rental koh samui, truck service samui, soil removal koh samui, construction waste removal samui, sand delivery samui, gravel delivery samui, soil delivery samui, equipment transport samui"
       },
       "hero": {
-        "title": "Dump truck and truck services on Koh Samui",
-        "description": "Soil removal, construction waste removal, sand, gravel and soil delivery, and equipment transport across Koh Samui."
+        "title": "Dump truck and truck services on Koh Samui",
+        "description": "Soil removal, construction waste removal, sand, gravel and soil delivery, and equipment transport across Koh Samui."
       },
       "intro": "Need a dump truck or construction truck on Koh Samui? We remove soil after excavation, haul construction waste, deliver sand, gravel and fill soil, and transport equipment between job sites. Send us the location, access photos and a short task description - we will choose the right truck, estimate the volume, number of trips and price before the job starts.",
       "tasks": {
@@ -780,6 +780,16 @@ useHead(() => {
       :items="tasksItems"
     />
 
+    <ServiceIncluded
+      :title="t('trucks.included.title')"
+      :items="includedItems"
+    />
+
+    <CoreContactsMini
+      page="services/truck"
+      location="content"
+    />
+
     <ServiceEquipment
       :title="t('trucks.equipment.title')"
       :note="t('trucks.equipment.note')"
@@ -796,24 +806,14 @@ useHead(() => {
       icon="i-lucide-shovel"
     />
 
-    <ServiceRelated
-      :title="t('trucks.related.title')"
-      :items="relatedServices"
-    />
-
-    <ServiceIncluded
-      :title="t('trucks.included.title')"
-      :items="includedItems"
-    />
-
-    <CoreContactsMini
-      page="services/truck"
-      location="content"
-    />
-
     <ServiceGallery
       :title="t('trucks.photos.title')"
       :items="photos"
+    />
+
+    <ServiceRelated
+      :title="t('trucks.related.title')"
+      :items="relatedServices"
     />
 
     <CoreFAQ

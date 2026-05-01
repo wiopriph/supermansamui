@@ -794,6 +794,16 @@ useHead(() => {
       :items="tasksItems"
     />
 
+    <ServiceIncluded
+      :title="t('excavator.included.title')"
+      :items="includedItems"
+    />
+
+    <CoreContactsMini
+      page="services/excavator"
+      location="content"
+    />
+
     <ServiceEquipment
       :title="t('excavator.equipment.title')"
       :note="t('excavator.equipment.note')"
@@ -809,24 +819,14 @@ useHead(() => {
       icon="i-lucide-truck"
     />
 
-    <ServiceRelated
-      :title="t('excavator.related.title')"
-      :items="relatedServices"
-    />
-
-    <ServiceIncluded
-      :title="t('excavator.included.title')"
-      :items="includedItems"
-    />
-
-    <CoreContactsMini
-      page="services/excavator"
-      location="content"
-    />
-
     <ServiceGallery
       :title="t('excavator.photos.title')"
       :items="photos"
+    />
+
+    <ServiceRelated
+      :title="t('excavator.related.title')"
+      :items="relatedServices"
     />
 
     <CoreFAQ
