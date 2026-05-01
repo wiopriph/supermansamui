@@ -1,20 +1,34 @@
 <script setup lang="ts">
 import {
   CONTACT_PHONE,
+  SOCIALS_LINE,
   SOCIALS_MESSENGER,
   SOCIALS_WHATSAPP,
-  SOCIALS_LINE,
 } from '~/constants/contacts';
 import type { SocialKey } from '~/composables/useAnalyticsEvent';
 
 
-const { t, locale } = useI18n();
+type Props = {
+  title: string
+  description: string
+  primaryLabel: string
+  page?: string
+  location?: string
+};
+
+const props = withDefaults(defineProps<Props>(), {
+  page: '/',
+  location: 'hero',
+});
+
+const { locale } = useI18n();
+const { trackPhoneClick, trackSocialClick } = useAnalyticsEvent();
 
 const links = computed(() => [
   {
     type: 'phone' as const,
     icon: 'i-lucide-phone',
-    label: t('hero.primary'),
+    label: props.primaryLabel,
     to: `tel:${CONTACT_PHONE}`,
   },
   {
@@ -40,17 +54,12 @@ const links = computed(() => [
   },
 ].filter((item) => item.to));
 
-
-const PAGE = '/';
-const LOCATION = 'hero';
-const { trackPhoneClick, trackSocialClick } = useAnalyticsEvent();
-
 const onClick = (item: typeof links.value[number]) => {
   if (item.type === 'phone') {
     trackPhoneClick({
       locale: locale.value,
-      page: PAGE,
-      location: LOCATION,
+      page: props.page,
+      location: props.location,
       phone: CONTACT_PHONE,
     });
 
@@ -59,47 +68,23 @@ const onClick = (item: typeof links.value[number]) => {
 
   trackSocialClick({
     locale: locale.value,
-    page: PAGE,
-    location: LOCATION,
+    page: props.page,
+    location: props.location,
     social: item.key as SocialKey,
     url: item.to,
   });
 };
 </script>
 
-<i18n lang="json">
-{
-  "ru": {
-    "hero": {
-      "h1": "Экскаваторы, самосвалы и грузовики на Самуи",
-      "lead": "Земляные работы, аренда экскаватора, вывоз грунта, доставка песка и щебня, перевозка техники и грузов на Самуи. Своя техника, местные операторы и понятная цена до начала работ.",
-      "primary": "Позвонить",
-      "secondary": "Написать в WhatsApp"
-    }
-  },
-  "en": {
-    "hero": {
-      "h1": "Excavators, dump trucks and trucks on Koh Samui",
-      "lead": "Earthworks, excavator rental, soil removal, sand and gravel delivery, and equipment transport on Koh Samui. Our own machines, local operators and clear pricing before the job starts.",
-      "primary": "Call now",
-      "secondary": "Message on WhatsApp"
-    }
-  },
-  "th": {
-    "hero": {
-      "h1": "รถขุด รถดั๊ม และรถบรรทุกบนเกาะสมุย",
-      "lead": "งานดิน บริการเช่ารถขุด ขนดิน ส่งทรายและหิน และขนย้ายเครื่องจักรบนเกาะสมุย มีเครื่องจักรของเราเอง คนขับท้องถิ่น และแจ้งราคาชัดเจนก่อนเริ่มงาน",
-      "primary": "โทรเลย",
-      "secondary": "แชทผ่าน WhatsApp"
-    }
-  }
-}
-</i18n>
-
 <template>
   <UPageHero
-    :title="t('hero.h1')"
-    :description="t('hero.lead')"
+    :title="title"
+    :description="description"
+    :ui="{
+      title: 'mx-auto text-balance',
+      description: 'mx-auto text-balance text-base sm:text-lg',
+      links: 'flex flex-wrap justify-center gap-3',
+    }"
   >
     <template #links>
       <UButton

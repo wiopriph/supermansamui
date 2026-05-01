@@ -17,7 +17,7 @@ defineProps<Props>();
 
     <div
       v-if="paragraphs?.length"
-      class="space-y-4 text-base leading-7 text-gray-500 dark:text-gray-300"
+      class="space-y-2 text-base leading-7 text-gray-500 dark:text-gray-300"
     >
       <p
         v-for="(p, index) in paragraphs"
