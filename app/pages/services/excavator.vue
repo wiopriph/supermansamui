@@ -145,7 +145,6 @@ const photos = computed(() => {
   const order = [
     'construction-foundation',
     'sewerage-installation',
-    'excavator-digging',
     'loading-excavator-onto-truck',
     'delivery-of-an-excavator',
     'transporting-excavator',
