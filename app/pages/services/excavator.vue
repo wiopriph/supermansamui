@@ -262,7 +262,7 @@ useHead(() => {
         }
       },
       "seo": {
-        "title": "Аренда экскаватора на Самуи | Экскаватор с оператором",
+        "title": "Аренда экскаватора на Самуи - Экскаватор с оператором",
         "description": "Аренда экскаватора на Самуи с оператором: копка под фундамент, траншеи, демонтаж, гидромолот, погрузка грунта и работа на стройке. Малые, средние и большие экскаваторы.",
         "keywords": "аренда экскаватора самуи, экскаватор самуи, экскаватор с оператором самуи, мини экскаватор самуи, копка фундамента самуи, копка траншей самуи, гидромолот самуи, демонтаж экскаватором самуи"
       },
@@ -446,7 +446,7 @@ useHead(() => {
         }
       },
       "seo": {
-        "title": "Excavator Rental on Koh Samui | Excavator with Operator",
+        "title": "Excavator Rental on Koh Samui - Excavator with Operator",
         "description": "Excavator rental on Koh Samui with operator: foundation digging, trenching, demolition, hydraulic breaker work, soil loading and construction site support. Small, medium and large excavators.",
         "keywords": "excavator rental koh samui, excavator koh samui, excavator with operator samui, mini excavator samui, foundation digging samui, trench digging samui, hydraulic breaker samui, excavator demolition samui"
       },
@@ -630,7 +630,7 @@ useHead(() => {
         }
       },
       "seo": {
-        "title": "บริการรถขุดพร้อมคนขับ เกาะสมุย | ขุดดิน ขุดร่อง ทุบรื้อ",
+        "title": "บริการรถขุดพร้อมคนขับ เกาะสมุย {'|'} ขุดดิน ขุดร่อง ทุบรื้อ",
         "description": "บริการรถขุดพร้อมคนขับบนเกาะสมุย ขุดฐานราก ขุดร่อง ทุบรื้อ ใช้หัวเจาะ ตักดินขึ้นรถ และช่วยงานก่อสร้าง มีรถขุดหลายขนาด",
         "keywords": "เช่ารถขุด สมุย, รถขุด สมุย, รถขุดพร้อมคนขับ สมุย, ขุดดิน สมุย, ขุดฐานราก สมุย, ขุดร่อง สมุย, หัวเจาะ รถขุด สมุย, ทุบคอนกรีต สมุย"
       },

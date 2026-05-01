@@ -225,7 +225,7 @@ useHead(() => {
         }
       },
       "seo": {
-        "title": "Выравнивание участка на Самуи | Планировка земли и подготовка площадки",
+        "title": "Выравнивание участка на Самуи - Планировка земли и подготовка площадки",
         "description": "Выравнивание участка на Самуи под дом, виллу, дорогу или стройку: планировка земли, формирование уровней, уклонов, террас и ровных площадок.",
         "keywords": "выравнивание участка самуи, планировка земли самуи, выравнивание земли самуи, grading koh samui, land leveling koh samui, подготовка участка самуи, экскаватор самуи"
       },
@@ -306,7 +306,7 @@ useHead(() => {
         "text": "Цена зависит от площади, перепадов высот, грунта, доступа техники, объёма перемещения земли и необходимости завоза или вывоза материала. Для расчёта отправьте локацию, фото участка и короткое описание задачи."
       },
       "cta": {
-        "title": "Отправьте фото участка — оценим уровни",
+        "title": "Отправьте фото участка - оценим уровни",
         "text": "Пришлите локацию, фото подъезда и участка. Мы подскажем, какая техника нужна и как лучше выровнять землю."
       },
       "related": {
@@ -332,7 +332,7 @@ useHead(() => {
         },
         "q2": {
           "question": "Можно ли выровнять участок после расчистки?",
-          "answer": "Да. Обычно после расчистки участка следующий этап — выравнивание, отсыпка или дренаж."
+          "answer": "Да. Обычно после расчистки участка следующий этап - выравнивание, отсыпка или дренаж."
         },
         "q3": {
           "question": "Нужно ли завозить грунт?",
@@ -393,7 +393,7 @@ useHead(() => {
         }
       },
       "seo": {
-        "title": "Land Leveling on Koh Samui | Grading & Site Preparation",
+        "title": "Land Leveling on Koh Samui - Grading & Site Preparation",
         "description": "Land leveling on Koh Samui for houses, villas, roads and construction sites: grading, slopes, terraces, flat work areas and site preparation.",
         "keywords": "land leveling koh samui, land grading koh samui, grading samui, site grading koh samui, slope shaping samui, level land samui, excavator samui"
       },
@@ -474,7 +474,7 @@ useHead(() => {
         "text": "The price depends on land size, height differences, soil type, machine access, soil movement volume and whether material delivery or removal is needed. Send location, site photos and a short task description."
       },
       "cta": {
-        "title": "Send photos of your land — we’ll estimate the levels",
+        "title": "Send photos of your land - we’ll estimate the levels",
         "text": "Share location, access photos and site photos. We’ll suggest the right machinery and the best way to level the land."
       },
       "related": {
@@ -561,7 +561,7 @@ useHead(() => {
         }
       },
       "seo": {
-        "title": "ปรับระดับที่ดิน เกาะสมุย | ปรับพื้นที่ ทำสโลป และเตรียมก่อสร้าง",
+        "title": "ปรับระดับที่ดิน เกาะสมุย {'|'} ปรับพื้นที่ ทำสโลป และเตรียมก่อสร้าง",
         "description": "บริการปรับระดับที่ดินบนเกาะสมุย สำหรับบ้าน วิลล่า ถนน และไซต์ก่อสร้าง ทำระดับ ทำสโลป ปรับพื้นที่ และเตรียมพื้นที่ให้พร้อมใช้งาน",
         "keywords": "ปรับระดับที่ดิน สมุย, ปรับพื้นที่ สมุย, งานดิน สมุย, ทำสโลป สมุย, เตรียมพื้นที่ก่อสร้าง สมุย, รถขุด สมุย"
       },

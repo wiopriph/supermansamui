@@ -8,6 +8,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      titleTemplate: '%s | Superman Samui',
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon-new.ico' },
 

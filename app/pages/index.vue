@@ -241,9 +241,9 @@ const seoBlock = computed(() => ({
 {
   "ru": {
     "seo": {
-      "title": "Superman Samui - спецтехника и земляные работы на Самуи",
-      "desc": "Аренда экскаваторов, самосвалов и грузовиков на Самуи. Земляные работы, планировка участка, вывоз грунта, подготовка под строительство. Быстрый выезд, честные цены, местные операторы.",
-      "keywords": "спецтехника самуи, аренда экскаватора самуи, земляные работы самуи, вывоз грунта самуи, аренда самосвала самуи, excavation samui"
+      "title": "Земляные работы и аренда экскаватора на Самуи",
+      "desc": "Земляные работы на Самуи: аренда экскаватора, вывоз грунта, самосвалы, расчистка и выравнивание участка под строительство.",
+      "keywords": "земляные работы самуи, аренда экскаватора самуи, самосвал самуи, вывоз грунта самуи, подготовка участка самуи"
     },
     "hero": {
       "title": "Экскаваторы и земляные работы на Самуи",
@@ -348,9 +348,9 @@ const seoBlock = computed(() => ({
   },
   "en": {
     "seo": {
-      "title": "Superman Samui - heavy equipment & earthworks on Koh Samui",
-      "desc": "Excavators, dump trucks and heavy machinery for earthworks on Koh Samui. Land clearing, grading, soil removal and full site preparation. Fast response, fair pricing, professional local operators.",
-      "keywords": "excavator rental koh samui, earthworks samui, dump truck samui, land clearing samui, construction services samui"
+      "title": "Earthworks & Excavator Rental on Koh Samui",
+      "desc": "Earthworks on Koh Samui: excavator rental, land clearing, leveling, soil removal and dump truck services for construction projects.",
+      "keywords": "earthworks koh samui, excavator rental koh samui, dump truck samui, land clearing samui, soil removal samui"
     },
     "hero": {
       "title": "Excavators and earthworks on Koh Samui",
@@ -455,9 +455,9 @@ const seoBlock = computed(() => ({
   },
   "th": {
     "seo": {
-      "title": "Superman Samui - บริการงานดินและเครื่องจักรหนักบนเกาะสมุย",
-      "desc": "เช่ารถขุด รถดั๊มพ์ รถบรรทุก และงานดินทุกประเภทบนเกาะสมุย เคลียร์พื้นที่ ปรับระดับ ขนดิน ถมที่ และเตรียมไซต์งานก่อสร้าง บริการรวดเร็ว ราคายุติธรรม คนขับมืออาชีพ",
-      "keywords": "เช่ารถขุด สมุย, งานดิน สมุย, รถดั๊มพ์ สมุย, เคลียร์พื้นที่ สมุย, ปรับระดับ สมุย, บริการเครื่องจักรหนัก สมุย"
+      "title": "งานดินและเช่ารถขุด เกาะสมุย",
+      "desc": "บริการงานดินบนเกาะสมุย: เช่ารถขุด เคลียร์พื้นที่ ปรับระดับ ขนดิน และรถดั๊มพ์สำหรับงานก่อสร้าง",
+      "keywords": "งานดิน สมุย, เช่ารถขุด สมุย, รถดั๊มพ์ สมุย, เคลียร์ที่ดิน สมุย, ปรับระดับ สมุย"
     },
     "hero": {
       "title": "งานดินและรถขุดบนเกาะสมุย",
