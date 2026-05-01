@@ -365,7 +365,6 @@ useHead(() => {
           "title": "Выравнивание подъездной дороги",
           "alt": "Планировка и выравнивание подъездной дороги на участке"
         },
-
         "land-leveling-before-construction": {
           "title": "Выравнивание перед строительством",
           "alt": "Выравнивание участка перед строительством дома на Самуи"
@@ -534,7 +533,6 @@ useHead(() => {
           "title": "Access road leveling",
           "alt": "Grading and leveling an access road on a land plot"
         },
-
         "land-leveling-before-construction": {
           "title": "Leveling before construction",
           "alt": "Land leveling before house construction on Koh Samui"
@@ -703,7 +701,6 @@ useHead(() => {
           "title": "ปรับระดับถนนทางเข้า",
           "alt": "ปรับระดับถนนทางเข้าในพื้นที่"
         },
-
         "land-leveling-before-construction": {
           "title": "ปรับระดับก่อนก่อสร้าง",
           "alt": "ปรับระดับที่ดินก่อนสร้างบ้านบนเกาะสมุย"

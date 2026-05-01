@@ -160,6 +160,15 @@ const photos = computed(() => {
   }));
 });
 
+const seoBlock = computed(() => ({
+  title: t('excavator.seoBlock.title'),
+  paragraphs: [
+    t('excavator.seoBlock.p1'),
+    t('excavator.seoBlock.p2'),
+    t('excavator.seoBlock.p3'),
+  ],
+}));
+
 const serviceTypes = computed(() => [
   t('excavator.schema.serviceTypes.rental'),
   t('excavator.schema.serviceTypes.operator'),
@@ -257,6 +266,12 @@ useHead(() => {
         "title": "Аренда экскаватора на Самуи | Экскаватор с оператором",
         "description": "Аренда экскаватора на Самуи с оператором: копка под фундамент, траншеи, демонтаж, гидромолот, погрузка грунта и работа на стройке. Малые, средние и большие экскаваторы.",
         "keywords": "аренда экскаватора самуи, экскаватор самуи, экскаватор с оператором самуи, мини экскаватор самуи, копка фундамента самуи, копка траншей самуи, гидромолот самуи, демонтаж экскаватором самуи"
+      },
+      "seoBlock": {
+        "title": "Аренда экскаватора на Самуи",
+        "p1": "Предоставляем экскаваторы с оператором на Самуи для копки под фундамент, траншей, демонтажа, погрузки грунта и строительных работ. В наличии малые, средние и большие экскаваторы для разных задач.",
+        "p2": "Подбираем технику под условия участка: узкий подъезд, плотный грунт, уклон, глубина копки и объём работ. Работаем как на частных участках, так и на строительных объектах.",
+        "p3": "Можно заказать экскаватор почасово, на смену или под конкретную задачу. При необходимости добавляем самосвалы для вывоза грунта и доставки материалов."
       },
       "hero": {
         "title": "Аренда экскаватора на Самуи",
@@ -436,6 +451,12 @@ useHead(() => {
         "description": "Excavator rental on Koh Samui with operator: foundation digging, trenching, demolition, hydraulic breaker work, soil loading and construction site support. Small, medium and large excavators.",
         "keywords": "excavator rental koh samui, excavator koh samui, excavator with operator samui, mini excavator samui, foundation digging samui, trench digging samui, hydraulic breaker samui, excavator demolition samui"
       },
+      "seoBlock": {
+        "title": "Excavator rental on Koh Samui",
+        "p1": "We provide excavator rental on Koh Samui with operator for foundation digging, trenching, demolition, soil loading and construction site work. Available in small, medium and large sizes.",
+        "p2": "We choose the right excavator based on site conditions: access, soil type, slope, digging depth and work volume. Suitable for private land and construction projects.",
+        "p3": "You can book an excavator hourly, daily or for a specific job. Dump trucks can be added for soil removal and material delivery."
+      },
       "hero": {
         "title": "Excavator rental on Koh Samui",
         "description": "Excavators with operator for digging, trenching, demolition, hydraulic breaker work, soil loading and construction site tasks."
@@ -613,6 +634,12 @@ useHead(() => {
         "title": "บริการรถขุดพร้อมคนขับ เกาะสมุย | ขุดดิน ขุดร่อง ทุบรื้อ",
         "description": "บริการรถขุดพร้อมคนขับบนเกาะสมุย ขุดฐานราก ขุดร่อง ทุบรื้อ ใช้หัวเจาะ ตักดินขึ้นรถ และช่วยงานก่อสร้าง มีรถขุดหลายขนาด",
         "keywords": "เช่ารถขุด สมุย, รถขุด สมุย, รถขุดพร้อมคนขับ สมุย, ขุดดิน สมุย, ขุดฐานราก สมุย, ขุดร่อง สมุย, หัวเจาะ รถขุด สมุย, ทุบคอนกรีต สมุย"
+      },
+      "seoBlock": {
+        "title": "บริการรถขุดพร้อมคนขับ เกาะสมุย",
+        "p1":  "ให้บริการรถขุดพร้อมคนขับบนเกาะสมุย สำหรับขุดฐานราก ขุดร่อง ทุบรื้อ ตักดิน และงานก่อสร้าง มีรถขุดหลายขนาดให้เลือกตามลักษณะงาน",
+        "p2": "เราช่วยเลือกขนาดรถให้เหมาะกับหน้างาน เช่น ทางเข้าพื้นที่ ดินแข็ง ความลึก และปริมาณงาน เหมาะทั้งบ้านพักอาศัยและโครงการก่อสร้าง",
+        "p3": "สามารถเช่าได้ทั้งรายชั่วโมง รายวัน หรือเหมางาน และสามารถเพิ่มรถดั๊มพ์สำหรับขนดินหรือส่งวัสดุได้"
       },
       "hero": {
         "title": "เช่ารถขุดบนเกาะสมุย",
@@ -813,7 +840,7 @@ useHead(() => {
 
     <UAlert
       :title="t('excavator.packages.title')"
-      :description=" t('excavator.packages.text')"
+      :description="t('excavator.packages.text')"
       variant="soft"
       color="primary"
       icon="i-lucide-truck"
@@ -827,6 +854,11 @@ useHead(() => {
     <ServiceRelated
       :title="t('excavator.related.title')"
       :items="relatedServices"
+    />
+
+    <ServiceSeoBlock
+      :title="seoBlock.title"
+      :paragraphs="seoBlock.paragraphs"
     />
 
     <CoreFAQ

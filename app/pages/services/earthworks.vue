@@ -113,18 +113,6 @@ const faqItems = computed(() => [
   { question: t('earthworks.faq.q7.question'), answer: t('earthworks.faq.q7.answer') },
 ]);
 
-const photos = computed(() => {
-  const order = [
-
-    'removal-of-construction-waste',
-  ];
-
-  return order.map((key) => ({
-    title: t(`earthworks.photos.${key}.title`),
-    alt: t(`earthworks.photos.${key}.alt`),
-    src: `/images/services/earthworks/photos/${key}.webp`,
-  }));
-});
 
 const beforeAfterItems = computed(() => [
   {
@@ -175,6 +163,15 @@ const beforeAfterItems = computed(() => [
   },
 ]);
 
+const seoBlock = computed(() => ({
+  title: t('earthworks.seoBlock.title'),
+  paragraphs: [
+    t('earthworks.seoBlock.p1'),
+    t('earthworks.seoBlock.p2'),
+    t('earthworks.seoBlock.p3'),
+  ],
+}));
+
 const serviceTypes = computed(() => [
   t('earthworks.schema.serviceTypes.earthworks'),
   t('earthworks.schema.serviceTypes.landClearing'),
@@ -184,15 +181,6 @@ const serviceTypes = computed(() => [
   t('earthworks.schema.serviceTypes.sitePreparation'),
   t('earthworks.schema.serviceTypes.soilRemoval'),
 ]);
-
-const seoBlock = computed(() => ({
-  title: t('earthworks.seoBlock.title'),
-  paragraphs: [
-    t('earthworks.seoBlock.p1'),
-    t('earthworks.seoBlock.p2'),
-    t('earthworks.seoBlock.p3'),
-  ],
-}));
 
 const areas = computed(() => [
   t('earthworks.areas.items.chaweng'),
@@ -495,14 +483,6 @@ useHead(() => {
           "question": "Можно сначала просто получить консультацию?",
           "answer": "Да. Отправьте фото и локацию - подскажем, с чего начать и какая техника нужна."
         }
-      },
-      "photos": {
-        "title": "Примеры земляных работ",
-
-        "removal-of-construction-waste": {
-          "title": "Вывоз строительного мусора",
-          "alt": "Вывоз строительных отходов и лишнего грунта с участка"
-        }
       }
     }
   },
@@ -729,15 +709,6 @@ useHead(() => {
         "q7": {
           "question": "Can I get advice first?",
           "answer": "Yes. Send photos and location - we’ll suggest the best approach."
-        }
-      },
-
-      "photos": {
-        "title": "Earthworks examples",
-
-        "removal-of-construction-waste": {
-          "title": "Waste removal",
-          "alt": "Removing construction debris and soil"
         }
       }
     }
@@ -969,15 +940,6 @@ useHead(() => {
           "question": "ใช้เวลากี่วัน?",
           "answer": "ขึ้นอยู่กับขนาดงานและพื้นที่"
         }
-      },
-
-      "photos": {
-        "title": "ตัวอย่างงาน",
-
-        "removal-of-construction-waste": {
-          "title": "ขนเศษวัสดุ",
-          "alt": "ขนของออกจากไซต์"
-        }
       }
     }
   }
@@ -1078,17 +1040,11 @@ useHead(() => {
       icon="i-lucide-camera"
     />
 
-    <ServiceGallery
-      :title="t('earthworks.photos.title')"
-      :items="photos"
-    />
-
     <ServiceSeoBlock
       :title="areasBlock.title"
       :paragraphs="areasBlock.description"
       :tags="areasBlock.items"
     />
-
 
     <ServiceSeoBlock
       :title="seoBlock.title"
