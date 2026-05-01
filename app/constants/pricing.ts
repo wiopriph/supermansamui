@@ -2,23 +2,23 @@ export const PRICING = {
   excavators: {
     pc30: {
       hour: 1000,
-      shift: 7500,
+      shift: 8000,
     },
     b32: {
       hour: 1000,
-      shift: 7500,
+      shift: 8000,
     },
     cat305cr: {
       hour: 1200,
-      shift: 8500,
+      shift: 9600,
     },
     vio70: {
-      hour: 1700,
+      hour: 1500,
       shift: 12000,
     },
     pc128: {
       hour: 2200,
-      shift: 16500,
+      shift: 17600,
     },
   },
 
