@@ -115,11 +115,7 @@ const faqItems = computed(() => [
 
 const photos = computed(() => {
   const order = [
-    'house-construction',
-    'leveling-construction-site',
-    'site-preparation-for-construction',
-    'bulldozer-work',
-    'preparing-the-access-road',
+
     'removal-of-construction-waste',
   ];
 
@@ -502,29 +498,10 @@ useHead(() => {
       },
       "photos": {
         "title": "Примеры земляных работ",
-        "bulldozer-work": {
-          "title": "Планировка участка техникой",
-          "alt": "Земляные работы и перемещение грунта на участке на Самуи"
-        },
-        "leveling-construction-site": {
-          "title": "Выравнивание строительной площадки",
-          "alt": "Планировка и выравнивание участка перед началом строительства"
-        },
-        "preparing-the-access-road": {
-          "title": "Подготовка подъездной дороги",
-          "alt": "Отсыпка и выравнивание подъездной дороги для техники и транспорта"
-        },
+
         "removal-of-construction-waste": {
           "title": "Вывоз строительного мусора",
           "alt": "Вывоз строительных отходов и лишнего грунта с участка"
-        },
-        "site-preparation-for-construction": {
-          "title": "Подготовка участка под стройку",
-          "alt": "Комплексная подготовка участка под строительство на Самуи"
-        },
-        "house-construction": {
-          "title": "Подготовка под строительство дома",
-          "alt": "Земляные работы под строительство дома или виллы на Самуи"
         }
       }
     }
@@ -757,29 +734,10 @@ useHead(() => {
 
       "photos": {
         "title": "Earthworks examples",
-        "bulldozer-work": {
-          "title": "Site grading",
-          "alt": "Earthworks and soil movement on Koh Samui"
-        },
-        "leveling-construction-site": {
-          "title": "Land leveling",
-          "alt": "Leveling land before construction"
-        },
-        "preparing-the-access-road": {
-          "title": "Access road preparation",
-          "alt": "Building and leveling access road"
-        },
+
         "removal-of-construction-waste": {
           "title": "Waste removal",
           "alt": "Removing construction debris and soil"
-        },
-        "site-preparation-for-construction": {
-          "title": "Site preparation",
-          "alt": "Full land preparation for construction"
-        },
-        "house-construction": {
-          "title": "Construction preparation",
-          "alt": "Preparing land for house or villa"
         }
       }
     }
@@ -1015,29 +973,10 @@ useHead(() => {
 
       "photos": {
         "title": "ตัวอย่างงาน",
-        "bulldozer-work": {
-          "title": "ปรับพื้นที่",
-          "alt": "งานปรับดินบนเกาะสมุย"
-        },
-        "leveling-construction-site": {
-          "title": "ปรับระดับ",
-          "alt": "ปรับระดับก่อนก่อสร้าง"
-        },
-        "preparing-the-access-road": {
-          "title": "ทำทางเข้า",
-          "alt": "เตรียมถนนเข้าไซต์"
-        },
+
         "removal-of-construction-waste": {
           "title": "ขนเศษวัสดุ",
           "alt": "ขนของออกจากไซต์"
-        },
-        "site-preparation-for-construction": {
-          "title": "เตรียมพื้นที่",
-          "alt": "เตรียมพื้นที่ก่อสร้าง"
-        },
-        "house-construction": {
-          "title": "เตรียมบ้าน",
-          "alt": "เตรียมพื้นที่สร้างบ้าน"
         }
       }
     }
