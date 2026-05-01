@@ -94,7 +94,7 @@ useHead(() => {
   const title = t('seo.title');
   const description = t('seo.desc');
   const keywords = t('seo.keywords');
-  const image = 'https://supermansamui.com/images/services/excavators.webp';
+  const image = 'https://supermansamui.com/images/services/excavators/hero.webp';
 
   return {
     title,
