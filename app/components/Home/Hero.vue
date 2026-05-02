@@ -81,9 +81,9 @@ const onClick = (item: typeof links.value[number]) => {
     :title="title"
     :description="description"
     :ui="{
-      title: 'mx-auto text-balance',
+      title: 'text-4xl mx-auto text-balance',
       description: 'mx-auto text-balance text-base sm:text-lg',
-      links: 'flex flex-wrap justify-center gap-3',
+      links: 'flex flex-nowrap sm:flex-wrap justify-center gap-3',
     }"
   >
     <template #links>
@@ -97,7 +97,11 @@ const onClick = (item: typeof links.value[number]) => {
         size="lg"
         @click="onClick(link)"
       >
-        {{ link.label }}
+        <span
+          v-if="link.label"
+          class="hidden sm:block"
+          v-text="link.label"
+        />
       </UButton>
     </template>
   </UPageHero>

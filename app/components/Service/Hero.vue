@@ -146,7 +146,7 @@ const onClick = (item: Item) => {
               @click="onClick(item as Item)"
             >
               <span
-                v-if="'label' in item"
+                v-if="item.label"
                 class="hidden sm:block"
                 v-text="item.label"
               />
