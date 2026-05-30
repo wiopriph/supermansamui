@@ -12,7 +12,6 @@ import {
 
 const { locale } = useI18n();
 const i18nHead = useLocaleHead();
-const url = useRequestURL();
 
 const metaOg = computed(() => [
   { key: 'og:type', property: 'og:type', content: 'website' },
