@@ -860,6 +860,8 @@ useHead(() => {
       :paragraphs="seoBlock.paragraphs"
     />
 
+    <ServiceProjects service="excavator" />
+
     <CoreFAQ
       :title="t('excavator.faq.title')"
       :items="faqItems"

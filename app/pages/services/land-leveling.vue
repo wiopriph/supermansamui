@@ -783,6 +783,8 @@ useHead(() => {
       :paragraphs="seoBlock.paragraphs"
     />
 
+    <ServiceProjects service="land-leveling" />
+
     <CoreFAQ
       :title="t('landLeveling.faq.title')"
       :items="faqItems"

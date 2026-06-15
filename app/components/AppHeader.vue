@@ -31,6 +31,10 @@ const items = computed<NavigationMenuItem[]>(() => [
     label: t('header.truck'),
     to: localeRoute({ name: 'services-truck' }),
   },
+  {
+    label: t('header.projects'),
+    to: localeRoute({ name: 'projects' }),
+  },
 ]);
 
 type SocialItem = {
@@ -93,6 +97,7 @@ const onSocialClick = (social: SocialItem, location: string) => {
       "contactUs": "Свяжитесь с нами",
       "earthworks": "Земляные работы",
       "excavator": "Аренда экскаватора",
+      "projects": "Проекты",
       "truck": "Аренда грузовиков",
       "title": "Superman Samui"
     }
@@ -102,6 +107,7 @@ const onSocialClick = (social: SocialItem, location: string) => {
       "contactUs": "Contact us",
       "earthworks": "Earthworks",
       "excavator": "Excavator Rental",
+      "projects": "Projects",
       "truck": "Truck Rental",
       "title": "Superman Samui"
     }
@@ -111,6 +117,7 @@ const onSocialClick = (social: SocialItem, location: string) => {
       "contactUs": "ติดต่อเรา",
       "earthworks": "งานดิน / ปรับพื้นที่",
       "excavator": "บริการเช่ารถขุด",
+      "projects": "ผลงาน",
       "truck": "บริการเช่ารถบรรทุก",
       "title": "Superman Samui"
     }

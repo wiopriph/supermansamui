@@ -45,10 +45,10 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    '@nuxtjs/sitemap',
+    '@nuxt/content',
     '@nuxtjs/i18n',
     '@nuxt/ui',
-    // '@nuxtjs/supabase',
-    '@nuxtjs/sitemap',
   ],
 
   runtimeConfig: {
@@ -75,16 +75,11 @@ export default defineNuxtConfig({
 
   sitemap: {
     xsl: false,
-    sitemapName: 'sitemap.xml',
     cacheMaxAgeSeconds: 86400,
+    sitemaps: true,
   },
 
   ssr: true,
-
-  // supabase: {
-  //   redirect: false,
-  //   serviceKey: process.env.SUPABASE_SERVICE_KEY,
-  // },
 
   ui: {
     colorMode: false,

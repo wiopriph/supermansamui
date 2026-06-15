@@ -47,6 +47,10 @@ const services = computed(() => [
     label: t('footer.truck'),
     to: localeRoute({ name: 'services-truck' }),
   },
+  {
+    label: t('footer.projects'),
+    to: localeRoute({ name: 'projects' }),
+  },
 ]);
 
 const socials = computed<SocialItem[]>(() => {
@@ -115,6 +119,7 @@ const onSocialClick = (social: SocialItem, location: string) => {
       "languages": "Язык",
       "earthworks": "Земляные работы",
       "excavator": "Аренда экскаватора",
+      "projects": "Проекты",
       "truck": "Аренда грузовиков",
       "call": "Позвонить",
       "getEstimate": "Получить расчёт",
@@ -130,6 +135,7 @@ const onSocialClick = (social: SocialItem, location: string) => {
       "languages": "Language",
       "earthworks": "Earthworks",
       "excavator": "Excavator Rental",
+      "projects": "Projects",
       "truck": "Truck Rental",
       "call": "Call now",
       "getEstimate": "Get estimate",
@@ -145,6 +151,7 @@ const onSocialClick = (social: SocialItem, location: string) => {
       "languages": "ภาษา",
       "earthworks": "งานดิน / ปรับพื้นที่",
       "excavator": "บริการเช่ารถขุด",
+      "projects": "ผลงาน",
       "truck": "บริการเช่ารถบรรทุก",
       "call": "โทรเลย",
       "getEstimate": "ประเมินราคา",

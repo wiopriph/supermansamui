@@ -13,18 +13,21 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@nuxt/ui": "4.7.0",
-    "@nuxtjs/i18n": "10.3.0",
-    "@nuxtjs/sitemap": "7.6.0",
+    "@nuxt/content": "3.14.0",
+    "@nuxt/ui": "4.8.2",
+    "@nuxtjs/i18n": "10.4.0",
+    "@nuxtjs/sitemap": "8.2.1",
     "@nuxtjs/supabase": "1.6.2",
-    "nuxt": "4.4.2",
+    "better-sqlite3": "12.10.1",
+    "nuxt": "4.4.8",
     "typescript": "6.0.3",
-    "vue": "3.5.33",
+    "vue": "3.5.38",
     "vue-router": "4.6.4"
   },
   "devDependencies": {
     "@iconify-json/heroicons": "1.2.3",
     "@iconify-json/lucide": "1.2.104",
-    "@wiopriph/eslint-config": "github:wiopriph/nuxt4-eslint-config"
+    "@wiopriph/eslint-config": "github:wiopriph/nuxt4-eslint-config",
+    "oxc-parser": "0.128.0"
   }
 }

@@ -1051,6 +1051,8 @@ useHead(() => {
       :paragraphs="seoBlock.paragraphs"
     />
 
+    <ServiceProjects service="earthworks" />
+
     <CoreFAQ
       :title="t('earthworks.faq.title')"
       :items="faqItems"

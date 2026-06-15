@@ -816,6 +816,8 @@ useHead(() => {
       :items="relatedServices"
     />
 
+    <ServiceProjects service="truck" />
+
     <CoreFAQ
       :title="t('trucks.faq.title')"
       :items="faqItems"
