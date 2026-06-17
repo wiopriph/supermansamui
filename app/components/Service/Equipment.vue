@@ -11,6 +11,7 @@ type EquipmentItem = {
   image?: string
   prices?: PriceItem[]
   buttonText?: string
+  to?: string
 };
 
 const props = defineProps<{
@@ -26,37 +27,37 @@ const { trackOrderClick } = useAnalyticsEvent();
 </script>
 
 <template>
-  <section class="py-10 space-y-6 border-b border-gray-50">
+  <section class="py-10 space-y-8">
     <div class="space-y-2 text-center">
       <h2
-        class="text-2xl sm:text-3xl font-semibold"
+        class="text-2xl sm:text-3xl font-semibold text-highlighted"
         v-text="props.title"
       />
 
       <p
         v-if="props.note"
-        class="text-sm text-gray-600 max-w-2xl mx-auto"
+        class="text-sm text-muted max-w-2xl mx-auto"
         v-text="props.note"
       />
     </div>
 
-    <UBlogPosts orientation="horizontal">
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       <EquipmentPriceCard
         v-for="(item, index) in props.items"
         :key="index"
-        :page="props.page"
         :title="item.title"
         :subtitle="item.subtitle"
         :description="item.description"
         :image="item.image"
         :prices="item.prices"
         :buttonText="item.buttonText"
+        :to="item.to"
         @click="trackOrderClick({
           page: props.page,
           locale: locale,
           name: item.title
         })"
       />
-    </UBlogPosts>
+    </div>
   </section>
 </template>

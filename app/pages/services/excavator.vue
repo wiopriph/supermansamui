@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { PRICING } from '~/constants/pricing';
+import { getEquipmentByCategory } from '~/data/equipment';
 
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
+const localePath = useLocalePath();
 
 const heroTitle = computed(() => t('excavator.hero.title'));
 const heroDescription = computed(() => t('excavator.hero.description'));
@@ -42,58 +43,23 @@ const tasksItems = computed(() => [
 
 const formatPrice = (value: number) => t('excavator.equipment.prices.thb', { price: value });
 
-const equipmentItems = computed(() => [
-  {
-    title: 'Komatsu PC30-7',
-    image: '/images/equipment/excavators/komatsu-pc30-7.webp',
-    subtitle: t('excavator.equipment.items.pc30.type'),
-    description: t('excavator.equipment.items.pc30.description'),
-    prices: [
-      { label: t('excavator.equipment.prices.hour'), value: formatPrice(PRICING.excavators.pc30.hour) },
-      { label: t('excavator.equipment.prices.day'), value: formatPrice(PRICING.excavators.pc30.shift) },
-    ],
-  },
-  {
-    title: 'Yanmar B32',
-    image: '/images/equipment/excavators/yanmar-b32.webp',
-    subtitle: t('excavator.equipment.items.b32.type'),
-    description: t('excavator.equipment.items.b32.description'),
-    prices: [
-      { label: t('excavator.equipment.prices.hour'), value: formatPrice(PRICING.excavators.b32.hour) },
-      { label: t('excavator.equipment.prices.day'), value: formatPrice(PRICING.excavators.b32.shift) },
-    ],
-  },
-  {
-    title: 'Caterpillar 305CR',
-    image: '/images/equipment/excavators/cat-305cr.webp',
-    subtitle: t('excavator.equipment.items.cat305.type'),
-    description: t('excavator.equipment.items.cat305.description'),
-    prices: [
-      { label: t('excavator.equipment.prices.hour'), value: formatPrice(PRICING.excavators.cat305cr.hour) },
-      { label: t('excavator.equipment.prices.day'), value: formatPrice(PRICING.excavators.cat305cr.shift) },
-    ],
-  },
-  {
-    title: 'Yanmar ViO70',
-    image: '/images/equipment/excavators/yanmar-vio70.webp',
-    subtitle: t('excavator.equipment.items.vio70.type'),
-    description: t('excavator.equipment.items.vio70.description'),
-    prices: [
-      { label: t('excavator.equipment.prices.hour'), value: formatPrice(PRICING.excavators.vio70.hour) },
-      { label: t('excavator.equipment.prices.day'), value: formatPrice(PRICING.excavators.vio70.shift) },
-    ],
-  },
-  {
-    title: 'Komatsu PC128US',
-    image: '/images/equipment/excavators/komatsu-pc128us.webp',
-    subtitle: t('excavator.equipment.items.pc128.type'),
-    description: t('excavator.equipment.items.pc128.description'),
-    prices: [
-      { label: t('excavator.equipment.prices.hour'), value: formatPrice(PRICING.excavators.pc128.hour) },
-      { label: t('excavator.equipment.prices.day'), value: formatPrice(PRICING.excavators.pc128.shift) },
-    ],
-  },
-]);
+const equipmentItems = computed(() =>
+  getEquipmentByCategory('excavator').map(item => {
+    const loc = item.i18n[locale.value as 'en' | 'ru' | 'th'] ?? item.i18n.en;
+
+    return {
+      title: item.name,
+      image: item.image,
+      subtitle: loc.type,
+      description: loc.summary,
+      to: localePath({ name: 'equipment-slug', params: { slug: item.id } }),
+      prices: [
+        { label: t('excavator.equipment.prices.hour'), value: formatPrice(item.prices.hour!) },
+        { label: t('excavator.equipment.prices.day'), value: formatPrice(item.prices.shift) },
+      ],
+    };
+  }),
+);
 
 const includedItems = computed(() => [
   {
@@ -311,28 +277,6 @@ useHead(() => {
           "thb": "{price} бат",
           "hour": "За час",
           "day": "За смену"
-        },
-        "items": {
-          "pc30": {
-            "type": "Малый экскаватор",
-            "description": "Komatsu PC30 - компактный экскаватор для узких участков, траншей и работы рядом с домами, заборами или коммуникациями."
-          },
-          "b32": {
-            "type": "Малый экскаватор",
-            "description": "Yanmar B32 подходит для траншей, дворов, работы возле стен, заборов и участков с ограниченным подъездом."
-          },
-          "cat305": {
-            "type": "Средний экскаватор",
-            "description": "Caterpillar 305CR - универсальная машина для копки, траншей, погрузки грунта, небольшого демонтажа и стройки."
-          },
-          "vio70": {
-            "type": "Средне-большой экскаватор",
-            "description": "Yanmar ViO70 подходит для глубокой копки, тяжёлого грунта, крупных траншей, погрузки и работы с гидромолотом."
-          },
-          "pc128": {
-            "type": "Большой экскаватор",
-            "description": "Komatsu PC128US - мощный экскаватор для больших объёмов, тяжёлой копки и крупных строительных объектов."
-          }
         }
       },
       "related": {
@@ -495,28 +439,6 @@ useHead(() => {
           "thb": "{price} THB",
           "hour": "Per hour",
           "day": "Per day"
-        },
-        "items": {
-          "pc30": {
-            "type": "Small excavator",
-            "description": "Komatsu PC30 is a compact excavator for tight spaces, trenches and work near houses, fences or utilities."
-          },
-          "b32": {
-            "type": "Small excavator",
-            "description": "Yanmar B32 is good for trenches, yard work, digging near walls or fences, and sites with limited access."
-          },
-          "cat305": {
-            "type": "Medium excavator",
-            "description": "Caterpillar 305CR is a versatile machine for digging, trenching, soil loading, small demolition and site work."
-          },
-          "vio70": {
-            "type": "Medium-large excavator",
-            "description": "Yanmar ViO70 is suitable for deeper digging, heavy soil, larger trenches, loading and hydraulic breaker work."
-          },
-          "pc128": {
-            "type": "Large excavator",
-            "description": "Komatsu PC128US is a powerful excavator for large volumes, heavy digging and bigger construction sites."
-          }
         }
       },
       "related": {
@@ -636,7 +558,7 @@ useHead(() => {
       },
       "seoBlock": {
         "title": "บริการรถขุดพร้อมคนขับ เกาะสมุย",
-        "p1":  "ให้บริการรถขุดพร้อมคนขับบนเกาะสมุย สำหรับขุดฐานราก ขุดร่อง ทุบรื้อ ตักดิน และงานก่อสร้าง มีรถขุดหลายขนาดให้เลือกตามลักษณะงาน",
+        "p1": "ให้บริการรถขุดพร้อมคนขับบนเกาะสมุย สำหรับขุดฐานราก ขุดร่อง ทุบรื้อ ตักดิน และงานก่อสร้าง มีรถขุดหลายขนาดให้เลือกตามลักษณะงาน",
         "p2": "เราช่วยเลือกขนาดรถให้เหมาะกับหน้างาน เช่น ทางเข้าพื้นที่ ดินแข็ง ความลึก และปริมาณงาน เหมาะทั้งบ้านพักอาศัยและโครงการก่อสร้าง",
         "p3": "สามารถเช่าได้ทั้งรายชั่วโมง รายวัน หรือเหมางาน และสามารถเพิ่มรถดั๊มพ์สำหรับขนดินหรือส่งวัสดุได้"
       },
@@ -679,28 +601,6 @@ useHead(() => {
           "thb": "{price} บาท",
           "hour": "ต่อชั่วโมง",
           "day": "ต่อวัน"
-        },
-        "items": {
-          "pc30": {
-            "type": "รถขุดขนาดเล็ก",
-            "description": "Komatsu PC30 เหมาะกับพื้นที่แคบ ขุดร่อง และงานใกล้บ้าน รั้ว หรือท่อ"
-          },
-          "b32": {
-            "type": "รถขุดขนาดเล็ก",
-            "description": "Yanmar B32 เหมาะกับงานขุดร่อง งานในสวน งานใกล้กำแพง รั้ว และพื้นที่ทางเข้าแคบ"
-          },
-          "cat305": {
-            "type": "รถขุดขนาดกลาง",
-            "description": "Caterpillar 305CR ใช้ได้กับงานทั่วไป เช่น ขุดดิน ขุดร่อง ตักดิน ทุบรื้อเล็ก และงานก่อสร้าง"
-          },
-          "vio70": {
-            "type": "รถขุดขนาดกลาง-ใหญ่",
-            "description": "Yanmar ViO70 เหมาะกับขุดลึก ดินแข็ง ร่องใหญ่ ตักดิน และใช้งานหัวเจาะ"
-          },
-          "pc128": {
-            "type": "รถขุดขนาดใหญ่",
-            "description": "Komatsu PC128US เหมาะกับงานปริมาณมาก งานขุดหนัก และไซต์ก่อสร้างขนาดใหญ่"
-          }
         }
       },
       "related": {

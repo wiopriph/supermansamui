@@ -20,6 +20,7 @@ const projectSchema = z.object({
   cover: z.string(),
   gallery: z.array(z.object({ src: z.string(), alt: z.string() })),
   summary: z.string(),
+  equipment: z.array(z.string()).optional(),
 });
 
 

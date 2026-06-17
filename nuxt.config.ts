@@ -73,6 +73,12 @@ export default defineNuxtConfig({
     },
   },
 
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+    },
+  },
+
   sitemap: {
     xsl: false,
     cacheMaxAgeSeconds: 86400,

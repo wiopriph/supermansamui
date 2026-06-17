@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Collections } from '@nuxt/content';
+import { getEquipmentById } from '~/data/equipment';
 
 
 const SITE_URL = 'https://supermansamui.com';
@@ -24,7 +25,8 @@ const collectionName = computed(() => `projects_${locale.value}` as keyof Collec
 
 const { data: project } = await useAsyncData(
   () => `project-${locale.value}-${slug.value}`,
-  () => queryCollection(collectionName.value).where('slug', '=', slug.value).first(),
+  () => queryCollection(collectionName.value).where('slug', '=', slug.value)
+    .first(),
   { watch: [locale, slug] },
 );
 
@@ -81,6 +83,10 @@ const projectPath = computed(() =>
 const projectsListPath = computed(() => localePath({ name: 'projects' }));
 const canonicalUrl = computed(() => absoluteUrl(projectPath.value));
 const coverUrl = computed(() => absoluteUrl(project.value?.cover ?? ''));
+
+// ─── Equipment used ──────────────────────────────────────────────────────────
+
+const equipmentUsed = computed(() => (project.value?.equipment ?? []).map(id => getEquipmentById(id)).filter(Boolean));
 
 // ─── Gallery ──────────────────────────────────────────────────────────────────
 
@@ -205,7 +211,8 @@ useHead(() => {
     "contacts": "Обсудить похожий проект",
     "contactsDescription": "Расскажите о вашем участке — подберём технику и порядок работ.",
     "contactButton": "Обсудить проект",
-    "coverAlt": "Выполненный проект: {title}, {location}"
+    "coverAlt": "Выполненный проект: {title}, {location}",
+    "equipmentUsed": "Использованная техника"
   },
   "en": {
     "nav": { "home": "Home", "projects": "All projects" },
@@ -227,7 +234,8 @@ useHead(() => {
     "contacts": "Discuss a similar project",
     "contactsDescription": "Tell us about your site and we will suggest the right machinery and work plan.",
     "contactButton": "Discuss your project",
-    "coverAlt": "Completed project: {title}, {location}"
+    "coverAlt": "Completed project: {title}, {location}",
+    "equipmentUsed": "Equipment used"
   },
   "th": {
     "nav": { "home": "หน้าหลัก", "projects": "ผลงานทั้งหมด" },
@@ -249,7 +257,8 @@ useHead(() => {
     "contacts": "คุยเรื่องโครงการที่คล้ายกัน",
     "contactsDescription": "บอกเราเกี่ยวกับพื้นที่ของคุณ แล้วเราจะแนะนำเครื่องจักรและลำดับงานที่เหมาะสม",
     "contactButton": "ปรึกษาโครงการ",
-    "coverAlt": "โครงการที่เสร็จแล้ว: {title}, {location}"
+    "coverAlt": "โครงการที่เสร็จแล้ว: {title}, {location}",
+    "equipmentUsed": "เครื่องจักรที่ใช้"
   }
 }
 </i18n>
@@ -259,7 +268,6 @@ useHead(() => {
     v-if="project"
     class="pb-12 pt-4 sm:pb-16 sm:pt-10"
   >
-    <!-- Breadcrumb -->
     <nav
       :aria-label="t('nav.projects')"
       class="mx-auto mb-8 sm:mb-12"
@@ -307,7 +315,6 @@ useHead(() => {
       </ol>
     </nav>
 
-    <!-- Header -->
     <header class="mx-auto text-center">
       <h1 class="text-3xl font-bold leading-tight text-highlighted sm:text-5xl">
         {{ project.title }}
@@ -326,7 +333,6 @@ useHead(() => {
       </p>
     </header>
 
-    <!-- Cover -->
     <figure class="-mx-4 mt-8 overflow-hidden bg-elevated sm:mx-auto sm:mt-12 sm:rounded-2xl">
       <img
         :src="project.cover"
@@ -342,8 +348,7 @@ useHead(() => {
       </figcaption>
     </figure>
 
-    <!-- Body + sidebar -->
-    <div class="mx-auto mt-10 grid gap-10 sm:mt-14 lg:grid-cols-[minmax(0,1fr)_260px] lg:items-start lg:gap-16">
+    <div class="mx-auto mt-10 grid gap-8 sm:mt-14 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start lg:gap-10">
       <div class="min-w-0">
         <ContentRenderer
           :value="project"
@@ -352,7 +357,6 @@ useHead(() => {
       </div>
 
       <aside class="space-y-5 lg:sticky lg:top-24 lg:self-start">
-        <!-- Project details -->
         <div class="rounded-2xl bg-elevated/50 p-5 ring ring-default">
           <h2 class="text-lg font-semibold text-highlighted">
             {{ t('details') }}
@@ -401,7 +405,49 @@ useHead(() => {
           </UButton>
         </div>
 
-        <!-- Related services -->
+        <div
+          v-if="equipmentUsed.length"
+          class="rounded-2xl bg-elevated/50 p-5 ring ring-default"
+        >
+          <h2 class="text-sm font-semibold uppercase tracking-wide text-muted">
+            {{ t('equipmentUsed') }}
+          </h2>
+
+          <ul class="mt-3 space-y-2">
+            <li
+              v-for="machine in equipmentUsed"
+              :key="machine!.id"
+            >
+              <NuxtLink
+                :to="localePath({ name: 'equipment-slug', params: { slug: machine!.id } })"
+                class="group flex items-center gap-3 rounded-lg p-1.5 text-sm transition hover:bg-elevated"
+              >
+                <img
+                  :src="machine!.image"
+                  :alt="machine!.name"
+                  class="size-10 shrink-0 rounded-lg object-cover"
+                  loading="lazy"
+                >
+
+                <div class="min-w-0">
+                  <p class="truncate font-medium text-highlighted">
+                    {{ machine!.name }}
+                  </p>
+
+                  <p class="text-xs text-muted">
+                    {{ machine!.i18n[$i18n.locale as 'en' | 'ru' | 'th']?.type ?? machine!.i18n.en.type }}
+                  </p>
+                </div>
+
+                <UIcon
+                  name="i-lucide-arrow-right"
+                  class="ml-auto size-3.5 shrink-0 text-muted opacity-0 transition group-hover:opacity-100"
+                />
+              </NuxtLink>
+            </li>
+          </ul>
+        </div>
+
         <div
           v-if="relatedServices.length"
           class="rounded-2xl bg-elevated/50 p-5 ring ring-default"
@@ -437,7 +483,6 @@ useHead(() => {
       </aside>
     </div>
 
-    <!-- Gallery -->
     <div class="mx-auto mt-6 sm:mt-10">
       <ServiceGallery
         :title="t('gallery')"
@@ -445,7 +490,6 @@ useHead(() => {
       />
     </div>
 
-    <!-- Related projects -->
     <section
       v-if="relatedProjects?.length"
       class="mx-auto mt-14 sm:mt-20"
@@ -497,7 +541,6 @@ useHead(() => {
       </div>
     </section>
 
-    <!-- Contact -->
     <section
       id="project-contact"
       class="mx-auto mt-10 max-w-3xl scroll-mt-20 border-t border-default py-10 text-center sm:mt-14 sm:py-14"

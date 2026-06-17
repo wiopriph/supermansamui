@@ -14,6 +14,7 @@ const props = defineProps<{
   description?: string
   prices?: PriceItem[]
   buttonText?: string
+  to?: string
 }>();
 
 const formatValue = (value: string | number) => typeof value === 'number' ? value.toLocaleString('en-US') : value;
@@ -26,90 +27,97 @@ const emit = defineEmits(['click']);
 <i18n lang="json">
 {
   "ru": {
-    "price": "Цена",
-    "order": "Заказать"
+    "order": "Заказать",
+    "details": "Подробнее"
   },
   "en": {
-    "price": "Price",
-    "order": "Order now"
+    "order": "Order now",
+    "details": "View details"
   },
   "th": {
-    "price": "ราคา",
-    "order": "สั่งงาน"
+    "order": "สั่งงาน",
+    "details": "รายละเอียด"
   }
 }
 </i18n>
 
 <template>
-  <UBlogPost
-    :date="subtitle"
-    :title="title"
-    :image="image"
-    :ui="{
-      authors:'pt-3 gap-x-3 gap-y-1.5',
-      description: 'h-full'
-    }"
-    orientation="vertical"
-    variant="outline"
-  >
-    <template #description>
-      <div class="flex flex-col h-full pt-3">
+  <div class="flex flex-col overflow-hidden rounded-2xl bg-default ring ring-default">
+    <div
+      v-if="image"
+      class="aspect-video overflow-hidden bg-elevated"
+    >
+      <img
+        :src="image"
+        :alt="title"
+        loading="lazy"
+        class="h-full w-full object-cover"
+      >
+    </div>
+
+    <div class="flex flex-1 flex-col gap-4 p-5">
+      <div>
         <p
-          v-if="description"
-          class="
-            text-sm
-            text-gray-600
-            leading-snug
-            mb-3
-            line-clamp-4
-          "
-          v-text="description"
+          v-if="subtitle"
+          class="text-xs font-semibold uppercase tracking-wider text-primary"
+          v-text="subtitle"
         />
 
+        <h3
+          class="mt-1 text-xl font-bold text-highlighted"
+          v-text="title"
+        />
+
+        <p
+          v-if="description"
+          class="mt-2 text-sm leading-6 text-muted line-clamp-3"
+          v-text="description"
+        />
+      </div>
+
+      <div
+        v-if="prices && prices.length"
+        class="mt-auto rounded-xl bg-elevated/60 ring ring-default divide-y divide-default"
+      >
         <div
-          v-if="prices && prices.length"
-          class="
-            mt-auto
-            rounded-xl
-            border
-            border-gray-200
-            bg-gray-50
-            p-4
-          "
+          v-for="(price, index) in prices"
+          :key="index"
+          class="flex items-center justify-between gap-4 px-4 py-3"
         >
-          <p class="text-xs uppercase tracking-wide text-gray-800 mb-3">
-            {{ t('price') }}
-          </p>
+          <span
+            class="text-sm text-muted"
+            v-text="price.label"
+          />
 
-          <div class="space-y-2">
-            <div
-              v-for="(price, index) in prices"
-              :key="index"
-              class="flex justify-between items-baseline gap-4"
-            >
-              <span class="text-sm text-gray-600">
-                {{ price.label }}
-              </span>
-
-              <span class="text-lg font-bold text-gray-800 whitespace-nowrap">
-                {{ formatValue(price.value) }}
-              </span>
-            </div>
-          </div>
+          <span
+            class="text-base font-bold text-highlighted tabular-nums"
+            v-text="formatValue(price.value)"
+          />
         </div>
       </div>
-    </template>
 
-    <template #authors>
-      <UButton
-        :to="`tel:${CONTACT_PHONE}`"
-        block
-        color="primary"
-        size="lg"
-        @click="emit('click')"
-      >
-        {{ buttonText || t('order') }}
-      </UButton>
-    </template>
-  </UBlogPost>
+      <div class="flex gap-2 pt-1">
+        <UButton
+          v-if="props.to"
+          :to="props.to"
+          color="neutral"
+          variant="outline"
+          size="md"
+          class="flex-1 justify-center"
+        >
+          {{ t('details') }}
+        </UButton>
+
+        <UButton
+          :to="`tel:${CONTACT_PHONE}`"
+          color="primary"
+          size="md"
+          class="flex-1 justify-center"
+          @click="emit('click')"
+        >
+          {{ buttonText || t('order') }}
+        </UButton>
+      </div>
+    </div>
+  </div>
 </template>

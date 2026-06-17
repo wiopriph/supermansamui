@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { PRICING } from '~/constants/pricing';
+import { getEquipmentByCategory } from '~/data/equipment';
 
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
+const localePath = useLocalePath();
 
 const heroTitle = computed(() => t('trucks.hero.title'));
 const heroDescription = computed(() => t('trucks.hero.description'));
@@ -42,68 +43,23 @@ const tasksItems = computed(() => [
 
 const formatPrice = (value: number) => t('trucks.equipment.prices.thb', { price: value });
 
-const equipmentItems = computed(() => [
-  {
-    title: 'Isuzu ELF',
-    image: '/images/equipment/trucks/isuzu_elf.webp',
-    subtitle: t('trucks.equipment.items.elf.type'),
-    description: t('trucks.equipment.items.elf.description'),
-    prices: [
-      { label: t('trucks.equipment.prices.trip'), value: formatPrice(PRICING.trucks.elf.trip) },
-      { label: t('trucks.equipment.prices.day'), value: formatPrice(PRICING.trucks.elf.shift) },
-    ],
-  },
-  {
-    title: 'Hino 300',
-    image: '/images/equipment/trucks/hino_300.webp',
-    subtitle: t('trucks.equipment.items.hino300.type'),
-    description: t('trucks.equipment.items.hino300.description'),
-    prices: [
-      { label: t('trucks.equipment.prices.trip'), value: formatPrice(PRICING.trucks.hino300.trip) },
-      { label: t('trucks.equipment.prices.day'), value: formatPrice(PRICING.trucks.hino300.shift) },
-    ],
-  },
-  {
-    title: 'Hino Super FM18',
-    image: '/images/equipment/trucks/hino_super_fm18.webp',
-    subtitle: t('trucks.equipment.items.fm18.type'),
-    description: t('trucks.equipment.items.fm18.description'),
-    prices: [
-      { label: t('trucks.equipment.prices.trip'), value: formatPrice(PRICING.trucks.fm18.trip) },
-      { label: t('trucks.equipment.prices.day'), value: formatPrice(PRICING.trucks.fm18.shift) },
-    ],
-  },
-  {
-    title: 'Nissan CWA12M',
-    image: '/images/equipment/trucks/nissan_cwa12m.webp',
-    subtitle: t('trucks.equipment.items.nissan.type'),
-    description: t('trucks.equipment.items.nissan.description'),
-    prices: [
-      { label: t('trucks.equipment.prices.trip'), value: formatPrice(PRICING.trucks.nissan.trip) },
-      { label: t('trucks.equipment.prices.day'), value: formatPrice(PRICING.trucks.nissan.shift) },
-    ],
-  },
-  {
-    title: 'Hino Ranger 4D',
-    image: '/images/equipment/trucks/hino_ranger_4d.webp',
-    subtitle: t('trucks.equipment.items.ranger.type'),
-    description: t('trucks.equipment.items.ranger.description'),
-    prices: [
-      { label: t('trucks.equipment.prices.trip'), value: formatPrice(PRICING.trucks.ranger.trip) },
-      { label: t('trucks.equipment.prices.day'), value: formatPrice(PRICING.trucks.ranger.shift) },
-    ],
-  },
-  {
-    title: 'DEVA Hercules',
-    image: '/images/equipment/trucks/deva_hercules.webp',
-    subtitle: t('trucks.equipment.items.deva.type'),
-    description: t('trucks.equipment.items.deva.description'),
-    prices: [
-      { label: t('trucks.equipment.prices.trip'), value: formatPrice(PRICING.trucks.deva.trip) },
-      { label: t('trucks.equipment.prices.day'), value: formatPrice(PRICING.trucks.deva.shift) },
-    ],
-  },
-]);
+const equipmentItems = computed(() =>
+  getEquipmentByCategory('truck').map(item => {
+    const loc = item.i18n[locale.value as 'en' | 'ru' | 'th'] ?? item.i18n.en;
+
+    return {
+      title: item.name,
+      image: item.image,
+      subtitle: loc.type,
+      description: loc.summary,
+      to: localePath({ name: 'equipment-slug', params: { slug: item.id } }),
+      prices: [
+        { label: t('trucks.equipment.prices.trip'), value: formatPrice(item.prices.trip!) },
+        { label: t('trucks.equipment.prices.day'), value: formatPrice(item.prices.shift) },
+      ],
+    };
+  }),
+);
 
 const localeRoute = useLocaleRoute();
 
@@ -305,32 +261,6 @@ useHead(() => {
           "thb": "{price} бат",
           "trip": "За рейс",
           "day": "За смену"
-        },
-        "items": {
-          "elf": {
-            "type": "Малый самосвал 4×2",
-            "description": "Для узких подъездов, небольших объёмов, доставки песка, щебня, грунта и вывоза материала с маленьких участков."
-          },
-          "hino300": {
-            "type": "6-колёсный самосвал",
-            "description": "Основная машина для стройки: вывоз грунта, камней, мусора и работа в паре с экскаватором."
-          },
-          "fm18": {
-            "type": "10-колёсный самосвал",
-            "description": "Для больших объёмов грунта, песка, щебня и тяжёлых материалов. Меньше рейсов - быстрее работа."
-          },
-          "nissan": {
-            "type": "Трал с краном",
-            "description": "Для перевозки экскаваторов, спецтехники, оборудования и тяжёлых грузов между объектами."
-          },
-          "ranger": {
-            "type": "Грузовик с краном",
-            "description": "Для тяжёлых материалов, оборудования и задач, где нужна погрузка или установка краном."
-          },
-          "deva": {
-            "type": "Грузовик для бригады и инструмента",
-            "description": "Для перевозки рабочих, инструмента, лёгких материалов и коротких выездных задач."
-          }
         }
       },
       "packages": {
@@ -476,32 +406,6 @@ useHead(() => {
           "thb": "{price} THB",
           "trip": "Per trip",
           "day": "Per day"
-        },
-        "items": {
-          "elf": {
-            "type": "Small dump truck 4×2",
-            "description": "For tight access, smaller volumes, sand, gravel and soil delivery, and removing material from small sites."
-          },
-          "hino300": {
-            "type": "6-wheel dump truck",
-            "description": "Main construction truck for soil removal, rocks, debris and work together with excavators."
-          },
-          "fm18": {
-            "type": "10-wheel dump truck",
-            "description": "For large volumes of soil, sand, gravel and heavy materials. Fewer trips and faster work."
-          },
-          "nissan": {
-            "type": "Lowbed with crane",
-            "description": "For transporting excavators, heavy equipment, machinery and large loads between job sites."
-          },
-          "ranger": {
-            "type": "Crane truck",
-            "description": "For heavy materials, equipment and jobs where crane loading or placement is needed."
-          },
-          "deva": {
-            "type": "Crew and utility truck",
-            "description": "For transporting workers, tools, light materials and short on-site tasks."
-          }
         }
       },
       "packages": {
@@ -647,32 +551,6 @@ useHead(() => {
           "thb": "{price} บาท",
           "trip": "ต่อเที่ยว",
           "day": "ต่อวัน"
-        },
-        "items": {
-          "elf": {
-            "type": "รถดั๊มพ์เล็ก 4×2",
-            "description": "เหมาะกับทางเข้าแคบ งานปริมาณไม่มาก ส่งทราย หิน ดิน และขนวัสดุออกจากพื้นที่เล็ก"
-          },
-          "hino300": {
-            "type": "รถดั๊มพ์ 6 ล้อ",
-            "description": "รถหลักสำหรับงานก่อสร้าง ใช้ขนดิน หิน เศษวัสดุ และทำงานคู่กับรถขุด"
-          },
-          "fm18": {
-            "type": "รถดั๊มพ์ 10 ล้อ",
-            "description": "สำหรับงานปริมาณมาก ขนดิน ทราย หิน และวัสดุหนัก ลดจำนวนเที่ยวและทำงานได้เร็วขึ้น"
-          },
-          "nissan": {
-            "type": "รถเทรลเลอร์พร้อมเครน",
-            "description": "สำหรับขนย้ายรถขุด เครื่องจักร อุปกรณ์หนัก และของขนาดใหญ่ระหว่างหน้างาน"
-          },
-          "ranger": {
-            "type": "รถบรรทุกพร้อมเครน",
-            "description": "สำหรับวัสดุหนัก อุปกรณ์ และงานที่ต้องใช้เครนช่วยยกหรือวางของ"
-          },
-          "deva": {
-            "type": "รถสำหรับทีมงานและเครื่องมือ",
-            "description": "สำหรับขนคนงาน เครื่องมือ วัสดุเบา และงานระยะสั้นในหน้างาน"
-          }
         }
       },
       "packages": {
