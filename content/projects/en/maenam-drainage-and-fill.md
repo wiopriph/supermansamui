@@ -1,9 +1,9 @@
 ---
 title: "Drainage, backfill and leveling on a waterlogged plot in Maenam"
-date: 2026-05-01
+date: 2026-02-02
 slug: "maenam-drainage-and-fill"
 service: "drainage"
-location: "Maenam Soi 4, Koh Samui"
+location: "Maenam, Koh Samui"
 cover: "/images/projects/maenam-drainage-and-fill/hero.webp"
 gallery:
   - src: "/images/projects/maenam-drainage-and-fill/excavator-cleared-vegetation-exposed-ground.webp"
@@ -44,7 +44,7 @@ beforeAfter:
     afterAlt: "Final leveled surface after completing all drainage and fill works"
 ---
 
-A 2-rai plot - roughly 3,200 m² - on Maenam Soi 4. The ground was waterlogged and boggy, with dense vegetation covering most of it and a blocked natural watercourse running through the site. No drainage, nowhere for the water to go. The task: open the drainage, clear the land, bring in fill and raise the level so the plot could be used.
+A 2-rai plot - roughly 3,200 m² - in Maenam. The ground was waterlogged and boggy, with dense vegetation covering most of it and a blocked natural watercourse running through the site. No drainage, nowhere for the water to go. The task: open the drainage, clear the land, bring in fill and raise the level so the plot could be used.
 
 This was one of the most demanding projects we've taken on. Nearly every piece of equipment we operate was deployed here at some point.
 
