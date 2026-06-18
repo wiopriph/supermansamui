@@ -226,12 +226,12 @@ const seoBlock = computed(() => ({
 {
   "ru": {
     "seo": {
-      "title": "Земляные работы и аренда экскаватора на Самуи",
-      "desc": "Земляные работы на Самуи: аренда экскаватора, вывоз грунта, самосвалы, расчистка и выравнивание участка под строительство.",
-      "keywords": "земляные работы самуи, аренда экскаватора самуи, самосвал самуи, вывоз грунта самуи, подготовка участка самуи"
+      "title": "Superman Samui - экскаваторы, самосвалы и земляные работы на Самуи",
+      "desc": "Строительная техника на Самуи: экскаваторы, самосвалы, расчистка и подготовка участков. Своя техника, местные операторы, понятная цена.",
+      "keywords": "строительная техника самуи, экскаватор самуи, самосвал самуи, земляные работы самуи, расчистка участка самуи"
     },
     "hero": {
-      "title": "Экскаваторы и земляные работы на Самуи",
+      "title": "Строительная техника на Самуи - экскаваторы, самосвалы и земляные работы",
       "description": "Расчистка участков, выравнивание, дренаж, вывоз грунта и доставка материалов. Своя техника, местные операторы и понятная цена до начала работ.",
       "primary": "Позвонить"
     },
@@ -319,12 +319,12 @@ const seoBlock = computed(() => ({
   },
   "en": {
     "seo": {
-      "title": "Earthworks & Excavator Rental on Koh Samui",
-      "desc": "Earthworks on Koh Samui: excavator rental, land clearing, leveling, soil removal and dump truck services for construction projects.",
-      "keywords": "earthworks koh samui, excavator rental koh samui, dump truck samui, land clearing samui, soil removal samui"
+      "title": "Superman Samui - Excavators, Dump Trucks & Earthworks on Koh Samui",
+      "desc": "Construction machinery on Koh Samui: excavators, dump trucks, land clearing and site preparation. Own equipment, local operators, clear pricing.",
+      "keywords": "construction machinery koh samui, excavator samui, dump truck samui, earthworks samui, land clearing samui"
     },
     "hero": {
-      "title": "Excavators and earthworks on Koh Samui",
+      "title": "Construction machinery on Koh Samui - excavators, dump trucks and earthworks",
       "description": "Land clearing, leveling, drainage, soil removal and material delivery. Own machines, local operators and clear pricing before the job starts.",
       "primary": "Call now"
     },
@@ -412,12 +412,12 @@ const seoBlock = computed(() => ({
   },
   "th": {
     "seo": {
-      "title": "งานดินและเช่ารถขุด เกาะสมุย",
-      "desc": "บริการงานดินบนเกาะสมุย: เช่ารถขุด เคลียร์พื้นที่ ปรับระดับ ขนดิน และรถดั๊มพ์สำหรับงานก่อสร้าง",
-      "keywords": "งานดิน สมุย, เช่ารถขุด สมุย, รถดั๊มพ์ สมุย, เคลียร์ที่ดิน สมุย, ปรับระดับ สมุย"
+      "title": "Superman Samui - รถขุด รถดั๊มพ์ และงานดินบนเกาะสมุย",
+      "desc": "บริการเครื่องจักรก่อสร้างบนเกาะสมุย: รถขุด รถดั๊มพ์ เคลียร์พื้นที่ และเตรียมที่ดิน มีเครื่องจักรของเราเอง คนขับท้องถิ่น ราคาชัดเจน",
+      "keywords": "เครื่องจักรก่อสร้าง สมุย, รถขุด สมุย, รถดั๊มพ์ สมุย, งานดิน สมุย, เคลียร์ที่ดิน สมุย"
     },
     "hero": {
-      "title": "งานดินและรถขุดบนเกาะสมุย",
+      "title": "เครื่องจักรก่อสร้างบนเกาะสมุย - รถขุด รถดั๊มพ์ และงานดิน",
       "description": "เคลียร์พื้นที่ ปรับระดับ ทำระบายน้ำ ขนดิน และส่งวัสดุก่อสร้าง มีเครื่องจักรของเราเอง คนขับท้องถิ่น และแจ้งราคาชัดเจนก่อนเริ่มงาน",
       "primary": "โทรเลย"
     },

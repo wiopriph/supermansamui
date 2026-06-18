@@ -262,7 +262,7 @@ useHead(() => {
         }
       },
       "seo": {
-        "title": "Земляные работы на Самуи - Подготовка участка, дренаж и отсыпка",
+        "title": "Земляные работы на Самуи - расчистка, выравнивание и подготовка участка",
         "description": "Земляные работы на Самуи: расчистка участка, выравнивание, дренаж, отсыпка, подготовка под строительство, доставка и вывоз грунта. Экскаваторы и самосвалы.",
         "keywords": "земляные работы самуи, подготовка участка самуи, выравнивание участка самуи, дренаж самуи, отсыпка участка самуи, расчистка участка самуи, доставка грунта самуи, вывоз грунта самуи, экскаватор самуи, самосвал самуи"
       },
@@ -437,7 +437,7 @@ useHead(() => {
         }
       },
       "seo": {
-        "title": "Earthworks on Koh Samui - Site preparation, drainage & land leveling",
+        "title": "Earthworks on Koh Samui - Land clearing, leveling and site preparation",
         "description": "Earthworks on Koh Samui: land clearing, leveling, drainage, backfilling, site preparation, soil delivery and removal. Excavators and dump trucks.",
         "keywords": "earthworks koh samui, site preparation koh samui, land leveling samui, drainage samui, backfilling samui, land clearing samui, soil delivery samui, soil removal samui, excavator samui, dump truck samui"
       },
@@ -612,7 +612,7 @@ useHead(() => {
         }
       },
       "seo": {
-        "title": "งานดิน เกาะสมุย {'|'} ปรับระดับ ถมดิน ระบบระบายน้ำ และเตรียมพื้นที่",
+        "title": "งานดิน เกาะสมุย {'|'} เคลียร์พื้นที่ ปรับระดับ และเตรียมพื้นที่ก่อสร้าง",
         "description": "บริการงานดินบนเกาะสมุย: เคลียร์พื้นที่ ปรับระดับ ถมดิน ทำระบบระบายน้ำ ขนดินเข้าออก พร้อมรถขุดและรถดั๊มพ์",
         "keywords": "งานดิน สมุย, ปรับระดับที่ดิน สมุย, ถมดิน สมุย, ระบบระบายน้ำ สมุย, เคลียร์ที่ดิน สมุย, รถขุด สมุย, รถดั๊มพ์ สมุย"
       },
