@@ -212,21 +212,6 @@ const pricingExtraItems = computed(() => [
   t('pricing.extra.delivery', { price: PRICING.delivery.excavator }),
 ]);
 
-const scenariosItems = computed(() => [
-  {
-    title: t('scenarios.s1.title'),
-    description: t('scenarios.s1.description'),
-  },
-  {
-    title: t('scenarios.s2.title'),
-    description: t('scenarios.s2.description'),
-  },
-  {
-    title: t('scenarios.s3.title'),
-    description: t('scenarios.s3.description'),
-  },
-]);
-
 const seoBlock = computed(() => ({
   title: t('seoBlock.title'),
   paragraphs: [
@@ -241,8 +226,8 @@ const seoBlock = computed(() => ({
 {
   "ru": {
     "seo": {
-      "title": "Земляные работы и аренда экскаватора на Самуи",
-      "desc": "Земляные работы на Самуи: аренда экскаватора, вывоз грунта, самосвалы, расчистка и выравнивание участка под строительство.",
+      "title": "Земляные работы и аренда экскаватора на Самуи",
+      "desc": "Земляные работы на Самуи: аренда экскаватора, вывоз грунта, самосвалы, расчистка и выравнивание участка под строительство.",
       "keywords": "земляные работы самуи, аренда экскаватора самуи, самосвал самуи, вывоз грунта самуи, подготовка участка самуи"
     },
     "hero": {
@@ -250,30 +235,15 @@ const seoBlock = computed(() => ({
       "description": "Расчистка участков, выравнивание, дренаж, вывоз грунта и доставка материалов. Своя техника, местные операторы и понятная цена до начала работ.",
       "primary": "Позвонить"
     },
-    "scenarios": {
-      "title": "Какие задачи мы решаем",
-      "s1": {
-        "title": "Нужно расчистить участок перед строительством",
-        "description": "Удаляем деревья, корни, мусор и старые постройки. Подготавливаем участок под дальнейшие работы."
-      },
-      "s2": {
-        "title": "Нужен экскаватор для копки или траншей",
-        "description": "Экскаваторы с оператором для фундамента, траншей, демонтажа и работы на стройке."
-      },
-      "s3": {
-        "title": "Нужно вывезти грунт или привезти материалы",
-        "description": "Самосвалы для вывоза земли, мусора, камней и доставки песка, щебня и других материалов."
-      }
-    },
     "seoBlock": {
-      "title": "Земляные работы и техника на Самуи",
-      "p1": "Мы выполняем земляные работы на Самуи: расчистка участков, выравнивание, дренаж, вывоз грунта и подготовка под строительство. Работаем с частными клиентами и застройщиками.",
-      "p2": "В наличии собственные экскаваторы, самосвалы и грузовики. Подбираем технику под задачу, учитываем подъезд, грунт и условия участка.",
-      "p3": "Отправьте локацию и фото участка - быстро оценим объём работ, подберём технику и предложим оптимальный формат: почасово, сменой или под задачу."
+      "title": "Superman Samui - строительная техника на острове",
+      "p1": "Мы работаем на Самуи с собственной техникой: экскаваторы Komatsu и Caterpillar, самосвалы Hino и трактор Kubota. Все машины обслуживаются нами, операторы знают остров.",
+      "p2": "Берёмся за объекты разного масштаба: от небольшого котлована до многомесячных проектов с сотнями рейсов. Работаем с частными клиентами, застройщиками и подрядчиками.",
+      "p3": "Находимся на Самуи, техника не нужно везти с материка. Оцениваем задачу, даём конкретную цену и работаем без посредников."
     },
     "services": {
       "title": "Основные услуги",
-      "subtitle": "Земляные работы, экскаваторы, самосвалы и подготовка участков под строительство на Самуи.",
+      "subtitle": "Земляные работы, экскаваторы, самосвалы и подготовка участков под строительство на Самуи.",
       "details": "Подробнее",
       "earthworks": {
         "title": "Земляные работы",
@@ -357,26 +327,11 @@ const seoBlock = computed(() => ({
       "description": "Land clearing, leveling, drainage, soil removal and material delivery. Own machines, local operators and clear pricing before the job starts.",
       "primary": "Call now"
     },
-    "scenarios": {
-      "title": "What we help with",
-      "s1": {
-        "title": "Need to clear land before building",
-        "description": "We remove trees, roots, debris and old structures to prepare your land for construction."
-      },
-      "s2": {
-        "title": "Need an excavator for digging or trenching",
-        "description": "Excavators with operator for foundations, trenches, demolition and construction work."
-      },
-      "s3": {
-        "title": "Need to remove soil or deliver materials",
-        "description": "Dump trucks for soil removal, debris hauling and delivery of sand, gravel and other materials."
-      }
-    },
     "seoBlock": {
-      "title": "Earthworks and heavy equipment on Koh Samui",
-      "p1": "We provide earthworks services on Koh Samui including land clearing, leveling, drainage, soil removal and full site preparation for construction.",
-      "p2": "Our own fleet of excavators, dump trucks and transport vehicles allows us to handle projects of different size and complexity.",
-      "p3": "Send us your location and site photos - we will estimate the job, recommend the right equipment and suggest the best pricing format."
+      "title": "Superman Samui - construction equipment on the island",
+      "p1": "We operate on Koh Samui with our own machinery: Komatsu and Caterpillar excavators, Hino dump trucks and a Kubota tractor. All equipment is maintained in-house, operators know the island.",
+      "p2": "We take on projects of different scale - from a single excavation to months-long jobs with hundreds of truck runs. We work with private clients, developers and contractors.",
+      "p3": "Based on Samui, no mainland logistics. We assess the job, give a clear price and work without middlemen."
     },
     "services": {
       "title": "Main services",
@@ -464,26 +419,11 @@ const seoBlock = computed(() => ({
       "description": "เคลียร์พื้นที่ ปรับระดับ ทำระบายน้ำ ขนดิน และส่งวัสดุก่อสร้าง มีเครื่องจักรของเราเอง คนขับท้องถิ่น และแจ้งราคาชัดเจนก่อนเริ่มงาน",
       "primary": "โทรเลย"
     },
-    "scenarios": {
-      "title": "เราช่วยอะไรได้บ้าง",
-      "s1": {
-        "title": "ต้องการเคลียร์พื้นที่ก่อนสร้างบ้าน",
-        "description": "ตัดต้นไม้ ขุดราก เคลียร์เศษวัสดุ และรื้อสิ่งปลูกสร้างเก่า เพื่อเตรียมพื้นที่สำหรับก่อสร้าง"
-      },
-      "s2": {
-        "title": "ต้องการรถขุดสำหรับขุดหรือทำร่อง",
-        "description": "รถขุดพร้อมคนขับ สำหรับฐานราก ร่องน้ำ งานทุบรื้อ และงานก่อสร้างทั่วไป"
-      },
-      "s3": {
-        "title": "ต้องการขนดินหรือส่งวัสดุ",
-        "description": "รถดั๊มสำหรับขนดิน เศษวัสดุ และส่งทราย หิน และวัสดุก่อสร้าง"
-      }
-    },
     "seoBlock": {
-      "title": "บริการงานดินบนเกาะสมุย",
-      "p1": "เรารับงานดินทุกประเภทบนเกาะสมุย เช่น เคลียร์พื้นที่ ปรับระดับ ทำระบบระบายน้ำ ขนดิน และเตรียมพื้นที่สำหรับก่อสร้าง",
-      "p2": "เรามีรถขุด รถดั๊ม และรถบรรทุกของเราเอง สามารถเลือกใช้ให้เหมาะกับงานและสภาพพื้นที่",
-      "p3": "ส่งโลเคชันและรูปหน้างานมา เราจะช่วยประเมินงาน เลือกเครื่องจักร และแนะนำรูปแบบราคาที่เหมาะสม"
+      "title": "Superman Samui - เครื่องจักรก่อสร้างบนเกาะสมุย",
+      "p1": "เราทำงานบนเกาะสมุยด้วยเครื่องจักรของเราเอง ทั้งรถขุด Komatsu และ Caterpillar รถดั๊มพ์ Hino และรถแทรกเตอร์ Kubota ดูแลเครื่องจักรเองและทีมงานรู้จักพื้นที่",
+      "p2": "รับงานได้หลายขนาด ตั้งแต่ขุดบ่อเล็กๆ ไปจนถึงโครงการใหญ่หลายเดือนที่ต้องขนส่งหลายร้อยเที่ยว รับทั้งลูกค้าส่วนตัว นักพัฒนา และผู้รับเหมา",
+      "p3": "ทีมงานอยู่บนสมุย ไม่ต้องรอขนเครื่องจักรจากแผ่นดินใหญ่ ประเมินงาน แจ้งราคาชัดเจน และทำงานโดยตรงโดยไม่ผ่านคนกลาง"
     },
     "services": {
       "title": "บริการหลัก",
@@ -578,10 +518,7 @@ const seoBlock = computed(() => ({
       :items="servicesItems"
     />
 
-    <ServiceIncluded
-      :title="t('scenarios.title')"
-      :items="scenariosItems"
-    />
+    <ServiceProjects />
 
     <ServiceIncluded
       :title="t('benefits.title')"

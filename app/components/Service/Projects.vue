@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const props = defineProps<{
-  service: string
+  service?: string
+  limit?: number
 }>();
 
 const { t, locale } = useI18n();
@@ -9,15 +10,18 @@ const service = computed(() => props.service);
 const collectionName = computed(() => `projects_${locale.value}` as 'projects_en' | 'projects_ru' | 'projects_th');
 
 const { data: projects } = await useAsyncData(
-  () => `service-projects-${locale.value}-${service.value}`,
-  () => queryCollection(collectionName.value)
-    .where('service', '=', service.value)
-    .order('date', 'DESC')
-    .all(),
+  () => `service-projects-${locale.value}-${service.value ?? 'all'}`,
+  () => {
+    const q = queryCollection(collectionName.value).order('date', 'DESC');
+
+    if (service.value) q.where('service', '=', service.value);
+
+    return q.all();
+  },
   { watch: [locale, service] },
 );
 
-const latestProjects = computed(() => (projects.value || []).slice(0, 2));
+const latestProjects = computed(() => (projects.value || []).slice(0, props.limit ?? (props.service ? 2 : 4)));
 </script>
 
 <i18n lang="json">
@@ -25,7 +29,9 @@ const latestProjects = computed(() => (projects.value || []).slice(0, 2));
   "ru": {
     "serviceProjects": {
       "title": "Последние проекты",
-      "description": "Примеры выполненных работ по этой услуге на Самуи.",
+      "titleAll": "Выполненные работы на Самуи",
+      "description": "Примеры выполненных работ по этой услуге на Самуи.",
+      "descriptionAll": "Расчистка участков, рытьё котлованов, дренаж, выравнивание - смотрите реальные объекты с фото.",
       "readMore": "Смотреть проект",
       "viewAll": "Все проекты"
     }
@@ -33,7 +39,9 @@ const latestProjects = computed(() => (projects.value || []).slice(0, 2));
   "en": {
     "serviceProjects": {
       "title": "Recent projects",
+      "titleAll": "Completed work on Koh Samui",
       "description": "Examples of completed work for this service on Koh Samui.",
+      "descriptionAll": "Land clearing, pool excavations, drainage, leveling - real projects with photos from across the island.",
       "readMore": "View project",
       "viewAll": "All projects"
     }
@@ -41,7 +49,9 @@ const latestProjects = computed(() => (projects.value || []).slice(0, 2));
   "th": {
     "serviceProjects": {
       "title": "โครงการล่าสุด",
+      "titleAll": "งานที่เสร็จแล้วบนเกาะสมุย",
       "description": "ตัวอย่างงานบริการประเภทนี้ที่ทำเสร็จแล้วบนเกาะสมุย",
+      "descriptionAll": "เคลียร์พื้นที่ ขุดบ่อ ระบายน้ำ ปรับระดับ - ดูงานจริงพร้อมรูปภาพจากทั่วเกาะ",
       "readMore": "ดูโครงการ",
       "viewAll": "ผลงานทั้งหมด"
     }
@@ -56,11 +66,11 @@ const latestProjects = computed(() => (projects.value || []).slice(0, 2));
   >
     <div class="space-y-2 text-center">
       <h2 class="text-2xl sm:text-3xl font-semibold">
-        {{ t('serviceProjects.title') }}
+        {{ service ? t('serviceProjects.title') : t('serviceProjects.titleAll') }}
       </h2>
 
       <p class="text-sm text-muted max-w-2xl mx-auto">
-        {{ t('serviceProjects.description') }}
+        {{ service ? t('serviceProjects.description') : t('serviceProjects.descriptionAll') }}
       </p>
     </div>
 
