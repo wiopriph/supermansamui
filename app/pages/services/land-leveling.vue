@@ -745,6 +745,8 @@ useHead(() => {
       location="content"
     />
 
+    <ServiceProjects service="land-leveling" />
+
     <ServiceGallery
       :title="t('landLeveling.photos.title')"
       :items="photos"
@@ -782,8 +784,6 @@ useHead(() => {
       :title="seoBlock.title"
       :paragraphs="seoBlock.paragraphs"
     />
-
-    <ServiceProjects service="land-leveling" />
 
     <CoreFAQ
       :title="t('landLeveling.faq.title')"

@@ -684,6 +684,8 @@ useHead(() => {
       icon="i-lucide-shovel"
     />
 
+    <ServiceProjects service="truck" />
+
     <ServiceGallery
       :title="t('trucks.photos.title')"
       :items="photos"
@@ -693,8 +695,6 @@ useHead(() => {
       :title="t('trucks.related.title')"
       :items="relatedServices"
     />
-
-    <ServiceProjects service="truck" />
 
     <CoreFAQ
       :title="t('trucks.faq.title')"

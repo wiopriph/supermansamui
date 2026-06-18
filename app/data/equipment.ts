@@ -82,7 +82,7 @@ export const EQUIPMENT: Equipment[] = [
         summary: 'Compact 3-tonne excavator for work in tight spaces, near fences, walls and existing structures.',
         features: [
           'Fits through standard gate openings',
-          'Low ground pressure — suitable for soft soil',
+          'Low ground pressure - suitable for soft soil',
           'Ideal for trenching and drainage work',
           'Minimal disturbance to surrounding area',
         ],
@@ -92,7 +92,7 @@ export const EQUIPMENT: Equipment[] = [
         summary: 'Компактный 3-тонный экскаватор для работы в ограниченном пространстве, вблизи заборов, стен и готовых конструкций.',
         features: [
           'Проходит через стандартные ворота',
-          'Малое давление на грунт — подходит для мягкой почвы',
+          'Малое давление на грунт - подходит для мягкой почвы',
           'Идеален для траншей и дренажа',
           'Минимальное воздействие на окружающий участок',
         ],
@@ -102,7 +102,7 @@ export const EQUIPMENT: Equipment[] = [
         summary: 'รถขุดขนาดเล็ก 3 ตัน สำหรับงานในพื้นที่แคบ ใกล้รั้ว กำแพง หรือโครงสร้างที่มีอยู่',
         features: [
           'ผ่านประตูมาตรฐานได้',
-          'แรงกดพื้นต่ำ — เหมาะกับดินอ่อน',
+          'แรงกดพื้นต่ำ - เหมาะกับดินอ่อน',
           'เหมาะสำหรับขุดร่องและงานระบายน้ำ',
           'กระทบต่อพื้นที่โดยรอบน้อยที่สุด',
         ],
@@ -183,7 +183,7 @@ export const EQUIPMENT: Equipment[] = [
         type: 'Compact excavator · 5.7 t',
         summary: 'Versatile 5-tonne excavator for general earthworks, trenching, soil loading and light demolition on Koh Samui sites.',
         features: [
-          'Compact radius tail swing — safe to work in confined areas',
+          'Compact radius tail swing - safe to work in confined areas',
           'Higher breakout force than mini class',
           'Suitable for foundation prep and grading',
           'Compatible with hydraulic breaker attachment',
@@ -193,7 +193,7 @@ export const EQUIPMENT: Equipment[] = [
         type: 'Компактный экскаватор · 5.7 т',
         summary: 'Универсальный 5-тонный экскаватор для земляных работ, траншей, погрузки грунта и лёгкого демонтажа.',
         features: [
-          'Компактный хвостовой радиус — безопасная работа в ограниченных зонах',
+          'Компактный хвостовой радиус - безопасная работа в ограниченных зонах',
           'Большее усилие отрыва по сравнению с мини-классом',
           'Подходит для подготовки фундамента и планировки',
           'Совместим с гидромолотом',
@@ -203,7 +203,7 @@ export const EQUIPMENT: Equipment[] = [
         type: 'รถขุดขนาดกะทัดรัด · 5.7 ตัน',
         summary: 'รถขุด 5 ตัน สำหรับงานดินทั่วไป ขุดร่อง ตักดิน และทุบรื้อเล็กน้อยบนเกาะสมุย',
         features: [
-          'รัศมีหางหมุนสั้น — ปลอดภัยในพื้นที่แคบ',
+          'รัศมีหางหมุนสั้น - ปลอดภัยในพื้นที่แคบ',
           'แรงขุดสูงกว่าคลาสมินิ',
           'เหมาะกับการเตรียมฐานและปรับระดับ',
           'รองรับหัวทุบไฮดรอลิก',
@@ -232,20 +232,20 @@ export const EQUIPMENT: Equipment[] = [
     i18n: {
       en: {
         type: 'Zero tail swing excavator · 7.5 t',
-        summary: 'Mid-large excavator with zero tail swing — digs deeper and handles heavier soil while staying safe in tight Samui sites.',
+        summary: 'Mid-large excavator with zero tail swing - digs deeper and handles heavier soil while staying safe in tight Samui sites.',
         features: [
-          'Zero tail swing — no overhang behind the tracks',
-          'Digs up to 4.6 m deep — suitable for deep drainage and foundations',
+          'Zero tail swing - no overhang behind the tracks',
+          'Digs up to 4.6 m deep - suitable for deep drainage and foundations',
           'Handles hard clay, rock fill and heavy debris',
           'Compatible with hydraulic breaker and rock bucket',
         ],
       },
       ru: {
         type: 'Экскаватор без хвостового свеса · 7.5 т',
-        summary: 'Средне-крупный экскаватор без хвостового свеса — копает глубже и работает с тяжёлым грунтом без риска столкновений.',
+        summary: 'Средне-крупный экскаватор без хвостового свеса - копает глубже и работает с тяжёлым грунтом без риска столкновений.',
         features: [
           'Нет хвостового свеса за гусеницами',
-          'Глубина копания до 4.6 м — подходит для глубокого дренажа и фундаментов',
+          'Глубина копания до 4.6 м - подходит для глубокого дренажа и фундаментов',
           'Работает с твёрдой глиной, крупным обломочным материалом',
           'Совместим с гидромолотом и скальным ковшом',
         ],
@@ -255,7 +255,7 @@ export const EQUIPMENT: Equipment[] = [
         summary: 'รถขุดขนาดกลาง-ใหญ่ ซีโร่เทลสวิง ขุดลึกกว่าและรับน้ำหนักดินได้มากกว่า ปลอดภัยในพื้นที่แคบ',
         features: [
           'ไม่มีส่วนยื่นออกด้านหลังของแทร็ก',
-          'ขุดลึกได้ถึง 4.6 ม. — เหมาะกับระบายน้ำลึกและฐานราก',
+          'ขุดลึกได้ถึง 4.6 ม. - เหมาะกับระบายน้ำลึกและฐานราก',
           'รับมือกับดินแข็ง หินถม และเศษวัสดุหนัก',
           'รองรับหัวทุบและถังหิน',
         ],
@@ -285,9 +285,9 @@ export const EQUIPMENT: Equipment[] = [
         type: 'Short tail swing excavator · 13 t',
         summary: 'Powerful 13-tonne excavator for large earthmoving jobs, deep foundations and heavy-volume soil work on Koh Samui.',
         features: [
-          'Short tail swing — practical for roadside and boundary work',
-          'Digs up to 5.4 m — handles deep foundations and large drainage',
-          '0.5 m³ bucket — moves significant volume per cycle',
+          'Short tail swing - practical for roadside and boundary work',
+          'Digs up to 5.4 m - handles deep foundations and large drainage',
+          '0.5 m³ bucket - moves significant volume per cycle',
           'Best matched with multiple dump trucks for high-output operations',
         ],
       },
@@ -295,9 +295,9 @@ export const EQUIPMENT: Equipment[] = [
         type: 'Экскаватор с коротким хвостом · 13 т',
         summary: 'Мощный 13-тонный экскаватор для крупных объёмов земляных работ, глубоких фундаментов и тяжёлых проектов.',
         features: [
-          'Короткий хвостовой свес — удобен для работы у дорог и границ участка',
-          'Копание до 5.4 м — для глубоких фундаментов и крупного дренажа',
-          'Ковш 0.5 м³ — перемещает большой объём за один цикл',
+          'Короткий хвостовой свес - удобен для работы у дорог и границ участка',
+          'Копание до 5.4 м - для глубоких фундаментов и крупного дренажа',
+          'Ковш 0.5 м³ - перемещает большой объём за один цикл',
           'Оптимально работает с несколькими самосвалами',
         ],
       },
@@ -305,9 +305,9 @@ export const EQUIPMENT: Equipment[] = [
         type: 'รถขุดชอร์ตเทลสวิง · 13 ตัน',
         summary: 'รถขุดทรงพลัง 13 ตัน สำหรับงานขนดินขนาดใหญ่ ฐานรากลึก และงานดินปริมาณมาก',
         features: [
-          'เทลสวิงสั้น — ใช้งานริมถนนและขอบแปลงได้',
-          'ขุดลึกได้ถึง 5.4 ม. — สำหรับฐานรากลึกและระบายน้ำขนาดใหญ่',
-          'ถัง 0.5 ม³ — ตักดินได้ปริมาณมากต่อรอบ',
+          'เทลสวิงสั้น - ใช้งานริมถนนและขอบแปลงได้',
+          'ขุดลึกได้ถึง 5.4 ม. - สำหรับฐานรากลึกและระบายน้ำขนาดใหญ่',
+          'ถัง 0.5 ม³ - ตักดินได้ปริมาณมากต่อรอบ',
           'ทำงานร่วมกับรถดั๊มพ์หลายคันได้ดีที่สุด',
         ],
       },
@@ -339,7 +339,7 @@ export const EQUIPMENT: Equipment[] = [
         features: [
           'Fits on narrow Samui sois and tight driveways',
           'Ideal for small soil volumes and garden waste',
-          'Low weight — does not damage driveways or soft ground',
+          'Low weight - does not damage driveways or soft ground',
           'Quick turnaround for short hauls',
         ],
       },
@@ -349,7 +349,7 @@ export const EQUIPMENT: Equipment[] = [
         features: [
           'Проходит по узким дорогам и въездам Самуи',
           'Идеален для небольших объёмов грунта и растительного мусора',
-          'Малый вес — не повреждает подъезды и мягкий грунт',
+          'Малый вес - не повреждает подъезды и мягкий грунт',
           'Быстрый оборот при коротких рейсах',
         ],
       },
@@ -359,7 +359,7 @@ export const EQUIPMENT: Equipment[] = [
         features: [
           'เข้าซอยแคบและทางเข้าบ้านได้',
           'เหมาะกับดินปริมาณน้อยและเศษพืช',
-          'น้ำหนักเบา — ไม่ทำลายทางเข้าหรือดินอ่อน',
+          'น้ำหนักเบา - ไม่ทำลายทางเข้าหรือดินอ่อน',
           'รอบเที่ยวเร็วสำหรับระยะสั้น',
         ],
       },
@@ -385,30 +385,30 @@ export const EQUIPMENT: Equipment[] = [
     i18n: {
       en: {
         type: 'Light dump truck · 5 t',
-        summary: 'Reliable medium-light dump truck — the most common choice for earthworks, soil removal and material delivery on Samui.',
+        summary: 'Reliable medium-light dump truck - the most common choice for earthworks, soil removal and material delivery on Samui.',
         features: [
           'Good access on most Samui roads and construction sites',
-          '5 m³ body — efficient for standard earthwork volumes',
+          '5 m³ body - efficient for standard earthwork volumes',
           'Pairs well with 3–5 tonne excavators',
           'Available for single trips and full-day hire',
         ],
       },
       ru: {
         type: 'Лёгкий самосвал · 5 т',
-        summary: 'Надёжный средне-лёгкий самосвал — самый распространённый выбор для земляных работ и вывоза грунта на Самуи.',
+        summary: 'Надёжный средне-лёгкий самосвал - самый распространённый выбор для земляных работ и вывоза грунта на Самуи.',
         features: [
           'Хороший доступ по большинству дорог и стройплощадок Самуи',
-          'Кузов 5 м³ — эффективен для стандартных объёмов земляных работ',
+          'Кузов 5 м³ - эффективен для стандартных объёмов земляных работ',
           'Хорошо работает в паре с экскаваторами 3–5 тонн',
           'Доступен для разовых рейсов и аренды на день',
         ],
       },
       th: {
         type: 'รถดั๊มพ์เบา · 5 ตัน',
-        summary: 'รถดั๊มพ์ขนาดกลาง-เบา — ตัวเลือกยอดนิยมสำหรับงานดิน ขนดิน และส่งวัสดุบนเกาะสมุย',
+        summary: 'รถดั๊มพ์ขนาดกลาง-เบา - ตัวเลือกยอดนิยมสำหรับงานดิน ขนดิน และส่งวัสดุบนเกาะสมุย',
         features: [
           'เข้าถึงได้บนถนนและไซต์ก่อสร้างส่วนใหญ่ของสมุย',
-          'กระบะ 5 ม³ — เหมาะกับปริมาณงานดินมาตรฐาน',
+          'กระบะ 5 ม³ - เหมาะกับปริมาณงานดินมาตรฐาน',
           'ทำงานร่วมกับรถขุด 3–5 ตันได้ดี',
           'รับงานเที่ยวเดียวและเหมารายวัน',
         ],
@@ -435,30 +435,30 @@ export const EQUIPMENT: Equipment[] = [
     i18n: {
       en: {
         type: 'Dump truck with crane · 8 t',
-        summary: 'Medium dump truck with a crane mounted behind the cab — hauls soil and also lifts heavy items like concrete blocks, pipes or equipment.',
+        summary: 'Medium dump truck with a crane mounted behind the cab - hauls soil and also lifts heavy items like concrete blocks, pipes or equipment.',
         features: [
-          'Crane behind the cab — lifts heavy items without a separate crane truck',
-          '9 m³ tipper body — solid capacity for soil, gravel and fill',
+          'Crane behind the cab - lifts heavy items without a separate crane truck',
+          '9 m³ tipper body - solid capacity for soil, gravel and fill',
           'Two machines in one: dump + crane on a single hire',
           'Useful for deliveries where unloading by hand is not practical',
         ],
       },
       ru: {
         type: 'Самосвал с краном · 8 т',
-        summary: 'Самосвал среднего класса с краном за кабиной — возит грунт и при этом может поднять тяжёлые грузы: блоки, трубы, оборудование.',
+        summary: 'Самосвал среднего класса с краном за кабиной - возит грунт и при этом может поднять тяжёлые грузы: блоки, трубы, оборудование.',
         features: [
-          'Кран за кабиной — поднимает тяжёлые грузы без отдельной крановой машины',
-          'Кузов-самосвал 9 м³ — хорошая вместимость для грунта, гравия и засыпки',
+          'Кран за кабиной - поднимает тяжёлые грузы без отдельной крановой машины',
+          'Кузов-самосвал 9 м³ - хорошая вместимость для грунта, гравия и засыпки',
           'Две функции в одном: самосвал + кран за одну аренду',
           'Удобен там, где разгрузка вручную невозможна или нерациональна',
         ],
       },
       th: {
         type: 'รถดั๊มพ์พร้อมเครน · 8 ตัน',
-        summary: 'รถดั๊มพ์ขนาดกลางพร้อมเครนหลังห้องคนขับ — ขนดินและยกของหนักได้ในคันเดียว เช่น บล็อก ท่อ หรืออุปกรณ์',
+        summary: 'รถดั๊มพ์ขนาดกลางพร้อมเครนหลังห้องคนขับ - ขนดินและยกของหนักได้ในคันเดียว เช่น บล็อก ท่อ หรืออุปกรณ์',
         features: [
-          'เครนหลังห้องคนขับ — ยกของหนักได้โดยไม่ต้องใช้รถเครนแยก',
-          'กระบะดั๊มพ์ 9 ม³ — ความจุดีสำหรับดิน กรวด และวัสดุถม',
+          'เครนหลังห้องคนขับ - ยกของหนักได้โดยไม่ต้องใช้รถเครนแยก',
+          'กระบะดั๊มพ์ 9 ม³ - ความจุดีสำหรับดิน กรวด และวัสดุถม',
           'สองฟังก์ชันในคันเดียว: ดั๊มพ์ + เครนในราคาเดียว',
           'เหมาะเมื่อขนถ่ายด้วยมือไม่สะดวกหรือไม่ปลอดภัย',
         ],
@@ -485,9 +485,9 @@ export const EQUIPMENT: Equipment[] = [
     i18n: {
       en: {
         type: 'Heavy dump truck · 15 t',
-        summary: 'Large 6×4 dump truck for high-volume earthworks — moves the most material per trip on open-access construction sites.',
+        summary: 'Large 6×4 dump truck for high-volume earthworks - moves the most material per trip on open-access construction sites.',
         features: [
-          '18 m³ body — maximum volume per trip on Samui',
+          '18 m³ body - maximum volume per trip on Samui',
           'Ideal for large fill projects, road base and bulk soil removal',
           'Requires good road access and turning space',
           'Best paired with the Komatsu PC128US excavator',
@@ -495,9 +495,9 @@ export const EQUIPMENT: Equipment[] = [
       },
       ru: {
         type: 'Тяжёлый самосвал · 15 т',
-        summary: 'Крупный самосвал 6×4 для больших объёмов земляных работ — максимум материала за рейс на открытых площадках.',
+        summary: 'Крупный самосвал 6×4 для больших объёмов земляных работ - максимум материала за рейс на открытых площадках.',
         features: [
-          'Кузов 18 м³ — максимальный объём за рейс на Самуи',
+          'Кузов 18 м³ - максимальный объём за рейс на Самуи',
           'Идеален для крупных проектов отсыпки, дорожного основания и массового вывоза',
           'Требует хорошего подъезда и площадки для разворота',
           'Лучше всего сочетается с экскаватором Komatsu PC128US',
@@ -505,9 +505,9 @@ export const EQUIPMENT: Equipment[] = [
       },
       th: {
         type: 'รถดั๊มพ์หนัก · 15 ตัน',
-        summary: 'รถดั๊มพ์ 6×4 ขนาดใหญ่ สำหรับงานดินปริมาณมาก — ขนวัสดุได้มากที่สุดต่อเที่ยวในไซต์ที่เข้าถึงได้',
+        summary: 'รถดั๊มพ์ 6×4 ขนาดใหญ่ สำหรับงานดินปริมาณมาก - ขนวัสดุได้มากที่สุดต่อเที่ยวในไซต์ที่เข้าถึงได้',
         features: [
-          'กระบะ 18 ม³ — ปริมาณสูงสุดต่อเที่ยวบนเกาะสมุย',
+          'กระบะ 18 ม³ - ปริมาณสูงสุดต่อเที่ยวบนเกาะสมุย',
           'เหมาะกับโครงการถมดินขนาดใหญ่ ฐานถนน และขนดินจำนวนมาก',
           'ต้องการทางเข้าและพื้นที่กลับรถที่ดี',
           'เหมาะที่สุดกับรถขุด Komatsu PC128US',
@@ -536,9 +536,9 @@ export const EQUIPMENT: Equipment[] = [
         type: 'Heavy flatbed transporter · 10 t',
         summary: 'Heavy-duty flatbed truck for transporting excavators, generators and oversized equipment across Koh Samui.',
         features: [
-          'Flatbed platform — loads excavators, generators, compressors and large machinery',
-          '6×4 drivetrain — handles steep Samui slopes and rough site access',
-          'Ramps included — safe loading and unloading of tracked equipment',
+          'Flatbed platform - loads excavators, generators, compressors and large machinery',
+          '6×4 drivetrain - handles steep Samui slopes and rough site access',
+          'Ramps included - safe loading and unloading of tracked equipment',
           'The go-to truck when your excavator needs to move between sites',
         ],
       },
@@ -546,9 +546,9 @@ export const EQUIPMENT: Equipment[] = [
         type: 'Тяжёлый платформенный транспортёр · 10 т',
         summary: 'Грузовик-платформа для перевозки экскаваторов, генераторов и крупногабаритного оборудования по Самуи.',
         features: [
-          'Открытая платформа — перевозит экскаваторы, генераторы, компрессоры и тяжёлую технику',
-          'Привод 6×4 — уверенно проходит крутые подъёмы и сложные подъезды Самуи',
-          'Въездные трапы в комплекте — безопасная погрузка и выгрузка гусеничной техники',
+          'Открытая платформа - перевозит экскаваторы, генераторы, компрессоры и тяжёлую технику',
+          'Привод 6×4 - уверенно проходит крутые подъёмы и сложные подъезды Самуи',
+          'Въездные трапы в комплекте - безопасная погрузка и выгрузка гусеничной техники',
           'Основной вариант, когда экскаватор нужно перебросить между объектами',
         ],
       },
@@ -556,9 +556,9 @@ export const EQUIPMENT: Equipment[] = [
         type: 'รถบรรทุกแพลตฟอร์มหนัก · 10 ตัน',
         summary: 'รถบรรทุกแพลตฟอร์มสำหรับขนย้ายรถขุด เครื่องกำเนิดไฟฟ้า และอุปกรณ์หนักบนเกาะสมุย',
         features: [
-          'แพลตฟอร์มเปิด — ขนรถขุด เครื่องกำเนิดไฟฟ้า คอมเพรสเซอร์ และเครื่องจักรหนัก',
-          'ขับเคลื่อน 6×4 — ขึ้นเนินชันและทางเข้าไซต์ยากของสมุยได้',
-          'มีแผ่นทางลาด — โหลดและขนถ่ายรถตีนตะขาบได้อย่างปลอดภัย',
+          'แพลตฟอร์มเปิด - ขนรถขุด เครื่องกำเนิดไฟฟ้า คอมเพรสเซอร์ และเครื่องจักรหนัก',
+          'ขับเคลื่อน 6×4 - ขึ้นเนินชันและทางเข้าไซต์ยากของสมุยได้',
+          'มีแผ่นทางลาด - โหลดและขนถ่ายรถตีนตะขาบได้อย่างปลอดภัย',
           'ตัวเลือกหลักเมื่อต้องย้ายรถขุดระหว่างไซต์งาน',
         ],
       },
@@ -583,31 +583,31 @@ export const EQUIPMENT: Equipment[] = [
     i18n: {
       en: {
         type: 'Enclosed cargo truck · 2 t',
-        summary: 'Compact Thai-market truck with a lattice cage body and roof — used for bagged goods, furniture, coal sacks and general cargo on tight Samui roads.',
+        summary: 'Compact Thai-market truck with a lattice cage body and roof - used for bagged goods, furniture, coal sacks and general cargo on tight Samui roads.',
         features: [
-          'Cage body with roof — protects cargo from rain and keeps loads secure',
-          'Bench seats inside — can carry a small crew alongside the load',
-          'Extremely compact — reaches sites where larger trucks cannot enter',
+          'Cage body with roof - protects cargo from rain and keeps loads secure',
+          'Bench seats inside - can carry a small crew alongside the load',
+          'Extremely compact - reaches sites where larger trucks cannot enter',
           'Good for bagged goods: coal, cement, soil bags, furniture, mixed cargo',
         ],
       },
       ru: {
         type: 'Малотоннажный грузовик · 2 т',
-        summary: 'Компактный тайский грузовик с решётчатым кузовом и крышей — используется для мешков с углём, мебели, сыпучих грузов и любого штучного товара по узким дорогам Самуи.',
+        summary: 'Компактный тайский грузовик с решётчатым кузовом и крышей - используется для мешков с углём, мебели, сыпучих грузов и любого штучного товара по узким дорогам Самуи.',
         features: [
-          'Решётчатый кузов с крышей — защищает груз от дождя, ничего не выпадает',
-          'Лавки внутри — можно перевезти небольшую бригаду вместе с грузом',
-          'Очень компактный — проезжает туда, куда крупная техника не попадёт',
+          'Решётчатый кузов с крышей - защищает груз от дождя, ничего не выпадает',
+          'Лавки внутри - можно перевезти небольшую бригаду вместе с грузом',
+          'Очень компактный - проезжает туда, куда крупная техника не попадёт',
           'Подходит для мешков: уголь, цемент, мешки с грунтом, мебель, сборный груз',
         ],
       },
       th: {
         type: 'รถบรรทุกสินค้าขนาดเล็ก · 2 ตัน',
-        summary: 'รถขนาดเล็กตลาดไทยพร้อมตัวถังกรงและหลังคา — ใช้ขนถ่านในกระสอบ เฟอร์นิเจอร์ สินค้าทั่วไปบนถนนแคบของสมุย',
+        summary: 'รถขนาดเล็กตลาดไทยพร้อมตัวถังกรงและหลังคา - ใช้ขนถ่านในกระสอบ เฟอร์นิเจอร์ สินค้าทั่วไปบนถนนแคบของสมุย',
         features: [
-          'ตัวถังกรงพร้อมหลังคา — ป้องกันฝนและรักษาสินค้าไม่ให้ร่วง',
-          'ม้านั่งด้านใน — ขนทีมงานพร้อมสินค้าได้',
-          'ขนาดเล็กมาก — เข้าพื้นที่ที่รถใหญ่เข้าไม่ได้',
+          'ตัวถังกรงพร้อมหลังคา - ป้องกันฝนและรักษาสินค้าไม่ให้ร่วง',
+          'ม้านั่งด้านใน - ขนทีมงานพร้อมสินค้าได้',
+          'ขนาดเล็กมาก - เข้าพื้นที่ที่รถใหญ่เข้าไม่ได้',
           'เหมาะกับสินค้าบรรจุกระสอบ: ถ่าน ปูน กระสอบดิน เฟอร์นิเจอร์ สินค้าเบ็ดเตล็ด',
         ],
       },
@@ -635,34 +635,34 @@ export const EQUIPMENT: Equipment[] = [
     i18n: {
       en: {
         type: 'Utility tractor · 36 hp',
-        summary: 'Compact 4WD tractor with front dozer blade and rear rotary mower — handles land clearing, levelling and grass cutting in a single machine.',
+        summary: 'Compact 4WD tractor with front dozer blade and rear rotary mower - handles land clearing, levelling and grass cutting in a single machine.',
         features: [
-          'Front dozer blade — pushes soil, levels ground and clears light debris',
-          'Rear rotary mower — cuts overgrown grass and light vegetation',
+          'Front dozer blade - pushes soil, levels ground and clears light debris',
+          'Rear rotary mower - cuts overgrown grass and light vegetation',
           '4WD traction on slopes and soft Samui soil',
-          'Compact size — works on plots where heavy machinery cannot operate',
+          'Compact size - works on plots where heavy machinery cannot operate',
           'Cost-effective for mixed clearing + levelling jobs',
         ],
       },
       ru: {
         type: 'Универсальный трактор · 36 л.с.',
-        summary: 'Компактный 4WD трактор с передним отвалом и задней роторной косилкой — расчистка, планировка и покос в одной машине.',
+        summary: 'Компактный 4WD трактор с передним отвалом и задней роторной косилкой - расчистка, планировка и покос в одной машине.',
         features: [
-          'Передний бульдозерный отвал — срезает грунт, разравнивает поверхность, убирает лёгкий мусор',
-          'Задняя роторная косилка — скашивает высокую траву и лёгкую растительность',
+          'Передний бульдозерный отвал - срезает грунт, разравнивает поверхность, убирает лёгкий мусор',
+          'Задняя роторная косилка - скашивает высокую траву и лёгкую растительность',
           'Полный привод 4WD на склонах и мягком грунте Самуи',
-          'Компактные габариты — работает там, где тяжёлая техника не проходит',
+          'Компактные габариты - работает там, где тяжёлая техника не проходит',
           'Выгоден для совмещения расчистки и планировки в одном выезде',
         ],
       },
       th: {
         type: 'แทรกเตอร์อเนกประสงค์ · 36 แรงม้า',
-        summary: 'แทรกเตอร์ขนาดกะทัดรัด 4WD พร้อมใบมีดบุลโดเซอร์หน้าและเครื่องตัดหญ้าหลัง — ถาง ปรับระดับ และตัดหญ้าในเครื่องเดียว',
+        summary: 'แทรกเตอร์ขนาดกะทัดรัด 4WD พร้อมใบมีดบุลโดเซอร์หน้าและเครื่องตัดหญ้าหลัง - ถาง ปรับระดับ และตัดหญ้าในเครื่องเดียว',
         features: [
-          'ใบมีดบุลโดเซอร์หน้า — ดันดิน ปรับระดับ และเก็บเศษเบา',
-          'เครื่องตัดหญ้าหลัง — ตัดหญ้าและพืชเบาที่รกร้าง',
+          'ใบมีดบุลโดเซอร์หน้า - ดันดิน ปรับระดับ และเก็บเศษเบา',
+          'เครื่องตัดหญ้าหลัง - ตัดหญ้าและพืชเบาที่รกร้าง',
           'ขับเคลื่อน 4WD บนลาดเชิงเขาและดินอ่อนของสมุย',
-          'ขนาดกะทัดรัด — ทำงานในพื้นที่ที่เครื่องจักรหนักเข้าไม่ได้',
+          'ขนาดกะทัดรัด - ทำงานในพื้นที่ที่เครื่องจักรหนักเข้าไม่ได้',
           'คุ้มค่าสำหรับงานถาง + ปรับระดับในเที่ยวเดียว',
         ],
       },

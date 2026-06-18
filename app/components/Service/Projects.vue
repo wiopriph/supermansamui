@@ -5,13 +5,12 @@ const props = defineProps<{
 
 const { t, locale } = useI18n();
 const localeRoute = useLocaleRoute();
-const projectsPath = computed(() => `/projects/${locale.value}/%`);
 const service = computed(() => props.service);
+const collectionName = computed(() => `projects_${locale.value}` as 'projects_en' | 'projects_ru' | 'projects_th');
 
 const { data: projects } = await useAsyncData(
   () => `service-projects-${locale.value}-${service.value}`,
-  () => queryCollection('projects')
-    .where('path', 'LIKE', projectsPath.value)
+  () => queryCollection(collectionName.value)
     .where('service', '=', service.value)
     .order('date', 'DESC')
     .all(),
@@ -25,7 +24,6 @@ const latestProjects = computed(() => (projects.value || []).slice(0, 2));
 {
   "ru": {
     "serviceProjects": {
-      "eyebrow": "Наши работы",
       "title": "Последние проекты",
       "description": "Примеры выполненных работ по этой услуге на Самуи.",
       "readMore": "Смотреть проект",
@@ -34,7 +32,6 @@ const latestProjects = computed(() => (projects.value || []).slice(0, 2));
   },
   "en": {
     "serviceProjects": {
-      "eyebrow": "Our work",
       "title": "Recent projects",
       "description": "Examples of completed work for this service on Koh Samui.",
       "readMore": "View project",
@@ -43,7 +40,6 @@ const latestProjects = computed(() => (projects.value || []).slice(0, 2));
   },
   "th": {
     "serviceProjects": {
-      "eyebrow": "ผลงานของเรา",
       "title": "โครงการล่าสุด",
       "description": "ตัวอย่างงานบริการประเภทนี้ที่ทำเสร็จแล้วบนเกาะสมุย",
       "readMore": "ดูโครงการ",
@@ -56,32 +52,16 @@ const latestProjects = computed(() => (projects.value || []).slice(0, 2));
 <template>
   <section
     v-if="latestProjects.length"
-    class="border-b border-default py-10 sm:py-14"
+    class="py-10 sm:py-14"
   >
-    <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-      <div class="max-w-2xl">
-        <p class="text-sm font-semibold uppercase tracking-wide text-primary">
-          {{ t('serviceProjects.eyebrow') }}
-        </p>
+    <div class="space-y-2 text-center">
+      <h2 class="text-2xl sm:text-3xl font-semibold">
+        {{ t('serviceProjects.title') }}
+      </h2>
 
-        <h2 class="mt-2 text-2xl font-semibold text-highlighted sm:text-3xl">
-          {{ t('serviceProjects.title') }}
-        </h2>
-
-        <p class="mt-2 text-sm leading-6 text-muted sm:text-base">
-          {{ t('serviceProjects.description') }}
-        </p>
-      </div>
-
-      <UButton
-        :to="localeRoute({ name: 'projects' })"
-        variant="outline"
-        color="neutral"
-        trailingIcon="i-lucide-arrow-right"
-        class="self-start sm:self-auto"
-      >
-        {{ t('serviceProjects.viewAll') }}
-      </UButton>
+      <p class="text-sm text-muted max-w-2xl mx-auto">
+        {{ t('serviceProjects.description') }}
+      </p>
     </div>
 
     <div class="mt-6 grid gap-5 md:grid-cols-2">
@@ -126,6 +106,17 @@ const latestProjects = computed(() => (projects.value || []).slice(0, 2));
           </span>
         </div>
       </NuxtLink>
+    </div>
+
+    <div class="flex justify-center mt-6">
+      <UButton
+        :to="localeRoute({ name: 'projects' })"
+        variant="outline"
+        color="neutral"
+        trailingIcon="i-lucide-arrow-right"
+      >
+        {{ t('serviceProjects.viewAll') }}
+      </UButton>
     </div>
   </section>
 </template>

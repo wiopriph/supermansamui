@@ -209,7 +209,7 @@ useHead(() => {
     "relatedProjects": "Похожие проекты",
     "relatedServices": "Связанные услуги",
     "contacts": "Обсудить похожий проект",
-    "contactsDescription": "Расскажите о вашем участке — подберём технику и порядок работ.",
+    "contactsDescription": "Расскажите о вашем участке - подберём технику и порядок работ.",
     "contactButton": "Обсудить проект",
     "coverAlt": "Выполненный проект: {title}, {location}",
     "equipmentUsed": "Использованная техника"

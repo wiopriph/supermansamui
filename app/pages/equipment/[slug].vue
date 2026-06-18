@@ -152,7 +152,7 @@ const jsonLd = computed(() => {
 useHead(() => {
   if (!equipment.value) return {};
 
-  const title = `${equipment.value.name} — ${localeData.value.type}`;
+  const title = `${equipment.value.name} - ${localeData.value.type}`;
 
   return {
     title,

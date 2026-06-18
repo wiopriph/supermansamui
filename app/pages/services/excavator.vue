@@ -745,6 +745,8 @@ useHead(() => {
       icon="i-lucide-truck"
     />
 
+    <ServiceProjects service="excavator" />
+
     <ServiceGallery
       :title="t('excavator.photos.title')"
       :items="photos"
@@ -759,8 +761,6 @@ useHead(() => {
       :title="seoBlock.title"
       :paragraphs="seoBlock.paragraphs"
     />
-
-    <ServiceProjects service="excavator" />
 
     <CoreFAQ
       :title="t('excavator.faq.title')"
