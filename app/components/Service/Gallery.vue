@@ -1,6 +1,4 @@
 <script setup lang="ts">
-const selectedIndex = ref(0);
-
 type GalleryItem = {
   src: string
   title: string
@@ -12,126 +10,147 @@ const props = defineProps<{
   items: GalleryItem[]
 }>();
 
+const selectedIndex = ref(0);
+const thumbsRef = ref<HTMLElement | null>(null);
+
 const hasItems = computed(() => props.items.length > 0);
-const hasMultipleItems = computed(() => props.items.length > 1);
-const selectedItem = computed(() => props.items[selectedIndex.value]);
+const hasMultiple = computed(() => props.items.length > 1);
+const selected = computed(() => props.items[selectedIndex.value]);
 
 watchEffect(() => {
-  if (!props.items.length) {
-    selectedIndex.value = 0;
-
-    return;
-  }
-
-  if (selectedIndex.value > props.items.length - 1) {
+  if (selectedIndex.value >= props.items.length) {
     selectedIndex.value = 0;
   }
 });
 
-const selectItem = (index: number) => {
-  selectedIndex.value = index;
+const go = (index: number) => {
+  selectedIndex.value = (index + props.items.length) % props.items.length;
+
+  nextTick(() => {
+    const el = thumbsRef.value?.children[selectedIndex.value] as HTMLElement;
+
+    el?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+  });
 };
 
-const showPrevious = () => {
-  if (!props.items.length) {
-    return;
-  }
+const prev = () => go(selectedIndex.value - 1);
+const next = () => go(selectedIndex.value + 1);
 
-  selectedIndex.value = selectedIndex.value === 0 ?
-    props.items.length - 1 :
-    selectedIndex.value - 1;
+const onKeydown = (e: KeyboardEvent) => {
+  if (e.key === 'ArrowLeft') prev();
+  else if (e.key === 'ArrowRight') next();
 };
 
-const showNext = () => {
-  if (!props.items.length) {
-    return;
-  }
+// drag-to-swipe on desktop
+const dragStart = ref<number | null>(null);
 
-  selectedIndex.value = selectedIndex.value === props.items.length - 1 ?
-    0 :
-    selectedIndex.value + 1;
+const onMousedown = (e: MouseEvent) => {
+  dragStart.value = e.clientX;
+};
+
+const onMouseup = (e: MouseEvent) => {
+  if (dragStart.value === null) return;
+
+  const dx = e.clientX - dragStart.value;
+
+  if (Math.abs(dx) > 40) dx < 0 ? next() : prev();
+
+  dragStart.value = null;
 };
 </script>
 
 <template>
-  <section class="py-10 space-y-6 border-b border-gray-50">
+  <section
+    class="py-10 space-y-4 border-b border-default"
+    tabindex="-1"
+    @keydown="onKeydown"
+  >
     <h2
       class="text-2xl sm:text-3xl font-semibold text-center"
-      v-text="props.title"
+      v-text="title"
     />
 
     <div
       v-if="hasItems"
-      class="space-y-4 pt-2"
+      class="space-y-3"
     >
-      <div class="relative overflow-hidden rounded-2xl bg-gray-100">
+      <div
+        class="relative overflow-hidden rounded-2xl bg-elevated select-none"
+        :class="hasMultiple ? 'cursor-grab active:cursor-grabbing' : ''"
+        @mousedown="onMousedown"
+        @mouseup="onMouseup"
+      >
         <img
-          :src="selectedItem?.src"
-          :alt="selectedItem?.alt || ''"
-          class="w-full aspect-[4/3] sm:aspect-[16/10] lg:aspect-[16/9] object-cover"
+          :src="selected?.src"
+          :alt="selected?.alt || ''"
+          class="w-full aspect-[4/3] sm:aspect-[16/10] lg:aspect-[16/9] object-cover pointer-events-none"
+          draggable="false"
         >
 
-        <div
-          v-if="hasMultipleItems"
-          class="absolute inset-x-0 top-0 flex items-center justify-between p-3 sm:p-4"
-        >
-          <div class="rounded-full bg-black/55 px-3 py-1 text-xs font-medium text-white">
-            {{ selectedIndex + 1 }} / {{ props.items.length }}
-          </div>
-
-          <div class="flex items-center gap-2">
-            <UButton
-              icon="i-lucide-chevron-left"
-              color="neutral"
-              variant="solid"
-              size="sm"
-              class="rounded-full"
-              @click="showPrevious"
+        <template v-if="hasMultiple">
+          <button
+            type="button"
+            aria-label="Previous"
+            class="absolute left-3 top-1/2 -translate-y-1/2 flex size-10 items-center justify-center rounded-full bg-black/50 text-white transition hover:bg-black/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+            @click.stop="prev"
+          >
+            <UIcon
+              name="i-lucide-chevron-left"
+              class="size-5"
             />
+          </button>
 
-            <UButton
-              icon="i-lucide-chevron-right"
-              color="neutral"
-              variant="solid"
-              size="sm"
-              class="rounded-full"
-              @click="showNext"
+          <button
+            type="button"
+            aria-label="Next"
+            class="absolute right-3 top-1/2 -translate-y-1/2 flex size-10 items-center justify-center rounded-full bg-black/50 text-white transition hover:bg-black/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+            @click.stop="next"
+          >
+            <UIcon
+              name="i-lucide-chevron-right"
+              class="size-5"
             />
+          </button>
+
+          <div
+            class="absolute top-3 left-1/2 -translate-x-1/2 rounded-full bg-black/55 px-3 py-1 text-xs font-medium text-white"
+          >
+            {{ selectedIndex + 1 }} / {{ items.length }}
           </div>
-        </div>
+        </template>
 
         <div
-          v-if="selectedItem?.title"
+          v-if="selected?.title"
           class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/35 to-transparent p-4 sm:p-5"
         >
-          <p class="text-sm sm:text-base text-white">
-            {{ selectedItem.title }}
+          <p class="text-sm sm:text-base text-white pointer-events-none">
+            {{ selected.title }}
           </p>
         </div>
       </div>
 
       <div
-        v-if="hasMultipleItems"
-        class="hidden lg:grid lg:grid-cols-6 gap-2"
+        v-if="hasMultiple"
+        ref="thumbsRef"
+        class="flex gap-2 overflow-x-auto pb-1 scroll-smooth"
+        style="scrollbar-width: none;"
       >
         <button
-          v-for="(item, index) in props.items"
+          v-for="(item, index) in items"
           :key="index"
           type="button"
-          class="group relative overflow-hidden rounded-lg border transition"
-          :class="index === selectedIndex ? 'border-primary ring-2 ring-primary/20' : 'border-gray-200 hover:border-gray-300'"
-          @click="selectItem(index)"
+          class="relative flex-none overflow-hidden rounded-lg border-2 transition"
+          :class="index === selectedIndex
+            ? 'border-primary ring-2 ring-primary/20'
+            : 'border-transparent opacity-60 hover:opacity-90'"
+          style="width: 80px; height: 56px;"
+          @click="go(index)"
         >
           <img
             :src="item.src"
             :alt="item.alt || ''"
-            class="w-full aspect-[4/3] object-cover"
+            class="w-full h-full object-cover"
           >
-
-          <span
-            class="absolute inset-0 bg-black/0 transition group-hover:bg-black/5"
-            :class="index === selectedIndex ? 'bg-black/10' : ''"
-          />
         </button>
       </div>
     </div>
