@@ -16,7 +16,10 @@ defineProps<{
   extraTitle: string
   extraItems: string[]
   note: string
+  equipmentLabel: string
 }>();
+
+const localeRoute = useLocaleRoute();
 </script>
 
 <template>
@@ -26,7 +29,7 @@ defineProps<{
         {{ title }}
       </h2>
 
-      <p class="text-sm text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+      <p class="text-sm text-muted max-w-2xl mx-auto">
         {{ description }}
       </p>
     </div>
@@ -37,9 +40,9 @@ defineProps<{
         :key="group.title"
       >
         <template #header>
-          <div class="font-semibold">
+          <p class="font-semibold">
             {{ group.title }}
-          </div>
+          </p>
         </template>
 
         <table class="w-full text-sm">
@@ -47,14 +50,14 @@ defineProps<{
             <tr
               v-for="item in group.items"
               :key="item.label"
-              class="border-b border-gray-100 dark:border-gray-800 last:border-b-0"
+              class="border-b border-default last:border-b-0"
             >
-              <td class="py-3 pr-4 text-gray-700 dark:text-gray-300">
+              <td class="py-3 pr-4 text-default">
                 <span class="font-medium">{{ item.label }}</span>
               </td>
 
-              <td class="py-3 text-right">
-                <div class="space-y-1">
+              <td class="py-3 text-right text-muted">
+                <div class="space-y-0.5">
                   <div
                     v-for="price in item.prices"
                     :key="price"
@@ -72,12 +75,12 @@ defineProps<{
 
     <UCard>
       <template #header>
-        <div class="font-semibold">
+        <p class="font-semibold">
           {{ extraTitle }}
-        </div>
+        </p>
       </template>
 
-      <div class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+      <div class="space-y-2 text-sm text-muted">
         <p
           v-for="item in extraItems"
           :key="item"
@@ -87,8 +90,19 @@ defineProps<{
       </div>
     </UCard>
 
-    <p class="text-sm text-center text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-      {{ note }}
-    </p>
+    <div class="flex flex-col items-center gap-4">
+      <p class="text-sm text-center text-muted max-w-2xl">
+        {{ note }}
+      </p>
+
+      <UButton
+        :to="localeRoute({ name: 'equipment' })"
+        variant="outline"
+        color="neutral"
+        trailingIcon="i-lucide-arrow-right"
+      >
+        {{ equipmentLabel }}
+      </UButton>
+    </div>
   </section>
 </template>

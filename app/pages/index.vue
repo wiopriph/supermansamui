@@ -313,7 +313,8 @@ const seoBlock = computed(() => ({
         "crane": "Кран - от {price} бат/час",
         "delivery": "Доставка экскаватора - {price} бат. Бесплатно от 3 часов работы."
       },
-      "note": "Для точного расчёта отправьте локацию, фото подъезда и короткое описание задачи."
+      "note": "Для точного расчёта отправьте локацию, фото подъезда и короткое описание задачи.",
+      "equipment": "Вся техника и цены"
     }
   },
   "en": {
@@ -405,7 +406,8 @@ const seoBlock = computed(() => ({
         "crane": "Crane - from {price} THB/hour",
         "delivery": "Excavator delivery - {price} THB. Free from 3 hours of work."
       },
-      "note": "For an accurate quote, send your location, access photos and a short job description."
+      "note": "For an accurate quote, send your location, access photos and a short job description.",
+      "equipment": "All equipment & pricing"
     }
   },
   "th": {
@@ -497,7 +499,8 @@ const seoBlock = computed(() => ({
         "crane": "เครน - เริ่มต้น {price} บาท/ชั่วโมง",
         "delivery": "ค่าขนส่งรถขุด - {price} บาท ฟรีเมื่อใช้งานตั้งแต่ 3 ชั่วโมงขึ้นไป"
       },
-      "note": "ส่งโลเคชัน รูปทางเข้า และรายละเอียดงาน เพื่อประเมินราคาที่แม่นยำ"
+      "note": "ส่งโลเคชัน รูปทางเข้า และรายละเอียดงาน เพื่อประเมินราคาที่แม่นยำ",
+      "equipment": "เครื่องจักรและราคาทั้งหมด"
     }
   }
 }
@@ -532,6 +535,7 @@ const seoBlock = computed(() => ({
       :extraTitle="t('pricing.extra.title')"
       :extraItems="pricingExtraItems"
       :note="t('pricing.note')"
+      :equipmentLabel="t('pricing.equipment')"
     />
 
     <ServiceSeoBlock
