@@ -186,6 +186,7 @@ useHead(() => {
     title,
     meta: [
       { name: 'description', content: description },
+      { name: 'robots', content: 'index, follow, max-image-preview:large' },
       { name: 'keywords', content: keywords },
 
       { property: 'og:title', content: title },

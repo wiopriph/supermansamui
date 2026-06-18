@@ -33,8 +33,16 @@ useHead(() => ({
   title: t('seo.title'),
   meta: [
     { name: 'description', content: t('seo.description') },
+    { name: 'robots', content: 'index, follow, max-image-preview:large' },
     { property: 'og:title', content: t('seo.title') },
     { property: 'og:description', content: t('seo.description') },
+    { property: 'og:image', content: 'https://supermansamui.com/images/services/land-clearing/hero.webp' },
+    { property: 'og:image:width', content: '1200' },
+    { property: 'og:image:height', content: '630' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: t('seo.title') },
+    { name: 'twitter:description', content: t('seo.description') },
+    { name: 'twitter:image', content: 'https://supermansamui.com/images/services/land-clearing/hero.webp' },
   ],
 }));
 </script>

@@ -221,6 +221,7 @@ useHead(() => {
     title,
     meta: [
       { name: 'description', content: description },
+      { name: 'robots', content: 'index, follow, max-image-preview:large' },
       { name: 'keywords', content: keywords },
 
       { property: 'og:title', content: title },
@@ -371,7 +372,7 @@ useHead(() => {
         "text": "Пришлите локацию, 3–5 фото и короткое описание задачи. Мы подскажем, какая техника нужна и какой формат работ будет разумнее."
       },
       "beforeAfter": {
-        "title": "Примеры работ до и после",
+        "title": "Примеры работ до и после"
       },
       "included": {
         "title": "Почему с нами удобно",
@@ -546,7 +547,7 @@ useHead(() => {
         "text": "Share location, 3–5 photos and a short description. We’ll explain what machinery is needed and how to approach the work."
       },
       "beforeAfter": {
-        "title": "Before & after earthworks on Koh Samui",
+        "title": "Before & after earthworks on Koh Samui"
       },
       "included": {
         "title": "Why work with us",
@@ -721,7 +722,7 @@ useHead(() => {
         "text": "ส่งโลเคชันและรูปหน้างาน เราจะช่วยแนะนำแนวทางและเครื่องจักรที่เหมาะสม"
       },
       "beforeAfter": {
-        "title": "ตัวอย่างงานก่อนและหลัง",
+        "title": "ตัวอย่างงานก่อนและหลัง"
       },
       "included": {
         "title": "ทำไมลูกค้าเลือกเรา",
