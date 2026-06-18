@@ -21,6 +21,12 @@ const projectSchema = z.object({
   gallery: z.array(z.object({ src: z.string(), alt: z.string() })),
   summary: z.string(),
   equipment: z.array(z.string()).optional(),
+  beforeAfter: z.array(z.object({
+    beforeImage: z.string(),
+    beforeAlt: z.string(),
+    afterImage: z.string(),
+    afterAlt: z.string(),
+  })).optional(),
 });
 
 

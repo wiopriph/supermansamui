@@ -192,7 +192,10 @@ useHead(() => {
 <i18n lang="json">
 {
   "ru": {
-    "nav": { "home": "Главная", "projects": "Все проекты" },
+    "nav": {
+      "home": "Главная",
+      "projects": "Все проекты"
+    },
     "services": {
       "excavator": "Экскаватор",
       "truck": "Грузовик",
@@ -206,6 +209,7 @@ useHead(() => {
     "serviceLabel": "Услуга",
     "locationLabel": "Локация",
     "gallery": "Галерея проекта",
+    "beforeAfterTitle": "До и после",
     "relatedProjects": "Похожие проекты",
     "relatedServices": "Связанные услуги",
     "contacts": "Обсудить похожий проект",
@@ -215,7 +219,10 @@ useHead(() => {
     "equipmentUsed": "Использованная техника"
   },
   "en": {
-    "nav": { "home": "Home", "projects": "All projects" },
+    "nav": {
+      "home": "Home",
+      "projects": "All projects"
+    },
     "services": {
       "excavator": "Excavator",
       "truck": "Truck",
@@ -229,6 +236,7 @@ useHead(() => {
     "serviceLabel": "Service",
     "locationLabel": "Location",
     "gallery": "Project gallery",
+    "beforeAfterTitle": "Before & after",
     "relatedProjects": "Related projects",
     "relatedServices": "Related services",
     "contacts": "Discuss a similar project",
@@ -238,7 +246,10 @@ useHead(() => {
     "equipmentUsed": "Equipment used"
   },
   "th": {
-    "nav": { "home": "หน้าหลัก", "projects": "ผลงานทั้งหมด" },
+    "nav": {
+      "home": "หน้าหลัก",
+      "projects": "ผลงานทั้งหมด"
+    },
     "services": {
       "excavator": "รถขุด",
       "truck": "รถบรรทุก",
@@ -252,6 +263,7 @@ useHead(() => {
     "serviceLabel": "บริการ",
     "locationLabel": "สถานที่",
     "gallery": "แกลเลอรีโครงการ",
+    "beforeAfterTitle": "ก่อนและหลัง",
     "relatedProjects": "โครงการที่เกี่ยวข้อง",
     "relatedServices": "บริการที่เกี่ยวข้อง",
     "contacts": "คุยเรื่องโครงการที่คล้ายกัน",
@@ -481,6 +493,27 @@ useHead(() => {
           </ul>
         </div>
       </aside>
+    </div>
+
+    <div
+      v-if="project?.beforeAfter?.length"
+      class="mx-auto mt-10 sm:mt-14"
+    >
+      <h2
+        class="mb-6 text-center text-2xl font-semibold sm:text-3xl"
+        v-text="t('beforeAfterTitle')"
+      />
+
+      <div class="grid gap-5 sm:grid-cols-2">
+        <BeforeAfterSlider
+          v-for="(pair, i) in project.beforeAfter"
+          :key="i"
+          :beforeImage="pair.beforeImage"
+          :beforeAlt="pair.beforeAlt"
+          :afterImage="pair.afterImage"
+          :afterAlt="pair.afterAlt"
+        />
+      </div>
     </div>
 
     <div class="mx-auto mt-6 sm:mt-10">
