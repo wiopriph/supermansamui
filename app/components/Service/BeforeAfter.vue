@@ -6,23 +6,35 @@ type BeforeAfterPair = {
   afterAlt: string
 };
 
-type BeforeAfterMetaItem = {
-  value: string
-  icon?: string
-};
-
 type BeforeAfterItem = {
   title: string
   description?: string
+  slug: string
   pairs: BeforeAfterPair[]
-  meta?: BeforeAfterMetaItem[]
 };
 
 defineProps<{
   title: string
   items: BeforeAfterItem[]
 }>();
+
+const { t } = useI18n();
+const localePath = useLocalePath();
 </script>
+
+<i18n lang="json">
+{
+  "en": {
+    "details": "View project"
+  },
+  "ru": {
+    "details": "Подробнее"
+  },
+  "th": {
+    "details": "ดูโครงการ"
+  }
+}
+</i18n>
 
 <template>
   <section class="space-y-6 border-b border-gray-50 py-10">
@@ -49,37 +61,25 @@ defineProps<{
             />
           </div>
 
-          <div class="space-y-4">
-            <div class="space-y-2">
-              <h3 class="text-lg font-semibold sm:text-xl">
-                {{ item.title }}
-              </h3>
+          <div class="space-y-3">
+            <h3
+              class="text-lg font-semibold sm:text-xl"
+              v-text="item.title"
+            />
 
-              <p
-                v-if="item.description"
-                class="text-sm leading-relaxed text-gray-600 sm:text-base"
-              >
-                {{ item.description }}
-              </p>
-            </div>
+            <p
+              v-if="item.description"
+              class="text-sm leading-relaxed text-gray-600 sm:text-base"
+              v-text="item.description"
+            />
 
-            <div
-              v-if="item.meta?.length"
-              class="flex flex-wrap gap-2"
+            <UButton
+              :to="localePath({ name: 'projects-slug', params: { slug: item.slug } })"
+              variant="outline"
+              size="sm"
             >
-              <div
-                v-for="(metaItem, metaIndex) in item.meta"
-                :key="metaIndex"
-                class="inline-flex max-w-full items-center gap-2 rounded-full bg-gray-50 px-3 py-1.5 text-sm text-gray-700"
-              >
-                <UIcon
-                  :name="metaItem.icon || 'i-lucide-info'"
-                  class="shrink-0 text-gray-500"
-                />
-
-                <span class="truncate">{{ metaItem.value }}</span>
-              </div>
-            </div>
+              {{ t('details') }}
+            </UButton>
           </div>
         </div>
       </UCard>
