@@ -44,15 +44,17 @@ const { data: relatedProjects } = await useAsyncData(
       .limit(3)
       .all();
 
-    if (sameService.length >= 2) return sameService;
+    if (sameService.length >= 2) return sameService.slice(0, 3);
 
+    const excludeSlugs = [slug.value, ...sameService.map(p => p.slug)];
+    const needed = 3 - sameService.length;
     const others = await queryCollection(collectionName.value)
-      .where('slug', '<>', slug.value)
+      .where('slug', 'NOT IN', excludeSlugs)
       .order('date', 'DESC')
-      .limit(3 - sameService.length)
+      .limit(needed)
       .all();
 
-    return [...sameService, ...others].slice(0, 3);
+    return [...sameService, ...others];
   },
   { watch: [locale, slug] },
 );
