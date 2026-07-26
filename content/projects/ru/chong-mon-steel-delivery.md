@@ -16,6 +16,12 @@ gallery:
     alt: "Грузовик с металлоконструкциями прибыл на новую стройку в Чонг Моне"
   - src: "/images/projects/chong-mon-steel-delivery/unloading-truck-at-site.webp"
     alt: "Разгрузка металла с грузовика на строительной площадке в Чонг Моне"
+  - src: "/images/projects/chong-mon-steel-delivery/loading-steel-frames-at-yard.webp"
+    alt: "Погрузка стальных прогонов и балок на грузовик на площадке поставщика"
+  - src: "/images/projects/chong-mon-steel-delivery/unloading-steel-frames-at-site.webp"
+    alt: "Разгрузка стальных конструкций на объекте в Чонг Моне"
+  - src: "/images/projects/chong-mon-steel-delivery/builders-receiving-the-delivery.webp"
+    alt: "Строительная бригада принимает доставку металла на площадке"
 summary: "Регулярные доставки металлоконструкций для постоянного клиента на строительный объект в Чонг Моне. Возим по графику, без срывов, шести- и десятиколёсными грузовиками в зависимости от объёма."
 equipment:
   - hino-super-fm18

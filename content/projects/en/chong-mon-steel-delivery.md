@@ -16,6 +16,12 @@ gallery:
     alt: "Truck with steel structures arrived at the new construction site in Chong Mon"
   - src: "/images/projects/chong-mon-steel-delivery/unloading-truck-at-site.webp"
     alt: "Unloading steel materials from the truck at the Chong Mon construction site"
+  - src: "/images/projects/chong-mon-steel-delivery/loading-steel-frames-at-yard.webp"
+    alt: "Loading steel purlins and beams onto the truck at the supplier's yard"
+  - src: "/images/projects/chong-mon-steel-delivery/unloading-steel-frames-at-site.webp"
+    alt: "Unloading steel frame sections at the site in Chong Mon"
+  - src: "/images/projects/chong-mon-steel-delivery/builders-receiving-the-delivery.webp"
+    alt: "The construction crew taking delivery of the steel on site"
 summary: "Ongoing steel structure deliveries for a long-term client's construction project in Chong Mon, Koh Samui - regular runs, on schedule every time, using both 6-wheel and 10-wheel trucks depending on the load."
 equipment:
   - hino-super-fm18

@@ -16,6 +16,12 @@ gallery:
     alt: "รถบรรทุกพร้อมโครงสร้างเหล็กมาถึงไซต์ก่อสร้างใหม่ที่แหลมเชิงมน"
   - src: "/images/projects/chong-mon-steel-delivery/unloading-truck-at-site.webp"
     alt: "ขนถ่ายเหล็กจากรถบรรทุกที่ไซต์ก่อสร้างแหลมเชิงมน"
+  - src: "/images/projects/chong-mon-steel-delivery/loading-steel-frames-at-yard.webp"
+    alt: "การขนเหล็กแปและคานขึ้นรถบรรทุกที่ลานของผู้จำหน่าย"
+  - src: "/images/projects/chong-mon-steel-delivery/unloading-steel-frames-at-site.webp"
+    alt: "การขนถ่ายโครงเหล็กลงที่ไซต์งานแหลมเชิงมน"
+  - src: "/images/projects/chong-mon-steel-delivery/builders-receiving-the-delivery.webp"
+    alt: "ทีมช่างก่อสร้างรับมอบเหล็กที่หน้างาน"
 summary: "ขนส่งโครงสร้างเหล็กประจำให้ลูกค้าระยะยาวสำหรับโครงการก่อสร้างใหม่ที่แหลมเชิงมน - สัปดาห์ละสองครั้ง ตรงเวลาทุกครั้ง"
 equipment:
   - hino-super-fm18
