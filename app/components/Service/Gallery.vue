@@ -41,21 +41,33 @@ const onKeydown = (e: KeyboardEvent) => {
   else if (e.key === 'ArrowRight') next();
 };
 
-// drag-to-swipe on desktop
+// drag-to-swipe: mouse on desktop, touch on mobile
 const dragStart = ref<number | null>(null);
+
+const endDrag = (x: number) => {
+  if (dragStart.value === null) return;
+
+  const dx = x - dragStart.value;
+
+  if (Math.abs(dx) > 40) dx < 0 ? next() : prev();
+
+  dragStart.value = null;
+};
 
 const onMousedown = (e: MouseEvent) => {
   dragStart.value = e.clientX;
 };
 
-const onMouseup = (e: MouseEvent) => {
-  if (dragStart.value === null) return;
+const onMouseup = (e: MouseEvent) => endDrag(e.clientX);
 
-  const dx = e.clientX - dragStart.value;
+const onTouchstart = (e: TouchEvent) => {
+  dragStart.value = e.touches[0]?.clientX ?? null;
+};
 
-  if (Math.abs(dx) > 40) dx < 0 ? next() : prev();
+const onTouchend = (e: TouchEvent) => {
+  const x = e.changedTouches[0]?.clientX;
 
-  dragStart.value = null;
+  if (x !== undefined) endDrag(x);
 };
 </script>
 
@@ -79,6 +91,8 @@ const onMouseup = (e: MouseEvent) => {
         :class="hasMultiple ? 'cursor-grab active:cursor-grabbing' : ''"
         @mousedown="onMousedown"
         @mouseup="onMouseup"
+        @touchstart.passive="onTouchstart"
+        @touchend.passive="onTouchend"
       >
         <img
           :src="selected?.src"
