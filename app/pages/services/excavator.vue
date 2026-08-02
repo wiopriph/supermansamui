@@ -144,72 +144,17 @@ const serviceTypes = computed(() => [
 ]);
 
 
-const jsonLd = computed(() => ({
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'Service',
-      '@id': 'https://supermansamui.com/services/excavator#service',
-      name: t('excavator.seo.title'),
-      description: t('excavator.seo.description'),
-      provider: {
-        '@id': 'https://supermansamui.com#business',
-      },
-      areaServed: {
-        '@type': 'AdministrativeArea',
-        name: 'Koh Samui, Surat Thani, Thailand',
-      },
-      serviceType: serviceTypes.value,
-      hasOfferCatalog: {
-        '@type': 'OfferCatalog',
-        name: t('excavator.tasks.title'),
-        itemListElement: tasksItems.value.map((item) => ({
-          '@type': 'Offer',
-          name: item.title,
-          description: item.description,
-          itemOffered: {
-            '@type': 'Service',
-            name: item.title,
-            description: item.description,
-            areaServed: 'Koh Samui',
-          },
-        })),
-      },
-    },
-  ],
-}));
-
-useHead(() => {
-  const title = t('excavator.seo.title');
-  const description = t('excavator.seo.description');
-  const keywords = t('excavator.seo.keywords');
-  const image = 'https://supermansamui.com/images/services/excavators/hero.webp';
-
-  return {
-    title,
-    meta: [
-      { name: 'description', content: description },
-      { name: 'keywords', content: keywords },
-      { name: 'robots', content: 'index, follow, max-image-preview:large' },
-
-      { property: 'og:title', content: title },
-      { property: 'og:description', content: description },
-      { property: 'og:image', content: image },
-      { property: 'og:image:width', content: '960' },
-      { property: 'og:image:height', content: '466' },
-
-      { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: title },
-      { name: 'twitter:description', content: description },
-      { name: 'twitter:image', content: image },
-    ],
-    script: [
-      {
-        type: 'application/ld+json',
-        innerHTML: JSON.stringify(jsonLd.value),
-      },
-    ],
-  };
+useServiceSeo({
+  path: '/services/excavator',
+  prefix: 'excavator',
+  schemaNameKey: 'excavator.seo.title',
+  image: {
+    url: 'https://supermansamui.com/images/services/excavators/hero.webp',
+    width: '960',
+    height: '466',
+  },
+  serviceTypes,
+  catalogItems: tasksItems,
 });
 </script>
 

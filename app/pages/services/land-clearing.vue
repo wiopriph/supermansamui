@@ -144,70 +144,16 @@ const seoBlock = computed(() => ({
   ],
 }));
 
-const jsonLd = computed(() => ({
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'Service',
-      '@id': 'https://supermansamui.com/services/land-clearing#service',
-      name: t('landClearing.schema.name'),
-      description: t('landClearing.seo.description'),
-      provider: { '@id': 'https://supermansamui.com#business' },
-      areaServed: {
-        '@type': 'AdministrativeArea',
-        name: 'Koh Samui, Surat Thani, Thailand',
-      },
-      serviceType: serviceTypes.value,
-      hasOfferCatalog: {
-        '@type': 'OfferCatalog',
-        name: t('landClearing.tasks.title'),
-        itemListElement: tasksItems.value.map((item) => ({
-          '@type': 'Offer',
-          name: item.title,
-          description: item.description,
-          itemOffered: {
-            '@type': 'Service',
-            name: item.title,
-            description: item.description,
-            areaServed: 'Koh Samui',
-          },
-        })),
-      },
-    },
-  ],
-}));
-
-useHead(() => {
-  const title = t('landClearing.seo.title');
-  const description = t('landClearing.seo.description');
-  const keywords = t('landClearing.seo.keywords');
-  const image = 'https://supermansamui.com/images/services/land-clearing/hero.webp';
-
-  return {
-    title,
-    meta: [
-      { name: 'description', content: description },
-      { name: 'robots', content: 'index, follow, max-image-preview:large' },
-      { name: 'keywords', content: keywords },
-
-      { property: 'og:title', content: title },
-      { property: 'og:description', content: description },
-      { property: 'og:image', content: image },
-      { property: 'og:image:width', content: '1200' },
-      { property: 'og:image:height', content: '630' },
-
-      { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: title },
-      { name: 'twitter:description', content: description },
-      { name: 'twitter:image', content: image },
-    ],
-    script: [
-      {
-        type: 'application/ld+json',
-        innerHTML: JSON.stringify(jsonLd.value),
-      },
-    ],
-  };
+useServiceSeo({
+  path: '/services/land-clearing',
+  prefix: 'landClearing',
+  image: {
+    url: 'https://supermansamui.com/images/services/land-clearing/hero.webp',
+    width: '1200',
+    height: '630',
+  },
+  serviceTypes,
+  catalogItems: tasksItems,
 });
 </script>
 

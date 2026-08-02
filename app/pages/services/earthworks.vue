@@ -178,70 +178,17 @@ const areasBlock = computed(() => ({
   items: areas.value,
 }));
 
-const jsonLd = computed(() => ({
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'Service',
-      '@id': 'https://supermansamui.com/services/earthworks#service',
-      name: t('earthworks.schema.name'),
-      description: t('earthworks.seo.description'),
-      provider: { '@id': 'https://supermansamui.com#business' },
-      areaServed: areas.value.map((area) => ({
-        '@type': 'Place',
-        name: `${area}, Koh Samui`,
-      })),
-      serviceType: serviceTypes.value,
-      hasOfferCatalog: {
-        '@type': 'OfferCatalog',
-        name: t('earthworks.services.title'),
-        itemListElement: serviceHubItems.value.map((item) => ({
-          '@type': 'Offer',
-          name: item.title,
-          description: item.description,
-          itemOffered: {
-            '@type': 'Service',
-            name: item.title,
-            description: item.description,
-            areaServed: 'Koh Samui',
-          },
-        })),
-      },
-    },
-  ],
-}));
-
-useHead(() => {
-  const title = t('earthworks.seo.title');
-  const description = t('earthworks.seo.description');
-  const keywords = t('earthworks.seo.keywords');
-  const image = 'https://supermansamui.com/images/services/earthworks/hero.webp';
-
-  return {
-    title,
-    meta: [
-      { name: 'description', content: description },
-      { name: 'robots', content: 'index, follow, max-image-preview:large' },
-      { name: 'keywords', content: keywords },
-
-      { property: 'og:title', content: title },
-      { property: 'og:description', content: description },
-      { property: 'og:image', content: image },
-      { property: 'og:image:width', content: '960' },
-      { property: 'og:image:height', content: '492' },
-
-      { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: title },
-      { name: 'twitter:description', content: description },
-      { name: 'twitter:image', content: image },
-    ],
-    script: [
-      {
-        type: 'application/ld+json',
-        innerHTML: JSON.stringify(jsonLd.value),
-      },
-    ],
-  };
+useServiceSeo({
+  path: '/services/earthworks',
+  prefix: 'earthworks',
+  catalogNameKey: 'earthworks.services.title',
+  image: {
+    url: 'https://supermansamui.com/images/services/earthworks/hero.webp',
+    width: '960',
+    height: '492',
+  },
+  serviceTypes,
+  catalogItems: serviceHubItems,
 });
 </script>
 
