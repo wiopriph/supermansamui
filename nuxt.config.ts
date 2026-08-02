@@ -52,24 +52,10 @@ export default defineNuxtConfig({
   ],
 
   runtimeConfig: {
-    TELEGRAM_CHAT_ID: '',
-    TELEGRAM_BOT_TOKEN: '',
-
-    SUPABASE_URL: '',
-    SUPABASE_SERVICE_ROLE: '',
-
-    LINE_CHANNEL_ACCESS_TOKEN: '',
-    LINE_TO: '',
-
     public: {
       appName: 'Superman Samui',
       gtmId: '',
       gtmEnabled: false,
-
-      supabase: {
-        url: process.env.SUPABASE_URL,
-        key: process.env.SUPABASE_KEY,
-      },
     },
   },
 

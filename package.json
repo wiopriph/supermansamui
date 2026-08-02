@@ -17,7 +17,6 @@
     "@nuxt/ui": "4.8.2",
     "@nuxtjs/i18n": "10.4.0",
     "@nuxtjs/sitemap": "8.2.1",
-    "@nuxtjs/supabase": "1.6.2",
     "better-sqlite3": "12.10.1",
     "nuxt": "4.4.8",
     "typescript": "6.0.3",
