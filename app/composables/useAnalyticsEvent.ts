@@ -34,14 +34,13 @@ type OrderPayload = BasePayload & {
 export function useAnalyticsEvent() {
   const push = (obj: Record<string, unknown>) => {
     if (
-      process.env.NODE_ENV === 'production' &&
-            import.meta.client &&
+      import.meta.client &&
             typeof window !== 'undefined' &&
             'dataLayer' in window &&
             Array.isArray((window as any).dataLayer)
     ) {
       (window as any).dataLayer.push(obj);
-    } else {
+    } else if (import.meta.dev) {
       console.log('analytics', obj);
     }
   };
