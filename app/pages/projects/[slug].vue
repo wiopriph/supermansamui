@@ -61,17 +61,7 @@ const { data: relatedProjects } = await useAsyncData(
 
 // ─── Service helpers ──────────────────────────────────────────────────────────
 
-const serviceLabels = computed<Record<string, string>>(() => ({
-  'excavator': t('services.excavator'),
-  'truck': t('services.truck'),
-  'land-clearing': t('services.landClearing'),
-  'earthworks': t('services.earthworks'),
-  'land-leveling': t('services.landLeveling'),
-  'drainage': t('services.drainage'),
-  'site-preparation': t('services.sitePreparation'),
-}));
-
-const { labelFor, routeFor, relatedFor } = useServiceLabels(serviceLabels);
+const { labelFor, routeFor, relatedFor } = useServiceLabels();
 
 const serviceLabel = computed(() => labelFor(project.value?.service ?? ''));
 const servicePath = computed(() => routeFor(project.value?.service ?? ''));
@@ -198,15 +188,6 @@ useHead(() => {
       "home": "Главная",
       "projects": "Все проекты"
     },
-    "services": {
-      "excavator": "Экскаватор",
-      "truck": "Грузовик",
-      "landClearing": "Расчистка участка",
-      "earthworks": "Земляные работы",
-      "landLeveling": "Выравнивание участка",
-      "drainage": "Дренаж",
-      "sitePreparation": "Подготовка участка"
-    },
     "details": "О проекте",
     "serviceLabel": "Услуга",
     "locationLabel": "Локация",
@@ -225,15 +206,6 @@ useHead(() => {
       "home": "Home",
       "projects": "All projects"
     },
-    "services": {
-      "excavator": "Excavator",
-      "truck": "Truck",
-      "landClearing": "Land clearing",
-      "earthworks": "Earthworks",
-      "landLeveling": "Land leveling",
-      "drainage": "Drainage",
-      "sitePreparation": "Site preparation"
-    },
     "details": "Project details",
     "serviceLabel": "Service",
     "locationLabel": "Location",
@@ -251,15 +223,6 @@ useHead(() => {
     "nav": {
       "home": "หน้าหลัก",
       "projects": "ผลงานทั้งหมด"
-    },
-    "services": {
-      "excavator": "รถขุด",
-      "truck": "รถบรรทุก",
-      "landClearing": "ถางที่",
-      "earthworks": "งานดิน",
-      "landLeveling": "ปรับระดับพื้นที่",
-      "drainage": "งานระบายน้ำ",
-      "sitePreparation": "เตรียมพื้นที่"
     },
     "details": "เกี่ยวกับโครงการ",
     "serviceLabel": "บริการ",

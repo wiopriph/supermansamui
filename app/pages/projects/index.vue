@@ -17,17 +17,7 @@ const { data: projects } = await useAsyncData(
 
 const projectItems = computed(() => projects.value || []);
 
-const serviceLabels = computed<Record<string, string>>(() => ({
-  'excavator': t('services.excavator'),
-  'truck': t('services.truck'),
-  'land-clearing': t('services.landClearing'),
-  'earthworks': t('services.earthworks'),
-  'land-leveling': t('services.landLeveling'),
-  'drainage': t('services.drainage'),
-  'site-preparation': t('services.sitePreparation'),
-}));
-
-const { labelFor: getServiceLabel } = useServiceLabels(serviceLabels);
+const { labelFor: getServiceLabel } = useServiceLabels();
 
 useHead(() => ({
   title: t('seo.title'),
@@ -57,16 +47,7 @@ useHead(() => ({
     "title": "Выполненные работы",
     "description": "Примеры объектов на Самуи: фото, задачи, услуги и краткое описание выполненных работ.",
     "empty": "Проекты пока не добавлены.",
-    "readMore": "Смотреть проект",
-    "services": {
-      "excavator": "Экскаватор",
-      "truck": "Грузовик",
-      "landClearing": "Расчистка участка",
-      "earthworks": "Земляные работы",
-      "landLeveling": "Выравнивание участка",
-      "drainage": "Дренаж",
-      "sitePreparation": "Подготовка участка"
-    }
+    "readMore": "Смотреть проект"
   },
   "en": {
     "seo": {
@@ -76,16 +57,7 @@ useHead(() => ({
     "title": "Completed work",
     "description": "Project examples from Koh Samui with photos, services, locations and short descriptions.",
     "empty": "No projects have been added yet.",
-    "readMore": "View project",
-    "services": {
-      "excavator": "Excavator",
-      "truck": "Truck",
-      "landClearing": "Land clearing",
-      "earthworks": "Earthworks",
-      "landLeveling": "Land leveling",
-      "drainage": "Drainage",
-      "sitePreparation": "Site preparation"
-    }
+    "readMore": "View project"
   },
   "th": {
     "seo": {
@@ -95,16 +67,7 @@ useHead(() => ({
     "title": "งานที่ทำเสร็จแล้ว",
     "description": "ตัวอย่างโครงการบนเกาะสมุย พร้อมรูปภาพ บริการ สถานที่ และคำอธิบายสั้น ๆ",
     "empty": "ยังไม่มีการเพิ่มผลงาน",
-    "readMore": "ดูโครงการ",
-    "services": {
-      "excavator": "รถขุด",
-      "truck": "รถบรรทุก",
-      "landClearing": "ถางที่",
-      "earthworks": "งานดิน",
-      "landLeveling": "ปรับระดับพื้นที่",
-      "drainage": "งานระบายน้ำ",
-      "sitePreparation": "เตรียมพื้นที่"
-    }
+    "readMore": "ดูโครงการ"
   }
 }
 </i18n>

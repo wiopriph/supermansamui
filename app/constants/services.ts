@@ -27,6 +27,36 @@ export const SERVICE_ICON: Record<ServiceKey, string> = {
   'site-preparation': 'i-lucide-hard-hat',
 };
 
+export const SERVICE_LABELS: Record<'en' | 'ru' | 'th', Record<ServiceKey, string>> = {
+  en: {
+    'excavator': 'Excavator',
+    'truck': 'Truck',
+    'land-clearing': 'Land clearing',
+    'earthworks': 'Earthworks',
+    'land-leveling': 'Land leveling',
+    'drainage': 'Drainage',
+    'site-preparation': 'Site preparation',
+  },
+  ru: {
+    'excavator': 'Экскаватор',
+    'truck': 'Грузовик',
+    'land-clearing': 'Расчистка участка',
+    'earthworks': 'Земляные работы',
+    'land-leveling': 'Выравнивание участка',
+    'drainage': 'Дренаж',
+    'site-preparation': 'Подготовка участка',
+  },
+  th: {
+    'excavator': 'รถขุด',
+    'truck': 'รถบรรทุก',
+    'land-clearing': 'ถางที่',
+    'earthworks': 'งานดิน',
+    'land-leveling': 'ปรับระดับพื้นที่',
+    'drainage': 'งานระบายน้ำ',
+    'site-preparation': 'เตรียมพื้นที่',
+  },
+};
+
 export const RELATED_SERVICES: Record<ServiceKey, ServiceKey[]> = {
   'excavator': ['earthworks', 'truck', 'site-preparation'],
   'truck': ['excavator', 'earthworks', 'site-preparation'],
