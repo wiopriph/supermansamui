@@ -19,6 +19,11 @@ type ServiceSeoOptions = {
   };
   serviceTypes: ComputedRef<string[]>;
   catalogItems: ComputedRef<CatalogItem[]>;
+  /** THB price range of the machinery offered on the page, if any */
+  priceRange?: {
+    low: number;
+    high: number;
+  };
 };
 
 /**
@@ -44,6 +49,14 @@ export function useServiceSeo(options: ServiceSeoOptions) {
           name: 'Koh Samui, Surat Thani, Thailand',
         },
         serviceType: options.serviceTypes.value,
+        ...(options.priceRange && {
+          offers: {
+            '@type': 'AggregateOffer',
+            priceCurrency: 'THB',
+            lowPrice: options.priceRange.low,
+            highPrice: options.priceRange.high,
+          },
+        }),
         hasOfferCatalog: {
           '@type': 'OfferCatalog',
           name: t(options.catalogNameKey ?? `${options.prefix}.tasks.title`),

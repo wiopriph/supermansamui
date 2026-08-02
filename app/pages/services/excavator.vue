@@ -155,6 +155,10 @@ useServiceSeo({
   },
   serviceTypes,
   catalogItems: tasksItems,
+  priceRange: {
+    low: Math.min(...getEquipmentByCategory('excavator').map(e => e.prices.hour ?? e.prices.shift)),
+    high: Math.max(...getEquipmentByCategory('excavator').map(e => e.prices.shift)),
+  },
 });
 </script>
 

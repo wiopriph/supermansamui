@@ -141,6 +141,10 @@ useServiceSeo({
   },
   serviceTypes,
   catalogItems: tasksItems,
+  priceRange: {
+    low: Math.min(...getEquipmentByCategory('truck').map(e => e.prices.trip ?? e.prices.shift)),
+    high: Math.max(...getEquipmentByCategory('truck').map(e => e.prices.shift)),
+  },
 });
 </script>
 
