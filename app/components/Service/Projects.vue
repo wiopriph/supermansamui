@@ -82,15 +82,12 @@ const latestProjects = computed(() => (projects.value || []).slice(0, props.limi
         class="group grid overflow-hidden rounded-xl bg-default ring ring-default transition hover:bg-elevated/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary sm:grid-cols-[180px_minmax(0,1fr)]"
       >
         <div class="aspect-video overflow-hidden bg-elevated sm:aspect-auto">
-          <NuxtImg
+          <img
             :src="project.cover"
             :alt="project.title"
-            width="480"
-            height="270"
-            fit="cover"
             loading="lazy"
             class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]"
-          />
+          >
         </div>
 
         <div class="flex min-w-0 flex-col p-5">

@@ -160,15 +160,11 @@ const onTouchend = (e: TouchEvent) => {
           style="width: 80px; height: 56px;"
           @click="go(index)"
         >
-          <NuxtImg
+          <img
             :src="item.src"
             :alt="item.alt || ''"
-            width="160"
-            height="112"
-            fit="cover"
-            loading="lazy"
             class="w-full h-full object-cover"
-          />
+          >
         </button>
       </div>
     </div>

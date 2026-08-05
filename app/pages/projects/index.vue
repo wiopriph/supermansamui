@@ -95,15 +95,12 @@ useHead(() => ({
         class="group flex h-full flex-col overflow-hidden rounded-lg bg-default ring ring-default transition hover:bg-elevated/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
       >
         <div class="aspect-video overflow-hidden bg-elevated">
-          <NuxtImg
+          <img
             :src="project.cover"
             :alt="project.title"
-            width="640"
-            height="360"
-            fit="cover"
             loading="lazy"
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
-          />
+          >
         </div>
 
         <div class="flex flex-1 flex-col gap-4 p-5">

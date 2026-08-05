@@ -48,16 +48,8 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
     '@nuxt/content',
     '@nuxtjs/i18n',
-    '@nuxt/image',
     '@nuxt/ui',
   ],
-
-  image: {
-    // Static hosting: variants are prerendered into _ipx/ during generate.
-    provider: 'ipx',
-    quality: 75,
-    format: ['webp'],
-  },
 
   runtimeConfig: {
     public: {
