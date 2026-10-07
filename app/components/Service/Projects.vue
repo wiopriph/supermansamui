@@ -113,7 +113,7 @@ const latestProjects = computed(() => (projects.value || []).slice(0, props.limi
       </NuxtLink>
     </div>
 
-    <div class="flex justify-center mt-6">
+    <div class="mt-6 flex">
       <UButton
         :to="localeRoute({ name: 'projects' })"
         variant="outline"

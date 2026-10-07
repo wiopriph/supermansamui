@@ -49,7 +49,7 @@ useHead(() => ({
       :items="accordionItems"
       :unmountOnHide="false"
       type="multiple"
-      class="mx-auto mt-8 max-w-3xl"
+      class="mt-8 max-w-3xl"
     />
   </section>
 </template>

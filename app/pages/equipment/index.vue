@@ -282,7 +282,7 @@ useHead(() => {
       </div>
     </div>
 
-    <p class="text-center text-sm text-muted/80 leading-relaxed">
+    <p class="max-w-3xl text-sm leading-relaxed text-muted/80">
       {{ t('seo.intro') }}
     </p>
 

@@ -199,13 +199,13 @@ const onSocialClick = (key: SocialKey, url: string) => {
     data-contact-block
     class="bleed bg-elevated/60 py-14"
   >
-    <UContainer class="text-center space-y-8">
+    <div class="space-y-8">
       <CoreSectionHeading
         :title="heading"
         :subtitle="subheading"
       />
 
-      <div class="flex flex-wrap justify-center gap-3">
+      <div class="flex flex-wrap gap-3">
         <UButton
           :to="whatsappLink"
           icon="i-simple-icons-whatsapp"
@@ -249,7 +249,7 @@ const onSocialClick = (key: SocialKey, url: string) => {
 
       <div
         v-if="socials.length"
-        class="flex flex-wrap justify-center gap-2 pt-2"
+        class="flex flex-wrap gap-2"
       >
         <UButton
           v-for="social in socials"
@@ -266,6 +266,6 @@ const onSocialClick = (key: SocialKey, url: string) => {
           {{ social.label }}
         </UButton>
       </div>
-    </UContainer>
+    </div>
   </section>
 </template>
