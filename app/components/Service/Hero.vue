@@ -103,10 +103,13 @@ const onClick = (item: Item) => {
     >
 
     <!-- Heavier at the bottom on phones, where only the title sits on the photo -->
-    <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/5 md:from-black/55 md:via-black/30 md:to-black/20" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/5 md:from-black/60 md:via-black/25 md:to-black/10" />
+
+    <!-- From md the text sits on the left, so darken that side regardless of the photo -->
+    <div class="absolute inset-0 hidden bg-gradient-to-r from-black/70 via-black/35 to-transparent md:block" />
 
     <div class="relative z-10 mx-auto w-full max-w-6xl py-6 sm:py-10">
-      <div class="max-w-2xl text-white">
+      <div class="max-w-2xl text-white [text-shadow:0_1px_3px_rgb(0_0_0/0.45)]">
         <div class="mb-3 h-1.5 w-16 bg-primary md:mb-4" />
 
         <p
