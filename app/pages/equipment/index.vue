@@ -288,5 +288,7 @@ useHead(() => {
     <p class="text-center text-sm text-muted/80 leading-relaxed">
       {{ t('seo.intro') }}
     </p>
+
+    <CoreFloatingContact page="equipment" />
   </div>
 </template>

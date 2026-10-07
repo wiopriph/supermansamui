@@ -690,6 +690,7 @@ useServiceSeo({
       compact
       page="services/drainage"
       location="content"
+      :name="t('drainage.seo.title')"
     />
 
     <ServiceProjects service="drainage" />
@@ -740,6 +741,12 @@ useServiceSeo({
     <CoreContacts
       page="services/drainage"
       location="bottom"
+      :name="t('drainage.seo.title')"
+    />
+
+    <CoreFloatingContact
+      page="services/drainage"
+      :name="t('drainage.seo.title')"
     />
   </UPage>
 </template>

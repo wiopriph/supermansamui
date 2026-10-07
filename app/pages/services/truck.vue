@@ -613,6 +613,7 @@ useServiceSeo({
       compact
       page="services/truck"
       location="content"
+      :name="t('trucks.seo.title')"
     />
 
     <ServiceEquipment
@@ -651,6 +652,12 @@ useServiceSeo({
     <CoreContacts
       page="services/truck"
       location="bottom"
+      :name="t('trucks.seo.title')"
+    />
+
+    <CoreFloatingContact
+      page="services/truck"
+      :name="t('trucks.seo.title')"
     />
   </UPage>
 </template>

@@ -678,6 +678,7 @@ useServiceSeo({
       compact
       page="services/excavator"
       location="content"
+      :name="t('excavator.seo.title')"
     />
 
     <ServiceEquipment
@@ -720,6 +721,12 @@ useServiceSeo({
     <CoreContacts
       page="services/excavator"
       location="bottom"
+      :name="t('excavator.seo.title')"
+    />
+
+    <CoreFloatingContact
+      page="services/excavator"
+      :name="t('excavator.seo.title')"
     />
   </UPage>
 </template>

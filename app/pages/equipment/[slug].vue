@@ -115,12 +115,9 @@ const equipmentPath = computed(() =>
 );
 const equipmentListPath = computed(() => localePath({ name: 'equipment' }));
 
-if (equipment.value) {
-  useContactContext().set({
-    name: equipment.value.name,
-    message: t('contactMessage', { name: equipment.value.name, type: localeData.value.type }),
-  });
-}
+const contactMessage = computed(() => (equipment.value ?
+  t('contactMessage', { name: equipment.value.name, type: localeData.value.type }) :
+  ''));
 
 const jsonLd = computed(() => {
   if (!equipment.value) return {};
@@ -497,7 +494,7 @@ useHead(() => {
             :page="equipmentPath"
             location="equipment_sidebar"
             :name="equipment.name"
-            :message="t('contactMessage', { name: equipment.name, type: localeData.type })"
+            :message="contactMessage"
             :title="t('contactTitle')"
             :description="t('contactDescription')"
           >
@@ -531,7 +528,15 @@ useHead(() => {
       location="equipment_bottom"
       :title="t('contactTitle')"
       :description="t('contactDescription')"
+      :name="equipment.name"
+      :message="contactMessage"
       class="mt-6"
+    />
+
+    <CoreFloatingContact
+      :page="equipmentPath"
+      :name="equipment.name"
+      :message="contactMessage"
     />
   </article>
 </template>

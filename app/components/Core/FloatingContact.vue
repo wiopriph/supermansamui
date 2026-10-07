@@ -2,22 +2,27 @@
 import { CONTACT_PHONE } from '~/constants/contacts';
 
 
-const route = useRoute();
+const props = withDefaults(defineProps<{
+  /** Page path for analytics, e.g. 'services/excavator' */
+  page: string;
+  /** Subject of the enquiry: service, machine or project name */
+  name?: string;
+  /** Full pre-filled WhatsApp text; built from `name` when omitted */
+  message?: string;
+}>(), {
+  name: '',
+  message: '',
+});
+
 const { t, locale } = useI18n();
 const { trackPhoneClick } = useAnalyticsEvent();
-const { current: context } = useContactContext();
 
 const phoneLink = `tel:${CONTACT_PHONE}`;
 
-const pagePath = computed(() => route.path.replace(/^\/(ru|th)(?=\/|$)/, '') || '/');
-
-// Only on pages with a concrete subject to discuss
-const eligible = computed(() => /^\/(services|equipment|projects)(\/|$)/.test(pagePath.value));
-
 const message = computed(() => {
-  if (context.value?.message) return context.value.message;
+  if (props.message) return props.message;
 
-  if (context.value?.name) return t('messageAbout', { topic: context.value.name });
+  if (props.name) return t('messageAbout', { topic: props.name });
 
   return t('message');
 });
@@ -25,7 +30,7 @@ const message = computed(() => {
 const scrolledPastHero = ref(false);
 const contactsInView = ref(false);
 
-const visible = computed(() => eligible.value && scrolledPastHero.value && !contactsInView.value);
+const visible = computed(() => scrolledPastHero.value && !contactsInView.value);
 
 // Contact blocks and the footer: the bar hides while any of them is on screen
 let targets: Element[] = [];
@@ -56,15 +61,9 @@ onBeforeUnmount(() => {
   window.removeEventListener('resize', update);
 });
 
-watch(() => route.path, async () => {
-  await nextTick();
-  collectTargets();
-  update();
-});
-
 const onPhoneClick = () => {
   trackPhoneClick({
-    page: pagePath.value,
+    page: props.page,
     locale: locale.value,
     location: 'floating',
     phone: CONTACT_PHONE,
@@ -120,9 +119,9 @@ const onPhoneClick = () => {
         </UButton>
 
         <CoreContactModal
-          :page="pagePath"
+          :page="props.page"
           location="floating"
-          :name="context?.name"
+          :name="props.name || undefined"
           :message="message"
         >
           <UButton

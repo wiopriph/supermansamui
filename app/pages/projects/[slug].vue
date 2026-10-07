@@ -75,12 +75,9 @@ const projectPath = computed(() =>
 const projectsListPath = computed(() => localePath({ name: 'projects' }));
 const canonicalUrl = computed(() => absoluteUrl(projectPath.value));
 
-if (project.value) {
-  useContactContext().set({
-    name: project.value.title,
-    message: t('contactMessage', { title: project.value.title, location: project.value.location }),
-  });
-}
+const contactMessage = computed(() => (project.value ?
+  t('contactMessage', { title: project.value.title, location: project.value.location }) :
+  ''));
 
 const coverUrl = computed(() => absoluteUrl(project.value?.cover ?? ''));
 
@@ -387,7 +384,7 @@ useHead(() => {
             :page="projectPath"
             location="project_sidebar"
             :name="project.title"
-            :message="t('contactMessage', { title: project.title, location: project.location })"
+            :message="contactMessage"
             :title="t('contacts')"
             :description="t('contactsDescription')"
           >
@@ -564,7 +561,15 @@ useHead(() => {
       location="project_bottom"
       :title="t('contacts')"
       :description="t('contactsDescription')"
+      :name="project.title"
+      :message="contactMessage"
       class="mt-6"
+    />
+
+    <CoreFloatingContact
+      :page="projectPath"
+      :name="project.title"
+      :message="contactMessage"
     />
   </article>
 </template>

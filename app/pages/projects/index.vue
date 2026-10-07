@@ -149,5 +149,7 @@ useHead(() => ({
       variant="soft"
       :title="t('empty')"
     />
+
+    <CoreFloatingContact page="projects" />
   </div>
 </template>

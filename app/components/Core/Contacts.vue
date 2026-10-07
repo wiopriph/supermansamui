@@ -18,23 +18,28 @@ const props = withDefaults(defineProps<{
   compact?: boolean;
   title?: string;
   description?: string;
+  /** Subject of the enquiry: service, machine or project name */
+  name?: string;
+  /** Full pre-filled WhatsApp text; built from `name` when omitted */
+  message?: string;
 }>(), {
   compact: false,
   title: '',
   description: '',
+  name: '',
+  message: '',
 });
 
 const { t, locale } = useI18n();
 const { trackPhoneClick, trackSocialClick } = useAnalyticsEvent();
-const { current: context } = useContactContext();
 
 const heading = computed(() => props.title || t(props.compact ? 'compact.title' : 'full.title'));
 const subheading = computed(() => props.description || t(props.compact ? 'compact.description' : 'full.description'));
 
 const message = computed(() => {
-  if (context.value?.message) return context.value.message;
+  if (props.message) return props.message;
 
-  if (context.value?.name) return t('messageAbout', { topic: context.value.name });
+  if (props.name) return t('messageAbout', { topic: props.name });
 
   return t('message');
 });

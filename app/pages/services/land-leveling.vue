@@ -691,6 +691,7 @@ useServiceSeo({
       compact
       page="services/land-leveling"
       location="content"
+      :name="t('landLeveling.seo.title')"
     />
 
     <ServiceProjects service="land-leveling" />
@@ -741,6 +742,12 @@ useServiceSeo({
     <CoreContacts
       page="services/land-leveling"
       location="bottom"
+      :name="t('landLeveling.seo.title')"
+    />
+
+    <CoreFloatingContact
+      page="services/land-leveling"
+      :name="t('landLeveling.seo.title')"
     />
   </UPage>
 </template>

@@ -8,9 +8,9 @@ export function useServiceLabels(labels?: ComputedRef<Record<string, string>>) {
   const defaultLabels = computed(() => SERVICE_LABELS[locale.value as 'en' | 'ru' | 'th'] ?? SERVICE_LABELS.en);
 
   function labelFor(service: string): string {
-    return labels?.value[service]
-      ?? defaultLabels.value[service as ServiceKey]
-      ?? service;
+    return labels?.value[service] ??
+      defaultLabels.value[service as ServiceKey] ??
+      service;
   }
 
   function routeFor(service: string): string | null {

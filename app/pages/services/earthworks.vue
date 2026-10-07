@@ -782,6 +782,7 @@ useServiceSeo({
       compact
       page="services/earthworks"
       location="content"
+      :name="t('earthworks.seo.title')"
     />
 
     <ServiceBeforeAfter
@@ -838,6 +839,12 @@ useServiceSeo({
     <CoreContacts
       page="services/earthworks"
       location="bottom"
+      :name="t('earthworks.seo.title')"
+    />
+
+    <CoreFloatingContact
+      page="services/earthworks"
+      :name="t('earthworks.seo.title')"
     />
   </UPage>
 </template>

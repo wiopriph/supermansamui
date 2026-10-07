@@ -692,6 +692,7 @@ useServiceSeo({
       compact
       page="services/site-preparation"
       location="content"
+      :name="t('sitePreparation.seo.title')"
     />
 
     <ServiceProjects service="site-preparation" />
@@ -742,6 +743,12 @@ useServiceSeo({
     <CoreContacts
       page="services/site-preparation"
       location="bottom"
+      :name="t('sitePreparation.seo.title')"
+    />
+
+    <CoreFloatingContact
+      page="services/site-preparation"
+      :name="t('sitePreparation.seo.title')"
     />
   </UPage>
 </template>
