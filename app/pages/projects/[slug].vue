@@ -306,186 +306,193 @@ useHead(() => {
       </ol>
     </nav>
 
-    <div class="mx-auto mt-10 grid gap-8 sm:mt-14 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start lg:gap-10">
-      <div class="min-w-0">
-        <section
-          v-if="project?.beforeAfter?.length"
-          class="mb-10 sm:mb-14"
-        >
-          <h2
-            class="title-bar mb-5 text-2xl font-semibold text-highlighted"
-            v-text="t('beforeAfterTitle')"
-          />
-
-          <!-- A single pair takes the full column width, several pairs go side by side -->
-          <div
-            class="grid gap-5"
-            :class="project.beforeAfter.length > 1 && 'sm:grid-cols-2'"
+    <!--
+      Phones: one column, ordered text -> gallery -> sidebar via `order`.
+      lg: the inner wrapper becomes a two-column grid (text + sticky sidebar), the gallery follows it full width.
+      The sidebar must not share a parent with the gallery, otherwise `sticky` would ride over it.
+    -->
+    <div class="mx-auto mt-10 grid gap-8 sm:mt-14 lg:block">
+      <div class="contents lg:grid lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start lg:gap-10">
+        <div class="order-1 min-w-0 lg:order-none">
+          <section
+            v-if="project?.beforeAfter?.length"
+            class="mb-10 sm:mb-14"
           >
-            <BeforeAfterSlider
-              v-for="(pair, i) in project.beforeAfter"
-              :key="i"
-              :beforeImage="pair.beforeImage"
-              :beforeAlt="pair.beforeAlt"
-              :afterImage="pair.afterImage"
-              :afterAlt="pair.afterAlt"
+            <h2
+              class="title-bar mb-5 text-2xl font-semibold text-highlighted"
+              v-text="t('beforeAfterTitle')"
             />
-          </div>
-        </section>
 
-        <ContentRenderer
-          :value="project"
-          class="prose prose-lg prose-neutral max-w-none dark:prose-invert prose-headings:text-highlighted prose-p:leading-8 prose-p:text-muted sm:prose-p:leading-9"
-        />
+            <!-- A single pair takes the full column width, several pairs go side by side -->
+            <div
+              class="grid gap-5"
+              :class="project.beforeAfter.length > 1 && 'sm:grid-cols-2'"
+            >
+              <BeforeAfterSlider
+                v-for="(pair, i) in project.beforeAfter"
+                :key="i"
+                :beforeImage="pair.beforeImage"
+                :beforeAlt="pair.beforeAlt"
+                :afterImage="pair.afterImage"
+                :afterAlt="pair.afterAlt"
+              />
+            </div>
+          </section>
+
+          <ContentRenderer
+            :value="project"
+            class="prose prose-lg prose-neutral max-w-none dark:prose-invert prose-headings:text-highlighted prose-p:leading-8 prose-p:text-muted sm:prose-p:leading-9"
+          />
+        </div>
+
+        <aside class="order-3 space-y-5 lg:order-none lg:sticky lg:top-24 lg:self-start">
+          <div class="rounded-md bg-elevated/60 p-5 ring ring-default">
+            <h2 class="title-bar text-xl font-semibold text-highlighted">
+              {{ t('details') }}
+            </h2>
+
+            <dl class="mt-5 divide-y divide-default">
+              <div class="pb-4">
+                <dt class="text-xs font-semibold uppercase tracking-wide text-muted">
+                  {{ t('serviceLabel') }}
+                </dt>
+
+                <dd class="mt-1.5 font-medium">
+                  <NuxtLink
+                    v-if="servicePath"
+                    :to="servicePath"
+                    class="text-primary transition hover:underline"
+                  >
+                    {{ serviceLabel }}
+                  </NuxtLink>
+
+                  <span
+                    v-else
+                    class="text-highlighted"
+                  >{{ serviceLabel }}</span>
+                </dd>
+              </div>
+
+              <div class="pt-4">
+                <dt class="text-xs font-semibold uppercase tracking-wide text-muted">
+                  {{ t('locationLabel') }}
+                </dt>
+
+                <dd class="mt-1.5 font-medium text-highlighted">
+                  {{ project.location }}
+                </dd>
+              </div>
+            </dl>
+
+            <CoreContactModal
+              :page="projectPath"
+              location="project_sidebar"
+              :name="project.title"
+              :message="contactMessage"
+              :title="t('contacts')"
+              :description="t('contactsDescription')"
+            >
+              <UButton
+                icon="i-lucide-message-circle"
+                size="lg"
+                class="mt-6 w-full justify-center"
+              >
+                {{ t('contactButton') }}
+              </UButton>
+            </CoreContactModal>
+          </div>
+
+          <div
+            v-if="equipmentUsed.length"
+            class="rounded-2xl bg-elevated/50 p-5 ring ring-default"
+          >
+            <h2 class="text-sm font-semibold uppercase tracking-wide text-muted">
+              {{ t('equipmentUsed') }}
+            </h2>
+
+            <ul class="mt-3 space-y-2">
+              <li
+                v-for="machine in equipmentUsed"
+                :key="machine!.id"
+              >
+                <NuxtLink
+                  :to="localePath({ name: 'equipment-slug', params: { slug: machine!.id } })"
+                  class="group flex items-center gap-3 rounded-lg p-1.5 text-sm transition hover:bg-elevated"
+                >
+                  <img
+                    :src="machine!.image"
+                    :alt="machine!.name"
+                    class="size-10 shrink-0 rounded-lg object-cover"
+                    loading="lazy"
+                  >
+
+                  <div class="min-w-0">
+                    <p class="truncate font-medium text-highlighted">
+                      {{ machine!.name }}
+                    </p>
+
+                    <p class="text-xs text-muted">
+                      {{ machine!.i18n[$i18n.locale as 'en' | 'ru' | 'th']?.type ?? machine!.i18n.en.type }}
+                    </p>
+                  </div>
+
+                  <UIcon
+                    name="i-lucide-arrow-right"
+                    class="ml-auto size-3.5 shrink-0 text-muted opacity-0 transition group-hover:opacity-100"
+                  />
+                </NuxtLink>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            v-if="relatedServices.length"
+            class="rounded-2xl bg-elevated/50 p-5 ring ring-default"
+          >
+            <h2 class="text-sm font-semibold uppercase tracking-wide text-muted">
+              {{ t('relatedServices') }}
+            </h2>
+
+            <ul class="mt-3 space-y-1">
+              <li
+                v-for="svc in relatedServices"
+                :key="svc.key"
+              >
+                <NuxtLink
+                  :to="svc.to"
+                  class="group flex items-center gap-2.5 rounded-lg px-2 py-1.5 text-sm transition hover:bg-elevated hover:text-highlighted"
+                >
+                  <UIcon
+                    :name="svc.icon"
+                    class="size-4 shrink-0 text-primary"
+                  />
+
+                  <span>{{ svc.label }}</span>
+
+                  <UIcon
+                    name="i-lucide-arrow-right"
+                    class="ml-auto size-3.5 text-muted opacity-0 transition group-hover:opacity-100"
+                  />
+                </NuxtLink>
+              </li>
+            </ul>
+          </div>
+        </aside>
       </div>
 
-      <aside class="space-y-5 lg:sticky lg:top-24 lg:self-start">
-        <div class="rounded-2xl bg-elevated/50 p-5 ring ring-default">
-          <h2 class="text-lg font-semibold text-highlighted">
-            {{ t('details') }}
-          </h2>
-
-          <dl class="mt-5 divide-y divide-default">
-            <div class="pb-4">
-              <dt class="text-xs font-semibold uppercase tracking-wide text-muted">
-                {{ t('serviceLabel') }}
-              </dt>
-
-              <dd class="mt-1.5 font-medium">
-                <NuxtLink
-                  v-if="servicePath"
-                  :to="servicePath"
-                  class="text-primary transition hover:underline"
-                >
-                  {{ serviceLabel }}
-                </NuxtLink>
-
-                <span
-                  v-else
-                  class="text-highlighted"
-                >{{ serviceLabel }}</span>
-              </dd>
-            </div>
-
-            <div class="pt-4">
-              <dt class="text-xs font-semibold uppercase tracking-wide text-muted">
-                {{ t('locationLabel') }}
-              </dt>
-
-              <dd class="mt-1.5 font-medium text-highlighted">
-                {{ project.location }}
-              </dd>
-            </div>
-          </dl>
-
-          <CoreContactModal
-            :page="projectPath"
-            location="project_sidebar"
-            :name="project.title"
-            :message="contactMessage"
-            :title="t('contacts')"
-            :description="t('contactsDescription')"
-          >
-            <UButton
-              icon="i-lucide-message-circle"
-              size="lg"
-              class="mt-6 w-full justify-center"
-            >
-              {{ t('contactButton') }}
-            </UButton>
-          </CoreContactModal>
-        </div>
-
-        <div
-          v-if="equipmentUsed.length"
-          class="rounded-2xl bg-elevated/50 p-5 ring ring-default"
-        >
-          <h2 class="text-sm font-semibold uppercase tracking-wide text-muted">
-            {{ t('equipmentUsed') }}
-          </h2>
-
-          <ul class="mt-3 space-y-2">
-            <li
-              v-for="machine in equipmentUsed"
-              :key="machine!.id"
-            >
-              <NuxtLink
-                :to="localePath({ name: 'equipment-slug', params: { slug: machine!.id } })"
-                class="group flex items-center gap-3 rounded-lg p-1.5 text-sm transition hover:bg-elevated"
-              >
-                <img
-                  :src="machine!.image"
-                  :alt="machine!.name"
-                  class="size-10 shrink-0 rounded-lg object-cover"
-                  loading="lazy"
-                >
-
-                <div class="min-w-0">
-                  <p class="truncate font-medium text-highlighted">
-                    {{ machine!.name }}
-                  </p>
-
-                  <p class="text-xs text-muted">
-                    {{ machine!.i18n[$i18n.locale as 'en' | 'ru' | 'th']?.type ?? machine!.i18n.en.type }}
-                  </p>
-                </div>
-
-                <UIcon
-                  name="i-lucide-arrow-right"
-                  class="ml-auto size-3.5 shrink-0 text-muted opacity-0 transition group-hover:opacity-100"
-                />
-              </NuxtLink>
-            </li>
-          </ul>
-        </div>
-
-        <div
-          v-if="relatedServices.length"
-          class="rounded-2xl bg-elevated/50 p-5 ring ring-default"
-        >
-          <h2 class="text-sm font-semibold uppercase tracking-wide text-muted">
-            {{ t('relatedServices') }}
-          </h2>
-
-          <ul class="mt-3 space-y-1">
-            <li
-              v-for="svc in relatedServices"
-              :key="svc.key"
-            >
-              <NuxtLink
-                :to="svc.to"
-                class="group flex items-center gap-2.5 rounded-lg px-2 py-1.5 text-sm transition hover:bg-elevated hover:text-highlighted"
-              >
-                <UIcon
-                  :name="svc.icon"
-                  class="size-4 shrink-0 text-primary"
-                />
-
-                <span>{{ svc.label }}</span>
-
-                <UIcon
-                  name="i-lucide-arrow-right"
-                  class="ml-auto size-3.5 text-muted opacity-0 transition group-hover:opacity-100"
-                />
-              </NuxtLink>
-            </li>
-          </ul>
-        </div>
-      </aside>
-    </div>
-
-    <div class="mx-auto mt-6 sm:mt-10">
-      <ServiceGallery
-        :title="t('gallery')"
-        :items="galleryItems"
-      />
+      <div class="order-2 min-w-0 lg:order-none lg:mt-10">
+        <ServiceGallery
+          :title="t('gallery')"
+          :items="galleryItems"
+        />
+      </div>
     </div>
 
     <section
       v-if="relatedProjects?.length"
       class="mx-auto mt-14 sm:mt-20"
     >
-      <h2 class="text-2xl font-semibold text-highlighted sm:text-3xl">
+      <h2 class="title-bar text-2xl font-semibold text-highlighted sm:text-3xl">
         {{ t('relatedProjects') }}
       </h2>
 
