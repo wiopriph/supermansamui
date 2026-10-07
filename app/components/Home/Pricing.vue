@@ -23,7 +23,7 @@ const localeRoute = useLocaleRoute();
 </script>
 
 <template>
-  <section class="bleed bg-sand-50 py-14 space-y-8">
+  <section class="bleed bg-elevated/60 py-14 space-y-8">
     <CoreSectionHeading
       :title="title"
       :subtitle="description"

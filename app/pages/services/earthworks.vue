@@ -798,7 +798,7 @@ useServiceSeo({
 
     <ServiceIncluded
       :title="t('earthworks.included.title')"
-      tone="sand"
+      tone="muted"
       :items="includedItems"
     />
 

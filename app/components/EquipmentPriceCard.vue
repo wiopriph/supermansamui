@@ -85,7 +85,7 @@ const orderMessage = computed(() => t('message', {
 
       <div
         v-if="prices && prices.length"
-        class="mt-auto rounded-md bg-sand-50 ring ring-default divide-y divide-default"
+        class="mt-auto rounded-md bg-elevated/60 ring ring-default divide-y divide-default"
       >
         <div
           v-for="(price, index) in prices"

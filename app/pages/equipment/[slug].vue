@@ -414,7 +414,7 @@ useHead(() => {
                   :key="row.label"
                   class="grid grid-cols-2"
                 >
-                  <td class="bg-sand-50 px-4 py-3 font-medium text-muted">
+                  <td class="bg-elevated/60 px-4 py-3 font-medium text-muted">
                     {{ row.label }}
                   </td>
 
@@ -438,7 +438,7 @@ useHead(() => {
               v-for="project in linkedProjects"
               :key="project.id"
               :to="localePath({ name: 'projects-slug', params: { slug: project.slug } })"
-              class="group flex items-center gap-4 overflow-hidden rounded-md bg-default p-4 ring ring-default transition hover:bg-sand-50"
+              class="group flex items-center gap-4 overflow-hidden rounded-md bg-default p-4 ring ring-default transition hover:bg-elevated"
             >
               <img
                 :src="project.cover"
@@ -469,7 +469,7 @@ useHead(() => {
       <!-- Sidebar -->
       <aside class="space-y-5 lg:sticky lg:top-24 lg:self-start">
         <!-- Prices -->
-        <div class="rounded-md bg-sand-50 p-5 ring ring-default">
+        <div class="rounded-md bg-elevated/60 p-5 ring ring-default">
           <h2 class="title-bar text-xl font-semibold text-highlighted">
             {{ t('pricesTitle') }}
           </h2>

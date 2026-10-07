@@ -8,8 +8,8 @@ type FeatureItem = {
 const props = withDefaults(defineProps<{
   title: string
   items: FeatureItem[]
-  /** 'sand' gives the section a warm full-width background */
-  tone?: 'default' | 'sand'
+  /** 'muted' gives the section a light grey full-width background */
+  tone?: 'default' | 'muted'
 }>(), {
   tone: 'default',
 });
@@ -19,7 +19,7 @@ const props = withDefaults(defineProps<{
   <section
     :class="[
       'space-y-10 py-14',
-      props.tone === 'sand' && 'bleed bg-sand-50',
+      props.tone === 'muted' && 'bleed bg-elevated/60',
     ]"
   >
     <CoreSectionHeading :title="props.title" />

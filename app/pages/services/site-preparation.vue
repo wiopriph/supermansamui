@@ -685,7 +685,7 @@ useServiceSeo({
 
     <ServiceIncluded
       :title="t('sitePreparation.included.title')"
-      tone="sand"
+      tone="muted"
       :items="includedItems"
     />
 

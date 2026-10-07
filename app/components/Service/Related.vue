@@ -30,7 +30,7 @@ const { t } = useI18n();
 </i18n>
 
 <template>
-  <section class="bleed bg-sand-50 py-14 space-y-10">
+  <section class="bleed bg-elevated/60 py-14 space-y-10">
     <CoreSectionHeading
       :title="title"
       :subtitle="subtitle"

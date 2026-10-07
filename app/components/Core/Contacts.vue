@@ -197,7 +197,7 @@ const onSocialClick = (key: SocialKey, url: string) => {
   <section
     v-else
     data-contact-block
-    class="bleed bg-sand-100 py-14"
+    class="bleed bg-elevated/60 py-14"
   >
     <UContainer class="text-center space-y-8">
       <CoreSectionHeading

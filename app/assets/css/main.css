@@ -8,12 +8,6 @@
 
 @theme {
   --font-display: "Oswald", "Arial Narrow", "Helvetica Neue", sans-serif;
-
-  /* Warm sand: soil and concrete tones for alternating section backgrounds */
-  --color-sand-50: #faf8f3;
-  --color-sand-100: #f3eee4;
-  --color-sand-200: #e6dcc9;
-  --color-sand-300: #d3c3a6;
 }
 
 :root {

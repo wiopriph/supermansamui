@@ -685,7 +685,7 @@ useServiceSeo({
 
     <ServiceIncluded
       :title="t('landLeveling.included.title')"
-      tone="sand"
+      tone="muted"
       :items="includedItems"
     />
 
