@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { CONTACT_PHONE } from '~/constants/contacts';
-
-
 type PriceItem = {
   label: string
   value: string | number
@@ -15,28 +12,44 @@ const props = defineProps<{
   prices?: PriceItem[]
   buttonText?: string
   to?: string
+  /** Page path for analytics, e.g. 'services/excavator' */
+  page?: string
 }>();
 
 const formatValue = (value: string | number) => typeof value === 'number' ? value.toLocaleString('en-US') : value;
 
 const { t } = useI18n();
 
-const emit = defineEmits(['click']);
+const orderMessage = computed(() => {
+  const prices = (props.prices ?? []).map(price => `${price.label}: ${formatValue(price.value)}`).join(', ');
+
+  return t('message', {
+    title: props.title,
+    subtitle: props.subtitle ?? '',
+    prices,
+  });
+});
 </script>
 
 <i18n lang="json">
 {
   "ru": {
     "order": "Заказать",
-    "details": "Подробнее"
+    "details": "Подробнее",
+    "modalTitle": "Заказать {title}",
+    "message": "Здравствуйте! Интересует {title} ({subtitle}). {prices}. Подскажите доступность."
   },
   "en": {
     "order": "Order now",
-    "details": "View details"
+    "details": "View details",
+    "modalTitle": "Hire {title}",
+    "message": "Hi! I'm interested in the {title} ({subtitle}). {prices}. Is it available?"
   },
   "th": {
     "order": "สั่งงาน",
-    "details": "รายละเอียด"
+    "details": "รายละเอียด",
+    "modalTitle": "สั่งงาน {title}",
+    "message": "สวัสดีครับ/ค่ะ สนใจ {title} ({subtitle}) {prices} ขอทราบคิวว่างครับ/ค่ะ"
   }
 }
 </i18n>
@@ -108,15 +121,21 @@ const emit = defineEmits(['click']);
           {{ t('details') }}
         </UButton>
 
-        <UButton
-          :to="`tel:${CONTACT_PHONE}`"
-          color="primary"
-          size="md"
-          class="flex-1 justify-center"
-          @click="emit('click')"
+        <CoreContactModal
+          :page="props.page ?? ''"
+          location="price_card"
+          :name="props.title"
+          :message="orderMessage"
+          :title="t('modalTitle', { title: props.title })"
         >
-          {{ buttonText || t('order') }}
-        </UButton>
+          <UButton
+            color="primary"
+            size="md"
+            class="flex-1 justify-center"
+          >
+            {{ buttonText || t('order') }}
+          </UButton>
+        </CoreContactModal>
       </div>
     </div>
   </div>

@@ -20,10 +20,6 @@ const props = defineProps<{
   note?: string
   items: EquipmentItem[]
 }>();
-
-
-const { locale } = useI18n();
-const { trackOrderClick } = useAnalyticsEvent();
 </script>
 
 <template>
@@ -52,11 +48,7 @@ const { trackOrderClick } = useAnalyticsEvent();
         :prices="item.prices"
         :buttonText="item.buttonText"
         :to="item.to"
-        @click="trackOrderClick({
-          page: props.page,
-          locale: locale,
-          name: item.title
-        })"
+        :page="props.page"
       />
     </div>
   </section>

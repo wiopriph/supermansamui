@@ -198,6 +198,7 @@ useHead(() => {
     "contacts": "Обсудить похожий проект",
     "contactsDescription": "Расскажите о вашем участке - подберём технику и порядок работ.",
     "contactButton": "Обсудить проект",
+    "contactMessage": "Здравствуйте! Увидел у вас проект «{title}» ({location}). У меня похожая задача, хочу обсудить.",
     "coverAlt": "Выполненный проект: {title}, {location}",
     "equipmentUsed": "Использованная техника"
   },
@@ -216,6 +217,7 @@ useHead(() => {
     "contacts": "Discuss a similar project",
     "contactsDescription": "Tell us about your site and we will suggest the right machinery and work plan.",
     "contactButton": "Discuss your project",
+    "contactMessage": "Hi! I saw your project \"{title}\" ({location}). I have a similar job and would like to discuss it.",
     "coverAlt": "Completed project: {title}, {location}",
     "equipmentUsed": "Equipment used"
   },
@@ -234,6 +236,7 @@ useHead(() => {
     "contacts": "คุยเรื่องโครงการที่คล้ายกัน",
     "contactsDescription": "บอกเราเกี่ยวกับพื้นที่ของคุณ แล้วเราจะแนะนำเครื่องจักรและลำดับงานที่เหมาะสม",
     "contactButton": "ปรึกษาโครงการ",
+    "contactMessage": "สวัสดีครับ/ค่ะ เห็นผลงาน \"{title}\" ({location}) ของคุณ ผม/ดิฉันมีงานคล้ายกัน อยากปรึกษาครับ/ค่ะ",
     "coverAlt": "โครงการที่เสร็จแล้ว: {title}, {location}",
     "equipmentUsed": "เครื่องจักรที่ใช้"
   }
@@ -372,14 +375,22 @@ useHead(() => {
             </div>
           </dl>
 
-          <UButton
-            to="#project-contact"
-            icon="i-lucide-message-circle"
-            size="lg"
-            class="mt-6 w-full justify-center"
+          <CoreContactModal
+            :page="projectPath"
+            location="project_sidebar"
+            :name="project.title"
+            :message="t('contactMessage', { title: project.title, location: project.location })"
+            :title="t('contacts')"
+            :description="t('contactsDescription')"
           >
-            {{ t('contactButton') }}
-          </UButton>
+            <UButton
+              icon="i-lucide-message-circle"
+              size="lg"
+              class="mt-6 w-full justify-center"
+            >
+              {{ t('contactButton') }}
+            </UButton>
+          </CoreContactModal>
         </div>
 
         <div

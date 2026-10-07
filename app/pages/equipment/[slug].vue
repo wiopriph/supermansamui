@@ -207,6 +207,7 @@ useHead(() => {
     "contactTitle": "Арендовать технику",
     "contactDescription": "Свяжитесь с нами, чтобы уточнить доступность и рассчитать стоимость.",
     "contactButton": "Связаться",
+    "contactMessage": "Здравствуйте! Интересует аренда {name} ({type}). Подскажите доступность и стоимость.",
     "viewProject": "Смотреть"
   },
   "en": {
@@ -245,6 +246,7 @@ useHead(() => {
     "contactTitle": "Hire this machine",
     "contactDescription": "Contact us to check availability and get a quote.",
     "contactButton": "Get in touch",
+    "contactMessage": "Hi! I'm interested in hiring the {name} ({type}). Could you tell me about availability and price?",
     "viewProject": "View"
   },
   "th": {
@@ -283,6 +285,7 @@ useHead(() => {
     "contactTitle": "เช่าเครื่องจักรนี้",
     "contactDescription": "ติดต่อเราเพื่อตรวจสอบความพร้อมและรับใบเสนอราคา",
     "contactButton": "ติดต่อ",
+    "contactMessage": "สวัสดีครับ/ค่ะ สนใจเช่า {name} ({type}) ขอทราบคิวว่างและราคาครับ/ค่ะ",
     "viewProject": "ดู"
   }
 }
@@ -483,14 +486,22 @@ useHead(() => {
             </div>
           </dl>
 
-          <UButton
-            to="#equipment-contact"
-            icon="i-lucide-phone"
-            size="lg"
-            class="mt-6 w-full justify-center"
+          <CoreContactModal
+            :page="equipmentPath"
+            location="equipment_sidebar"
+            :name="equipment.name"
+            :message="t('contactMessage', { name: equipment.name, type: localeData.type })"
+            :title="t('contactTitle')"
+            :description="t('contactDescription')"
           >
-            {{ t('contactButton') }}
-          </UButton>
+            <UButton
+              icon="i-lucide-message-circle"
+              size="lg"
+              class="mt-6 w-full justify-center"
+            >
+              {{ t('contactButton') }}
+            </UButton>
+          </CoreContactModal>
         </div>
       </aside>
     </div>
