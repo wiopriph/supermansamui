@@ -3,7 +3,7 @@ title: "Септик, удаление деревьев и бетонирова�
 date: 2026-05-12
 slug: "maenam-septic-tank-and-driveway"
 service: "drainage"
-location: "Маенам Сой 3, Самуи"
+location: "Маенам, Самуи"
 cover: "/images/projects/maenam-septic-tank-and-driveway/hero.webp"
 gallery:
   - src: "/images/projects/maenam-septic-tank-and-driveway/removing-tree-from-garden.webp"

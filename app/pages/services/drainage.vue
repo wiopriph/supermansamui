@@ -172,130 +172,130 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Дренаж участка на Самуи - отвод воды и траншеи",
-        "description": "Дренаж участка на Самуи: отвод воды, дренажные канавы, траншеи, трубы, уклоны и подготовка влажных участков под строительство.",
-        "keywords": "дренаж самуи, дренаж участка самуи, отвод воды самуи, дренажные работы самуи, траншеи самуи, трубы дренаж самуи, земляные работы самуи"
+        "title": "Дренаж участка на Самуи — канавы и трубы",
+        "description": "Дренаж и отвод дождевой воды на Самуи: канавы, траншеи, укладка труб и коррекция уклонов. Оценим участок и согласуем объём, цену и условия до начала работ.",
+        "keywords": "дренаж участка самуи, отвод воды самуи, дренажные канавы самуи, дренажные траншеи самуи, укладка водоотводных труб самуи"
       },
       "hero": {
-        "title": "Дренаж участка на Самуи",
-        "description": "Отвод воды, дренажные траншеи, трубы и уклоны для влажных и низких участков."
+        "title": "Дренаж участка на Самуи",
+        "description": "Устраиваем отвод дождевой воды на участках, вдоль дорог и у въездов. Копаем канавы и траншеи, укладываем трубы и формируем уклоны по согласованной схеме."
       },
-      "intro": "Делаем дренаж и отвод воды на участках под дома, виллы, дороги и строительные проекты на Самуи. Помогаем убрать стоячую воду, направить поток, сделать канавы, траншеи, трубы и правильные уклоны. Подбираем решение под реальный участок: рельеф, грунт, уровень воды, сезон дождей и место, куда можно безопасно отвести воду.",
+      "intro": "Оценим, откуда приходит вода, где она скапливается и куда её можно отвести. На Самуи основной сток приходится на сезон дождей с октября по декабрь, поэтому трассу и уклоны рассчитываем на ливень, а не на обычный дождь. До начала работ согласуем объём, материалы, стоимость и условия.",
       "tasks": {
-        "title": "Что входит в дренажные работы",
+        "title": "Какие дренажные работы выполняем",
         "t1": {
-          "title": "Отвод стоячей воды",
-          "description": "Помогаем убрать воду с низких и влажных участков, где после дождей образуются лужи."
+          "title": "Отвод воды из низких мест",
+          "description": "Открываем путь воде из низин, где она стоит после дождя: канава, труба или уклон в сторону существующего стока. Решение показываем на месте после осмотра."
         },
         "t2": {
-          "title": "Дренажные траншеи",
-          "description": "Копаем канавы и траншеи для направления воды в нужную сторону."
+          "title": "Канавы и траншеи",
+          "description": "Копаем открытые канавы мини-экскаватором там, где подъезд узкий, и тяжёлой машиной на больших участках. Глубину и уклон выдерживаем по отметкам."
         },
         "t3": {
-          "title": "Укладка труб",
-          "description": "Устанавливаем трубы под дорогами, въездами и участками, где воду нужно провести скрыто."
+          "title": "Трубы под дорогами и въездами",
+          "description": "Укладываем водоотводные трубы там, где канава пересекает проезд, засыпаем траншею и восстанавливаем покрытие."
         },
         "t4": {
-          "title": "Формирование уклонов",
-          "description": "Корректируем уклоны земли, чтобы вода не стояла возле дома, дороги или рабочей зоны."
+          "title": "Уклоны для стока воды",
+          "description": "Срезаем или подсыпаем отдельные участки рельефа, чтобы поверхностная вода уходила к канавам, а не стояла у дома и на подъезде."
         },
         "t5": {
-          "title": "Подготовка влажных участков",
-          "description": "Готовим низкие и мокрые участки к дальнейшей отсыпке, выравниванию или строительству."
+          "title": "Водоотвод перед отсыпкой",
+          "description": "На заболоченных участках сначала открываем канал и даём воде уйти, потом завозим грунт. Так готовили топкий участок в Маенаме: канал, труба под дорогой, затем отсыпка."
         },
         "t6": {
-          "title": "Дренаж перед строительством",
-          "description": "Планируем отвод воды до начала стройки, чтобы избежать проблем с фундаментом и подъездом."
+          "title": "Водоотвод на стройплощадке",
+          "description": "Канавы и трубы на время стройки, чтобы рабочие зоны и подъезд не раскисали в дождь и техника строителей могла заезжать."
         }
       },
       "included": {
-        "title": "Почему дренаж важен",
+        "title": "Что учитываем при устройстве дренажа",
         "rain": {
-          "title": "Самуи - остров с сильными дождями",
-          "description": "Если воду не направить, она быстро размывает грунт, дорогу и рабочую площадку."
+          "title": "Сезон дождей на Самуи",
+          "description": "С октября по декабрь ливни идут днями, низкие и глинистые участки стоят в воде неделями. Смотрим не только на лужи, но и на то, откуда вода приходит на участок."
         },
         "foundation": {
-          "title": "Защита будущего дома",
-          "description": "Вода рядом с фундаментом может создавать просадки, влажность и проблемы со строительством."
+          "title": "Здания и подъезды",
+          "description": "Учитываем расположение дома, въезда и рабочих площадок при выборе трассы отвода."
         },
         "levels": {
-          "title": "Дренаж связан с уровнями",
-          "description": "Хороший дренаж работает вместе с уклонами, отсыпкой и выравниванием участка."
+          "title": "Существующие и будущие уровни",
+          "description": "Связываем канавы и трубы с рельефом участка и запланированной отсыпкой."
         }
       },
       "seoBlock": {
-        "title": "Отвод воды перед строительством",
-        "p1": "на Самуи вода - одна из главных проблем при подготовке участка. Во время дождей низкие места быстро заливает, грунт размывает, а подъездная дорога может стать непроходимой для техники.",
-        "p2": "Дренажные работы помогают заранее направить воду: сделать канавы, траншеи, трубы под дорогой, правильные уклоны и линии отвода. Это особенно важно перед отсыпкой, выравниванием, строительством дома или виллы.",
-        "p3": "Перед расчётом мы смотрим, откуда приходит вода, куда её можно отвести, какой грунт на участке и как техника сможет работать без риска застрять."
+        "title": "Откуда приходит вода и куда её отвести",
+        "p1": "Для оценки дренажа важно увидеть весь путь воды: от места поступления на участок до точки отвода. Поэтому вместе с мокрыми зонами мы осматриваем прилегающий рельеф, существующие канавы, трубы и въезды.",
+        "p2": "В зависимости от условий предлагаем открытую канаву, трубу на отдельном участке, коррекцию уклона или сочетание этих работ. Если есть готовая схема водоотвода, используем её для обсуждения объёма и расчёта.",
+        "p3": "Точку отвода определяем до начала копки с учётом соседних участков и существующих водоотводов. Если подходящего выхода воды нет, сначала обсуждаем ограничения и возможные решения."
       },
       "process": {
-        "title": "Как проходит работа",
+        "title": "Как выполняем дренажные работы",
         "p1": {
-          "title": "Оцениваем воду и рельеф",
-          "description": "Смотрим, где стоит вода, откуда она приходит, куда может уходить и какой доступ для техники."
+          "title": "Осматриваем участок",
+          "description": "Изучаем места скопления воды, рельеф, возможные точки отвода и доступ для техники."
         },
         "p2": {
-          "title": "Планируем отвод",
-          "description": "Определяем траншеи, канавы, трубы, уклоны и направление движения воды."
+          "title": "Согласуем решение и цену",
+          "description": "Определяем трассу, необходимые работы и материалы. Фиксируем стоимость и условия до начала."
         },
         "p3": {
           "title": "Копаем и укладываем",
-          "description": "Делаем траншеи, формируем канавы, укладываем трубы и корректируем уровни."
+          "description": "Формируем канавы, готовим траншеи и укладываем трубы по согласованной схеме. Дополнительные работы обсуждаем заранее."
         },
         "p4": {
-          "title": "Готовим участок дальше",
-          "description": "После дренажа участок можно отсыпать, выравнивать или готовить под строительство."
+          "title": "Проверяем выполненные работы",
+          "description": "Сверяем трассу и отметки с согласованной схемой, проверяем выходы труб и канав. Обсуждаем доступ для дальнейшей очистки."
         }
       },
       "pricing": {
-        "title": "Быстрый расчёт по дренажу",
-        "text": "Цена зависит от площади, объёма воды, глубины траншей, труб, доступа техники, грунта и необходимости отсыпки. Для расчёта отправьте локацию, фото участка после дождя и короткое описание проблемы."
+        "title": "Стоимость дренажных работ",
+        "text": "Цена зависит от длины и глубины траншей, грунта, подъезда и параметров труб. В расчёте укажем, какие работы, материалы, доставка и вывоз включены. Тарифы на технику есть на странице каждой машины."
       },
       "cta": {
-        "title": "Отправьте фото участка после дождя",
-        "text": "Лучше всего оценивать дренаж по реальной воде. Пришлите локацию, фото мокрых зон и место, куда потенциально можно отвести воду."
+        "title": "Стоит вода после дождя?",
+        "text": "Пришлите локацию, фото или видео мокрых зон и подъезда. Расскажите, когда появляется вода и как долго остаётся. Если видны существующие канавы или трубы, покажите их тоже."
       },
       "related": {
-        "title": "Связанные услуги",
+        "title": "Работы, которые можно заказать вместе",
         "earthworks": {
           "title": "Земляные работы",
-          "description": "Если нужен полный комплекс: дренаж, отсыпка, выравнивание, техника и вывоз."
+          "description": "Котлованы, траншеи, отсыпка и другие работы с грунтом: все направления в одном разделе."
         },
         "leveling": {
           "title": "Выравнивание участка",
-          "description": "Если нужно сформировать правильные уровни и уклоны после дренажа."
+          "description": "Планировка территории, срезка и подсыпка грунта по согласованным уровням и уклонам."
         },
         "truck": {
           "title": "Самосвалы и доставка материалов",
-          "description": "Если для дренажа нужен грунт, песок, щебень, трубы или вывоз лишнего материала."
+          "description": "Доставка песка, щебня и грунта, вывоз материала после копки траншей."
         }
       },
       "faq": {
-        "title": "Частые вопросы",
+        "title": "Вопросы о дренаже участка",
         "q1": {
-          "question": "Можно ли убрать воду с участка полностью?",
-          "answer": "Зависит от рельефа, грунта и места для отвода воды. Часто можно значительно улучшить ситуацию, но сначала нужно оценить участок."
+          "question": "Можно ли полностью избавиться от стоячей воды?",
+          "answer": "Сухой участок при любом ливне не обещаем. Результат зависит от рельефа, грунта, источника воды и точки отвода. После осмотра объясним, что решат предлагаемые работы и какие ограничения останутся."
         },
         "q2": {
-          "question": "Что лучше прислать для расчёта?",
-          "answer": "Локацию, фото участка после дождя, фото мест где стоит вода, фото подъезда и короткое описание проблемы."
+          "question": "Сколько времени занимают дренажные работы?",
+          "answer": "Канаву вдоль участка и трубу под въездом обычно делаем за день-два. Заболоченный участок с каналом, трубой под дорогой и отсыпкой занимает заметно дольше, сроки называем после осмотра."
         },
         "q3": {
-          "question": "Вы делаете трубы под дорогой?",
-          "answer": "Да. Можем выкопать траншею и уложить трубу там, где воде нужно пройти под дорогой или въездом."
+          "question": "Вы укладываете трубы под въездом?",
+          "answer": "Да. Можем выкопать траншею и уложить водоотводную трубу под въездом или проездом. Параметры трубы, глубину, засыпку и требования к проезду уточняем до начала работ."
         },
         "q4": {
-          "question": "Дренаж лучше делать до или после выравнивания?",
-          "answer": "Лучше планировать вместе. Уровни и уклоны влияют на то, куда будет уходить вода."
+          "question": "Когда делать дренаж: до или после выравнивания?",
+          "answer": "Планировать их нужно вместе: будущие уровни определяют трассу и точки отвода воды. Порядок выполнения зависит от участка и проекта — определяем его до начала копки и отсыпки."
         },
         "q5": {
-          "question": "Нужен ли щебень или песок?",
-          "answer": "Зависит от типа дренажа и участка. Если нужны материалы, можем организовать доставку."
+          "question": "Трубы, щебень и доставка входят в стоимость?",
+          "answer": "Это указываем в расчёте. Набор материалов зависит от согласованного решения. Можем организовать доставку; заранее уточним стоимость материалов, перевозок, работ и вывоза лишнего грунта."
         },
         "q6": {
-          "question": "Можно ли делать дренаж на узком участке?",
-          "answer": "Да, если есть доступ для подходящей техники. Иногда нужен небольшой экскаватор."
+          "question": "Можно выполнить работы на узком участке?",
+          "answer": "Проверим ширину въезда и проходов, место для работы и размещения вынутого грунта. По этим условиям подберём технику и оценим возможность выполнения работ. Пришлите фото и примерные размеры."
         }
       },
       "photos": {
@@ -340,130 +340,130 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Drainage Work on Koh Samui - Trenches & Pipes",
-        "description": "Drainage work on Koh Samui: water runoff, drainage trenches, pipe installation, slope correction and preparation of wet land for construction.",
-        "keywords": "drainage koh samui, drainage work samui, water runoff samui, drainage trench samui, pipe drainage samui, wet land drainage samui, earthworks samui"
+        "title": "Land Drainage on Koh Samui — Channels & Pipes",
+        "description": "Land drainage on Koh Samui: runoff channels, trenches, pipe installation and slope adjustments. Site assessment, scope, prices and terms agreed before work starts.",
+        "keywords": "land drainage koh samui, rainwater drainage samui, drainage channels samui, drainage trenches samui, drainage pipe installation samui"
       },
       "hero": {
-        "title": "Drainage work on Koh Samui",
-        "description": "Water runoff, drainage trenches, pipes and slope correction for wet and low land."
+        "title": "Land drainage on Koh Samui",
+        "description": "We create rainwater drainage routes for plots, roadsides and entrances. We dig channels and trenches, install pipes and adjust slopes to the planned layout."
       },
-      "intro": "We build drainage and water runoff solutions for houses, villas, roads and construction sites on Koh Samui. We help move standing water, direct water flow, dig trenches, install pipes and shape slopes. The right solution depends on the real site: terrain, soil, water level, rainy season impact and where the water can safely go.",
+      "intro": "We assess where water enters, where it collects and where it can drain. Most runoff on Koh Samui comes with the rainy season from October to December, so routes and slopes are sized for a downpour, not an average shower. We agree on the scope, materials, cost and terms before starting.",
       "tasks": {
-        "title": "What drainage work includes",
+        "title": "Drainage work we carry out",
         "t1": {
-          "title": "Standing water removal",
-          "description": "Helping low and wet areas drain after rain instead of holding water."
+          "title": "Drainage for low areas",
+          "description": "We open a way out for water from low spots that flood after rain: a channel, a pipe or a slope towards an existing outlet. We show the solution on site after an inspection."
         },
         "t2": {
-          "title": "Drainage trenches",
-          "description": "Digging ditches and trenches to direct water in the right direction."
+          "title": "Channels and trenches",
+          "description": "We dig open channels with a mini excavator where access is tight and with a heavier machine on larger plots, holding depth and fall to the set levels."
         },
         "t3": {
-          "title": "Pipe installation",
-          "description": "Installing pipes under roads, entrances or areas where water needs to pass underground."
+          "title": "Pipes under roads and entrances",
+          "description": "We install drainage pipes where a channel crosses a driveway, backfill the trench and reinstate the surface."
         },
         "t4": {
-          "title": "Slope correction",
-          "description": "Adjusting land slopes so water does not collect near the house, road or work area."
+          "title": "Slopes for surface runoff",
+          "description": "We cut or fill selected areas so surface water runs towards the channels instead of standing by the house and the entrance."
         },
         "t5": {
-          "title": "Wet land preparation",
-          "description": "Preparing low and wet land for backfilling, leveling or future construction."
+          "title": "Drainage before land filling",
+          "description": "On waterlogged plots we open the channel first and let the water out, then bring in fill. That is how we prepared a boggy plot in Maenam: a channel, a pipe under the road, then fill."
         },
         "t6": {
-          "title": "Drainage before construction",
-          "description": "Planning water runoff before building to prevent foundation and access problems."
+          "title": "Construction site drainage",
+          "description": "Temporary channels and pipes for the construction period so work areas and access do not turn to mud in the rain and builders’ vehicles can get in."
         }
       },
       "included": {
-        "title": "Why drainage matters",
+        "title": "What we consider when planning drainage",
         "rain": {
-          "title": "Samui has heavy rain",
-          "description": "If water is not directed, it quickly damages soil, access roads and work areas."
+          "title": "Samui’s rainy season",
+          "description": "From October to December it can rain for days, and low or clay plots stay flooded for weeks. We look beyond the puddles to where water enters the site."
         },
         "foundation": {
-          "title": "Protect the future building",
-          "description": "Water near foundations can cause settling, moisture and construction problems."
+          "title": "Buildings and access",
+          "description": "We account for the house, entrance and work areas when choosing the drainage route."
         },
         "levels": {
-          "title": "Drainage depends on levels",
-          "description": "Good drainage works together with slopes, backfilling and land leveling."
+          "title": "Existing and future levels",
+          "description": "We coordinate channels and pipes with the terrain and any planned land filling."
         }
       },
       "seoBlock": {
-        "title": "Water runoff before construction",
-        "p1": "On Koh Samui, water is one of the main problems when preparing land. During heavy rain, low areas can flood quickly, soil can wash out and access roads can become difficult for machinery.",
-        "p2": "Drainage work helps direct water before it becomes a problem: trenches, ditches, pipes under roads, correct slopes and runoff lines. This is important before backfilling, leveling, building a house or villa.",
-        "p3": "Before giving a quote, we check where the water comes from, where it can go, what type of soil is on site and how machinery can work without getting stuck."
+        "title": "Where water comes from and where it can go",
+        "p1": "Assessing drainage means looking at the full route from where water enters the site to its outlet. Alongside wet areas, we inspect nearby terrain, existing channels, pipes and entrances.",
+        "p2": "Depending on conditions, we may suggest an open channel, a pipe along part of the route, slope adjustments or a combination. If you have a drainage layout, we use it to discuss the scope and prepare an estimate.",
+        "p3": "We identify the outlet before excavation, taking neighboring plots and existing drainage into account. If there is no suitable outlet, we first discuss the limitations and possible options."
       },
       "process": {
-        "title": "How the work is done",
+        "title": "How we carry out drainage work",
         "p1": {
-          "title": "Water and terrain check",
-          "description": "We check where water stands, where it comes from, where it can go and machine access."
+          "title": "Inspect the site",
+          "description": "We assess water collection points, terrain, possible outlets and machinery access."
         },
         "p2": {
-          "title": "Runoff planning",
-          "description": "We define trenches, ditches, pipes, slopes and the water direction."
+          "title": "Agree on the work and price",
+          "description": "We confirm the route, work and materials needed, then set out costs and terms before starting."
         },
         "p3": {
-          "title": "Digging and installation",
-          "description": "We dig trenches, shape channels, install pipes and adjust levels."
+          "title": "Excavate and install",
+          "description": "We shape channels, dig trenches and install pipes to the planned layout. Additional work is discussed in advance."
         },
         "p4": {
-          "title": "Ready for the next stage",
-          "description": "After drainage, the land can be backfilled, leveled or prepared for construction."
+          "title": "Check the completed work",
+          "description": "We check routes and levels against the plan, inspect pipe and channel outlets, and discuss access for future cleaning."
         }
       },
       "pricing": {
-        "title": "Fast quote for drainage work",
-        "text": "The price depends on land size, water volume, trench depth, pipe work, machine access, soil condition and backfilling needs. Send location, photos after rain and a short description of the problem."
+        "title": "Drainage work costs",
+        "text": "The price depends on trench length and depth, soil, access and pipe specifications. The estimate states which work, materials, deliveries and removal are included. Machine rates are listed on each equipment page."
       },
       "cta": {
-        "title": "Send photos of the land after rain",
-        "text": "Drainage is best estimated from real water conditions. Send the location, wet area photos and where water may be able to drain."
+        "title": "Water collecting after rain?",
+        "text": "Send the location, photos or videos of wet areas and the access route. Tell us when the water appears and how long it stays. Show any existing channels or pipes too."
       },
       "related": {
-        "title": "Related services",
+        "title": "Services you can book together",
         "earthworks": {
           "title": "Earthworks",
-          "description": "For full site preparation: drainage, backfilling, leveling, machinery and removal."
+          "description": "Explore excavation, trenching, filling and other groundworks in one place."
         },
         "leveling": {
           "title": "Land leveling",
-          "description": "If correct levels and slopes are needed after drainage."
+          "description": "Site grading, cutting and filling to the required levels and slopes."
         },
         "truck": {
           "title": "Dump trucks and material delivery",
-          "description": "If drainage needs soil, sand, gravel, pipes or removal of excess material."
+          "description": "Sand, gravel and soil deliveries, plus removal of material excavated from trenches."
         }
       },
       "faq": {
-        "title": "Frequently asked questions",
+        "title": "Land drainage questions",
         "q1": {
-          "question": "Can you remove all water from the land?",
-          "answer": "It depends on terrain, soil and where water can drain. Often we can improve the situation significantly, but the site needs to be checked first."
+          "question": "Can you eliminate standing water completely?",
+          "answer": "We don’t promise a dry plot in any downpour. The result depends on terrain, soil, the water source and the outlet. After inspecting the site, we explain what the proposed work will solve and what limitations remain."
         },
         "q2": {
-          "question": "What should I send for a quote?",
-          "answer": "Location, photos after rain, photos of standing water, access photos and a short description of the problem."
+          "question": "How long does drainage work take?",
+          "answer": "A channel along a plot and a pipe under an entrance usually take a day or two. A waterlogged plot with a channel, a pipe under the road and fill takes considerably longer; we give the timing after an inspection."
         },
         "q3": {
-          "question": "Can you install pipes under a road?",
-          "answer": "Yes. We can dig a trench and install a pipe where water needs to pass under a road or entrance."
+          "question": "Can you install a pipe under an entrance?",
+          "answer": "Yes. We can excavate a trench and install a drainage pipe under an entrance or access road. Pipe specifications, depth, backfilling and vehicle access requirements are confirmed before work starts."
         },
         "q4": {
-          "question": "Should drainage be done before or after leveling?",
-          "answer": "It is best to plan them together. Levels and slopes affect where the water will go."
+          "question": "Should drainage come before or after land leveling?",
+          "answer": "Plan them together: future levels determine drainage routes and outlets. The work sequence depends on the site and project, and we settle it before excavation and filling begin."
         },
         "q5": {
-          "question": "Do I need gravel or sand?",
-          "answer": "It depends on the drainage type and site conditions. If materials are needed, we can organize delivery."
+          "question": "Are pipes, gravel and delivery included in the price?",
+          "answer": "The estimate states what is included. Materials depend on the chosen approach. We can arrange delivery and clarify material, transport, labor and surplus soil removal costs in advance."
         },
         "q6": {
-          "question": "Can drainage be done on narrow land?",
-          "answer": "Yes, if there is access for the right machine. Sometimes a small excavator is needed."
+          "question": "Can you work on a narrow plot?",
+          "answer": "We check entrance and passage widths, working space and room for excavated soil. These conditions determine machinery choice and whether the work is feasible. Send photos and approximate dimensions."
         }
       },
       "photos": {
@@ -508,130 +508,130 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "ระบบระบายน้ำ เกาะสมุย - ขุดร่อง วางท่อ แก้น้ำขัง",
-        "description": "บริการทำระบบระบายน้ำบนเกาะสมุย แก้น้ำขัง ขุดร่อง วางท่อ ทำสโลป และเตรียมพื้นที่เปียกสำหรับก่อสร้าง",
-        "keywords": "ระบบระบายน้ำ สมุย, แก้น้ำขัง สมุย, ขุดร่องน้ำ สมุย, วางท่อระบายน้ำ สมุย, งานดิน สมุย, รถขุด สมุย"
+        "title": "งานระบายน้ำบนเกาะสมุย — ขุดร่องและวางท่อ",
+        "description": "งานระบายน้ำบนเกาะสมุย ขุดคูและร่อง วางท่อ ปรับความลาดเอียง ประเมินหน้างานและตกลงขอบเขต ราคา และเงื่อนไขก่อนเริ่ม",
+        "keywords": "ระบายน้ำ สมุย, แก้น้ำขัง สมุย, ขุดร่องระบายน้ำ สมุย, ขุดคูระบายน้ำ สมุย, วางท่อระบายน้ำ สมุย"
       },
       "hero": {
-        "title": "ระบบระบายน้ำบนเกาะสมุย",
-        "description": "แก้น้ำขัง ขุดร่อง วางท่อ และทำสโลปสำหรับพื้นที่เปียกหรือพื้นที่ต่ำ"
+        "title": "งานระบายน้ำบนเกาะสมุย",
+        "description": "จัดทางระบายน้ำฝนในที่ดิน ริมถนน และบริเวณทางเข้า ขุดคูและร่อง วางท่อ และปรับความลาดเอียงตามแนวที่วางไว้"
       },
-      "intro": "เรารับทำระบบระบายน้ำสำหรับบ้าน วิลล่า ถนน และพื้นที่ก่อสร้างบนเกาะสมุย ช่วยระบายน้ำขัง ทำร่องน้ำ วางท่อ และปรับสโลปให้น้ำไหลออกจากพื้นที่ได้ดี วิธีทำต้องดูจากหน้างานจริง เช่น ระดับพื้นที่ ชนิดดิน ปริมาณน้ำ ช่วงฝน และจุดที่สามารถปล่อยน้ำออกได้",
+      "intro": "เราประเมินว่าน้ำมาจากไหน ขังอยู่จุดใด และระบายออกทางไหนได้ บนเกาะสมุยน้ำส่วนใหญ่มากับฤดูฝนช่วงตุลาคมถึงธันวาคม จึงกำหนดแนวและความลาดเอียงให้รับฝนหนักได้ พร้อมตกลงขอบเขต วัสดุ ราคา และเงื่อนไขก่อนเริ่มงาน",
       "tasks": {
-        "title": "งานระบายน้ำรวมอะไรบ้าง",
+        "title": "งานระบายน้ำที่เรารับทำ",
         "t1": {
-          "title": "แก้น้ำขัง",
-          "description": "ช่วยระบายน้ำจากพื้นที่ต่ำหรือพื้นที่เปียกหลังฝนตก"
+          "title": "ระบายน้ำจากจุดต่ำ",
+          "description": "เปิดทางให้น้ำออกจากจุดต่ำที่ขังหลังฝนตก ด้วยคู ท่อ หรือการปรับความลาดเอียงไปยังจุดระบายเดิม แนะนำวิธีหน้างานหลังตรวจดูพื้นที่"
         },
         "t2": {
-          "title": "ขุดร่องระบายน้ำ",
-          "description": "ขุดร่องหรือคูน้ำเพื่อให้น้ำไหลไปในทิศทางที่ต้องการ"
+          "title": "ขุดคูและร่องระบายน้ำ",
+          "description": "ขุดคูเปิดด้วยรถขุดเล็กในที่ทางเข้าแคบ และใช้รถขุดขนาดใหญ่ในพื้นที่กว้าง คุมความลึกและความลาดเอียงตามระดับที่กำหนด"
         },
         "t3": {
-          "title": "วางท่อระบายน้ำ",
-          "description": "วางท่อใต้ถนน ทางเข้า หรือจุดที่ต้องให้น้ำไหลผ่านใต้ดิน"
+          "title": "วางท่อใต้ถนนและทางเข้า",
+          "description": "วางท่อระบายน้ำตรงจุดที่คูตัดผ่านทางเข้า กลบร่องและคืนสภาพผิวทาง"
         },
         "t4": {
-          "title": "ปรับสโลปน้ำ",
-          "description": "ปรับความลาดเอียงของพื้นที่เพื่อไม่ให้น้ำขังใกล้บ้านหรือถนน"
+          "title": "ปรับความลาดเอียงเพื่อระบายน้ำ",
+          "description": "ตัดหรือถมดินเฉพาะจุดให้น้ำผิวดินไหลไปยังคู ไม่ขังอยู่ข้างบ้านหรือทางเข้า"
         },
         "t5": {
-          "title": "เตรียมพื้นที่เปียก",
-          "description": "เตรียมพื้นที่ต่ำหรือเปียกก่อนถมดิน ปรับระดับ หรือก่อสร้าง"
+          "title": "วางแผนระบายน้ำก่อนถมดิน",
+          "description": "ในที่ดินน้ำท่วมขัง เปิดคูให้น้ำออกก่อน แล้วจึงนำดินเข้าถม เช่นงานที่ดินแฉะที่แม่น้ำ: คูระบายน้ำ ท่อลอดถนน แล้วจึงถมดิน"
         },
         "t6": {
-          "title": "ระบายน้ำก่อนก่อสร้าง",
-          "description": "วางแผนทางน้ำก่อนเริ่มสร้าง เพื่อลดปัญหาฐานรากและทางเข้า"
+          "title": "ระบายน้ำในไซต์ก่อสร้าง",
+          "description": "คูและท่อชั่วคราวระหว่างก่อสร้าง เพื่อให้พื้นที่ทำงานและทางเข้าไม่เป็นโคลนเมื่อฝนตก และรถของผู้รับเหมาเข้าได้"
         }
       },
       "included": {
-        "title": "ทำไมระบบระบายน้ำถึงสำคัญ",
+        "title": "สิ่งที่คำนึงถึงในการทำทางระบายน้ำ",
         "rain": {
-          "title": "สมุยฝนตกหนัก",
-          "description": "ถ้าไม่มีทางน้ำ ดิน ถนน และพื้นที่ทำงานเสียหายได้เร็ว"
+          "title": "ฤดูฝนบนเกาะสมุย",
+          "description": "ช่วงตุลาคมถึงธันวาคมฝนตกต่อเนื่องหลายวัน ที่ดินต่ำหรือดินเหนียวอาจมีน้ำขังเป็นสัปดาห์ เราดูทั้งจุดน้ำขังและจุดที่น้ำไหลเข้าพื้นที่"
         },
         "foundation": {
-          "title": "ช่วยป้องกันปัญหาบ้าน",
-          "description": "น้ำใกล้ฐานรากอาจทำให้ดินยุบ ชื้น และมีปัญหาตอนก่อสร้าง"
+          "title": "อาคารและทางเข้า",
+          "description": "คำนึงถึงตำแหน่งบ้าน ทางเข้า และพื้นที่ทำงานในการเลือกแนวระบายน้ำ"
         },
         "levels": {
-          "title": "ต้องทำคู่กับระดับพื้นที่",
-          "description": "ระบบระบายน้ำที่ดีต้องสัมพันธ์กับสโลป การถมดิน และการปรับระดับ"
+          "title": "ระดับปัจจุบันและระดับที่วางแผนไว้",
+          "description": "กำหนดคูและท่อให้สอดคล้องกับภูมิประเทศและแผนถมดิน"
         }
       },
       "seoBlock": {
-        "title": "แก้น้ำขังก่อนเริ่มก่อสร้าง",
-        "p1": "บนเกาะสมุย ปัญหาน้ำเป็นเรื่องสำคัญมาก โดยเฉพาะช่วงฝนตก พื้นที่ต่ำอาจมีน้ำขัง ดินถูกน้ำกัดเซาะ และทางเข้าอาจใช้งานยากสำหรับเครื่องจักร",
-        "p2": "งานระบายน้ำช่วยจัดทางน้ำก่อนเกิดปัญหา เช่น ขุดร่อง วางท่อใต้ถนน ทำสโลป และกำหนดทางน้ำไหล เหมาะก่อนถมดิน ปรับระดับ หรือสร้างบ้านและวิลล่า",
-        "p3": "ก่อนประเมินราคา เราดูว่าน้ำมาจากไหน จะปล่อยไปทางไหน ลักษณะดินเป็นอย่างไร และเครื่องจักรเข้าทำงานได้หรือไม่"
+        "title": "น้ำมาจากไหน และระบายไปทางใดได้",
+        "p1": "การประเมินงานระบายน้ำต้องดูเส้นทางทั้งหมด ตั้งแต่จุดที่น้ำเข้าพื้นที่จนถึงจุดระบายออก นอกจากบริเวณน้ำขัง เราจึงดูระดับพื้นที่ใกล้เคียง คู ท่อ และทางเข้าที่มีอยู่ด้วย",
+        "p2": "วิธีทำอาจเป็นคูเปิด ท่อบางช่วง การปรับความลาดเอียง หรือใช้หลายวิธีร่วมกันตามสภาพหน้างาน หากมีผังระบายน้ำแล้ว สามารถใช้พูดคุยขอบเขตและคำนวณราคาได้",
+        "p3": "เรากำหนดจุดระบายน้ำออกก่อนเริ่มขุด โดยคำนึงถึงที่ดินข้างเคียงและทางระบายน้ำเดิม หากยังไม่มีจุดระบายที่เหมาะสม จะพูดคุยข้อจำกัดและทางเลือกก่อน"
       },
       "process": {
-        "title": "ขั้นตอนการทำงาน",
+        "title": "ขั้นตอนการทำงานระบายน้ำ",
         "p1": {
-          "title": "ดูน้ำและพื้นที่",
-          "description": "ดูจุดน้ำขัง ทิศทางน้ำ ทางเข้า และสภาพดิน"
+          "title": "ตรวจดูหน้างาน",
+          "description": "ดูจุดน้ำขัง ระดับพื้นที่ จุดที่อาจระบายน้ำออกได้ และทางเข้าเครื่องจักร"
         },
         "p2": {
-          "title": "วางแผนทางน้ำ",
-          "description": "กำหนดร่องน้ำ ท่อ สโลป และทิศทางน้ำไหล"
+          "title": "ตกลงวิธีทำและราคา",
+          "description": "กำหนดแนว งานและวัสดุที่จำเป็น พร้อมระบุราคาและเงื่อนไขก่อนเริ่ม"
         },
         "p3": {
-          "title": "ขุดและติดตั้ง",
-          "description": "ขุดร่อง ทำคูน้ำ วางท่อ และปรับระดับตามแผน"
+          "title": "ขุดและวางท่อ",
+          "description": "ทำคู ขุดร่อง และวางท่อตามแนวที่วางไว้ หากมีงานเพิ่มเติมจะพูดคุยล่วงหน้า"
         },
         "p4": {
-          "title": "พร้อมทำงานต่อ",
-          "description": "หลังทำระบายน้ำ สามารถถมดิน ปรับระดับ หรือก่อสร้างต่อได้"
+          "title": "ตรวจสอบงานที่ทำเสร็จ",
+          "description": "ตรวจแนวและระดับเทียบกับแผน ตรวจทางออกของท่อและคู พร้อมพูดคุยเรื่องช่องทางเข้าทำความสะอาดในอนาคต"
         }
       },
       "pricing": {
-        "title": "ประเมินราคางานระบายน้ำ",
-        "text": "ราคาขึ้นอยู่กับขนาดพื้นที่ ปริมาณน้ำ ความลึกร่อง ท่อ ทางเข้าเครื่องจักร ดิน และงานถมเพิ่มเติม ส่งโลเคชัน รูปหลังฝนตก และรายละเอียดปัญหาเพื่อประเมินราคา"
+        "title": "ราคางานระบายน้ำ",
+        "text": "ราคาขึ้นอยู่กับความยาวและความลึกร่อง สภาพดิน ทางเข้า และคุณสมบัติท่อ ใบประเมินระบุว่างาน วัสดุ การส่งและขนออกส่วนใดรวมอยู่ในราคา ราคาเครื่องจักรดูได้ในหน้าเครื่องจักรแต่ละคัน"
       },
       "cta": {
-        "title": "ส่งรูปพื้นที่หลังฝนตก",
-        "text": "งานระบายน้ำประเมินได้ดีที่สุดจากสภาพน้ำจริง ส่งโลเคชัน รูปจุดน้ำขัง และจุดที่อาจปล่อยน้ำออกได้"
+        "title": "มีน้ำขังหลังฝนตกใช่ไหม?",
+        "text": "ส่งโลเคชัน รูปหรือวิดีโอจุดน้ำขังและทางเข้า พร้อมบอกว่าน้ำมาเมื่อไหร่และขังนานเท่าใด หากมีคูหรือท่อเดิม ถ่ายให้ดูด้วย"
       },
       "related": {
-        "title": "บริการที่เกี่ยวข้อง",
+        "title": "บริการที่สั่งทำร่วมกันได้",
         "earthworks": {
           "title": "งานดิน",
-          "description": "สำหรับงานเตรียมพื้นที่แบบครบชุด เช่น ระบายน้ำ ถมดิน ปรับระดับ เครื่องจักร และขนดินออก"
+          "description": "ดูบริการขุดบ่อ ขุดร่อง ถมดิน และงานดินประเภทอื่นในหน้าเดียว"
         },
         "leveling": {
           "title": "ปรับระดับที่ดิน",
-          "description": "ถ้าต้องปรับระดับและทำสโลปให้สัมพันธ์กับระบบระบายน้ำ"
+          "description": "ปรับพื้นที่ ตัดดินและถมดินตามระดับและความลาดเอียงที่กำหนด"
         },
         "truck": {
           "title": "รถดั๊มพ์และส่งวัสดุ",
-          "description": "ถ้าต้องใช้ดิน ทราย หิน ท่อ หรือขนวัสดุส่วนเกินออก"
+          "description": "ส่งทราย หิน และดิน พร้อมขนวัสดุที่ขุดจากร่องออกจากพื้นที่"
         }
       },
       "faq": {
-        "title": "คำถามที่พบบ่อย",
+        "title": "คำถามเกี่ยวกับงานระบายน้ำ",
         "q1": {
-          "question": "แก้น้ำขังได้หมดไหม?",
-          "answer": "ขึ้นอยู่กับระดับพื้นที่ ดิน และจุดที่สามารถปล่อยน้ำออกได้ ส่วนมากช่วยให้ดีขึ้นมากได้ แต่ต้องดูหน้างานก่อน"
+          "question": "แก้น้ำขังได้ทั้งหมดไหม?",
+          "answer": "เราไม่รับปากว่าที่ดินจะแห้งทุกครั้งที่ฝนตกหนัก ผลขึ้นอยู่กับระดับพื้นที่ ดิน แหล่งน้ำ และจุดระบายออก หลังดูหน้างานเราจะอธิบายว่างานที่เสนอช่วยแก้ส่วนใดและยังมีข้อจำกัดอะไร"
         },
         "q2": {
-          "question": "ต้องส่งอะไรเพื่อประเมินราคา?",
-          "answer": "ส่งโลเคชัน รูปหลังฝนตก รูปจุดที่น้ำขัง รูปทางเข้า และอธิบายปัญหาสั้น ๆ"
+          "question": "งานระบายน้ำใช้เวลานานแค่ไหน?",
+          "answer": "คูเลียบที่ดินและท่อลอดทางเข้าโดยทั่วไปใช้เวลาหนึ่งถึงสองวัน ที่ดินน้ำขังที่ต้องทำคู ท่อลอดถนน และถมดินใช้เวลานานกว่ามาก เราแจ้งระยะเวลาหลังดูหน้างาน"
         },
         "q3": {
-          "question": "วางท่อใต้ถนนได้ไหม?",
-          "answer": "ได้ครับ สามารถขุดร่องและวางท่อในจุดที่น้ำต้องไหลผ่านใต้ถนนหรือทางเข้า"
+          "question": "วางท่อใต้ทางเข้าได้ไหม?",
+          "answer": "ได้ เราขุดร่องและวางท่อระบายน้ำใต้ทางเข้าหรือทางสัญจรได้ โดยกำหนดคุณสมบัติท่อ ความลึก การกลบ และข้อกำหนดสำหรับรถที่ผ่านก่อนเริ่มงาน"
         },
         "q4": {
-          "question": "ควรทำระบายน้ำก่อนหรือหลังปรับระดับ?",
-          "answer": "ควรวางแผนพร้อมกัน เพราะระดับและสโลปมีผลต่อทิศทางน้ำ"
+          "question": "ควรทำระบายน้ำก่อนหรือหลังปรับระดับที่ดิน?",
+          "answer": "ควรวางแผนร่วมกัน เพราะระดับในอนาคตมีผลต่อแนวและจุดระบายน้ำ ลำดับงานขึ้นอยู่กับพื้นที่และโครงการ โดยจะกำหนดก่อนเริ่มขุดและถมดิน"
         },
         "q5": {
-          "question": "ต้องใช้หินหรือทรายไหม?",
-          "answer": "ขึ้นอยู่กับรูปแบบระบายน้ำและสภาพพื้นที่ ถ้าต้องใช้วัสดุ เราจัดส่งให้ได้"
+          "question": "ราคานี้รวมท่อ หิน และค่าส่งไหม?",
+          "answer": "เราระบุรายการที่รวมไว้ในใบประเมิน วัสดุขึ้นอยู่กับวิธีทำที่เลือก สามารถจัดส่งให้ได้ โดยชี้แจงค่าวัสดุ ขนส่ง งานติดตั้ง และขนดินส่วนเกินออกล่วงหน้า"
         },
         "q6": {
           "question": "พื้นที่แคบทำได้ไหม?",
-          "answer": "ทำได้ถ้ามีทางเข้าเครื่องจักรที่เหมาะสม บางงานใช้รถขุดขนาดเล็ก"
+          "answer": "เราจะดูความกว้างทางเข้าและทางผ่าน พื้นที่ทำงาน และจุดวางดินที่ขุดขึ้นมา เพื่อเลือกเครื่องจักรและประเมินว่าทำงานได้หรือไม่ ส่งรูปพร้อมขนาดโดยประมาณมาได้"
         }
       },
       "photos": {
@@ -719,7 +719,7 @@ useServiceSeo({
     <UAlert
       :title="t('drainage.cta.title')"
       :description="t('drainage.cta.text')"
-      class="mt-6"
+      class="mt-6 mb-10 sm:mb-14"
       variant="soft"
       color="primary"
       icon="i-lucide-camera"

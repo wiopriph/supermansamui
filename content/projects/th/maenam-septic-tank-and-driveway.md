@@ -3,7 +3,7 @@ title: "งานบ่อเกรอะ ขุดย้ายต้นไม�
 date: 2026-05-12
 slug: "maenam-septic-tank-and-driveway"
 service: "drainage"
-location: "แม่น้ำ ซอย 3 เกาะสมุย"
+location: "แม่น้ำ เกาะสมุย"
 cover: "/images/projects/maenam-septic-tank-and-driveway/hero.webp"
 gallery:
   - src: "/images/projects/maenam-septic-tank-and-driveway/removing-tree-from-garden.webp"

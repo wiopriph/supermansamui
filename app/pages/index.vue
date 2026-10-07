@@ -226,74 +226,74 @@ const seoBlock = computed(() => ({
 {
   "ru": {
     "seo": {
-      "title": "Экскаваторы, самосвалы и земляные работы на Самуи",
-      "desc": "Строительная техника на Самуи: экскаваторы, самосвалы, расчистка и подготовка участков. Своя техника, местные операторы, понятная цена.",
-      "keywords": "строительная техника самуи, экскаватор самуи, самосвал самуи, земляные работы самуи, расчистка участка самуи"
+      "title": "Спецтехника и земляные работы на Самуи",
+      "desc": "Superman Samui: земляные работы, экскаваторы с оператором, самосвалы и перевозки на Самуи. Выберите услугу или расскажите о задаче — поможем с решением.",
+      "keywords": "земляные работы самуи, аренда спецтехники самуи, экскаватор с оператором самуи, самосвал самуи, расчистка участка самуи"
     },
     "hero": {
-      "title": "Строительная техника на Самуи - экскаваторы, самосвалы и земляные работы",
-      "description": "Расчистка участков, выравнивание, дренаж, вывоз грунта и доставка материалов. Своя техника, местные операторы и понятная цена до начала работ.",
-      "eyebrow": "Самуи · строительная техника и земляные работы"
+      "title": "Спецтехника, земляные работы и перевозки на Самуи",
+      "description": "Экскаваторы с оператором, самосвалы и команда для работ на вашем участке. Закажите нужную услугу или расскажите о проекте — мы предложим решение и рассчитаем стоимость.",
+      "eyebrow": "Самуи · техника с оператором и земляные работы"
     },
     "seoBlock": {
-      "title": "Superman Samui - строительная техника на острове",
-      "p1": "Мы работаем на Самуи с собственной техникой: экскаваторы Komatsu и Caterpillar, самосвалы Hino и трактор Kubota. Все машины обслуживаются нами, операторы знают остров.",
-      "p2": "Берёмся за объекты разного масштаба: от небольшого котлована до многомесячных проектов с сотнями рейсов. Работаем с частными клиентами, застройщиками и подрядчиками.",
-      "p3": "Находимся на Самуи, техника не нужно везти с материка. Оцениваем задачу, даём конкретную цену и работаем без посредников."
+      "title": "Superman Samui — техника и команда на острове",
+      "p1": "Работаем с частными заказчиками, застройщиками и подрядчиками на Самуи. В нашем парке — экскаваторы Komatsu, Caterpillar и Yanmar, самосвалы Hino и трактор Kubota. Вся техника наша и стоит на острове, ничего не нужно везти с материка.",
+      "p2": "Можно заказать отдельную машину с оператором или поручить нам несколько видов работ сразу: от небольшого котлована до многомесячных проектов с сотнями рейсов. Работаем напрямую, без посредников.",
+      "p3": "Не знаете, с чего начать? Пришлите локацию, фото и описание задачи. Дадим рекомендации и обсудим стоимость и условия до начала работ."
     },
     "services": {
-      "title": "Основные услуги",
-      "subtitle": "Земляные работы, экскаваторы, самосвалы и подготовка участков под строительство на Самуи.",
+      "title": "Чем мы можем помочь",
+      "subtitle": "Выберите направление работ или отдельную услугу для вашего участка.",
       "details": "Подробнее",
       "earthworks": {
         "title": "Земляные работы",
-        "text": "Комплексная подготовка участка: расчистка, выравнивание, дренаж, отсыпка и вывоз грунта."
+        "text": "Работы с грунтом и участком: от котлована и отсыпки до расчистки, выравнивания и дренажа."
       },
       "excavator": {
         "title": "Аренда экскаватора",
-        "text": "Экскаваторы с оператором для копки, траншей, демонтажа, погрузки грунта и строительных задач."
+        "text": "Экскаваторы с оператором для копки, погрузки и демонтажа. Подберём машину под объём работ и подъезд к участку."
       },
       "truck": {
-        "title": "Самосвалы и грузовики",
-        "text": "Вывоз грунта и мусора, доставка материалов, перевозка техники и работа на строительных объектах."
+        "title": "Самосвалы и перевозки",
+        "text": "Вывозим грунт и строительный мусор, доставляем песок, щебень и другие материалы, перевозим технику."
       },
       "landClearing": {
         "title": "Расчистка участка",
-        "text": "Удаление деревьев, корней, зарослей, мусора и старых строений перед строительством."
+        "text": "Убираем заросли, деревья, пни и мусор. Освобождаем участок для строительства и подъезда техники."
       },
       "landLeveling": {
         "title": "Выравнивание участка",
-        "text": "Планировка земли, формирование уровней, уклонов и ровных площадок под дом или дорогу."
+        "text": "Срезаем возвышенности, засыпаем низины и формируем нужные уклоны. Готовим площадки под дом, двор или дорогу."
       },
       "drainage": {
         "title": "Дренаж участка",
-        "text": "Отвод воды, траншеи, трубы и уклоны для влажных и низких участков."
+        "text": "Организуем отвод дождевой воды: копаем канавы и траншеи, укладываем трубы с учётом рельефа участка."
       }
     },
     "benefits": {
       "title": "Почему с нами удобно работать",
       "items": {
         "clearPrice": {
-          "title": "Понятный расчёт до начала работ",
-          "description": "Сначала оцениваем задачу, подъезд, объём и технику. Потом называем цену и формат работы."
+          "title": "Понятная стоимость",
+          "description": "Оценим проект, дадим рекомендации и согласуем цены и условия до начала работ. Дополнительные работы обсудим с вами заранее."
         },
         "ownMachines": {
-          "title": "Своя техника для разных задач",
-          "description": "Экскаваторы, самосвалы и грузовики можно собрать в одну рабочую связку под участок."
+          "title": "Своя техника и команда",
+          "description": "Подберём машины и организуем их работу на участке. Экскаваторы, самосвалы и операторы — через одного подрядчика."
         },
         "localTeam": {
-          "title": "Знаем Самуи и местные условия",
-          "description": "Учитываем дороги, подъезды, дождь, грунт, уклоны и реальные ограничения на острове."
+          "title": "Знаем особенности Самуи",
+          "description": "Учитываем узкие подъезды, крутые склоны, грунт и сезон дождей. Планируем работы с учётом условий вашего участка."
         }
       }
     },
     "pricing": {
-      "title": "Базовые цены",
-      "description": "Ориентиры по популярной технике. Точная стоимость зависит от локации, подъезда, объёма работ и условий участка.",
+      "title": "Цены на аренду техники",
+      "description": "Ниже — стартовые тарифы. Стоимость вашего заказа рассчитаем с учётом техники, объёма работ, доставки и условий участка.",
       "units": {
         "hour": "от {price} бат/час",
         "trip": "от {price} бат/рейс",
-        "shift": "от {price} бат/смена"
+        "shift": "от {price} бат/смену"
       },
       "excavators": {
         "title": "Экскаваторы",
@@ -310,79 +310,79 @@ const seoBlock = computed(() => ({
       },
       "extra": {
         "title": "Дополнительно",
-        "crane": "Кран - от {price} бат/час",
-        "delivery": "Доставка экскаватора - {price} бат. Бесплатно от 3 часов работы."
+        "crane": "Кран — от {price} бат/час",
+        "delivery": "Доставка экскаватора — {price} бат. При заказе от 3 часов работы — бесплатно."
       },
-      "note": "Для точного расчёта отправьте локацию, фото подъезда и короткое описание задачи.",
-      "equipment": "Вся техника и цены"
+      "note": "Чтобы узнать стоимость работ, пришлите локацию, фото участка и подъезда, а также короткое описание задачи.",
+      "equipment": "Посмотреть всю технику и цены"
     }
   },
   "en": {
     "seo": {
-      "title": "Excavators, Dump Trucks & Earthworks on Koh Samui",
-      "desc": "Construction machinery on Koh Samui: excavators, dump trucks, land clearing and site preparation. Own equipment, local operators, clear pricing.",
-      "keywords": "construction machinery koh samui, excavator samui, dump truck samui, earthworks samui, land clearing samui"
+      "title": "Equipment Rental & Earthworks on Koh Samui",
+      "desc": "Superman Samui: earthworks, excavators with operators, dump trucks and transport on Koh Samui. Choose a service or tell us about your project for a quote.",
+      "keywords": "earthworks koh samui, excavator rental koh samui, excavator with operator samui, dump truck samui, land clearing samui"
     },
     "hero": {
-      "title": "Construction machinery on Koh Samui - excavators, dump trucks and earthworks",
-      "description": "Land clearing, leveling, drainage, soil removal and material delivery. Own machines, local operators and clear pricing before the job starts.",
-      "eyebrow": "Koh Samui · construction machinery & earthworks"
+      "title": "Equipment Rental, Earthworks & Transport on Koh Samui",
+      "description": "Excavators with operators, dump trucks and a team for your site. Choose a service or tell us about your project — we’ll recommend an approach and prepare a quote.",
+      "eyebrow": "Koh Samui · machinery with operators and earthworks"
     },
     "seoBlock": {
-      "title": "Superman Samui - construction equipment on the island",
-      "p1": "We operate on Koh Samui with our own machinery: Komatsu and Caterpillar excavators, Hino dump trucks and a Kubota tractor. All equipment is maintained in-house, operators know the island.",
-      "p2": "We take on projects of different scale - from a single excavation to months-long jobs with hundreds of truck runs. We work with private clients, developers and contractors.",
-      "p3": "Based on Samui, no mainland logistics. We assess the job, give a clear price and work without middlemen."
+      "title": "Superman Samui — Local Equipment & Team",
+      "p1": "We work with private clients, developers and contractors on Koh Samui. Our own fleet is based on the island: Komatsu, Caterpillar and Yanmar excavators, Hino dump trucks and a Kubota tractor, with no mainland logistics.",
+      "p2": "Book a single machine with an operator or hand us several types of work at once: from a single excavation to months-long projects with hundreds of truck runs. We work directly, without middlemen.",
+      "p3": "Not sure where to start? Send your location, photos and a short description. We’ll offer practical advice and discuss costs and terms before work begins."
     },
     "services": {
-      "title": "Main services",
-      "subtitle": "Earthworks, excavators, dump trucks and site preparation for construction on Koh Samui.",
+      "title": "How We Can Help",
+      "subtitle": "Explore our main services or choose a specific job for your site.",
       "details": "Learn more",
       "earthworks": {
         "title": "Earthworks",
-        "text": "Full land preparation: clearing, leveling, drainage, backfilling and soil removal."
+        "text": "Excavation and backfilling, land clearing, grading and drainage for your site."
       },
       "excavator": {
-        "title": "Excavator rental",
-        "text": "Excavators with operator for digging, trenching, demolition, soil loading and construction work."
+        "title": "Excavator Rental",
+        "text": "Excavators with operators for digging, loading and demolition. We select the right machine for your workload and site access."
       },
       "truck": {
-        "title": "Dump trucks and transport",
-        "text": "Soil and debris removal, material delivery, equipment transport and construction site support."
+        "title": "Dump Trucks & Transport",
+        "text": "Soil and construction waste removal, sand and aggregate delivery, and equipment transport."
       },
       "landClearing": {
-        "title": "Land clearing",
-        "text": "Tree removal, root removal, vegetation clearing, debris removal and old structure demolition."
+        "title": "Land Clearing",
+        "text": "We remove overgrowth, trees, stumps and debris to clear space for construction and equipment access."
       },
       "landLeveling": {
-        "title": "Land leveling",
-        "text": "Land grading, slope shaping and flat area preparation for houses, roads and construction."
+        "title": "Land Leveling & Grading",
+        "text": "We cut high spots, fill low areas and shape slopes to prepare sites for houses, yards and roads."
       },
       "drainage": {
-        "title": "Drainage work",
-        "text": "Water runoff, drainage trenches, pipes and slopes for wet or low land."
+        "title": "Land Drainage",
+        "text": "Drainage channels, trenches and pipes planned around your land’s contours to carry rainwater away."
       }
     },
     "benefits": {
-      "title": "Why clients work with us",
+      "title": "Why Work With Us",
       "items": {
         "clearPrice": {
-          "title": "Clear estimate before work starts",
-          "description": "We check the task, access, volume and machinery first, then give a clear work format and price."
+          "title": "Clear Costs",
+          "description": "We assess your project, offer practical advice and agree on prices and terms before starting. Any additional work is discussed with you in advance."
         },
         "ownMachines": {
-          "title": "Own machines for different jobs",
-          "description": "Excavators, dump trucks and trucks can work together as one team for your site."
+          "title": "Our Own Equipment & Team",
+          "description": "We select the machines and coordinate work on site. Excavators, dump trucks and operators through one contractor."
         },
         "localTeam": {
-          "title": "We know Samui conditions",
-          "description": "We consider roads, access, rain, soil, slopes and real island limitations before the job."
+          "title": "Local Knowledge",
+          "description": "Narrow access, steep slopes, soil conditions and the rainy season all shape how we plan your work."
         }
       }
     },
     "pricing": {
-      "title": "Base pricing",
-      "description": "Typical price ranges for common equipment. Final cost depends on location, access, work volume and site conditions.",
+      "title": "Equipment Rental Rates",
+      "description": "Starting rates are listed below. Your quote will account for the equipment, scope of work, delivery and site conditions.",
       "units": {
         "hour": "from {price} THB/hour",
         "trip": "from {price} THB/trip",
@@ -402,80 +402,80 @@ const seoBlock = computed(() => ({
         "fm18": "10-wheel dump truck"
       },
       "extra": {
-        "title": "Additional",
-        "crane": "Crane - from {price} THB/hour",
-        "delivery": "Excavator delivery - {price} THB. Free from 3 hours of work."
+        "title": "Additional Services",
+        "crane": "Crane — from {price} THB/hour",
+        "delivery": "Excavator delivery — {price} THB. Free when you book at least 3 hours of work."
       },
-      "note": "For an accurate quote, send your location, access photos and a short job description.",
-      "equipment": "All equipment & pricing"
+      "note": "For a quote, send your location, photos of the site and access road, and a short description of the job.",
+      "equipment": "View All Equipment & Rates"
     }
   },
   "th": {
     "seo": {
-      "title": "เครื่องจักรก่อสร้าง เกาะสมุย - รถขุด รถดั๊มพ์ งานดิน",
-      "desc": "บริการเครื่องจักรก่อสร้างบนเกาะสมุย: รถขุด รถดั๊มพ์ เคลียร์พื้นที่ และเตรียมที่ดิน มีเครื่องจักรของเราเอง คนขับท้องถิ่น ราคาชัดเจน",
-      "keywords": "เครื่องจักรก่อสร้าง สมุย, รถขุด สมุย, รถดั๊มพ์ สมุย, งานดิน สมุย, เคลียร์ที่ดิน สมุย"
+      "title": "เครื่องจักร งานดินและขนส่งบนเกาะสมุย",
+      "desc": "Superman Samui รับงานดิน บริการรถขุดพร้อมคนขับ รถดั๊มและขนส่งบนเกาะสมุย เลือกบริการที่ต้องการหรือแจ้งรายละเอียดโครงการ เพื่อรับคำแนะนำและประเมินราคา",
+      "keywords": "งานดิน สมุย, เช่ารถขุด สมุย, รถขุดพร้อมคนขับ สมุย, รถดั๊ม สมุย, เคลียร์ที่ดิน สมุย"
     },
     "hero": {
-      "title": "เครื่องจักรก่อสร้างบนเกาะสมุย - รถขุด รถดั๊มพ์ และงานดิน",
-      "description": "เคลียร์พื้นที่ ปรับระดับ ทำระบายน้ำ ขนดิน และส่งวัสดุก่อสร้าง มีเครื่องจักรของเราเอง คนขับท้องถิ่น และแจ้งราคาชัดเจนก่อนเริ่มงาน",
-      "eyebrow": "เกาะสมุย · เครื่องจักรก่อสร้างและงานดิน"
+      "title": "บริการเครื่องจักร งานดิน และขนส่งบนเกาะสมุย",
+      "description": "รถขุดพร้อมคนขับ รถดั๊ม และทีมงานสำหรับพื้นที่ของคุณ เลือกบริการที่ต้องการหรือบอกรายละเอียดโครงการ เราจะแนะนำวิธีทำงานและประเมินราคาให้",
+      "eyebrow": "เกาะสมุย · เครื่องจักรพร้อมคนขับและงานดิน"
     },
     "seoBlock": {
-      "title": "Superman Samui - เครื่องจักรก่อสร้างบนเกาะสมุย",
-      "p1": "เราทำงานบนเกาะสมุยด้วยเครื่องจักรของเราเอง ทั้งรถขุด Komatsu และ Caterpillar รถดั๊มพ์ Hino และรถแทรกเตอร์ Kubota ดูแลเครื่องจักรเองและทีมงานรู้จักพื้นที่",
-      "p2": "รับงานได้หลายขนาด ตั้งแต่ขุดบ่อเล็กๆ ไปจนถึงโครงการใหญ่หลายเดือนที่ต้องขนส่งหลายร้อยเที่ยว รับทั้งลูกค้าส่วนตัว นักพัฒนา และผู้รับเหมา",
-      "p3": "ทีมงานอยู่บนสมุย ไม่ต้องรอขนเครื่องจักรจากแผ่นดินใหญ่ ประเมินงาน แจ้งราคาชัดเจน และทำงานโดยตรงโดยไม่ผ่านคนกลาง"
+      "title": "Superman Samui — เครื่องจักรและทีมงานบนเกาะ",
+      "p1": "ให้บริการลูกค้าทั่วไป ผู้พัฒนาโครงการ และผู้รับเหมาบนเกาะสมุย เครื่องจักรเป็นของเราเองและประจำอยู่บนเกาะ ทั้งรถขุด Komatsu, Caterpillar และ Yanmar รถดั๊ม Hino และแทรกเตอร์ Kubota ไม่ต้องรอขนจากแผ่นดินใหญ่",
+      "p2": "เลือกใช้เครื่องจักรพร้อมคนขับเพียงคันเดียว หรือให้เรารับงานหลายประเภทพร้อมกัน ตั้งแต่ขุดบ่อเล็ก ๆ จนถึงโครงการหลายเดือนที่ขนส่งหลายร้อยเที่ยว ทำงานโดยตรงไม่ผ่านคนกลาง",
+      "p3": "ยังไม่รู้จะเริ่มตรงไหน? ส่งโลเคชัน รูปถ่าย และรายละเอียดงานมาให้เรา เราจะให้คำแนะนำ พร้อมคุยเรื่องราคาและเงื่อนไขก่อนเริ่มงาน"
     },
     "services": {
-      "title": "บริการหลัก",
-      "subtitle": "งานดิน รถขุด รถดั๊มพ์ และเตรียมพื้นที่ก่อสร้างบนเกาะสมุย",
+      "title": "เราช่วยคุณได้อย่างไร",
+      "subtitle": "เลือกประเภทงานหลักหรือบริการเฉพาะที่เหมาะกับพื้นที่ของคุณ",
       "details": "ดูเพิ่มเติม",
       "earthworks": {
         "title": "งานดิน",
-        "text": "เตรียมพื้นที่แบบครบวงจร เคลียร์พื้นที่ ปรับระดับ ระบายน้ำ ถมดิน และขนดินออก"
+        "text": "ขุดดิน ถมดิน เคลียร์ที่ดิน ปรับระดับ และทำระบบระบายน้ำตามความต้องการของพื้นที่"
       },
       "excavator": {
-        "title": "บริการรถขุด",
-        "text": "รถขุดพร้อมคนขับ สำหรับขุดดิน ขุดร่อง ทุบรื้อ ตักดิน และงานก่อสร้าง"
+        "title": "เช่ารถขุดพร้อมคนขับ",
+        "text": "สำหรับขุดดิน ตักดิน และรื้อถอน เลือกขนาดรถให้เหมาะกับปริมาณงานและทางเข้าพื้นที่"
       },
       "truck": {
-        "title": "รถดั๊มพ์และขนส่ง",
-        "text": "ขนดิน เศษวัสดุ ส่งวัสดุก่อสร้าง ขนย้ายเครื่องจักร และช่วยงานไซต์ก่อสร้าง"
+        "title": "รถดั๊มและบริการขนส่ง",
+        "text": "ขนดินและเศษวัสดุก่อสร้างออก ส่งทราย หิน และวัสดุอื่น ๆ พร้อมบริการขนย้ายเครื่องจักร"
       },
       "landClearing": {
         "title": "เคลียร์ที่ดิน",
-        "text": "ตัดต้นไม้ ขุดรากไม้ เคลียร์พืชรก ขนเศษวัสดุ และรื้อถอนสิ่งปลูกสร้างเก่า"
+        "text": "กำจัดวัชพืช ต้นไม้ ตอไม้ และขยะ เพื่อเตรียมพื้นที่ก่อสร้างและเปิดทางเข้าให้เครื่องจักร"
       },
       "landLeveling": {
         "title": "ปรับระดับที่ดิน",
-        "text": "ปรับพื้นที่ ทำระดับ ทำสโลป และเตรียมพื้นที่เรียบสำหรับบ้าน ถนน และงานก่อสร้าง"
+        "text": "ตัดดินส่วนสูง ถมพื้นที่ต่ำ และปรับความลาดเอียง เตรียมพื้นที่สำหรับบ้าน ลาน และถนน"
       },
       "drainage": {
         "title": "ระบบระบายน้ำ",
-        "text": "แก้น้ำขัง ขุดร่อง วางท่อ และทำสโลปสำหรับพื้นที่เปียกหรือพื้นที่ต่ำ"
+        "text": "ขุดคู ขุดร่อง และวางท่อระบายน้ำฝน โดยคำนึงถึงระดับและความลาดเอียงของพื้นที่"
       }
     },
     "benefits": {
       "title": "ทำไมลูกค้าเลือกเรา",
       "items": {
         "clearPrice": {
-          "title": "ประเมินราคาชัดเจนก่อนเริ่มงาน",
-          "description": "ดูงาน ทางเข้า ปริมาณงาน และเครื่องจักรก่อน แล้วแจ้งรูปแบบงานและราคาให้ชัดเจน"
+          "title": "ราคาชัดเจน",
+          "description": "ประเมินงาน ให้คำแนะนำ และตกลงราคาและเงื่อนไขก่อนเริ่ม หากมีงานเพิ่มเติม เราจะคุยกับคุณล่วงหน้า"
         },
         "ownMachines": {
-          "title": "มีเครื่องจักรสำหรับหลายประเภทงาน",
-          "description": "รถขุด รถดั๊มพ์ และรถบรรทุกสามารถทำงานร่วมกันในทีมเดียวได้"
+          "title": "เครื่องจักรและทีมงานของเราเอง",
+          "description": "เลือกเครื่องจักรและประสานงานหน้างานให้ ทั้งรถขุด รถดั๊ม และคนขับ ติดต่อผ่านผู้รับเหมารายเดียว"
         },
         "localTeam": {
-          "title": "เข้าใจพื้นที่บนเกาะสมุย",
-          "description": "คำนึงถึงถนน ทางเข้า ฝน ดิน ความลาดเอียง และข้อจำกัดจริงของพื้นที่"
+          "title": "รู้จักพื้นที่สมุย",
+          "description": "วางแผนตามสภาพพื้นที่จริง ทั้งทางเข้าแคบ พื้นที่ลาดชัน สภาพดิน และฤดูฝน"
         }
       }
     },
     "pricing": {
-      "title": "ราคาเบื้องต้น",
-      "description": "ตัวอย่างราคาสำหรับเครื่องจักรที่ใช้บ่อย ราคาจริงขึ้นอยู่กับหน้างาน ทางเข้า ปริมาณงาน และสภาพพื้นที่",
+      "title": "อัตราค่าบริการเครื่องจักร",
+      "description": "ด้านล่างคือราคาเริ่มต้น ราคาสำหรับงานของคุณจะคำนวณตามเครื่องจักร ปริมาณงาน ค่าขนส่ง และสภาพพื้นที่",
       "units": {
         "hour": "เริ่มต้น {price} บาท/ชั่วโมง",
         "trip": "เริ่มต้น {price} บาท/เที่ยว",
@@ -496,11 +496,11 @@ const seoBlock = computed(() => ({
       },
       "extra": {
         "title": "บริการเพิ่มเติม",
-        "crane": "เครน - เริ่มต้น {price} บาท/ชั่วโมง",
-        "delivery": "ค่าขนส่งรถขุด - {price} บาท ฟรีเมื่อใช้งานตั้งแต่ 3 ชั่วโมงขึ้นไป"
+        "crane": "เครน — เริ่มต้น {price} บาท/ชั่วโมง",
+        "delivery": "ค่าขนส่งรถขุด — {price} บาท ฟรีเมื่อจองงานตั้งแต่ 3 ชั่วโมงขึ้นไป"
       },
-      "note": "ส่งโลเคชัน รูปทางเข้า และรายละเอียดงาน เพื่อประเมินราคาที่แม่นยำ",
-      "equipment": "เครื่องจักรและราคาทั้งหมด"
+      "note": "หากต้องการทราบราคา ส่งโลเคชัน รูปพื้นที่และทางเข้า พร้อมรายละเอียดงานสั้น ๆ มาให้เรา",
+      "equipment": "ดูเครื่องจักรและราคาทั้งหมด"
     }
   }
 }

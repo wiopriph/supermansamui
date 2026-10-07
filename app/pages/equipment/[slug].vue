@@ -245,9 +245,9 @@ useHead(() => {
     },
     "features": "Key features",
     "specsTitle": "Technical specifications",
-    "pricesTitle": "Hire rates",
+    "pricesTitle": "Rental rates",
     "projectsTitle": "Projects using this machine",
-    "contactTitle": "Hire this machine",
+    "contactTitle": "Rent this machine",
     "contactDescription": "Contact us to check availability and get a quote.",
     "contactButton": "Get in touch",
     "contactMessage": "Hi! I'm interested in hiring the {name} ({type}). Could you tell me about availability and price?",
@@ -302,7 +302,7 @@ useHead(() => {
   >
     <ServiceHero
       :title="equipment.name"
-      :description="localeData.summary"
+      :description="localeData.description"
       :imageSrc="equipment.image"
       :page="equipmentPath"
       :eyebrow="localeData.type"

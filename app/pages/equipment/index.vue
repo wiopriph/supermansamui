@@ -188,14 +188,14 @@ useHead(() => {
   },
   "en": {
     "seo": {
-      "title": "Construction Equipment Hire on Koh Samui",
-      "description": "Superman Samui owns and operates 12 machines on Koh Samui: 5 excavators, 6 trucks and a tractor. Full specifications, hire rates and photos for every unit.",
-      "keywords": "construction equipment Koh Samui, excavator hire Samui, dump truck rental Samui, tractor Samui, earthworks machinery Samui, Superman Samui equipment",
+      "title": "Construction Equipment Rental on Koh Samui",
+      "description": "Superman Samui owns and operates 12 machines on Koh Samui: 5 excavators, 6 trucks and a tractor. Full specifications, rental rates and photos for every unit.",
+      "keywords": "construction equipment Koh Samui, excavator rental Samui, dump truck rental Samui, tractor Samui, earthworks machinery Samui, Superman Samui equipment",
       "imageAlt": "Superman Samui construction equipment fleet on Koh Samui",
       "intro": "All machinery is company-owned and permanently based on Koh Samui - no middlemen, no waiting for mainland deliveries. Our operators work with these machines daily, so you get reliable schedules and consistent quality on every job."
     },
     "title": "Our equipment",
-    "description": "Own fleet of construction machinery on Koh Samui. Specifications, hire rates and photos.",
+    "description": "Own fleet of construction machinery on Koh Samui. Specifications, rental rates and photos.",
     "categories": {
       "excavator": "Excavators",
       "truck": "Dump trucks",

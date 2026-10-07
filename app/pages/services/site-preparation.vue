@@ -173,129 +173,129 @@ useServiceSeo({
       },
       "seo": {
         "title": "Подготовка участка под строительство на Самуи",
-        "description": "Подготовка участка под строительство на Самуи: расчистка, выравнивание, дренаж, подъезд, зона под фундамент, вывоз грунта и мусора.",
-        "keywords": "подготовка участка под строительство самуи, подготовка земли самуи, site preparation koh samui, подготовка под фундамент самуи, подготовка участка под дом самуи, земляные работы самуи"
+        "description": "Готовим участки под строительство домов и вилл на Самуи: подъезд, рабочие зоны и необходимые земляные работы. Согласуем этапы, стоимость и условия до начала.",
+        "keywords": "подготовка участка под строительство самуи, подготовка участка под дом самуи, подготовка строительной площадки самуи, подъезд к стройке самуи"
       },
       "hero": {
-        "title": "Подготовка участка под строительство на Самуи",
-        "description": "Готовим землю под дом, виллу, дорогу или стройплощадку: расчистка, уровни, подъезд, дренаж и вывоз."
+        "title": "Подготовка участка под строительство на Самуи",
+        "description": "Готовим площадку к началу стройки: подъезд для техники, место под здание и зоны для работы и хранения материалов. Подбираем этапы с учётом вашего проекта."
       },
-      "intro": "Готовим участки к строительству домов, вилл, дорог и коммерческих объектов на Самуи. Помогаем пройти путь от сырого участка до площадки, где можно начинать строительные работы: расчистить землю, убрать мусор и корни, сделать подъезд, подготовить зону под фундамент, продумать уровни, дренаж, завоз или вывоз материала.",
+      "intro": "Оценим участок, изучим план строительства и подскажем, с чего начать. Определим объём подготовки, подберём технику и пропишем стоимость и условия до начала работ. Можно заказать всю подготовку или отдельный этап.",
       "tasks": {
-        "title": "Что входит в подготовку участка",
+        "title": "Какие работы могут понадобиться",
         "t1": {
-          "title": "Оценка участка перед работами",
-          "description": "Смотрим подъезд, уклон, воду, грунт, деревья, мусор и ограничения для техники."
+          "title": "Оценка участка и проекта",
+          "description": "Уточняем расположение здания, границы работ и требования строителей. Проверяем подъезд и условия для техники."
         },
         "t2": {
-          "title": "Расчистка территории",
-          "description": "Убираем заросли, деревья, корни, старые конструкции и всё, что мешает стройке."
+          "title": "Освобождение зоны строительства",
+          "description": "Убираем растительность, пни и мусор в согласованных границах. Заранее отмечаем, что нужно сохранить."
         },
         "t3": {
-          "title": "Уровни и рабочие зоны",
-          "description": "Готовим зоны под фундамент, технику, складирование материалов, дорогу и парковку."
+          "title": "Рабочие площадки",
+          "description": "Готовим место под здание, площадки для техники и хранения материалов по согласованным уровням и плану."
         },
         "t4": {
-          "title": "Дренаж и вода",
-          "description": "Планируем уклоны и отвод воды, чтобы участок не заливало во время дождей."
+          "title": "Отвод воды на время стройки",
+          "description": "Уточняем, куда будет уходить дождевая вода. Определяем нужные канавы, трубы и порядок их устройства."
         },
         "t5": {
-          "title": "Подъезд к объекту",
-          "description": "Готовим или улучшаем въезд, чтобы техника и грузовики могли нормально работать."
+          "title": "Подъезд и движение по участку",
+          "description": "Готовим въезд и проезды с учётом машин, которые будут работать на объекте, мест разгрузки и разворота."
         },
         "t6": {
-          "title": "Вывоз и доставка материалов",
-          "description": "Организуем самосвалы для вывоза грунта, мусора или доставки песка, щебня и грунта."
+          "title": "Доставка и вывоз",
+          "description": "Организуем доставку грунта, песка и щебня, вывоз лишнего грунта и мусора в нужной последовательности."
         }
       },
       "included": {
-        "title": "Почему подготовка важна до начала стройки",
+        "title": "Что даёт подготовка по плану",
         "build": {
-          "title": "Стройка начинается быстрее",
-          "description": "Когда участок подготовлен, строителям проще завезти материалы, поставить технику и начать работу."
+          "title": "Удобный старт для строителей",
+          "description": "Подъезд, разгрузку и размещение материалов продумываем до приезда строительной команды."
         },
         "sequence": {
-          "title": "Меньше хаоса на объекте",
-          "description": "Правильная последовательность снижает риск переделок: расчистка, уровни, вода, подъезд, вывоз."
+          "title": "Согласованный порядок работ",
+          "description": "Подстраиваем подготовку под этапы стройки, чтобы не перекрыть проезд и не занять нужные рабочие зоны."
         },
         "team": {
-          "title": "Техника и логистика вместе",
-          "description": "Экскаваторы, самосвалы, доставка и вывоз работают как одна система."
+          "title": "Одна команда на подготовку",
+          "description": "Координируем работу экскаваторов и самосвалов, доставку материалов и вывоз с участка."
         }
       },
       "seoBlock": {
-        "title": "Подготовка земли перед строительством дома или виллы",
-        "p1": "Перед строительством на Самуи важно подготовить не только место под дом, но и весь участок: подъезд для техники, зону складирования, направление воды, рабочие уровни и место для вывоза или завоза материалов.",
-        "p2": "Если начать стройку без нормальной подготовки, часто появляются проблемы: техника не может заехать, вода стоит после дождя, грунт проседает, мусор мешает работам, а самосвалы не могут нормально разворачиваться.",
-        "p3": "Мы оцениваем участок и подбираем порядок работ так, чтобы строительная команда получила понятную и готовую площадку для следующего этапа."
+        "title": "Что учесть перед строительством дома или виллы",
+        "p1": "Подготовка начинается с того, как будет устроена стройплощадка. Где расположится дом, откуда заедут грузовики, куда сложить материалы и оставить место для техники — эти вопросы стоит решить до начала работ.",
+        "p2": "Если у вас есть план участка, отметки высот и требования подрядчика, пришлите их вместе с фотографиями. По ним определим границы подготовки и результат каждого этапа. Если данных пока мало, подскажем, что нужно уточнить со строителями.",
+        "p3": "Состав работ зависит от состояния участка и проекта. Где-то достаточно подготовить въезд и рабочую зону, а где-то нужны расчистка, изменение уровней и водоотвод. Включаем в расчёт согласованные работы и заранее обсуждаем дополнительные задачи."
       },
       "process": {
-        "title": "Как проходит подготовка",
+        "title": "Как готовим участок к стройке",
         "p1": {
-          "title": "Смотрим участок",
-          "description": "Оцениваем локацию, подъезд, рельеф, воду, деревья, мусор и будущую зону строительства."
+          "title": "Изучаем проект и участок",
+          "description": "Обсуждаем будущую стройку, смотрим фото, план и подъезд. При необходимости осматриваем участок."
         },
         "p2": {
-          "title": "Планируем этапы",
-          "description": "Определяем, что делать сначала: расчистка, подъезд, дренаж, уровни, вывоз или доставка."
+          "title": "Согласуем объём и цену",
+          "description": "Определяем этапы, технику, доставку и вывоз. Фиксируем стоимость, условия и ожидаемый результат."
         },
         "p3": {
-          "title": "Готовим площадку",
-          "description": "Работаем техникой, убираем лишнее, формируем рабочие зоны и готовим землю."
+          "title": "Выполняем подготовку",
+          "description": "Готовим подъезд и рабочие зоны по согласованному плану. Дополнительные работы обсуждаем до выполнения."
         },
         "p4": {
-          "title": "Передаём под стройку",
-          "description": "Оставляем участок готовым для фундамента, дороги, техники или дальнейших строительных работ."
+          "title": "Проверяем результат",
+          "description": "Вместе с вами или вашим подрядчиком сверяем выполненные работы с согласованным объёмом и планом."
         }
       },
       "pricing": {
-        "title": "Быстрый расчёт подготовки участка",
-        "text": "Цена зависит от площади, подъезда, состояния участка, объёма расчистки, дренажа, выравнивания, вывоза и доставки материалов. Для расчёта отправьте локацию, фото участка, фото подъезда и короткое описание проекта."
+        "title": "Стоимость подготовки участка",
+        "text": "Цена зависит от состояния участка, объёма работ, подъезда, техники и перевозок. В расчёте укажем, что включено: работы, материалы, доставка и вывоз. Тарифы на технику есть на странице каждой машины."
       },
       "cta": {
-        "title": "Отправьте фото участка перед строительством",
-        "text": "Пришлите локацию, 3–5 фото и задачу: дом, вилла, дорога или другой проект. Мы подскажем, с чего начать подготовку."
+        "title": "Обсудим подготовку вашего участка",
+        "text": "Пришлите локацию, фото участка и подъезда, расскажите, что планируете строить. Если есть план — приложите его. Предложим порядок работ и рассчитаем стоимость."
       },
       "related": {
-        "title": "Связанные услуги",
+        "title": "Подробнее об отдельных работах",
         "earthworks": {
           "title": "Земляные работы",
-          "description": "Если нужна общая подготовка земли: расчистка, уровни, дренаж, отсыпка и вывоз."
+          "description": "Все направления: котлованы, траншеи, отсыпка, планировка и другие работы с грунтом."
         },
         "clearing": {
           "title": "Расчистка участка",
-          "description": "Если участок зарос деревьями, кустами, корнями или старым мусором."
+          "description": "Удаление зарослей, деревьев, пней и мусора в выбранной зоне или на всём участке."
         },
         "drainage": {
           "title": "Дренаж участка",
-          "description": "Если на участке стоит вода или нужно заранее продумать отвод перед строительством."
+          "description": "Канавы, трубы и другие работы для отвода воды с участка."
         }
       },
       "faq": {
-        "title": "Частые вопросы",
+        "title": "Вопросы о подготовке к строительству",
         "q1": {
-          "question": "Чем подготовка участка отличается от земляных работ?",
-          "answer": "Земляные работы - широкий термин. Подготовка участка под строительство сфокусирована на том, чтобы площадка была готова именно для строителей, техники, фундамента и материалов."
+          "question": "Что входит в подготовку участка?",
+          "answer": "Состав подбираем под проект: это могут быть расчистка, подъезд, рабочие площадки, планировка, отвод воды, доставка и вывоз. До начала фиксируем, какие работы включены в заказ и какой результат нужен строителям."
         },
         "q2": {
-          "question": "Можно подготовить участок под дом или виллу?",
-          "answer": "Да. Готовим участки под дома, виллы, дороги, парковки и коммерческие объекты."
+          "question": "Можно заказать только часть подготовки?",
+          "answer": "Да. Например, подготовить въезд, освободить зону под дом или устроить площадку для материалов. Уточним, какие работы уже выполнены и что понадобится для следующего этапа стройки."
         },
         "q3": {
-          "question": "Вы делаете подъезд для техники?",
-          "answer": "Да. Можем подготовить или улучшить подъезд, чтобы экскаваторы, самосвалы и строительная техника могли работать."
+          "question": "Подготовите подъезд для строительной техники?",
+          "answer": "Да, можем подготовить или улучшить подъезд. Сначала уточним размеры машин, ширину въезда, уклоны и места для разгрузки и разворота. Объём работ и материалы определяем после оценки условий."
         },
         "q4": {
-          "question": "Нужно ли сначала делать дренаж?",
-          "answer": "Если участок низкий или мокрый, дренаж лучше планировать до активной стройки и вместе с уровнями."
+          "question": "Когда нужно заниматься отводом воды?",
+          "answer": "Его стоит обсудить при планировании площадки вместе с будущими уровнями и проездами. Какие работы выполнять первыми, зависит от участка и проекта. Временный отвод воды на стройке и постоянный дренаж обсуждаем отдельно."
         },
         "q5": {
-          "question": "Что нужно для расчёта?",
-          "answer": "Локация, фото участка, фото подъезда, примерная площадь и описание будущего проекта."
+          "question": "Можно рассчитать стоимость без готового проекта?",
+          "answer": "Для первого обсуждения достаточно локации, фото участка и подъезда, примерной площади и описания будущей стройки. Дадим предварительную оценку и уточним, какие данные нужны для расчёта. Уровни, границы и требования к площадкам необходимо согласовать до выполнения соответствующих работ."
         },
         "q6": {
-          "question": "Можно после подготовки сразу начинать строительство?",
-          "answer": "Зависит от проекта и требований строителей. Наша задача - подготовить землю, подъезд, уровни и рабочую зону для следующего этапа."
+          "question": "После подготовки можно сразу делать фундамент?",
+          "answer": "Готовность к фундаментным работам определяет ваш строитель или инженер по проекту и состоянию основания. Мы выполняем согласованный объём подготовки; требования к отметкам, основанию и уплотнению нужно определить заранее."
         }
       },
       "photos": {
@@ -316,7 +316,6 @@ useServiceSeo({
           "title": "Зона под фундамент",
           "alt": "Подготовка зоны под фундамент дома или виллы"
         },
-
         "access-road-for-construction": {
           "title": "Подъезд к стройке",
           "alt": "Подготовка подъездной дороги для строительной техники"
@@ -341,130 +340,130 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Site Preparation on Koh Samui for Construction",
-        "description": "Site preparation on Koh Samui for houses, villas, roads and construction sites: clearing, levels, drainage, access, foundation area, soil and debris removal.",
-        "keywords": "site preparation koh samui, construction site preparation samui, land preparation koh samui, prepare land for building samui, villa site preparation samui, earthworks samui"
+        "title": "Construction Site Preparation on Koh Samui",
+        "description": "Preparing house and villa sites on Koh Samui: access, work areas and the earthworks your project needs. Scope, prices and terms agreed before work starts.",
+        "keywords": "site preparation koh samui, construction site preparation samui, house site preparation samui, construction access samui"
       },
       "hero": {
-        "title": "Site preparation on Koh Samui",
-        "description": "Preparing land for houses, villas, roads and construction sites: clearing, levels, access, drainage and removal."
+        "title": "Construction site preparation on Koh Samui",
+        "description": "Prepare for the start of construction with machinery access, a building area and space to work and store materials. We plan the stages your project needs."
       },
-      "intro": "We prepare land for houses, villas, roads and commercial construction projects on Koh Samui. We help turn raw land into a site ready for builders: clearing vegetation and debris, preparing access, shaping working areas, planning drainage, organizing machinery, material delivery and removal.",
+      "intro": "We assess your land, review your construction plans and suggest where to start. We define the scope, select the machinery and set out prices and terms before work begins. Book the full preparation or an individual stage.",
       "tasks": {
-        "title": "What site preparation includes",
+        "title": "Work your site may need",
         "t1": {
-          "title": "Site assessment",
-          "description": "Checking access, slope, water, soil, trees, debris and machine limitations before work starts."
+          "title": "Site and project assessment",
+          "description": "We confirm the building location, work boundaries and builder requirements, then check access and machinery constraints."
         },
         "t2": {
-          "title": "Land clearing",
-          "description": "Removing vegetation, trees, roots, old structures and everything that blocks construction."
+          "title": "Clearing the construction area",
+          "description": "We remove vegetation, stumps and debris within the marked boundaries, marking what needs to stay before work starts."
         },
         "t3": {
-          "title": "Levels and work areas",
-          "description": "Preparing areas for foundations, machinery, material storage, access roads and parking."
+          "title": "Work areas",
+          "description": "We prepare the building area and space for machinery and materials to the layout and levels in your plan."
         },
         "t4": {
-          "title": "Drainage and water",
-          "description": "Planning slopes and water runoff so the site does not flood during heavy rain."
+          "title": "Water runoff during construction",
+          "description": "We check where rainwater will go and plan any channels or pipes needed and when to install them."
         },
         "t5": {
-          "title": "Site access",
-          "description": "Preparing or improving access so machinery and trucks can work properly."
+          "title": "Access and movement on site",
+          "description": "We prepare entrances and routes around the vehicles using the site, with space for unloading and turning."
         },
         "t6": {
-          "title": "Removal and material delivery",
-          "description": "Organizing dump trucks for soil removal, debris removal or delivery of sand, gravel and fill soil."
+          "title": "Delivery and removal",
+          "description": "We coordinate soil, sand and gravel deliveries, plus surplus soil and debris removal, around the work sequence."
         }
       },
       "included": {
-        "title": "Why preparation matters before construction",
+        "title": "Why plan site preparation",
         "build": {
-          "title": "Construction starts faster",
-          "description": "A prepared site makes it easier for builders to bring materials, machinery and start work."
+          "title": "An easier start for your builders",
+          "description": "Access, unloading and material storage are planned before the construction team arrives."
         },
         "sequence": {
-          "title": "Less chaos on site",
-          "description": "The right sequence reduces rework: clearing, access, drainage, levels, removal and delivery."
+          "title": "A clear work sequence",
+          "description": "We coordinate preparation with construction stages to keep access routes and work areas available."
         },
         "team": {
-          "title": "Machines and logistics together",
-          "description": "Excavators, dump trucks, delivery and removal work as one coordinated system."
+          "title": "One team for preparation",
+          "description": "We coordinate excavators, dump trucks, material deliveries and removal from the site."
         }
       },
       "seoBlock": {
-        "title": "Preparing land before building a house or villa",
-        "p1": "Before construction on Koh Samui, it is not enough to prepare only the house footprint. The full site matters: machine access, material storage, water direction, working levels and space for trucks to move.",
-        "p2": "Starting construction without proper site preparation often creates problems: machinery cannot enter, rainwater stays on the land, soil settles, debris blocks the work and trucks cannot turn around.",
-        "p3": "We assess the land and plan the work sequence so the construction team receives a clear, usable site for the next stage."
+        "title": "Before building a house or villa",
+        "p1": "Preparation starts with the site layout. Where will the house sit? How will trucks enter? Where can materials be stored while leaving room for machinery? These decisions help define the work before it begins.",
+        "p2": "If you have a site plan, target levels or contractor requirements, send them with your photos. They help us define the preparation boundaries and the result of each stage. If details are still missing, we can suggest what to clarify with your builder.",
+        "p3": "The scope depends on the land and your project. Some sites only need access and a work area; others need clearing, grading and drainage. Our estimate covers the listed work, and we discuss additional tasks before carrying them out."
       },
       "process": {
-        "title": "How preparation works",
+        "title": "How we prepare your site",
         "p1": {
-          "title": "Site check",
-          "description": "We check location, access, terrain, water, vegetation, debris and the future building area."
+          "title": "Review the site and plans",
+          "description": "We discuss your build, review photos, plans and access, and visit the site if needed."
         },
         "p2": {
-          "title": "Work planning",
-          "description": "We decide the right order: clearing, access, drainage, levels, removal or material delivery."
+          "title": "Agree on scope and price",
+          "description": "We define stages, machinery, deliveries and removal, then confirm the cost, terms and expected result."
         },
         "p3": {
-          "title": "Site preparation",
-          "description": "We work with machinery, remove obstacles, shape working areas and prepare the land."
+          "title": "Carry out the preparation",
+          "description": "We prepare access and work areas to the plan. Any additional work is discussed before it starts."
         },
         "p4": {
-          "title": "Ready for construction",
-          "description": "We leave the site ready for foundations, roads, machinery or further building work."
+          "title": "Review the completed work",
+          "description": "We check the completed work against the scope and plan with you or your contractor."
         }
       },
       "pricing": {
-        "title": "Fast quote for site preparation",
-        "text": "The price depends on land size, access, site condition, clearing volume, drainage, leveling, removal and material delivery. Send location, site photos, access photos and a short project description."
+        "title": "Site preparation costs",
+        "text": "The price depends on site conditions, work volumes, access, machinery and transport. The estimate sets out which work, materials, deliveries and removal are included. Machine rates are listed on each equipment page."
       },
       "cta": {
-        "title": "Send photos before you start construction",
-        "text": "Share location, 3–5 photos and the project type: house, villa, road or another construction project. We’ll suggest where to start."
+        "title": "Let’s plan your site preparation",
+        "text": "Send the location, photos of the land and access, and a short description of your build. Include a plan if you have one. We’ll suggest a work sequence and estimate the cost."
       },
       "related": {
-        "title": "Related services",
+        "title": "More about individual services",
         "earthworks": {
           "title": "Earthworks",
-          "description": "For general land preparation: clearing, levels, drainage, backfilling and removal."
+          "description": "Explore excavation, trenching, filling, grading and other groundworks."
         },
         "clearing": {
           "title": "Land clearing",
-          "description": "If the land has trees, bushes, roots or old debris that need to be removed."
+          "description": "Vegetation, tree, stump and debris removal from a selected area or the whole plot."
         },
         "drainage": {
-          "title": "Drainage work",
-          "description": "If the site holds water or water runoff needs to be planned before construction."
+          "title": "Land drainage",
+          "description": "Channels, pipes and other work to direct water off your site."
         }
       },
       "faq": {
-        "title": "Frequently asked questions",
+        "title": "Site preparation questions",
         "q1": {
-          "question": "How is site preparation different from earthworks?",
-          "answer": "Earthworks is a broad term. Site preparation focuses on making the land ready for builders, machinery, foundations and material movement."
+          "question": "What does site preparation include?",
+          "answer": "The scope fits your project and may include clearing, access, work areas, grading, drainage, deliveries and removal. Before starting, we confirm the work included and the result your builders need."
         },
         "q2": {
-          "question": "Can you prepare land for a house or villa?",
-          "answer": "Yes. We prepare land for houses, villas, roads, parking areas and commercial projects."
+          "question": "Can I book just part of the preparation?",
+          "answer": "Yes. You can book access preparation, clearing the building area or creating a material storage area, for example. We check what is already done and what the next construction stage needs."
         },
         "q3": {
-          "question": "Can you prepare access for machinery?",
-          "answer": "Yes. We can prepare or improve access so excavators, dump trucks and construction machinery can work."
+          "question": "Can you prepare access for construction vehicles?",
+          "answer": "Yes, we can prepare or improve access. We first check vehicle dimensions, entrance width, slopes, and space for unloading and turning. The scope and materials are set after assessing site conditions."
         },
         "q4": {
-          "question": "Should drainage be planned first?",
-          "answer": "If the site is low or wet, drainage should be planned before active construction and together with levels."
+          "question": "When should water runoff be addressed?",
+          "answer": "Discuss it when planning the site layout, together with levels and access routes. The order of work depends on the site and project. Temporary runoff measures during construction and permanent drainage are handled separately."
         },
         "q5": {
-          "question": "What do you need for a quote?",
-          "answer": "Location, site photos, access photos, approximate area and a short description of the future project."
+          "question": "Can you estimate costs before the plans are complete?",
+          "answer": "For an initial discussion, send the location, site and access photos, approximate area and a description of the build. We can give an initial estimate and identify the details needed to refine it. Levels, boundaries and work area requirements must be defined before the relevant work starts."
         },
         "q6": {
-          "question": "Can construction start immediately after preparation?",
-          "answer": "It depends on the project and builder requirements. Our job is to prepare the land, access, levels and work area for the next stage."
+          "question": "Can foundation work start immediately afterwards?",
+          "answer": "Your builder or engineer determines readiness for foundation work based on the design and ground conditions. We carry out the preparation as scoped; requirements for levels, the formation and compaction need to be defined beforehand."
         }
       },
       "photos": {
@@ -509,130 +508,130 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "เตรียมพื้นที่ก่อสร้าง เกาะสมุย - บ้านและวิลล่า",
-        "description": "บริการเตรียมพื้นที่ก่อสร้างบนเกาะสมุย สำหรับบ้าน วิลล่า ถนน และไซต์งาน เคลียร์พื้นที่ ปรับระดับ ระบายน้ำ ทางเข้า และขนวัสดุออก",
-        "keywords": "เตรียมพื้นที่ก่อสร้าง สมุย, เตรียมที่ดิน สมุย, งานดิน สมุย, เตรียมพื้นที่สร้างบ้าน สมุย, เตรียมพื้นที่วิลล่า สมุย, รถขุด สมุย"
+        "title": "เตรียมพื้นที่ก่อสร้างบนเกาะสมุย",
+        "description": "เตรียมพื้นที่สร้างบ้านและวิลล่าบนเกาะสมุย ทำทางเข้า พื้นที่ทำงาน และงานดินตามโครงการ ตกลงขอบเขต ราคา และเงื่อนไขก่อนเริ่มงาน",
+        "keywords": "เตรียมพื้นที่ก่อสร้าง สมุย, เตรียมที่ดินสร้างบ้าน สมุย, เตรียมไซต์ก่อสร้าง เกาะสมุย, ทางเข้าไซต์ก่อสร้าง สมุย"
       },
       "hero": {
         "title": "เตรียมพื้นที่ก่อสร้างบนเกาะสมุย",
-        "description": "เตรียมที่ดินสำหรับบ้าน วิลล่า ถนน และไซต์ก่อสร้าง เคลียร์พื้นที่ ทำระดับ ทางเข้า ระบายน้ำ และขนออก"
+        "description": "เตรียมทางเข้าเครื่องจักร พื้นที่ตัวอาคาร พื้นที่ทำงานและวางวัสดุก่อนเริ่มก่อสร้าง กำหนดขั้นตอนที่จำเป็นให้เหมาะกับโครงการของคุณ"
       },
-      "intro": "เรารับเตรียมพื้นที่สำหรับสร้างบ้าน วิลล่า ถนน และโครงการก่อสร้างบนเกาะสมุย ช่วยเปลี่ยนพื้นที่ดิบให้พร้อมสำหรับทีมก่อสร้าง เช่น เคลียร์พืชและเศษวัสดุ เตรียมทางเข้า ทำพื้นที่ทำงาน วางแผนระบายน้ำ จัดเครื่องจักร ขนวัสดุเข้าและขนของออก",
+      "intro": "เราประเมินพื้นที่ ดูแผนก่อสร้าง และแนะนำว่าควรเริ่มจากอะไร กำหนดขอบเขตงาน เลือกเครื่องจักร พร้อมระบุราคาและเงื่อนไขก่อนเริ่มงาน เลือกได้ทั้งการเตรียมพื้นที่ทั้งหมดหรือเฉพาะบางขั้นตอน",
       "tasks": {
-        "title": "งานเตรียมพื้นที่รวมอะไรบ้าง",
+        "title": "งานที่อาจจำเป็นสำหรับพื้นที่ของคุณ",
         "t1": {
-          "title": "ประเมินหน้างาน",
-          "description": "ดูทางเข้า ความลาดเอียง น้ำ ดิน ต้นไม้ เศษวัสดุ และข้อจำกัดของเครื่องจักร"
+          "title": "ประเมินพื้นที่และโครงการ",
+          "description": "ตรวจสอบตำแหน่งอาคาร ขอบเขตงาน และข้อกำหนดของผู้รับเหมา พร้อมดูทางเข้าและข้อจำกัดในการใช้เครื่องจักร"
         },
         "t2": {
-          "title": "เคลียร์พื้นที่",
-          "description": "กำจัดพืช ต้นไม้ รากไม้ สิ่งปลูกสร้างเก่า และสิ่งที่ขวางงานก่อสร้าง"
+          "title": "เคลียร์บริเวณก่อสร้าง",
+          "description": "กำจัดพืช ตอไม้ และเศษวัสดุภายในขอบเขตที่กำหนด โดยทำเครื่องหมายสิ่งที่ต้องเก็บไว้ก่อนเริ่มงาน"
         },
         "t3": {
-          "title": "ทำระดับและพื้นที่ทำงาน",
-          "description": "เตรียมพื้นที่สำหรับฐานราก เครื่องจักร วางวัสดุ ถนนทางเข้า และที่จอดรถ"
+          "title": "เตรียมพื้นที่ทำงาน",
+          "description": "เตรียมบริเวณตัวอาคาร พื้นที่เครื่องจักร และจุดวางวัสดุตามผังและระดับที่กำหนด"
         },
         "t4": {
-          "title": "ระบบน้ำและระบายน้ำ",
-          "description": "วางสโลปและทางน้ำ เพื่อไม่ให้น้ำขังในไซต์ช่วงฝนตก"
+          "title": "ทางระบายน้ำระหว่างก่อสร้าง",
+          "description": "ตรวจสอบจุดระบายน้ำฝนออกจากพื้นที่ วางแผนงานร่องระบายน้ำหรือท่อที่จำเป็นและลำดับการติดตั้ง"
         },
         "t5": {
-          "title": "ทางเข้าไซต์งาน",
-          "description": "เตรียมหรือปรับทางเข้า เพื่อให้รถขุด รถดั๊มพ์ และเครื่องจักรทำงานได้"
+          "title": "ทางเข้าและทางสัญจรในไซต์",
+          "description": "เตรียมทางเข้าและทางวิ่งให้เหมาะกับรถที่จะใช้งาน รวมถึงจุดลงวัสดุและพื้นที่กลับรถ"
         },
         "t6": {
-          "title": "ขนออกและส่งวัสดุ",
-          "description": "จัดรถดั๊มพ์สำหรับขนดิน เศษวัสดุ หรือส่งทราย หิน ดินถมเข้าพื้นที่"
+          "title": "ส่งวัสดุและขนออก",
+          "description": "จัดส่งดิน ทราย และหิน พร้อมขนดินส่วนเกินและเศษวัสดุออกให้สอดคล้องกับลำดับงาน"
         }
       },
       "included": {
-        "title": "ทำไมต้องเตรียมพื้นที่ก่อนก่อสร้าง",
+        "title": "เตรียมพื้นที่ตามแผนช่วยอะไรบ้าง",
         "build": {
-          "title": "เริ่มงานก่อสร้างง่ายขึ้น",
-          "description": "เมื่อพื้นที่พร้อม ทีมก่อสร้างสามารถนำวัสดุ เครื่องจักร และเริ่มงานได้เร็วขึ้น"
+          "title": "ทีมก่อสร้างเริ่มงานสะดวกขึ้น",
+          "description": "วางแผนทางเข้า จุดลงวัสดุ และพื้นที่จัดเก็บก่อนทีมก่อสร้างเข้าหน้างาน"
         },
         "sequence": {
-          "title": "ลดความวุ่นวายในไซต์",
-          "description": "ลำดับงานที่ดีช่วยลดการแก้งาน เช่น เคลียร์ ทางเข้า ระบายน้ำ ทำระดับ และขนออก"
+          "title": "ลำดับงานชัดเจน",
+          "description": "ประสานงานเตรียมพื้นที่กับขั้นตอนก่อสร้าง เพื่อให้ทางเข้าและพื้นที่ทำงานยังใช้งานได้"
         },
         "team": {
-          "title": "เครื่องจักรและขนส่งครบ",
-          "description": "รถขุด รถดั๊มพ์ การส่งวัสดุ และขนออกทำงานร่วมกันได้"
+          "title": "ทีมเดียวดูแลงานเตรียมพื้นที่",
+          "description": "ประสานรถขุด รถดั๊มพ์ การส่งวัสดุ และการขนออกจากไซต์ให้ทำงานต่อเนื่องกัน"
         }
       },
       "seoBlock": {
-        "title": "เตรียมที่ดินก่อนสร้างบ้านหรือวิลล่า",
-        "p1": "ก่อนเริ่มก่อสร้างบนเกาะสมุย ไม่ใช่แค่เตรียมจุดวางตัวบ้านเท่านั้น แต่ต้องดูทั้งพื้นที่ ทางเข้าเครื่องจักร จุดวางวัสดุ ทิศทางน้ำ ระดับพื้นที่ และพื้นที่ให้รถทำงาน",
-        "p2": "ถ้าเริ่มก่อสร้างโดยไม่เตรียมพื้นที่ให้ดี อาจเจอปัญหา เช่น เครื่องจักรเข้าไม่ได้ น้ำขัง ดินยุบ เศษวัสดุขวางงาน หรือรถดั๊มพ์กลับรถลำบาก",
-        "p3": "เราประเมินพื้นที่และวางลำดับงาน เพื่อให้ทีมก่อสร้างได้พื้นที่ที่พร้อมใช้งานสำหรับขั้นตอนต่อไป"
+        "title": "สิ่งที่ควรวางแผนก่อนสร้างบ้านหรือวิลล่า",
+        "p1": "เริ่มจากผังการใช้พื้นที่ในไซต์ บ้านจะอยู่ตรงไหน รถบรรทุกจะเข้าทางใด และจะวางวัสดุไว้จุดไหนโดยยังเหลือพื้นที่ให้เครื่องจักรทำงาน ควรกำหนดเรื่องเหล่านี้ก่อนเริ่มเตรียมพื้นที่",
+        "p2": "หากมีผังที่ดิน ระดับที่ต้องการ หรือข้อกำหนดของผู้รับเหมา ส่งมาพร้อมรูปถ่ายได้ ข้อมูลเหล่านี้ช่วยกำหนดขอบเขตและผลลัพธ์ของแต่ละขั้นตอน หากข้อมูลยังไม่ครบ เราจะแนะนำสิ่งที่ควรสอบถามทีมก่อสร้างเพิ่มเติม",
+        "p3": "ขอบเขตงานขึ้นอยู่กับสภาพที่ดินและโครงการ บางพื้นที่ต้องการเพียงทางเข้าและพื้นที่ทำงาน ส่วนบางแห่งต้องเคลียร์ ปรับระดับ และจัดทางระบายน้ำ เราคำนวณราคาตามรายการงาน และพูดคุยเรื่องงานเพิ่มเติมก่อนดำเนินการ"
       },
       "process": {
-        "title": "ขั้นตอนการเตรียมพื้นที่",
+        "title": "ขั้นตอนเตรียมพื้นที่ก่อนก่อสร้าง",
         "p1": {
-          "title": "ดูหน้างาน",
-          "description": "ดูโลเคชัน ทางเข้า ระดับพื้นที่ น้ำ ต้นไม้ เศษวัสดุ และตำแหน่งก่อสร้าง"
+          "title": "ดูพื้นที่และแผนก่อสร้าง",
+          "description": "พูดคุยรายละเอียดโครงการ ดูรูป ผัง และทางเข้า พร้อมเข้าดูหน้างานหากจำเป็น"
         },
         "p2": {
-          "title": "วางแผนงาน",
-          "description": "กำหนดลำดับงาน เช่น เคลียร์ ทางเข้า ระบายน้ำ ทำระดับ ขนออก หรือส่งวัสดุ"
+          "title": "ตกลงขอบเขตและราคา",
+          "description": "กำหนดขั้นตอน เครื่องจักร การส่งวัสดุและขนออก พร้อมยืนยันราคา เงื่อนไข และผลลัพธ์ที่ต้องการ"
         },
         "p3": {
-          "title": "เตรียมพื้นที่",
-          "description": "ใช้เครื่องจักรจัดพื้นที่ เอาสิ่งกีดขวางออก และทำพื้นที่ทำงาน"
+          "title": "ดำเนินงานเตรียมพื้นที่",
+          "description": "เตรียมทางเข้าและพื้นที่ทำงานตามแผน หากมีงานเพิ่มเติมจะพูดคุยก่อนดำเนินการ"
         },
         "p4": {
-          "title": "พร้อมก่อสร้างต่อ",
-          "description": "เตรียมพื้นที่ให้พร้อมสำหรับฐานราก ถนน เครื่องจักร หรือขั้นตอนก่อสร้างต่อไป"
+          "title": "ตรวจสอบผลงานร่วมกัน",
+          "description": "ตรวจงานที่ทำเสร็จเทียบกับขอบเขตและแผนร่วมกับคุณหรือผู้รับเหมา"
         }
       },
       "pricing": {
-        "title": "ประเมินราคาเตรียมพื้นที่",
-        "text": "ราคาขึ้นอยู่กับขนาดพื้นที่ ทางเข้า สภาพหน้างาน งานเคลียร์ ระบายน้ำ ปรับระดับ การขนออก และการส่งวัสดุ ส่งโลเคชัน รูปพื้นที่ รูปทางเข้า และรายละเอียดโครงการเพื่อประเมินราคา"
+        "title": "ราคาเตรียมพื้นที่ก่อสร้าง",
+        "text": "ราคาขึ้นอยู่กับสภาพพื้นที่ ปริมาณงาน ทางเข้า เครื่องจักร และการขนส่ง ใบประเมินระบุว่างาน วัสดุ การส่งและขนออกส่วนใดรวมอยู่ในราคา ราคาเครื่องจักรดูได้ในหน้าเครื่องจักรแต่ละคัน"
       },
       "cta": {
-        "title": "ส่งรูปพื้นที่ก่อนเริ่มก่อสร้าง",
-        "text": "ส่งโลเคชัน รูป 3–5 รูป และบอกประเภทงาน เช่น บ้าน วิลล่า ถนน หรือโครงการอื่น เราจะแนะนำว่าควรเริ่มจากอะไร"
+        "title": "มาวางแผนเตรียมพื้นที่ของคุณ",
+        "text": "ส่งโลเคชัน รูปพื้นที่และทางเข้า พร้อมบอกว่าจะก่อสร้างอะไร หากมีผังสามารถแนบมาด้วยได้ เราจะแนะนำลำดับงานและประเมินราคาให้"
       },
       "related": {
-        "title": "บริการที่เกี่ยวข้อง",
+        "title": "รายละเอียดงานแต่ละประเภท",
         "earthworks": {
           "title": "งานดิน",
-          "description": "สำหรับเตรียมที่ดินแบบรวม เช่น เคลียร์ ทำระดับ ระบายน้ำ ถมดิน และขนออก"
+          "description": "ดูบริการขุดบ่อ ขุดร่อง ถมดิน ปรับระดับ และงานดินประเภทอื่น"
         },
         "clearing": {
           "title": "เคลียร์ที่ดิน",
-          "description": "ถ้ามีต้นไม้ พุ่มไม้ รากไม้ หรือเศษวัสดุเก่าที่ต้องเอาออก"
+          "description": "กำจัดพืช ต้นไม้ ตอไม้ และเศษวัสดุเฉพาะบริเวณหรือทั้งแปลง"
         },
         "drainage": {
-          "title": "ระบบระบายน้ำ",
-          "description": "ถ้าพื้นที่มีน้ำขัง หรือจำเป็นต้องวางทางน้ำก่อนก่อสร้าง"
+          "title": "งานระบายน้ำ",
+          "description": "ขุดร่อง วางท่อ และงานอื่น ๆ เพื่อระบายน้ำออกจากพื้นที่"
         }
       },
       "faq": {
-        "title": "คำถามที่พบบ่อย",
+        "title": "คำถามเกี่ยวกับการเตรียมพื้นที่ก่อสร้าง",
         "q1": {
-          "question": "เตรียมพื้นที่ต่างจากงานดินยังไง?",
-          "answer": "งานดินเป็นคำกว้าง ส่วนเตรียมพื้นที่ก่อสร้างจะเน้นให้ไซต์พร้อมสำหรับทีมก่อสร้าง เครื่องจักร ฐานราก และวัสดุ"
+          "question": "งานเตรียมพื้นที่มีอะไรบ้าง?",
+          "answer": "เลือกตามความจำเป็นของโครงการ เช่น เคลียร์พื้นที่ ทำทางเข้า พื้นที่ทำงาน ปรับระดับ ระบายน้ำ ส่งวัสดุและขนออก ก่อนเริ่มงานจะยืนยันรายการที่รวมในขอบเขตและผลลัพธ์ที่ทีมก่อสร้างต้องการ"
         },
         "q2": {
-          "question": "เตรียมพื้นที่สร้างบ้านหรือวิลล่าได้ไหม?",
-          "answer": "ได้ครับ เราเตรียมพื้นที่สำหรับบ้าน วิลล่า ถนน ที่จอดรถ และโครงการก่อสร้าง"
+          "question": "จ้างเฉพาะบางขั้นตอนได้ไหม?",
+          "answer": "ได้ เช่น เตรียมทางเข้า เคลียร์บริเวณตัวบ้าน หรือทำพื้นที่วางวัสดุ เราจะสอบถามว่างานใดทำไปแล้วและต้องเตรียมอะไรสำหรับขั้นตอนก่อสร้างถัดไป"
         },
         "q3": {
-          "question": "ทำทางเข้าเครื่องจักรได้ไหม?",
-          "answer": "ได้ครับ เราสามารถเตรียมหรือปรับทางเข้าให้รถขุด รถดั๊มพ์ และเครื่องจักรทำงานได้"
+          "question": "เตรียมทางเข้าสำหรับรถก่อสร้างได้ไหม?",
+          "answer": "ได้ เราสามารถเตรียมหรือปรับปรุงทางเข้า โดยตรวจสอบขนาดรถ ความกว้างทางเข้า ความลาดชัน จุดลงวัสดุและพื้นที่กลับรถก่อน ขอบเขตงานและวัสดุจะกำหนดหลังประเมินสภาพพื้นที่"
         },
         "q4": {
-          "question": "ควรวางแผนระบายน้ำก่อนใช่ไหม?",
-          "answer": "ถ้าที่ดินต่ำหรือเปียก ควรวางแผนระบายน้ำพร้อมกับระดับพื้นที่ก่อนเริ่มก่อสร้าง"
+          "question": "ควรวางแผนระบายน้ำตอนไหน?",
+          "answer": "ควรพูดคุยตั้งแต่จัดผังไซต์ พร้อมกับระดับพื้นที่และทางสัญจร ลำดับงานขึ้นอยู่กับสภาพที่ดินและโครงการ โดยแยกพิจารณางานระบายน้ำชั่วคราวระหว่างก่อสร้างและระบบถาวร"
         },
         "q5": {
-          "question": "ต้องส่งอะไรเพื่อประเมินราคา?",
-          "answer": "ส่งโลเคชัน รูปพื้นที่ รูปทางเข้า ขนาดโดยประมาณ และรายละเอียดโครงการที่จะก่อสร้าง"
+          "question": "ยังไม่มีแบบครบ ประเมินราคาได้ไหม?",
+          "answer": "เริ่มพูดคุยได้จากโลเคชัน รูปพื้นที่และทางเข้า ขนาดโดยประมาณ และรายละเอียดสิ่งที่จะสร้าง เราจะประเมินเบื้องต้นและแจ้งข้อมูลที่ต้องการเพิ่มเติม ระดับ ขอบเขต และข้อกำหนดของพื้นที่ทำงานต้องกำหนดก่อนเริ่มงานส่วนนั้น"
         },
         "q6": {
-          "question": "หลังเตรียมพื้นที่แล้วเริ่มสร้างได้เลยไหม?",
-          "answer": "ขึ้นอยู่กับแบบและความต้องการของทีมก่อสร้าง งานของเราคือเตรียมดิน ทางเข้า ระดับ และพื้นที่ทำงานให้พร้อมสำหรับขั้นตอนต่อไป"
+          "question": "เตรียมพื้นที่เสร็จแล้วทำฐานรากได้ทันทีไหม?",
+          "answer": "ผู้รับเหมาหรือวิศวกรของคุณเป็นผู้พิจารณาความพร้อมตามแบบและสภาพดิน เราดำเนินงานเตรียมพื้นที่ตามขอบเขตที่กำหนด โดยต้องระบุข้อกำหนดเรื่องระดับ ชั้นดินรองรับ และการบดอัดไว้ล่วงหน้า"
         }
       },
       "photos": {
@@ -721,7 +720,7 @@ useServiceSeo({
     <UAlert
       :title="t('sitePreparation.cta.title')"
       :description="t('sitePreparation.cta.text')"
-      class="mt-6"
+      class="mt-6 mb-10 sm:mb-14"
       variant="soft"
       color="primary"
       icon="i-lucide-camera"

@@ -37,7 +37,7 @@ const orderMessage = computed(() => t('message', {
   "en": {
     "order": "Order now",
     "details": "View details",
-    "modalTitle": "Hire {title}",
+    "modalTitle": "Rent {title}",
     "message": "Hi! I'm interested in the {title} ({subtitle}). Is it available and what would it cost?"
   },
   "th": {

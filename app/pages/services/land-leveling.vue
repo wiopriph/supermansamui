@@ -163,7 +163,7 @@ useServiceSeo({
   "ru": {
     "landLeveling": {
       "schema": {
-        "name": "Выравнивание участка на Самуи",
+        "name": "Выравнивание и планировка участка на Самуи",
         "serviceTypes": {
           "landLeveling": "Выравнивание участка",
           "grading": "Планировка земли",
@@ -173,130 +173,130 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Выравнивание участка на Самуи - планировка земли",
-        "description": "Выравнивание участка на Самуи под дом, виллу, дорогу или стройку: планировка земли, формирование уровней, уклонов, террас и ровных площадок.",
-        "keywords": "выравнивание участка самуи, планировка земли самуи, выравнивание земли самуи, grading koh samui, land leveling koh samui, подготовка участка самуи, экскаватор самуи"
+        "title": "Выравнивание участка на Самуи — планировка",
+        "description": "Выравнивание участков на Самуи: срезка возвышенностей, подсыпка низин, формирование площадок и уклонов. Оценим объём грунта и согласуем стоимость до начала работ.",
+        "keywords": "выравнивание участка самуи, планировка земли самуи, планировка участка самуи, формирование уклонов самуи, выравнивание площадки самуи"
       },
       "hero": {
-        "title": "Выравнивание участка на Самуи",
-        "description": "Планировка земли, формирование уровней, уклонов и ровных площадок под строительство."
+        "title": "Выравнивание участка на Самуи",
+        "description": "Срезаем возвышенности, подсыпаем низины и формируем площадки с нужными уровнями и уклонами. Планируем рельеф под дом, дорогу, парковку или сад."
       },
-      "intro": "Выравниваем участки под дома, виллы, дороги, парковки, сады и строительные площадки на Самуи. Формируем уровни, уклоны, террасы и рабочие зоны так, чтобы участок был удобен для следующего этапа: строительства, отсыпки, дренажа или благоустройства. Работаем экскаваторами, самосвалами и трактором, подбирая технику под реальный рельеф, грунт и подъезд.",
+      "intro": "Работаем по согласованным высотам и границам. До начала определим, где снять или добавить грунт, можно ли использовать его на участке и нужны ли завоз и вывоз. На Самуи почти все участки с уклоном, поэтому обычно речь о террасах и переходах между ними, а не об одной плоскости.",
       "tasks": {
-        "title": "Что входит в выравнивание участка",
+        "title": "Какие работы выполняем",
         "t1": {
-          "title": "Планировка уровней",
-          "description": "Формируем высоты и рабочие зоны под дом, виллу, парковку, сад или дорогу."
+          "title": "Планировка рельефа",
+          "description": "Формируем рабочие зоны на согласованных высотах, переходы между ними и отдельные площадки на склоне."
         },
         "t2": {
-          "title": "Срезка высоких мест",
-          "description": "Снимаем лишний грунт, бугры и перепады, которые мешают строительству или подъезду."
+          "title": "Срезка возвышенностей",
+          "description": "Снимаем лишний грунт в высоких местах. Перемещаем его в нужные зоны или организуем вывоз."
         },
         "t3": {
-          "title": "Подсыпка низких мест",
-          "description": "Добавляем грунт или материал там, где нужно поднять уровень участка."
+          "title": "Подсыпка низин",
+          "description": "Заполняем понижения и поднимаем уровень земли. Используем подходящий грунт с участка или завозим материал."
         },
         "t4": {
-          "title": "Площадка под дом",
-          "description": "Готовим ровную зону под фундамент, плиту, дом, виллу или технические постройки."
+          "title": "Площадка под строительство",
+          "description": "Выравниваем зону будущего дома, виллы или постройки по согласованному плану и высотным отметкам."
         },
         "t5": {
           "title": "Подъезд и парковка",
-          "description": "Выравниваем зоны под дорогу, въезд, парковку и движение строительной техники."
+          "description": "Планируем поверхность проезда, въезда и парковочной зоны с учётом нужных высот и уклонов."
         },
         "t6": {
-          "title": "Подготовка к дренажу",
-          "description": "Формируем базовые уклоны, чтобы вода не стояла на участке и могла уходить дальше."
+          "title": "Формирование уклонов",
+          "description": "Придаём поверхности уклон в нужном направлении, чтобы дождевая вода уходила к канавам, а не к дому."
         }
       },
       "included": {
-        "title": "Почему правильные уровни важны",
+        "title": "Что учитываем при планировке",
         "levels": {
-          "title": "Меньше переделок",
-          "description": "Правильная планировка снижает риск, что участок придётся переделывать после отсыпки или дождей."
+          "title": "Связь между уровнями",
+          "description": "Связываем высоты площадки, подъезда и соседних зон, чтобы они соответствовали дальнейшим планам на участок."
         },
         "slope": {
-          "title": "Контроль воды",
-          "description": "Уклоны помогают воде уходить с участка, а не собираться возле дома или дороги."
+          "title": "Направление стока воды",
+          "description": "Учитываем, куда уходит дождевой сток и как новые уровни повлияют на его движение. При необходимости обсудим дренаж."
         },
         "material": {
-          "title": "Оптимизация материалов",
-          "description": "Понимаем, где можно перераспределить грунт, а где нужен завоз или вывоз."
+          "title": "Использование грунта",
+          "description": "Оценим, какой грунт можно переместить внутри участка и сколько потребуется завезти или вывезти."
         }
       },
       "seoBlock": {
-        "title": "Планировка земли перед строительством",
-        "p1": "на Самуи участки часто имеют уклон, мягкий грунт, перепады высот или проблемы с водой. Если начать строительство без нормального выравнивания, позже могут появиться лужи, размывы, неудобный подъезд и лишние расходы на переделки.",
-        "p2": "Выравнивание участка помогает заранее понять уровни: где будет дом, где дорога, куда должна уходить вода, где нужно поднять землю, а где снять лишний грунт. Это особенно важно перед фундаментом, отсыпкой, дренажом и благоустройством.",
-        "p3": "Мы оцениваем рельеф, подъезд, тип грунта и объём материала. После этого подбираем технику и предлагаем понятный план работ."
+        "title": "Как определить нужные уровни участка",
+        "p1": "Начинаем с назначения каждой зоны: дом, въезд, парковка или сад. Определяем её высоту относительно дороги, существующих построек и остальной территории. Если у вас есть план с высотными отметками, используем его при оценке и выполнении работ.",
+        "p2": "На участке с перепадом высот можно сделать несколько площадок и переходы между ними. Объём срезки и подсыпки зависит от исходного рельефа и выбранных уровней: одинаковые по площади участки могут требовать разного количества работы.",
+        "p3": "Отдельно определяем, куда перемещать вынутый грунт и какой материал нужен для подсыпки. Подъезд и место для работы техники влияют на выбор машин и число рейсов. Порядок планировки и дренажных работ планируем вместе, если нужны обе услуги."
       },
       "process": {
-        "title": "Как проходит работа",
+        "title": "Как проходит выравнивание",
         "p1": {
-          "title": "Оцениваем рельеф",
-          "description": "Смотрим локацию, фото, подъезд, уклон, воду, грунт и перепады высот."
+          "title": "Изучаем участок",
+          "description": "Смотрим фото, подъезд и план, уточняем перепады высот и желаемый результат. При необходимости договариваемся об осмотре."
         },
         "p2": {
-          "title": "Планируем уровни",
-          "description": "Определяем, где снимать грунт, где подсыпать, где оставить уклон или террасу."
+          "title": "Согласуем уровни и стоимость",
+          "description": "Определяем зоны срезки и подсыпки, нужные высоты и уклоны. Согласуем объём, материалы, сроки и условия оплаты."
         },
         "p3": {
-          "title": "Выравниваем участок",
-          "description": "Работаем техникой, перемещаем грунт, формируем площадки и рабочие зоны."
+          "title": "Перемещаем и распределяем грунт",
+          "description": "Выполняем срезку, подсыпку и планировку техникой. Организуем завоз или вывоз, если они входят в заказ."
         },
         "p4": {
-          "title": "Готовим к следующему этапу",
-          "description": "Оставляем участок готовым для строительства, отсыпки, дренажа или благоустройства."
+          "title": "Проверяем результат",
+          "description": "Сверяем выполненные площадки, уровни и уклоны с согласованной задачей. Обсуждаем дальнейшие этапы, если они запланированы."
         }
       },
       "pricing": {
-        "title": "Быстрый расчёт по выравниванию",
-        "text": "Цена зависит от площади, перепадов высот, грунта, доступа техники, объёма перемещения земли и необходимости завоза или вывоза материала. Для расчёта отправьте локацию, фото участка и короткое описание задачи."
+        "title": "Сколько стоит выравнивание участка",
+        "text": "Цена зависит от площади и перепада высот, объёма перемещаемого грунта, его типа и подъезда. В расчёте учитываем работу машин, материал для подсыпки и перевозки. Тарифы на технику есть на странице каждой машины."
       },
       "cta": {
-        "title": "Отправьте фото участка - оценим уровни",
-        "text": "Пришлите локацию, фото подъезда и участка. Мы подскажем, какая техника нужна и как лучше выровнять землю."
+        "title": "Расскажите, как хотите изменить участок",
+        "text": "Пришлите локацию, примерную площадь, фото рельефа и подъезда. Укажите, где нужно поднять или понизить землю. Если есть план с высотами — приложите его. Подготовим предварительный расчёт и уточним, нужен ли осмотр."
       },
       "related": {
-        "title": "Связанные услуги",
+        "title": "Другие работы на участке",
         "earthworks": {
           "title": "Земляные работы",
-          "description": "Если нужно комплексно подготовить участок: расчистка, дренаж, отсыпка, вывоз и техника."
+          "description": "Если нужны несколько этапов: расчистка, копка, отсыпка и другие работы под управлением одной команды."
         },
         "drainage": {
           "title": "Дренаж участка",
-          "description": "Если на участке стоит вода или нужно правильно организовать отвод после выравнивания."
+          "description": "Если для отвода воды нужны канавы, траншеи или трубы. Уровни земли и систему водоотведения планируем совместно."
         },
         "truck": {
           "title": "Самосвалы и доставка грунта",
-          "description": "Если для выравнивания нужно привезти грунт, песок, щебень или вывезти лишний материал."
+          "description": "Для завоза материала на подсыпку или вывоза лишнего грунта. Подберём машину и рассчитаем перевозку."
         }
       },
       "faq": {
         "title": "Частые вопросы",
         "q1": {
-          "question": "Вы просто делаете участок ровным?",
-          "answer": "Не всегда идеально плоским. Часто правильнее сделать нужные уровни и уклоны, чтобы участок был удобен и вода уходила."
+          "question": "Участок обязательно делать полностью горизонтальным?",
+          "answer": "Нет. Для разных зон могут понадобиться свои высоты и уклоны. Подбираем их под назначение участка, подъезд и направление стока воды."
         },
         "q2": {
-          "question": "Можно ли выровнять участок после расчистки?",
-          "answer": "Да. Обычно после расчистки участка следующий этап - выравнивание, отсыпка или дренаж."
+          "question": "Нужно ли сначала расчистить участок?",
+          "answer": "Если в рабочей зоне есть заросли, пни, корни или мусор, убираем их до планировки. Можно заказать расчистку и выравнивание вместе, с отдельным объёмом и стоимостью каждого этапа."
         },
         "q3": {
-          "question": "Нужно ли завозить грунт?",
-          "answer": "Зависит от перепадов высот и нужного результата. Иногда можно перераспределить грунт на участке, иногда нужен завоз."
+          "question": "Всегда ли нужно завозить грунт?",
+          "answer": "Не всегда. Если имеющийся грунт подходит и его достаточно, можно переместить его из высоких зон в низкие. Необходимость завоза или вывоза определяем по выбранным уровням, объёму и свойствам материала."
         },
         "q4": {
-          "question": "Можно сделать уклон для отвода воды?",
-          "answer": "Да. Мы можем сформировать уклоны, чтобы вода не собиралась возле дома, дороги или рабочей зоны."
+          "question": "Можно сформировать уклон для дождевой воды?",
+          "answer": "Да, можем придать поверхности нужный уклон. Заранее определим, куда будет уходить сток и как связать его с существующим водоотведением. Если нужны канавы или трубы, обсудим их как отдельные работы."
         },
         "q5": {
-          "question": "Что нужно для расчёта?",
-          "answer": "Локация, фото участка, фото подъезда, примерная площадь и описание того, какой результат нужен."
+          "question": "Сколько времени занимает выравнивание?",
+          "answer": "Участок под один дом обычно выравниваем за день-два. Площадку под несколько вилл в Бо Пут сделали за несколько дней бригадой из экскаватора, самосвала и трактора, хотя клиент планировал арендовать один экскаватор на две недели: связка машин работает быстрее и выходит дешевле."
         },
         "q6": {
-          "question": "Можно после выравнивания сделать дренаж?",
-          "answer": "Да. Если участок влажный или низкий, дренаж лучше планировать вместе с уровнями."
+          "question": "Когда планировать дренаж — до или после выравнивания?",
+          "answer": "Уровни земли и отвод воды лучше согласовать до начала работ. Последовательность выполнения зависит от участка и выбранной системы. Так можно заранее определить места канав, труб и нужные уклоны."
         }
       },
       "photos": {
@@ -331,7 +331,7 @@ useServiceSeo({
   "en": {
     "landLeveling": {
       "schema": {
-        "name": "Land leveling on Koh Samui",
+        "name": "Land Leveling & Grading on Koh Samui",
         "serviceTypes": {
           "landLeveling": "Land leveling",
           "grading": "Land grading",
@@ -342,129 +342,129 @@ useServiceSeo({
       },
       "seo": {
         "title": "Land Leveling & Grading on Koh Samui",
-        "description": "Land leveling on Koh Samui for houses, villas, roads and construction sites: grading, slopes, terraces, flat work areas and site preparation.",
-        "keywords": "land leveling koh samui, land grading koh samui, grading samui, site grading koh samui, slope shaping samui, level land samui, excavator samui"
+        "description": "Land leveling on Koh Samui: cutting high spots, filling low areas, shaping platforms and slopes. Soil volumes assessed and costs agreed before work begins.",
+        "keywords": "land leveling koh samui, land grading koh samui, site grading samui, slope shaping samui, platform grading samui"
       },
       "hero": {
-        "title": "Land leveling on Koh Samui",
-        "description": "Land grading, slope shaping and flat site preparation for construction."
+        "title": "Land Leveling & Grading on Koh Samui",
+        "description": "We cut high spots, fill low areas and shape platforms to the required levels and slopes. Grading for houses, roads, parking areas and gardens."
       },
-      "intro": "We level land for houses, villas, roads, parking areas, gardens and construction sites on Koh Samui. We shape levels, slopes, terraces and working areas so the land is ready for the next stage: construction, backfilling, drainage or landscaping. We use excavators, dump trucks and tractor work based on real site access, terrain and soil condition.",
+      "intro": "We work to agreed elevations and boundaries. Before starting, we identify where to cut or fill, whether soil can be reused on site and what needs bringing in or hauling away. Almost every plot on Samui slopes, so the job is usually terraces and transitions between them rather than one flat plane.",
       "tasks": {
-        "title": "What land leveling includes",
+        "title": "Grading Work We Carry Out",
         "t1": {
-          "title": "Level planning",
-          "description": "Creating working levels and zones for houses, villas, parking areas, gardens or access roads."
+          "title": "Land Grading",
+          "description": "Shaping work areas at the set elevations, transitions between them and separate platforms on sloping land."
         },
         "t2": {
-          "title": "Cutting high areas",
-          "description": "Removing excess soil, bumps and height differences that block construction or access."
+          "title": "Cutting High Spots",
+          "description": "Removing surplus soil from high areas and moving it where needed on site or arranging removal."
         },
         "t3": {
-          "title": "Filling low areas",
-          "description": "Adding soil or material where the land level needs to be raised."
+          "title": "Filling Low Areas",
+          "description": "Filling depressions and raising ground levels with suitable soil from the site or imported material."
         },
         "t4": {
-          "title": "House platform preparation",
-          "description": "Preparing a level area for a foundation, slab, house, villa or technical structure."
+          "title": "Building Platforms",
+          "description": "Grading the area for a future house, villa or other structure to the plan and elevations."
         },
         "t5": {
-          "title": "Access road and parking",
-          "description": "Leveling areas for access roads, entrances, parking and construction traffic."
+          "title": "Access & Parking Areas",
+          "description": "Grading driveways, entrances and parking areas to the required heights and slopes."
         },
         "t6": {
-          "title": "Drainage-ready slopes",
-          "description": "Creating basic slopes so water does not stay on the land and can move away."
+          "title": "Slope Shaping",
+          "description": "Shaping surface slopes in the required direction, taking existing water runoff routes into account."
         }
       },
       "included": {
-        "title": "Why proper levels matter",
+        "title": "What we consider when grading",
         "levels": {
-          "title": "Less rework",
-          "description": "Proper grading reduces the risk of fixing the site again after filling or heavy rain."
+          "title": "How levels connect",
+          "description": "We match platform, access and adjacent ground levels so they fit your plans for the land."
         },
         "slope": {
-          "title": "Water control",
-          "description": "Slopes help water move away instead of collecting near the house or road."
+          "title": "Water runoff routes",
+          "description": "We consider where rainwater flows and how new levels will affect it, discussing drainage work where needed."
         },
         "material": {
-          "title": "Better material use",
-          "description": "We check where soil can be moved on site and where delivery or removal is needed."
+          "title": "Use of existing soil",
+          "description": "We assess which soil can be moved within the site and how much material needs bringing in or hauling away."
         }
       },
       "seoBlock": {
-        "title": "Land grading before construction",
-        "p1": "Land on Koh Samui often has slopes, soft soil, uneven levels or water problems. Starting construction without proper leveling can lead to puddles, erosion, difficult access and extra repair costs later.",
-        "p2": "Land leveling helps define where the house, road, parking and work areas will be, where water should go, which areas need to be raised and where excess soil should be removed. This is important before foundations, backfilling, drainage and landscaping.",
-        "p3": "We assess the land shape, access, soil type and material volume before choosing machinery and proposing a clear work plan."
+        "title": "How to set the right ground levels",
+        "p1": "Start with the purpose of each area: house, entrance, parking or garden. We set its elevation relative to the road, existing buildings and surrounding ground. If you have a plan with levels, we use it when assessing and carrying out the work.",
+        "p2": "Sloping land can be shaped into several platforms with transitions between them. Cut and fill volumes depend on the existing terrain and chosen elevations, so plots of the same size can require very different amounts of work.",
+        "p3": "We also identify where excavated soil can go and what material is needed for filling. Access and machine working space affect equipment choice and truck trips. When drainage is part of the job, we coordinate its sequence with grading."
       },
       "process": {
-        "title": "How the work is done",
+        "title": "How land leveling works",
         "p1": {
-          "title": "Site assessment",
-          "description": "We check location, photos, access, slope, water, soil and height differences."
+          "title": "Review the site",
+          "description": "We review photos, access and any plans, discussing height differences and your intended result. A site visit is arranged if needed."
         },
         "p2": {
-          "title": "Level planning",
-          "description": "We decide where to cut, where to fill and where to keep a slope or terrace."
+          "title": "Agree on levels and costs",
+          "description": "We define cut and fill areas, elevations and slopes, then agree on scope, materials, timing and payment terms."
         },
         "p3": {
-          "title": "Land leveling",
-          "description": "We work with machinery, move soil and shape flat areas and work zones."
+          "title": "Move and spread soil",
+          "description": "We carry out cutting, filling and grading with machinery, arranging material delivery or removal when included in the order."
         },
         "p4": {
-          "title": "Ready for the next stage",
-          "description": "We leave the site ready for construction, backfilling, drainage or landscaping."
+          "title": "Check the result",
+          "description": "We check the completed platforms, levels and slopes against the brief and discuss any planned next stages."
         }
       },
       "pricing": {
-        "title": "Fast quote for land leveling",
-        "text": "The price depends on land size, height differences, soil type, machine access, soil movement volume and whether material delivery or removal is needed. Send location, site photos and a short task description."
+        "title": "How much does land leveling cost?",
+        "text": "Costs depend on area, height differences, soil volume and type, and machine access. The estimate accounts for machine work, fill material and hauling. Machine rates are listed on each equipment page."
       },
       "cta": {
-        "title": "Send photos of your land - we’ll estimate the levels",
-        "text": "Share location, access photos and site photos. We’ll suggest the right machinery and the best way to level the land."
+        "title": "Tell us how you want to change your land",
+        "text": "Send a map pin, approximate area, and photos of the terrain and access. Tell us where the ground needs raising or lowering, and attach any plan with levels. We’ll prepare an initial estimate and confirm whether a site visit is needed."
       },
       "related": {
-        "title": "Related services",
+        "title": "Other work for your land",
         "earthworks": {
           "title": "Earthworks",
-          "description": "For full site preparation: clearing, drainage, backfilling, hauling and machinery."
+          "description": "For several stages, including clearing, excavation, backfilling and other work coordinated by one team."
         },
         "drainage": {
-          "title": "Drainage work",
-          "description": "If water stays on the land or water runoff needs to be planned after leveling."
+          "title": "Land drainage",
+          "description": "For ditches, trenches or pipes to carry water away. Ground levels and drainage are planned together."
         },
         "truck": {
-          "title": "Dump trucks and soil delivery",
-          "description": "If leveling requires soil, sand, gravel delivery or removal of excess material."
+          "title": "Dump trucks and fill delivery",
+          "description": "For bringing in fill or removing surplus soil. We select a suitable truck and estimate transport costs."
         }
       },
       "faq": {
-        "title": "Frequently asked questions",
+        "title": "Land leveling questions",
         "q1": {
-          "question": "Do you make the land completely flat?",
-          "answer": "Not always. Often the right solution is to create correct levels and slopes so the land works properly and water drains away."
+          "question": "Does the whole plot need to be completely flat?",
+          "answer": "No. Different areas may need different elevations and slopes. We set these based on intended use, access and water runoff routes."
         },
         "q2": {
-          "question": "Can you level land after clearing?",
-          "answer": "Yes. After land clearing, leveling, backfilling or drainage is usually the next step."
+          "question": "Does the land need clearing first?",
+          "answer": "If vegetation, stumps, roots or debris are in the work area, we remove them before grading. Clearing and leveling can be booked together, with the scope and price of each stage set out separately."
         },
         "q3": {
-          "question": "Do I need to bring in fill soil?",
-          "answer": "It depends on height differences and the result you need. Sometimes soil can be moved on site, sometimes material delivery is needed."
+          "question": "Will I always need to bring in fill soil?",
+          "answer": "Not always. If the existing soil is suitable and there is enough, it can be moved from high areas to low ones. Imports or removal depend on the chosen levels, volumes and material properties."
         },
         "q4": {
-          "question": "Can you create a slope for water runoff?",
-          "answer": "Yes. We can shape slopes so water does not collect near the house, road or work area."
+          "question": "Can you shape a slope for rainwater runoff?",
+          "answer": "Yes. We can shape the surface to the required slope. We first establish where runoff will go and how it connects to existing drainage. Ditches or pipes, if needed, are discussed as separate work."
         },
         "q5": {
-          "question": "What do you need for a quote?",
-          "answer": "Location, site photos, access photos, approximate area and a short description of the desired result."
+          "question": "How long does leveling take?",
+          "answer": "A plot for a single house usually takes a day or two. A platform for several villas in Bo Put took a few days with an excavator, dump truck and tractor crew, although the client had planned to rent a single excavator for two weeks: a crew works faster and comes out cheaper."
         },
         "q6": {
-          "question": "Can drainage be done after leveling?",
-          "answer": "Yes. For wet or low land, drainage should be planned together with the levels."
+          "question": "Should drainage be planned before or after leveling?",
+          "answer": "Ground levels and water runoff are best planned before work begins. The work sequence depends on the site and drainage system. This allows ditch and pipe locations and the required slopes to be defined in advance."
         }
       },
       "photos": {
@@ -499,7 +499,7 @@ useServiceSeo({
   "th": {
     "landLeveling": {
       "schema": {
-        "name": "ปรับระดับที่ดินบนเกาะสมุย",
+        "name": "ปรับระดับและปรับพื้นที่บนเกาะสมุย",
         "serviceTypes": {
           "landLeveling": "ปรับระดับที่ดิน",
           "grading": "ปรับพื้นที่",
@@ -509,130 +509,130 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "ปรับระดับที่ดิน เกาะสมุย - ปรับพื้นที่ ทำสโลป",
-        "description": "บริการปรับระดับที่ดินบนเกาะสมุย สำหรับบ้าน วิลล่า ถนน และไซต์ก่อสร้าง ทำระดับ ทำสโลป ปรับพื้นที่ และเตรียมพื้นที่ให้พร้อมใช้งาน",
-        "keywords": "ปรับระดับที่ดิน สมุย, ปรับพื้นที่ สมุย, งานดิน สมุย, ทำสโลป สมุย, เตรียมพื้นที่ก่อสร้าง สมุย, รถขุด สมุย"
+        "title": "ปรับระดับที่ดินบนเกาะสมุย — ปรับพื้นที่",
+        "description": "ปรับระดับที่ดินบนเกาะสมุย ตัดดินส่วนสูง ถมพื้นที่ต่ำ ทำลานและความลาดเอียง ประเมินปริมาณดินและตกลงค่าใช้จ่ายก่อนเริ่มงาน",
+        "keywords": "ปรับระดับที่ดิน สมุย, ปรับพื้นที่ สมุย, ปรับหน้าดิน สมุย, ทำสโลป สมุย, ปรับลาน สมุย"
       },
       "hero": {
         "title": "ปรับระดับที่ดินบนเกาะสมุย",
-        "description": "ปรับพื้นที่ ทำระดับ ทำสโลป และเตรียมพื้นที่สำหรับก่อสร้าง"
+        "description": "ตัดดินส่วนสูง ถมพื้นที่ต่ำ และทำลานให้ได้ระดับและความลาดเอียงที่ต้องการ ปรับพื้นที่สำหรับบ้าน ถนน ที่จอดรถ หรือสวน"
       },
-      "intro": "เรารับปรับระดับที่ดินสำหรับบ้าน วิลล่า ถนน ที่จอดรถ สวน และไซต์ก่อสร้างบนเกาะสมุย ทำระดับพื้นที่ ทำสโลป แบ่งพื้นที่ใช้งาน และเตรียมหน้างานให้พร้อมสำหรับขั้นตอนต่อไป เช่น ก่อสร้าง ถมดิน ทำระบายน้ำ หรือจัดสวน เลือกเครื่องจักรตามสภาพพื้นที่ ทางเข้า และลักษณะดินจริง",
+      "intro": "ทำงานตามระดับและแนวเขตที่ตกลง ก่อนเริ่มจะกำหนดจุดตัดและถม พิจารณาว่าดินเดิมใช้ต่อในพื้นที่ได้หรือไม่ และต้องขนเข้าหรือขนออกเท่าไร จากนั้นเลือกเครื่องจักรและประเมินราคา ที่ดินบนเกาะสมุยส่วนใหญ่มีความลาดเอียง งานจึงมักเป็นการทำลานเป็นชั้นและทางเชื่อมระหว่างชั้น ไม่ใช่พื้นเรียบผืนเดียว",
       "tasks": {
-        "title": "งานปรับระดับรวมอะไรบ้าง",
+        "title": "งานปรับพื้นที่ที่เรารับทำ",
         "t1": {
-          "title": "วางระดับพื้นที่",
-          "description": "กำหนดพื้นที่ใช้งานสำหรับบ้าน วิลล่า ที่จอดรถ สวน หรือถนนทางเข้า"
+          "title": "ปรับรูปแบบพื้นที่",
+          "description": "ทำพื้นที่ใช้งานตามระดับที่กำหนด เชื่อมต่อแต่ละระดับ และแบ่งลานบนพื้นที่ลาดชัน"
         },
         "t2": {
-          "title": "ตัดพื้นที่สูง",
-          "description": "ตักดินส่วนเกิน เนิน และจุดที่สูงเกินไปออกเพื่อให้พื้นที่ใช้งานได้ดีขึ้น"
+          "title": "ตัดดินส่วนสูง",
+          "description": "ตักดินส่วนเกินในบริเวณที่สูง แล้วย้ายไปจุดที่ต้องการหรือจัดขนออก"
         },
         "t3": {
-          "title": "ถมจุดต่ำ",
-          "description": "เติมดินหรือวัสดุในจุดที่ต่ำเพื่อยกระดับพื้นที่"
+          "title": "ถมพื้นที่ต่ำ",
+          "description": "เติมจุดต่ำและยกระดับดิน โดยใช้ดินเดิมที่เหมาะสมหรือนำวัสดุเข้ามาเพิ่ม"
         },
         "t4": {
-          "title": "เตรียมพื้นที่บ้าน",
-          "description": "เตรียมพื้นที่เรียบสำหรับฐานราก พื้นบ้าน วิลล่า หรืออาคารเล็ก"
+          "title": "ปรับพื้นที่สำหรับสิ่งปลูกสร้าง",
+          "description": "ปรับบริเวณที่จะสร้างบ้าน วิลล่า หรืออาคารตามแผนและระดับความสูงที่กำหนด"
         },
         "t5": {
           "title": "ทางเข้าและที่จอดรถ",
-          "description": "ปรับระดับพื้นที่สำหรับทางเข้า ที่จอดรถ และการเข้าออกของเครื่องจักร"
+          "description": "ปรับผิวทางเดินรถ ทางเข้า และลานจอดรถตามระดับและความลาดเอียงที่ต้องการ"
         },
         "t6": {
-          "title": "ทำสโลปเบื้องต้น",
-          "description": "ทำความลาดเอียงพื้นฐานเพื่อให้น้ำไม่ขังในพื้นที่"
+          "title": "ทำความลาดเอียง",
+          "description": "ปรับความลาดเอียงของผิวดินตามทิศทางที่ต้องการ โดยคำนึงถึงเส้นทางระบายน้ำเดิม"
         }
       },
       "included": {
-        "title": "ทำไมระดับพื้นที่ถึงสำคัญ",
+        "title": "สิ่งที่เราคำนึงถึงในการปรับพื้นที่",
         "levels": {
-          "title": "ลดการแก้งาน",
-          "description": "วางระดับดีตั้งแต่แรก ช่วยลดปัญหาต้องแก้พื้นที่หลังถมดินหรือหลังฝนตก"
+          "title": "การเชื่อมต่อของระดับ",
+          "description": "จัดระดับลาน ทางเข้า และพื้นที่ข้างเคียงให้สอดคล้องกับแผนการใช้ที่ดิน"
         },
         "slope": {
-          "title": "ช่วยเรื่องน้ำ",
-          "description": "สโลปที่ดีช่วยให้น้ำไหลออก ไม่ขังใกล้บ้านหรือถนน"
+          "title": "ทิศทางน้ำฝน",
+          "description": "พิจารณาว่าน้ำฝนไหลไปทางไหนและระดับใหม่มีผลอย่างไร พร้อมคุยเรื่องระบบระบายน้ำหากจำเป็น"
         },
         "material": {
-          "title": "ใช้วัสดุคุ้มขึ้น",
-          "description": "ดูว่าดินในพื้นที่ย้ายใช้ได้ตรงไหน และตรงไหนต้องถมหรือขนออก"
+          "title": "ใช้ดินในพื้นที่",
+          "description": "ประเมินว่าดินส่วนใดย้ายใช้ภายในพื้นที่ได้ และต้องนำเข้าหรือขนออกเท่าไร"
         }
       },
       "seoBlock": {
-        "title": "ปรับพื้นที่ก่อนเริ่มก่อสร้าง",
-        "p1": "ที่ดินบนสมุยมักมีความลาดเอียง ดินนิ่ม ระดับไม่เท่ากัน หรือมีปัญหาน้ำขัง ถ้าเริ่มก่อสร้างโดยไม่ปรับระดับให้ดี อาจเกิดน้ำขัง ดินไหล ทางเข้าใช้งานยาก และต้องเสียค่าแก้งานภายหลัง",
-        "p2": "การปรับระดับช่วยกำหนดว่าบ้าน ถนน ที่จอดรถ และพื้นที่ทำงานควรอยู่ตรงไหน น้ำควรไหลไปทางไหน จุดไหนต้องถม และจุดไหนต้องตักดินออก",
-        "p3": "เราดูสภาพพื้นที่ ทางเข้า ลักษณะดิน และปริมาณดินก่อนเลือกเครื่องจักรและเสนอแผนงาน"
+        "title": "กำหนดระดับที่ดินอย่างไรให้เหมาะกับการใช้งาน",
+        "p1": "เริ่มจากการใช้งานแต่ละโซน เช่น บ้าน ทางเข้า ที่จอดรถ หรือสวน แล้วกำหนดระดับเทียบกับถนน อาคารเดิม และพื้นที่รอบข้าง หากมีแบบระบุระดับ เราจะใช้ประกอบการประเมินและทำงาน",
+        "p2": "พื้นที่ที่มีระดับต่างกันสามารถทำเป็นหลายลานและทางเชื่อมได้ ปริมาณตัดและถมขึ้นอยู่กับสภาพเดิมและระดับที่เลือก ที่ดินขนาดเท่ากันจึงอาจมีปริมาณงานต่างกันมาก",
+        "p3": "กำหนดด้วยว่าจะย้ายดินที่ขุดไปไว้ไหนและใช้วัสดุอะไรถม ทางเข้าและพื้นที่ทำงานของเครื่องจักรมีผลต่อประเภทรถและจำนวนเที่ยว หากมีงานระบายน้ำ จะวางลำดับร่วมกับงานปรับระดับ"
       },
       "process": {
-        "title": "ขั้นตอนการทำงาน",
+        "title": "ขั้นตอนการปรับระดับ",
         "p1": {
-          "title": "ดูพื้นที่",
-          "description": "ดูโลเคชัน รูป ทางเข้า ความลาดเอียง น้ำ ดิน และระดับพื้นที่"
+          "title": "ศึกษาพื้นที่",
+          "description": "ดูรูป ทางเข้า และแบบที่มี พร้อมคุยเรื่องระดับที่ต่างกันและผลลัพธ์ที่ต้องการ หากจำเป็นจะนัดดูหน้างาน"
         },
         "p2": {
-          "title": "วางระดับ",
-          "description": "กำหนดจุดที่ต้องตัก จุดที่ต้องถม และจุดที่ต้องทำสโลป"
+          "title": "ตกลงระดับและค่าใช้จ่าย",
+          "description": "กำหนดจุดตัด จุดถม ระดับและความลาดเอียง พร้อมตกลงปริมาณงาน วัสดุ ระยะเวลา และเงื่อนไขชำระเงิน"
         },
         "p3": {
-          "title": "ปรับพื้นที่",
-          "description": "ใช้เครื่องจักรย้ายดิน ปรับระดับ และทำพื้นที่ใช้งาน"
+          "title": "ย้ายและเกลี่ยดิน",
+          "description": "ใช้เครื่องจักรตัด ถม และปรับพื้นที่ พร้อมจัดขนวัสดุเข้าหรือออกหากรวมอยู่ในงาน"
         },
         "p4": {
-          "title": "พร้อมทำงานต่อ",
-          "description": "เตรียมพื้นที่สำหรับก่อสร้าง ถมดิน ทำระบายน้ำ หรือจัดสวน"
+          "title": "ตรวจสอบผลงาน",
+          "description": "ตรวจสอบลาน ระดับ และความลาดเอียงตามงานที่กำหนด พร้อมคุยขั้นตอนถัดไปหากมีแผนทำต่อ"
         }
       },
       "pricing": {
-        "title": "ประเมินราคาปรับระดับ",
-        "text": "ราคาขึ้นอยู่กับขนาดพื้นที่ ระดับที่ต่างกัน ลักษณะดิน ทางเข้าเครื่องจักร ปริมาณดินที่ต้องย้าย และต้องถมหรือขนออกหรือไม่ ส่งโลเคชัน รูปพื้นที่ และรายละเอียดงานเพื่อประเมินราคา"
+        "title": "ปรับระดับที่ดินราคาเท่าไร",
+        "text": "ราคาขึ้นอยู่กับขนาดพื้นที่ ความต่างระดับ ปริมาณและชนิดดินที่ต้องย้าย และทางเข้าเครื่องจักร ใบประเมินรวมค่าเครื่องจักร วัสดุถม และขนส่ง ราคาเครื่องจักรดูได้ในหน้าเครื่องจักรแต่ละคัน"
       },
       "cta": {
-        "title": "ส่งรูปพื้นที่มาให้เราดู",
-        "text": "ส่งโลเคชัน รูปทางเข้า และรูปพื้นที่ เราจะแนะนำเครื่องจักรและแนวทางปรับระดับที่เหมาะสม"
+        "title": "บอกเราว่าต้องการปรับพื้นที่อย่างไร",
+        "text": "ส่งโลเคชัน ขนาดพื้นที่โดยประมาณ รูปลักษณะพื้นที่และทางเข้า ระบุจุดที่ต้องการยกหรือลดระดับ หากมีแบบระบุความสูงให้แนบมาด้วย เราจะประเมินเบื้องต้นและแจ้งว่าต้องดูหน้างานหรือไม่"
       },
       "related": {
-        "title": "บริการที่เกี่ยวข้อง",
+        "title": "งานอื่นสำหรับพื้นที่ของคุณ",
         "earthworks": {
           "title": "งานดิน",
-          "description": "สำหรับเตรียมพื้นที่แบบครบชุด เช่น เคลียร์ ระบายน้ำ ถมดิน ขนดินออก และเครื่องจักร"
+          "description": "สำหรับหลายขั้นตอน เช่น เคลียร์พื้นที่ ขุด ถม และงานอื่นที่ต้องการให้ทีมเดียวประสานงาน"
         },
         "drainage": {
           "title": "ระบบระบายน้ำ",
-          "description": "ถ้าพื้นที่มีน้ำขัง หรือจำเป็นต้องวางทางน้ำหลังปรับระดับ"
+          "description": "หากต้องใช้คู ร่อง หรือท่อเพื่อนำน้ำออก โดยวางแผนระดับดินและระบบระบายน้ำร่วมกัน"
         },
         "truck": {
-          "title": "รถดั๊มพ์และส่งดิน",
-          "description": "ถ้าต้องใช้ดิน ทราย หิน หรือขนดินส่วนเกินออกจากพื้นที่"
+          "title": "รถดั๊มและส่งดินถม",
+          "description": "สำหรับขนวัสดุถมเข้า หรือขนดินส่วนเกินออก เราช่วยเลือกรถและประเมินค่าขนส่ง"
         }
       },
       "faq": {
         "title": "คำถามที่พบบ่อย",
         "q1": {
-          "question": "ปรับให้พื้นที่เรียบทั้งหมดใช่ไหม?",
-          "answer": "ไม่เสมอไป บางพื้นที่ควรมีสโลปหรือระดับต่างกันเพื่อให้น้ำไหลและใช้งานได้ดี"
+          "question": "ต้องปรับทั้งแปลงให้เป็นแนวราบทั้งหมดไหม?",
+          "answer": "ไม่จำเป็น แต่ละโซนอาจต้องมีระดับและความลาดเอียงต่างกัน เราจะกำหนดตามการใช้งาน ทางเข้า และทิศทางน้ำไหล"
         },
         "q2": {
-          "question": "หลังเคลียร์ที่ดินแล้วปรับระดับต่อได้ไหม?",
-          "answer": "ได้ครับ หลังเคลียร์พื้นที่ มักจะต่อด้วยปรับระดับ ถมดิน หรือทำระบายน้ำ"
+          "question": "ต้องเคลียร์ที่ดินก่อนหรือไม่?",
+          "answer": "หากมีพืชรก ตอไม้ รากไม้ หรือเศษวัสดุในบริเวณทำงาน จะนำออกก่อนปรับพื้นที่ สามารถจองงานเคลียร์และปรับระดับพร้อมกัน โดยระบุขอบเขตและราคาแต่ละขั้นตอน"
         },
         "q3": {
-          "question": "ต้องถมดินเพิ่มไหม?",
-          "answer": "ขึ้นอยู่กับระดับพื้นที่และผลลัพธ์ที่ต้องการ บางงานใช้ดินเดิมย้ายในพื้นที่ได้ บางงานต้องถมเพิ่ม"
+          "question": "ต้องนำดินเข้ามาเพิ่มทุกครั้งไหม?",
+          "answer": "ไม่เสมอไป หากดินเดิมเหมาะสมและมีเพียงพอ สามารถย้ายจากจุดสูงไปจุดต่ำได้ การขนเข้าหรือออกขึ้นอยู่กับระดับที่เลือก ปริมาณ และคุณสมบัติของวัสดุ"
         },
         "q4": {
-          "question": "ทำสโลปให้น้ำไหลได้ไหม?",
-          "answer": "ได้ครับ สามารถทำสโลปเพื่อให้น้ำไม่ขังใกล้บ้าน ถนน หรือพื้นที่ใช้งาน"
+          "question": "ทำสโลปให้น้ำฝนไหลได้ไหม?",
+          "answer": "ได้ เราปรับความลาดเอียงของผิวดินได้ โดยกำหนดก่อนว่าน้ำจะไหลไปไหนและเชื่อมกับระบบระบายน้ำเดิมอย่างไร หากต้องขุดคูหรือวางท่อ จะคุยเป็นงานแยก"
         },
         "q5": {
-          "question": "ต้องส่งอะไรเพื่อประเมินราคา?",
-          "answer": "ส่งโลเคชัน รูปพื้นที่ รูปทางเข้า ขนาดโดยประมาณ และบอกผลลัพธ์ที่ต้องการ"
+          "question": "งานปรับระดับใช้เวลานานแค่ไหน?",
+          "answer": "ที่ดินสำหรับบ้านหนึ่งหลังโดยทั่วไปใช้เวลาหนึ่งถึงสองวัน ลานสำหรับวิลล่าหลายหลังที่บ่อผุดเสร็จในไม่กี่วันด้วยทีมรถขุด รถดั๊ม และแทรกเตอร์ ทั้งที่ลูกค้าวางแผนจะเช่ารถขุดคันเดียวสองสัปดาห์ การใช้ทีมเครื่องจักรเร็วกว่าและค่าใช้จ่ายต่ำกว่า"
         },
         "q6": {
-          "question": "ทำระบายน้ำหลังปรับระดับได้ไหม?",
-          "answer": "ได้ครับ ถ้าที่ดินต่ำหรือมีน้ำขัง ควรวางแผนระดับและระบายน้ำไปพร้อมกัน"
+          "question": "ควรวางแผนระบายน้ำก่อนหรือหลังปรับระดับ?",
+          "answer": "ควรวางแผนระดับดินและทางระบายน้ำก่อนเริ่มงาน ลำดับทำจริงขึ้นอยู่กับพื้นที่และระบบที่เลือก เพื่อกำหนดตำแหน่งคู ท่อ และความลาดเอียงไว้ล่วงหน้า"
         }
       },
       "photos": {
@@ -720,7 +720,7 @@ useServiceSeo({
     <UAlert
       :title="t('landLeveling.cta.title')"
       :description="t('landLeveling.cta.text')"
-      class="mt-6"
+      class="mt-6 mb-10 sm:mb-14"
       variant="soft"
       color="primary"
       icon="i-lucide-camera"

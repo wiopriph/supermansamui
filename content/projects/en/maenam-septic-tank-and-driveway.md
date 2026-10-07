@@ -3,7 +3,7 @@ title: "Septic tank, tree removal and driveway concreting in Maenam"
 date: 2026-05-12
 slug: "maenam-septic-tank-and-driveway"
 service: "drainage"
-location: "Maenam Soi 3, Koh Samui"
+location: "Maenam, Koh Samui"
 cover: "/images/projects/maenam-septic-tank-and-driveway/hero.webp"
 gallery:
   - src: "/images/projects/maenam-septic-tank-and-driveway/removing-tree-from-garden.webp"

@@ -198,7 +198,7 @@ useServiceSeo({
   "ru": {
     "earthworks": {
       "schema": {
-        "name": "Земляные работы и подготовка участка на Самуи",
+        "name": "Земляные работы на Самуи",
         "serviceTypes": {
           "earthworks": "Земляные работы",
           "landClearing": "Расчистка участка",
@@ -210,94 +210,94 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Земляные работы на Самуи - котлованы и отсыпка",
-        "description": "Комплексные земляные работы на Самуи: котлованы, выемка и перемещение грунта, отсыпка и уплотнение, завоз грунта на объект. Своя техника, расчёт до начала работ.",
-        "keywords": "земляные работы самуи, подготовка участка самуи, выравнивание участка самуи, дренаж самуи, отсыпка участка самуи, расчистка участка самуи, доставка грунта самуи, вывоз грунта самуи, экскаватор самуи, самосвал самуи"
+        "title": "Земляные работы на Самуи",
+        "description": "Земляные работы на Самуи: котлованы, траншеи, отсыпка и планировка. Отдельные этапы или комплекс работ. Подберём технику и согласуем стоимость до начала.",
+        "keywords": "земляные работы самуи, котлован самуи, копка траншей самуи, отсыпка участка самуи, перемещение грунта самуи"
       },
       "hero": {
-        "title": "Земляные работы на Самуи",
-        "description": "Котлованы, выемка и перемещение грунта, отсыпка и уплотнение. Берём на себя весь объём работ: от первого ковша до готовой площадки."
+        "title": "Земляные работы на Самуи",
+        "description": "Копаем котлованы и траншеи, перемещаем грунт, выполняем отсыпку и планировку. Можно заказать отдельный этап или комплекс работ на участке."
       },
-      "intro": "Готовим участки под дома, виллы, дороги и строительные проекты на Самуи. Расчищаем землю, выравниваем площадки, делаем дренаж, завозим грунт, вывозим лишний материал и организуем работу техники. Подбираем экскаваторы, самосвалы и план работ под реальный участок, подъезд, грунт и объём.",
+      "intro": "Работаем на участках под дома, виллы, дороги и благоустройство. Не обязательно заранее знать, какие машины понадобятся: расскажите, что хотите сделать, — мы оценим условия, предложим порядок работ и подберём технику.",
       "value": {
-        "title": "Что вы получаете",
+        "title": "Что мы берём на себя",
         "v1": {
-          "title": "Участок готов к следующему этапу",
-          "description": "Подготавливаем землю так, чтобы можно было начинать строительство, дорогу, парковку или благоустройство."
+          "title": "Понятный объём работ",
+          "description": "Определим, что нужно сделать и какой результат вы получите. Согласуем границы работ до выхода техники."
         },
         "v2": {
-          "title": "Меньше проблем с водой",
-          "description": "Продумываем уклоны, дренаж и отвод воды, особенно на низких и влажных участках."
+          "title": "Порядок выполнения",
+          "description": "Свяжем этапы между собой с учётом подъезда, рельефа и отвода воды, чтобы сократить переделки."
         },
         "v3": {
-          "title": "Техника и логистика в одной команде",
-          "description": "Экскаваторы, самосвалы, доставка материалов и вывоз грунта работают согласованно."
+          "title": "Технику и перевозки",
+          "description": "Подберём машины и организуем завоз материалов и вывоз грунта в нужный момент."
         }
       },
       "services": {
-        "title": "Основные виды земляных работ",
-        "description": "Можно заказать отдельную задачу или комплексную подготовку участка под строительство.",
+        "title": "Выберите нужную услугу",
+        "description": "Ниже — основные направления и техника для земляных работ. На каждой странице — подробности по услуге.",
         "landClearing": {
           "title": "Расчистка участка",
-          "description": "Убираем кусты, деревья, корни, мусор и старые конструкции перед началом работ."
+          "description": "Если мешают деревья, заросли, пни или мусор. Уберём растительность и освободим участок для дальнейших работ."
         },
         "landLeveling": {
           "title": "Выравнивание участка",
-          "description": "Формируем уровни, уклоны и ровные площадки под дом, дорогу, парковку или сад."
+          "description": "Если нужно изменить рельеф: срезать возвышенности, засыпать низины или сформировать площадку с нужным уклоном."
         },
         "drainage": {
           "title": "Дренаж и отвод воды",
-          "description": "Делаем канавы, траншеи, трубы и уклоны, чтобы вода уходила с участка."
+          "description": "Если после дождя стоит вода или размывает грунт. Оценим пути стока и предложим подходящий способ водоотведения."
         },
         "sitePreparation": {
-          "title": "Подготовка под строительство",
-          "description": "Готовим участок под дом, виллу, фундамент, подъездную дорогу или стройплощадку."
+          "title": "Подготовка к строительству",
+          "description": "Если планируете начинать стройку. Подготовим подъезд, рабочие площадки и место для складирования материалов."
         },
         "excavator": {
-          "title": "Экскаватор с оператором",
-          "description": "Копка, траншеи, погрузка грунта, демонтаж, гидромолот и работа на объекте."
+          "title": "Экскаватор с оператором",
+          "description": "Если нужна машина для конкретной задачи: котлована, траншеи, погрузки или демонтажа. Поможем выбрать размер и оснащение."
         },
         "truck": {
-          "title": "Самосвалы и вывоз грунта",
-          "description": "Вывоз земли, камней и мусора, доставка песка, щебня, грунта и перевозка техники."
+          "title": "Самосвалы и перевозки",
+          "description": "Если нужно вывезти грунт или привезти материалы. Подберём самосвал под объём груза и подъезд к участку."
         },
         "linksText": {
-          "prefix": "Мы выполняем",
+          "prefix": "Можно заказать",
           "landClearing": "расчистку участка",
           "landLeveling": "выравнивание земли",
-          "drainage": "дренажные работы",
-          "sitePreparation": "подготовку под строительство",
-          "suffix": "и можем подключить экскаваторы и самосвалы под одну задачу."
+          "drainage": "дренажные работы",
+          "sitePreparation": "подготовку к строительству",
+          "suffix": "отдельно или объединить несколько услуг в одном заказе."
         }
       },
       "seoBlock": {
-        "title": "Как мы организуем земляные работы на Самуи",
-        "p1": "Земляные работы на Самуи часто требуют не одной машины, а нормального плана: где снимать грунт, куда отводить воду, чем поднимать уровень, сколько рейсов нужно для завоза или вывоза материала и какая техника сможет заехать на участок.",
-        "p2": "Мы работаем с участками под дома, виллы, подъездные дороги, парковки, сады и строительные площадки. Можем расчистить землю, убрать корни и мусор, выровнять площадку, сделать отсыпку, организовать дренаж, доставить грунт, песок или щебень и вывезти лишний материал.",
-        "p3": "Перед расчётом смотрим подъезд, уклон, тип грунта, воду на участке и объём работ. Это помогает выбрать правильный экскаватор, количество самосвалов и избежать лишних затрат."
+        "title": "От чего зависит объём земляных работ",
+        "p1": "Одинаковая площадь участка не означает одинаковый объём работ. На ровной земле может хватить небольшой выемки грунта, а на склоне потребуются срезка, перемещение земли и формирование нескольких уровней.",
+        "p2": "Для котлована или траншеи важны размеры и глубина, для отсыпки — площадь и высота подъёма. Если есть план с отметками или требования строителей, пришлите их вместе с фотографиями: расчёт будет точнее.",
+        "p3": "Также проверяем, можно ли использовать вынутый грунт на участке или потребуется вывоз и завоз другого материала. Учитываем подъезд, место для работы машин и отвод воды — от этого зависят техника, число рейсов и сроки."
       },
       "process": {
-        "title": "Как мы работаем",
+        "title": "Как проходит работа",
         "p1": {
-          "title": "Оцениваем участок",
-          "description": "Смотрим доступ, уклон, воду, грунт, объём работ и подходящую технику."
+          "title": "Обсуждаем задачу",
+          "description": "Изучаем локацию, фото и желаемый результат. Если по ним нельзя оценить объём, договариваемся об осмотре участка."
         },
         "p2": {
-          "title": "Составляем план",
-          "description": "Определяем порядок работ: расчистка, дренаж, отсыпка, выравнивание, завоз или вывоз."
+          "title": "Планируем работы",
+          "description": "Определяем этапы, подходящую технику, потребность в материалах и вывозе. Обсуждаем сроки."
         },
         "p3": {
-          "title": "Считаем стоимость",
-          "description": "Даём понятный расчёт по сменам, рейсам, объёму или фиксированной цене."
+          "title": "Согласуем стоимость",
+          "description": "Фиксируем состав работ, тарифы и условия оплаты: по времени, рейсам, объёму или за согласованный результат."
         },
         "p4": {
-          "title": "Выполняем работу",
-          "description": "Организуем технику, материалы, вывоз и можем присылать фото/видео прогресса."
+          "title": "Выполняем заказ",
+          "description": "Организуем работу техники и перевозки по плану. По завершении сверяем результат с согласованным объёмом."
         }
       },
       "areas": {
-        "title": "Районы работы на Самуи",
-        "description": "Работаем по всему острову: частные участки, виллы, стройплощадки, дороги и коммерческие объекты.",
+        "title": "Работаем по всему Самуи",
+        "description": "Выезжаем на частные участки и строительные объекты во всех районах острова.",
         "items": {
           "chaweng": "Чавенг",
           "lamai": "Ламай",
@@ -312,60 +312,60 @@ useServiceSeo({
         }
       },
       "pricing": {
-        "title": "Быстрый расчёт по участку",
-        "text": "Цена зависит от подъезда, рельефа, грунта, объёма работ, количества рейсов, материалов и дренажа. Для расчёта отправьте точку на карте, 3–5 фото участка и короткое описание задачи."
+        "title": "Сколько стоят земляные работы",
+        "text": "Стоимость зависит от объёма выемки или отсыпки, типа грунта, подъезда и нужной техники. В расчёте учитываем работу машин, материалы, доставку и вывоз. До начала согласуем, что входит в цену и как считается оплата."
       },
       "cta": {
-        "title": "Отправьте фото участка - скажем, с чего начать",
-        "text": "Пришлите локацию, 3–5 фото и короткое описание задачи. Мы подскажем, какая техника нужна и какой формат работ будет разумнее."
+        "title": "Расскажите, что нужно сделать на участке",
+        "text": "Пришлите точку на карте, 3–5 фото участка и подъезда, описание задачи и желаемые сроки. Подскажем, с чего начать, и подготовим предварительный расчёт."
       },
       "beforeAfter": {
-        "title": "Примеры работ до и после"
+        "title": "Наши работы: до и после"
       },
       "included": {
-        "title": "Почему с нами удобно",
+        "title": "Условия понятны заранее",
         "fixed": {
-          "title": "Понятная стоимость",
-          "description": "Согласовываем формат и цену до начала работ: по смене, объёму или под ключ."
+          "title": "Дополнения — по согласованию",
+          "description": "Если потребуется работа сверх оговорённого объёма, сначала обсудим с вами её стоимость и условия."
         },
         "report": {
-          "title": "Фото и видео отчёты",
-          "description": "Можем присылать обновления по этапам, если вы не находитесь на объекте."
+          "title": "Фото и видео с участка",
+          "description": "Если вы не на объекте, можем присылать фото и видео по этапам. Формат и частоту отчётов обсудим заранее."
         },
         "safety": {
-          "title": "Одна команда",
-          "description": "Экскаваторы, самосвалы, материалы и вывоз можно организовать вместе."
+          "title": "Один подрядчик",
+          "description": "Мы координируем операторов, водителей и доставку материалов — вам не нужно согласовывать их работу по отдельности."
         }
       },
       "faq": {
         "title": "Частые вопросы",
         "q1": {
-          "question": "Вы делаете земляные работы под ключ?",
-          "answer": "Да. Можем взять расчистку, выравнивание, дренаж, отсыпку, доставку материалов и вывоз грунта."
+          "question": "Можно заказать только часть работ?",
+          "answer": "Да. Можно заказать отдельный котлован, траншею, отсыпку или другой этап. Если нужно несколько услуг, согласуем общий объём и порядок их выполнения."
         },
         "q2": {
-          "question": "Чем земляные работы отличаются от аренды экскаватора?",
-          "answer": "Экскаватор - это отдельная техника. Земляные работы - это комплексная подготовка участка с техникой, самосвалами, материалами и вывозом."
+          "question": "Чем заказ земляных работ отличается от аренды экскаватора?",
+          "answer": "При аренде вы заказываете экскаватор с оператором для определённой задачи. При заказе земляных работ мы также организуем согласованный комплекс: подбираем машины, координируем этапы, материалы и перевозки."
         },
         "q3": {
-          "question": "Что нужно для расчёта?",
-          "answer": "Локация, 3–5 фото участка и подъезда, описание задачи, примерный объём и сроки."
+          "question": "Можно ли рассчитать стоимость по фотографиям?",
+          "answer": "По фото, локации и описанию можно дать предварительную оценку. Для точного расчёта могут понадобиться размеры, высотные отметки или осмотр. Перед началом согласуем объём, тарифы и условия оплаты."
         },
         "q4": {
-          "question": "Можно сделать дренаж?",
-          "answer": "Да. Делаем уклоны, канавы, траншеи, трубы и линии отвода воды, если это подходит участку."
+          "question": "Сколько времени займут работы?",
+          "answer": "Срок зависит от объёма, грунта, подъезда, количества рейсов и погоды. Ориентир дадим после оценки участка. Если условия изменятся и повлияют на сроки, обсудим это с вами."
         },
         "q5": {
-          "question": "Вы привозите грунт, песок и щебень?",
-          "answer": "Да. Организуем доставку материалов и распределение по участку."
+          "question": "Вы организуете материалы и вывоз грунта?",
+          "answer": "Да. Можем доставить грунт, песок и щебень, распределить их на участке и вывезти лишний материал. Согласуем, какие материалы и перевозки входят в заказ."
         },
         "q6": {
-          "question": "Работаете на сложных участках?",
-          "answer": "Да. Сначала оцениваем подъезд, уклон, грунт и подбираем подходящую технику."
+          "question": "Можно работать на склоне или с узким подъездом?",
+          "answer": "Возможность работ оцениваем по месту: важны ширина и уклон подъезда, грунт и пространство для манёвра. Подберём подходящую технику и заранее объясним ограничения."
         },
         "q7": {
-          "question": "Можно сначала просто получить консультацию?",
-          "answer": "Да. Отправьте фото и локацию - подскажем, с чего начать и какая техника нужна."
+          "question": "Нужно ли постоянно присутствовать на участке?",
+          "answer": "Не обязательно. Заранее согласуем задачу, доступ на участок и способ связи. Можем отправлять фото и видео, а изменения объёма или стоимости обсуждать дистанционно."
         }
       }
     }
@@ -373,7 +373,7 @@ useServiceSeo({
   "en": {
     "earthworks": {
       "schema": {
-        "name": "Earthworks and site preparation on Koh Samui",
+        "name": "Earthworks on Koh Samui",
         "serviceTypes": {
           "earthworks": "Earthworks",
           "landClearing": "Land clearing",
@@ -385,94 +385,94 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Earthworks on Koh Samui - Excavation & Backfill",
-        "description": "Full-scope earthworks on Koh Samui: excavation, cut and fill, backfilling and compaction, soil haulage to site. Own machinery, fixed estimate before work starts.",
-        "keywords": "earthworks koh samui, site preparation koh samui, land leveling samui, drainage samui, backfilling samui, land clearing samui, soil delivery samui, soil removal samui, excavator samui, dump truck samui"
+        "title": "Earthworks on Koh Samui",
+        "description": "Earthworks on Koh Samui: excavation, trenching, backfilling and grading. Book a single task or a full scope of work. Equipment and costs agreed before starting.",
+        "keywords": "earthworks koh samui, excavation samui, trenching samui, backfilling samui, soil movement samui"
       },
       "hero": {
-        "title": "Earthworks on Koh Samui",
-        "description": "Excavation, cut and fill, backfilling and compaction. We take on the whole scope: from the first bucket to a finished pad."
+        "title": "Earthworks on Koh Samui",
+        "description": "Excavation, trenching, soil moving, backfilling and grading. Book a single task or let us coordinate several stages of work on your land."
       },
-      "intro": "We prepare land for houses, villas, roads and construction projects on Koh Samui. We clear sites, level ground, install drainage, deliver fill material, remove excess soil and organize machinery work. We choose the right excavators, dump trucks and work plan based on real site conditions, access, soil and project size.",
+      "intro": "We work on sites for houses, villas, roads and landscaping. You don’t need to know which machines to book: tell us what you want to achieve, and we’ll assess the conditions, recommend a work plan and select the equipment.",
       "value": {
-        "title": "What you get",
+        "title": "What We Take Care Of",
         "v1": {
-          "title": "Site ready for construction",
-          "description": "We prepare the land so you can start building, landscaping, roads or parking without delays."
+          "title": "A Clear Scope",
+          "description": "We define the work and the result you can expect, agreeing on the scope before machinery arrives."
         },
         "v2": {
-          "title": "Less water problems",
-          "description": "We plan slopes and drainage properly, especially for low or wet land."
+          "title": "A Practical Work Sequence",
+          "description": "We coordinate the stages around access, terrain and water runoff to reduce rework."
         },
         "v3": {
-          "title": "Machines and logistics in one team",
-          "description": "Excavators, dump trucks, material delivery and removal are organized together."
+          "title": "Equipment & Hauling",
+          "description": "We select the machines and arrange material deliveries and soil removal when they are needed."
         }
       },
       "services": {
-        "title": "Main types of earthworks",
-        "description": "You can order a specific task or full site preparation.",
+        "title": "Find the Service You Need",
+        "description": "Explore our main services and equipment for earthworks. Each page explains the service in more detail.",
         "landClearing": {
-          "title": "Land clearing",
-          "description": "Removing trees, roots, bushes, debris and old structures."
+          "title": "Land Clearing",
+          "description": "For land blocked by trees, overgrowth, stumps or debris. We clear vegetation and make room for the next stage of work."
         },
         "landLeveling": {
-          "title": "Land leveling",
-          "description": "Creating flat surfaces, slopes and levels for construction."
+          "title": "Land Leveling & Grading",
+          "description": "For changing ground levels: cutting high spots, filling low areas or shaping a platform with the required slope."
         },
         "drainage": {
-          "title": "Drainage works",
-          "description": "Installing trenches, pipes and slopes for water flow."
+          "title": "Drainage & Water Runoff",
+          "description": "For standing water or soil washed away by rain. We assess runoff routes and recommend a suitable drainage approach."
         },
         "sitePreparation": {
-          "title": "Site preparation",
-          "description": "Preparing land for houses, villas, roads and foundations."
+          "title": "Site Preparation",
+          "description": "For getting ready to build. We prepare access, working areas and space for storing construction materials."
         },
         "excavator": {
-          "title": "Excavator with operator",
-          "description": "Digging, trenching, loading, demolition and site work."
+          "title": "Excavator With Operator",
+          "description": "For a specific digging, trenching, loading or demolition job. We help choose the machine size and attachments."
         },
         "truck": {
-          "title": "Dump trucks & hauling",
-          "description": "Soil removal, debris hauling and material delivery."
+          "title": "Dump Trucks & Hauling",
+          "description": "For soil removal or material delivery. We match the truck to the load volume and site access."
         },
         "linksText": {
-          "prefix": "We handle",
+          "prefix": "You can book",
           "landClearing": "land clearing",
           "landLeveling": "land leveling",
-          "drainage": "drainage works",
+          "drainage": "drainage work",
           "sitePreparation": "site preparation",
-          "suffix": "and can combine excavators and dump trucks into one workflow."
+          "suffix": "as individual services or combine several in one job."
         }
       },
       "seoBlock": {
-        "title": "How we organize earthworks on Koh Samui",
-        "p1": "Earthworks on Koh Samui usually require more than just a machine. You need a proper plan: where to remove soil, how to manage water, how to raise levels, how many truck loads are needed and what machinery can access the site.",
-        "p2": "We work with land for houses, villas, access roads, parking areas, gardens and construction sites. We can clear the land, remove roots and debris, level the ground, do backfilling, organize drainage, deliver soil, sand or gravel and remove excess material.",
-        "p3": "Before giving a quote, we check access, slope, soil type, water conditions and work volume. This helps choose the right excavator, number of trucks and avoid unnecessary costs."
+        "title": "What Determines the Scope of Earthworks?",
+        "p1": "Plots of the same size can need very different amounts of work. Flat land may require only a small excavation, while sloping land may need cutting, soil movement and several working levels.",
+        "p2": "Excavation and trenching depend on dimensions and depth; backfilling depends on the area and the height to be added. If you have a plan with levels or requirements from your builder, send it with your photos for a more accurate estimate.",
+        "p3": "We also check whether excavated soil can be reused on site or needs to be removed and replaced with suitable material. Access, machine working space and water runoff affect equipment choice, truck trips and timing."
       },
       "process": {
-        "title": "How we work",
+        "title": "How the Work Is Done",
         "p1": {
-          "title": "Site evaluation",
-          "description": "We check access, slope, soil, water and required machinery."
+          "title": "Discuss the Job",
+          "description": "We review the location, photos and intended result. If they aren’t enough to assess the scope, we arrange a site visit."
         },
         "p2": {
-          "title": "Work planning",
-          "description": "We define the sequence: clearing, drainage, leveling, backfilling and hauling."
+          "title": "Plan the Work",
+          "description": "We define the stages, equipment, materials and hauling needs, and discuss the schedule."
         },
         "p3": {
-          "title": "Cost estimation",
-          "description": "We provide a clear quote based on time, volume or fixed scope."
+          "title": "Agree on Costs",
+          "description": "We confirm the scope, rates and payment terms: by time, truck trips, volume or an agreed result."
         },
         "p4": {
-          "title": "Execution",
-          "description": "We organize machinery, materials and can provide progress updates."
+          "title": "Carry Out the Work",
+          "description": "We coordinate machinery and hauling according to the plan, then check the completed work against the agreed scope."
         }
       },
       "areas": {
-        "title": "Service areas on Koh Samui",
-        "description": "We work across the island: private land, villas, construction sites, roads and commercial projects.",
+        "title": "Working Across Koh Samui",
+        "description": "We serve private plots and construction sites in all areas of the island.",
         "items": {
           "chaweng": "Chaweng",
           "lamai": "Lamai",
@@ -487,60 +487,60 @@ useServiceSeo({
         }
       },
       "pricing": {
-        "title": "Get a quick estimate",
-        "text": "The price depends on access, terrain, soil type, work volume, number of truck loads, materials and drainage. Send location, 3–5 photos and a short description."
+        "title": "How Much Do Earthworks Cost?",
+        "text": "Costs depend on excavation or fill volume, soil conditions, access and the equipment needed. We account for machine time, materials, delivery and removal. Before starting, we agree on what is included and how the work will be charged."
       },
       "cta": {
-        "title": "Send photos of your land - we’ll guide you",
-        "text": "Share location, 3–5 photos and a short description. We’ll explain what machinery is needed and how to approach the work."
+        "title": "Tell Us What You Need Done",
+        "text": "Send a map pin, 3–5 photos of the land and access, a job description and your preferred timing. We’ll recommend where to start and prepare an initial estimate."
       },
       "beforeAfter": {
-        "title": "Before & after earthworks on Koh Samui"
+        "title": "Our Work: Before & After"
       },
       "included": {
-        "title": "Why work with us",
+        "title": "Clear Terms From the Start",
         "fixed": {
-          "title": "Clear pricing",
-          "description": "We agree on format and price before starting."
+          "title": "Agree on Extras First",
+          "description": "If work beyond the agreed scope is needed, we discuss its cost and terms with you before proceeding."
         },
         "report": {
-          "title": "Photo & video updates",
-          "description": "We can send progress updates if you’re not on site."
+          "title": "Photo & Video Updates",
+          "description": "If you’re away from the site, we can send progress photos and videos. We agree on the format and frequency in advance."
         },
         "safety": {
-          "title": "One coordinated team",
-          "description": "Excavators, trucks, materials and hauling are handled together."
+          "title": "One Contractor",
+          "description": "We coordinate operators, drivers and material deliveries, so you don’t have to arrange their work separately."
         }
       },
       "faq": {
-        "title": "Frequently asked questions",
+        "title": "Frequently Asked Questions",
         "q1": {
-          "question": "Do you provide full earthworks service?",
-          "answer": "Yes. We can handle clearing, leveling, drainage, backfilling, material delivery and soil removal."
+          "question": "Can I book just one part of the work?",
+          "answer": "Yes. You can book a single excavation, trench, backfill or another stage. If you need several services, we agree on the combined scope and work sequence."
         },
         "q2": {
-          "question": "What is the difference between earthworks and excavator rental?",
-          "answer": "Excavator rental is just machinery. Earthworks is a full process including planning, logistics and execution."
+          "question": "How are earthworks different from excavator rental?",
+          "answer": "Excavator rental provides a machine with an operator for a defined task. With an earthworks job, we also organize the agreed scope, selecting machines and coordinating stages, materials and hauling."
         },
         "q3": {
-          "question": "What do you need for a quote?",
-          "answer": "Location, 3–5 photos, short description, approximate volume and timeline."
+          "question": "Can you estimate the cost from photos?",
+          "answer": "Photos, a location and a description can support an initial estimate. Dimensions, levels or a site visit may be needed for an accurate quote. We agree on the scope, rates and payment terms before starting."
         },
         "q4": {
-          "question": "Can you install drainage?",
-          "answer": "Yes. We create slopes, trenches, pipes and water flow systems when needed."
+          "question": "How long will the work take?",
+          "answer": "Timing depends on scope, soil, access, truck trips and weather. We give an estimate after assessing the site and discuss any changes in conditions that affect the schedule."
         },
         "q5": {
-          "question": "Do you deliver materials?",
-          "answer": "Yes. We can deliver soil, sand and gravel and distribute them on site."
+          "question": "Do you arrange materials and soil removal?",
+          "answer": "Yes. We can deliver fill soil, sand and gravel, spread them on site and remove surplus material. We agree on which materials and hauling services are included in your order."
         },
         "q6": {
-          "question": "Can you work on difficult land?",
-          "answer": "Yes. We evaluate access, slope and conditions and choose the right equipment."
+          "question": "Can you work on slopes or with narrow access?",
+          "answer": "We assess feasibility for each site, considering access width and gradient, soil and turning space. We select suitable machinery and explain any limitations in advance."
         },
         "q7": {
-          "question": "Can I get advice first?",
-          "answer": "Yes. Send photos and location - we’ll suggest the best approach."
+          "question": "Do I need to stay on site throughout the work?",
+          "answer": "Not necessarily. We agree on the task, site access and how to stay in touch beforehand. We can send photos and videos and discuss scope or cost changes remotely."
         }
       }
     }
@@ -548,7 +548,7 @@ useServiceSeo({
   "th": {
     "earthworks": {
       "schema": {
-        "name": "งานดินและเตรียมพื้นที่บนเกาะสมุย",
+        "name": "งานดินบนเกาะสมุย",
         "serviceTypes": {
           "earthworks": "งานดิน",
           "landClearing": "เคลียร์พื้นที่",
@@ -560,94 +560,94 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "งานดิน เกาะสมุย - ขุดดิน ถมดิน ครบวงจร",
-        "description": "งานดินครบวงจรบนเกาะสมุย: ขุดบ่อ ขุดและย้ายดิน ถมดิน บดอัด ขนดินเข้าไซต์งาน ใช้เครื่องจักรของเราเอง ประเมินราคาก่อนเริ่มงาน",
-        "keywords": "งานดิน สมุย, ปรับระดับที่ดิน สมุย, ถมดิน สมุย, ระบบระบายน้ำ สมุย, เคลียร์ที่ดิน สมุย, รถขุด สมุย, รถดั๊มพ์ สมุย"
+        "title": "งานดินบนเกาะสมุย",
+        "description": "รับงานดินบนเกาะสมุย ขุดบ่อ ขุดร่อง ย้ายดิน ถมดินและปรับระดับ เลือกทำเฉพาะงานหรือหลายขั้นตอน พร้อมจัดเครื่องจักรและตกลงค่าใช้จ่ายก่อนเริ่ม",
+        "keywords": "งานดิน สมุย, ขุดบ่อ สมุย, ขุดร่อง สมุย, ถมดิน สมุย, ขนย้ายดิน สมุย"
       },
       "hero": {
         "title": "งานดินบนเกาะสมุย",
-        "description": "ขุดบ่อ ขุดและย้ายดิน ถมดิน บดอัด เรารับงานทั้งหมดตั้งแต่บุ้งกี๋แรกจนถึงพื้นที่พร้อมใช้งาน"
+        "description": "ขุดบ่อ ขุดร่อง ย้ายดิน ถมดิน และปรับระดับ เลือกทำเฉพาะขั้นตอนที่ต้องการ หรือให้เราประสานงานหลายขั้นตอนในพื้นที่ของคุณ"
       },
-      "intro": "เรารับงานเตรียมที่ดินสำหรับสร้างบ้าน วิลล่า ถนน และโครงการก่อสร้างบนเกาะสมุย ตั้งแต่เคลียร์พื้นที่ ปรับระดับ ทำระบบระบายน้ำ ถมดิน ขนดินเข้าออก และจัดการเครื่องจักรให้เหมาะกับหน้างานจริง ทั้งทางเข้า ลักษณะดิน และขนาดงาน",
+      "intro": "รับงานสำหรับบ้าน วิลล่า ถนน และการปรับภูมิทัศน์ คุณไม่จำเป็นต้องรู้ล่วงหน้าว่าต้องใช้เครื่องจักรอะไร เพียงบอกผลลัพธ์ที่ต้องการ เราจะประเมินพื้นที่ แนะนำลำดับงาน และเลือกเครื่องจักรให้เหมาะสม",
       "value": {
-        "title": "สิ่งที่คุณจะได้รับ",
+        "title": "สิ่งที่เราดูแลให้",
         "v1": {
-          "title": "พื้นที่พร้อมเริ่มงานต่อ",
-          "description": "เตรียมที่ดินให้พร้อมสำหรับการก่อสร้างหรือใช้งานต่อทันที"
+          "title": "ขอบเขตงานชัดเจน",
+          "description": "กำหนดว่าจะทำอะไรและได้ผลลัพธ์แบบไหน พร้อมตกลงขอบเขตงานก่อนนำเครื่องจักรเข้าพื้นที่"
         },
         "v2": {
-          "title": "ลดปัญหาน้ำขัง",
-          "description": "ออกแบบสโลปและระบบระบายน้ำให้เหมาะกับพื้นที่"
+          "title": "ลำดับงานที่เหมาะสม",
+          "description": "วางลำดับแต่ละขั้นตอนโดยคำนึงถึงทางเข้า ลักษณะพื้นที่ และการระบายน้ำ เพื่อลดการแก้งานซ้ำ"
         },
         "v3": {
-          "title": "ทำงานเป็นทีมเดียว",
-          "description": "รถขุด รถดั๊มพ์ การขนส่ง และการจัดการหน้างานครบในทีมเดียว"
+          "title": "เครื่องจักรและขนส่ง",
+          "description": "เลือกเครื่องจักร พร้อมจัดส่งวัสดุและขนดินออกให้สอดคล้องกับช่วงเวลาที่ต้องใช้งาน"
         }
       },
       "services": {
-        "title": "ประเภทงานดินหลัก",
-        "description": "เลือกทำเป็นงานย่อย หรือทำแบบครบวงจรก็ได้",
+        "title": "เลือกบริการที่คุณต้องการ",
+        "description": "ดูบริการหลักและเครื่องจักรสำหรับงานดินด้านล่าง แต่ละหน้ามีรายละเอียดของบริการเพิ่มเติม",
         "landClearing": {
-          "title": "เคลียร์พื้นที่",
-          "description": "กำจัดต้นไม้ รากไม้ วัชพืช และสิ่งก่อสร้างเก่า"
+          "title": "เคลียร์ที่ดิน",
+          "description": "สำหรับพื้นที่ที่มีต้นไม้ วัชพืช ตอไม้ หรือขยะกีดขวาง เราช่วยเคลียร์พื้นที่ให้พร้อมสำหรับงานขั้นต่อไป"
         },
         "landLeveling": {
           "title": "ปรับระดับที่ดิน",
-          "description": "ทำพื้นที่ให้เรียบ กำหนดระดับและความลาดเอียง"
+          "description": "เมื่อต้องการเปลี่ยนระดับพื้นที่ ตัดดินส่วนสูง ถมพื้นที่ต่ำ หรือทำลานพร้อมความลาดเอียงที่เหมาะสม"
         },
         "drainage": {
           "title": "ระบบระบายน้ำ",
-          "description": "ขุดร่อง วางท่อ และทำทางน้ำไหล"
+          "description": "สำหรับพื้นที่น้ำขังหรือดินถูกน้ำฝนกัดเซาะ เราประเมินเส้นทางน้ำและแนะนำวิธีระบายน้ำที่เหมาะสม"
         },
         "sitePreparation": {
           "title": "เตรียมพื้นที่ก่อสร้าง",
-          "description": "เตรียมพื้นฐานสำหรับบ้าน วิลล่า หรือโครงการ"
+          "description": "สำหรับผู้ที่กำลังจะเริ่มก่อสร้าง เตรียมทางเข้า พื้นที่ทำงาน และพื้นที่จัดเก็บวัสดุก่อสร้าง"
         },
         "excavator": {
           "title": "รถขุดพร้อมคนขับ",
-          "description": "ขุดดิน ขุดร่อง ทุบรื้อ และงานก่อสร้าง"
+          "description": "สำหรับงานขุดบ่อ ขุดร่อง ตักวัสดุ หรือรื้อถอนโดยเฉพาะ เราช่วยเลือกขนาดรถและอุปกรณ์ให้เหมาะกับงาน"
         },
         "truck": {
-          "title": "รถดั๊มพ์",
-          "description": "ขนดิน ขนหิน และขนวัสดุก่อสร้าง"
+          "title": "รถดั๊มและบริการขนส่ง",
+          "description": "เมื่อต้องการขนดินออกหรือส่งวัสดุ เลือกรถให้เหมาะกับปริมาณบรรทุกและทางเข้าพื้นที่"
         },
         "linksText": {
-          "prefix": "เรารับงาน",
-          "landClearing": "เคลียร์พื้นที่",
+          "prefix": "เลือกใช้บริการ",
+          "landClearing": "เคลียร์ที่ดิน",
           "landLeveling": "ปรับระดับที่ดิน",
           "drainage": "ระบบระบายน้ำ",
           "sitePreparation": "เตรียมพื้นที่ก่อสร้าง",
-          "suffix": "และสามารถจัดรถขุดและรถดั๊มพ์ให้ทำงานร่วมกันได้"
+          "suffix": "แยกเป็นงานเฉพาะ หรือรวมหลายบริการในงานเดียวได้"
         }
       },
       "seoBlock": {
-        "title": "เราจัดการงานดินบนเกาะสมุยอย่างไร",
-        "p1": "งานดินในสมุยต้องมีการวางแผน ไม่ใช่แค่ใช้เครื่องจักร ต้องดูว่าขุดตรงไหน น้ำจะไหลไปทางไหน ต้องถมเท่าไร และใช้รถกี่เที่ยว",
-        "p2": "เราทำงานกับที่ดินสำหรับบ้าน วิลล่า ถนน และโครงการก่อสร้าง สามารถเคลียร์พื้นที่ ปรับระดับ ถมดิน ทำระบายน้ำ และขนวัสดุเข้าออกได้",
-        "p3": "ก่อนประเมินราคา เราจะดูทางเข้า ลักษณะดิน ความชื้น และปริมาณงาน เพื่อเลือกเครื่องจักรและลดค่าใช้จ่ายที่ไม่จำเป็น"
+        "title": "อะไรเป็นตัวกำหนดปริมาณงานดิน",
+        "p1": "ที่ดินขนาดเท่ากันอาจมีปริมาณงานต่างกันมาก พื้นที่ราบอาจขุดดินเพียงเล็กน้อย แต่พื้นที่ลาดชันอาจต้องตัดดิน ย้ายดิน และจัดพื้นที่ให้มีหลายระดับ",
+        "p2": "งานขุดบ่อหรือขุดร่องต้องทราบขนาดและความลึก ส่วนงานถมดินต้องทราบพื้นที่และความสูงที่ต้องการเพิ่ม หากมีแบบระบุระดับหรือข้อกำหนดจากผู้รับเหมาก่อสร้าง ส่งมาพร้อมรูปถ่ายเพื่อให้ประเมินได้แม่นยำขึ้น",
+        "p3": "เราตรวจสอบด้วยว่าดินที่ขุดขึ้นมาสามารถใช้ต่อในพื้นที่ได้หรือไม่ หรือต้องขนออกและนำวัสดุที่เหมาะสมเข้ามา ทางเข้าพื้นที่ พื้นที่ทำงานของเครื่องจักร และการระบายน้ำ ล้วนมีผลต่อการเลือกเครื่องจักร จำนวนเที่ยวรถ และระยะเวลา"
       },
       "process": {
         "title": "ขั้นตอนการทำงาน",
         "p1": {
-          "title": "ดูหน้างาน",
-          "description": "ตรวจสอบพื้นที่ ทางเข้า ดิน และน้ำ"
+          "title": "พูดคุยรายละเอียดงาน",
+          "description": "ดูโลเคชัน รูปถ่าย และผลลัพธ์ที่ต้องการ หากข้อมูลไม่พอประเมินปริมาณงาน เราจะนัดดูพื้นที่"
         },
         "p2": {
           "title": "วางแผนงาน",
-          "description": "กำหนดลำดับงาน เช่น เคลียร์ ปรับระดับ และระบายน้ำ"
+          "description": "กำหนดขั้นตอน เครื่องจักร วัสดุ และการขนส่งที่จำเป็น พร้อมคุยเรื่องระยะเวลาทำงาน"
         },
         "p3": {
-          "title": "ประเมินราคา",
-          "description": "แจ้งราคาชัดเจนตามงานจริง"
+          "title": "ตกลงค่าใช้จ่าย",
+          "description": "สรุปขอบเขตงาน อัตราค่าบริการ และเงื่อนไขชำระเงิน คิดตามเวลา เที่ยวรถ ปริมาณงาน หรือเหมางานตามที่ตกลง"
         },
         "p4": {
-          "title": "เริ่มงาน",
-          "description": "จัดเครื่องจักรและเริ่มทำงานตามแผน"
+          "title": "ลงมือทำงาน",
+          "description": "จัดเครื่องจักรและขนส่งตามแผน เมื่อเสร็จแล้วตรวจสอบผลงานตามขอบเขตที่ตกลงกัน"
         }
       },
       "areas": {
-        "title": "พื้นที่ให้บริการ",
-        "description": "ให้บริการทั่วเกาะสมุย",
+        "title": "ให้บริการทั่วเกาะสมุย",
+        "description": "รับงานในที่ดินส่วนบุคคลและไซต์ก่อสร้างทุกพื้นที่บนเกาะ",
         "items": {
           "chaweng": "เฉวง",
           "lamai": "ละไม",
@@ -662,60 +662,60 @@ useServiceSeo({
         }
       },
       "pricing": {
-        "title": "ประเมินราคางาน",
-        "text": "ราคาขึ้นอยู่กับพื้นที่ ทางเข้า ปริมาณงาน และวัสดุ ส่งโลเคชันและรูป 3–5 รูป เพื่อประเมินราคา"
+        "title": "งานดินคิดราคาอย่างไร",
+        "text": "ราคาขึ้นอยู่กับปริมาณขุดหรือถม สภาพดิน ทางเข้า และเครื่องจักรที่ใช้ โดยคำนวณค่าเครื่องจักร วัสดุ ค่าขนส่งเข้าและขนออก ก่อนเริ่มเราจะตกลงว่าราคารวมอะไรบ้างและคิดค่าบริการอย่างไร"
       },
       "cta": {
-        "title": "ส่งรูปพื้นที่มาให้เราดู",
-        "text": "ส่งโลเคชันและรูปหน้างาน เราจะช่วยแนะนำแนวทางและเครื่องจักรที่เหมาะสม"
+        "title": "บอกเราว่าคุณต้องการทำอะไรกับพื้นที่",
+        "text": "ส่งหมุดแผนที่ รูปพื้นที่และทางเข้า 3–5 รูป รายละเอียดงาน และช่วงเวลาที่ต้องการ เราจะแนะนำจุดเริ่มต้นและประเมินราคาเบื้องต้นให้"
       },
       "beforeAfter": {
-        "title": "ตัวอย่างงานก่อนและหลัง"
+        "title": "ผลงานของเรา: ก่อนและหลัง"
       },
       "included": {
-        "title": "ทำไมลูกค้าเลือกเรา",
+        "title": "เงื่อนไขชัดเจนตั้งแต่เริ่ม",
         "fixed": {
-          "title": "ราคาชัดเจน",
-          "description": "ตกลงราคาก่อนเริ่มงาน"
+          "title": "งานเพิ่มต้องตกลงก่อน",
+          "description": "หากมีงานนอกเหนือจากขอบเขตเดิม เราจะคุยเรื่องราคาและเงื่อนไขกับคุณก่อนดำเนินการ"
         },
         "report": {
-          "title": "อัปเดตหน้างาน",
-          "description": "ส่งรูปและวิดีโอความคืบหน้าได้"
+          "title": "รูปและวิดีโอจากหน้างาน",
+          "description": "หากคุณไม่ได้อยู่หน้างาน เราสามารถส่งรูปและวิดีโอความคืบหน้าได้ โดยตกลงรูปแบบและความถี่ล่วงหน้า"
         },
         "safety": {
-          "title": "ทีมเดียวจบ",
-          "description": "ดูแลตั้งแต่ต้นจนจบในทีมเดียว"
+          "title": "ผู้รับเหมารายเดียว",
+          "description": "เราประสานงานคนขับเครื่องจักร คนขับรถบรรทุก และการส่งวัสดุ คุณจึงไม่ต้องจัดคิวงานให้แต่ละฝ่ายเอง"
         }
       },
       "faq": {
         "title": "คำถามที่พบบ่อย",
         "q1": {
-          "question": "รับงานครบวงจรไหม?",
-          "answer": "รับครับ ตั้งแต่เคลียร์ ปรับระดับ ถมดิน และขนดิน"
+          "question": "เลือกทำเฉพาะบางส่วนของงานได้ไหม?",
+          "answer": "ได้ คุณสามารถจ้างเฉพาะงานขุดบ่อ ขุดร่อง ถมดิน หรือขั้นตอนอื่น หากต้องการหลายบริการ เราจะตกลงขอบเขตทั้งหมดและลำดับการทำงานร่วมกัน"
         },
         "q2": {
-          "question": "ต้องส่งอะไรเพื่อประเมินราคา?",
-          "answer": "โลเคชัน รูป และรายละเอียดงาน"
+          "question": "จ้างงานดินต่างจากเช่ารถขุดอย่างไร?",
+          "answer": "การเช่ารถขุดคือการใช้รถพร้อมคนขับสำหรับงานที่กำหนด ส่วนการจ้างงานดิน เราดูแลขอบเขตงานที่ตกลงกันเพิ่มเติมด้วย ทั้งเลือกเครื่องจักร ประสานขั้นตอน วัสดุ และขนส่ง"
         },
         "q3": {
-          "question": "ทำระบายน้ำได้ไหม?",
-          "answer": "ได้ครับ สามารถออกแบบระบบน้ำได้"
+          "question": "ประเมินราคาจากรูปถ่ายได้ไหม?",
+          "answer": "รูปถ่าย โลเคชัน และรายละเอียดงานช่วยประเมินราคาเบื้องต้นได้ หากต้องการราคาที่แม่นยำ อาจต้องทราบขนาด ระดับพื้นที่ หรือเข้าดูหน้างาน เราจะตกลงขอบเขต อัตราค่าบริการ และเงื่อนไขชำระเงินก่อนเริ่ม"
         },
         "q4": {
-          "question": "ขนวัสดุได้ไหม?",
-          "answer": "ได้ครับ มีรถดั๊มพ์"
+          "question": "ใช้เวลาทำงานนานเท่าไร?",
+          "answer": "ขึ้นอยู่กับปริมาณงาน สภาพดิน ทางเข้า จำนวนเที่ยวรถ และสภาพอากาศ เราจะแจ้งระยะเวลาโดยประมาณหลังประเมินพื้นที่ หากเงื่อนไขเปลี่ยนและกระทบกำหนดงาน เราจะคุยกับคุณ"
         },
         "q5": {
-          "question": "ทำงานพื้นที่ยากได้ไหม?",
-          "answer": "ได้ครับ ประเมินหน้างานก่อน"
+          "question": "จัดหาวัสดุและขนดินออกให้ได้ไหม?",
+          "answer": "ได้ เราสามารถส่งดินถม ทราย และหิน เกลี่ยวัสดุในพื้นที่ และขนวัสดุส่วนเกินออก โดยตกลงล่วงหน้าว่าวัสดุและการขนส่งใดรวมอยู่ในงาน"
         },
         "q6": {
-          "question": "ปรึกษาก่อนได้ไหม?",
-          "answer": "ได้ครับ ส่งรูปมาได้เลย"
+          "question": "ทำงานบนพื้นที่ลาดชันหรือทางเข้าแคบได้ไหม?",
+          "answer": "ต้องประเมินแต่ละพื้นที่ โดยดูความกว้างและความชันของทางเข้า สภาพดิน และพื้นที่กลับรถ เราจะเลือกเครื่องจักรที่เหมาะสมและแจ้งข้อจำกัดล่วงหน้า"
         },
         "q7": {
-          "question": "ใช้เวลากี่วัน?",
-          "answer": "ขึ้นอยู่กับขนาดงานและพื้นที่"
+          "question": "ต้องอยู่หน้างานตลอดไหม?",
+          "answer": "ไม่จำเป็น เราจะตกลงรายละเอียดงาน การเข้าพื้นที่ และช่องทางติดต่อล่วงหน้า สามารถส่งรูปและวิดีโอให้ดู รวมถึงคุยเรื่องการเปลี่ยนขอบเขตงานหรือค่าใช้จ่ายทางไกลได้"
         }
       }
     }

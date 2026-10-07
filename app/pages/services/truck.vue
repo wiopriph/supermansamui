@@ -154,7 +154,7 @@ useServiceSeo({
   "ru": {
     "trucks": {
       "schema": {
-        "name": "Самосвалы и грузовики на Самуи",
+        "name": "Самосвалы и грузоперевозки на Самуи",
         "serviceTypes": {
           "dumpTruck": "Аренда самосвала",
           "soilRemoval": "Вывоз грунта",
@@ -165,45 +165,45 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Самосвал на Самуи - вывоз грунта, доставка песка",
-        "description": "Самосвалы и грузовики на Самуи: вывоз грунта, камней и строительного мусора, доставка песка, щебня, земли и перевозка техники. Расчёт за рейс, смену или объём.",
-        "keywords": "самосвал самуи, грузовик самуи, вывоз грунта самуи, вывоз строительного мусора самуи, доставка песка самуи, доставка щебня самуи, доставка грунта самуи, перевозка техники самуи, dump truck koh samui"
+        "title": "Самосвалы и грузоперевозки на Самуи",
+        "description": "Вывоз грунта и строительного мусора, доставка песка, щебня и грунта, перевозка техники на Самуи. Подберём грузовик и согласуем цену за рейс, смену или весь объём.",
+        "keywords": "самосвал самуи, грузоперевозки самуи, вывоз грунта самуи, вывоз строительного мусора самуи, доставка песка самуи, доставка щебня самуи, доставка грунта самуи, перевозка техники самуи"
       },
       "hero": {
-        "title": "Самосвалы и грузовики на Самуи",
-        "description": "Вывоз грунта и строительного мусора, доставка песка, щебня, земли и перевозка техники по Самуи."
+        "title": "Самосвалы и грузоперевозки на Самуи",
+        "description": "Вывозим грунт и строительный мусор, доставляем песок, щебень и другие материалы, перевозим технику. Один рейс или перевозки на весь период работ."
       },
-      "intro": "Нужен самосвал или грузовик на Самуи? Мы вывозим грунт после копки, убираем строительный мусор, доставляем песок, щебень, землю и перевозим технику между объектами. Вы отправляете локацию, фото подъезда и короткое описание задачи - мы подбираем подходящий грузовик, считаем примерный объём, количество рейсов и стоимость до начала работ.",
+      "intro": "Подберём машину под груз, маршрут и подъезд к объекту. Поможем оценить объём и количество рейсов, согласуем место погрузки и выгрузки. До выезда объясним стоимость и что входит в заказ.",
       "tasks": {
-        "title": "Для каких задач нужны грузовики",
+        "title": "Что мы перевозим",
         "t1": {
           "title": "Вывоз грунта",
-          "description": "Вывозим землю, глину, камни и лишний материал после копки, выравнивания или расчистки участка."
+          "description": "Забираем лишнюю землю, глину и камни после копки котлована, траншей или планировки участка."
         },
         "t2": {
           "title": "Вывоз строительного мусора",
-          "description": "Забираем бетон, корни, остатки демонтажа, строительные отходы и смешанный мусор с объекта."
+          "description": "Вывозим бетон, остатки демонтажа, корни и другие отходы с объекта. Состав груза и способ погрузки уточняем заранее."
         },
         "t3": {
           "title": "Доставка песка и щебня",
-          "description": "Привозим сыпучие материалы для стройки, дорог, отсыпки, дренажа и подготовки участка."
+          "description": "Привозим сыпучие материалы для строительства, дорог и дренажа. Согласуем вид материала, количество и место выгрузки."
         },
         "t4": {
           "title": "Доставка грунта",
-          "description": "Доставляем землю и материалы для поднятия уровня участка, засыпки ям и подготовки площадки."
+          "description": "Завозим грунт для отсыпки, поднятия уровня участка и засыпки ям. Можно заказать одну машину или несколько рейсов."
         },
         "t5": {
-          "title": "Работа с экскаватором",
-          "description": "Самосвалы работают вместе с экскаватором: техника грузит, грузовики вывозят или привозят материал."
+          "title": "Перевозки на стройке",
+          "description": "Организуем рейсы под график работ и погрузку экскаватором: вывозим вынутый грунт и подвозим нужные материалы."
         },
         "t6": {
           "title": "Перевозка техники",
-          "description": "Перевозим экскаваторы, оборудование и тяжёлые грузы между строительными объектами."
+          "description": "Перевозим экскаваторы, оборудование и тяжёлые грузы между объектами. Подбираем транспорт по массе, габаритам и условиям погрузки."
         }
       },
       "equipment": {
-        "title": "Наши грузовики",
-        "note": "Не знаете, какой грузовик нужен? Отправьте точку на карте, фото подъезда и задачу - подскажем.",
+        "title": "Грузовики и цены",
+        "note": "Сравните вместимость, грузоподъёмность и тарифы. Итоговую стоимость рассчитаем по грузу, маршруту и условиям погрузки и выгрузки.",
         "prices": {
           "thb": "{price} бат",
           "trip": "За рейс",
@@ -211,64 +211,64 @@ useServiceSeo({
         }
       },
       "packages": {
-        "title": "Нужен экскаватор вместе с самосвалами?",
-        "text": "Для вывоза грунта, камней или мусора часто нужен экскаватор для погрузки. Мы можем организовать экскаватор и самосвалы одной командой, чтобы работа шла быстрее и без лишней координации."
+        "title": "Нужна техника для погрузки?",
+        "text": "Для грунта, камней и тяжёлого мусора можем добавить экскаватор с оператором. Согласуем его работу с подачей самосвалов и учтём погрузку в расчёте — вам не придётся координировать две команды."
       },
       "related": {
-        "title": "Может понадобиться дополнительно",
+        "title": "Другие услуги для вашего объекта",
         "excavator": {
-          "title": "Экскаватор с оператором",
-          "description": "Если нужно выкопать, погрузить грунт, разобрать бетон или подготовить материал к вывозу."
+          "title": "Экскаватор с оператором",
+          "description": "Для копки, демонтажа и погрузки перед вывозом. Выбор машины, оснащение и условия аренды."
         },
         "earthworks": {
-          "title": "Земляные работы под ключ",
-          "description": "Если нужна комплексная подготовка участка: расчистка, дренаж, отсыпка, уровни и вывоз."
+          "title": "Земляные работы",
+          "description": "Если нужно не только перевезти материал, но и выполнить работы на участке: выемку грунта, отсыпку, планировку или дренаж."
         }
       },
       "included": {
-        "title": "Почему с нами удобно",
+        "title": "Перевозки без лишних хлопот",
         "driver": {
-          "title": "Местные водители",
-          "description": "Знают дороги Самуи, подъёмы, узкие участки, сложные подъезды и реальные ограничения на острове."
+          "title": "Учитываем дороги Самуи",
+          "description": "Наши водители знают остров. Перед заказом проверяем подъезд, уклоны и место для разворота и выгрузки."
         },
         "routing": {
-          "title": "Помогаем посчитать объём",
-          "description": "Подскажем, какой грузовик нужен и сколько рейсов может потребоваться под вашу задачу."
+          "title": "Помогаем рассчитать рейсы",
+          "description": "Оценим количество поездок по объёму, массе и типу груза. Подберём машину, которая подходит для вашего маршрута."
         },
         "flexible": {
-          "title": "Гибкий формат оплаты",
-          "description": "Можно считать за рейс, за смену или за весь объём - зависит от задачи и расстояния."
+          "title": "Согласуем цену заранее",
+          "description": "За рейс, смену или весь объём — выберем формат под задачу и объясним, что включено в стоимость."
         }
       },
       "faq": {
         "title": "Частые вопросы",
         "q1": {
-          "question": "Как рассчитывается стоимость?",
-          "answer": "Обычно за рейс. Для больших объёмов можем считать за смену или за весь проект."
+          "question": "От чего зависит стоимость перевозки?",
+          "answer": "От типа и количества груза, расстояния, выбранной машины и условий погрузки и выгрузки. Обычно считаем за рейс, для длительной работы — за смену или весь объём. Заранее уточним, входят ли в расчёт погрузка, материалы и плата за приём отходов."
         },
         "q2": {
-          "question": "Что нужно для расчёта?",
-          "answer": "Точка на карте, фото подъезда, описание материала, примерный объём и место выгрузки или вывоза."
+          "question": "Что отправить для расчёта?",
+          "answer": "Локации погрузки и выгрузки, если они известны, фото груза и подъезда, примерный объём или массу, желаемую дату. Если объём неизвестен или вы не знаете, куда вывезти материал, напишите — поможем определить условия перевозки."
         },
         "q3": {
-          "question": "Можно ли заказать самосвал вместе с экскаватором?",
-          "answer": "Да. Часто это лучший вариант: экскаватор грузит, самосвалы сразу вывозят грунт или мусор."
+          "question": "Можно заказать самосвал вместе с погрузкой?",
+          "answer": "Да. Можем организовать экскаватор с оператором для погрузки грунта, камней или строительного мусора. Погрузку и перевозку согласуем в одном заказе, а их стоимость укажем в расчёте."
         },
         "q4": {
           "question": "Вы доставляете песок, щебень и грунт?",
-          "answer": "Да. Можем привезти песок, щебень, землю и другие сыпучие материалы на объект."
+          "answer": "Да. Уточним вид материала, количество и место выгрузки. Перед заказом согласуем стоимость материала и доставки. Если после выгрузки нужно распределить материал по участку, эту работу обсудим отдельно."
         },
         "q5": {
-          "question": "Работаете на узких дорогах и сложных подъездах?",
-          "answer": "Да. Сначала оцениваем подъезд и подбираем грузовик под реальные условия."
+          "question": "Сможет ли грузовик проехать по узкой или крутой дороге?",
+          "answer": "Это зависит от ширины, уклона, покрытия и места для манёвра. Пришлите фото или видео подъезда — оценим возможность проезда и подберём подходящую машину. Учитываем также место для разгрузки."
         },
         "q6": {
-          "question": "Можно заказать срочно?",
-          "answer": "Да, если техника свободна. Лучше написать заранее, чтобы зафиксировать время."
+          "question": "Можно заказать машину на сегодня?",
+          "answer": "Если есть свободная подходящая машина и время на выполнение рейса. Напишите локацию и задачу — проверим возможность подачи. Для нескольких рейсов или работы на смену лучше договориться заранее."
         },
         "q7": {
-          "question": "Вы перевозите экскаваторы и технику?",
-          "answer": "Да. Для этого используем трал, грузовики и кран при необходимости."
+          "question": "Как заказать перевозку экскаватора или оборудования?",
+          "answer": "Пришлите модель, массу, габариты, фото и точки погрузки и доставки. Сообщите, может ли техника заехать на платформу своим ходом. Подберём транспорт и при необходимости согласуем кран для погрузки."
         }
       },
       "photos": {
@@ -299,7 +299,7 @@ useServiceSeo({
   "en": {
     "trucks": {
       "schema": {
-        "name": "Dump truck and truck services on Koh Samui",
+        "name": "Dump Truck & Hauling Services on Koh Samui",
         "serviceTypes": {
           "dumpTruck": "Dump truck rental",
           "soilRemoval": "Soil removal",
@@ -310,45 +310,45 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Dump Truck Rental on Koh Samui - Soil Removal",
-        "description": "Dump truck and truck services on Koh Samui: soil removal, construction waste removal, sand, gravel and soil delivery, equipment transport. Per trip, per day or full job pricing.",
-        "keywords": "dump truck koh samui, dump truck rental koh samui, truck service samui, soil removal koh samui, construction waste removal samui, sand delivery samui, gravel delivery samui, soil delivery samui, equipment transport samui"
+        "title": "Dump Truck & Hauling Services on Koh Samui",
+        "description": "Soil and construction waste removal, sand, gravel and fill delivery, and equipment transport on Koh Samui. Truck selection and pricing by trip, day or full job.",
+        "keywords": "dump truck koh samui, dump truck rental samui, hauling services samui, soil removal samui, construction waste removal samui, sand delivery samui, gravel delivery samui, equipment transport samui"
       },
       "hero": {
-        "title": "Dump truck and truck services on Koh Samui",
-        "description": "Soil removal, construction waste removal, sand, gravel and soil delivery, and equipment transport across Koh Samui."
+        "title": "Dump Truck & Hauling Services on Koh Samui",
+        "description": "Soil and construction waste removal, bulk material delivery and equipment transport. Book a single trip or hauling throughout your project."
       },
-      "intro": "Need a dump truck or construction truck on Koh Samui? We remove soil after excavation, haul construction waste, deliver sand, gravel and fill soil, and transport equipment between job sites. Send us the location, access photos and a short task description - we will choose the right truck, estimate the volume, number of trips and price before the job starts.",
+      "intro": "We match the truck to the load, route and site access. We help estimate volume and trip numbers, and agree on loading and unloading locations. Before dispatch, we explain the price and what your booking includes.",
       "tasks": {
-        "title": "What trucks are used for",
+        "title": "What We Transport",
         "t1": {
-          "title": "Soil removal",
-          "description": "Removing soil, clay, rocks and excess material after excavation, leveling or land clearing."
+          "title": "Soil Removal",
+          "description": "Removal of surplus soil, clay and rocks after excavation, trenching or land grading."
         },
         "t2": {
-          "title": "Construction waste removal",
-          "description": "Removing concrete, roots, demolition debris, construction waste and mixed site waste."
+          "title": "Construction Waste Removal",
+          "description": "Hauling concrete, demolition debris, roots and other site waste. We confirm the load contents and loading method in advance."
         },
         "t3": {
-          "title": "Sand & gravel delivery",
-          "description": "Delivering bulk materials for construction, roads, backfilling, drainage and site preparation."
+          "title": "Sand & Gravel Delivery",
+          "description": "Bulk materials for construction, roads and drainage. We agree on material type, quantity and the unloading location."
         },
         "t4": {
-          "title": "Soil delivery",
-          "description": "Delivering fill soil and materials for raising land level, filling holes and preparing work areas."
+          "title": "Fill Soil Delivery",
+          "description": "Soil for backfilling, raising ground levels and filling holes. Book one truckload or several trips."
         },
         "t5": {
-          "title": "Excavator support",
-          "description": "Dump trucks work with excavators: the excavator loads, trucks remove or deliver material."
+          "title": "Construction Site Hauling",
+          "description": "Trips coordinated with your work schedule and excavator loading, removing excavated soil and bringing in materials."
         },
         "t6": {
-          "title": "Equipment transport",
-          "description": "Transporting excavators, machinery, equipment and heavy loads between construction sites."
+          "title": "Equipment Transport",
+          "description": "Moving excavators, equipment and heavy loads between sites. We select transport based on weight, dimensions and loading requirements."
         }
       },
       "equipment": {
-        "title": "Our trucks",
-        "note": "Not sure which truck you need? Send a map pin, access photos and task details - we will recommend the right option.",
+        "title": "Trucks & Rates",
+        "note": "Compare load volumes, payloads and rates. Your final quote will account for the load, route and loading and unloading conditions.",
         "prices": {
           "thb": "{price} THB",
           "trip": "Per trip",
@@ -356,64 +356,64 @@ useServiceSeo({
         }
       },
       "packages": {
-        "title": "Need an excavator with dump trucks?",
-        "text": "For soil, rock or waste removal, an excavator is often needed for loading. We can organize excavator and dump trucks as one team so the work is faster and easier to coordinate."
+        "title": "Need Equipment for Loading?",
+        "text": "For soil, rocks and heavy debris, we can add an excavator with an operator. We coordinate it with truck arrivals and include loading in the estimate, so you don’t have to manage two separate teams."
       },
       "related": {
-        "title": "You may also need",
+        "title": "Other Services for Your Site",
         "excavator": {
-          "title": "Excavator with operator",
-          "description": "If you need digging, loading soil, concrete breaking or preparing material for removal."
+          "title": "Excavator With Operator",
+          "description": "For digging, demolition and loading before removal. Explore machines, attachments and rental terms."
         },
         "earthworks": {
-          "title": "Full earthworks services",
-          "description": "If you need complete land preparation: clearing, drainage, backfilling, levels and removal."
+          "title": "Earthworks",
+          "description": "For work on the land as well as transport: excavation, backfilling, grading or drainage."
         }
       },
       "included": {
-        "title": "Why clients work with us",
+        "title": "Straightforward Hauling",
         "driver": {
-          "title": "Local drivers",
-          "description": "They know Samui roads, slopes, narrow access, difficult entrances and real island limitations."
+          "title": "Knowledge of Samui Roads",
+          "description": "Our drivers know the island. Before booking, we check access, slopes and room for turning and unloading."
         },
         "routing": {
-          "title": "We help estimate volume",
-          "description": "We recommend the right truck and estimate how many trips may be needed for your task."
+          "title": "Help Estimating Trips",
+          "description": "We estimate trips from load volume, weight and material type, then recommend a truck suited to your route."
         },
         "flexible": {
-          "title": "Flexible pricing",
-          "description": "Per trip, per day or full volume - depending on the task, distance and material."
+          "title": "Prices Agreed in Advance",
+          "description": "By trip, day or full volume: we agree on a pricing basis for your job and explain what is included."
         }
       },
       "faq": {
-        "title": "Frequently asked questions",
+        "title": "Frequently Asked Questions",
         "q1": {
-          "question": "How is the price calculated?",
-          "answer": "Usually per trip. For larger volumes, we can calculate by day or for the full project."
+          "question": "What determines the transport price?",
+          "answer": "Load type and quantity, distance, truck choice, and loading and unloading conditions. We usually charge per trip; longer jobs can be priced per day or for the full volume. We clarify whether loading, materials and waste disposal fees are included before starting."
         },
         "q2": {
-          "question": "What do you need for a quote?",
-          "answer": "A map pin, access photos, material type, estimated volume and loading or delivery location."
+          "question": "What should I send for a quote?",
+          "answer": "Loading and unloading locations if known, photos of the load and access, approximate volume or weight, and your preferred date. If you don’t know the volume or where the material can go, tell us and we’ll help work out the hauling arrangements."
         },
         "q3": {
-          "question": "Can I book a dump truck with an excavator?",
-          "answer": "Yes. This is often the best setup: the excavator loads and dump trucks remove soil or waste."
+          "question": "Can I book a dump truck with loading?",
+          "answer": "Yes. We can arrange an excavator with an operator to load soil, rocks or construction debris. Loading and hauling can be booked together, with the costs set out in your estimate."
         },
         "q4": {
-          "question": "Do you deliver sand, gravel and soil?",
-          "answer": "Yes. We can deliver sand, gravel, fill soil and other bulk materials to your site."
+          "question": "Do you deliver sand, gravel and fill soil?",
+          "answer": "Yes. We confirm the material type, quantity and unloading point, then agree on material and delivery costs. If the material needs spreading after delivery, we discuss that work separately."
         },
         "q5": {
-          "question": "Can you work on narrow roads and difficult access?",
-          "answer": "Yes. We check access first and choose a truck that fits the real site conditions."
+          "question": "Can a truck use a narrow or steep access road?",
+          "answer": "It depends on road width, gradient, surface and turning space. Send photos or a video of the access so we can assess feasibility and choose a suitable truck. We also check the unloading area."
         },
         "q6": {
-          "question": "Can I book urgently?",
-          "answer": "Yes, if trucks are available. It is better to contact us in advance to secure the time."
+          "question": "Can I book a truck for today?",
+          "answer": "If a suitable truck is available and there is time to complete the trip. Send your location and job details so we can check availability. For several trips or a full day, booking ahead is best."
         },
         "q7": {
-          "question": "Do you transport excavators and equipment?",
-          "answer": "Yes. We use lowbed trucks, transport trucks and crane support when needed."
+          "question": "How do I book excavator or equipment transport?",
+          "answer": "Send the model, weight, dimensions, photos, and pickup and delivery locations. Tell us whether the machine can drive onto a platform under its own power. We’ll select the transport and arrange crane loading if needed."
         }
       },
       "photos": {
@@ -444,7 +444,7 @@ useServiceSeo({
   "th": {
     "trucks": {
       "schema": {
-        "name": "บริการรถดั๊มพ์และรถบรรทุกบนเกาะสมุย",
+        "name": "บริการรถดั๊มและขนส่งบนเกาะสมุย",
         "serviceTypes": {
           "dumpTruck": "บริการรถดั๊มพ์",
           "soilRemoval": "ขนดินออก",
@@ -455,45 +455,45 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "รถดั๊มพ์ เกาะสมุย - ขนดินออก ส่งทราย หิน ดินถม",
-        "description": "บริการรถดั๊มพ์และรถบรรทุกบนเกาะสมุย ขนดินออก ขนเศษวัสดุก่อสร้าง ส่งทราย หิน ดินถม และขนย้ายเครื่องจักร คิดราคาต่อเที่ยว ต่อวัน หรือเหมางาน",
-        "keywords": "รถดั๊มพ์ สมุย, รถบรรทุก สมุย, ขนดิน สมุย, ขนดินออก สมุย, ขนขยะก่อสร้าง สมุย, ส่งทราย สมุย, ส่งหิน สมุย, ส่งดินถม สมุย, ขนย้ายเครื่องจักร สมุย"
+        "title": "รถดั๊มและบริการขนส่งบนเกาะสมุย",
+        "description": "ขนดินและเศษวัสดุก่อสร้างออก ส่งทราย หิน ดินถม และขนย้ายเครื่องจักรบนเกาะสมุย ช่วยเลือกรถและตกลงราคาต่อเที่ยว รายวัน หรือเหมางานก่อนเริ่ม",
+        "keywords": "รถดั๊ม สมุย, รถบรรทุก สมุย, ขนดินออก สมุย, ขนขยะก่อสร้าง สมุย, ส่งทราย สมุย, ส่งหิน สมุย, ส่งดินถม สมุย, ขนย้ายเครื่องจักร สมุย"
       },
       "hero": {
-        "title": "บริการรถดั๊มพ์และรถบรรทุกบนเกาะสมุย",
-        "description": "ขนดินออก ขนเศษวัสดุก่อสร้าง ส่งทราย หิน ดินถม และขนย้ายเครื่องจักรทั่วเกาะสมุย"
+        "title": "รถดั๊มและบริการขนส่งบนเกาะสมุย",
+        "description": "ขนดินและเศษวัสดุก่อสร้างออก ส่งทราย หิน และวัสดุอื่น พร้อมขนย้ายเครื่องจักร เลือกใช้บริการเที่ยวเดียวหรือขนส่งตลอดโครงการ"
       },
-      "intro": "ต้องการรถดั๊มพ์หรือรถบรรทุกสำหรับงานก่อสร้างบนเกาะสมุย? เรารับขนดินหลังงานขุด ขนเศษวัสดุก่อสร้าง ส่งทราย หิน ดินถม และขนย้ายเครื่องจักรระหว่างหน้างาน ส่งโลเคชัน รูปทางเข้า และรายละเอียดงานสั้น ๆ มาให้เรา เราจะช่วยเลือกประเภทรถ ประเมินปริมาณ จำนวนเที่ยว และแจ้งราคาก่อนเริ่มงาน",
+      "intro": "เลือกรถให้เหมาะกับของที่บรรทุก เส้นทาง และทางเข้าหน้างาน ช่วยประเมินปริมาณและจำนวนเที่ยว พร้อมตกลงจุดขึ้นและลงของ ก่อนนำรถออก เราจะแจ้งราคาและสิ่งที่รวมอยู่ในงาน",
       "tasks": {
-        "title": "รถบรรทุกใช้ทำงานอะไรได้บ้าง",
+        "title": "เราขนส่งอะไรบ้าง",
         "t1": {
           "title": "ขนดินออก",
-          "description": "ขนดิน ดินเหนียว หิน และวัสดุส่วนเกินหลังงานขุด ปรับพื้นที่ หรือเคลียร์ที่ดิน"
+          "description": "ขนดินส่วนเกิน ดินเหนียว และหิน หลังงานขุดบ่อ ขุดร่อง หรือปรับระดับพื้นที่"
         },
         "t2": {
           "title": "ขนเศษวัสดุก่อสร้างออก",
-          "description": "ขนคอนกรีต รากไม้ เศษรื้อถอน ขยะก่อสร้าง และเศษวัสดุผสมออกจากพื้นที่"
+          "description": "ขนคอนกรีต เศษรื้อถอน รากไม้ และเศษวัสดุอื่นจากหน้างาน โดยตรวจสอบประเภทของและวิธีขึ้นของล่วงหน้า"
         },
         "t3": {
           "title": "ส่งทรายและหิน",
-          "description": "ส่งวัสดุเทกองสำหรับงานก่อสร้าง ถนน ถมพื้นที่ ระบบระบายน้ำ และเตรียมหน้างาน"
+          "description": "ส่งวัสดุเทกองสำหรับก่อสร้าง ถนน และระบบระบายน้ำ ตกลงประเภทวัสดุ ปริมาณ และจุดลงของก่อนส่ง"
         },
         "t4": {
           "title": "ส่งดินถม",
-          "description": "ส่งดินและวัสดุสำหรับยกระดับพื้นที่ ถมหลุม และเตรียมพื้นที่ทำงาน"
+          "description": "ส่งดินสำหรับถมที่ ยกระดับพื้นที่ และถมหลุม สั่งได้ตั้งแต่หนึ่งคันรถไปจนถึงหลายเที่ยว"
         },
         "t5": {
-          "title": "ทำงานร่วมกับรถขุด",
-          "description": "รถดั๊มพ์ทำงานคู่กับรถขุด รถขุดตักวัสดุ และรถดั๊มพ์ขนออกหรือส่งเข้า"
+          "title": "ขนส่งในงานก่อสร้าง",
+          "description": "จัดเที่ยวรถให้สอดคล้องกับตารางงานและการตักของรถขุด ทั้งขนดินที่ขุดออกและส่งวัสดุเข้า"
         },
         "t6": {
           "title": "ขนย้ายเครื่องจักร",
-          "description": "ขนย้ายรถขุด เครื่องจักร อุปกรณ์ และของหนักระหว่างไซต์งานก่อสร้าง"
+          "description": "ขนย้ายรถขุด อุปกรณ์ และของหนักระหว่างหน้างาน เลือกรถตามน้ำหนัก ขนาด และวิธีขึ้นของ"
         }
       },
       "equipment": {
-        "title": "รถของเรา",
-        "note": "ไม่แน่ใจว่าควรใช้รถแบบไหน? ส่งโลเคชัน รูปทางเข้า และรายละเอียดงานมา เราช่วยแนะนำได้",
+        "title": "รถบรรทุกและอัตราค่าบริการ",
+        "note": "เปรียบเทียบความจุ น้ำหนักบรรทุก และราคา ราคาสำหรับงานของคุณจะคำนวณตามของที่ขน เส้นทาง และเงื่อนไขขึ้นลงของ",
         "prices": {
           "thb": "{price} บาท",
           "trip": "ต่อเที่ยว",
@@ -501,64 +501,64 @@ useServiceSeo({
         }
       },
       "packages": {
-        "title": "ต้องการรถขุดพร้อมรถดั๊มพ์ไหม?",
-        "text": "งานขนดิน หิน หรือเศษวัสดุมักต้องใช้รถขุดช่วยตัก เราสามารถจัดรถขุดและรถดั๊มพ์ให้ทำงานเป็นทีมเดียวกัน เพื่อให้งานเร็วขึ้นและประสานงานง่ายขึ้น"
+        "title": "ต้องการเครื่องจักรช่วยตักขึ้นรถไหม?",
+        "text": "สำหรับดิน หิน และเศษวัสดุหนัก เราจัดรถขุดพร้อมคนขับให้ได้ โดยประสานงานกับเวลาที่รถดั๊มเข้ารับ และรวมงานตักไว้ในรายการประเมิน คุณจึงไม่ต้องจัดคิวให้สองทีมเอง"
       },
       "related": {
-        "title": "บริการที่อาจต้องใช้เพิ่ม",
+        "title": "บริการอื่นสำหรับหน้างานของคุณ",
         "excavator": {
           "title": "รถขุดพร้อมคนขับ",
-          "description": "สำหรับงานขุด ตักดิน ทุบคอนกรีต หรือเตรียมวัสดุก่อนขนออก"
+          "description": "สำหรับขุด รื้อถอน และตักวัสดุก่อนขนออก ดูรุ่นรถ อุปกรณ์ และเงื่อนไขการเช่า"
         },
         "earthworks": {
-          "title": "งานดินแบบครบวงจร",
-          "description": "สำหรับงานเตรียมพื้นที่แบบครบชุด เช่น เคลียร์พื้นที่ ระบายน้ำ ถมดิน ปรับระดับ และขนดินออก"
+          "title": "งานดิน",
+          "description": "สำหรับงานในพื้นที่นอกเหนือจากขนส่ง เช่น ขุดดิน ถมดิน ปรับระดับ หรือทำระบบระบายน้ำ"
         }
       },
       "included": {
-        "title": "ทำไมลูกค้าเลือกเรา",
+        "title": "ขนส่งสะดวก ลดภาระจัดการ",
         "driver": {
-          "title": "คนขับท้องถิ่น",
-          "description": "รู้จักถนน ทางชัน ทางแคบ ทางเข้าไซต์ และข้อจำกัดจริงของเกาะสมุย"
+          "title": "รู้จักเส้นทางบนสมุย",
+          "description": "คนขับของเรารู้จักพื้นที่ ก่อนรับงานจะตรวจสอบทางเข้า ความชัน และพื้นที่กลับรถและลงของ"
         },
         "routing": {
-          "title": "ช่วยประเมินปริมาณงาน",
-          "description": "แนะนำประเภทรถและประเมินจำนวนเที่ยวที่เหมาะกับงานของคุณ"
+          "title": "ช่วยคำนวณจำนวนเที่ยว",
+          "description": "ประเมินจำนวนเที่ยวจากปริมาตร น้ำหนัก และประเภทของ พร้อมเลือกรถให้เหมาะกับเส้นทาง"
         },
         "flexible": {
-          "title": "คิดราคาได้หลายแบบ",
-          "description": "คิดราคาต่อเที่ยว ต่อวัน หรือเหมางาน ขึ้นอยู่กับงาน ระยะทาง และวัสดุ"
+          "title": "ตกลงราคาล่วงหน้า",
+          "description": "เลือกคิดต่อเที่ยว รายวัน หรือเหมาทั้งงานตามความเหมาะสม พร้อมอธิบายว่าราคารวมอะไรบ้าง"
         }
       },
       "faq": {
         "title": "คำถามที่พบบ่อย",
         "q1": {
-          "question": "คิดราคายังไง?",
-          "answer": "ส่วนใหญ่คิดเป็นต่อเที่ยว งานปริมาณมากสามารถคิดเป็นรายวันหรือเหมาทั้งงานได้"
+          "question": "ค่าขนส่งขึ้นอยู่กับอะไรบ้าง?",
+          "answer": "ประเภทและปริมาณของ ระยะทาง รถที่ใช้ และเงื่อนไขขึ้นลงของ ส่วนใหญ่คิดต่อเที่ยว งานต่อเนื่องอาจคิดรายวันหรือเหมาทั้งหมด โดยแจ้งล่วงหน้าว่ารวมค่าตัก วัสดุ และค่ารับทิ้งเศษวัสดุหรือไม่"
         },
         "q2": {
           "question": "ต้องส่งอะไรเพื่อขอราคา?",
-          "answer": "ส่งโลเคชัน รูปทางเข้า ประเภทวัสดุ ปริมาณโดยประมาณ และจุดรับหรือจุดส่ง"
+          "answer": "โลเคชันรับและส่งหากทราบ รูปของและทางเข้า ปริมาตรหรือน้ำหนักโดยประมาณ และวันที่ต้องการ หากไม่ทราบปริมาณหรือจุดนำวัสดุไปทิ้ง แจ้งเราได้ เราจะช่วยพิจารณารูปแบบการขนส่ง"
         },
         "q3": {
-          "question": "สั่งรถดั๊มพ์พร้อมรถขุดได้ไหม?",
-          "answer": "ได้ครับ หลายงานเหมาะกับการใช้รถขุดตัก และรถดั๊มพ์ขนดินหรือเศษวัสดุออก"
+          "question": "จองรถดั๊มพร้อมบริการตักขึ้นรถได้ไหม?",
+          "answer": "ได้ เราจัดรถขุดพร้อมคนขับสำหรับตักดิน หิน หรือเศษวัสดุก่อสร้างได้ สามารถตกลงงานตักและขนส่งในคำสั่งงานเดียว โดยระบุค่าใช้จ่ายไว้ในรายการประเมิน"
         },
         "q4": {
           "question": "ส่งทราย หิน และดินถมได้ไหม?",
-          "answer": "ได้ครับ เราสามารถส่งทราย หิน ดินถม และวัสดุเทกองอื่น ๆ ไปยังหน้างาน"
+          "answer": "ได้ เราจะยืนยันประเภทวัสดุ ปริมาณ และจุดลงของ พร้อมตกลงค่าวัสดุและค่าขนส่งก่อนสั่ง หากต้องเกลี่ยวัสดุหลังลงของ จะคุยเรื่องงานนี้แยกต่างหาก"
         },
         "q5": {
-          "question": "ทำงานบนทางแคบหรือทางเข้ายากได้ไหม?",
-          "answer": "ได้ครับ เราจะดูทางเข้าก่อน แล้วเลือกขนาดรถให้เหมาะกับสภาพหน้างานจริง"
+          "question": "รถเข้าได้ไหมถ้าถนนแคบหรือชัน?",
+          "answer": "ขึ้นอยู่กับความกว้าง ความชัน ผิวถนน และพื้นที่เลี้ยว ส่งรูปหรือวิดีโอทางเข้าให้เราประเมินและเลือกรถที่เหมาะสม โดยจะดูพื้นที่ลงของด้วย"
         },
         "q6": {
-          "question": "สั่งงานด่วนได้ไหม?",
-          "answer": "ได้ถ้ามีรถว่าง แนะนำให้ติดต่อก่อนเพื่อจองเวลา"
+          "question": "จองรถให้มาวันนี้ได้ไหม?",
+          "answer": "ได้หากมีรถที่เหมาะสมว่างและมีเวลาพอสำหรับเที่ยวงาน ส่งโลเคชันและรายละเอียดมาให้เราตรวจสอบ หากต้องการหลายเที่ยวหรือใช้งานทั้งวัน ควรจองล่วงหน้า"
         },
         "q7": {
-          "question": "ขนย้ายรถขุดและเครื่องจักรได้ไหม?",
-          "answer": "ได้ครับ เรามีรถสำหรับขนย้ายเครื่องจักร และใช้เครนช่วยเมื่อต้องยกของหนัก"
+          "question": "จองขนย้ายรถขุดหรืออุปกรณ์อย่างไร?",
+          "answer": "ส่งรุ่น น้ำหนัก ขนาด รูปถ่าย และจุดรับส่ง พร้อมแจ้งว่าเครื่องจักรขับขึ้นรถบรรทุกได้เองหรือไม่ เราจะเลือกรถและตกลงการใช้เครนช่วยขึ้นของหากจำเป็น"
         }
       },
       "photos": {

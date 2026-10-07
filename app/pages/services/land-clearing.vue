@@ -163,7 +163,7 @@ useServiceSeo({
   "ru": {
     "landClearing": {
       "schema": {
-        "name": "Расчистка участка на Самуи",
+        "name": "Расчистка участка на Самуи",
         "serviceTypes": {
           "landClearing": "Расчистка участка",
           "structureDemolition": "Демонтаж строений",
@@ -174,130 +174,130 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Расчистка участка на Самуи - удаление деревьев",
-        "description": "Расчистка участка на Самуи под строительство дома, виллы или дороги: удаление деревьев, корней, кустов, зарослей, старых конструкций и вывоз мусора.",
-        "keywords": "расчистка участка самуи, удаление деревьев самуи, удаление корней самуи, расчистка земли самуи, подготовка участка самуи, вывоз мусора самуи, экскаватор самуи"
+        "title": "Расчистка участка на Самуи — деревья, пни и заросли",
+        "description": "Расчистка участков на Самуи: удаление деревьев, корчевание пней, уборка зарослей и мусора. Согласуем границы работ, необходимость вывоза и стоимость до начала.",
+        "keywords": "расчистка участка самуи, расчистка зарослей самуи, удаление деревьев самуи, корчевание пней самуи, удаление корней самуи"
       },
       "hero": {
-        "title": "Расчистка участка на Самуи",
-        "description": "Удаляем деревья, корни, заросли, мусор и старые конструкции перед строительством."
+        "title": "Расчистка участка на Самуи",
+        "description": "Убираем заросли, деревья, пни и мусор. Освобождаем участок для дальнейших работ и при необходимости организуем вывоз."
       },
-      "intro": "Расчищаем участки под дома, виллы, дороги и строительные проекты на Самуи. Убираем деревья, кусты, корни, пальмы, старые конструкции, строительный мусор и плотную растительность. Работаем экскаваторами и самосвалами, поэтому можем не просто срезать верх, а подготовить землю к следующему этапу: копке, выравниванию, дренажу или строительству.",
+      "intro": "Можно расчистить весь участок, отдельную зону или подъезд. Перед началом определим границы работ, отметим деревья и объекты, которые нужно сохранить, и согласуем, что убрать и вывезти.",
       "tasks": {
-        "title": "Что входит в расчистку участка",
+        "title": "Что можно включить в расчистку",
         "t1": {
-          "title": "Удаление деревьев",
-          "description": "Убираем деревья, пальмы и крупную растительность, которые мешают строительству или подъезду техники."
+          "title": "Удаление деревьев и пальм",
+          "description": "Убираем согласованные деревья, мешающие использованию участка. Способ работы выбираем с учётом их размера и ближайших построек."
         },
         "t2": {
-          "title": "Удаление корней",
-          "description": "Выкапываем крупные корни, чтобы они не мешали фундаменту, отсыпке и дальнейшей планировке."
+          "title": "Корчевание пней и корней",
+          "description": "Выкапываем пни и крупные корни в рабочей зоне. Объём удаления согласуем под дальнейшее использование земли."
         },
         "t3": {
-          "title": "Расчистка зарослей",
-          "description": "Очищаем участок от кустов, травы, джунглей и плотной растительности."
+          "title": "Уборка зарослей",
+          "description": "Очищаем территорию от кустарника, травы, лиан и плотной растительности, чтобы открыть доступ к участку."
         },
         "t4": {
-          "title": "Демонтаж строений",
-          "description": "Разбираем старые заборы, навесы, лёгкие конструкции, металлические элементы и остатки построек."
+          "title": "Разбор старых конструкций",
+          "description": "Убираем старые заборы, навесы, лёгкие конструкции и остатки построек. Возможность демонтажа оцениваем заранее."
         },
         "t5": {
-          "title": "Сбор и вывоз мусора",
-          "description": "Собираем ветки, корни, камни, мусор и вывозим материал самосвалами."
+          "title": "Сбор и вывоз остатков",
+          "description": "Собираем ветки, пни, корни и мусор. По согласованию грузим их в самосвалы и вывозим с участка."
         },
         "t6": {
-          "title": "Подготовка к следующему этапу",
-          "description": "Оставляем участок готовым для экскавации, выравнивания, дренажа или строительства."
+          "title": "Расчистка подъезда",
+          "description": "Убираем растительность и мусор вдоль согласованного проезда, чтобы освободить путь к рабочей зоне."
         }
       },
       "included": {
-        "title": "Почему важно расчистить участок правильно",
+        "title": "Расчистка с учётом ваших планов",
         "machine": {
-          "title": "Быстрее, чем вручную",
-          "description": "Техника позволяет быстрее убрать деревья, корни и тяжёлый мусор."
+          "title": "Техника под условия участка",
+          "description": "Подбираем экскаватор по подъезду, плотности зарослей и размеру пней. Учитываем место для работы рядом с постройками."
         },
         "roots": {
-          "title": "Удаляем не только верх",
-          "description": "Корни и органика под землёй могут мешать стройке и вызывать просадку грунта."
+          "title": "Сохраняем нужные деревья",
+          "description": "Заранее отмечаем, что нужно оставить, и согласуем границы расчистки. Учитываем эти зоны при работе техники."
         },
         "removal": {
-          "title": "Сразу организуем вывоз",
-          "description": "После расчистки можем вывезти ветки, корни, мусор, камни и лишний грунт."
+          "title": "Вывоз в одном заказе",
+          "description": "Если остатки нужно убрать с территории, организуем погрузку и самосвалы. Объём и стоимость вывоза обсудим заранее."
         }
       },
       "seoBlock": {
-        "title": "Расчистка земли перед строительством",
-        "p1": "Перед строительством важно не просто срезать деревья и траву, а убрать всё, что будет мешать дальнейшим работам. на Самуи участки часто заросшие, с пальмами, глубокими корнями, старым мусором, камнями и плохим подъездом.",
-        "p2": "Если оставить корни и органику под землёй, позже могут появиться просадки, пустоты и проблемы при отсыпке или строительстве. Поэтому мы оцениваем участок, подъезд, объём растительности и заранее подбираем технику.",
-        "p3": "После расчистки можно переходить к выравниванию участка, дренажу, отсыпке или подготовке под фундамент."
+        "title": "Какой объём расчистки нужен участку",
+        "p1": "Объём зависит от ваших планов. Для доступа к земле может хватить уборки зарослей и мусора. Если на участке предстоят земляные работы, отдельно определяем, где потребуется убрать деревья, пни и крупные корни.",
+        "p2": "Не обязательно расчищать всю территорию. Можно освободить место под будущую постройку, открыть подъезд или убрать отдельную захламлённую зону, сохранив остальную растительность.",
+        "p3": "Результат расчистки — освобождённая от согласованных препятствий территория. Изменение уровней, отсыпку и дренаж планируем как отдельные этапы. Если они нужны, можем включить их в общий план работ."
       },
       "process": {
-        "title": "Как проходит работа",
+        "title": "Как проходит расчистка",
         "p1": {
-          "title": "Оцениваем участок",
-          "description": "Смотрим фото, локацию, подъезд, деревья, корни, мусор и объём работ."
+          "title": "Оцениваем объём",
+          "description": "Изучаем фото, площадь и подъезд. Уточняем, что нужно убрать. Если по фото оценить работу нельзя, договариваемся об осмотре."
         },
         "p2": {
-          "title": "Планируем технику",
-          "description": "Подбираем экскаватор, самосвал и порядок работ под реальные условия участка."
+          "title": "Согласуем границы и цену",
+          "description": "Отмечаем сохраняемые деревья и объекты, выбираем технику. Согласуем состав работ, вывоз, стоимость и сроки."
         },
         "p3": {
-          "title": "Расчищаем землю",
-          "description": "Убираем деревья, корни, заросли, мусор и старые конструкции."
+          "title": "Расчищаем рабочую зону",
+          "description": "Убираем согласованную растительность, пни, мусор и конструкции в пределах намеченных границ."
         },
         "p4": {
-          "title": "Вывозим материал",
-          "description": "При необходимости грузим и вывозим ветки, корни, мусор, камни и лишний грунт."
+          "title": "Собираем остатки",
+          "description": "Складываем материал в согласованном месте или вывозим, если это входит в заказ. Проверяем результат вместе с вами."
         }
       },
       "pricing": {
-        "title": "Быстрый расчёт по расчистке участка",
-        "text": "Цена зависит от площади, количества деревьев, корней, мусора, доступа для техники и необходимости вывоза. Для расчёта отправьте локацию, 3–5 фото участка и короткое описание задачи."
+        "title": "Сколько стоит расчистка участка",
+        "text": "Стоимость зависит от площади, плотности зарослей, количества и размера деревьев и пней, мусора и доступа для техники. Отдельно учитываем демонтаж и вывоз, если они нужны. До начала согласуем состав работ и порядок оплаты."
       },
       "cta": {
-        "title": "Отправьте фото участка - оценим объём расчистки",
-        "text": "Пришлите локацию, фото подъезда и участка. Мы подскажем, какая техника нужна и сколько может занять работа."
+        "title": "Покажите участок — оценим расчистку",
+        "text": "Пришлите локацию, примерную площадь и 3–5 фото участка и подъезда. Укажите, что убрать, что сохранить и нужен ли вывоз. Предложим порядок работ и предварительно рассчитаем стоимость."
       },
       "related": {
-        "title": "Что может понадобиться после расчистки",
+        "title": "Другие работы на участке",
         "earthworks": {
           "title": "Земляные работы",
-          "description": "Если нужно полностью подготовить участок: уровни, дренаж, отсыпка, техника и вывоз."
+          "description": "Если после расчистки нужны котлованы, отсыпка, дренаж или несколько этапов работ под управлением одной команды."
         },
         "leveling": {
           "title": "Выравнивание участка",
-          "description": "Следующий этап после расчистки, если нужно сделать ровную площадку под строительство."
+          "description": "Если нужно срезать возвышенности, засыпать низины или сформировать площадку с нужными уровнями и уклонами."
         },
         "truck": {
           "title": "Самосвалы и вывоз",
-          "description": "Для вывоза веток, корней, земли, камней и строительного мусора."
+          "description": "Если участок уже расчищен и осталось вывезти ветки, корни, грунт или строительный мусор."
         }
       },
       "faq": {
         "title": "Частые вопросы",
         "q1": {
-          "question": "Вы удаляете корни или только срезаете деревья?",
-          "answer": "Можем удалить корни экскаватором. Это важно, если участок готовится под строительство, отсыпку или выравнивание."
+          "question": "Вы убираете пни и корни?",
+          "answer": "Да, можем выкорчевать пни и удалить крупные корни экскаватором. Уточним, в каких зонах это нужно, и включим работу в согласованный объём."
         },
         "q2": {
           "question": "Можно расчистить сильно заросший участок?",
-          "answer": "Да. Работаем с заросшими участками, пальмами, кустами, корнями и плотной растительностью."
+          "answer": "Да, работаем с плотными зарослями, кустарником, деревьями и пальмами. Сначала оценим подъезд и место для техники. Если часть деревьев нужно сохранить, отметим их до начала."
         },
         "q3": {
-          "question": "Вы вывозите мусор после расчистки?",
-          "answer": "Да. Можем организовать вывоз веток, корней, камней, строительного мусора и лишнего грунта."
+          "question": "Вывоз мусора входит в стоимость?",
+          "answer": "Вывоз включаем по согласованию. До начала уточним, какие остатки нужно вывезти, что можно оставить на участке и сколько будут стоить погрузка и перевозка."
         },
         "q4": {
-          "question": "Сколько времени занимает расчистка?",
-          "answer": "Зависит от площади, доступа, количества деревьев и объёма вывоза. Небольшой участок можно расчистить за день, крупный - за несколько дней."
+          "question": "Сколько времени займёт расчистка?",
+          "answer": "Срок зависит от растительности, пней, мусора, подъезда и количества рейсов на вывоз. Предварительно оценим его по фото и описанию; при необходимости уточним после осмотра."
         },
         "q5": {
-          "question": "Что нужно для расчёта?",
-          "answer": "Локация, 3–5 фото участка, фото подъезда и короткое описание того, что нужно убрать."
+          "question": "Что нужно для расчёта стоимости?",
+          "answer": "Точка на карте, примерная площадь, фото участка и подъезда, описание того, что нужно убрать. Укажите, нужен ли вывоз и какие деревья или объекты хотите сохранить. Если есть план границ, приложите его."
         },
         "q6": {
-          "question": "Можно после расчистки сразу выровнять участок?",
-          "answer": "Да. После расчистки можно перейти к выравниванию, отсыпке, дренажу или другим земляным работам."
+          "question": "Можно сразу заказать выравнивание после расчистки?",
+          "answer": "Да. Расчистку и выравнивание можно объединить в одном заказе, согласовав объём и стоимость каждого этапа. Отсыпку и дренаж также обсудим отдельно, если они нужны."
         }
       },
       "photos": {
@@ -332,7 +332,7 @@ useServiceSeo({
   "en": {
     "landClearing": {
       "schema": {
-        "name": "Land clearing on Koh Samui",
+        "name": "Land Clearing on Koh Samui",
         "serviceTypes": {
           "landClearing": "Land clearing",
           "structureDemolition": "Structure demolition",
@@ -343,130 +343,130 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Land Clearing on Koh Samui - Tree & Root Removal",
-        "description": "Land clearing on Koh Samui for houses, villas and construction: tree removal, root removal, vegetation clearing, small demolition and debris removal.",
-        "keywords": "land clearing koh samui, tree removal koh samui, root removal samui, vegetation clearing samui, land clearing service samui, site clearing koh samui, excavator samui"
+        "title": "Land Clearing on Koh Samui — Trees, Stumps & Vegetation",
+        "description": "Land clearing on Koh Samui: tree and stump removal, vegetation clearing and debris cleanup. Scope, hauling needs and costs agreed before work starts.",
+        "keywords": "land clearing koh samui, vegetation clearing samui, tree removal samui, stump removal samui, root removal samui"
       },
       "hero": {
-        "title": "Land clearing on Koh Samui",
-        "description": "Tree removal, root clearing, vegetation clearing and site cleanup before construction."
+        "title": "Land Clearing on Koh Samui",
+        "description": "We remove vegetation, trees, stumps and debris to clear space for further work. Hauling can be arranged as part of the job."
       },
-      "intro": "We clear land for houses, villas, roads and construction projects on Koh Samui. We remove trees, palms, roots, bushes, dense vegetation, old structures and debris. With excavators and dump trucks, we can prepare the site properly for the next stage: excavation, leveling, drainage or construction.",
+      "intro": "Clear the whole plot, a specific area or an access route. Before starting, we define the work boundaries, mark trees and features to keep, and agree on what to remove and haul away.",
       "tasks": {
-        "title": "What land clearing includes",
+        "title": "What You Can Include in Land Clearing",
         "t1": {
-          "title": "Tree removal",
-          "description": "Removing trees, palms and large vegetation that block construction or machine access."
+          "title": "Tree & Palm Removal",
+          "description": "Removing agreed trees that obstruct the planned use of your land. The method depends on their size and nearby structures."
         },
         "t2": {
-          "title": "Root removal",
-          "description": "Digging out large roots so they do not affect foundations, backfilling or leveling."
+          "title": "Stump & Root Removal",
+          "description": "Digging out stumps and large roots in the work area. We agree on the scope based on how the land will be used."
         },
         "t3": {
-          "title": "Vegetation clearing",
-          "description": "Clearing bushes, grass, jungle growth and dense vegetation from the site."
+          "title": "Vegetation Clearing",
+          "description": "Clearing bushes, grass, vines and dense growth to open up the land."
         },
         "t4": {
-          "title": "Structure demolition",
-          "description": "Removing old fences, sheds, light structures, metal elements and leftover building parts."
+          "title": "Small Structure Removal",
+          "description": "Removing old fences, sheds, light structures and building remains. We assess demolition feasibility before starting."
         },
         "t5": {
-          "title": "Debris collection and removal",
-          "description": "Collecting branches, roots, stones and waste and removing them with dump trucks."
+          "title": "Debris Collection & Hauling",
+          "description": "Collecting branches, stumps, roots and debris, with loading and dump truck removal arranged as needed."
         },
         "t6": {
-          "title": "Ready for the next stage",
-          "description": "Leaving the site ready for excavation, leveling, drainage or construction."
+          "title": "Access Route Clearing",
+          "description": "Removing vegetation and debris along an agreed route to open access to the work area."
         }
       },
       "included": {
-        "title": "Why proper clearing matters",
+        "title": "Clearing Around Your Plans",
         "machine": {
-          "title": "Faster than manual work",
-          "description": "Machines remove trees, roots and heavy debris much faster."
+          "title": "Equipment for Your Site",
+          "description": "We select an excavator for the access, vegetation and stump sizes, allowing for working space near structures."
         },
         "roots": {
-          "title": "Not just surface cutting",
-          "description": "Roots and organic material underground can create settling and construction problems."
+          "title": "Keep the Trees You Want",
+          "description": "We mark what should stay and agree on clearing boundaries before starting, accounting for these areas during machine work."
         },
         "removal": {
-          "title": "Debris removal included if needed",
-          "description": "We can remove branches, roots, stones, debris and excess soil after clearing."
+          "title": "Hauling in the Same Booking",
+          "description": "If debris needs to leave the site, we arrange loading and dump trucks. Hauling scope and costs are discussed in advance."
         }
       },
       "seoBlock": {
-        "title": "Clearing land before construction",
-        "p1": "Before construction starts, land needs more than simple grass cutting. Many plots on Koh Samui have dense vegetation, palms, deep roots, old debris, rocks and difficult access.",
-        "p2": "If roots and organic material stay underground, they can cause settling, voids and problems during backfilling or construction. We check the site, access and amount of vegetation before choosing the right machinery.",
-        "p3": "After land clearing, the site can move to land leveling, drainage, backfilling or foundation work."
+        "title": "How Much Clearing Does Your Land Need?",
+        "p1": "The scope depends on your plans. Clearing vegetation and debris may be enough to access the land. If earthworks will follow, we also identify where trees, stumps and large roots need to be removed.",
+        "p2": "You don’t have to clear the entire plot. We can open up a future building area, clear an access route or clean a specific area while keeping vegetation elsewhere.",
+        "p3": "Land clearing leaves the agreed area free of the obstacles specified in your order. Changes to ground levels, backfilling and drainage are planned as separate stages. If needed, we can include them in the overall work plan."
       },
       "process": {
-        "title": "How the work is done",
+        "title": "How Land Clearing Works",
         "p1": {
-          "title": "Site check",
-          "description": "We check photos, location, access, trees, roots, debris and work volume."
+          "title": "Assess the Scope",
+          "description": "We review photos, plot size and access, and discuss what needs removing. If photos aren’t enough, we arrange a site visit."
         },
         "p2": {
-          "title": "Machine planning",
-          "description": "We choose the right excavator, dump truck and work sequence for the site."
+          "title": "Agree on Boundaries & Costs",
+          "description": "We mark trees and features to keep, select equipment, and agree on scope, hauling, costs and timing."
         },
         "p3": {
-          "title": "Land clearing",
-          "description": "We remove trees, roots, vegetation, debris and old structures."
+          "title": "Clear the Work Area",
+          "description": "We remove the agreed vegetation, stumps, debris and structures within the marked boundaries."
         },
         "p4": {
-          "title": "Material removal",
-          "description": "If needed, we load and remove branches, roots, waste, rocks and excess soil."
+          "title": "Collect the Remaining Material",
+          "description": "We place material in an agreed area or haul it away if included in the booking, then review the result with you."
         }
       },
       "pricing": {
-        "title": "Fast quote for land clearing",
-        "text": "The price depends on land size, number of trees, roots, debris, machine access and removal needs. Send location, 3–5 photos and a short task description."
+        "title": "How Much Does Land Clearing Cost?",
+        "text": "Costs depend on plot size, vegetation density, the number and size of trees and stumps, debris and machine access. Demolition and hauling are accounted for separately when needed. We agree on the scope and payment basis before starting."
       },
       "cta": {
-        "title": "Send photos of your land - we’ll estimate the clearing work",
-        "text": "Share location, access photos and site photos. We’ll suggest the right machinery and work plan."
+        "title": "Show Us Your Land for a Clearing Estimate",
+        "text": "Send a map pin, approximate plot size and 3–5 photos of the land and access. Tell us what to remove, what to keep and whether hauling is needed. We’ll recommend a work plan and provide an initial estimate."
       },
       "related": {
-        "title": "You may need next",
+        "title": "Other Work for Your Land",
         "earthworks": {
           "title": "Earthworks",
-          "description": "For full site preparation: levels, drainage, backfilling, machinery and removal."
+          "description": "For excavation, backfilling, drainage or several stages of work coordinated by one team after clearing."
         },
         "leveling": {
-          "title": "Land leveling",
-          "description": "The next stage after clearing if you need a flat area for construction."
+          "title": "Land Leveling & Grading",
+          "description": "For cutting high spots, filling low areas or shaping a platform with the required levels and slopes."
         },
         "truck": {
-          "title": "Dump trucks and hauling",
-          "description": "For removing branches, roots, soil, rocks and construction waste."
+          "title": "Dump Trucks & Hauling",
+          "description": "For land that is already cleared, with branches, roots, soil or construction debris still to be removed."
         }
       },
       "faq": {
-        "title": "Frequently asked questions",
+        "title": "Frequently Asked Questions",
         "q1": {
-          "question": "Do you remove roots or only cut trees?",
-          "answer": "We can remove roots with an excavator. This is important when the land is being prepared for construction, backfilling or leveling."
+          "question": "Do you remove stumps and roots?",
+          "answer": "Yes, we can dig out stumps and large roots with an excavator. We confirm where this is needed and include it in the agreed scope."
         },
         "q2": {
           "question": "Can you clear heavily overgrown land?",
-          "answer": "Yes. We work with overgrown plots, palms, bushes, roots and dense vegetation."
+          "answer": "Yes, we work with dense growth, bushes, trees and palms. We first assess access and space for machinery. Any trees you want to keep are marked before work begins."
         },
         "q3": {
-          "question": "Do you remove debris after clearing?",
-          "answer": "Yes. We can remove branches, roots, rocks, construction waste and excess soil."
+          "question": "Is debris removal included in the price?",
+          "answer": "Hauling is included by agreement. Before starting, we confirm which materials must leave the site, what can stay, and the loading and transport costs."
         },
         "q4": {
-          "question": "How long does land clearing take?",
-          "answer": "It depends on land size, access, number of trees and removal volume. Small plots can take one day, larger plots may take several days."
+          "question": "How long will clearing take?",
+          "answer": "Timing depends on vegetation, stumps, debris, access and hauling trips. We give an initial estimate from photos and a description, refining it after a site visit if needed."
         },
         "q5": {
           "question": "What do you need for a quote?",
-          "answer": "Location, 3–5 photos of the land, access photos and a short description of what needs to be removed."
+          "answer": "A map pin, approximate plot size, photos of the land and access, and a description of what to remove. Mention whether hauling is needed and which trees or features should stay. Include a boundary plan if you have one."
         },
         "q6": {
-          "question": "Can you level the land after clearing?",
-          "answer": "Yes. After clearing, we can continue with leveling, backfilling, drainage or other earthworks."
+          "question": "Can I book land leveling after clearing?",
+          "answer": "Yes. Clearing and leveling can be booked together, with the scope and price of each stage agreed in advance. We can also discuss backfilling and drainage separately if needed."
         }
       },
       "photos": {
@@ -512,130 +512,130 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "เคลียร์ที่ดิน เกาะสมุย - ตัดต้นไม้ ขุดรากไม้",
-        "description": "บริการเคลียร์ที่ดินบนเกาะสมุย ตัดต้นไม้ ขุดรากไม้ เคลียร์พืชรก รื้อสิ่งปลูกสร้างเล็ก และขนเศษวัสดุออก พร้อมรถขุดและรถดั๊มพ์",
-        "keywords": "เคลียร์ที่ดิน สมุย, ตัดต้นไม้ สมุย, ขุดรากไม้ สมุย, เคลียร์พื้นที่ สมุย, รถขุด สมุย, ขนเศษวัสดุ สมุย"
+        "title": "เคลียร์ที่ดินบนเกาะสมุย — ต้นไม้ ตอไม้ และพื้นที่รก",
+        "description": "เคลียร์ที่ดินบนเกาะสมุย ตัดต้นไม้ ขุดตอไม้ กำจัดวัชพืชและเก็บเศษวัสดุ ตกลงขอบเขตงาน การขนออก และค่าใช้จ่ายก่อนเริ่ม",
+        "keywords": "เคลียร์ที่ดิน สมุย, เคลียร์พื้นที่รก สมุย, ตัดต้นไม้ สมุย, ขุดตอไม้ สมุย, ขุดรากไม้ สมุย"
       },
       "hero": {
         "title": "เคลียร์ที่ดินบนเกาะสมุย",
-        "description": "ตัดต้นไม้ ขุดรากไม้ เคลียร์พืชรก และเตรียมพื้นที่ก่อนก่อสร้าง"
+        "description": "กำจัดวัชพืช ต้นไม้ ตอไม้ และเศษวัสดุ เปิดพื้นที่สำหรับงานขั้นต่อไป พร้อมจัดขนออกหากต้องการ"
       },
-      "intro": "เรารับเคลียร์ที่ดินสำหรับสร้างบ้าน วิลล่า ถนน และหน้างานก่อสร้างบนเกาะสมุย ตัดต้นไม้ ขุดรากไม้ เคลียร์พืชรก ต้นปาล์ม สิ่งปลูกสร้างเก่า และเศษวัสดุ ใช้รถขุดและรถดั๊มพ์ให้เหมาะกับหน้างาน เพื่อเตรียมพื้นที่ให้พร้อมสำหรับขั้นตอนต่อไป เช่น ขุดดิน ปรับระดับ ถมดิน หรือก่อสร้าง",
+      "intro": "เลือกเคลียร์ทั้งแปลง เฉพาะบางส่วน หรือทางเข้าได้ ก่อนเริ่มเราจะกำหนดขอบเขต ทำเครื่องหมายต้นไม้และสิ่งที่ต้องการเก็บไว้ พร้อมตกลงว่าจะเอาอะไรออกและต้องขนออกจากพื้นที่หรือไม่",
       "tasks": {
-        "title": "งานเคลียร์พื้นที่รวมอะไรบ้าง",
+        "title": "เลือกงานที่ต้องการรวมในการเคลียร์พื้นที่",
         "t1": {
-          "title": "ตัดต้นไม้",
-          "description": "ตัดต้นไม้ ต้นปาล์ม และพืชใหญ่ที่ขวางพื้นที่ก่อสร้างหรือทางเข้าเครื่องจักร"
+          "title": "นำต้นไม้และต้นปาล์มออก",
+          "description": "นำต้นไม้ที่ตกลงไว้ออกเพื่อให้ใช้พื้นที่ตามแผน เลือกวิธีทำงานตามขนาดต้นไม้และสิ่งปลูกสร้างใกล้เคียง"
         },
         "t2": {
-          "title": "ขุดรากไม้",
-          "description": "ขุดรากไม้ขนาดใหญ่ที่อาจมีปัญหากับฐานราก การถมดิน หรือการปรับระดับ"
+          "title": "ขุดตอไม้และรากไม้",
+          "description": "ขุดตอไม้และรากขนาดใหญ่ในบริเวณทำงาน โดยตกลงขอบเขตตามการใช้งานที่ดินในขั้นต่อไป"
         },
         "t3": {
-          "title": "เคลียร์พืชรก",
-          "description": "เคลียร์หญ้า พุ่มไม้ พืชรก และพื้นที่ที่ปล่อยทิ้งไว้นาน"
+          "title": "เคลียร์วัชพืชและพื้นที่รก",
+          "description": "กำจัดพุ่มไม้ หญ้า เถาวัลย์ และพืชหนาแน่น เพื่อเปิดพื้นที่ให้เข้าถึงได้"
         },
         "t4": {
-          "title": "รื้อถอนสิ่งปลูกสร้าง",
-          "description": "รื้อถอนรั้วเก่า เพิง โครงสร้างเบา เหล็ก และเศษวัสดุจากสิ่งปลูกสร้างเดิม"
+          "title": "รื้อโครงสร้างขนาดเล็ก",
+          "description": "นำรั้วเก่า เพิง โครงสร้างเบา และเศษสิ่งปลูกสร้างออก โดยประเมินความเป็นไปได้ก่อนเริ่มรื้อถอน"
         },
         "t5": {
-          "title": "รวบรวมและขนออก",
-          "description": "รวบรวมกิ่งไม้ รากไม้ หิน และเศษวัสดุ แล้วขนออกด้วยรถดั๊มพ์"
+          "title": "รวบรวมและขนเศษวัสดุออก",
+          "description": "รวบรวมกิ่งไม้ ตอไม้ รากไม้ และเศษวัสดุ พร้อมตักขึ้นรถดั๊มและขนออกตามที่ตกลง"
         },
         "t6": {
-          "title": "เตรียมพร้อมขั้นตอนต่อไป",
-          "description": "เตรียมพื้นที่ให้พร้อมสำหรับขุดดิน ปรับระดับ ถมดิน หรือก่อสร้าง"
+          "title": "เคลียร์ทางเข้า",
+          "description": "นำพืชรกและเศษวัสดุออกตามแนวทางเข้าที่กำหนด เพื่อเปิดทางไปยังพื้นที่ทำงาน"
         }
       },
       "included": {
-        "title": "ทำไมต้องเคลียร์พื้นที่ให้ถูกวิธี",
+        "title": "เคลียร์พื้นที่ให้สอดคล้องกับแผนของคุณ",
         "machine": {
-          "title": "เร็วกว่าใช้แรงงานอย่างเดียว",
-          "description": "รถขุดช่วยจัดการต้นไม้ รากไม้ และเศษวัสดุหนักได้เร็วกว่า"
+          "title": "เครื่องจักรเหมาะกับพื้นที่",
+          "description": "เลือกรถขุดตามทางเข้า ความหนาแน่นของพืชและขนาดตอไม้ พร้อมคำนึงถึงพื้นที่ทำงานใกล้สิ่งปลูกสร้าง"
         },
         "roots": {
-          "title": "ไม่ใช่แค่ตัดด้านบน",
-          "description": "รากไม้และอินทรียวัตถุใต้ดินอาจทำให้ดินยุบหรือมีปัญหาตอนก่อสร้าง"
+          "title": "เก็บต้นไม้ที่คุณต้องการไว้",
+          "description": "ทำเครื่องหมายสิ่งที่ต้องเก็บและตกลงแนวเขตเคลียร์ล่วงหน้า โดยคำนึงถึงบริเวณเหล่านี้ระหว่างใช้เครื่องจักร"
         },
         "removal": {
-          "title": "ขนเศษวัสดุออกได้",
-          "description": "หลังเคลียร์พื้นที่ สามารถขนกิ่งไม้ รากไม้ หิน เศษวัสดุ และดินออกได้"
+          "title": "สั่งขนออกในงานเดียวได้",
+          "description": "หากต้องขนเศษวัสดุออก เราจัดงานตักและรถดั๊มให้ โดยคุยเรื่องปริมาณและค่าขนส่งก่อนเริ่ม"
         }
       },
       "seoBlock": {
-        "title": "เคลียร์ที่ดินก่อนเริ่มก่อสร้าง",
-        "p1": "ก่อนสร้างบ้านหรือวิลล่า พื้นที่ต้องพร้อมมากกว่าการตัดหญ้า หลายพื้นที่บนสมุยมีต้นไม้ พืชรก รากลึก เศษวัสดุเก่า หิน และทางเข้าที่จำกัด",
-        "p2": "ถ้าปล่อยรากไม้หรือเศษอินทรีย์ไว้ใต้ดิน อาจทำให้ดินยุบหรือมีปัญหาตอนถมดินและก่อสร้าง เราจึงดูหน้างาน ทางเข้า และปริมาณงานก่อนเลือกเครื่องจักร",
-        "p3": "หลังเคลียร์พื้นที่แล้ว สามารถทำขั้นตอนต่อไป เช่น ปรับระดับ ถมดิน ทำระบายน้ำ หรือเตรียมฐานรากได้"
+        "title": "พื้นที่ของคุณต้องเคลียร์มากแค่ไหน",
+        "p1": "ขอบเขตงานขึ้นอยู่กับแผนการใช้ที่ดิน หากต้องการเพียงเข้าถึงพื้นที่ อาจเคลียร์วัชพืชและเศษวัสดุก็เพียงพอ หากจะทำงานดินต่อ เราจะกำหนดเพิ่มเติมว่าจุดใดต้องนำต้นไม้ ตอไม้ และรากขนาดใหญ่ออก",
+        "p2": "ไม่จำเป็นต้องเคลียร์ทั้งแปลง สามารถเปิดพื้นที่สำหรับสิ่งปลูกสร้างในอนาคต เคลียร์ทางเข้า หรือจัดการเฉพาะบริเวณที่มีเศษวัสดุ โดยเก็บพืชในส่วนอื่นไว้ได้",
+        "p3": "ผลลัพธ์ของการเคลียร์คือพื้นที่ที่นำสิ่งกีดขวางตามข้อตกลงออกแล้ว ส่วนการเปลี่ยนระดับ ถมดิน และระบายน้ำจะวางแผนเป็นขั้นตอนแยก หากต้องการ สามารถรวมไว้ในแผนงานทั้งหมดได้"
       },
       "process": {
-        "title": "ขั้นตอนการทำงาน",
+        "title": "ขั้นตอนการเคลียร์พื้นที่",
         "p1": {
-          "title": "ดูหน้างาน",
-          "description": "ดูรูป โลเคชัน ทางเข้า ต้นไม้ รากไม้ เศษวัสดุ และปริมาณงาน"
+          "title": "ประเมินปริมาณงาน",
+          "description": "ดูรูป ขนาดที่ดิน และทางเข้า พร้อมคุยว่าอะไรต้องนำออก หากรูปไม่พอประเมิน เราจะนัดดูหน้างาน"
         },
         "p2": {
-          "title": "วางแผนเครื่องจักร",
-          "description": "เลือกขนาดรถขุด รถดั๊มพ์ และลำดับงานให้เหมาะกับพื้นที่"
+          "title": "ตกลงขอบเขตและราคา",
+          "description": "ทำเครื่องหมายต้นไม้และสิ่งที่เก็บไว้ เลือกเครื่องจักร แล้วตกลงรายการงาน การขนออก ราคา และระยะเวลา"
         },
         "p3": {
-          "title": "เคลียร์พื้นที่",
-          "description": "ตัดต้นไม้ ขุดรากไม้ เคลียร์พืชรก เศษวัสดุ และโครงสร้างเก่า"
+          "title": "เคลียร์บริเวณทำงาน",
+          "description": "นำพืช ตอไม้ เศษวัสดุ และโครงสร้างที่ตกลงไว้ออก ภายในแนวเขตที่กำหนด"
         },
         "p4": {
-          "title": "ขนวัสดุออก",
-          "description": "หากต้องการ เราสามารถขนกิ่งไม้ รากไม้ หิน เศษวัสดุ และดินออกได้"
+          "title": "รวบรวมวัสดุที่เหลือ",
+          "description": "กองวัสดุไว้ในจุดที่ตกลง หรือขนออกหากรวมอยู่ในงาน แล้วตรวจสอบผลลัพธ์ร่วมกับคุณ"
         }
       },
       "pricing": {
-        "title": "ประเมินราคางานเคลียร์ที่ดิน",
-        "text": "ราคาขึ้นอยู่กับขนาดพื้นที่ จำนวนต้นไม้ รากไม้ เศษวัสดุ ทางเข้าเครื่องจักร และการขนออก ส่งโลเคชัน รูป 3–5 รูป และรายละเอียดงานเพื่อประเมินราคา"
+        "title": "เคลียร์ที่ดินราคาเท่าไร",
+        "text": "ราคาขึ้นอยู่กับขนาดพื้นที่ ความหนาแน่นของพืช จำนวนและขนาดต้นไม้กับตอไม้ เศษวัสดุ และทางเข้าเครื่องจักร หากมีงานรื้อถอนหรือขนออก จะคำนวณเพิ่มเติมตามรายการ โดยตกลงขอบเขตและวิธีคิดค่าบริการก่อนเริ่ม"
       },
       "cta": {
-        "title": "ส่งรูปพื้นที่มาให้เราประเมิน",
-        "text": "ส่งโลเคชัน รูปทางเข้า และรูปพื้นที่ เราจะแนะนำเครื่องจักรและแผนงานที่เหมาะสม"
+        "title": "ส่งรูปพื้นที่ให้เราประเมินงานเคลียร์",
+        "text": "ส่งโลเคชัน ขนาดพื้นที่โดยประมาณ และรูปพื้นที่กับทางเข้า 3–5 รูป แจ้งว่าอะไรต้องนำออก อะไรต้องเก็บ และต้องการขนออกหรือไม่ เราจะแนะนำลำดับงานและประเมินราคาเบื้องต้น"
       },
       "related": {
-        "title": "บริการที่อาจต้องใช้ต่อ",
+        "title": "งานอื่นสำหรับพื้นที่ของคุณ",
         "earthworks": {
           "title": "งานดิน",
-          "description": "สำหรับงานเตรียมพื้นที่แบบครบชุด เช่น ปรับระดับ ถมดิน ระบายน้ำ และขนดินออก"
+          "description": "หากหลังเคลียร์ต้องขุด ถม ระบายน้ำ หรือทำหลายขั้นตอนโดยให้ทีมเดียวประสานงาน"
         },
         "leveling": {
           "title": "ปรับระดับที่ดิน",
-          "description": "ขั้นตอนต่อไปหลังเคลียร์พื้นที่ ถ้าต้องการพื้นที่เรียบสำหรับก่อสร้าง"
+          "description": "เมื่อต้องตัดดินส่วนสูง ถมพื้นที่ต่ำ หรือทำลานให้ได้ระดับและความลาดเอียงตามต้องการ"
         },
         "truck": {
-          "title": "รถดั๊มพ์และขนวัสดุออก",
-          "description": "สำหรับขนกิ่งไม้ รากไม้ ดิน หิน และเศษวัสดุก่อสร้าง"
+          "title": "รถดั๊มและขนส่ง",
+          "description": "สำหรับพื้นที่ที่เคลียร์แล้วและเหลือเพียงขนกิ่งไม้ รากไม้ ดิน หรือเศษวัสดุก่อสร้างออก"
         }
       },
       "faq": {
         "title": "คำถามที่พบบ่อย",
         "q1": {
-          "question": "ขุดรากไม้ด้วยไหม หรือแค่ตัดต้นไม้?",
-          "answer": "ทำได้ทั้งสองแบบ ถ้าพื้นที่เตรียมก่อสร้าง แนะนำให้ขุดรากไม้ใหญ่ด้วย"
+          "question": "ขุดตอไม้และรากไม้ให้ด้วยไหม?",
+          "answer": "ได้ เราสามารถใช้รถขุดนำตอไม้และรากขนาดใหญ่ออก โดยตกลงว่าต้องทำบริเวณไหนและรวมไว้ในขอบเขตงาน"
         },
         "q2": {
-          "question": "เคลียร์พื้นที่รกมากได้ไหม?",
-          "answer": "ได้ครับ เราทำงานกับพื้นที่รก ต้นปาล์ม พุ่มไม้ รากไม้ และพืชหนาแน่น"
+          "question": "เคลียร์ที่ดินที่รกมากได้ไหม?",
+          "answer": "ได้ เรารับงานพืชหนาแน่น พุ่มไม้ ต้นไม้ และต้นปาล์ม โดยประเมินทางเข้าและพื้นที่สำหรับเครื่องจักรก่อน หากต้องเก็บต้นไม้บางต้น จะทำเครื่องหมายก่อนเริ่ม"
         },
         "q3": {
-          "question": "ขนเศษวัสดุออกให้ได้ไหม?",
-          "answer": "ได้ครับ สามารถจัดรถดั๊มพ์ขนกิ่งไม้ รากไม้ หิน ดิน และเศษวัสดุออกได้"
+          "question": "ราคารวมขนเศษวัสดุออกไหม?",
+          "answer": "รวมได้ตามที่ตกลง ก่อนเริ่มจะระบุว่าวัสดุใดต้องขนออก อะไรเก็บไว้ในพื้นที่ได้ และค่าตักกับค่าขนส่งเท่าไร"
         },
         "q4": {
-          "question": "ใช้เวลากี่วัน?",
-          "answer": "ขึ้นอยู่กับขนาดพื้นที่ ทางเข้า จำนวนต้นไม้ และปริมาณวัสดุที่ต้องขนออก"
+          "question": "ใช้เวลาเคลียร์นานเท่าไร?",
+          "answer": "ขึ้นอยู่กับพืช ตอไม้ เศษวัสดุ ทางเข้า และจำนวนเที่ยวขนออก เราประเมินเบื้องต้นจากรูปและรายละเอียด แล้วปรับให้ชัดเจนหลังดูหน้างานหากจำเป็น"
         },
         "q5": {
           "question": "ต้องส่งอะไรเพื่อประเมินราคา?",
-          "answer": "ส่งโลเคชัน รูปพื้นที่ รูปทางเข้า และบอกคร่าว ๆ ว่าต้องการเอาอะไรออก"
+          "answer": "หมุดแผนที่ ขนาดพื้นที่โดยประมาณ รูปที่ดินและทางเข้า พร้อมบอกสิ่งที่ต้องนำออก แจ้งด้วยว่าต้องขนออกหรือไม่ และต้นไม้หรือสิ่งใดต้องเก็บไว้ หากมีแผนผังแนวเขต แนบมาได้เลย"
         },
         "q6": {
-          "question": "หลังเคลียร์แล้วปรับระดับต่อได้ไหม?",
-          "answer": "ได้ครับ หลังเคลียร์พื้นที่แล้วสามารถทำปรับระดับ ถมดิน ระบายน้ำ หรืองานดินอื่นต่อได้"
+          "question": "จองปรับระดับต่อจากเคลียร์พื้นที่ได้ไหม?",
+          "answer": "ได้ สามารถรวมงานเคลียร์และปรับระดับในคำสั่งงานเดียว โดยตกลงขอบเขตและราคาของแต่ละขั้นตอนล่วงหน้า หากต้องถมดินหรือทำระบายน้ำ จะคุยเพิ่มเติมแยกตามงาน"
         }
       },
       "photos": {
@@ -723,7 +723,7 @@ useServiceSeo({
     <UAlert
       :title="t('landClearing.cta.title')"
       :description="t('landClearing.cta.text')"
-      class="mt-6"
+      class="mt-6 mb-10 sm:mb-14"
       variant="soft"
       color="primary"
       icon="i-lucide-camera"
