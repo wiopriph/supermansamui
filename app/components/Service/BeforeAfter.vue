@@ -37,13 +37,10 @@ const localePath = useLocalePath();
 </i18n>
 
 <template>
-  <section class="space-y-6 border-b border-gray-50 py-10">
-    <h2
-      class="text-center text-2xl font-semibold sm:text-3xl"
-      v-text="title"
-    />
+  <section class="space-y-10 py-14">
+    <CoreSectionHeading :title="title" />
 
-    <div class="space-y-6 pt-2">
+    <div class="space-y-6">
       <UCard
         v-for="(item, index) in items"
         :key="index"
@@ -69,7 +66,7 @@ const localePath = useLocalePath();
 
             <p
               v-if="item.description"
-              class="text-sm leading-relaxed text-gray-600 sm:text-base"
+              class="text-sm leading-relaxed text-muted sm:text-base"
               v-text="item.description"
             />
 

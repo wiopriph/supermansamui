@@ -73,21 +73,18 @@ const onTouchend = (e: TouchEvent) => {
 
 <template>
   <section
-    class="py-10 space-y-4 border-b border-default"
+    class="py-14 space-y-8"
     tabindex="-1"
     @keydown="onKeydown"
   >
-    <h2
-      class="text-2xl sm:text-3xl font-semibold text-center"
-      v-text="title"
-    />
+    <CoreSectionHeading :title="title" />
 
     <div
       v-if="hasItems"
       class="space-y-3"
     >
       <div
-        class="relative overflow-hidden rounded-2xl bg-elevated select-none"
+        class="relative overflow-hidden rounded-md bg-elevated select-none"
         :class="hasMultiple ? 'cursor-grab active:cursor-grabbing' : ''"
         @mousedown="onMousedown"
         @mouseup="onMouseup"
@@ -153,7 +150,7 @@ const onTouchend = (e: TouchEvent) => {
           v-for="(item, index) in items"
           :key="index"
           type="button"
-          class="relative flex-none overflow-hidden rounded-lg border-2 transition"
+          class="relative flex-none overflow-hidden rounded-sm border-2 transition"
           :class="index === selectedIndex
             ? 'border-primary ring-2 ring-primary/20'
             : 'border-transparent opacity-60 hover:opacity-90'"

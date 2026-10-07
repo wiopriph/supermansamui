@@ -249,12 +249,14 @@ useHead(() => {
 
 <template>
   <div class="py-10 sm:py-14 space-y-14">
-    <section class="text-center space-y-4 mx-auto">
-      <h1 class="text-3xl sm:text-4xl font-bold text-highlighted">
+    <section class="mx-auto max-w-3xl text-center">
+      <div class="mx-auto mb-4 h-1 w-10 bg-primary" />
+
+      <h1 class="text-4xl font-bold text-highlighted sm:text-5xl">
         {{ t('title') }}
       </h1>
 
-      <p class="text-base sm:text-lg text-muted">
+      <p class="mt-4 text-base leading-7 text-muted sm:text-lg">
         {{ t('description') }}
       </p>
     </section>
@@ -264,7 +266,7 @@ useHead(() => {
       :key="category.key"
       class="space-y-6"
     >
-      <h2 class="text-2xl font-semibold text-highlighted sm:text-3xl">
+      <h2 class="title-bar text-2xl font-semibold text-highlighted sm:text-3xl">
         {{ category.label }}
       </h2>
 

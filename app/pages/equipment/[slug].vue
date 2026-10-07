@@ -350,11 +350,11 @@ useHead(() => {
 
     <!-- Header -->
     <header class="mx-auto">
-      <p class="text-sm font-semibold uppercase tracking-wider text-primary">
+      <p class="eyebrow">
         {{ localeData.type }}
       </p>
 
-      <h1 class="mt-2 text-3xl font-bold leading-tight text-highlighted sm:text-5xl">
+      <h1 class="mt-3 text-4xl font-bold leading-none text-highlighted sm:text-6xl">
         {{ equipment.name }}
       </h1>
 
@@ -364,7 +364,7 @@ useHead(() => {
     </header>
 
     <!-- Cover image -->
-    <figure class="-mx-4 mt-8 overflow-hidden bg-elevated sm:mx-auto sm:mt-12 sm:rounded-2xl">
+    <figure class="-mx-4 mt-8 overflow-hidden bg-elevated sm:mx-auto sm:mt-12 sm:rounded-md">
       <img
         :src="equipment.image"
         :alt="equipment.name"
@@ -381,7 +381,7 @@ useHead(() => {
       <div class="space-y-10">
         <!-- Features -->
         <section>
-          <h2 class="text-xl font-semibold text-highlighted">
+          <h2 class="title-bar text-2xl font-semibold text-highlighted">
             {{ t('features') }}
           </h2>
 
@@ -402,11 +402,11 @@ useHead(() => {
 
         <!-- Specs table -->
         <section>
-          <h2 class="text-xl font-semibold text-highlighted">
+          <h2 class="title-bar text-2xl font-semibold text-highlighted">
             {{ t('specsTitle') }}
           </h2>
 
-          <div class="mt-4 overflow-hidden rounded-xl ring ring-default">
+          <div class="mt-4 overflow-hidden rounded-md ring ring-default">
             <table class="w-full text-sm">
               <tbody class="divide-y divide-default">
                 <tr
@@ -414,7 +414,7 @@ useHead(() => {
                   :key="row.label"
                   class="grid grid-cols-2"
                 >
-                  <td class="px-4 py-3 font-medium text-muted">
+                  <td class="bg-sand-50 px-4 py-3 font-medium text-muted">
                     {{ row.label }}
                   </td>
 
@@ -429,7 +429,7 @@ useHead(() => {
 
         <!-- Linked projects -->
         <section v-if="linkedProjects?.length">
-          <h2 class="text-xl font-semibold text-highlighted">
+          <h2 class="title-bar text-2xl font-semibold text-highlighted">
             {{ t('projectsTitle') }}
           </h2>
 
@@ -438,12 +438,12 @@ useHead(() => {
               v-for="project in linkedProjects"
               :key="project.id"
               :to="localePath({ name: 'projects-slug', params: { slug: project.slug } })"
-              class="group flex items-center gap-4 overflow-hidden rounded-xl bg-elevated/50 p-4 ring ring-default transition hover:bg-elevated"
+              class="group flex items-center gap-4 overflow-hidden rounded-md bg-default p-4 ring ring-default transition hover:bg-sand-50"
             >
               <img
                 :src="project.cover"
                 :alt="project.title"
-                class="size-16 shrink-0 rounded-lg object-cover"
+                class="size-16 shrink-0 rounded-sm object-cover"
                 loading="lazy"
               >
 
@@ -469,8 +469,8 @@ useHead(() => {
       <!-- Sidebar -->
       <aside class="space-y-5 lg:sticky lg:top-24 lg:self-start">
         <!-- Prices -->
-        <div class="rounded-2xl bg-elevated/50 p-5 ring ring-default">
-          <h2 class="text-lg font-semibold text-highlighted">
+        <div class="rounded-md bg-sand-50 p-5 ring ring-default">
+          <h2 class="title-bar text-xl font-semibold text-highlighted">
             {{ t('pricesTitle') }}
           </h2>
 
@@ -484,7 +484,7 @@ useHead(() => {
                 {{ row.label }}
               </dt>
 
-              <dd class="text-lg font-bold text-highlighted">
+              <dd class="font-display text-2xl font-semibold text-highlighted tabular-nums">
                 {{ row.value }}
               </dd>
             </div>

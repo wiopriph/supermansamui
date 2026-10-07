@@ -64,3 +64,18 @@
     padding-inline: calc(var(--spacing) * 8);
   }
 }
+
+/* Inline heading with a short red bar on the left, for sub-sections inside a page */
+@utility title-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  &::before {
+    content: "";
+    flex: none;
+    width: 4px;
+    height: 1.1em;
+    background: var(--ui-primary);
+  }
+}
