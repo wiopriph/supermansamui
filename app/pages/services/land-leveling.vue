@@ -145,6 +145,7 @@ const serviceTypes = computed(() => [
 ]);
 
 useServiceSeo({
+  t,
   path: '/services/land-leveling',
   prefix: 'landLeveling',
   image: {

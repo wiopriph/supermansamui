@@ -145,6 +145,7 @@ const serviceTypes = computed(() => [
 
 
 useServiceSeo({
+  t,
   path: '/services/excavator',
   prefix: 'excavator',
   schemaNameKey: 'excavator.seo.title',

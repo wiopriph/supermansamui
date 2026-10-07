@@ -17,7 +17,7 @@ const { data: projects } = await useAsyncData(
 
 const projectItems = computed(() => projects.value || []);
 
-const { labelFor: getServiceLabel } = useServiceLabels();
+const { labelFor: getServiceLabel } = useServiceLabels(locale);
 
 useHead(() => ({
   title: t('seo.title'),

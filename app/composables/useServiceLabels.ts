@@ -1,9 +1,9 @@
 import { SERVICE_ICON, SERVICE_ROUTE, SERVICE_LABELS, RELATED_SERVICES, type ServiceKey } from '~/constants/services';
 
 
-export function useServiceLabels(labels?: ComputedRef<Record<string, string>>) {
+/** `locale` is the page's own ref from useI18n(); calling useI18n here again would clash with the page's local scope */
+export function useServiceLabels(locale: Ref<string>, labels?: ComputedRef<Record<string, string>>) {
   const localePath = useLocalePath();
-  const { locale } = useI18n();
 
   const defaultLabels = computed(() => SERVICE_LABELS[locale.value as 'en' | 'ru' | 'th'] ?? SERVICE_LABELS.en);
 

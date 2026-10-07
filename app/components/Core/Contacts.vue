@@ -56,12 +56,12 @@ type SocialItem = {
 };
 
 // Profiles for following, shown only in the full section
-const socials = computed<SocialItem[]>(() => [
+const socials = computed<SocialItem[]>(() => ([
   { key: 'messenger', icon: 'i-simple-icons-messenger', label: 'Messenger', link: SOCIALS_MESSENGER },
   { key: 'facebook', icon: 'i-simple-icons-facebook', label: 'Facebook', link: SOCIALS_FACEBOOK },
   { key: 'telegram', icon: 'i-simple-icons-telegram', label: 'Telegram', link: SOCIALS_TELEGRAM },
   { key: 'tiktok', icon: 'i-simple-icons-tiktok', label: 'TikTok', link: SOCIALS_TIKTOK },
-].filter(item => item.link));
+] as SocialItem[]).filter(item => item.link));
 
 const onPhoneClick = () => {
   trackPhoneClick({

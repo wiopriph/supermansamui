@@ -3,7 +3,11 @@ type CatalogItem = {
   description: string;
 };
 
+type Translate = ReturnType<typeof useI18n>['t'];
+
 type ServiceSeoOptions = {
+  /** The page's own `t` from useI18n(); the composable must not call useI18n again in the same component */
+  t: Translate;
   /** Canonical path of the service page, e.g. '/services/excavator' */
   path: string;
   /** i18n prefix of the page, e.g. 'excavator' */
@@ -31,7 +35,7 @@ type ServiceSeoOptions = {
  * Expects the page's <i18n> block to provide `${prefix}.seo.{title,description,keywords}`.
  */
 export function useServiceSeo(options: ServiceSeoOptions) {
-  const { t } = useI18n();
+  const { t } = options;
 
   const jsonLd = computed(() => ({
     '@context': 'https://schema.org',

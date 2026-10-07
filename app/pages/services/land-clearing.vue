@@ -145,6 +145,7 @@ const seoBlock = computed(() => ({
 }));
 
 useServiceSeo({
+  t,
   path: '/services/land-clearing',
   prefix: 'landClearing',
   image: {

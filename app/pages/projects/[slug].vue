@@ -61,7 +61,7 @@ const { data: relatedProjects } = await useAsyncData(
 
 // ─── Service helpers ──────────────────────────────────────────────────────────
 
-const { labelFor, routeFor, relatedFor } = useServiceLabels();
+const { labelFor, routeFor, relatedFor } = useServiceLabels(locale);
 
 const serviceLabel = computed(() => labelFor(project.value?.service ?? ''));
 const servicePath = computed(() => routeFor(project.value?.service ?? ''));

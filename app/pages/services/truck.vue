@@ -132,6 +132,7 @@ const serviceTypes = computed(() => [
 ]);
 
 useServiceSeo({
+  t,
   path: '/services/trucks',
   prefix: 'trucks',
   image: {

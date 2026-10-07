@@ -47,7 +47,7 @@ type Channel = {
   primary?: boolean;
 };
 
-const channels = computed<Channel[]>(() => [
+const channels = computed<Channel[]>(() => ([
   {
     key: 'whatsapp',
     icon: 'i-simple-icons-whatsapp',
@@ -68,7 +68,7 @@ const channels = computed<Channel[]>(() => [
     label: t('messenger'),
     link: SOCIALS_MESSENGER,
   },
-].filter(item => item.link));
+] as Channel[]).filter(item => item.link));
 
 const modalLocation = computed(() => `${props.location}_modal`);
 

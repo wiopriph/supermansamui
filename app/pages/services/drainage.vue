@@ -144,6 +144,7 @@ const serviceTypes = computed(() => [
 ]);
 
 useServiceSeo({
+  t,
   path: '/services/drainage',
   prefix: 'drainage',
   image: {

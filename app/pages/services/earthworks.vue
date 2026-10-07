@@ -179,6 +179,7 @@ const areasBlock = computed(() => ({
 }));
 
 useServiceSeo({
+  t,
   path: '/services/earthworks',
   prefix: 'earthworks',
   catalogNameKey: 'earthworks.services.title',
