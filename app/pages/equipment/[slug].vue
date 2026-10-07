@@ -298,12 +298,20 @@ useHead(() => {
 <template>
   <article
     v-if="equipment"
-    class="pb-12 pt-4 sm:pb-16 sm:pt-10"
+    class="pb-12 sm:pb-16"
   >
+    <ServiceHero
+      :title="equipment.name"
+      :description="localeData.summary"
+      :imageSrc="equipment.image"
+      :page="equipmentPath"
+      :eyebrow="localeData.type"
+    />
+
     <!-- Breadcrumb -->
     <nav
       :aria-label="t('nav.equipment')"
-      class="mx-auto mb-8 sm:mb-12"
+      class="mx-auto mt-6 sm:mt-8"
     >
       <ol class="flex min-w-0 items-center gap-2 text-sm text-muted">
         <li class="hidden sm:block">
@@ -347,33 +355,6 @@ useHead(() => {
         </li>
       </ol>
     </nav>
-
-    <!-- Header -->
-    <header class="mx-auto">
-      <p class="eyebrow">
-        {{ localeData.type }}
-      </p>
-
-      <h1 class="mt-3 text-4xl font-bold leading-none text-highlighted sm:text-6xl">
-        {{ equipment.name }}
-      </h1>
-
-      <p class="mt-5 text-lg leading-8 text-muted sm:text-xl sm:leading-9">
-        {{ localeData.summary }}
-      </p>
-    </header>
-
-    <!-- Cover image -->
-    <figure class="-mx-4 mt-8 overflow-hidden bg-elevated sm:mx-auto sm:mt-12 sm:rounded-md">
-      <img
-        :src="equipment.image"
-        :alt="equipment.name"
-        width="1200"
-        height="630"
-        class="aspect-[4/3] h-full w-full object-cover sm:aspect-[16/9]"
-        fetchpriority="high"
-      >
-    </figure>
 
     <!-- Main content + sidebar -->
     <div class="mx-auto mt-10 grid gap-8 sm:mt-14 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start lg:gap-10">
