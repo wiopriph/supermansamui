@@ -308,6 +308,31 @@ useHead(() => {
 
     <div class="mx-auto mt-10 grid gap-8 sm:mt-14 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start lg:gap-10">
       <div class="min-w-0">
+        <section
+          v-if="project?.beforeAfter?.length"
+          class="mb-10 sm:mb-14"
+        >
+          <h2
+            class="title-bar mb-5 text-2xl font-semibold text-highlighted"
+            v-text="t('beforeAfterTitle')"
+          />
+
+          <!-- A single pair takes the full column width, several pairs go side by side -->
+          <div
+            class="grid gap-5"
+            :class="project.beforeAfter.length > 1 && 'sm:grid-cols-2'"
+          >
+            <BeforeAfterSlider
+              v-for="(pair, i) in project.beforeAfter"
+              :key="i"
+              :beforeImage="pair.beforeImage"
+              :beforeAlt="pair.beforeAlt"
+              :afterImage="pair.afterImage"
+              :afterAlt="pair.afterAlt"
+            />
+          </div>
+        </section>
+
         <ContentRenderer
           :value="project"
           class="prose prose-lg prose-neutral max-w-none dark:prose-invert prose-headings:text-highlighted prose-p:leading-8 prose-p:text-muted sm:prose-p:leading-9"
@@ -447,27 +472,6 @@ useHead(() => {
           </ul>
         </div>
       </aside>
-    </div>
-
-    <div
-      v-if="project?.beforeAfter?.length"
-      class="mx-auto mt-10 sm:mt-14"
-    >
-      <h2
-        class="mb-6 text-center text-2xl font-semibold sm:text-3xl"
-        v-text="t('beforeAfterTitle')"
-      />
-
-      <div class="grid gap-5 sm:grid-cols-2">
-        <BeforeAfterSlider
-          v-for="(pair, i) in project.beforeAfter"
-          :key="i"
-          :beforeImage="pair.beforeImage"
-          :beforeAlt="pair.beforeAlt"
-          :afterImage="pair.afterImage"
-          :afterAlt="pair.afterAlt"
-        />
-      </div>
     </div>
 
     <div class="mx-auto mt-6 sm:mt-10">
