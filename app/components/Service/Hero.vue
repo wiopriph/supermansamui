@@ -13,6 +13,9 @@ const props = defineProps<{
   description: string;
   imageSrc: string;
   page: string;
+  /** Small line above the title, e.g. the project location */
+  eyebrow?: string;
+  eyebrowIcon?: string;
 }>();
 
 
@@ -91,69 +94,59 @@ const onClick = (item: Item) => {
 </script>
 
 <template>
-  <section class="bleed relative">
-    <div
-      class="
-        relative
-        min-h-[420px] sm:min-h-[460px] lg:min-h-[540px]
-        flex items-end
-      "
+  <section class="bleed relative flex min-h-[420px] items-end overflow-hidden sm:min-h-[460px] lg:min-h-[540px]">
+    <img
+      :src="imageSrc"
+      :alt="title"
+      fetchpriority="high"
+      class="absolute inset-0 h-full w-full object-cover object-center md:object-left"
     >
-      <img
-        :src="imageSrc"
-        :alt="title"
-        fetchpriority="high"
-        class="
-          absolute inset-0 w-full h-full
-          object-cover
-          object-center md:object-left
-        "
-      >
 
-      <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/30 to-black/20" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/30 to-black/20" />
 
-      <div
-        class="
-          relative z-10
-          mx-auto max-w-6xl
-          w-full
-          px-4 sm:px-6 lg:px-8
-          py-6 sm:py-10
-          flex
-          justify-center md:justify-start
-        "
-      >
-        <div class="max-w-2xl text-white text-center md:text-left">
-          <div class="mx-auto mb-4 h-1.5 w-16 bg-primary md:mx-0" />
+    <div class="relative z-10 mx-auto flex w-full max-w-6xl justify-center py-8 sm:py-10 md:justify-start">
+      <div class="max-w-2xl text-center text-white md:text-left">
+        <div class="mx-auto mb-4 h-1.5 w-16 bg-primary md:mx-0" />
 
-          <h1 class="mb-4 text-4xl leading-[0.95] font-bold text-balance sm:text-5xl lg:text-6xl">
-            {{ title }}
-          </h1>
+        <p
+          v-if="eyebrow"
+          class="mb-3 inline-flex items-center gap-1.5 text-sm font-semibold tracking-wider text-white/85 uppercase"
+        >
+          <UIcon
+            v-if="eyebrowIcon"
+            :name="eyebrowIcon"
+            class="size-4"
+          />
+          {{ eyebrow }}
+        </p>
 
-          <p class="mb-6 text-base leading-7 text-white/80 sm:text-lg">
-            {{ description }}
-          </p>
+        <h1 class="mb-4 text-3xl leading-[0.95] font-bold text-balance sm:text-5xl lg:text-6xl">
+          {{ title }}
+        </h1>
 
-          <div class="flex flex-nowrap sm:flex-wrap justify-center md:justify-start gap-3">
-            <UButton
-              v-for="(item, index) in items"
-              :key="index"
-              :to="item.link"
-              :icon="item.icon"
-              :target="item.type === 'social' ? '_blank' : undefined"
-              :rel="item.type === 'social' ? 'noopener' : undefined"
-              color="primary"
-              variant="solid"
-              size="lg"
-              @click="onClick(item as Item)"
-            >
-              <span
-                v-if="item.label"
-                class="hidden sm:block"
-                v-text="item.label"
-              />
-            </UButton>
-          </div>
+        <p class="mb-6 text-base leading-7 text-white/80 sm:text-lg">
+          {{ description }}
+        </p>
+
+        <div class="flex flex-nowrap justify-center gap-3 sm:flex-wrap md:justify-start">
+          <UButton
+            v-for="(item, index) in items"
+            :key="index"
+            :to="item.link"
+            :icon="item.icon"
+            :target="item.type === 'social' ? '_blank' : undefined"
+            :rel="item.type === 'social' ? 'noopener' : undefined"
+            color="primary"
+            variant="solid"
+            size="lg"
+            @click="onClick(item as Item)"
+          >
+            <span
+              v-if="item.label"
+              class="hidden sm:block"
+              v-text="item.label"
+            />
+          </UButton>
         </div>
       </div>
     </div>

@@ -204,7 +204,6 @@ useHead(() => {
     "contactsDescription": "Расскажите о вашем участке - подберём технику и порядок работ.",
     "contactButton": "Обсудить проект",
     "contactMessage": "Здравствуйте! Увидел у вас проект «{title}» ({location}). У меня похожая задача, хочу обсудить.",
-    "coverAlt": "Выполненный проект: {title}, {location}",
     "equipmentUsed": "Использованная техника"
   },
   "en": {
@@ -223,7 +222,6 @@ useHead(() => {
     "contactsDescription": "Tell us about your site and we will suggest the right machinery and work plan.",
     "contactButton": "Discuss your project",
     "contactMessage": "Hi! I saw your project \"{title}\" ({location}). I have a similar job and would like to discuss it.",
-    "coverAlt": "Completed project: {title}, {location}",
     "equipmentUsed": "Equipment used"
   },
   "th": {
@@ -242,7 +240,6 @@ useHead(() => {
     "contactsDescription": "บอกเราเกี่ยวกับพื้นที่ของคุณ แล้วเราจะแนะนำเครื่องจักรและลำดับงานที่เหมาะสม",
     "contactButton": "ปรึกษาโครงการ",
     "contactMessage": "สวัสดีครับ/ค่ะ เห็นผลงาน \"{title}\" ({location}) ของคุณ ผม/ดิฉันมีงานคล้ายกัน อยากปรึกษาครับ/ค่ะ",
-    "coverAlt": "โครงการที่เสร็จแล้ว: {title}, {location}",
     "equipmentUsed": "เครื่องจักรที่ใช้"
   }
 }
@@ -251,11 +248,20 @@ useHead(() => {
 <template>
   <article
     v-if="project"
-    class="pb-12 pt-4 sm:pb-16 sm:pt-10"
+    class="pb-12 sm:pb-16"
   >
+    <ServiceHero
+      :title="project.title"
+      :description="project.summary"
+      :imageSrc="project.cover"
+      :page="projectPath"
+      :eyebrow="project.location"
+      eyebrowIcon="i-lucide-map-pin"
+    />
+
     <nav
       :aria-label="t('nav.projects')"
-      class="mx-auto mb-8 sm:mb-12"
+      class="mx-auto mt-6 sm:mt-8"
     >
       <ol class="flex min-w-0 items-center gap-2 text-sm text-muted">
         <li class="hidden sm:block">
@@ -299,39 +305,6 @@ useHead(() => {
         </li>
       </ol>
     </nav>
-
-    <header class="mx-auto text-center">
-      <h1 class="text-3xl font-bold leading-tight text-highlighted sm:text-5xl">
-        {{ project.title }}
-      </h1>
-
-      <p class="mx-auto mt-5 text-lg leading-8 text-muted sm:text-xl sm:leading-9">
-        {{ project.summary }}
-      </p>
-
-      <p class="mt-6 inline-flex items-center gap-2 text-sm text-muted">
-        <UIcon
-          name="i-lucide-map-pin"
-          class="size-4"
-        />
-        {{ project.location }}
-      </p>
-    </header>
-
-    <figure class="-mx-4 mt-8 overflow-hidden bg-elevated sm:mx-auto sm:mt-12 sm:rounded-2xl">
-      <img
-        :src="project.cover"
-        :alt="t('coverAlt', { title: project.title, location: project.location })"
-        width="1200"
-        height="630"
-        class="aspect-[4/3] h-full w-full object-cover sm:aspect-[16/9]"
-        fetchpriority="high"
-      >
-
-      <figcaption class="px-4 py-3 text-center text-xs text-muted sm:text-sm">
-        {{ project.title }} · {{ project.location }}
-      </figcaption>
-    </figure>
 
     <div class="mx-auto mt-10 grid gap-8 sm:mt-14 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start lg:gap-10">
       <div class="min-w-0">
