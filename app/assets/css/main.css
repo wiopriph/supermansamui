@@ -1,2 +1,50 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+
+/* Display face for headings: condensed, bold, construction-signage feel. Latin + Cyrillic; Thai falls back to the system font. */
+@import "@fontsource/oswald/500.css";
+@import "@fontsource/oswald/600.css";
+@import "@fontsource/oswald/700.css";
+
+@theme {
+  --font-display: "Oswald", "Arial Narrow", "Helvetica Neue", sans-serif;
+
+  /* Warm sand: soil and concrete tones for alternating section backgrounds */
+  --color-sand-50: #faf8f3;
+  --color-sand-100: #f3eee4;
+  --color-sand-200: #e6dcc9;
+  --color-sand-300: #d3c3a6;
+}
+
+:root {
+  /* Squarer corners than the Nuxt UI default */
+  --ui-radius: 0.2rem;
+}
+
+@layer base {
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    letter-spacing: 0.01em;
+  }
+
+  h1, h2 {
+    text-transform: uppercase;
+  }
+}
+
+/* Small blue label above a heading */
+@utility eyebrow {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--ui-secondary);
+}
+
+/* Faint drafting grid for dark surfaces */
+@utility bg-blueprint {
+  background-image:
+    linear-gradient(rgb(255 255 255 / 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}

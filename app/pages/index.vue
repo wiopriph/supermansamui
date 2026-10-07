@@ -1,9 +1,23 @@
 <script setup lang="ts">
+import type { Collections } from '@nuxt/content';
 import { PRICING } from '~/constants/pricing';
+import { EQUIPMENT } from '~/data/equipment';
 
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
 const localeRoute = useLocaleRoute();
+
+const { data: projectsCount } = await useAsyncData(
+  () => `home-projects-count-${locale.value}`,
+  () => queryCollection(`projects_${locale.value}` as keyof Collections).count(),
+  { watch: [locale] },
+);
+
+const heroFacts = computed(() => [
+  { value: EQUIPMENT.length, label: t('hero.facts.machines') },
+  { value: projectsCount.value ?? 0, label: t('hero.facts.projects') },
+  { value: servicesItems.value.length, label: t('hero.facts.services') },
+]);
 
 const servicesItems = computed(() => [
   {
@@ -233,7 +247,13 @@ const seoBlock = computed(() => ({
     "hero": {
       "title": "Строительная техника на Самуи - экскаваторы, самосвалы и земляные работы",
       "description": "Расчистка участков, выравнивание, дренаж, вывоз грунта и доставка материалов. Своя техника, местные операторы и понятная цена до начала работ.",
-      "primary": "Позвонить"
+      "primary": "Позвонить",
+      "eyebrow": "Самуи · строительная техника и земляные работы",
+      "facts": {
+        "machines": "машин в парке",
+        "projects": "выполненных проектов",
+        "services": "направлений работ"
+      }
     },
     "seoBlock": {
       "title": "Superman Samui - строительная техника на острове",
@@ -326,7 +346,13 @@ const seoBlock = computed(() => ({
     "hero": {
       "title": "Construction machinery on Koh Samui - excavators, dump trucks and earthworks",
       "description": "Land clearing, leveling, drainage, soil removal and material delivery. Own machines, local operators and clear pricing before the job starts.",
-      "primary": "Call now"
+      "primary": "Call now",
+      "eyebrow": "Koh Samui · construction machinery & earthworks",
+      "facts": {
+        "machines": "machines in the fleet",
+        "projects": "completed projects",
+        "services": "service lines"
+      }
     },
     "seoBlock": {
       "title": "Superman Samui - construction equipment on the island",
@@ -419,7 +445,13 @@ const seoBlock = computed(() => ({
     "hero": {
       "title": "เครื่องจักรก่อสร้างบนเกาะสมุย - รถขุด รถดั๊มพ์ และงานดิน",
       "description": "เคลียร์พื้นที่ ปรับระดับ ทำระบายน้ำ ขนดิน และส่งวัสดุก่อสร้าง มีเครื่องจักรของเราเอง คนขับท้องถิ่น และแจ้งราคาชัดเจนก่อนเริ่มงาน",
-      "primary": "โทรเลย"
+      "primary": "โทรเลย",
+      "eyebrow": "เกาะสมุย · เครื่องจักรก่อสร้างและงานดิน",
+      "facts": {
+        "machines": "เครื่องจักรในฟลีต",
+        "projects": "โครงการที่เสร็จแล้ว",
+        "services": "ประเภทบริการ"
+      }
     },
     "seoBlock": {
       "title": "Superman Samui - เครื่องจักรก่อสร้างบนเกาะสมุย",
@@ -509,9 +541,11 @@ const seoBlock = computed(() => ({
 <template>
   <UPage>
     <HomeHero
+      :eyebrow="t('hero.eyebrow')"
       :title="t('hero.title')"
       :description="t('hero.description')"
       :primaryLabel="t('hero.primary')"
+      :facts="heroFacts"
     />
 
     <HomeServices

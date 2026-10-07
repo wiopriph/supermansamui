@@ -110,7 +110,7 @@ const onClick = (item: Item) => {
         "
       >
 
-      <div class="absolute inset-0 bg-black/30" />
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/45 to-slate-950/15" />
 
       <div
         class="
@@ -120,19 +120,21 @@ const onClick = (item: Item) => {
           px-4 sm:px-6 lg:px-8
           py-6 sm:py-10
           flex
-          justify-center md:justify-end
+          justify-center md:justify-start
         "
       >
-        <div class="max-w-xl text-white text-center md:text-right">
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+        <div class="max-w-2xl text-white text-center md:text-left">
+          <div class="mx-auto mb-4 h-1.5 w-16 bg-primary md:mx-0" />
+
+          <h1 class="mb-4 text-4xl leading-[0.95] font-bold text-balance sm:text-5xl lg:text-6xl">
             {{ title }}
           </h1>
 
-          <p class="text-base sm:text-lg text-white/80 mb-6">
+          <p class="mb-6 text-base leading-7 text-white/80 sm:text-lg">
             {{ description }}
           </p>
 
-          <div class="flex flex-nowrap sm:flex-wrap justify-center md:justify-end gap-3">
+          <div class="flex flex-nowrap sm:flex-wrap justify-center md:justify-start gap-3">
             <UButton
               v-for="(item, index) in items"
               :key="index"

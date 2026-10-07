@@ -133,7 +133,7 @@ const onSocialClick = (social: SocialItem, location: string) => {
 </i18n>
 
 <template>
-  <UHeader>
+  <UHeader :ui="{ root: 'dark bg-slate-950/95 border-slate-800' }">
     <template #left>
       <NuxtLink
         :to="localeRoute({ name: 'index' })"
@@ -161,7 +161,8 @@ const onSocialClick = (social: SocialItem, location: string) => {
         <UButton
           :to="phoneLink"
           size="sm"
-          variant="soft"
+          color="primary"
+          variant="solid"
           class="flex items-center gap-2"
           @click="onPhoneClick('header')"
         >
@@ -183,6 +184,7 @@ const onSocialClick = (social: SocialItem, location: string) => {
           >
             <UButton
               as="span"
+              color="neutral"
               variant="outline"
               size="sm"
               :icon="lang.flag"

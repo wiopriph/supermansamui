@@ -169,7 +169,7 @@ const onSocialClick = (social: SocialItem, location: string) => {
 </i18n>
 
 <template>
-  <footer class="border-t border-default">
+  <footer class="dark border-t border-slate-800 bg-slate-950">
     <UContainer class="py-10 lg:py-12">
       <div class="grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr]">
         <div>
@@ -290,6 +290,7 @@ const onSocialClick = (social: SocialItem, location: string) => {
               >
                 <UButton
                   as="span"
+                  color="neutral"
                   variant="outline"
                   size="xs"
                   :icon="lang.flag"
