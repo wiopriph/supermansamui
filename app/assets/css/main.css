@@ -22,6 +22,11 @@
 }
 
 @layer base {
+  /* Full-bleed sections are measured in vw, which includes the scrollbar */
+  body {
+    overflow-x: clip;
+  }
+
   h1, h2, h3 {
     font-family: var(--font-display);
     letter-spacing: 0.01em;
@@ -49,20 +54,10 @@
   background-size: 32px 32px;
 }
 
-/* Stretch a section to the container edges so it can carry its own background */
+/* Stretch a section to the full viewport width so it can carry its own background */
 @utility bleed {
-  margin-inline: calc(var(--spacing) * -4);
-  padding-inline: calc(var(--spacing) * 4);
-
-  @variant sm {
-    margin-inline: calc(var(--spacing) * -6);
-    padding-inline: calc(var(--spacing) * 6);
-  }
-
-  @variant lg {
-    margin-inline: calc(var(--spacing) * -8);
-    padding-inline: calc(var(--spacing) * 8);
-  }
+  margin-inline: calc(50% - 50vw);
+  padding-inline: calc(50vw - 50%);
 }
 
 /* Inline heading with a short red bar on the left, for sub-sections inside a page */

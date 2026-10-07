@@ -80,19 +80,19 @@ const onClick = (item: typeof links.value[number]) => {
 </script>
 
 <template>
-  <section class="dark relative -mx-4 overflow-hidden bg-slate-950 text-white sm:-mx-6 lg:-mx-8">
+  <section class="dark bleed relative overflow-hidden bg-blue-950 text-white">
     <img
       :src="image"
       alt=""
       fetchpriority="high"
-      class="absolute inset-0 h-full w-full object-cover object-center opacity-40"
+      class="absolute inset-0 h-full w-full object-cover object-center opacity-75"
     >
 
-    <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-slate-950/20" />
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-950/95 via-blue-950/70 to-blue-950/10" />
 
-    <div class="absolute inset-0 bg-blueprint" />
+    <div class="absolute inset-0 bg-blueprint opacity-50" />
 
-    <div class="relative mx-auto w-full max-w-6xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+    <div class="relative mx-auto w-full max-w-6xl py-14 sm:py-20 lg:py-24">
       <p class="eyebrow">
         {{ eyebrow }}
       </p>

@@ -91,7 +91,7 @@ const onClick = (item: Item) => {
 </script>
 
 <template>
-  <section class="relative -mx-4 sm:-mx-6 lg:-mx-8">
+  <section class="bleed relative bg-blue-950">
     <div
       class="
         relative
@@ -110,7 +110,7 @@ const onClick = (item: Item) => {
         "
       >
 
-      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/45 to-slate-950/15" />
+      <div class="absolute inset-0 bg-gradient-to-t from-blue-950/85 via-blue-950/35 to-blue-950/5" />
 
       <div
         class="
