@@ -94,7 +94,7 @@ const onClick = (item: Item) => {
 </script>
 
 <template>
-  <section class="bleed relative flex min-h-[420px] items-end overflow-hidden sm:min-h-[460px] lg:min-h-[540px]">
+  <section class="bleed relative flex min-h-[380px] items-end overflow-hidden sm:min-h-[460px] lg:min-h-[540px]">
     <img
       :src="imageSrc"
       :alt="title"
@@ -102,15 +102,16 @@ const onClick = (item: Item) => {
       class="absolute inset-0 h-full w-full object-cover object-center md:object-left"
     >
 
-    <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/30 to-black/20" />
+    <!-- Heavier at the bottom on phones, where only the title sits on the photo -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/5 md:from-black/55 md:via-black/30 md:to-black/20" />
 
-    <div class="relative z-10 mx-auto flex w-full max-w-6xl justify-center py-8 sm:py-10 md:justify-start">
-      <div class="max-w-2xl text-center text-white md:text-left">
-        <div class="mx-auto mb-4 h-1.5 w-16 bg-primary md:mx-0" />
+    <div class="relative z-10 mx-auto w-full max-w-6xl py-6 sm:py-10">
+      <div class="max-w-2xl text-white">
+        <div class="mb-3 h-1.5 w-16 bg-primary md:mb-4" />
 
         <p
           v-if="eyebrow"
-          class="mb-3 inline-flex items-center gap-1.5 text-sm font-semibold tracking-wider text-white/85 uppercase"
+          class="mb-2 inline-flex items-center gap-1.5 text-sm font-semibold tracking-wider text-white/85 uppercase md:mb-3"
         >
           <UIcon
             v-if="eyebrowIcon"
@@ -124,11 +125,11 @@ const onClick = (item: Item) => {
           {{ title }}
         </h1>
 
-        <p class="mb-6 text-base leading-7 text-white/80 sm:text-lg">
+        <p class="mb-6 hidden text-base leading-7 text-white/80 sm:text-lg md:block">
           {{ description }}
         </p>
 
-        <div class="flex flex-nowrap justify-center gap-3 sm:flex-wrap md:justify-start">
+        <div class="flex flex-wrap gap-3">
           <UButton
             v-for="(item, index) in items"
             :key="index"
@@ -151,4 +152,9 @@ const onClick = (item: Item) => {
       </div>
     </div>
   </section>
+
+  <!-- On phones the description moves below the photo, onto a white background -->
+  <p class="mt-6 text-base leading-7 text-toned md:hidden">
+    {{ description }}
+  </p>
 </template>
