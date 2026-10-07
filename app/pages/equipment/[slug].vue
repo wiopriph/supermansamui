@@ -527,7 +527,7 @@ useHead(() => {
     <!-- Contact CTA -->
     <section
       id="equipment-contact"
-      class="mx-auto mt-10 max-w-3xl scroll-mt-20 border-t border-default py-10 text-center sm:mt-14 sm:py-14"
+      class="mx-auto mt-10 hidden max-w-3xl scroll-mt-20 border-t border-default py-10 text-center sm:mt-14 sm:py-14 lg:block"
     >
       <h2 class="text-2xl font-semibold sm:text-3xl">
         {{ t('contactTitle') }}

@@ -117,7 +117,7 @@ const onClick = (item: Item) => {
 <template>
   <section
     data-contact-block
-    class="py-4 space-y-3"
+    class="hidden py-4 space-y-3 lg:block"
   >
     <UContainer class="text-center space-y-8">
       <div class="flex flex-wrap justify-center gap-3 pt-2">
