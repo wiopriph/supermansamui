@@ -173,7 +173,7 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Расчистка участка на Самуи - Удаление деревьев, корней и мусора",
+        "title": "Расчистка участка на Самуи - удаление деревьев",
         "description": "Расчистка участка на Самуи под строительство дома, виллы или дороги: удаление деревьев, корней, кустов, зарослей, старых конструкций и вывоз мусора.",
         "keywords": "расчистка участка самуи, удаление деревьев самуи, удаление корней самуи, расчистка земли самуи, подготовка участка самуи, вывоз мусора самуи, экскаватор самуи"
       },
@@ -342,7 +342,7 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Land Clearing on Koh Samui - Tree, Root & Debris Removal",
+        "title": "Land Clearing on Koh Samui - Tree & Root Removal",
         "description": "Land clearing on Koh Samui for houses, villas and construction: tree removal, root removal, vegetation clearing, small demolition and debris removal.",
         "keywords": "land clearing koh samui, tree removal koh samui, root removal samui, vegetation clearing samui, land clearing service samui, site clearing koh samui, excavator samui"
       },
@@ -511,7 +511,7 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "เคลียร์ที่ดิน เกาะสมุย {'|'} ตัดต้นไม้ ขุดรากไม้ และขนเศษวัสดุ",
+        "title": "เคลียร์ที่ดิน เกาะสมุย - ตัดต้นไม้ ขุดรากไม้",
         "description": "บริการเคลียร์ที่ดินบนเกาะสมุย ตัดต้นไม้ ขุดรากไม้ เคลียร์พืชรก รื้อสิ่งปลูกสร้างเล็ก และขนเศษวัสดุออก พร้อมรถขุดและรถดั๊มพ์",
         "keywords": "เคลียร์ที่ดิน สมุย, ตัดต้นไม้ สมุย, ขุดรากไม้ สมุย, เคลียร์พื้นที่ สมุย, รถขุด สมุย, ขนเศษวัสดุ สมุย"
       },

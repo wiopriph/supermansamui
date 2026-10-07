@@ -172,7 +172,7 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Выравнивание участка на Самуи - Планировка земли и подготовка площадки",
+        "title": "Выравнивание участка на Самуи - планировка земли",
         "description": "Выравнивание участка на Самуи под дом, виллу, дорогу или стройку: планировка земли, формирование уровней, уклонов, террас и ровных площадок.",
         "keywords": "выравнивание участка самуи, планировка земли самуи, выравнивание земли самуи, grading koh samui, land leveling koh samui, подготовка участка самуи, экскаватор самуи"
       },
@@ -340,7 +340,7 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Land Leveling on Koh Samui - Grading & Site Preparation",
+        "title": "Land Leveling & Grading on Koh Samui",
         "description": "Land leveling on Koh Samui for houses, villas, roads and construction sites: grading, slopes, terraces, flat work areas and site preparation.",
         "keywords": "land leveling koh samui, land grading koh samui, grading samui, site grading koh samui, slope shaping samui, level land samui, excavator samui"
       },
@@ -508,7 +508,7 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "ปรับระดับที่ดิน เกาะสมุย {'|'} ปรับพื้นที่ ทำสโลป และเตรียมก่อสร้าง",
+        "title": "ปรับระดับที่ดิน เกาะสมุย - ปรับพื้นที่ ทำสโลป",
         "description": "บริการปรับระดับที่ดินบนเกาะสมุย สำหรับบ้าน วิลล่า ถนน และไซต์ก่อสร้าง ทำระดับ ทำสโลป ปรับพื้นที่ และเตรียมพื้นที่ให้พร้อมใช้งาน",
         "keywords": "ปรับระดับที่ดิน สมุย, ปรับพื้นที่ สมุย, งานดิน สมุย, ทำสโลป สมุย, เตรียมพื้นที่ก่อสร้าง สมุย, รถขุด สมุย"
       },

@@ -159,7 +159,7 @@ useHead(() => {
 {
   "ru": {
     "seo": {
-      "title": "Строительная техника на Самуи - экскаваторы, самосвалы, тракторы",
+      "title": "Аренда строительной техники на Самуи",
       "description": "Собственный парк техники Superman Samui на Ко Самуи: 5 экскаваторов, 6 грузовиков, трактор. Технические характеристики, стоимость аренды и фотографии каждой единицы.",
       "keywords": "строительная техника Самуи, аренда экскаватора Самуи, самосвал Ко Самуи, трактор аренда Самуи, строительные работы Самуи, Superman Samui техника",
       "imageAlt": "Строительная техника Superman Samui на Ко Самуи",
@@ -188,7 +188,7 @@ useHead(() => {
   },
   "en": {
     "seo": {
-      "title": "Construction Equipment on Koh Samui - Excavators, Dump Trucks & Tractors",
+      "title": "Construction Equipment Hire on Koh Samui",
       "description": "Superman Samui owns and operates 12 machines on Koh Samui: 5 excavators, 6 trucks and a tractor. Full specifications, hire rates and photos for every unit.",
       "keywords": "construction equipment Koh Samui, excavator hire Samui, dump truck rental Samui, tractor Samui, earthworks machinery Samui, Superman Samui equipment",
       "imageAlt": "Superman Samui construction equipment fleet on Koh Samui",
@@ -217,7 +217,7 @@ useHead(() => {
   },
   "th": {
     "seo": {
-      "title": "เครื่องจักรก่อสร้างบนเกาะสมุย - รถขุด รถดั๊มพ์ และแทรกเตอร์",
+      "title": "เครื่องจักรก่อสร้าง เกาะสมุย - รถขุด รถดั๊มพ์ แทรกเตอร์",
       "description": "Superman Samui มีเครื่องจักร 12 คันบนเกาะสมุย: รถขุด 5 คัน รถบรรทุก 6 คัน และแทรกเตอร์ พร้อมสเปค ราคา และรูปภาพ",
       "keywords": "เครื่องจักรก่อสร้างเกาะสมุย, เช่ารถขุดสมุย, รถดั๊มพ์สมุย, แทรกเตอร์สมุย, งานดินสมุย, Superman Samui",
       "imageAlt": "เครื่องจักรก่อสร้าง Superman Samui บนเกาะสมุย",

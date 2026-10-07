@@ -58,6 +58,10 @@ const msg = computed(() => {
   return MESSAGES[seg === 'ru' || seg === 'th' ? seg : 'en'];
 });
 
+useHead(() => ({
+  title: msg.value.title,
+}));
+
 const links = computed(() => [
   { label: msg.value.home, to: prefix.value || '/', icon: 'i-lucide-house' },
   { label: msg.value.services, to: `${prefix.value}/services/earthworks`, icon: 'i-lucide-hard-hat' },

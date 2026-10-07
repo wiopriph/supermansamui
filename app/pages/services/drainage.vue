@@ -171,7 +171,7 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Дренаж участка на Самуи - отвод воды, траншеи и трубы",
+        "title": "Дренаж участка на Самуи - отвод воды и траншеи",
         "description": "Дренаж участка на Самуи: отвод воды, дренажные канавы, траншеи, трубы, уклоны и подготовка влажных участков под строительство.",
         "keywords": "дренаж самуи, дренаж участка самуи, отвод воды самуи, дренажные работы самуи, траншеи самуи, трубы дренаж самуи, земляные работы самуи"
       },
@@ -339,7 +339,7 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Drainage Work on Koh Samui - Water Runoff, Trenches & Pipes",
+        "title": "Drainage Work on Koh Samui - Trenches & Pipes",
         "description": "Drainage work on Koh Samui: water runoff, drainage trenches, pipe installation, slope correction and preparation of wet land for construction.",
         "keywords": "drainage koh samui, drainage work samui, water runoff samui, drainage trench samui, pipe drainage samui, wet land drainage samui, earthworks samui"
       },
@@ -507,7 +507,7 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "ระบบระบายน้ำ เกาะสมุย {'|'} ขุดร่อง วางท่อ และแก้น้ำขัง",
+        "title": "ระบบระบายน้ำ เกาะสมุย - ขุดร่อง วางท่อ แก้น้ำขัง",
         "description": "บริการทำระบบระบายน้ำบนเกาะสมุย แก้น้ำขัง ขุดร่อง วางท่อ ทำสโลป และเตรียมพื้นที่เปียกสำหรับก่อสร้าง",
         "keywords": "ระบบระบายน้ำ สมุย, แก้น้ำขัง สมุย, ขุดร่องน้ำ สมุย, วางท่อระบายน้ำ สมุย, งานดิน สมุย, รถขุด สมุย"
       },

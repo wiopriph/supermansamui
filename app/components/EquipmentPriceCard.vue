@@ -88,7 +88,7 @@ const emit = defineEmits(['click']);
             class="text-sm text-muted"
             v-text="price.label"
           />
-
+          {{ ' ' }}
           <span
             class="text-base font-bold text-highlighted tabular-nums"
             v-text="formatValue(price.value)"

@@ -171,7 +171,7 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Подготовка участка под строительство на Самуи - Дом, вилла, дорога",
+        "title": "Подготовка участка под строительство на Самуи",
         "description": "Подготовка участка под строительство на Самуи: расчистка, выравнивание, дренаж, подъезд, зона под фундамент, вывоз грунта и мусора.",
         "keywords": "подготовка участка под строительство самуи, подготовка земли самуи, site preparation koh samui, подготовка под фундамент самуи, подготовка участка под дом самуи, земляные работы самуи"
       },
@@ -340,7 +340,7 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Site Preparation on Koh Samui - Land Ready for Construction",
+        "title": "Site Preparation on Koh Samui for Construction",
         "description": "Site preparation on Koh Samui for houses, villas, roads and construction sites: clearing, levels, drainage, access, foundation area, soil and debris removal.",
         "keywords": "site preparation koh samui, construction site preparation samui, land preparation koh samui, prepare land for building samui, villa site preparation samui, earthworks samui"
       },
@@ -508,7 +508,7 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "เตรียมพื้นที่ก่อสร้าง เกาะสมุย {'|'} เตรียมที่ดินสำหรับบ้านและวิลล่า",
+        "title": "เตรียมพื้นที่ก่อสร้าง เกาะสมุย - บ้านและวิลล่า",
         "description": "บริการเตรียมพื้นที่ก่อสร้างบนเกาะสมุย สำหรับบ้าน วิลล่า ถนน และไซต์งาน เคลียร์พื้นที่ ปรับระดับ ระบายน้ำ ทางเข้า และขนวัสดุออก",
         "keywords": "เตรียมพื้นที่ก่อสร้าง สมุย, เตรียมที่ดิน สมุย, งานดิน สมุย, เตรียมพื้นที่สร้างบ้าน สมุย, เตรียมพื้นที่วิลล่า สมุย, รถขุด สมุย"
       },

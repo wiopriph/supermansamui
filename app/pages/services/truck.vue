@@ -164,7 +164,7 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Самосвалы и грузовики на Самуи - Вывоз грунта и доставка материалов",
+        "title": "Самосвал на Самуи - вывоз грунта, доставка песка",
         "description": "Самосвалы и грузовики на Самуи: вывоз грунта, камней и строительного мусора, доставка песка, щебня, земли и перевозка техники. Расчёт за рейс, смену или объём.",
         "keywords": "самосвал самуи, грузовик самуи, вывоз грунта самуи, вывоз строительного мусора самуи, доставка песка самуи, доставка щебня самуи, доставка грунта самуи, перевозка техники самуи, dump truck koh samui"
       },
@@ -309,7 +309,7 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Dump Truck Service on Koh Samui - Soil Removal & Material Delivery",
+        "title": "Dump Truck Rental on Koh Samui - Soil Removal",
         "description": "Dump truck and truck services on Koh Samui: soil removal, construction waste removal, sand, gravel and soil delivery, equipment transport. Per trip, per day or full job pricing.",
         "keywords": "dump truck koh samui, dump truck rental koh samui, truck service samui, soil removal koh samui, construction waste removal samui, sand delivery samui, gravel delivery samui, soil delivery samui, equipment transport samui"
       },
@@ -454,7 +454,7 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "บริการรถดั๊มพ์บนเกาะสมุย {'|'} ขนดินออก ส่งทราย หิน และวัสดุ",
+        "title": "รถดั๊มพ์ เกาะสมุย - ขนดินออก ส่งทราย หิน ดินถม",
         "description": "บริการรถดั๊มพ์และรถบรรทุกบนเกาะสมุย ขนดินออก ขนเศษวัสดุก่อสร้าง ส่งทราย หิน ดินถม และขนย้ายเครื่องจักร คิดราคาต่อเที่ยว ต่อวัน หรือเหมางาน",
         "keywords": "รถดั๊มพ์ สมุย, รถบรรทุก สมุย, ขนดิน สมุย, ขนดินออก สมุย, ขนขยะก่อสร้าง สมุย, ส่งทราย สมุย, ส่งหิน สมุย, ส่งดินถม สมุย, ขนย้ายเครื่องจักร สมุย"
       },

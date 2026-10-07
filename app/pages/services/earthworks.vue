@@ -209,13 +209,13 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Земляные работы на Самуи - расчистка, выравнивание и подготовка участка",
-        "description": "Земляные работы на Самуи: расчистка участка, выравнивание, дренаж, отсыпка, подготовка под строительство, доставка и вывоз грунта. Экскаваторы и самосвалы.",
+        "title": "Земляные работы на Самуи - котлованы и отсыпка",
+        "description": "Комплексные земляные работы на Самуи: котлованы, выемка и перемещение грунта, отсыпка и уплотнение, завоз грунта на объект. Своя техника, расчёт до начала работ.",
         "keywords": "земляные работы самуи, подготовка участка самуи, выравнивание участка самуи, дренаж самуи, отсыпка участка самуи, расчистка участка самуи, доставка грунта самуи, вывоз грунта самуи, экскаватор самуи, самосвал самуи"
       },
       "hero": {
         "title": "Земляные работы на Самуи",
-        "description": "Подготовка участков под строительство: расчистка, выравнивание, дренаж, отсыпка, экскаваторы, самосвалы и вывоз грунта."
+        "description": "Котлованы, выемка и перемещение грунта, отсыпка и уплотнение. Берём на себя весь объём работ: от первого ковша до готовой площадки."
       },
       "intro": "Готовим участки под дома, виллы, дороги и строительные проекты на Самуи. Расчищаем землю, выравниваем площадки, делаем дренаж, завозим грунт, вывозим лишний материал и организуем работу техники. Подбираем экскаваторы, самосвалы и план работ под реальный участок, подъезд, грунт и объём.",
       "value": {
@@ -270,7 +270,7 @@ useServiceSeo({
         }
       },
       "seoBlock": {
-        "title": "Подготовка участка под строительство на Самуи",
+        "title": "Как мы организуем земляные работы на Самуи",
         "p1": "Земляные работы на Самуи часто требуют не одной машины, а нормального плана: где снимать грунт, куда отводить воду, чем поднимать уровень, сколько рейсов нужно для завоза или вывоза материала и какая техника сможет заехать на участок.",
         "p2": "Мы работаем с участками под дома, виллы, подъездные дороги, парковки, сады и строительные площадки. Можем расчистить землю, убрать корни и мусор, выровнять площадку, сделать отсыпку, организовать дренаж, доставить грунт, песок или щебень и вывезти лишний материал.",
         "p3": "Перед расчётом смотрим подъезд, уклон, тип грунта, воду на участке и объём работ. Это помогает выбрать правильный экскаватор, количество самосвалов и избежать лишних затрат."
@@ -384,13 +384,13 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "Earthworks on Koh Samui - Land clearing, leveling and site preparation",
-        "description": "Earthworks on Koh Samui: land clearing, leveling, drainage, backfilling, site preparation, soil delivery and removal. Excavators and dump trucks.",
+        "title": "Earthworks on Koh Samui - Excavation & Backfill",
+        "description": "Full-scope earthworks on Koh Samui: excavation, cut and fill, backfilling and compaction, soil haulage to site. Own machinery, fixed estimate before work starts.",
         "keywords": "earthworks koh samui, site preparation koh samui, land leveling samui, drainage samui, backfilling samui, land clearing samui, soil delivery samui, soil removal samui, excavator samui, dump truck samui"
       },
       "hero": {
         "title": "Earthworks on Koh Samui",
-        "description": "Site preparation for construction: land clearing, leveling, drainage, backfilling, excavators, dump trucks and soil removal."
+        "description": "Excavation, cut and fill, backfilling and compaction. We take on the whole scope: from the first bucket to a finished pad."
       },
       "intro": "We prepare land for houses, villas, roads and construction projects on Koh Samui. We clear sites, level ground, install drainage, deliver fill material, remove excess soil and organize machinery work. We choose the right excavators, dump trucks and work plan based on real site conditions, access, soil and project size.",
       "value": {
@@ -445,7 +445,7 @@ useServiceSeo({
         }
       },
       "seoBlock": {
-        "title": "Site preparation and earthworks on Koh Samui",
+        "title": "How we organize earthworks on Koh Samui",
         "p1": "Earthworks on Koh Samui usually require more than just a machine. You need a proper plan: where to remove soil, how to manage water, how to raise levels, how many truck loads are needed and what machinery can access the site.",
         "p2": "We work with land for houses, villas, access roads, parking areas, gardens and construction sites. We can clear the land, remove roots and debris, level the ground, do backfilling, organize drainage, deliver soil, sand or gravel and remove excess material.",
         "p3": "Before giving a quote, we check access, slope, soil type, water conditions and work volume. This helps choose the right excavator, number of trucks and avoid unnecessary costs."
@@ -559,13 +559,13 @@ useServiceSeo({
         }
       },
       "seo": {
-        "title": "งานดิน เกาะสมุย {'|'} เคลียร์พื้นที่ ปรับระดับ และเตรียมพื้นที่ก่อสร้าง",
-        "description": "บริการงานดินบนเกาะสมุย: เคลียร์พื้นที่ ปรับระดับ ถมดิน ทำระบบระบายน้ำ ขนดินเข้าออก พร้อมรถขุดและรถดั๊มพ์",
+        "title": "งานดิน เกาะสมุย - ขุดดิน ถมดิน ครบวงจร",
+        "description": "งานดินครบวงจรบนเกาะสมุย: ขุดบ่อ ขุดและย้ายดิน ถมดิน บดอัด ขนดินเข้าไซต์งาน ใช้เครื่องจักรของเราเอง ประเมินราคาก่อนเริ่มงาน",
         "keywords": "งานดิน สมุย, ปรับระดับที่ดิน สมุย, ถมดิน สมุย, ระบบระบายน้ำ สมุย, เคลียร์ที่ดิน สมุย, รถขุด สมุย, รถดั๊มพ์ สมุย"
       },
       "hero": {
         "title": "งานดินบนเกาะสมุย",
-        "description": "เตรียมพื้นที่สำหรับก่อสร้าง: เคลียร์ที่ดิน ปรับระดับ ถมดิน ทำระบายน้ำ พร้อมรถขุดและรถดั๊มพ์"
+        "description": "ขุดบ่อ ขุดและย้ายดิน ถมดิน บดอัด เรารับงานทั้งหมดตั้งแต่บุ้งกี๋แรกจนถึงพื้นที่พร้อมใช้งาน"
       },
       "intro": "เรารับงานเตรียมที่ดินสำหรับสร้างบ้าน วิลล่า ถนน และโครงการก่อสร้างบนเกาะสมุย ตั้งแต่เคลียร์พื้นที่ ปรับระดับ ทำระบบระบายน้ำ ถมดิน ขนดินเข้าออก และจัดการเครื่องจักรให้เหมาะกับหน้างานจริง ทั้งทางเข้า ลักษณะดิน และขนาดงาน",
       "value": {
@@ -620,7 +620,7 @@ useServiceSeo({
         }
       },
       "seoBlock": {
-        "title": "งานเตรียมพื้นที่ก่อสร้างบนเกาะสมุย",
+        "title": "เราจัดการงานดินบนเกาะสมุยอย่างไร",
         "p1": "งานดินในสมุยต้องมีการวางแผน ไม่ใช่แค่ใช้เครื่องจักร ต้องดูว่าขุดตรงไหน น้ำจะไหลไปทางไหน ต้องถมเท่าไร และใช้รถกี่เที่ยว",
         "p2": "เราทำงานกับที่ดินสำหรับบ้าน วิลล่า ถนน และโครงการก่อสร้าง สามารถเคลียร์พื้นที่ ปรับระดับ ถมดิน ทำระบายน้ำ และขนวัสดุเข้าออกได้",
         "p3": "ก่อนประเมินราคา เราจะดูทางเข้า ลักษณะดิน ความชื้น และปริมาณงาน เพื่อเลือกเครื่องจักรและลดค่าใช้จ่ายที่ไม่จำเป็น"

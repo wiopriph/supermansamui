@@ -226,7 +226,7 @@ const seoBlock = computed(() => ({
 {
   "ru": {
     "seo": {
-      "title": "Superman Samui - экскаваторы, самосвалы и земляные работы на Самуи",
+      "title": "Экскаваторы, самосвалы и земляные работы на Самуи",
       "desc": "Строительная техника на Самуи: экскаваторы, самосвалы, расчистка и подготовка участков. Своя техника, местные операторы, понятная цена.",
       "keywords": "строительная техника самуи, экскаватор самуи, самосвал самуи, земляные работы самуи, расчистка участка самуи"
     },
@@ -319,7 +319,7 @@ const seoBlock = computed(() => ({
   },
   "en": {
     "seo": {
-      "title": "Superman Samui - Excavators, Dump Trucks & Earthworks on Koh Samui",
+      "title": "Excavators, Dump Trucks & Earthworks on Koh Samui",
       "desc": "Construction machinery on Koh Samui: excavators, dump trucks, land clearing and site preparation. Own equipment, local operators, clear pricing.",
       "keywords": "construction machinery koh samui, excavator samui, dump truck samui, earthworks samui, land clearing samui"
     },
@@ -412,7 +412,7 @@ const seoBlock = computed(() => ({
   },
   "th": {
     "seo": {
-      "title": "Superman Samui - รถขุด รถดั๊มพ์ และงานดินบนเกาะสมุย",
+      "title": "เครื่องจักรก่อสร้าง เกาะสมุย - รถขุด รถดั๊มพ์ งานดิน",
       "desc": "บริการเครื่องจักรก่อสร้างบนเกาะสมุย: รถขุด รถดั๊มพ์ เคลียร์พื้นที่ และเตรียมที่ดิน มีเครื่องจักรของเราเอง คนขับท้องถิ่น ราคาชัดเจน",
       "keywords": "เครื่องจักรก่อสร้าง สมุย, รถขุด สมุย, รถดั๊มพ์ สมุย, งานดิน สมุย, เคลียร์ที่ดิน สมุย"
     },
