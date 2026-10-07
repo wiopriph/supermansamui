@@ -37,9 +37,9 @@ export default defineNuxtConfig({
     defaultLocale: 'en',
     detectBrowserLanguage: false,
     locales: [
-      { code: 'en', language: 'en-US', name: 'English', flag: '🇬🇧' },
-      { code: 'th', language: 'th-TH', name: 'ไทย', flag: '🇹🇭' },
-      { code: 'ru', language: 'ru-RU', name: 'Русский', flag: '🇷🇺' },
+      { code: 'en', language: 'en-US', name: 'English', flag: 'i-circle-flags-gb' },
+      { code: 'th', language: 'th-TH', name: 'ไทย', flag: 'i-circle-flags-th' },
+      { code: 'ru', language: 'ru-RU', name: 'Русский', flag: 'i-circle-flags-ru' },
     ],
     strategy: 'prefix_except_default',
   },

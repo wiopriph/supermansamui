@@ -292,9 +292,9 @@ const onSocialClick = (social: SocialItem, location: string) => {
                   as="span"
                   variant="outline"
                   size="xs"
+                  :icon="lang.flag"
                 >
                   {{ lang.name }}
-                  {{ lang.flag }}
                 </UButton>
               </a>
             </div>
