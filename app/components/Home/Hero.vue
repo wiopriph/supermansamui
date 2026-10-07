@@ -8,17 +8,11 @@ import {
 import type { SocialKey } from '~/composables/useAnalyticsEvent';
 
 
-type Fact = {
-  value: string | number
-  label: string
-};
-
 type Props = {
   eyebrow: string
   title: string
   description: string
   primaryLabel: string
-  facts: Fact[]
   image?: string
   page?: string
   location?: string
@@ -98,7 +92,7 @@ const onClick = (item: typeof links.value[number]) => {
 
     <div class="absolute inset-0 bg-blueprint" />
 
-    <div class="relative mx-auto w-full max-w-6xl px-4 pt-14 pb-10 sm:px-6 sm:pt-20 sm:pb-14 lg:px-8 lg:pt-24 lg:pb-16">
+    <div class="relative mx-auto w-full max-w-6xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
       <p class="eyebrow">
         {{ eyebrow }}
       </p>
@@ -130,21 +124,6 @@ const onClick = (item: typeof links.value[number]) => {
           />
         </UButton>
       </div>
-
-      <dl class="mt-12 grid max-w-2xl grid-cols-3 gap-4 border-t border-white/15 pt-6">
-        <div
-          v-for="fact in facts"
-          :key="fact.label"
-        >
-          <dd class="font-display text-3xl font-semibold tabular-nums sm:text-4xl">
-            {{ fact.value }}
-          </dd>
-
-          <dt class="mt-1 text-xs tracking-wider text-white/60 uppercase">
-            {{ fact.label }}
-          </dt>
-        </div>
-      </dl>
     </div>
   </section>
 </template>
