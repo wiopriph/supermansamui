@@ -115,7 +115,10 @@ const onClick = (item: Item) => {
 </script>
 
 <template>
-  <section class="py-4 space-y-3">
+  <section
+    data-contact-block
+    class="py-4 space-y-3"
+  >
     <UContainer class="text-center space-y-8">
       <div class="flex flex-wrap justify-center gap-3 pt-2">
         <UButton

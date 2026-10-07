@@ -98,5 +98,7 @@ useHead(() => ({
     </UMain>
 
     <AppFooter />
+
+    <CoreFloatingContact />
   </UApp>
 </template>

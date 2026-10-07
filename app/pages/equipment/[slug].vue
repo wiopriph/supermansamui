@@ -115,6 +115,13 @@ const equipmentPath = computed(() =>
 );
 const equipmentListPath = computed(() => localePath({ name: 'equipment' }));
 
+if (equipment.value) {
+  useContactContext().set({
+    name: equipment.value.name,
+    message: t('contactMessage', { name: equipment.value.name, type: localeData.value.type }),
+  });
+}
+
 const jsonLd = computed(() => {
   if (!equipment.value) return {};
 

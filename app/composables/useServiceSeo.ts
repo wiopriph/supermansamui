@@ -33,6 +33,8 @@ type ServiceSeoOptions = {
 export function useServiceSeo(options: ServiceSeoOptions) {
   const { t } = useI18n();
 
+  useContactContext().set({ name: t(`${options.prefix}.seo.title`) });
+
   const jsonLd = computed(() => ({
     '@context': 'https://schema.org',
     '@graph': [

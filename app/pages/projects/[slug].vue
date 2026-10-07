@@ -74,6 +74,14 @@ const projectPath = computed(() =>
 );
 const projectsListPath = computed(() => localePath({ name: 'projects' }));
 const canonicalUrl = computed(() => absoluteUrl(projectPath.value));
+
+if (project.value) {
+  useContactContext().set({
+    name: project.value.title,
+    message: t('contactMessage', { title: project.value.title, location: project.value.location }),
+  });
+}
+
 const coverUrl = computed(() => absoluteUrl(project.value?.cover ?? ''));
 
 // ─── Equipment used ──────────────────────────────────────────────────────────

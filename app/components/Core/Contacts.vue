@@ -112,7 +112,10 @@ const onSocialClick = (social: SocialItem) => {
 </i18n>
 
 <template>
-  <section class="py-10 space-y-6">
+  <section
+    data-contact-block
+    class="py-10 space-y-6"
+  >
     <UContainer class="text-center space-y-8">
       <div class="space-y-3">
         <h2 class="text-2xl sm:text-3xl font-semibold text-center">
