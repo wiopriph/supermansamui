@@ -114,7 +114,7 @@ const onClick = (item: Item) => {
 
         <p
           v-if="eyebrow"
-          class="mb-2 inline-flex items-center gap-1.5 text-sm font-semibold tracking-wider text-white/85 uppercase md:mb-3"
+          class="mb-3 inline-flex items-center gap-1.5 text-sm font-semibold tracking-wider text-white/85 uppercase md:mb-4"
         >
           <UIcon
             v-if="eyebrowIcon"
@@ -124,7 +124,7 @@ const onClick = (item: Item) => {
           {{ eyebrow }}
         </p>
 
-        <h1 class="mb-4 text-3xl leading-[0.95] font-bold text-balance sm:text-5xl lg:text-6xl">
+        <h1 class="mb-5 text-3xl leading-[1.1] font-bold text-balance sm:text-5xl lg:text-6xl">
           {{ title }}
         </h1>
 
