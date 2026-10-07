@@ -525,22 +525,13 @@ useHead(() => {
     </div>
 
     <!-- Contact CTA -->
-    <section
-      id="equipment-contact"
-      class="mx-auto mt-10 hidden max-w-3xl scroll-mt-20 border-t border-default py-10 text-center sm:mt-14 sm:py-14 lg:block"
-    >
-      <h2 class="text-2xl font-semibold sm:text-3xl">
-        {{ t('contactTitle') }}
-      </h2>
-
-      <p class="mx-auto mt-3 max-w-2xl text-sm leading-6 text-muted sm:text-base">
-        {{ t('contactDescription') }}
-      </p>
-
-      <CoreContactsMini
-        :page="equipmentPath"
-        location="equipment_bottom"
-      />
-    </section>
+    <CoreContacts
+      compact
+      :page="equipmentPath"
+      location="equipment_bottom"
+      :title="t('contactTitle')"
+      :description="t('contactDescription')"
+      class="mt-6"
+    />
   </article>
 </template>

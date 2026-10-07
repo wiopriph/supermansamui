@@ -686,7 +686,8 @@ useServiceSeo({
       :items="includedItems"
     />
 
-    <CoreContactsMini
+    <CoreContacts
+      compact
       page="services/drainage"
       location="content"
     />

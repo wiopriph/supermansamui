@@ -558,22 +558,13 @@ useHead(() => {
       </div>
     </section>
 
-    <section
-      id="project-contact"
-      class="mx-auto mt-10 hidden max-w-3xl scroll-mt-20 border-t border-default py-10 text-center sm:mt-14 sm:py-14 lg:block"
-    >
-      <h2 class="text-2xl font-semibold sm:text-3xl">
-        {{ t('contacts') }}
-      </h2>
-
-      <p class="mx-auto mt-3 max-w-2xl text-sm leading-6 text-muted sm:text-base">
-        {{ t('contactsDescription') }}
-      </p>
-
-      <CoreContactsMini
-        :page="projectPath"
-        location="project_bottom"
-      />
-    </section>
+    <CoreContacts
+      compact
+      :page="projectPath"
+      location="project_bottom"
+      :title="t('contacts')"
+      :description="t('contactsDescription')"
+      class="mt-6"
+    />
   </article>
 </template>

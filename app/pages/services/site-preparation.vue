@@ -688,7 +688,8 @@ useServiceSeo({
     />
 
 
-    <CoreContactsMini
+    <CoreContacts
+      compact
       page="services/site-preparation"
       location="content"
     />

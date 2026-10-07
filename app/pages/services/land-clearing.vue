@@ -690,7 +690,8 @@ useServiceSeo({
       :items="includedItems"
     />
 
-    <CoreContactsMini
+    <CoreContacts
+      compact
       page="services/land-clearing"
       location="content"
     />

@@ -674,7 +674,8 @@ useServiceSeo({
       :items="includedItems"
     />
 
-    <CoreContactsMini
+    <CoreContacts
+      compact
       page="services/excavator"
       location="content"
     />

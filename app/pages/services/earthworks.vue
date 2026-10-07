@@ -778,7 +778,8 @@ useServiceSeo({
       </p>
     </section>
 
-    <CoreContactsMini
+    <CoreContacts
+      compact
       page="services/earthworks"
       location="content"
     />
