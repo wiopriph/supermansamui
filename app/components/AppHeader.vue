@@ -133,7 +133,7 @@ const onSocialClick = (social: SocialItem, location: string) => {
 </i18n>
 
 <template>
-  <UHeader :ui="{ root: 'dark bg-blue-950/95 border-blue-900' }">
+  <UHeader>
     <template #left>
       <NuxtLink
         :to="localeRoute({ name: 'index' })"
