@@ -86,7 +86,7 @@ const localeRoute = useLocaleRoute();
     </UCard>
 
     <div class="flex flex-col items-start gap-4">
-      <p class="text-sm text-muted max-w-2xl">
+      <p class="max-w-3xl text-sm text-muted">
         {{ note }}
       </p>
 

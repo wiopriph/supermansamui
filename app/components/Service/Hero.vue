@@ -109,7 +109,7 @@ const onClick = (item: Item) => {
     <div class="absolute inset-0 hidden bg-gradient-to-r from-black/70 via-black/35 to-transparent md:block" />
 
     <div class="relative z-10 w-full py-6 sm:py-10">
-      <div class="max-w-2xl text-white [text-shadow:0_1px_3px_rgb(0_0_0/0.45)]">
+      <div class="max-w-3xl text-white [text-shadow:0_1px_3px_rgb(0_0_0/0.45)]">
         <div class="mb-3 h-1.5 w-16 bg-primary md:mb-4" />
 
         <p
