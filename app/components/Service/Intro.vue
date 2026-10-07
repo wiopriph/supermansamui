@@ -7,7 +7,7 @@ const props = defineProps<{
 <template>
   <section class="py-12">
     <p
-      class="max-w-3xl text-lg leading-8 text-toned"
+      class="text-lg leading-8 text-toned"
       v-text="props.text"
     />
   </section>

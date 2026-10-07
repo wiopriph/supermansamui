@@ -8,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="max-w-3xl">
+  <div>
     <p
       v-if="eyebrow"
       class="eyebrow mb-3"
