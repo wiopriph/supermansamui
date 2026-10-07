@@ -170,7 +170,7 @@ const onSocialClick = (key: SocialKey, url: string) => {
           target="_blank"
           rel="noopener"
           color="neutral"
-          variant="soft"
+          variant="solid"
           size="lg"
           @click="onSocialClick('line', lineLink)"
         >
@@ -213,7 +213,7 @@ const onSocialClick = (key: SocialKey, url: string) => {
           rel="noopener"
           color="success"
           size="xl"
-          class="px-6"
+          class="px-6 font-semibold"
           @click="onSocialClick('whatsapp', whatsappLink)"
         >
           {{ t('whatsapp') }}
@@ -226,9 +226,9 @@ const onSocialClick = (key: SocialKey, url: string) => {
           target="_blank"
           rel="noopener"
           color="neutral"
-          variant="soft"
+          variant="solid"
           size="xl"
-          class="px-6"
+          class="px-6 font-semibold"
           @click="onSocialClick('line', lineLink)"
         >
           {{ t('line') }}
@@ -238,9 +238,9 @@ const onSocialClick = (key: SocialKey, url: string) => {
           :to="phoneLink"
           icon="i-lucide-phone"
           color="primary"
-          variant="soft"
+          variant="solid"
           size="xl"
-          class="px-6"
+          class="px-6 font-semibold"
           @click="onPhoneClick"
         >
           {{ CONTACT_PHONE }}
