@@ -20,15 +20,10 @@ const formatValue = (value: string | number) => typeof value === 'number' ? valu
 
 const { t } = useI18n();
 
-const orderMessage = computed(() => {
-  const prices = (props.prices ?? []).map(price => `${price.label}: ${formatValue(price.value)}`).join(', ');
-
-  return t('message', {
-    title: props.title,
-    subtitle: props.subtitle ?? '',
-    prices,
-  });
-});
+const orderMessage = computed(() => t('message', {
+  title: props.title,
+  subtitle: props.subtitle ?? '',
+}));
 </script>
 
 <i18n lang="json">
@@ -37,19 +32,19 @@ const orderMessage = computed(() => {
     "order": "Заказать",
     "details": "Подробнее",
     "modalTitle": "Заказать {title}",
-    "message": "Здравствуйте! Интересует {title} ({subtitle}). {prices}. Подскажите доступность."
+    "message": "Здравствуйте! Интересует {title} ({subtitle}). Подскажите доступность и стоимость."
   },
   "en": {
     "order": "Order now",
     "details": "View details",
     "modalTitle": "Hire {title}",
-    "message": "Hi! I'm interested in the {title} ({subtitle}). {prices}. Is it available?"
+    "message": "Hi! I'm interested in the {title} ({subtitle}). Is it available and what would it cost?"
   },
   "th": {
     "order": "สั่งงาน",
     "details": "รายละเอียด",
     "modalTitle": "สั่งงาน {title}",
-    "message": "สวัสดีครับ/ค่ะ สนใจ {title} ({subtitle}) {prices} ขอทราบคิวว่างครับ/ค่ะ"
+    "message": "สวัสดีครับ/ค่ะ สนใจ {title} ({subtitle}) ขอทราบคิวว่างและราคาครับ/ค่ะ"
   }
 }
 </i18n>
