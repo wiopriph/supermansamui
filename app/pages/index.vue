@@ -233,7 +233,6 @@ const seoBlock = computed(() => ({
     "hero": {
       "title": "Строительная техника на Самуи - экскаваторы, самосвалы и земляные работы",
       "description": "Расчистка участков, выравнивание, дренаж, вывоз грунта и доставка материалов. Своя техника, местные операторы и понятная цена до начала работ.",
-      "primary": "Позвонить",
       "eyebrow": "Самуи · строительная техника и земляные работы"
     },
     "seoBlock": {
@@ -327,7 +326,6 @@ const seoBlock = computed(() => ({
     "hero": {
       "title": "Construction machinery on Koh Samui - excavators, dump trucks and earthworks",
       "description": "Land clearing, leveling, drainage, soil removal and material delivery. Own machines, local operators and clear pricing before the job starts.",
-      "primary": "Call now",
       "eyebrow": "Koh Samui · construction machinery & earthworks"
     },
     "seoBlock": {
@@ -421,7 +419,6 @@ const seoBlock = computed(() => ({
     "hero": {
       "title": "เครื่องจักรก่อสร้างบนเกาะสมุย - รถขุด รถดั๊มพ์ และงานดิน",
       "description": "เคลียร์พื้นที่ ปรับระดับ ทำระบายน้ำ ขนดิน และส่งวัสดุก่อสร้าง มีเครื่องจักรของเราเอง คนขับท้องถิ่น และแจ้งราคาชัดเจนก่อนเริ่มงาน",
-      "primary": "โทรเลย",
       "eyebrow": "เกาะสมุย · เครื่องจักรก่อสร้างและงานดิน"
     },
     "seoBlock": {
@@ -511,11 +508,12 @@ const seoBlock = computed(() => ({
 
 <template>
   <UPage>
-    <HomeHero
-      :eyebrow="t('hero.eyebrow')"
+    <ServiceHero
       :title="t('hero.title')"
       :description="t('hero.description')"
-      :primaryLabel="t('hero.primary')"
+      :eyebrow="t('hero.eyebrow')"
+      imageSrc="/images/services/excavators/hero.webp"
+      page="/"
     />
 
     <HomeServices

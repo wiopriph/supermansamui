@@ -248,18 +248,13 @@ useHead(() => {
 </i18n>
 
 <template>
-  <div class="py-10 sm:py-14 space-y-14">
-    <section class="mx-auto max-w-3xl text-center">
-      <div class="mx-auto mb-4 h-1 w-10 bg-primary" />
-
-      <h1 class="text-4xl font-bold text-highlighted sm:text-5xl">
-        {{ t('title') }}
-      </h1>
-
-      <p class="mt-4 text-base leading-7 text-muted sm:text-lg">
-        {{ t('description') }}
-      </p>
-    </section>
+  <div class="pb-10 sm:pb-14 space-y-14">
+    <ServiceHero
+      :title="t('title')"
+      :description="t('description')"
+      imageSrc="/images/services/trucks/hero.webp"
+      page="equipment"
+    />
 
     <div
       v-for="category in categories"

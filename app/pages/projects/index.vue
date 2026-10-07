@@ -73,16 +73,13 @@ useHead(() => ({
 </i18n>
 
 <template>
-  <div class="py-10 sm:py-14 space-y-10">
-    <section class="text-center space-y-4 mx-auto">
-      <h1 class="text-3xl sm:text-4xl font-bold text-highlighted">
-        {{ t('title') }}
-      </h1>
-
-      <p class="text-base sm:text-lg text-muted">
-        {{ t('description') }}
-      </p>
-    </section>
+  <div class="pb-10 sm:pb-14 space-y-10">
+    <ServiceHero
+      :title="t('title')"
+      :description="t('description')"
+      imageSrc="/images/services/earthworks/hero.webp"
+      page="projects"
+    />
 
     <div
       v-if="projectItems.length"
