@@ -10,14 +10,12 @@ defineProps<Props>();
 </script>
 
 <template>
-  <section class="py-10 space-y-6">
-    <h2 class="text-2xl sm:text-3xl font-semibold text-center mb-4">
-      {{ title }}
-    </h2>
+  <section class="py-14 space-y-8">
+    <CoreSectionHeading :title="title" />
 
     <div
       v-if="paragraphs?.length"
-      class="space-y-2 text-base leading-7 text-gray-500 dark:text-gray-300"
+      class="mx-auto max-w-3xl space-y-3 text-base leading-7 text-toned"
     >
       <p
         v-for="(p, index) in paragraphs"

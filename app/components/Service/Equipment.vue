@@ -24,18 +24,10 @@ const props = defineProps<{
 
 <template>
   <section class="py-10 space-y-8">
-    <div class="space-y-2 text-center">
-      <h2
-        class="text-2xl sm:text-3xl font-semibold text-highlighted"
-        v-text="props.title"
-      />
-
-      <p
-        v-if="props.note"
-        class="text-sm text-muted max-w-2xl mx-auto"
-        v-text="props.note"
-      />
-    </div>
+    <CoreSectionHeading
+      :title="props.title"
+      :subtitle="props.note"
+    />
 
     <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       <EquipmentPriceCard

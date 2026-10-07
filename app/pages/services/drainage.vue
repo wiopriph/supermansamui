@@ -684,6 +684,7 @@ useServiceSeo({
 
     <ServiceIncluded
       :title="t('drainage.included.title')"
+      tone="sand"
       :items="includedItems"
     />
 

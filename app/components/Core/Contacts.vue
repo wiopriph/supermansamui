@@ -197,20 +197,13 @@ const onSocialClick = (key: SocialKey, url: string) => {
   <section
     v-else
     data-contact-block
-    class="py-10 space-y-6"
+    class="bleed bg-sand-100 py-14"
   >
     <UContainer class="text-center space-y-8">
-      <div class="space-y-3">
-        <h2
-          class="text-2xl sm:text-3xl font-semibold text-center"
-          v-text="heading"
-        />
-
-        <p
-          class="text-gray-600 max-w-xl mx-auto"
-          v-text="subheading"
-        />
-      </div>
+      <CoreSectionHeading
+        :title="heading"
+        :subtitle="subheading"
+      />
 
       <div class="flex flex-wrap justify-center gap-3">
         <UButton

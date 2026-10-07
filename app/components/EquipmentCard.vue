@@ -20,7 +20,7 @@ const props = defineProps<{
 <template>
   <NuxtLink
     :to="props.to"
-    class="group flex flex-col overflow-hidden rounded-2xl bg-default ring ring-default transition hover:bg-elevated/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+    class="group flex flex-col overflow-hidden rounded-md bg-default ring ring-default transition hover:bg-elevated/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
   >
     <div class="aspect-video overflow-hidden bg-elevated">
       <img
@@ -35,7 +35,7 @@ const props = defineProps<{
       <div>
         <p
           v-if="props.subtitle"
-          class="text-xs font-semibold uppercase tracking-wider text-primary"
+          class="eyebrow"
           v-text="props.subtitle"
         />
 
@@ -74,7 +74,7 @@ const props = defineProps<{
           class="text-sm text-muted"
         >
           <span
-            class="text-base font-bold text-highlighted tabular-nums"
+            class="font-display text-xl font-semibold text-highlighted tabular-nums"
             v-text="props.priceValue"
           />
           {{ props.priceLabel }}

@@ -19,24 +19,17 @@ defineProps<{
 <template>
   <section class="py-10 space-y-6">
     <div class="space-y-8">
-      <div class="space-y-2 text-center">
-        <h2
-          class="text-2xl sm:text-3xl font-semibold"
-          v-text="title"
-        />
-
-        <p
-          class="text-sm text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
-          v-text="subtitle"
-        />
-      </div>
+      <CoreSectionHeading
+        :title="title"
+        :subtitle="subtitle"
+      />
 
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <NuxtLink
           v-for="service in items"
           :key="service.key"
           :to="service.to"
-          class="relative group/service flex h-full flex-col overflow-hidden rounded-lg bg-default ring ring-default transition hover:bg-elevated/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+          class="relative group/service flex h-full flex-col overflow-hidden rounded-md bg-default ring ring-default transition hover:bg-elevated/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
         >
           <div class="aspect-video overflow-hidden bg-elevated">
             <img
@@ -50,7 +43,7 @@ defineProps<{
           <div class="flex flex-1 flex-col gap-3 p-5">
             <div class="flex items-start justify-between gap-3">
               <h3
-                class="text-base font-semibold leading-6 text-highlighted"
+                class="text-xl font-semibold leading-6 text-highlighted"
                 v-text="service.title"
               />
 

@@ -607,6 +607,7 @@ useServiceSeo({
 
     <ServiceIncluded
       :title="t('trucks.included.title')"
+      tone="sand"
       :items="includedItems"
     />
 

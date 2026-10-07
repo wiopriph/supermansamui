@@ -50,7 +50,7 @@ const orderMessage = computed(() => t('message', {
 </i18n>
 
 <template>
-  <div class="flex flex-col overflow-hidden rounded-2xl bg-default ring ring-default">
+  <div class="flex flex-col overflow-hidden rounded-md bg-default ring ring-default">
     <div
       v-if="image"
       class="aspect-video overflow-hidden bg-elevated"
@@ -67,7 +67,7 @@ const orderMessage = computed(() => t('message', {
       <div>
         <p
           v-if="subtitle"
-          class="text-xs font-semibold uppercase tracking-wider text-primary"
+          class="eyebrow"
           v-text="subtitle"
         />
 
@@ -85,7 +85,7 @@ const orderMessage = computed(() => t('message', {
 
       <div
         v-if="prices && prices.length"
-        class="mt-auto rounded-xl bg-elevated/60 ring ring-default divide-y divide-default"
+        class="mt-auto rounded-md bg-sand-50 ring ring-default divide-y divide-default"
       >
         <div
           v-for="(price, index) in prices"
@@ -98,7 +98,7 @@ const orderMessage = computed(() => t('message', {
           />
           {{ ' ' }}
           <span
-            class="text-base font-bold text-highlighted tabular-nums"
+            class="font-display text-xl font-semibold text-highlighted tabular-nums"
             v-text="formatValue(price.value)"
           />
         </div>

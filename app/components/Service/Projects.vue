@@ -64,22 +64,17 @@ const latestProjects = computed(() => (projects.value || []).slice(0, props.limi
     v-if="latestProjects.length"
     class="py-10 sm:py-14"
   >
-    <div class="space-y-2 text-center">
-      <h2 class="text-2xl sm:text-3xl font-semibold">
-        {{ service ? t('serviceProjects.title') : t('serviceProjects.titleAll') }}
-      </h2>
+    <CoreSectionHeading
+      :title="service ? t('serviceProjects.title') : t('serviceProjects.titleAll')"
+      :subtitle="service ? t('serviceProjects.description') : t('serviceProjects.descriptionAll')"
+    />
 
-      <p class="text-sm text-muted max-w-2xl mx-auto">
-        {{ service ? t('serviceProjects.description') : t('serviceProjects.descriptionAll') }}
-      </p>
-    </div>
-
-    <div class="mt-6 grid gap-5 md:grid-cols-2">
+    <div class="mt-10 grid gap-5 md:grid-cols-2">
       <NuxtLink
         v-for="project in latestProjects"
         :key="project.id"
         :to="localeRoute({ name: 'projects-slug', params: { slug: project.slug } })"
-        class="group grid overflow-hidden rounded-xl bg-default ring ring-default transition hover:bg-elevated/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary sm:grid-cols-[180px_minmax(0,1fr)]"
+        class="group grid overflow-hidden rounded-md bg-default ring ring-default transition hover:bg-elevated/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary sm:grid-cols-[180px_minmax(0,1fr)]"
       >
         <div class="aspect-video overflow-hidden bg-elevated sm:aspect-auto">
           <img
@@ -91,7 +86,7 @@ const latestProjects = computed(() => (projects.value || []).slice(0, props.limi
         </div>
 
         <div class="flex min-w-0 flex-col p-5">
-          <p class="inline-flex items-center gap-1.5 text-xs font-medium text-muted">
+          <p class="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-secondary uppercase">
             <UIcon
               name="i-lucide-map-pin"
               class="size-3.5"

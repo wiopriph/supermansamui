@@ -672,6 +672,7 @@ useServiceSeo({
 
     <ServiceIncluded
       :title="t('excavator.included.title')"
+      tone="sand"
       :items="includedItems"
     />
 

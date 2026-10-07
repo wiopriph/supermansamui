@@ -688,6 +688,7 @@ useServiceSeo({
 
     <ServiceIncluded
       :title="t('landClearing.included.title')"
+      tone="sand"
       :items="includedItems"
     />
 

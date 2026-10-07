@@ -5,9 +5,9 @@ const props = defineProps<{
 </script>
 
 <template>
-  <section class="py-10 border-b border-gray-50">
+  <section class="py-12">
     <p
-      class="text-gray-600 leading-relaxed text-center"
+      class="mx-auto max-w-3xl text-center text-lg leading-8 text-toned"
       v-text="props.text"
     />
   </section>

@@ -48,3 +48,19 @@
     linear-gradient(90deg, rgb(255 255 255 / 0.06) 1px, transparent 1px);
   background-size: 32px 32px;
 }
+
+/* Stretch a section to the container edges so it can carry its own background */
+@utility bleed {
+  margin-inline: calc(var(--spacing) * -4);
+  padding-inline: calc(var(--spacing) * 4);
+
+  @variant sm {
+    margin-inline: calc(var(--spacing) * -6);
+    padding-inline: calc(var(--spacing) * 6);
+  }
+
+  @variant lg {
+    margin-inline: calc(var(--spacing) * -8);
+    padding-inline: calc(var(--spacing) * 8);
+  }
+}

@@ -39,17 +39,17 @@ useHead(() => ({
 </script>
 
 <template>
-  <section class="py-10 border-b border-gray-50">
-    <h2
+  <section class="py-14">
+    <CoreSectionHeading
       v-if="props.title"
-      class="text-2xl sm:text-3xl font-semibold text-center"
-      v-text="props.title"
+      :title="props.title"
     />
 
     <UAccordion
       :items="accordionItems"
       :unmountOnHide="false"
       type="multiple"
+      class="mx-auto mt-8 max-w-3xl"
     />
   </section>
 </template>

@@ -23,16 +23,11 @@ const localeRoute = useLocaleRoute();
 </script>
 
 <template>
-  <section class="py-10 space-y-6">
-    <div class="space-y-2 text-center">
-      <h2 class="text-2xl sm:text-3xl font-semibold">
-        {{ title }}
-      </h2>
-
-      <p class="text-sm text-muted max-w-2xl mx-auto">
-        {{ description }}
-      </p>
-    </div>
+  <section class="bleed bg-sand-50 py-14 space-y-8">
+    <CoreSectionHeading
+      :title="title"
+      :subtitle="description"
+    />
 
     <div class="grid gap-6 lg:grid-cols-2">
       <UCard
